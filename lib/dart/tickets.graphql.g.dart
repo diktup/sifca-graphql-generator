@@ -19,16 +19,24 @@ GetTickets$Query$TicketType$MediaType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$MediaType$PictureTypeToJson(
-        GetTickets$Query$TicketType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetTickets$Query$TicketType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$MediaType
     _$GetTickets$Query$TicketType$MediaTypeFromJson(
@@ -49,12 +57,20 @@ GetTickets$Query$TicketType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$MediaTypeToJson(
-        GetTickets$Query$TicketType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    GetTickets$Query$TicketType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTickets$Query$TicketType$UserType$PhoneType
     _$GetTickets$Query$TicketType$UserType$PhoneTypeFromJson(
@@ -66,13 +82,21 @@ GetTickets$Query$TicketType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$UserType$PhoneTypeToJson(
-        GetTickets$Query$TicketType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    GetTickets$Query$TicketType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTickets$Query$TicketType$UserType$PictureType
     _$GetTickets$Query$TicketType$UserType$PictureTypeFromJson(
@@ -87,16 +111,24 @@ GetTickets$Query$TicketType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$UserType$PictureTypeToJson(
-        GetTickets$Query$TicketType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetTickets$Query$TicketType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$UserType
     _$GetTickets$Query$TicketType$UserTypeFromJson(Map<String, dynamic> json) =>
@@ -118,17 +150,26 @@ GetTickets$Query$TicketType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$UserTypeToJson(
-        GetTickets$Query$TicketType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    GetTickets$Query$TicketType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -151,17 +192,25 @@ GetTickets$Query$TicketType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$MediaType
     _$GetTickets$Query$TicketType$CompanyType$MediaTypeFromJson(
@@ -182,12 +231,20 @@ GetTickets$Query$TicketType$CompanyType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$CompanyType$MediaTypeToJson(
-        GetTickets$Query$TicketType$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    GetTickets$Query$TicketType$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -200,12 +257,20 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -221,17 +286,25 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -255,19 +328,28 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -283,17 +365,25 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$Pi
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -317,19 +407,28 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -345,17 +444,25 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -388,23 +495,32 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -422,12 +538,20 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$Ful
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -441,12 +565,20 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$FullAddressType
     _$GetTickets$Query$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -475,17 +607,25 @@ GetTickets$Query$TicketType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$FullAddressTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$FullAddressType instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$CompanyLegalType
     _$GetTickets$Query$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -495,14 +635,22 @@ GetTickets$Query$TicketType$CompanyType$CompanyLegalType
           ..register = json['register'] as String?
           ..licence = json['licence'] as String?;
 
-Map<String,
-    dynamic> _$GetTickets$Query$TicketType$CompanyType$CompanyLegalTypeToJson(
-        GetTickets$Query$TicketType$CompanyType$CompanyLegalType instance) =>
-    <String, dynamic>{
-      'vat': instance.vat,
-      'register': instance.register,
-      'licence': instance.licence,
-    };
+Map<String, dynamic>
+    _$GetTickets$Query$TicketType$CompanyType$CompanyLegalTypeToJson(
+        GetTickets$Query$TicketType$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -515,12 +663,20 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -536,17 +692,25 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -570,19 +734,28 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -598,17 +771,25 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -632,19 +813,28 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -660,17 +850,25 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -703,23 +901,32 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -730,12 +937,20 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -749,12 +964,20 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -783,18 +1006,26 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$Fu
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -810,13 +1041,22 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 const _$BankDetailsHolderTypeEnumEnumMap = {
   BankDetailsHolderTypeEnum.private: 'PRIVATE',
@@ -838,17 +1078,25 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -864,17 +1112,25 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -919,19 +1175,27 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -949,13 +1213,21 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -974,17 +1246,26 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$BankDetailsType
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -1005,17 +1286,26 @@ GetTickets$Query$TicketType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$BankDetailsTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$BankDetailsType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTickets$Query$TicketType$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -1028,14 +1318,22 @@ GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType
     _$GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -1050,13 +1348,21 @@ GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTickets$Query$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$CompanyType
     _$GetTickets$Query$TicketType$CompanyTypeFromJson(
@@ -1094,22 +1400,31 @@ GetTickets$Query$TicketType$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$CompanyTypeToJson(
-        GetTickets$Query$TicketType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTickets$Query$TicketType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$MediaType$PictureType
     _$GetTickets$Query$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -1125,17 +1440,25 @@ GetTickets$Query$TicketType$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$MediaType
     _$GetTickets$Query$TicketType$ProjectType$MediaTypeFromJson(
@@ -1156,12 +1479,20 @@ GetTickets$Query$TicketType$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$ProjectType$MediaTypeToJson(
-        GetTickets$Query$TicketType$ProjectType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    GetTickets$Query$TicketType$ProjectType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$PictureType
     _$GetTickets$Query$TicketType$ProjectType$PictureTypeFromJson(
@@ -1177,16 +1508,24 @@ GetTickets$Query$TicketType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$PictureTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$ProjectType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -1199,14 +1538,22 @@ GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -1222,17 +1569,25 @@ GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -1256,18 +1611,27 @@ GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTickets$Query$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$ProjectMemberType
     _$GetTickets$Query$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -1280,13 +1644,21 @@ GetTickets$Query$TicketType$ProjectType$ProjectMemberType
           ..role = $enumDecodeNullable(_$ProjectRoleEnumEnumMap, json['role'],
               unknownValue: ProjectRoleEnum.artemisUnknown);
 
-Map<String,
-    dynamic> _$GetTickets$Query$TicketType$ProjectType$ProjectMemberTypeToJson(
-        GetTickets$Query$TicketType$ProjectType$ProjectMemberType instance) =>
-    <String, dynamic>{
-      'member': instance.member?.toJson(),
-      'role': _$ProjectRoleEnumEnumMap[instance.role],
-    };
+Map<String, dynamic>
+    _$GetTickets$Query$TicketType$ProjectType$ProjectMemberTypeToJson(
+        GetTickets$Query$TicketType$ProjectType$ProjectMemberType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 const _$ProjectRoleEnumEnumMap = {
   ProjectRoleEnum.lead: 'LEAD',
@@ -1308,17 +1680,25 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Content
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -1335,12 +1715,20 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Content
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -1362,14 +1750,22 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Content
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -1385,14 +1781,23 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$Content
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -1405,11 +1810,19 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -1422,14 +1835,22 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -1445,17 +1866,25 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType$UserType
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -1479,18 +1908,27 @@ GetTickets$Query$TicketType$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$DocumentType
     _$GetTickets$Query$TicketType$ProjectType$DocumentTypeFromJson(
@@ -1512,16 +1950,25 @@ GetTickets$Query$TicketType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$ProjectType$DocumentTypeToJson(
-            GetTickets$Query$TicketType$ProjectType$DocumentType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTickets$Query$TicketType$ProjectType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTickets$Query$TicketType$ProjectType$BoardCardsStatsType
     _$GetTickets$Query$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -1593,27 +2040,38 @@ GetTickets$Query$TicketType$ProjectType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$ProjectTypeToJson(
-        GetTickets$Query$TicketType$ProjectType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-      'status': _$ProjectStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'externalId': instance.externalId,
-      'picture': instance.picture?.toJson(),
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'resources': instance.resources?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTickets$Query$TicketType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$ProjectPrivacyEnumEnumMap = {
   ProjectPrivacyEnum.private: 'PRIVATE',
@@ -1651,17 +2109,25 @@ GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$Con
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -1678,12 +2144,20 @@ GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$Con
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -1705,14 +2179,22 @@ GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$Con
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -1728,14 +2210,23 @@ GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetTickets$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$DocumentContentType
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -1748,11 +2239,18 @@ GetTickets$Query$TicketType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$DocumentContentTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetTickets$Query$TicketType$DocumentType$DocumentContentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$UserType$PhoneType
     _$GetTickets$Query$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -1765,14 +2263,21 @@ GetTickets$Query$TicketType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTickets$Query$TicketType$DocumentType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$UserType$PictureType
     _$GetTickets$Query$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -1788,17 +2293,25 @@ GetTickets$Query$TicketType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetTickets$Query$TicketType$DocumentType$UserType$PictureTypeToJson(
-            GetTickets$Query$TicketType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTickets$Query$TicketType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType$UserType
     _$GetTickets$Query$TicketType$DocumentType$UserTypeFromJson(
@@ -1821,17 +2334,26 @@ GetTickets$Query$TicketType$DocumentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$DocumentType$UserTypeToJson(
-        GetTickets$Query$TicketType$DocumentType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    GetTickets$Query$TicketType$DocumentType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTickets$Query$TicketType$DocumentType
     _$GetTickets$Query$TicketType$DocumentTypeFromJson(
@@ -1852,16 +2374,25 @@ GetTickets$Query$TicketType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTickets$Query$TicketType$DocumentTypeToJson(
-        GetTickets$Query$TicketType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTickets$Query$TicketType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTickets$Query$TicketType _$GetTickets$Query$TicketTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1905,25 +2436,36 @@ GetTickets$Query$TicketType _$GetTickets$Query$TicketTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTickets$Query$TicketTypeToJson(
-        GetTickets$Query$TicketType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'customer': instance.customer?.toJson(),
-      'project': instance.project?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTickets$Query$TicketType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$TicketPriorityEnumEnumMap = {
   TicketPriorityEnum.low: 'LOW',
@@ -1967,16 +2509,24 @@ Ticket$Query$TicketType$MediaType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Ticket$Query$TicketType$MediaType$PictureTypeToJson(
-        Ticket$Query$TicketType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Ticket$Query$TicketType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$MediaType _$Ticket$Query$TicketType$MediaTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1993,12 +2543,20 @@ Ticket$Query$TicketType$MediaType _$Ticket$Query$TicketType$MediaTypeFromJson(
           .toList();
 
 Map<String, dynamic> _$Ticket$Query$TicketType$MediaTypeToJson(
-        Ticket$Query$TicketType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    Ticket$Query$TicketType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Ticket$Query$TicketType$UserType$PhoneType
     _$Ticket$Query$TicketType$UserType$PhoneTypeFromJson(
@@ -2010,13 +2568,21 @@ Ticket$Query$TicketType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$Ticket$Query$TicketType$UserType$PhoneTypeToJson(
-        Ticket$Query$TicketType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    Ticket$Query$TicketType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Ticket$Query$TicketType$UserType$PictureType
     _$Ticket$Query$TicketType$UserType$PictureTypeFromJson(
@@ -2031,16 +2597,24 @@ Ticket$Query$TicketType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Ticket$Query$TicketType$UserType$PictureTypeToJson(
-        Ticket$Query$TicketType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Ticket$Query$TicketType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$UserType _$Ticket$Query$TicketType$UserTypeFromJson(
         Map<String, dynamic> json) =>
@@ -2062,17 +2636,26 @@ Ticket$Query$TicketType$UserType _$Ticket$Query$TicketType$UserTypeFromJson(
               json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Ticket$Query$TicketType$UserTypeToJson(
-        Ticket$Query$TicketType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    Ticket$Query$TicketType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$MediaType$PictureType
     _$Ticket$Query$TicketType$CompanyType$MediaType$PictureTypeFromJson(
@@ -2086,18 +2669,26 @@ Ticket$Query$TicketType$CompanyType$MediaType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$Ticket$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(
-        Ticket$Query$TicketType$CompanyType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$Ticket$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(
+        Ticket$Query$TicketType$CompanyType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$MediaType
     _$Ticket$Query$TicketType$CompanyType$MediaTypeFromJson(
@@ -2118,12 +2709,20 @@ Ticket$Query$TicketType$CompanyType$MediaType
               .toList();
 
 Map<String, dynamic> _$Ticket$Query$TicketType$CompanyType$MediaTypeToJson(
-        Ticket$Query$TicketType$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    Ticket$Query$TicketType$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -2136,12 +2735,20 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2157,17 +2764,25 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -2191,19 +2806,28 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2219,17 +2843,25 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$Pictur
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2253,19 +2885,28 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2281,17 +2922,25 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$StateType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -2324,23 +2973,32 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2351,12 +3009,20 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAdd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2370,12 +3036,20 @@ Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$FullAddressType
     _$Ticket$Query$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -2404,17 +3078,25 @@ Ticket$Query$TicketType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$FullAddressTypeToJson(
-            Ticket$Query$TicketType$CompanyType$FullAddressType instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$CompanyLegalType
     _$Ticket$Query$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -2426,12 +3108,20 @@ Ticket$Query$TicketType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$CompanyLegalTypeToJson(
-            Ticket$Query$TicketType$CompanyType$CompanyLegalType instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        Ticket$Query$TicketType$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -2444,12 +3134,20 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2465,17 +3163,25 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -2499,19 +3205,28 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2527,17 +3242,25 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2561,19 +3284,28 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2589,17 +3321,25 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -2632,23 +3372,32 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2659,12 +3408,20 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2678,12 +3435,20 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -2712,18 +3477,26 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAd
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -2739,13 +3512,22 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -2761,17 +3543,25 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$Pic
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -2787,17 +3577,25 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$Bro
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -2842,19 +3640,27 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$Bro
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -2872,13 +3678,21 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -2897,17 +3711,25 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType$BankType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$BankDetailsType
     _$Ticket$Query$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -2927,17 +3749,26 @@ Ticket$Query$TicketType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$BankDetailsTypeToJson(
-            Ticket$Query$TicketType$CompanyType$BankDetailsType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        Ticket$Query$TicketType$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -2950,14 +3781,22 @@ Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType
     _$Ticket$Query$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -2972,13 +3811,21 @@ Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        Ticket$Query$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$CompanyType
     _$Ticket$Query$TicketType$CompanyTypeFromJson(Map<String, dynamic> json) =>
@@ -3015,22 +3862,31 @@ Ticket$Query$TicketType$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Ticket$Query$TicketType$CompanyTypeToJson(
-        Ticket$Query$TicketType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Ticket$Query$TicketType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$MediaType$PictureType
     _$Ticket$Query$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -3044,18 +3900,26 @@ Ticket$Query$TicketType$ProjectType$MediaType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$Ticket$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(
-        Ticket$Query$TicketType$ProjectType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$Ticket$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(
+        Ticket$Query$TicketType$ProjectType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$MediaType
     _$Ticket$Query$TicketType$ProjectType$MediaTypeFromJson(
@@ -3076,12 +3940,20 @@ Ticket$Query$TicketType$ProjectType$MediaType
               .toList();
 
 Map<String, dynamic> _$Ticket$Query$TicketType$ProjectType$MediaTypeToJson(
-        Ticket$Query$TicketType$ProjectType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    Ticket$Query$TicketType$ProjectType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$PictureType
     _$Ticket$Query$TicketType$ProjectType$PictureTypeFromJson(
@@ -3096,16 +3968,24 @@ Ticket$Query$TicketType$ProjectType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Ticket$Query$TicketType$ProjectType$PictureTypeToJson(
-        Ticket$Query$TicketType$ProjectType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Ticket$Query$TicketType$ProjectType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -3118,14 +3998,22 @@ Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -3141,17 +4029,25 @@ Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -3175,18 +4071,27 @@ Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        Ticket$Query$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$ProjectMemberType
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -3201,11 +4106,19 @@ Ticket$Query$TicketType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$ProjectMemberTypeToJson(
-            Ticket$Query$TicketType$ProjectType$ProjectMemberType instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        Ticket$Query$TicketType$ProjectType$ProjectMemberType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -3221,17 +4134,25 @@ Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -3248,12 +4169,20 @@ Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -3275,14 +4204,22 @@ Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -3298,14 +4235,23 @@ Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -3318,11 +4264,19 @@ Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -3335,14 +4289,22 @@ Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -3358,17 +4320,25 @@ Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType$UserType
     _$Ticket$Query$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -3390,19 +4360,28 @@ Ticket$Query$TicketType$ProjectType$DocumentType$UserType
               : Ticket$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$Ticket$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(
-        Ticket$Query$TicketType$ProjectType$DocumentType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$Ticket$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(
+        Ticket$Query$TicketType$ProjectType$DocumentType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$DocumentType
     _$Ticket$Query$TicketType$ProjectType$DocumentTypeFromJson(
@@ -3423,16 +4402,25 @@ Ticket$Query$TicketType$ProjectType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Ticket$Query$TicketType$ProjectType$DocumentTypeToJson(
-        Ticket$Query$TicketType$ProjectType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Ticket$Query$TicketType$ProjectType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query$TicketType$ProjectType$BoardCardsStatsType
     _$Ticket$Query$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -3501,27 +4489,38 @@ Ticket$Query$TicketType$ProjectType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Ticket$Query$TicketType$ProjectTypeToJson(
-        Ticket$Query$TicketType$ProjectType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-      'status': _$ProjectStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'externalId': instance.externalId,
-      'picture': instance.picture?.toJson(),
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'resources': instance.resources?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Ticket$Query$TicketType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -3537,17 +4536,25 @@ Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$Content
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -3564,12 +4571,20 @@ Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$Content
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -3591,14 +4606,22 @@ Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$Content
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -3614,14 +4637,23 @@ Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$DocumentContentType
     _$Ticket$Query$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -3632,12 +4664,20 @@ Ticket$Query$TicketType$DocumentType$DocumentContentType
               : Ticket$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
                   .fromJson(json['type'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$Ticket$Query$TicketType$DocumentType$DocumentContentTypeToJson(
-        Ticket$Query$TicketType$DocumentType$DocumentContentType instance) =>
-    <String, dynamic>{
-      'type': instance.type?.toJson(),
-    };
+Map<String, dynamic>
+    _$Ticket$Query$TicketType$DocumentType$DocumentContentTypeToJson(
+        Ticket$Query$TicketType$DocumentType$DocumentContentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$UserType$PhoneType
     _$Ticket$Query$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -3650,13 +4690,21 @@ Ticket$Query$TicketType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$Ticket$Query$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            Ticket$Query$TicketType$DocumentType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        Ticket$Query$TicketType$DocumentType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$UserType$PictureType
     _$Ticket$Query$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -3670,18 +4718,26 @@ Ticket$Query$TicketType$DocumentType$UserType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$Ticket$Query$TicketType$DocumentType$UserType$PictureTypeToJson(
-        Ticket$Query$TicketType$DocumentType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$Ticket$Query$TicketType$DocumentType$UserType$PictureTypeToJson(
+        Ticket$Query$TicketType$DocumentType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType$UserType
     _$Ticket$Query$TicketType$DocumentType$UserTypeFromJson(
@@ -3704,17 +4760,26 @@ Ticket$Query$TicketType$DocumentType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Ticket$Query$TicketType$DocumentType$UserTypeToJson(
-        Ticket$Query$TicketType$DocumentType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    Ticket$Query$TicketType$DocumentType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 Ticket$Query$TicketType$DocumentType
     _$Ticket$Query$TicketType$DocumentTypeFromJson(Map<String, dynamic> json) =>
@@ -3734,16 +4799,25 @@ Ticket$Query$TicketType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Ticket$Query$TicketType$DocumentTypeToJson(
-        Ticket$Query$TicketType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Ticket$Query$TicketType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query$TicketType _$Ticket$Query$TicketTypeFromJson(
         Map<String, dynamic> json) =>
@@ -3787,25 +4861,36 @@ Ticket$Query$TicketType _$Ticket$Query$TicketTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Ticket$Query$TicketTypeToJson(
-        Ticket$Query$TicketType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'customer': instance.customer?.toJson(),
-      'project': instance.project?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Ticket$Query$TicketType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Ticket$Query _$Ticket$QueryFromJson(Map<String, dynamic> json) => Ticket$Query()
   ..ticket =
@@ -3828,18 +4913,26 @@ GetTicketsByTarget$Query$TicketType$MediaType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$GetTicketsByTarget$Query$TicketType$MediaType$PictureTypeToJson(
-        GetTicketsByTarget$Query$TicketType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$GetTicketsByTarget$Query$TicketType$MediaType$PictureTypeToJson(
+        GetTicketsByTarget$Query$TicketType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$MediaType
     _$GetTicketsByTarget$Query$TicketType$MediaTypeFromJson(
@@ -3860,12 +4953,20 @@ GetTicketsByTarget$Query$TicketType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetTicketsByTarget$Query$TicketType$MediaTypeToJson(
-        GetTicketsByTarget$Query$TicketType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    GetTicketsByTarget$Query$TicketType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$UserType$PhoneType
     _$GetTicketsByTarget$Query$TicketType$UserType$PhoneTypeFromJson(
@@ -3878,13 +4979,21 @@ GetTicketsByTarget$Query$TicketType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$UserType$PhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTarget$Query$TicketType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$UserType$PictureType
     _$GetTicketsByTarget$Query$TicketType$UserType$PictureTypeFromJson(
@@ -3898,18 +5007,26 @@ GetTicketsByTarget$Query$TicketType$UserType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$GetTicketsByTarget$Query$TicketType$UserType$PictureTypeToJson(
-        GetTicketsByTarget$Query$TicketType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$GetTicketsByTarget$Query$TicketType$UserType$PictureTypeToJson(
+        GetTicketsByTarget$Query$TicketType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$UserType
     _$GetTicketsByTarget$Query$TicketType$UserTypeFromJson(
@@ -3932,17 +5049,26 @@ GetTicketsByTarget$Query$TicketType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetTicketsByTarget$Query$TicketType$UserTypeToJson(
-        GetTicketsByTarget$Query$TicketType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    GetTicketsByTarget$Query$TicketType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureTypeFromJson(
@@ -3958,17 +5084,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$MediaType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaTypeFromJson(
@@ -3988,14 +5122,22 @@ GetTicketsByTarget$Query$TicketType$CompanyType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaTypeToJson(
-        GetTicketsByTarget$Query$TicketType$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$GetTicketsByTarget$Query$TicketType$CompanyType$MediaTypeToJson(
+        GetTicketsByTarget$Query$TicketType$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -4008,12 +5150,20 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4029,17 +5179,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$Pict
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -4063,19 +5221,28 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4091,17 +5258,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$Countr
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4125,19 +5300,28 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$Countr
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4153,17 +5337,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$Pictur
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -4196,23 +5388,32 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4223,12 +5424,20 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwner
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4242,12 +5451,20 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwner
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -4276,18 +5493,26 @@ GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -4299,13 +5524,21 @@ GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -4318,12 +5551,20 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4339,17 +5580,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -4373,19 +5622,28 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4401,17 +5659,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4435,19 +5701,28 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4463,17 +5738,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -4506,23 +5789,32 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4533,12 +5825,20 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4552,12 +5852,20 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -4586,18 +5894,26 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -4613,13 +5929,22 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolde
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -4635,17 +5960,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$Browser
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -4661,17 +5994,25 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$Browser
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -4716,19 +6057,27 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$Browser
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -4746,13 +6095,21 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$Browser
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -4771,17 +6128,26 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -4802,18 +6168,27 @@ GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -4826,14 +6201,22 @@ GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneT
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType
     _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -4848,13 +6231,21 @@ GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$CompanyType
     _$GetTicketsByTarget$Query$TicketType$CompanyTypeFromJson(
@@ -4892,22 +6283,31 @@ GetTicketsByTarget$Query$TicketType$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTicketsByTarget$Query$TicketType$CompanyTypeToJson(
-        GetTicketsByTarget$Query$TicketType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTicketsByTarget$Query$TicketType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -4923,17 +6323,25 @@ GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$MediaType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaTypeFromJson(
@@ -4953,14 +6361,22 @@ GetTicketsByTarget$Query$TicketType$ProjectType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaTypeToJson(
-        GetTicketsByTarget$Query$TicketType$ProjectType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$GetTicketsByTarget$Query$TicketType$ProjectType$MediaTypeToJson(
+        GetTicketsByTarget$Query$TicketType$ProjectType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$PictureType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$PictureTypeFromJson(
@@ -4976,17 +6392,24 @@ GetTicketsByTarget$Query$TicketType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -4999,14 +6422,22 @@ GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$Phone
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -5022,17 +6453,25 @@ GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$Pictu
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -5056,18 +6495,27 @@ GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -5082,12 +6530,20 @@ GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -5103,17 +6559,25 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -5130,12 +6594,20 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -5157,14 +6629,22 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -5180,14 +6660,23 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -5200,11 +6689,19 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -5217,14 +6714,22 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -5240,17 +6745,25 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureTyp
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -5274,18 +6787,27 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentTypeFromJson(
@@ -5307,17 +6829,25 @@ GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$ProjectType$DocumentTypeToJson(
-            GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTarget$Query$TicketType$ProjectType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$ProjectType$BoardCardsStatsType
     _$GetTicketsByTarget$Query$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -5389,27 +6919,38 @@ GetTicketsByTarget$Query$TicketType$ProjectType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTicketsByTarget$Query$TicketType$ProjectTypeToJson(
-        GetTicketsByTarget$Query$TicketType$ProjectType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-      'status': _$ProjectStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'externalId': instance.externalId,
-      'picture': instance.picture?.toJson(),
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'resources': instance.resources?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTicketsByTarget$Query$TicketType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -5425,17 +6966,25 @@ GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -5452,12 +7001,20 @@ GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -5479,14 +7036,22 @@ GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -5502,14 +7067,23 @@ GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -5522,11 +7096,19 @@ GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -5539,14 +7121,22 @@ GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -5562,17 +7152,25 @@ GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureTypeToJson(
-            GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType$UserType
     _$GetTicketsByTarget$Query$TicketType$DocumentType$UserTypeFromJson(
@@ -5594,19 +7192,28 @@ GetTicketsByTarget$Query$TicketType$DocumentType$UserType
               : GetTicketsByTarget$Query$TicketType$DocumentType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetTicketsByTarget$Query$TicketType$DocumentType$UserTypeToJson(
-        GetTicketsByTarget$Query$TicketType$DocumentType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetTicketsByTarget$Query$TicketType$DocumentType$UserTypeToJson(
+        GetTicketsByTarget$Query$TicketType$DocumentType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType$DocumentType
     _$GetTicketsByTarget$Query$TicketType$DocumentTypeFromJson(
@@ -5627,16 +7234,25 @@ GetTicketsByTarget$Query$TicketType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTicketsByTarget$Query$TicketType$DocumentTypeToJson(
-        GetTicketsByTarget$Query$TicketType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTicketsByTarget$Query$TicketType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query$TicketType
     _$GetTicketsByTarget$Query$TicketTypeFromJson(Map<String, dynamic> json) =>
@@ -5683,25 +7299,36 @@ GetTicketsByTarget$Query$TicketType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTicketsByTarget$Query$TicketTypeToJson(
-        GetTicketsByTarget$Query$TicketType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'customer': instance.customer?.toJson(),
-      'project': instance.project?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTicketsByTarget$Query$TicketType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTarget$Query _$GetTicketsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -5726,13 +7353,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$PictureTypeFromJson(
@@ -5748,17 +7383,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$Pict
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaTypeFromJson(
@@ -5780,13 +7423,21 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PhoneTypeFromJson(
@@ -5799,14 +7450,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$Phone
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PictureTypeFromJson(
@@ -5822,17 +7481,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$Pictu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserTypeFromJson(
@@ -5856,18 +7523,27 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType$PictureTypeFromJson(
@@ -5883,17 +7559,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Me
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaTypeFromJson(
@@ -5915,13 +7599,21 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Me
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -5934,12 +7626,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -5955,17 +7655,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -5989,19 +7697,28 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -6017,17 +7734,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -6051,19 +7776,28 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -6079,17 +7813,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -6122,23 +7864,32 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -6149,12 +7900,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -6168,12 +7927,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -6202,18 +7969,26 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Fu
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyLegalType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -6225,13 +8000,21 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Co
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyLegalTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -6244,12 +8027,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -6265,17 +8056,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -6299,19 +8098,28 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -6327,17 +8135,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -6361,19 +8177,28 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -6389,17 +8214,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -6432,23 +8265,32 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -6459,12 +8301,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -6478,12 +8328,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -6512,18 +8370,26 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -6539,13 +8405,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -6561,17 +8436,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -6587,17 +8470,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -6642,19 +8533,27 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -6672,13 +8571,21 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -6697,17 +8604,26 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -6728,18 +8644,27 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Ba
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -6752,14 +8677,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Co
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -6774,13 +8707,21 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$Co
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyTypeFromJson(
@@ -6819,23 +8760,32 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -6851,17 +8801,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Me
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaTypeFromJson(
@@ -6883,13 +8841,21 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Me
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$PictureTypeFromJson(
@@ -6905,17 +8871,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Pi
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -6928,14 +8902,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Pr
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -6951,17 +8933,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Pr
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -6985,18 +8975,27 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Pr
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -7011,12 +9010,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Pr
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -7032,17 +9039,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -7059,12 +9074,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -7086,14 +9109,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -7109,14 +9140,23 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -7129,11 +9169,19 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -7146,14 +9194,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -7169,17 +9225,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -7203,18 +9267,27 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentTypeFromJson(
@@ -7236,17 +9309,26 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$Do
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$BoardCardsStatsType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -7319,28 +9401,39 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-          'status': _$ProjectStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'resources': instance.resources?.map((e) => e.toJson()).toList(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$ProjectType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -7356,17 +9449,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$D
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -7383,12 +9484,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$D
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -7410,14 +9519,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$D
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -7433,14 +9550,23 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$D
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -7453,11 +9579,19 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$D
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PhoneType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -7470,14 +9604,22 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$U
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PictureType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -7493,17 +9635,25 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$U
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PictureTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserTypeFromJson(
@@ -7527,18 +9677,27 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$U
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentTypeFromJson(
@@ -7560,17 +9719,26 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketTypeFromJson(
@@ -7619,26 +9787,37 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'identifier': instance.identifier,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-          'status': _$TicketStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-          'customer': instance.customer?.toJson(),
-          'project': instance.project?.toJson(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query$TicketsPaginateType
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateTypeFromJson(
@@ -7654,12 +9833,20 @@ GetTicketsByTargetWithFilter$Query$TicketsPaginateType
 
 Map<String, dynamic>
     _$GetTicketsByTargetWithFilter$Query$TicketsPaginateTypeToJson(
-            GetTicketsByTargetWithFilter$Query$TicketsPaginateType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetTicketsByTargetWithFilter$Query$TicketsPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetTicketsByTargetWithFilter$Query _$GetTicketsByTargetWithFilter$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7695,18 +9882,25 @@ TicketsFilterInput _$TicketsFilterInputFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$TicketsFilterInputToJson(TicketsFilterInput instance) =>
-    <String, dynamic>{
-      'priority': instance.priority
-          ?.map((e) => _$TicketPriorityEnumEnumMap[e]!)
-          .toList(),
-      'members': instance.members,
-      'attachments': instance.attachments,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'status':
-          instance.status?.map((e) => _$TicketStatusEnumEnumMap[e]!).toList(),
-    };
+Map<String, dynamic> _$TicketsFilterInputToJson(TicketsFilterInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priority',
+      instance.priority?.map((e) => _$TicketPriorityEnumEnumMap[e]!).toList());
+  writeNotNull('members', instance.members);
+  writeNotNull('attachments', instance.attachments);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('status',
+      instance.status?.map((e) => _$TicketStatusEnumEnumMap[e]!).toList());
+  return val;
+}
 
 PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
     PaginationInput(
@@ -7714,11 +9908,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 GetTicketsByExcel$Query$InvoicePDFType
     _$GetTicketsByExcel$Query$InvoicePDFTypeFromJson(
@@ -7727,10 +9929,18 @@ GetTicketsByExcel$Query$InvoicePDFType
           ..content = json['content'] as String?;
 
 Map<String, dynamic> _$GetTicketsByExcel$Query$InvoicePDFTypeToJson(
-        GetTicketsByExcel$Query$InvoicePDFType instance) =>
-    <String, dynamic>{
-      'content': instance.content,
-    };
+    GetTicketsByExcel$Query$InvoicePDFType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 GetTicketsByExcel$Query _$GetTicketsByExcel$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7793,12 +10003,20 @@ GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$PriceCountTy
 
 Map<String, dynamic>
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$PriceCountTypeToJson(
-            GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$PriceCountType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price,
-          'count': instance.count,
-        };
+        GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$PriceCountType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price);
+  writeNotNull('count', instance.count);
+  return val;
+}
 
 GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType$DifferenceInnerType
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType$DifferenceInnerTypeFromJson(
@@ -7809,12 +10027,20 @@ GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceTy
 
 Map<String, dynamic>
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType$DifferenceInnerTypeToJson(
-            GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType$DifferenceInnerType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'percentage': instance.percentage,
-        };
+        GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType$DifferenceInnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('percentage', instance.percentage);
+  return val;
+}
 
 GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceTypeFromJson(
@@ -7831,12 +10057,20 @@ GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceTy
 
 Map<String, dynamic>
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceTypeToJson(
-            GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'count': instance.count?.toJson(),
-        };
+        GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType$DifferenceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('count', instance.count?.toJson());
+  return val;
+}
 
 GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousTypeFromJson(
@@ -7856,13 +10090,22 @@ GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType
 
 Map<String, dynamic>
     _$GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousTypeToJson(
-            GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType
-                instance) =>
-        <String, dynamic>{
-          'current': instance.current.toJson(),
-          'previous': instance.previous?.toJson(),
-          'difference': instance.difference?.toJson(),
-        };
+        GetTicketsStatsWithFilter$Query$TicketStatsType$CurrentPreviousType
+            instance) {
+  final val = <String, dynamic>{
+    'current': instance.current.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('previous', instance.previous?.toJson());
+  writeNotNull('difference', instance.difference?.toJson());
+  return val;
+}
 
 GetTicketsStatsWithFilter$Query$TicketStatsType
     _$GetTicketsStatsWithFilter$Query$TicketStatsTypeFromJson(
@@ -7921,16 +10164,23 @@ TicketsStatsFilterInput _$TicketsStatsFilterInputFromJson(
     );
 
 Map<String, dynamic> _$TicketsStatsFilterInputToJson(
-        TicketsStatsFilterInput instance) =>
-    <String, dynamic>{
-      'priority': instance.priority
-          ?.map((e) => _$TicketPriorityEnumEnumMap[e]!)
-          .toList(),
-      'members': instance.members,
-      'attachments': instance.attachments,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-    };
+    TicketsStatsFilterInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priority',
+      instance.priority?.map((e) => _$TicketPriorityEnumEnumMap[e]!).toList());
+  writeNotNull('members', instance.members);
+  writeNotNull('attachments', instance.attachments);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$MediaType$PictureType
     _$CreateTicket$Mutation$TicketType$MediaType$PictureTypeFromJson(
@@ -7946,16 +10196,24 @@ CreateTicket$Mutation$TicketType$MediaType$PictureType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$MediaType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$MediaType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$MediaType
     _$CreateTicket$Mutation$TicketType$MediaTypeFromJson(
@@ -7976,12 +10234,20 @@ CreateTicket$Mutation$TicketType$MediaType
               .toList();
 
 Map<String, dynamic> _$CreateTicket$Mutation$TicketType$MediaTypeToJson(
-        CreateTicket$Mutation$TicketType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    CreateTicket$Mutation$TicketType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$UserType$PhoneType
     _$CreateTicket$Mutation$TicketType$UserType$PhoneTypeFromJson(
@@ -7994,13 +10260,21 @@ CreateTicket$Mutation$TicketType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$UserType$PhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateTicket$Mutation$TicketType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$UserType$PictureType
     _$CreateTicket$Mutation$TicketType$UserType$PictureTypeFromJson(
@@ -8016,16 +10290,24 @@ CreateTicket$Mutation$TicketType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$UserType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$UserType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$UserType
     _$CreateTicket$Mutation$TicketType$UserTypeFromJson(
@@ -8048,17 +10330,26 @@ CreateTicket$Mutation$TicketType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateTicket$Mutation$TicketType$UserTypeToJson(
-        CreateTicket$Mutation$TicketType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    CreateTicket$Mutation$TicketType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureTypeFromJson(
@@ -8074,17 +10365,25 @@ CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$MediaType
     _$CreateTicket$Mutation$TicketType$CompanyType$MediaTypeFromJson(
@@ -8106,12 +10405,20 @@ CreateTicket$Mutation$TicketType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$MediaTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$MediaType instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -8124,12 +10431,20 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8145,17 +10460,25 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$Picture
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -8179,19 +10502,28 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8207,17 +10539,25 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8241,19 +10581,28 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8269,17 +10618,25 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -8312,23 +10669,32 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8339,12 +10705,20 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8358,12 +10732,20 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$FullAddressType
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -8392,18 +10774,25 @@ CreateTicket$Mutation$TicketType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
     _$CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -8415,13 +10804,21 @@ CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -8434,12 +10831,20 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8455,17 +10860,25 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -8489,19 +10902,28 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8517,17 +10939,25 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8551,19 +10981,28 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8579,17 +11018,25 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -8622,23 +11069,32 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8649,12 +11105,20 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8668,12 +11132,20 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -8702,18 +11174,26 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -8729,13 +11209,22 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -8751,17 +11240,25 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -8777,17 +11274,25 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -8832,19 +11337,27 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -8862,13 +11375,21 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -8887,17 +11408,26 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -8918,18 +11448,26 @@ CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -8942,14 +11480,22 @@ CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
     _$CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -8964,13 +11510,21 @@ CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$CompanyType
     _$CreateTicket$Mutation$TicketType$CompanyTypeFromJson(
@@ -9008,22 +11562,31 @@ CreateTicket$Mutation$TicketType$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateTicket$Mutation$TicketType$CompanyTypeToJson(
-        CreateTicket$Mutation$TicketType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateTicket$Mutation$TicketType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
     _$CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -9039,17 +11602,25 @@ CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$MediaType
     _$CreateTicket$Mutation$TicketType$ProjectType$MediaTypeFromJson(
@@ -9071,12 +11642,20 @@ CreateTicket$Mutation$TicketType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$MediaTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$MediaType instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$PictureType
     _$CreateTicket$Mutation$TicketType$ProjectType$PictureTypeFromJson(
@@ -9090,18 +11669,26 @@ CreateTicket$Mutation$TicketType$ProjectType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$CreateTicket$Mutation$TicketType$ProjectType$PictureTypeToJson(
-        CreateTicket$Mutation$TicketType$ProjectType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$CreateTicket$Mutation$TicketType$ProjectType$PictureTypeToJson(
+        CreateTicket$Mutation$TicketType$ProjectType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -9114,14 +11701,22 @@ CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -9137,17 +11732,25 @@ CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureT
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -9171,18 +11774,27 @@ CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -9197,12 +11809,20 @@ CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -9218,17 +11838,25 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -9245,12 +11873,20 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -9272,14 +11908,22 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -9295,14 +11939,23 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -9315,11 +11968,19 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -9332,14 +11993,22 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -9355,17 +12024,25 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -9389,18 +12066,27 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserTypeToJson(
-            CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$DocumentType
     _$CreateTicket$Mutation$TicketType$ProjectType$DocumentTypeFromJson(
@@ -9420,18 +12106,27 @@ CreateTicket$Mutation$TicketType$ProjectType$DocumentType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$CreateTicket$Mutation$TicketType$ProjectType$DocumentTypeToJson(
-        CreateTicket$Mutation$TicketType$ProjectType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$CreateTicket$Mutation$TicketType$ProjectType$DocumentTypeToJson(
+        CreateTicket$Mutation$TicketType$ProjectType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsType
     _$CreateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -9503,27 +12198,38 @@ CreateTicket$Mutation$TicketType$ProjectType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateTicket$Mutation$TicketType$ProjectTypeToJson(
-        CreateTicket$Mutation$TicketType$ProjectType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-      'status': _$ProjectStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'externalId': instance.externalId,
-      'picture': instance.picture?.toJson(),
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'resources': instance.resources?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateTicket$Mutation$TicketType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -9539,17 +12245,25 @@ CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -9566,12 +12280,20 @@ CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -9593,14 +12315,22 @@ CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -9616,14 +12346,23 @@ CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -9636,11 +12375,19 @@ CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$DocumentContentTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
     _$CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -9653,14 +12400,22 @@ CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
     _$CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -9676,17 +12431,25 @@ CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType$UserType
     _$CreateTicket$Mutation$TicketType$DocumentType$UserTypeFromJson(
@@ -9710,17 +12473,26 @@ CreateTicket$Mutation$TicketType$DocumentType$UserType
 
 Map<String, dynamic>
     _$CreateTicket$Mutation$TicketType$DocumentType$UserTypeToJson(
-            CreateTicket$Mutation$TicketType$DocumentType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateTicket$Mutation$TicketType$DocumentType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateTicket$Mutation$TicketType$DocumentType
     _$CreateTicket$Mutation$TicketType$DocumentTypeFromJson(
@@ -9741,16 +12513,25 @@ CreateTicket$Mutation$TicketType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateTicket$Mutation$TicketType$DocumentTypeToJson(
-        CreateTicket$Mutation$TicketType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateTicket$Mutation$TicketType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation$TicketType _$CreateTicket$Mutation$TicketTypeFromJson(
         Map<String, dynamic> json) =>
@@ -9794,25 +12575,36 @@ CreateTicket$Mutation$TicketType _$CreateTicket$Mutation$TicketTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateTicket$Mutation$TicketTypeToJson(
-        CreateTicket$Mutation$TicketType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'customer': instance.customer?.toJson(),
-      'project': instance.project?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateTicket$Mutation$TicketType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTicket$Mutation _$CreateTicket$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -9854,23 +12646,31 @@ TicketInput _$TicketInputFromJson(Map<String, dynamic> json) => TicketInput(
       company: json['company'] as String,
     );
 
-Map<String, dynamic> _$TicketInputToJson(TicketInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'attachments': instance.attachments,
-      'color': instance.color,
-      'assignedTo': instance.assignedTo,
-      'customer': instance.customer,
-      'project': instance.project,
-      'target': instance.target.toJson(),
-      'company': instance.company,
-    };
+Map<String, dynamic> _$TicketInputToJson(TicketInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('attachments', instance.attachments);
+  writeNotNull('color', instance.color);
+  writeNotNull('assignedTo', instance.assignedTo);
+  writeNotNull('customer', instance.customer);
+  writeNotNull('project', instance.project);
+  val['target'] = instance.target.toJson();
+  val['company'] = instance.company;
+  return val;
+}
 
 MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
       videos:
@@ -9883,12 +12683,20 @@ MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
           .toList(),
     );
 
-Map<String, dynamic> _$MediaInputToJson(MediaInput instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$MediaInputToJson(MediaInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -9900,16 +12708,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$MediaType$PictureType
     _$UpdateTicket$Mutation$TicketType$MediaType$PictureTypeFromJson(
@@ -9925,16 +12741,24 @@ UpdateTicket$Mutation$TicketType$MediaType$PictureType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$MediaType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$MediaType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$MediaType
     _$UpdateTicket$Mutation$TicketType$MediaTypeFromJson(
@@ -9955,12 +12779,20 @@ UpdateTicket$Mutation$TicketType$MediaType
               .toList();
 
 Map<String, dynamic> _$UpdateTicket$Mutation$TicketType$MediaTypeToJson(
-        UpdateTicket$Mutation$TicketType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    UpdateTicket$Mutation$TicketType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$UserType$PhoneType
     _$UpdateTicket$Mutation$TicketType$UserType$PhoneTypeFromJson(
@@ -9973,13 +12805,21 @@ UpdateTicket$Mutation$TicketType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$UserType$PhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateTicket$Mutation$TicketType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$UserType$PictureType
     _$UpdateTicket$Mutation$TicketType$UserType$PictureTypeFromJson(
@@ -9995,16 +12835,24 @@ UpdateTicket$Mutation$TicketType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$UserType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$UserType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$UserType
     _$UpdateTicket$Mutation$TicketType$UserTypeFromJson(
@@ -10027,17 +12875,26 @@ UpdateTicket$Mutation$TicketType$UserType
                   json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateTicket$Mutation$TicketType$UserTypeToJson(
-        UpdateTicket$Mutation$TicketType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    UpdateTicket$Mutation$TicketType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureTypeFromJson(
@@ -10053,17 +12910,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$MediaType
     _$UpdateTicket$Mutation$TicketType$CompanyType$MediaTypeFromJson(
@@ -10085,12 +12950,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$MediaTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$MediaType instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -10103,12 +12976,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10124,17 +13005,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$Picture
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -10158,19 +13047,28 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -10186,17 +13084,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -10220,19 +13126,28 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -10248,17 +13163,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -10291,23 +13214,32 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -10318,12 +13250,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -10337,12 +13277,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -10371,18 +13319,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
     _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -10394,13 +13349,21 @@ UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -10413,12 +13376,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10434,17 +13405,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -10468,19 +13447,28 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -10496,17 +13484,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -10530,19 +13526,28 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -10558,17 +13563,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -10601,23 +13614,32 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -10628,12 +13650,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -10647,12 +13677,20 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -10681,18 +13719,26 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -10708,13 +13754,22 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTy
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -10730,17 +13785,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -10756,17 +13819,25 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -10811,19 +13882,27 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -10841,13 +13920,21 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLog
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -10866,17 +13953,26 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -10897,18 +13993,26 @@ UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -10921,14 +14025,22 @@ UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
     _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -10943,13 +14055,21 @@ UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$CompanyType
     _$UpdateTicket$Mutation$TicketType$CompanyTypeFromJson(
@@ -10987,22 +14107,31 @@ UpdateTicket$Mutation$TicketType$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateTicket$Mutation$TicketType$CompanyTypeToJson(
-        UpdateTicket$Mutation$TicketType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateTicket$Mutation$TicketType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
     _$UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -11018,17 +14147,25 @@ UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$MediaType
     _$UpdateTicket$Mutation$TicketType$ProjectType$MediaTypeFromJson(
@@ -11050,12 +14187,20 @@ UpdateTicket$Mutation$TicketType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$MediaTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$MediaType instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$PictureType
     _$UpdateTicket$Mutation$TicketType$ProjectType$PictureTypeFromJson(
@@ -11069,18 +14214,26 @@ UpdateTicket$Mutation$TicketType$ProjectType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$UpdateTicket$Mutation$TicketType$ProjectType$PictureTypeToJson(
-        UpdateTicket$Mutation$TicketType$ProjectType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$UpdateTicket$Mutation$TicketType$ProjectType$PictureTypeToJson(
+        UpdateTicket$Mutation$TicketType$ProjectType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -11093,14 +14246,22 @@ UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -11116,17 +14277,25 @@ UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureT
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -11150,18 +14319,27 @@ UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -11176,12 +14354,20 @@ UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -11197,17 +14383,25 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -11224,12 +14418,20 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -11251,14 +14453,22 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -11274,14 +14484,23 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$Co
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -11294,11 +14513,19 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -11311,14 +14538,22 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -11334,17 +14569,25 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -11368,18 +14611,27 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserTypeToJson(
-            UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$DocumentType
     _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentTypeFromJson(
@@ -11399,18 +14651,27 @@ UpdateTicket$Mutation$TicketType$ProjectType$DocumentType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentTypeToJson(
-        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$UpdateTicket$Mutation$TicketType$ProjectType$DocumentTypeToJson(
+        UpdateTicket$Mutation$TicketType$ProjectType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsType
     _$UpdateTicket$Mutation$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -11482,27 +14743,38 @@ UpdateTicket$Mutation$TicketType$ProjectType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateTicket$Mutation$TicketType$ProjectTypeToJson(
-        UpdateTicket$Mutation$TicketType$ProjectType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-      'status': _$ProjectStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'externalId': instance.externalId,
-      'picture': instance.picture?.toJson(),
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'resources': instance.resources?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateTicket$Mutation$TicketType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -11518,17 +14790,25 @@ UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -11545,12 +14825,20 @@ UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -11572,14 +14860,22 @@ UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -11595,14 +14891,23 @@ UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTyp
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -11615,11 +14920,19 @@ UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
     _$UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -11632,14 +14945,22 @@ UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
     _$UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -11655,17 +14976,25 @@ UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType$UserType
     _$UpdateTicket$Mutation$TicketType$DocumentType$UserTypeFromJson(
@@ -11689,17 +15018,26 @@ UpdateTicket$Mutation$TicketType$DocumentType$UserType
 
 Map<String, dynamic>
     _$UpdateTicket$Mutation$TicketType$DocumentType$UserTypeToJson(
-            UpdateTicket$Mutation$TicketType$DocumentType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        UpdateTicket$Mutation$TicketType$DocumentType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType$DocumentType
     _$UpdateTicket$Mutation$TicketType$DocumentTypeFromJson(
@@ -11720,16 +15058,25 @@ UpdateTicket$Mutation$TicketType$DocumentType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateTicket$Mutation$TicketType$DocumentTypeToJson(
-        UpdateTicket$Mutation$TicketType$DocumentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'content': instance.content?.toJson(),
-      'size': instance.size,
-      'owner': instance.owner?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateTicket$Mutation$TicketType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation$TicketType _$UpdateTicket$Mutation$TicketTypeFromJson(
         Map<String, dynamic> json) =>
@@ -11773,25 +15120,36 @@ UpdateTicket$Mutation$TicketType _$UpdateTicket$Mutation$TicketTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateTicket$Mutation$TicketTypeToJson(
-        UpdateTicket$Mutation$TicketType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'customer': instance.customer?.toJson(),
-      'project': instance.project?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateTicket$Mutation$TicketType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTicket$Mutation _$UpdateTicket$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -11836,23 +15194,31 @@ TicketUpdateInput _$TicketUpdateInputFromJson(Map<String, dynamic> json) =>
       id: json['id'] as String,
     );
 
-Map<String, dynamic> _$TicketUpdateInputToJson(TicketUpdateInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'attachments': instance.attachments,
-      'color': instance.color,
-      'assignedTo': instance.assignedTo,
-      'customer': instance.customer,
-      'project': instance.project,
-      'target': instance.target?.toJson(),
-      'id': instance.id,
-    };
+Map<String, dynamic> _$TicketUpdateInputToJson(TicketUpdateInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('attachments', instance.attachments);
+  writeNotNull('color', instance.color);
+  writeNotNull('assignedTo', instance.assignedTo);
+  writeNotNull('customer', instance.customer);
+  writeNotNull('project', instance.project);
+  writeNotNull('target', instance.target?.toJson());
+  val['id'] = instance.id;
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureTypeFromJson(
@@ -11868,17 +15234,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$MediaType
     _$BulkUpdateTicketMedia$Mutation$TicketType$MediaTypeFromJson(
@@ -11900,12 +15274,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$MediaTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$MediaType instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneTypeFromJson(
@@ -11918,14 +15300,21 @@ BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureTypeFromJson(
@@ -11941,17 +15330,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$UserType
     _$BulkUpdateTicketMedia$Mutation$TicketType$UserTypeFromJson(
@@ -11974,17 +15371,26 @@ BulkUpdateTicketMedia$Mutation$TicketType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$BulkUpdateTicketMedia$Mutation$TicketType$UserTypeToJson(
-        BulkUpdateTicketMedia$Mutation$TicketType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    BulkUpdateTicketMedia$Mutation$TicketType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureTypeFromJson(
@@ -12000,17 +15406,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaTypeFromJson(
@@ -12032,13 +15446,21 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -12051,12 +15473,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -12072,17 +15502,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryTyp
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -12106,19 +15544,28 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryTyp
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -12134,17 +15581,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -12168,19 +15623,28 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -12196,17 +15660,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -12239,23 +15711,32 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -12266,12 +15747,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddres
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -12285,12 +15774,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddres
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressTypeFromJson(
@@ -12319,18 +15816,26 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalTypeFromJson(
@@ -12342,13 +15847,21 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -12361,12 +15874,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -12382,17 +15903,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -12416,19 +15945,28 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -12444,17 +15982,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -12478,19 +16024,28 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -12506,17 +16061,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -12549,23 +16112,32 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -12576,12 +16148,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -12595,12 +16175,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -12629,18 +16217,26 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -12656,13 +16252,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetail
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -12678,17 +16283,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$B
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -12704,17 +16317,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$B
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -12759,19 +16380,27 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$B
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -12789,13 +16418,21 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$B
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -12814,17 +16451,26 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsTypeFromJson(
@@ -12845,18 +16491,27 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -12869,14 +16524,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -12891,13 +16554,21 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$CompanyType
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyTypeFromJson(
@@ -12936,22 +16607,31 @@ BulkUpdateTicketMedia$Mutation$TicketType$CompanyType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$CompanyType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureTypeFromJson(
@@ -12967,17 +16647,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaTypeFromJson(
@@ -12999,13 +16687,21 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureTypeFromJson(
@@ -13021,17 +16717,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -13044,14 +16748,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -13067,17 +16779,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -13101,18 +16821,27 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberTypeFromJson(
@@ -13127,12 +16856,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -13148,17 +16885,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentConte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -13175,12 +16920,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentConte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -13202,14 +16955,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentConte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -13225,14 +16986,23 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentConte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -13245,11 +17015,19 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentConte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -13262,14 +17040,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$Phon
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -13285,17 +17071,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$Pict
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserTypeFromJson(
@@ -13319,18 +17113,27 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentTypeFromJson(
@@ -13352,17 +17155,26 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$BoardCardsStatsType
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -13435,27 +17247,38 @@ BulkUpdateTicketMedia$Mutation$TicketType$ProjectType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$ProjectTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$ProjectType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-          'status': _$ProjectStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'resources': instance.resources?.map((e) => e.toJson()).toList(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -13471,17 +17294,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$Conte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -13498,12 +17329,20 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$Conte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -13525,14 +17364,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$Conte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -13548,14 +17395,23 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$Conte
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentTypeFromJson(
@@ -13568,11 +17424,19 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneTypeFromJson(
@@ -13585,14 +17449,22 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureTypeFromJson(
@@ -13608,17 +17480,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserTypeFromJson(
@@ -13642,18 +17522,27 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType$DocumentType
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentTypeFromJson(
@@ -13675,16 +17564,25 @@ BulkUpdateTicketMedia$Mutation$TicketType$DocumentType
 
 Map<String, dynamic>
     _$BulkUpdateTicketMedia$Mutation$TicketType$DocumentTypeToJson(
-            BulkUpdateTicketMedia$Mutation$TicketType$DocumentType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateTicketMedia$Mutation$TicketType$DocumentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation$TicketType
     _$BulkUpdateTicketMedia$Mutation$TicketTypeFromJson(
@@ -13732,25 +17630,36 @@ BulkUpdateTicketMedia$Mutation$TicketType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$BulkUpdateTicketMedia$Mutation$TicketTypeToJson(
-        BulkUpdateTicketMedia$Mutation$TicketType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'identifier': instance.identifier,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$TicketPriorityEnumEnumMap[instance.priority],
-      'status': _$TicketStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'customer': instance.customer?.toJson(),
-      'project': instance.project?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    BulkUpdateTicketMedia$Mutation$TicketType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'identifier': instance.identifier,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$TicketPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$TicketStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateTicketMedia$Mutation _$BulkUpdateTicketMedia$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -13790,12 +17699,20 @@ SingleMediaInput _$SingleMediaInputFromJson(Map<String, dynamic> json) =>
           : PictureInput.fromJson(json['deg360'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$SingleMediaInputToJson(SingleMediaInput instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'pictures': instance.pictures?.toJson(),
-      'deg360': instance.deg360?.toJson(),
-    };
+Map<String, dynamic> _$SingleMediaInputToJson(SingleMediaInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.toJson());
+  writeNotNull('deg360', instance.deg360?.toJson());
+  return val;
+}
 
 DeleteTicket$Mutation$DeleteResponseDtoType
     _$DeleteTicket$Mutation$DeleteResponseDtoTypeFromJson(
@@ -13861,13 +17778,22 @@ GetTicketsByTargetWithFilterArguments
         );
 
 Map<String, dynamic> _$GetTicketsByTargetWithFilterArgumentsToJson(
-        GetTicketsByTargetWithFilterArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'searchString': instance.searchString,
-      'filter': instance.filter.toJson(),
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetTicketsByTargetWithFilterArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('searchString', instance.searchString);
+  val['filter'] = instance.filter.toJson();
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetTicketsByExcelArguments _$GetTicketsByExcelArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -13881,13 +17807,22 @@ GetTicketsByExcelArguments _$GetTicketsByExcelArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetTicketsByExcelArgumentsToJson(
-        GetTicketsByExcelArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'filter': instance.filter?.toJson(),
-      'searchString': instance.searchString,
-      'path': instance.path,
-    };
+    GetTicketsByExcelArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('filter', instance.filter?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  writeNotNull('path', instance.path);
+  return val;
+}
 
 SendTicketsBymailArguments _$SendTicketsBymailArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -13903,14 +17838,23 @@ SendTicketsBymailArguments _$SendTicketsBymailArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SendTicketsBymailArgumentsToJson(
-        SendTicketsBymailArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'filter': instance.filter?.toJson(),
-      'searchString': instance.searchString,
-      'emails': instance.emails,
-      'subject': instance.subject,
-    };
+    SendTicketsBymailArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('filter', instance.filter?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  writeNotNull('emails', instance.emails);
+  val['subject'] = instance.subject;
+  return val;
+}
 
 GetTicketsStatsWithFilterArguments _$GetTicketsStatsWithFilterArgumentsFromJson(
         Map<String, dynamic> json) =>

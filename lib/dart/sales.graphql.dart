@@ -202,25 +202,25 @@ class GetSalesRevenueChartStats$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
+class GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType
     extends JsonSerializable with EquatableMixin {
-  GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType();
+  GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType();
 
-  factory GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType.fromJson(
+  factory GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType.fromJson(
           Map<String, dynamic> json) =>
-      _$GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeFromJson(
+      _$GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngTypeFromJson(
           json);
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   @override
   List<Object?> get props => [lat, lng];
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeToJson(
+      _$GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngTypeToJson(
           this);
 }
 
@@ -234,7 +234,7 @@ class GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersBy
       _$GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersTypeFromJson(
           json);
 
-  GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType?
+  GetSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType?
       coordination;
 
   double? radius;

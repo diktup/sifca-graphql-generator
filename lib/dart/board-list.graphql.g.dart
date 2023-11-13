@@ -17,14 +17,22 @@ GetBoardLists$Query$BoardListType$BoardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetBoardLists$Query$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            GetBoardLists$Query$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetBoardLists$Query$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetBoardLists$Query$BoardListType$BoardType$UserType$PictureType
     _$GetBoardLists$Query$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -40,17 +48,25 @@ GetBoardLists$Query$BoardListType$BoardType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetBoardLists$Query$BoardListType$BoardType$UserType$PictureTypeToJson(
-            GetBoardLists$Query$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBoardLists$Query$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBoardLists$Query$BoardListType$BoardType$UserType
     _$GetBoardLists$Query$BoardListType$BoardType$UserTypeFromJson(
@@ -74,17 +90,26 @@ GetBoardLists$Query$BoardListType$BoardType$UserType
 
 Map<String, dynamic>
     _$GetBoardLists$Query$BoardListType$BoardType$UserTypeToJson(
-            GetBoardLists$Query$BoardListType$BoardType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetBoardLists$Query$BoardListType$BoardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -113,17 +138,26 @@ GetBoardLists$Query$BoardListType$BoardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBoardLists$Query$BoardListType$BoardTypeToJson(
-        GetBoardLists$Query$BoardListType$BoardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBoardLists$Query$BoardListType$BoardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$BoardCategoryEnumEnumMap = {
   BoardCategoryEnum.projects: 'PROJECTS',
@@ -148,17 +182,27 @@ GetBoardLists$Query$BoardListType _$GetBoardLists$Query$BoardListTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBoardLists$Query$BoardListTypeToJson(
-        GetBoardLists$Query$BoardListType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'theme': instance.theme,
-      'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-      'board': instance.board.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBoardLists$Query$BoardListType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$MaintenanceBoardListEnumEnumMap = {
   MaintenanceBoardListEnum.newRequest: 'NEW_REQUEST',
@@ -192,14 +236,22 @@ GetBoardList$Query$BoardListType$BoardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetBoardList$Query$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            GetBoardList$Query$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetBoardList$Query$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetBoardList$Query$BoardListType$BoardType$UserType$PictureType
     _$GetBoardList$Query$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -215,17 +267,25 @@ GetBoardList$Query$BoardListType$BoardType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetBoardList$Query$BoardListType$BoardType$UserType$PictureTypeToJson(
-            GetBoardList$Query$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBoardList$Query$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBoardList$Query$BoardListType$BoardType$UserType
     _$GetBoardList$Query$BoardListType$BoardType$UserTypeFromJson(
@@ -249,17 +309,26 @@ GetBoardList$Query$BoardListType$BoardType$UserType
 
 Map<String, dynamic>
     _$GetBoardList$Query$BoardListType$BoardType$UserTypeToJson(
-            GetBoardList$Query$BoardListType$BoardType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetBoardList$Query$BoardListType$BoardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetBoardList$Query$BoardListType$BoardType
     _$GetBoardList$Query$BoardListType$BoardTypeFromJson(
@@ -281,17 +350,26 @@ GetBoardList$Query$BoardListType$BoardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBoardList$Query$BoardListType$BoardTypeToJson(
-        GetBoardList$Query$BoardListType$BoardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBoardList$Query$BoardListType$BoardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetBoardList$Query$BoardListType _$GetBoardList$Query$BoardListTypeFromJson(
         Map<String, dynamic> json) =>
@@ -309,17 +387,27 @@ GetBoardList$Query$BoardListType _$GetBoardList$Query$BoardListTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBoardList$Query$BoardListTypeToJson(
-        GetBoardList$Query$BoardListType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'theme': instance.theme,
-      'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-      'board': instance.board.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBoardList$Query$BoardListType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetBoardList$Query _$GetBoardList$QueryFromJson(Map<String, dynamic> json) =>
     GetBoardList$Query()
@@ -342,14 +430,22 @@ GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureType
     _$GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -365,17 +461,25 @@ GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureTypeToJson(
-            GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBoardListByBoard$Query$BoardListType$BoardType$UserType
     _$GetBoardListByBoard$Query$BoardListType$BoardType$UserTypeFromJson(
@@ -397,19 +501,28 @@ GetBoardListByBoard$Query$BoardListType$BoardType$UserType
               : GetBoardListByBoard$Query$BoardListType$BoardType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetBoardListByBoard$Query$BoardListType$BoardType$UserTypeToJson(
-        GetBoardListByBoard$Query$BoardListType$BoardType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetBoardListByBoard$Query$BoardListType$BoardType$UserTypeToJson(
+        GetBoardListByBoard$Query$BoardListType$BoardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetBoardListByBoard$Query$BoardListType$BoardType
     _$GetBoardListByBoard$Query$BoardListType$BoardTypeFromJson(
@@ -431,17 +544,26 @@ GetBoardListByBoard$Query$BoardListType$BoardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBoardListByBoard$Query$BoardListType$BoardTypeToJson(
-        GetBoardListByBoard$Query$BoardListType$BoardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBoardListByBoard$Query$BoardListType$BoardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetBoardListByBoard$Query$BoardListType
     _$GetBoardListByBoard$Query$BoardListTypeFromJson(
@@ -460,17 +582,27 @@ GetBoardListByBoard$Query$BoardListType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBoardListByBoard$Query$BoardListTypeToJson(
-        GetBoardListByBoard$Query$BoardListType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'theme': instance.theme,
-      'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-      'board': instance.board.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBoardListByBoard$Query$BoardListType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetBoardListByBoard$Query _$GetBoardListByBoard$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -498,14 +630,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureTypeFromJson(
@@ -521,17 +661,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserTypeFromJson(
@@ -555,17 +703,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$UserType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureTypeFromJson(
@@ -581,17 +738,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaTypeFromJson(
@@ -613,13 +778,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTypeFromJson(
@@ -635,17 +808,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -658,14 +839,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -681,17 +870,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -715,18 +912,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTypeFromJson(
@@ -741,12 +947,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 const _$ProjectRoleEnumEnumMap = {
   ProjectRoleEnum.lead: 'LEAD',
@@ -768,17 +982,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -795,12 +1017,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -822,14 +1052,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -845,14 +1083,23 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -865,11 +1112,19 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentCo
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -882,14 +1137,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$P
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -905,17 +1168,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$P
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserTypeFromJson(
@@ -939,18 +1210,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentTypeFromJson(
@@ -972,17 +1252,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -1053,29 +1342,40 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectTypeToJson(
-        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-      'tags': instance.tags,
-      'deadline': instance.deadline?.toIso8601String(),
-      'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-      'status': _$ProjectStatusEnumEnumMap[instance.status],
-      'color': instance.color,
-      'externalId': instance.externalId,
-      'picture': instance.picture?.toJson(),
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'resources': instance.resources?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectTypeToJson(
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$ProjectPrivacyEnumEnumMap = {
   ProjectPrivacyEnum.private: 'PRIVATE',
@@ -1129,17 +1429,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksTypeFromJson(
@@ -1150,12 +1458,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksType
-                instance) =>
-        <String, dynamic>{
-          'task': instance.task,
-          'done': instance.done,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('task', instance.task);
+  writeNotNull('done', instance.done);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelTypeFromJson(
@@ -1173,17 +1489,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'icon': instance.icon,
-          'color': instance.color,
-          'category': _$LabelTypeEnumEnumMap[instance.category],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$LabelTypeEnumEnumMap = {
   LabelTypeEnum.notes: 'NOTES',
@@ -1202,14 +1527,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureTypeFromJson(
@@ -1225,17 +1558,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeFromJson(
@@ -1259,18 +1600,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -1286,17 +1636,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaTypeFromJson(
@@ -1318,13 +1676,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoTypeFromJson(
@@ -1337,12 +1703,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 const _$DiscountTypeEnumMap = {
   DiscountType.amount: 'AMOUNT',
@@ -1359,12 +1733,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListTypeFromJson(
@@ -1378,12 +1761,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -1397,13 +1788,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 const _$TaxSignEnumEnumMap = {
   TaxSignEnum.positive: 'POSITIVE',
@@ -1420,12 +1820,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -1452,19 +1861,29 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$TaxUseEnumEnumMap = {
   TaxUseEnum.sale: 'SALE',
@@ -1484,12 +1903,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -1503,13 +1930,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditType
+            instance) {
+  final val = <String, dynamic>{
+    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+    'periodValue': instance.periodValue,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 const _$RecurrenceTypeEnumMap = {
   RecurrenceType.hourly: 'HOURLY',
@@ -1531,14 +1967,23 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeTypeFromJson(
@@ -1548,11 +1993,19 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeType
-                instance) =>
-        <String, dynamic>{
-          'include': instance.include,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('include', instance.include);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureTypeFromJson(
@@ -1568,17 +2021,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaTypeFromJson(
@@ -1600,13 +2061,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyTypeFromJson(
@@ -1622,14 +2091,23 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeFromJson(
@@ -1642,14 +2120,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -1665,17 +2151,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -1699,18 +2193,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -1731,16 +2234,24 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -1750,11 +2261,19 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -1777,19 +2296,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.product: 'PRODUCT',
@@ -1837,12 +2365,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -1858,17 +2394,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -1890,13 +2434,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -1909,12 +2461,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -1925,12 +2485,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductTypeFromJson(
@@ -1972,27 +2541,35 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$ProductStatusEnumEnumMap = {
   ProductStatusEnum.active: 'ACTIVE',
@@ -2016,12 +2593,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsType
-                instance) =>
-        <String, dynamic>{
-          'key': instance.key,
-          'value': instance.value,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('key', instance.key);
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -2037,17 +2622,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaTypeFromJson(
@@ -2069,13 +2662,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureTypeFromJson(
@@ -2091,17 +2692,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -2117,17 +2726,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -2147,18 +2764,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'hasChildren': instance.hasChildren,
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+    'rank': instance.rank,
+    'layer': instance.layer,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+    'hasChildren': instance.hasChildren,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -2172,13 +2798,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -2189,12 +2824,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -2221,19 +2865,29 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -2247,12 +2901,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -2268,17 +2930,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
@@ -2294,17 +2964,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeFromJson(
@@ -2328,19 +3006,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'symbol': instance.symbol,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeFromJson(
@@ -2354,12 +3041,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
-                instance) =>
-        <String, dynamic>{
-          'currency': instance.currency?.toJson(),
-          'default': instance.kw$default,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeFromJson(
@@ -2375,17 +3070,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
@@ -2398,12 +3101,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2419,17 +3130,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeFromJson(
@@ -2453,19 +3172,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2481,17 +3209,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2515,19 +3251,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2543,17 +3288,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeFromJson(
@@ -2586,23 +3339,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -2620,12 +3382,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2639,12 +3409,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeFromJson(
@@ -2673,18 +3451,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeFromJson(
@@ -2700,17 +3486,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeFromJson(
@@ -2732,13 +3526,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -2751,12 +3553,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2772,17 +3582,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -2806,19 +3624,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2834,17 +3661,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2868,19 +3703,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2896,17 +3740,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -2939,23 +3791,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2966,12 +3827,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2985,12 +3854,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeFromJson(
@@ -3019,18 +3896,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeFromJson(
@@ -3042,13 +3927,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -3061,12 +3954,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -3082,17 +3983,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -3116,19 +4025,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -3144,17 +4062,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -3178,19 +4104,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -3206,17 +4141,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -3249,23 +4192,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -3276,12 +4228,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -3295,12 +4255,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -3329,18 +4297,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -3356,13 +4332,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 const _$BankDetailsHolderTypeEnumEnumMap = {
   BankDetailsHolderTypeEnum.private: 'PRIVATE',
@@ -3384,17 +4369,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -3410,17 +4403,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -3465,19 +4466,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -3495,13 +4504,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -3520,17 +4537,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeFromJson(
@@ -3551,18 +4577,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -3575,14 +4610,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -3597,13 +4640,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeFromJson(
@@ -3642,23 +4693,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerTypeFromJson(
@@ -3694,22 +4754,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'name': instance.name,
-          'description': instance.description,
-          'website': instance.website,
-          'contactEmails': instance.contactEmails,
-          'currencies': instance.currencies?.map((e) => e.toJson()).toList(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'picture': instance.picture?.toJson(),
-          'address': instance.address?.toJson(),
-          'company': instance.company?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('website', instance.website);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandTypeFromJson(
@@ -3732,18 +4802,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'website': instance.website,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'manufacturer': instance.manufacturer?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('name', instance.name);
+  writeNotNull('website', instance.website);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('manufacturer', instance.manufacturer?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -3753,11 +4831,19 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -3780,19 +4866,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -3891,36 +4986,43 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'ean': instance.ean,
-          'tax': instance.tax,
-          'name': instance.name,
-          'tags': instance.tags,
-          'class': instance.kw$class
-              ?.map((e) => _$ProductClassEnumEnumMap[e]!)
-              .toList(),
-          'price': instance.price,
-          'weight': instance.weight,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'factoryPrice': instance.factoryPrice,
-          'specs': instance.specs?.map((e) => e.toJson()).toList(),
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'wholesalerPrice': instance.wholesalerPrice,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'category': instance.category?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'brand': instance.brand?.toJson(),
-          'productAttributes':
-              instance.productAttributes?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('ean', instance.ean);
+  writeNotNull('tax', instance.tax);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('class',
+      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
+  writeNotNull('price', instance.price);
+  writeNotNull('weight', instance.weight);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('factoryPrice', instance.factoryPrice);
+  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull('brand', instance.brand?.toJson());
+  writeNotNull('productAttributes',
+      instance.productAttributes?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$ProductClassEnumEnumMap = {
   ProductClassEnum.topProducts: 'TOP_PRODUCTS',
@@ -4002,31 +5104,43 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'media': instance.media?.toJson(),
-          'discount': instance.discount?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'pixel': instance.pixel?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'internalProduct': instance.internalProduct?.toJson(),
-          'product': instance.product?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull('pixel', instance.pixel?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('internalProduct', instance.internalProduct?.toJson());
+  writeNotNull('product', instance.product?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureTypeFromJson(
@@ -4042,17 +5156,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaTypeFromJson(
@@ -4074,13 +5196,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureTypeFromJson(
@@ -4096,17 +5226,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -4119,14 +5257,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -4142,17 +5288,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -4176,18 +5330,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberTypeFromJson(
@@ -4202,12 +5365,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -4223,17 +5394,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -4250,12 +5429,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -4277,14 +5464,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -4300,14 +5495,23 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -4320,11 +5524,19 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -4337,14 +5549,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -4360,17 +5580,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserTypeFromJson(
@@ -4394,18 +5622,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentTypeFromJson(
@@ -4427,17 +5664,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$BoardCardsStatsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -4510,28 +5756,39 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-          'status': _$ProjectStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'resources': instance.resources?.map((e) => e.toJson()).toList(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureTypeFromJson(
@@ -4547,17 +5804,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaTypeFromJson(
@@ -4579,13 +5844,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -4598,12 +5871,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4619,17 +5900,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -4653,19 +5942,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4681,17 +5979,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4715,19 +6021,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4743,17 +6058,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -4786,23 +6109,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4813,12 +6145,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4832,12 +6172,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressTypeFromJson(
@@ -4866,18 +6214,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalTypeFromJson(
@@ -4889,13 +6245,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -4908,12 +6272,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4929,17 +6301,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -4963,19 +6343,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4991,17 +6380,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -5025,19 +6422,28 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -5053,17 +6459,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -5095,22 +6509,31 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -5121,12 +6544,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -5140,12 +6571,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -5174,18 +6613,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -5201,13 +6648,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -5223,17 +6679,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -5249,17 +6713,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -5304,19 +6776,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -5334,13 +6814,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -5359,17 +6847,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsTypeFromJson(
@@ -5390,18 +6887,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -5414,14 +6920,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -5436,13 +6950,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyTypeFromJson(
@@ -5481,23 +7003,32 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -5513,17 +7044,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -5540,12 +7079,20 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -5567,14 +7114,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -5590,14 +7145,23 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentTypeFromJson(
@@ -5610,11 +7174,19 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneTypeFromJson(
@@ -5627,14 +7199,22 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureTypeFromJson(
@@ -5650,17 +7230,25 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserTypeFromJson(
@@ -5684,18 +7272,27 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentTypeFromJson(
@@ -5717,17 +7314,26 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureType
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureTypeFromJson(
@@ -5743,13 +7349,21 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureType
-                instance) =>
-        <String, dynamic>{
-          'title': instance.title,
-          'task': _$BoardCardProcedureEnumEnumMap[instance.task],
-          'time': instance.time?.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('task', _$BoardCardProcedureEnumEnumMap[instance.task]);
+  writeNotNull('time', instance.time?.toIso8601String());
+  return val;
+}
 
 const _$BoardCardProcedureEnumEnumMap = {
   BoardCardProcedureEnum.meeting: 'MEETING',
@@ -5845,31 +7459,43 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListT
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'title': instance.title,
-          'description': instance.description,
-          'dueDate': instance.dueDate?.toIso8601String(),
-          'archived': instance.archived,
-          'priority': _$BoardCardPriorityEnumEnumMap[instance.priority],
-          'tags': instance.tags,
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'tasks': instance.tasks?.map((e) => e.toJson()).toList(),
-          'labels': instance.labels?.map((e) => e.toJson()).toList(),
-          'rank': instance.rank,
-          'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-          'barcode': instance.barcode?.toJson(),
-          'project': instance.project?.toJson(),
-          'budget': instance.budget,
-          'customer': instance.customer?.toJson(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'procedure': instance.procedure?.map((e) => e.toJson()).toList(),
-          'tasksStats': instance.tasksStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
+  writeNotNull('archived', instance.archived);
+  writeNotNull('priority', _$BoardCardPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('tasks', instance.tasks?.map((e) => e.toJson()).toList());
+  writeNotNull('labels', instance.labels?.map((e) => e.toJson()).toList());
+  writeNotNull('rank', instance.rank);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull('budget', instance.budget);
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'procedure', instance.procedure?.map((e) => e.toJson()).toList());
+  writeNotNull('tasksStats', instance.tasksStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$BoardCardPriorityEnumEnumMap = {
   BoardCardPriorityEnum.low: 'LOW',
@@ -5900,18 +7526,29 @@ GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
 
 Map<String, dynamic>
     _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsTypeToJson(
-            GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'theme': instance.theme,
-          'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'boardCards': instance.boardCards?.map((e) => e.toJson()).toList(),
-        };
+        GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull(
+      'boardCards', instance.boardCards?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query$BoardWithListsAndCardsType
     _$GetCRMBoard$Query$BoardWithListsAndCardsTypeFromJson(
@@ -5946,20 +7583,30 @@ GetCRMBoard$Query$BoardWithListsAndCardsType
               .toList();
 
 Map<String, dynamic> _$GetCRMBoard$Query$BoardWithListsAndCardsTypeToJson(
-        GetCRMBoard$Query$BoardWithListsAndCardsType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'projects': instance.projects?.map((e) => e.toJson()).toList(),
-      'boardCardsStats': instance.boardCardsStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'boardLists': instance.boardLists?.map((e) => e.toJson()).toList(),
-    };
+    GetCRMBoard$Query$BoardWithListsAndCardsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull('projects', instance.projects?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull(
+      'boardLists', instance.boardLists?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCRMBoard$Query _$GetCRMBoard$QueryFromJson(Map<String, dynamic> json) =>
     GetCRMBoard$Query()
@@ -5979,13 +7626,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneTypeFromJson(
@@ -5998,14 +7653,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureTypeFromJson(
@@ -6021,17 +7684,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserTypeFromJson(
@@ -6055,18 +7726,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureTypeFromJson(
@@ -6082,17 +7762,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$Pictu
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaTypeFromJson(
@@ -6114,13 +7802,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTypeFromJson(
@@ -6136,17 +7832,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -6159,14 +7863,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTy
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -6182,17 +7894,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTy
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -6216,18 +7936,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTy
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTypeFromJson(
@@ -6242,12 +7971,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTy
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -6263,17 +8000,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Do
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -6290,12 +8035,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Do
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -6317,14 +8070,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Do
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -6340,14 +8101,23 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Do
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -6360,11 +8130,19 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Do
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -6377,14 +8155,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Us
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -6400,17 +8186,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Us
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserTypeFromJson(
@@ -6434,18 +8228,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$Us
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentTypeFromJson(
@@ -6467,17 +8270,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -6550,28 +8362,39 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-          'status': _$ProjectStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'resources': instance.resources?.map((e) => e.toJson()).toList(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsTypeFromJson(
@@ -6603,17 +8426,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksTypeFromJson(
@@ -6624,12 +8455,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksType
-                instance) =>
-        <String, dynamic>{
-          'task': instance.task,
-          'done': instance.done,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardTasksType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('task', instance.task);
+  writeNotNull('done', instance.done);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelTypeFromJson(
@@ -6647,17 +8486,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'icon': instance.icon,
-          'color': instance.color,
-          'category': _$LabelTypeEnumEnumMap[instance.category],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneTypeFromJson(
@@ -6670,14 +8518,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureTypeFromJson(
@@ -6693,17 +8549,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeFromJson(
@@ -6727,18 +8591,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -6754,17 +8627,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaTypeFromJson(
@@ -6786,13 +8667,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoTypeFromJson(
@@ -6805,12 +8694,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -6821,12 +8718,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListTypeFromJson(
@@ -6840,12 +8746,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -6859,13 +8773,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -6876,12 +8799,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -6908,19 +8840,29 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesTypeFromJson(
@@ -6934,12 +8876,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -6953,13 +8903,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePeriodCreditType
+            instance) {
+  final val = <String, dynamic>{
+    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+    'periodValue': instance.periodValue,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -6972,14 +8931,23 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeTypeFromJson(
@@ -6989,11 +8957,19 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeType
-                instance) =>
-        <String, dynamic>{
-          'include': instance.include,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$PixelBarcodeType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('include', instance.include);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureTypeFromJson(
@@ -7009,17 +8985,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaTypeFromJson(
@@ -7041,13 +9025,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyTypeFromJson(
@@ -7063,14 +9055,23 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeFromJson(
@@ -7083,14 +9084,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -7106,17 +9115,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -7140,18 +9157,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -7172,16 +9198,24 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -7191,11 +9225,19 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -7218,19 +9260,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -7270,12 +9321,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -7291,17 +9350,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -7323,13 +9390,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -7342,12 +9417,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -7358,12 +9441,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductTypeFromJson(
@@ -7405,27 +9497,35 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -7436,12 +9536,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsType
-                instance) =>
-        <String, dynamic>{
-          'key': instance.key,
-          'value': instance.value,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductSpecsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('key', instance.key);
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -7457,17 +9565,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaTypeFromJson(
@@ -7489,13 +9605,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureTypeFromJson(
@@ -7511,17 +9635,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -7537,17 +9669,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -7567,18 +9707,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'hasChildren': instance.hasChildren,
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$InventoryCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+    'rank': instance.rank,
+    'layer': instance.layer,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+    'hasChildren': instance.hasChildren,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -7592,13 +9741,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -7609,12 +9767,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -7641,19 +9808,29 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -7667,12 +9844,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -7688,17 +9873,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
@@ -7714,17 +9907,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeFromJson(
@@ -7748,19 +9949,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'symbol': instance.symbol,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeFromJson(
@@ -7774,12 +9984,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
-                instance) =>
-        <String, dynamic>{
-          'currency': instance.currency?.toJson(),
-          'default': instance.kw$default,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeFromJson(
@@ -7795,17 +10013,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
@@ -7818,12 +10044,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -7839,17 +10073,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeFromJson(
@@ -7873,19 +10115,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -7901,17 +10152,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeFromJson(
@@ -7935,19 +10194,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeFromJson(
@@ -7963,17 +10231,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeFromJson(
@@ -8006,23 +10282,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8033,12 +10318,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8052,12 +10345,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeFromJson(
@@ -8086,18 +10387,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeFromJson(
@@ -8113,17 +10422,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeFromJson(
@@ -8145,13 +10462,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -8164,12 +10489,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8185,17 +10518,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -8219,19 +10560,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8247,17 +10597,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8281,19 +10639,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8309,17 +10676,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -8352,23 +10727,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8379,12 +10763,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8398,12 +10790,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeFromJson(
@@ -8432,18 +10832,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeFromJson(
@@ -8455,13 +10863,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -8474,12 +10890,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8495,17 +10919,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -8529,19 +10961,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8557,17 +10998,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8591,19 +11040,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8619,17 +11077,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -8662,23 +11128,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8689,12 +11164,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8708,12 +11191,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -8742,18 +11233,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -8769,13 +11268,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -8791,17 +11299,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -8817,17 +11333,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -8872,19 +11396,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -8902,13 +11434,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -8927,17 +11467,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeFromJson(
@@ -8958,18 +11507,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -8982,14 +11540,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -9004,13 +11570,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeFromJson(
@@ -9049,23 +11623,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerTypeFromJson(
@@ -9101,22 +11684,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'name': instance.name,
-          'description': instance.description,
-          'website': instance.website,
-          'contactEmails': instance.contactEmails,
-          'currencies': instance.currencies?.map((e) => e.toJson()).toList(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'picture': instance.picture?.toJson(),
-          'address': instance.address?.toJson(),
-          'company': instance.company?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('website', instance.website);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandTypeFromJson(
@@ -9139,18 +11732,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'website': instance.website,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'manufacturer': instance.manufacturer?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('name', instance.name);
+  writeNotNull('website', instance.website);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('manufacturer', instance.manufacturer?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -9160,11 +11761,19 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -9187,19 +11796,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -9298,36 +11916,43 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'ean': instance.ean,
-          'tax': instance.tax,
-          'name': instance.name,
-          'tags': instance.tags,
-          'class': instance.kw$class
-              ?.map((e) => _$ProductClassEnumEnumMap[e]!)
-              .toList(),
-          'price': instance.price,
-          'weight': instance.weight,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'factoryPrice': instance.factoryPrice,
-          'specs': instance.specs?.map((e) => e.toJson()).toList(),
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'wholesalerPrice': instance.wholesalerPrice,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'category': instance.category?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'brand': instance.brand?.toJson(),
-          'productAttributes':
-              instance.productAttributes?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('ean', instance.ean);
+  writeNotNull('tax', instance.tax);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('class',
+      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
+  writeNotNull('price', instance.price);
+  writeNotNull('weight', instance.weight);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('factoryPrice', instance.factoryPrice);
+  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull('brand', instance.brand?.toJson());
+  writeNotNull('productAttributes',
+      instance.productAttributes?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeTypeFromJson(
@@ -9401,31 +12026,43 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'media': instance.media?.toJson(),
-          'discount': instance.discount?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'pixel': instance.pixel?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'internalProduct': instance.internalProduct?.toJson(),
-          'product': instance.product?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull('pixel', instance.pixel?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('internalProduct', instance.internalProduct?.toJson());
+  writeNotNull('product', instance.product?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureTypeFromJson(
@@ -9441,17 +12078,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaTypeFromJson(
@@ -9473,13 +12118,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureTypeFromJson(
@@ -9495,17 +12148,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -9518,14 +12179,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -9541,17 +12210,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -9575,18 +12252,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberTypeFromJson(
@@ -9601,12 +12287,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -9622,17 +12316,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -9649,12 +12351,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -9676,14 +12386,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -9699,14 +12417,23 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -9719,11 +12446,19 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -9736,14 +12471,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -9759,17 +12502,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserTypeFromJson(
@@ -9793,18 +12544,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentTypeFromJson(
@@ -9826,17 +12586,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$BoardCardsStatsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -9909,28 +12678,39 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-          'status': _$ProjectStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'resources': instance.resources?.map((e) => e.toJson()).toList(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$ProjectType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureTypeFromJson(
@@ -9946,17 +12726,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaTypeFromJson(
@@ -9978,13 +12766,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -9997,12 +12793,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10018,17 +12822,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -10052,19 +12864,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -10080,17 +12901,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -10114,19 +12943,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -10142,17 +12980,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -10185,23 +13031,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -10212,12 +13067,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -10231,12 +13094,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressTypeFromJson(
@@ -10265,18 +13136,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalTypeFromJson(
@@ -10288,13 +13167,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -10307,12 +13194,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10328,17 +13223,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -10362,19 +13265,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -10390,17 +13302,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -10424,19 +13344,28 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -10452,17 +13381,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -10494,22 +13431,31 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -10520,12 +13466,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -10539,12 +13493,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -10573,18 +13535,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -10600,13 +13570,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -10622,17 +13601,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -10648,17 +13635,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -10703,19 +13698,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -10733,13 +13736,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -10758,17 +13769,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsTypeFromJson(
@@ -10789,18 +13809,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -10813,14 +13842,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -10835,13 +13872,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyTypeFromJson(
@@ -10880,23 +13925,32 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -10912,17 +13966,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -10939,12 +14001,20 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -10966,14 +14036,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -10989,14 +14067,23 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentTypeFromJson(
@@ -11009,11 +14096,19 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneTypeFromJson(
@@ -11026,14 +14121,22 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureTypeFromJson(
@@ -11049,17 +14152,25 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserTypeFromJson(
@@ -11083,18 +14194,27 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentTypeFromJson(
@@ -11116,17 +14236,26 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureTypeFromJson(
@@ -11142,13 +14271,21 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureType
-                instance) =>
-        <String, dynamic>{
-          'title': instance.title,
-          'task': _$BoardCardProcedureEnumEnumMap[instance.task],
-          'time': instance.time?.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BoardCardProcedureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('task', _$BoardCardProcedureEnumEnumMap[instance.task]);
+  writeNotNull('time', instance.time?.toIso8601String());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$TasksStatsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$TasksStatsTypeFromJson(
@@ -11235,31 +14372,43 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCard
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'title': instance.title,
-          'description': instance.description,
-          'dueDate': instance.dueDate?.toIso8601String(),
-          'archived': instance.archived,
-          'priority': _$BoardCardPriorityEnumEnumMap[instance.priority],
-          'tags': instance.tags,
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'tasks': instance.tasks?.map((e) => e.toJson()).toList(),
-          'labels': instance.labels?.map((e) => e.toJson()).toList(),
-          'rank': instance.rank,
-          'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-          'barcode': instance.barcode?.toJson(),
-          'project': instance.project?.toJson(),
-          'budget': instance.budget,
-          'customer': instance.customer?.toJson(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'procedure': instance.procedure?.map((e) => e.toJson()).toList(),
-          'tasksStats': instance.tasksStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
+  writeNotNull('archived', instance.archived);
+  writeNotNull('priority', _$BoardCardPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('tasks', instance.tasks?.map((e) => e.toJson()).toList());
+  writeNotNull('labels', instance.labels?.map((e) => e.toJson()).toList());
+  writeNotNull('rank', instance.rank);
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  writeNotNull('budget', instance.budget);
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'procedure', instance.procedure?.map((e) => e.toJson()).toList());
+  writeNotNull('tasksStats', instance.tasksStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsTypeFromJson(
@@ -11282,18 +14431,29 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'theme': instance.theme,
-          'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'boardCards': instance.boardCards?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull(
+      'boardCards', instance.boardCards?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query$BoardWithListsAndCardsType
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsTypeFromJson(
@@ -11330,20 +14490,30 @@ GetMaintenanceBoard$Query$BoardWithListsAndCardsType
 
 Map<String, dynamic>
     _$GetMaintenanceBoard$Query$BoardWithListsAndCardsTypeToJson(
-            GetMaintenanceBoard$Query$BoardWithListsAndCardsType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'icon': instance.icon,
-          'title': instance.title,
-          'description': instance.description,
-          'category': _$BoardCategoryEnumEnumMap[instance.category],
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'projects': instance.projects?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'boardLists': instance.boardLists?.map((e) => e.toJson()).toList(),
-        };
+        GetMaintenanceBoard$Query$BoardWithListsAndCardsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull('projects', instance.projects?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull(
+      'boardLists', instance.boardLists?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMaintenanceBoard$Query _$GetMaintenanceBoard$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -11369,14 +14539,22 @@ CreateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            CreateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
     _$CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -11392,17 +14570,25 @@ CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeToJson(
-            CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBoardList$Mutation$BoardListType$BoardType$UserType
     _$CreateBoardList$Mutation$BoardListType$BoardType$UserTypeFromJson(
@@ -11424,19 +14610,28 @@ CreateBoardList$Mutation$BoardListType$BoardType$UserType
               : CreateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$CreateBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(
-        CreateBoardList$Mutation$BoardListType$BoardType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$CreateBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(
+        CreateBoardList$Mutation$BoardListType$BoardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateBoardList$Mutation$BoardListType$BoardType
     _$CreateBoardList$Mutation$BoardListType$BoardTypeFromJson(
@@ -11458,17 +14653,26 @@ CreateBoardList$Mutation$BoardListType$BoardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateBoardList$Mutation$BoardListType$BoardTypeToJson(
-        CreateBoardList$Mutation$BoardListType$BoardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateBoardList$Mutation$BoardListType$BoardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateBoardList$Mutation$BoardListType
     _$CreateBoardList$Mutation$BoardListTypeFromJson(
@@ -11487,17 +14691,27 @@ CreateBoardList$Mutation$BoardListType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateBoardList$Mutation$BoardListTypeToJson(
-        CreateBoardList$Mutation$BoardListType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'theme': instance.theme,
-      'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-      'board': instance.board.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateBoardList$Mutation$BoardListType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateBoardList$Mutation _$CreateBoardList$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -11525,17 +14739,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$PictureType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksTypeFromJson(
@@ -11546,12 +14768,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksType
-                instance) =>
-        <String, dynamic>{
-          'task': instance.task,
-          'done': instance.done,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('task', instance.task);
+  writeNotNull('done', instance.done);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelTypeFromJson(
@@ -11569,17 +14799,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'icon': instance.icon,
-          'color': instance.color,
-          'category': _$LabelTypeEnumEnumMap[instance.category],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('color', instance.color);
+  writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneTypeFromJson(
@@ -11592,14 +14830,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureTypeFromJson(
@@ -11615,17 +14861,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserTypeFromJson(
@@ -11647,19 +14901,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType
               : CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserTypeToJson(
-        CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserTypeToJson(
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -11675,17 +14938,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaTypeFromJson(
@@ -11707,13 +14978,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoTypeFromJson(
@@ -11726,12 +15005,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType$PriceType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -11742,12 +15029,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListTypeFromJson(
@@ -11761,12 +15057,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -11780,13 +15084,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$T
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$CompanyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -11797,12 +15110,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$T
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxTypeFromJson(
@@ -11829,19 +15151,29 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$T
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesTypeFromJson(
@@ -11855,12 +15187,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCreditType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCreditTypeFromJson(
@@ -11874,13 +15214,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCredi
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCreditTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePeriodCreditType
+            instance) {
+  final val = <String, dynamic>{
+    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+    'periodValue': instance.periodValue,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -11893,14 +15242,23 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeTypeFromJson(
@@ -11910,11 +15268,19 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeType
-                instance) =>
-        <String, dynamic>{
-          'include': instance.include,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$PixelBarcodeType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('include', instance.include);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType$PictureTypeFromJson(
@@ -11930,17 +15296,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaTypeFromJson(
@@ -11962,13 +15336,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyTypeFromJson(
@@ -11984,14 +15366,23 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeFromJson(
@@ -12004,14 +15395,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMai
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -12027,17 +15426,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMai
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -12061,18 +15468,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMai
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -12093,16 +15509,24 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMai
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -12112,11 +15536,19 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAtt
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -12139,19 +15571,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAtt
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
@@ -12191,12 +15632,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAtt
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType$PictureTypeFromJson(
@@ -12212,17 +15661,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTyp
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaTypeFromJson(
@@ -12244,13 +15701,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTyp
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$DiscountDtoType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$DiscountDtoTypeFromJson(
@@ -12263,12 +15728,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTyp
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$DiscountDtoTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryTypeFromJson(
@@ -12279,12 +15752,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTyp
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTypeFromJson(
@@ -12326,27 +15808,35 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTyp
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'sku': instance.sku,
-          'name': instance.name,
-          'tags': instance.tags,
-          'price': instance.price,
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'discount': instance.discount?.toJson(),
-          'priceBeforeReduction': instance.priceBeforeReduction,
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('sku', instance.sku);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('price', instance.price);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('priceBeforeReduction', instance.priceBeforeReduction);
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductSpecsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductSpecsTypeFromJson(
@@ -12357,12 +15847,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductSpecsTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductSpecsType
-                instance) =>
-        <String, dynamic>{
-          'key': instance.key,
-          'value': instance.value,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductSpecsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('key', instance.key);
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType$PictureTypeFromJson(
@@ -12378,17 +15876,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaTypeFromJson(
@@ -12410,13 +15916,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$PictureTypeFromJson(
@@ -12432,17 +15946,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Pictur
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeFromJson(
@@ -12458,17 +15980,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Invent
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryTypeFromJson(
@@ -12488,18 +16018,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Invent
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'hasChildren': instance.hasChildren,
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$InventoryCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+    'rank': instance.rank,
+    'layer': instance.layer,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+    'hasChildren': instance.hasChildren,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -12513,13 +16052,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeFromJson(
@@ -12530,12 +16078,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxTypeFromJson(
@@ -12562,19 +16119,29 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesTypeFromJson(
@@ -12588,12 +16155,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$PictureTypeFromJson(
@@ -12609,17 +16184,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
@@ -12635,17 +16218,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeFromJson(
@@ -12669,19 +16260,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'symbol': instance.symbol,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeFromJson(
@@ -12695,12 +16295,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
-                instance) =>
-        <String, dynamic>{
-          'currency': instance.currency?.toJson(),
-          'default': instance.kw$default,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeFromJson(
@@ -12716,17 +16324,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
@@ -12739,12 +16355,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -12760,17 +16384,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeFromJson(
@@ -12794,19 +16426,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -12822,17 +16463,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeFromJson(
@@ -12856,19 +16505,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeFromJson(
@@ -12884,17 +16542,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeFromJson(
@@ -12927,23 +16593,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -12954,12 +16629,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -12973,12 +16656,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeFromJson(
@@ -13007,18 +16698,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeFromJson(
@@ -13034,17 +16733,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeFromJson(
@@ -13066,13 +16773,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -13085,12 +16800,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -13106,17 +16829,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -13140,19 +16871,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -13168,17 +16908,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -13202,19 +16950,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -13230,17 +16987,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -13272,22 +17037,31 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -13298,12 +17072,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -13317,12 +17099,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeFromJson(
@@ -13351,18 +17141,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeFromJson(
@@ -13374,13 +17172,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -13393,12 +17199,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -13414,17 +17228,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -13448,19 +17270,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -13476,17 +17307,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -13510,19 +17349,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -13538,17 +17386,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -13581,23 +17437,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -13608,12 +17473,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -13627,12 +17500,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -13661,18 +17542,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -13688,13 +17577,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -13710,17 +17608,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -13736,17 +17642,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -13791,19 +17705,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -13821,13 +17743,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -13846,17 +17776,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeFromJson(
@@ -13877,18 +17816,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -13901,14 +17849,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -13923,13 +17879,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeFromJson(
@@ -13968,23 +17932,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerTypeFromJson(
@@ -14020,22 +17993,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'name': instance.name,
-          'description': instance.description,
-          'website': instance.website,
-          'contactEmails': instance.contactEmails,
-          'currencies': instance.currencies?.map((e) => e.toJson()).toList(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'picture': instance.picture?.toJson(),
-          'address': instance.address?.toJson(),
-          'company': instance.company?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('website', instance.website);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandTypeFromJson(
@@ -14058,18 +18041,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'website': instance.website,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'manufacturer': instance.manufacturer?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('name', instance.name);
+  writeNotNull('website', instance.website);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('manufacturer', instance.manufacturer?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeFromJson(
@@ -14079,11 +18070,19 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
@@ -14106,19 +18105,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$Produc
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeFromJson(
@@ -14217,36 +18225,43 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'ean': instance.ean,
-          'tax': instance.tax,
-          'name': instance.name,
-          'tags': instance.tags,
-          'class': instance.kw$class
-              ?.map((e) => _$ProductClassEnumEnumMap[e]!)
-              .toList(),
-          'price': instance.price,
-          'weight': instance.weight,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'externalId': instance.externalId,
-          'description': instance.description,
-          'factoryPrice': instance.factoryPrice,
-          'specs': instance.specs?.map((e) => e.toJson()).toList(),
-          'media': instance.media?.toJson(),
-          'descriptionList': instance.descriptionList,
-          'wholesalerPrice': instance.wholesalerPrice,
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'category': instance.category?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'brand': instance.brand?.toJson(),
-          'productAttributes':
-              instance.productAttributes?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('ean', instance.ean);
+  writeNotNull('tax', instance.tax);
+  writeNotNull('name', instance.name);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('class',
+      instance.kw$class?.map((e) => _$ProductClassEnumEnumMap[e]!).toList());
+  writeNotNull('price', instance.price);
+  writeNotNull('weight', instance.weight);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('description', instance.description);
+  writeNotNull('factoryPrice', instance.factoryPrice);
+  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('descriptionList', instance.descriptionList);
+  writeNotNull('wholesalerPrice', instance.wholesalerPrice);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('category', instance.category?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull('brand', instance.brand?.toJson());
+  writeNotNull('productAttributes',
+      instance.productAttributes?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeTypeFromJson(
@@ -14320,31 +18335,43 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'media': instance.media?.toJson(),
-          'discount': instance.discount?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'pixel': instance.pixel?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'internalProduct': instance.internalProduct?.toJson(),
-          'product': instance.product?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull('pixel', instance.pixel?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('internalProduct', instance.internalProduct?.toJson());
+  writeNotNull('product', instance.product?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureTypeFromJson(
@@ -14360,17 +18387,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaTypeFromJson(
@@ -14392,13 +18427,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureTypeFromJson(
@@ -14414,17 +18457,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
@@ -14437,14 +18488,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
@@ -14460,17 +18519,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserTypeFromJson(
@@ -14494,18 +18561,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberTypeFromJson(
@@ -14520,12 +18596,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType
-                instance) =>
-        <String, dynamic>{
-          'member': instance.member?.toJson(),
-          'role': _$ProjectRoleEnumEnumMap[instance.role],
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$ProjectMemberType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('member', instance.member?.toJson());
+  writeNotNull('role', _$ProjectRoleEnumEnumMap[instance.role]);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -14541,17 +18625,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$Docum
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -14568,12 +18660,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$Docum
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -14595,14 +18695,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$Docum
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -14618,14 +18726,23 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$Docum
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentTypeFromJson(
@@ -14638,11 +18755,19 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$Docum
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
@@ -14655,14 +18780,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PictureTypeFromJson(
@@ -14678,17 +18811,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserTypeFromJson(
@@ -14712,18 +18853,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentTypeFromJson(
@@ -14745,17 +18895,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$BoardCardsStatsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType$BoardCardsStatsTypeFromJson(
@@ -14828,28 +18987,39 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'privacy': _$ProjectPrivacyEnumEnumMap[instance.privacy],
-          'tags': instance.tags,
-          'deadline': instance.deadline?.toIso8601String(),
-          'priority': _$ProjectPriorityEnumEnumMap[instance.priority],
-          'status': _$ProjectStatusEnumEnumMap[instance.status],
-          'color': instance.color,
-          'externalId': instance.externalId,
-          'picture': instance.picture?.toJson(),
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'resources': instance.resources?.map((e) => e.toJson()).toList(),
-          'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-          'boardCardsStats': instance.boardCardsStats?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$ProjectType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('privacy', _$ProjectPrivacyEnumEnumMap[instance.privacy]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('deadline', instance.deadline?.toIso8601String());
+  writeNotNull('priority', _$ProjectPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('status', _$ProjectStatusEnumEnumMap[instance.status]);
+  writeNotNull('color', instance.color);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'resources', instance.resources?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull('boardCardsStats', instance.boardCardsStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PhoneTypeFromJson(
@@ -14862,14 +19032,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -14885,17 +19063,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserTypeFromJson(
@@ -14919,18 +19105,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeFromJson(
@@ -14953,18 +19148,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'icon': instance.icon,
-          'title': instance.title,
-          'description': instance.description,
-          'category': _$BoardCategoryEnumEnumMap[instance.category],
-          'members': instance.members?.map((e) => e.toJson()).toList(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListTypeFromJson(
@@ -14985,18 +19189,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'theme': instance.theme,
-          'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-          'board': instance.board.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureTypeFromJson(
@@ -15012,17 +19226,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaTypeFromJson(
@@ -15044,13 +19266,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$LonLatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -15063,12 +19293,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$Lo
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$LonLatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -15084,17 +19322,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$Co
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -15118,19 +19364,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$Co
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -15146,17 +19401,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -15180,19 +19443,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -15208,17 +19480,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -15251,23 +19531,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -15278,12 +19567,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$Fu
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -15297,12 +19594,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$Fu
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressTypeFromJson(
@@ -15331,18 +19636,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalTypeFromJson(
@@ -15354,13 +19667,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -15373,12 +19694,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -15394,17 +19723,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -15428,19 +19765,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -15456,17 +19802,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -15490,19 +19844,28 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -15518,17 +19881,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -15561,23 +19932,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -15588,12 +19968,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -15607,12 +19995,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -15641,18 +20037,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -15668,13 +20072,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -15690,17 +20103,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -15716,17 +20137,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -15771,19 +20200,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -15801,13 +20238,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -15826,17 +20271,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsTypeFromJson(
@@ -15857,18 +20311,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -15881,14 +20344,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDeta
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -15903,13 +20374,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDeta
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyTypeFromJson(
@@ -15948,23 +20427,32 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
@@ -15980,17 +20468,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
@@ -16007,12 +20503,20 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
@@ -16034,14 +20538,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
-                instance) =>
-        <String, dynamic>{
-          'background': instance.background?.toJson(),
-          'black': instance.black?.toJson(),
-          'white': instance.white?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('background', instance.background?.toJson());
+  writeNotNull('black', instance.black?.toJson());
+  writeNotNull('white', instance.white?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
@@ -16057,14 +20569,23 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'type': instance.type,
-          'image': instance.image?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType$ContentTypeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('image', instance.image?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTypeFromJson(
@@ -16077,11 +20598,19 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTy
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$DocumentContentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneTypeFromJson(
@@ -16094,14 +20623,22 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneTyp
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureTypeFromJson(
@@ -16117,17 +20654,25 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureT
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserTypeFromJson(
@@ -16151,18 +20696,27 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentTypeFromJson(
@@ -16184,17 +20738,26 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'content': instance.content?.toJson(),
-          'size': instance.size,
-          'owner': instance.owner?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$DocumentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('content', instance.content?.toJson());
+  writeNotNull('size', instance.size);
+  writeNotNull('owner', instance.owner?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureTypeFromJson(
@@ -16210,13 +20773,21 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureType
 
 Map<String, dynamic>
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureTypeToJson(
-            CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureType
-                instance) =>
-        <String, dynamic>{
-          'title': instance.title,
-          'task': _$BoardCardProcedureEnumEnumMap[instance.task],
-          'time': instance.time?.toIso8601String(),
-        };
+        CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardProcedureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('task', _$BoardCardProcedureEnumEnumMap[instance.task]);
+  writeNotNull('time', instance.time?.toIso8601String());
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation$BoardCardType$TasksStatsType
     _$CreateMaintenanceBoardCard$Mutation$BoardCardType$TasksStatsTypeFromJson(
@@ -16305,31 +20876,43 @@ CreateMaintenanceBoardCard$Mutation$BoardCardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateMaintenanceBoardCard$Mutation$BoardCardTypeToJson(
-        CreateMaintenanceBoardCard$Mutation$BoardCardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'title': instance.title,
-      'description': instance.description,
-      'dueDate': instance.dueDate?.toIso8601String(),
-      'archived': instance.archived,
-      'priority': _$BoardCardPriorityEnumEnumMap[instance.priority],
-      'tags': instance.tags,
-      'rank': instance.rank,
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'tasks': instance.tasks?.map((e) => e.toJson()).toList(),
-      'labels': instance.labels?.map((e) => e.toJson()).toList(),
-      'assignedTo': instance.assignedTo?.map((e) => e.toJson()).toList(),
-      'barcode': instance.barcode?.toJson(),
-      'project': instance.project?.toJson(),
-      'boardList': instance.boardList.toJson(),
-      'budget': instance.budget,
-      'customer': instance.customer?.toJson(),
-      'attachments': instance.attachments?.map((e) => e.toJson()).toList(),
-      'procedure': instance.procedure?.map((e) => e.toJson()).toList(),
-      'tasksStats': instance.tasksStats?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateMaintenanceBoardCard$Mutation$BoardCardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
+  writeNotNull('archived', instance.archived);
+  writeNotNull('priority', _$BoardCardPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('rank', instance.rank);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('tasks', instance.tasks?.map((e) => e.toJson()).toList());
+  writeNotNull('labels', instance.labels?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'assignedTo', instance.assignedTo?.map((e) => e.toJson()).toList());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  writeNotNull('project', instance.project?.toJson());
+  val['boardList'] = instance.boardList.toJson();
+  writeNotNull('budget', instance.budget);
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull(
+      'attachments', instance.attachments?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'procedure', instance.procedure?.map((e) => e.toJson()).toList());
+  writeNotNull('tasksStats', instance.tasksStats?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMaintenanceBoardCard$Mutation
     _$CreateMaintenanceBoardCard$MutationFromJson(Map<String, dynamic> json) =>
@@ -16385,27 +20968,37 @@ MaintenanceBoardCardInput _$MaintenanceBoardCardInputFromJson(
     );
 
 Map<String, dynamic> _$MaintenanceBoardCardInputToJson(
-        MaintenanceBoardCardInput instance) =>
-    <String, dynamic>{
-      'title': instance.title,
-      'description': instance.description,
-      'dueDate': instance.dueDate?.toIso8601String(),
-      'archived': instance.archived,
-      'priority': _$BoardCardPriorityEnumEnumMap[instance.priority],
-      'tags': instance.tags,
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'project': instance.project,
-      'barcode': instance.barcode,
-      'tasks': instance.tasks?.map((e) => e.toJson()).toList(),
-      'labels': instance.labels,
-      'rank': instance.rank,
-      'assignedTo': instance.assignedTo,
-      'budget': instance.budget,
-      'customer': instance.customer,
-      'procedure': instance.procedure?.map((e) => e.toJson()).toList(),
-      'attachments': instance.attachments,
-      'target': instance.target.toJson(),
-    };
+    MaintenanceBoardCardInput instance) {
+  final val = <String, dynamic>{
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  writeNotNull('dueDate', instance.dueDate?.toIso8601String());
+  writeNotNull('archived', instance.archived);
+  writeNotNull('priority', _$BoardCardPriorityEnumEnumMap[instance.priority]);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('project', instance.project);
+  writeNotNull('barcode', instance.barcode);
+  writeNotNull('tasks', instance.tasks?.map((e) => e.toJson()).toList());
+  writeNotNull('labels', instance.labels);
+  writeNotNull('rank', instance.rank);
+  writeNotNull('assignedTo', instance.assignedTo);
+  writeNotNull('budget', instance.budget);
+  writeNotNull('customer', instance.customer);
+  writeNotNull(
+      'procedure', instance.procedure?.map((e) => e.toJson()).toList());
+  writeNotNull('attachments', instance.attachments);
+  val['target'] = instance.target.toJson();
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -16417,16 +21010,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 BoardCardTasksInput _$BoardCardTasksInputFromJson(Map<String, dynamic> json) =>
     BoardCardTasksInput(
@@ -16434,12 +21035,19 @@ BoardCardTasksInput _$BoardCardTasksInputFromJson(Map<String, dynamic> json) =>
       done: json['done'] as bool?,
     );
 
-Map<String, dynamic> _$BoardCardTasksInputToJson(
-        BoardCardTasksInput instance) =>
-    <String, dynamic>{
-      'task': instance.task,
-      'done': instance.done,
-    };
+Map<String, dynamic> _$BoardCardTasksInputToJson(BoardCardTasksInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('task', instance.task);
+  writeNotNull('done', instance.done);
+  return val;
+}
 
 BoardCardProcedureInput _$BoardCardProcedureInputFromJson(
         Map<String, dynamic> json) =>
@@ -16452,12 +21060,20 @@ BoardCardProcedureInput _$BoardCardProcedureInputFromJson(
     );
 
 Map<String, dynamic> _$BoardCardProcedureInputToJson(
-        BoardCardProcedureInput instance) =>
-    <String, dynamic>{
-      'title': instance.title,
-      'task': _$BoardCardProcedureEnumEnumMap[instance.task],
-      'time': instance.time?.toIso8601String(),
-    };
+    BoardCardProcedureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('task', _$BoardCardProcedureEnumEnumMap[instance.task]);
+  writeNotNull('time', instance.time?.toIso8601String());
+  return val;
+}
 
 ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
     _$ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeFromJson(
@@ -16470,14 +21086,22 @@ ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
     _$ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -16493,17 +21117,25 @@ ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
 
 Map<String, dynamic>
     _$ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeToJson(
-            ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ReorderBoardList$Mutation$BoardListType$BoardType$UserType
     _$ReorderBoardList$Mutation$BoardListType$BoardType$UserTypeFromJson(
@@ -16525,19 +21157,28 @@ ReorderBoardList$Mutation$BoardListType$BoardType$UserType
               : ReorderBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$ReorderBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(
-        ReorderBoardList$Mutation$BoardListType$BoardType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$ReorderBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(
+        ReorderBoardList$Mutation$BoardListType$BoardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ReorderBoardList$Mutation$BoardListType$BoardType
     _$ReorderBoardList$Mutation$BoardListType$BoardTypeFromJson(
@@ -16559,17 +21200,26 @@ ReorderBoardList$Mutation$BoardListType$BoardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$ReorderBoardList$Mutation$BoardListType$BoardTypeToJson(
-        ReorderBoardList$Mutation$BoardListType$BoardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    ReorderBoardList$Mutation$BoardListType$BoardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ReorderBoardList$Mutation$BoardListType
     _$ReorderBoardList$Mutation$BoardListTypeFromJson(
@@ -16588,17 +21238,27 @@ ReorderBoardList$Mutation$BoardListType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$ReorderBoardList$Mutation$BoardListTypeToJson(
-        ReorderBoardList$Mutation$BoardListType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'theme': instance.theme,
-      'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-      'board': instance.board.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    ReorderBoardList$Mutation$BoardListType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ReorderBoardList$Mutation _$ReorderBoardList$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -16626,14 +21286,22 @@ UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
 
 Map<String, dynamic>
     _$UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneTypeToJson(
-            UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
     _$UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeFromJson(
@@ -16649,17 +21317,25 @@ UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureTypeToJson(
-            UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBoardList$Mutation$BoardListType$BoardType$UserType
     _$UpdateBoardList$Mutation$BoardListType$BoardType$UserTypeFromJson(
@@ -16681,19 +21357,28 @@ UpdateBoardList$Mutation$BoardListType$BoardType$UserType
               : UpdateBoardList$Mutation$BoardListType$BoardType$UserType$PictureType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$UpdateBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(
-        UpdateBoardList$Mutation$BoardListType$BoardType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+Map<String, dynamic>
+    _$UpdateBoardList$Mutation$BoardListType$BoardType$UserTypeToJson(
+        UpdateBoardList$Mutation$BoardListType$BoardType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateBoardList$Mutation$BoardListType$BoardType
     _$UpdateBoardList$Mutation$BoardListType$BoardTypeFromJson(
@@ -16715,17 +21400,26 @@ UpdateBoardList$Mutation$BoardListType$BoardType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateBoardList$Mutation$BoardListType$BoardTypeToJson(
-        UpdateBoardList$Mutation$BoardListType$BoardType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'icon': instance.icon,
-      'title': instance.title,
-      'description': instance.description,
-      'category': _$BoardCategoryEnumEnumMap[instance.category],
-      'members': instance.members?.map((e) => e.toJson()).toList(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateBoardList$Mutation$BoardListType$BoardType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  val['title'] = instance.title;
+  writeNotNull('description', instance.description);
+  writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
+  writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateBoardList$Mutation$BoardListType
     _$UpdateBoardList$Mutation$BoardListTypeFromJson(
@@ -16744,17 +21438,27 @@ UpdateBoardList$Mutation$BoardListType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateBoardList$Mutation$BoardListTypeToJson(
-        UpdateBoardList$Mutation$BoardListType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'theme': instance.theme,
-      'identifier': _$MaintenanceBoardListEnumEnumMap[instance.identifier],
-      'board': instance.board.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateBoardList$Mutation$BoardListType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  writeNotNull('theme', instance.theme);
+  writeNotNull(
+      'identifier', _$MaintenanceBoardListEnumEnumMap[instance.identifier]);
+  val['board'] = instance.board.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateBoardList$Mutation _$UpdateBoardList$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -16852,12 +21556,21 @@ CreateBoardListArguments _$CreateBoardListArgumentsFromJson(
     );
 
 Map<String, dynamic> _$CreateBoardListArgumentsToJson(
-        CreateBoardListArguments instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'rank': instance.rank,
-      'board': instance.board,
-    };
+    CreateBoardListArguments instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  val['board'] = instance.board;
+  return val;
+}
 
 CreateMaintenanceBoardCardArguments
     _$CreateMaintenanceBoardCardArgumentsFromJson(Map<String, dynamic> json) =>
@@ -16896,13 +21609,22 @@ UpdateBoardListArguments _$UpdateBoardListArgumentsFromJson(
     );
 
 Map<String, dynamic> _$UpdateBoardListArgumentsToJson(
-        UpdateBoardListArguments instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'rank': instance.rank,
-      'board': instance.board,
-    };
+    UpdateBoardListArguments instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('rank', instance.rank);
+  val['board'] = instance.board;
+  return val;
+}
 
 DeleteBoardListArguments _$DeleteBoardListArgumentsFromJson(
         Map<String, dynamic> json) =>

@@ -19,16 +19,24 @@ GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationD
 
 Map<String, dynamic>
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureTypeToJson(
-            GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksType
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksTypeFromJson(
@@ -39,12 +47,21 @@ GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationD
 
 Map<String, dynamic>
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksTypeToJson(
-            GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksType
-                instance) =>
-        <String, dynamic>{
-          'discount': instance.discount,
-          'description': instance.description,
-        };
+        GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksType
+            instance) {
+  final val = <String, dynamic>{
+    'discount': instance.discount,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  return val;
+}
 
 GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalType
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalTypeFromJson(
@@ -55,12 +72,20 @@ GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationD
 
 Map<String, dynamic>
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalTypeToJson(
-            GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalType
-                instance) =>
-        <String, dynamic>{
-          'min': instance.min,
-          'max': instance.max,
-        };
+        GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('min', instance.min);
+  writeNotNull('max', instance.max);
+  return val;
+}
 
 GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationTypeFromJson(
@@ -90,22 +115,31 @@ GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationD
 
 Map<String, dynamic>
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationTypeToJson(
-            GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'rank': instance.rank,
-          'color': instance.color,
-          'picture': instance.picture?.toJson(),
-          'perks': instance.perks?.toJson(),
-          'lossAmount': instance.lossAmount,
-          'nextLevelMax': instance.nextLevelMax,
-          'inactivityCycle': instance.inactivityCycle,
-          'levelInterval': instance.levelInterval?.toJson(),
-          'reputationLevel': instance.reputationLevel,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'rank': instance.rank,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('color', instance.color);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('perks', instance.perks?.toJson());
+  val['lossAmount'] = instance.lossAmount;
+  writeNotNull('nextLevelMax', instance.nextLevelMax);
+  val['inactivityCycle'] = instance.inactivityCycle;
+  writeNotNull('levelInterval', instance.levelInterval?.toJson());
+  writeNotNull('reputationLevel', instance.reputationLevel);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoTypeFromJson(
@@ -120,13 +154,22 @@ GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationD
 
 Map<String, dynamic>
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoTypeToJson(
-            GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType
-                instance) =>
-        <String, dynamic>{
-          'qualitativeAmount': instance.qualitativeAmount,
-          'quantitativeAmount': instance.quantitativeAmount,
-          'reputationLevel': instance.reputationLevel?.toJson(),
-        };
+        GetOnsiteConverterByTarget$Query$OnsiteConverterType$RemunerationWithReputationDtoType
+            instance) {
+  final val = <String, dynamic>{
+    'qualitativeAmount': instance.qualitativeAmount,
+    'quantitativeAmount': instance.quantitativeAmount,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('reputationLevel', instance.reputationLevel?.toJson());
+  return val;
+}
 
 GetOnsiteConverterByTarget$Query$OnsiteConverterType
     _$GetOnsiteConverterByTarget$Query$OnsiteConverterTypeFromJson(
@@ -174,13 +217,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureType
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureTypeFromJson(
@@ -195,16 +246,24 @@ CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReput
 
 Map<String, dynamic>
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureTypeToJson(
-            CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksType
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksTypeFromJson(
@@ -215,12 +274,21 @@ CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReput
 
 Map<String, dynamic>
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksTypeToJson(
-            CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksType
-                instance) =>
-        <String, dynamic>{
-          'discount': instance.discount,
-          'description': instance.description,
-        };
+        CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$PerksType
+            instance) {
+  final val = <String, dynamic>{
+    'discount': instance.discount,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('description', instance.description);
+  return val;
+}
 
 CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalType
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalTypeFromJson(
@@ -231,12 +299,20 @@ CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReput
 
 Map<String, dynamic>
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalTypeToJson(
-            CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalType
-                instance) =>
-        <String, dynamic>{
-          'min': instance.min,
-          'max': instance.max,
-        };
+        CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType$LevelIntervalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('min', instance.min);
+  writeNotNull('max', instance.max);
+  return val;
+}
 
 CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationTypeFromJson(
@@ -266,22 +342,31 @@ CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReput
 
 Map<String, dynamic>
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationTypeToJson(
-            CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'rank': instance.rank,
-          'color': instance.color,
-          'picture': instance.picture?.toJson(),
-          'perks': instance.perks?.toJson(),
-          'lossAmount': instance.lossAmount,
-          'nextLevelMax': instance.nextLevelMax,
-          'inactivityCycle': instance.inactivityCycle,
-          'levelInterval': instance.levelInterval?.toJson(),
-          'reputationLevel': instance.reputationLevel,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType$ReputationType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'rank': instance.rank,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('color', instance.color);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('perks', instance.perks?.toJson());
+  val['lossAmount'] = instance.lossAmount;
+  writeNotNull('nextLevelMax', instance.nextLevelMax);
+  val['inactivityCycle'] = instance.inactivityCycle;
+  writeNotNull('levelInterval', instance.levelInterval?.toJson());
+  writeNotNull('reputationLevel', instance.reputationLevel);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoTypeFromJson(
@@ -296,13 +381,22 @@ CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReput
 
 Map<String, dynamic>
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoTypeToJson(
-            CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType
-                instance) =>
-        <String, dynamic>{
-          'qualitativeAmount': instance.qualitativeAmount,
-          'quantitativeAmount': instance.quantitativeAmount,
-          'reputationLevel': instance.reputationLevel?.toJson(),
-        };
+        CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType$RemunerationWithReputationDtoType
+            instance) {
+  final val = <String, dynamic>{
+    'qualitativeAmount': instance.qualitativeAmount,
+    'quantitativeAmount': instance.quantitativeAmount,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('reputationLevel', instance.reputationLevel?.toJson());
+  return val;
+}
 
 CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterType
     _$CreateOrUpdateOnsiteConverter$Mutation$OnsiteConverterTypeFromJson(
@@ -367,12 +461,21 @@ RemunerationWithReputationInput _$RemunerationWithReputationInputFromJson(
     );
 
 Map<String, dynamic> _$RemunerationWithReputationInputToJson(
-        RemunerationWithReputationInput instance) =>
-    <String, dynamic>{
-      'qualitativeAmount': instance.qualitativeAmount,
-      'quantitativeAmount': instance.quantitativeAmount,
-      'reputationLevel': instance.reputationLevel,
-    };
+    RemunerationWithReputationInput instance) {
+  final val = <String, dynamic>{
+    'qualitativeAmount': instance.qualitativeAmount,
+    'quantitativeAmount': instance.quantitativeAmount,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('reputationLevel', instance.reputationLevel);
+  return val;
+}
 
 GetOnsiteConverterByTargetArguments
     _$GetOnsiteConverterByTargetArgumentsFromJson(Map<String, dynamic> json) =>

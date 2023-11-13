@@ -19,14 +19,23 @@ GetModuleDefinitions$Query$ModulesDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetModuleDefinitions$Query$ModulesDefinitionTypeToJson(
-        GetModuleDefinitions$Query$ModulesDefinitionType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'target': _$TargetTypeEnumEnumMap[instance.target],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetModuleDefinitions$Query$ModulesDefinitionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$TargetTypeEnumEnumMap = {
   TargetTypeEnum.pos: 'POS',
@@ -63,14 +72,23 @@ ModuleDefinition$Query$ModulesDefinitionType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$ModuleDefinition$Query$ModulesDefinitionTypeToJson(
-        ModuleDefinition$Query$ModulesDefinitionType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'target': _$TargetTypeEnumEnumMap[instance.target],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    ModuleDefinition$Query$ModulesDefinitionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ModuleDefinition$Query _$ModuleDefinition$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -97,16 +115,25 @@ FindModuleDefinitionsByTarget$Query$ModulesDefinitionType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$FindModuleDefinitionsByTarget$Query$ModulesDefinitionTypeToJson(
-        FindModuleDefinitionsByTarget$Query$ModulesDefinitionType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'target': _$TargetTypeEnumEnumMap[instance.target],
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$FindModuleDefinitionsByTarget$Query$ModulesDefinitionTypeToJson(
+        FindModuleDefinitionsByTarget$Query$ModulesDefinitionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindModuleDefinitionsByTarget$Query
     _$FindModuleDefinitionsByTarget$QueryFromJson(Map<String, dynamic> json) =>
@@ -140,14 +167,23 @@ CreateModuleDefinition$Mutation$ModulesDefinitionType
 
 Map<String, dynamic>
     _$CreateModuleDefinition$Mutation$ModulesDefinitionTypeToJson(
-            CreateModuleDefinition$Mutation$ModulesDefinitionType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'target': _$TargetTypeEnumEnumMap[instance.target],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateModuleDefinition$Mutation$ModulesDefinitionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateModuleDefinition$Mutation _$CreateModuleDefinition$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -171,11 +207,20 @@ ModulesDefinitionInput _$ModulesDefinitionInputFromJson(
     );
 
 Map<String, dynamic> _$ModulesDefinitionInputToJson(
-        ModulesDefinitionInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'target': _$TargetTypeEnumEnumMap[instance.target],
-    };
+    ModulesDefinitionInput instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  return val;
+}
 
 UpdateModuleDefinition$Mutation$ModulesDefinitionType
     _$UpdateModuleDefinition$Mutation$ModulesDefinitionTypeFromJson(
@@ -191,14 +236,23 @@ UpdateModuleDefinition$Mutation$ModulesDefinitionType
 
 Map<String, dynamic>
     _$UpdateModuleDefinition$Mutation$ModulesDefinitionTypeToJson(
-            UpdateModuleDefinition$Mutation$ModulesDefinitionType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'target': _$TargetTypeEnumEnumMap[instance.target],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        UpdateModuleDefinition$Mutation$ModulesDefinitionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateModuleDefinition$Mutation _$UpdateModuleDefinition$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -227,14 +281,23 @@ DeleteModuleDefinition$Mutation$ModulesDefinitionType
 
 Map<String, dynamic>
     _$DeleteModuleDefinition$Mutation$ModulesDefinitionTypeToJson(
-            DeleteModuleDefinition$Mutation$ModulesDefinitionType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'target': _$TargetTypeEnumEnumMap[instance.target],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        DeleteModuleDefinition$Mutation$ModulesDefinitionType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', _$TargetTypeEnumEnumMap[instance.target]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 DeleteModuleDefinition$Mutation _$DeleteModuleDefinition$MutationFromJson(
         Map<String, dynamic> json) =>

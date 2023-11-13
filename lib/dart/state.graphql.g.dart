@@ -20,16 +20,24 @@ FindStateById$Query$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindStateById$Query$StateType$CountryType$PictureTypeToJson(
-            FindStateById$Query$StateType$CountryType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindStateById$Query$StateType$CountryType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindStateById$Query$StateType$CountryType
     _$FindStateById$Query$StateType$CountryTypeFromJson(
@@ -52,18 +60,27 @@ FindStateById$Query$StateType$CountryType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindStateById$Query$StateType$CountryTypeToJson(
-        FindStateById$Query$StateType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    FindStateById$Query$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindStateById$Query$StateType$PictureType
     _$FindStateById$Query$StateType$PictureTypeFromJson(
@@ -78,16 +95,24 @@ FindStateById$Query$StateType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindStateById$Query$StateType$PictureTypeToJson(
-        FindStateById$Query$StateType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    FindStateById$Query$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindStateById$Query$StateType _$FindStateById$Query$StateTypeFromJson(
         Map<String, dynamic> json) =>
@@ -118,22 +143,31 @@ FindStateById$Query$StateType _$FindStateById$Query$StateTypeFromJson(
               json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindStateById$Query$StateTypeToJson(
-        FindStateById$Query$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    FindStateById$Query$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -166,16 +200,24 @@ GetStates$Query$StateType$CountryType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetStates$Query$StateType$CountryType$PictureTypeToJson(
-        GetStates$Query$StateType$CountryType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetStates$Query$StateType$CountryType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetStates$Query$StateType$CountryType
     _$GetStates$Query$StateType$CountryTypeFromJson(
@@ -198,18 +240,27 @@ GetStates$Query$StateType$CountryType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetStates$Query$StateType$CountryTypeToJson(
-        GetStates$Query$StateType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    GetStates$Query$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetStates$Query$StateType$PictureType
     _$GetStates$Query$StateType$PictureTypeFromJson(
@@ -224,16 +275,24 @@ GetStates$Query$StateType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetStates$Query$StateType$PictureTypeToJson(
-        GetStates$Query$StateType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetStates$Query$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetStates$Query$StateType _$GetStates$Query$StateTypeFromJson(
         Map<String, dynamic> json) =>
@@ -264,22 +323,31 @@ GetStates$Query$StateType _$GetStates$Query$StateTypeFromJson(
               json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetStates$Query$StateTypeToJson(
-        GetStates$Query$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    GetStates$Query$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetStates$Query _$GetStates$QueryFromJson(Map<String, dynamic> json) =>
     GetStates$Query()
@@ -307,17 +375,25 @@ FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
-            FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindStatesPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindStatesPagination$Query$StatePaginatedType$StateType$CountryType
     _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryTypeFromJson(
@@ -341,19 +417,28 @@ FindStatesPagination$Query$StatePaginatedType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindStatesPagination$Query$StatePaginatedType$StateType$CountryTypeToJson(
-            FindStatesPagination$Query$StatePaginatedType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindStatesPagination$Query$StatePaginatedType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
     _$FindStatesPagination$Query$StatePaginatedType$StateType$PictureTypeFromJson(
@@ -369,17 +454,25 @@ FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindStatesPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
-            FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindStatesPagination$Query$StatePaginatedType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindStatesPagination$Query$StatePaginatedType$StateType
     _$FindStatesPagination$Query$StatePaginatedType$StateTypeFromJson(
@@ -412,22 +505,31 @@ FindStatesPagination$Query$StatePaginatedType$StateType
 
 Map<String, dynamic>
     _$FindStatesPagination$Query$StatePaginatedType$StateTypeToJson(
-            FindStatesPagination$Query$StatePaginatedType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindStatesPagination$Query$StatePaginatedType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindStatesPagination$Query$StatePaginatedType
     _$FindStatesPagination$Query$StatePaginatedTypeFromJson(
@@ -442,12 +544,20 @@ FindStatesPagination$Query$StatePaginatedType
               .toList();
 
 Map<String, dynamic> _$FindStatesPagination$Query$StatePaginatedTypeToJson(
-        FindStatesPagination$Query$StatePaginatedType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    FindStatesPagination$Query$StatePaginatedType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 FindStatesPagination$Query _$FindStatesPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -468,11 +578,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeFromJson(
@@ -488,17 +606,25 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$Pic
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureTypeToJson(
-            FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryTypeFromJson(
@@ -522,19 +648,28 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryTypeToJson(
-            FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindStatesByCountryPagination$Query$StatePaginatedType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureType
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTypeFromJson(
@@ -550,17 +685,25 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureTypeToJson(
-            FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindStatesByCountryPagination$Query$StatePaginatedType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindStatesByCountryPagination$Query$StatePaginatedType$StateType
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateTypeFromJson(
@@ -593,23 +736,32 @@ FindStatesByCountryPagination$Query$StatePaginatedType$StateType
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedType$StateTypeToJson(
-            FindStatesByCountryPagination$Query$StatePaginatedType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindStatesByCountryPagination$Query$StatePaginatedType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindStatesByCountryPagination$Query$StatePaginatedType
     _$FindStatesByCountryPagination$Query$StatePaginatedTypeFromJson(
@@ -625,12 +777,20 @@ FindStatesByCountryPagination$Query$StatePaginatedType
 
 Map<String, dynamic>
     _$FindStatesByCountryPagination$Query$StatePaginatedTypeToJson(
-            FindStatesByCountryPagination$Query$StatePaginatedType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        FindStatesByCountryPagination$Query$StatePaginatedType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 FindStatesByCountryPagination$Query
     _$FindStatesByCountryPagination$QueryFromJson(Map<String, dynamic> json) =>
@@ -661,16 +821,24 @@ CreateState$Mutation$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$CreateState$Mutation$StateType$CountryType$PictureTypeToJson(
-            CreateState$Mutation$StateType$CountryType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateState$Mutation$StateType$CountryType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateState$Mutation$StateType$CountryType
     _$CreateState$Mutation$StateType$CountryTypeFromJson(
@@ -693,18 +861,27 @@ CreateState$Mutation$StateType$CountryType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateState$Mutation$StateType$CountryTypeToJson(
-        CreateState$Mutation$StateType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    CreateState$Mutation$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateState$Mutation$StateType$PictureType
     _$CreateState$Mutation$StateType$PictureTypeFromJson(
@@ -719,16 +896,24 @@ CreateState$Mutation$StateType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$CreateState$Mutation$StateType$PictureTypeToJson(
-        CreateState$Mutation$StateType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    CreateState$Mutation$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateState$Mutation$StateType _$CreateState$Mutation$StateTypeFromJson(
         Map<String, dynamic> json) =>
@@ -759,22 +944,31 @@ CreateState$Mutation$StateType _$CreateState$Mutation$StateTypeFromJson(
               json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateState$Mutation$StateTypeToJson(
-        CreateState$Mutation$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    CreateState$Mutation$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateState$Mutation _$CreateState$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -806,19 +1000,28 @@ StateInput _$StateInputFromJson(Map<String, dynamic> json) => StateInput(
       country: json['country'] as String?,
     );
 
-Map<String, dynamic> _$StateInputToJson(StateInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital]!,
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-      'country': instance.country,
-    };
+Map<String, dynamic> _$StateInputToJson(StateInput instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+    'adminName': instance.adminName,
+    'capital': _$StateCapitalEnumEnumMap[instance.capital]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('population', instance.population);
+  val['ascii'] = instance.ascii;
+  val['lat'] = instance.lat;
+  val['lng'] = instance.lng;
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  writeNotNull('country', instance.country);
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -830,16 +1033,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 UpdateState$Mutation$StateType$CountryType$PictureType
     _$UpdateState$Mutation$StateType$CountryType$PictureTypeFromJson(
@@ -855,16 +1066,24 @@ UpdateState$Mutation$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$UpdateState$Mutation$StateType$CountryType$PictureTypeToJson(
-            UpdateState$Mutation$StateType$CountryType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateState$Mutation$StateType$CountryType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateState$Mutation$StateType$CountryType
     _$UpdateState$Mutation$StateType$CountryTypeFromJson(
@@ -887,18 +1106,27 @@ UpdateState$Mutation$StateType$CountryType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateState$Mutation$StateType$CountryTypeToJson(
-        UpdateState$Mutation$StateType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    UpdateState$Mutation$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateState$Mutation$StateType$PictureType
     _$UpdateState$Mutation$StateType$PictureTypeFromJson(
@@ -913,16 +1141,24 @@ UpdateState$Mutation$StateType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$UpdateState$Mutation$StateType$PictureTypeToJson(
-        UpdateState$Mutation$StateType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    UpdateState$Mutation$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateState$Mutation$StateType _$UpdateState$Mutation$StateTypeFromJson(
         Map<String, dynamic> json) =>
@@ -953,22 +1189,31 @@ UpdateState$Mutation$StateType _$UpdateState$Mutation$StateTypeFromJson(
               json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateState$Mutation$StateTypeToJson(
-        UpdateState$Mutation$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    UpdateState$Mutation$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateState$Mutation _$UpdateState$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -1030,10 +1275,18 @@ FindStatesPaginationArguments _$FindStatesPaginationArgumentsFromJson(
     );
 
 Map<String, dynamic> _$FindStatesPaginationArgumentsToJson(
-        FindStatesPaginationArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-    };
+    FindStatesPaginationArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 FindStatesByCountryPaginationArguments
     _$FindStatesByCountryPaginationArgumentsFromJson(
@@ -1047,11 +1300,20 @@ FindStatesByCountryPaginationArguments
         );
 
 Map<String, dynamic> _$FindStatesByCountryPaginationArgumentsToJson(
-        FindStatesByCountryPaginationArguments instance) =>
-    <String, dynamic>{
-      'country': instance.country,
-      'pagination': instance.pagination?.toJson(),
-    };
+    FindStatesByCountryPaginationArguments instance) {
+  final val = <String, dynamic>{
+    'country': instance.country,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 CreateStateArguments _$CreateStateArgumentsFromJson(
         Map<String, dynamic> json) =>

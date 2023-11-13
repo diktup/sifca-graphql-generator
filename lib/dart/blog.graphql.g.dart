@@ -16,13 +16,21 @@ GetBlogs$Query$BlogType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$PhoneTypeToJson(
-        GetBlogs$Query$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    GetBlogs$Query$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$PictureType
     _$GetBlogs$Query$BlogType$UserType$PictureTypeFromJson(
@@ -37,16 +45,24 @@ GetBlogs$Query$BlogType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$PictureTypeToJson(
-        GetBlogs$Query$BlogType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetBlogs$Query$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$LanguageType$PictureType
     _$GetBlogs$Query$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -60,18 +76,26 @@ GetBlogs$Query$BlogType$UserType$LanguageType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$GetBlogs$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
-        GetBlogs$Query$BlogType$UserType$LanguageType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
+        GetBlogs$Query$BlogType$UserType$LanguageType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$LanguageType
     _$GetBlogs$Query$BlogType$UserType$LanguageTypeFromJson(
@@ -93,17 +117,26 @@ GetBlogs$Query$BlogType$UserType$LanguageType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$LanguageTypeToJson(
-        GetBlogs$Query$BlogType$UserType$LanguageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    GetBlogs$Query$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$CountryType$PictureType
     _$GetBlogs$Query$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -117,18 +150,26 @@ GetBlogs$Query$BlogType$UserType$CountryType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$GetBlogs$Query$BlogType$UserType$CountryType$PictureTypeToJson(
-        GetBlogs$Query$BlogType$UserType$CountryType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$CountryType$PictureTypeToJson(
+        GetBlogs$Query$BlogType$UserType$CountryType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$CountryType
     _$GetBlogs$Query$BlogType$UserType$CountryTypeFromJson(
@@ -151,18 +192,27 @@ GetBlogs$Query$BlogType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$CountryTypeToJson(
-        GetBlogs$Query$BlogType$UserType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    GetBlogs$Query$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -175,12 +225,19 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -196,17 +253,25 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -230,19 +295,27 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -258,17 +331,25 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTy
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -292,19 +373,28 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -320,17 +410,25 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$StateType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -361,24 +459,33 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$StateType
               : GetBlogs$Query$BlogType$UserType$FullAddressType$StateType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
-        GetBlogs$Query$BlogType$UserType$FullAddressType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetBlogs$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
+        GetBlogs$Query$BlogType$UserType$FullAddressType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -396,12 +503,20 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddres
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -415,12 +530,20 @@ GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$FullAddressType
     _$GetBlogs$Query$BlogType$UserType$FullAddressTypeFromJson(
@@ -448,17 +571,25 @@ GetBlogs$Query$BlogType$UserType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$FullAddressTypeToJson(
-        GetBlogs$Query$BlogType$UserType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+    GetBlogs$Query$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -474,17 +605,25 @@ GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -513,15 +652,23 @@ GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -538,12 +685,20 @@ GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$Soc
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -559,12 +714,21 @@ GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 const _$SocialImageStyleEnumEnumMap = {
   SocialImageStyleEnum.bubble: 'BUBBLE',
@@ -592,17 +756,25 @@ GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        GetBlogs$Query$BlogType$UserType$SocialValueType$SocialType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialValueType
     _$GetBlogs$Query$BlogType$UserType$SocialValueTypeFromJson(
@@ -615,11 +787,19 @@ GetBlogs$Query$BlogType$UserType$SocialValueType
           ..value = json['value'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$SocialValueTypeToJson(
-        GetBlogs$Query$BlogType$UserType$SocialValueType instance) =>
-    <String, dynamic>{
-      'name': instance.name?.toJson(),
-      'value': instance.value,
-    };
+    GetBlogs$Query$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -629,11 +809,19 @@ GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        GetBlogs$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -648,16 +836,25 @@ GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        GetBlogs$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -675,19 +872,28 @@ GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        GetBlogs$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -703,17 +909,25 @@ GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        GetBlogs$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$SocialLoginDataType
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -738,13 +952,21 @@ GetBlogs$Query$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$SocialLoginDataTypeToJson(
-            GetBlogs$Query$BlogType$UserType$SocialLoginDataType instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$UserEducationType
     _$GetBlogs$Query$BlogType$UserType$UserEducationTypeFromJson(
@@ -764,16 +986,24 @@ GetBlogs$Query$BlogType$UserType$UserEducationType
           ..graduated = json['graduated'] as bool?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$UserEducationTypeToJson(
-        GetBlogs$Query$BlogType$UserType$UserEducationType instance) =>
-    <String, dynamic>{
-      'level': _$AcademicLevelEnumMap[instance.level],
-      'name': instance.name,
-      'description': instance.description,
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'graduated': instance.graduated,
-    };
+    GetBlogs$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 const _$AcademicLevelEnumMap = {
   AcademicLevel.primary: 'PRIMARY',
@@ -796,17 +1026,25 @@ GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -830,19 +1068,28 @@ GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -858,17 +1105,25 @@ GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$UserWorkType$StateType
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -901,22 +1156,31 @@ GetBlogs$Query$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
-            GetBlogs$Query$BlogType$UserType$UserWorkType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$UserWorkType
     _$GetBlogs$Query$BlogType$UserType$UserWorkTypeFromJson(
@@ -939,17 +1203,25 @@ GetBlogs$Query$BlogType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$UserWorkTypeToJson(
-        GetBlogs$Query$BlogType$UserType$UserWorkType instance) =>
-    <String, dynamic>{
-      'company': instance.company,
-      'position': instance.position,
-      'description': instance.description,
-      'city': instance.city?.toJson(),
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'current': instance.current,
-    };
+    GetBlogs$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
     _$GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -965,17 +1237,25 @@ GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$StateType$CountryType
     _$GetBlogs$Query$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -999,18 +1279,27 @@ GetBlogs$Query$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$StateType$CountryTypeToJson(
-            GetBlogs$Query$BlogType$UserType$StateType$CountryType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetBlogs$Query$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$StateType$PictureType
     _$GetBlogs$Query$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -1026,16 +1315,24 @@ GetBlogs$Query$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetBlogs$Query$BlogType$UserType$StateType$PictureTypeToJson(
-            GetBlogs$Query$BlogType$UserType$StateType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetBlogs$Query$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType$StateType
     _$GetBlogs$Query$BlogType$UserType$StateTypeFromJson(
@@ -1067,22 +1364,31 @@ GetBlogs$Query$BlogType$UserType$StateType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserType$StateTypeToJson(
-        GetBlogs$Query$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    GetBlogs$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetBlogs$Query$BlogType$UserType _$GetBlogs$Query$BlogType$UserTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1195,52 +1501,66 @@ GetBlogs$Query$BlogType$UserType _$GetBlogs$Query$BlogType$UserTypeFromJson(
           .toList();
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$UserTypeToJson(
-        GetBlogs$Query$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    GetBlogs$Query$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 const _$AppEnumMap = {
   App.bosk: 'BOSK',
@@ -1344,11 +1664,19 @@ GetBlogs$Query$BlogType$SeoComponentType$TagType
           ..content = json['content'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$SeoComponentType$TagTypeToJson(
-        GetBlogs$Query$BlogType$SeoComponentType$TagType instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'content': instance.content,
-    };
+    GetBlogs$Query$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 GetBlogs$Query$BlogType$SeoComponentType
     _$GetBlogs$Query$BlogType$SeoComponentTypeFromJson(
@@ -1363,12 +1691,21 @@ GetBlogs$Query$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$SeoComponentTypeToJson(
-        GetBlogs$Query$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    GetBlogs$Query$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetBlogs$Query$BlogType$PictureType
     _$GetBlogs$Query$BlogType$PictureTypeFromJson(Map<String, dynamic> json) =>
@@ -1382,16 +1719,24 @@ GetBlogs$Query$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$PictureTypeToJson(
-        GetBlogs$Query$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetBlogs$Query$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$BlogDataType$PictureType
     _$GetBlogs$Query$BlogType$BlogDataType$PictureTypeFromJson(
@@ -1406,16 +1751,24 @@ GetBlogs$Query$BlogType$BlogDataType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$BlogDataType$PictureTypeToJson(
-        GetBlogs$Query$BlogType$BlogDataType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    GetBlogs$Query$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetBlogs$Query$BlogType$BlogDataType
     _$GetBlogs$Query$BlogType$BlogDataTypeFromJson(Map<String, dynamic> json) =>
@@ -1430,14 +1783,22 @@ GetBlogs$Query$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$GetBlogs$Query$BlogType$BlogDataTypeToJson(
-        GetBlogs$Query$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    GetBlogs$Query$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetBlogs$Query$BlogType _$GetBlogs$Query$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1466,20 +1827,30 @@ GetBlogs$Query$BlogType _$GetBlogs$Query$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetBlogs$Query$BlogTypeToJson(
-        GetBlogs$Query$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetBlogs$Query$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetBlogs$Query _$GetBlogs$QueryFromJson(Map<String, dynamic> json) =>
     GetBlogs$Query()
@@ -1504,14 +1875,22 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeFromJson(
@@ -1527,17 +1906,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -1553,17 +1940,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$Pictur
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeFromJson(
@@ -1586,18 +1981,27 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -1613,17 +2017,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$Picture
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeFromJson(
@@ -1647,19 +2059,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -1672,12 +2093,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Lon
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -1693,17 +2122,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Cou
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -1727,19 +2164,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Cou
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -1755,17 +2201,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -1789,19 +2243,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -1817,17 +2280,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -1860,23 +2331,32 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -1887,12 +2367,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Ful
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -1906,12 +2394,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Ful
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeFromJson(
@@ -1940,18 +2436,26 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -1967,17 +2471,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -2006,15 +2518,23 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -2031,12 +2551,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -2052,12 +2580,21 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -2077,17 +2614,26 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$Soc
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeFromJson(
@@ -2101,12 +2647,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -2116,11 +2670,19 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -2135,16 +2697,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -2162,19 +2733,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -2190,17 +2770,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -2225,14 +2813,22 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
@@ -2253,17 +2849,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -2279,17 +2883,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -2313,19 +2925,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -2341,17 +2962,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -2384,23 +3013,32 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateT
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
@@ -2424,18 +3062,26 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
-                instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -2451,17 +3097,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTy
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -2485,19 +3139,28 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTy
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -2513,17 +3176,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTy
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
@@ -2556,23 +3227,32 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
@@ -2692,53 +3372,66 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-          'email': instance.email,
-          'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-          'title': instance.title,
-          'about': instance.about,
-          'gender': _$GenderEnumMap[instance.gender],
-          'locale': instance.locale,
-          'source': _$SourcesEnumEnumMap[instance.source],
-          'status': _$UserStatusEnumMap[instance.status],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'plugged': instance.plugged,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isMailValid': instance.isMailValid,
-          'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-          'phoneNumber': instance.phoneNumber,
-          'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-          'placeOfBirth': instance.placeOfBirth,
-          'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-          'newsletterSubs': instance.newsletterSubs,
-          'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'languages': instance.languages?.map((e) => e.toJson()).toList(),
-          'nationality': instance.nationality?.toJson(),
-          'billingAddress':
-              instance.billingAddress?.map((e) => e.toJson()).toList(),
-          'shippingAddress':
-              instance.shippingAddress?.map((e) => e.toJson()).toList(),
-          'residentialAddress':
-              instance.residentialAddress?.map((e) => e.toJson()).toList(),
-          'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-          'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-          'socialLoginData': instance.socialLoginData?.toJson(),
-          'education': instance.education?.map((e) => e.toJson()).toList(),
-          'work': instance.work?.map((e) => e.toJson()).toList(),
-          'lived': instance.lived?.map((e) => e.toJson()).toList(),
-          'hobbies': instance.hobbies,
-          'interests': instance.interests,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeFromJson(
@@ -2749,12 +3442,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentTypeFromJson(
@@ -2770,14 +3471,22 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
-                instance) =>
-        <String, dynamic>{
-          'metaTitle': instance.metaTitle,
-          'metaDesription': instance.metaDesription,
-          'metaKeywords':
-              instance.metaKeywords?.map((e) => e.toJson()).toList(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeFromJson(
@@ -2793,17 +3502,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
@@ -2819,17 +3536,25 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeFromJson(
@@ -2846,15 +3571,23 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
-                instance) =>
-        <String, dynamic>{
-          'sectionTitle': instance.sectionTitle,
-          'sectionContent': instance.sectionContent,
-          'sectionReference': instance.sectionReference,
-          'sectionPictures':
-              instance.sectionPictures?.map((e) => e.toJson()).toList(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogTypeFromJson(
@@ -2888,20 +3621,30 @@ GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType
 
 Map<String, dynamic>
     _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogTypeToJson(
-            GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'url': instance.url,
-          'author': instance.author.toJson(),
-          'title': instance.title,
-          'tags': instance.tags,
-          'seo': instance.seo?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-          'status': instance.status,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetPaginatedBlogs$Query$PaginatedBlogsType
     _$GetPaginatedBlogs$Query$PaginatedBlogsTypeFromJson(
@@ -2916,12 +3659,20 @@ GetPaginatedBlogs$Query$PaginatedBlogsType
               .toList();
 
 Map<String, dynamic> _$GetPaginatedBlogs$Query$PaginatedBlogsTypeToJson(
-        GetPaginatedBlogs$Query$PaginatedBlogsType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    GetPaginatedBlogs$Query$PaginatedBlogsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetPaginatedBlogs$Query _$GetPaginatedBlogs$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -2941,11 +3692,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$PhoneType
     _$Blog$Query$BlogType$UserType$PhoneTypeFromJson(
@@ -2957,13 +3716,21 @@ Blog$Query$BlogType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$PhoneTypeToJson(
-        Blog$Query$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    Blog$Query$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$PictureType
     _$Blog$Query$BlogType$UserType$PictureTypeFromJson(
@@ -2978,16 +3745,24 @@ Blog$Query$BlogType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$PictureTypeToJson(
-        Blog$Query$BlogType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Blog$Query$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$LanguageType$PictureType
     _$Blog$Query$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -3003,16 +3778,24 @@ Blog$Query$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$LanguageType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$LanguageType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$LanguageType
     _$Blog$Query$BlogType$UserType$LanguageTypeFromJson(
@@ -3034,17 +3817,26 @@ Blog$Query$BlogType$UserType$LanguageType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$LanguageTypeToJson(
-        Blog$Query$BlogType$UserType$LanguageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    Blog$Query$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$CountryType$PictureType
     _$Blog$Query$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -3060,16 +3852,24 @@ Blog$Query$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$CountryType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$CountryType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$CountryType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$CountryType
     _$Blog$Query$BlogType$UserType$CountryTypeFromJson(
@@ -3092,18 +3892,27 @@ Blog$Query$BlogType$UserType$CountryType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$CountryTypeToJson(
-        Blog$Query$BlogType$UserType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    Blog$Query$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$LonLatType
     _$Blog$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -3116,11 +3925,19 @@ Blog$Query$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$LonLatType instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -3136,17 +3953,25 @@ Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$CountryType
     _$Blog$Query$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -3168,20 +3993,29 @@ Blog$Query$BlogType$UserType$FullAddressType$CountryType
               : Blog$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$Blog$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
-        Blog$Query$BlogType$UserType$FullAddressType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+Map<String, dynamic>
+    _$Blog$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
+        Blog$Query$BlogType$UserType$FullAddressType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -3197,17 +4031,25 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -3231,19 +4073,28 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureType
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -3259,17 +4110,25 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$StateType
     _$Blog$Query$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -3302,22 +4161,31 @@ Blog$Query$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -3328,12 +4196,20 @@ Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwn
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -3347,12 +4223,20 @@ Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$FullAddressType
     _$Blog$Query$BlogType$UserType$FullAddressTypeFromJson(
@@ -3380,17 +4264,25 @@ Blog$Query$BlogType$UserType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$FullAddressTypeToJson(
-        Blog$Query$BlogType$UserType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+    Blog$Query$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -3406,17 +4298,25 @@ Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialI
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -3445,15 +4345,23 @@ Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialI
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -3470,12 +4378,20 @@ Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialI
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -3491,12 +4407,21 @@ Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        Blog$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialValueType$SocialType
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -3516,16 +4441,25 @@ Blog$Query$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            Blog$Query$BlogType$UserType$SocialValueType$SocialType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        Blog$Query$BlogType$UserType$SocialValueType$SocialType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialValueType
     _$Blog$Query$BlogType$UserType$SocialValueTypeFromJson(
@@ -3538,11 +4472,19 @@ Blog$Query$BlogType$UserType$SocialValueType
           ..value = json['value'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$SocialValueTypeToJson(
-        Blog$Query$BlogType$UserType$SocialValueType instance) =>
-    <String, dynamic>{
-      'name': instance.name?.toJson(),
-      'value': instance.value,
-    };
+    Blog$Query$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -3552,11 +4494,19 @@ Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        Blog$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -3571,16 +4521,25 @@ Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        Blog$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -3598,19 +4557,28 @@ Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        Blog$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -3626,17 +4594,25 @@ Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        Blog$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$SocialLoginDataType
     _$Blog$Query$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -3660,13 +4636,21 @@ Blog$Query$BlogType$UserType$SocialLoginDataType
                   .fromJson(json['apple'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$SocialLoginDataTypeToJson(
-        Blog$Query$BlogType$UserType$SocialLoginDataType instance) =>
-    <String, dynamic>{
-      'ooredoo': instance.ooredoo?.toJson(),
-      'facebook': instance.facebook?.toJson(),
-      'google': instance.google?.toJson(),
-      'apple': instance.apple?.toJson(),
-    };
+    Blog$Query$BlogType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$UserEducationType
     _$Blog$Query$BlogType$UserType$UserEducationTypeFromJson(
@@ -3686,16 +4670,24 @@ Blog$Query$BlogType$UserType$UserEducationType
           ..graduated = json['graduated'] as bool?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$UserEducationTypeToJson(
-        Blog$Query$BlogType$UserType$UserEducationType instance) =>
-    <String, dynamic>{
-      'level': _$AcademicLevelEnumMap[instance.level],
-      'name': instance.name,
-      'description': instance.description,
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'graduated': instance.graduated,
-    };
+    Blog$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -3711,17 +4703,25 @@ Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
     _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -3745,19 +4745,28 @@ Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
     _$Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -3773,17 +4782,25 @@ Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$UserWorkType$StateType
     _$Blog$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -3816,22 +4833,31 @@ Blog$Query$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
-            Blog$Query$BlogType$UserType$UserWorkType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Blog$Query$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$UserWorkType
     _$Blog$Query$BlogType$UserType$UserWorkTypeFromJson(
@@ -3854,17 +4880,25 @@ Blog$Query$BlogType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$UserWorkTypeToJson(
-        Blog$Query$BlogType$UserType$UserWorkType instance) =>
-    <String, dynamic>{
-      'company': instance.company,
-      'position': instance.position,
-      'description': instance.description,
-      'city': instance.city?.toJson(),
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'current': instance.current,
-    };
+    Blog$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
     _$Blog$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -3880,17 +4914,25 @@ Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Blog$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Blog$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$StateType$CountryType
     _$Blog$Query$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -3913,18 +4955,27 @@ Blog$Query$BlogType$UserType$StateType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$StateType$CountryTypeToJson(
-        Blog$Query$BlogType$UserType$StateType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    Blog$Query$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType$StateType$PictureType
     _$Blog$Query$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -3939,16 +4990,24 @@ Blog$Query$BlogType$UserType$StateType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$StateType$PictureTypeToJson(
-        Blog$Query$BlogType$UserType$StateType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Blog$Query$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$UserType$StateType
     _$Blog$Query$BlogType$UserType$StateTypeFromJson(
@@ -3980,22 +5039,31 @@ Blog$Query$BlogType$UserType$StateType
                   json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserType$StateTypeToJson(
-        Blog$Query$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    Blog$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Blog$Query$BlogType$UserType _$Blog$Query$BlogType$UserTypeFromJson(
         Map<String, dynamic> json) =>
@@ -4102,52 +5170,66 @@ Blog$Query$BlogType$UserType _$Blog$Query$BlogType$UserTypeFromJson(
           .toList();
 
 Map<String, dynamic> _$Blog$Query$BlogType$UserTypeToJson(
-        Blog$Query$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    Blog$Query$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 Blog$Query$BlogType$SeoComponentType$TagType
     _$Blog$Query$BlogType$SeoComponentType$TagTypeFromJson(
@@ -4157,11 +5239,19 @@ Blog$Query$BlogType$SeoComponentType$TagType
           ..content = json['content'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$SeoComponentType$TagTypeToJson(
-        Blog$Query$BlogType$SeoComponentType$TagType instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'content': instance.content,
-    };
+    Blog$Query$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 Blog$Query$BlogType$SeoComponentType
     _$Blog$Query$BlogType$SeoComponentTypeFromJson(Map<String, dynamic> json) =>
@@ -4175,12 +5265,21 @@ Blog$Query$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$Blog$Query$BlogType$SeoComponentTypeToJson(
-        Blog$Query$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    Blog$Query$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Blog$Query$BlogType$PictureType _$Blog$Query$BlogType$PictureTypeFromJson(
         Map<String, dynamic> json) =>
@@ -4194,16 +5293,24 @@ Blog$Query$BlogType$PictureType _$Blog$Query$BlogType$PictureTypeFromJson(
       ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$PictureTypeToJson(
-        Blog$Query$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Blog$Query$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$BlogDataType$PictureType
     _$Blog$Query$BlogType$BlogDataType$PictureTypeFromJson(
@@ -4218,16 +5325,24 @@ Blog$Query$BlogType$BlogDataType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Blog$Query$BlogType$BlogDataType$PictureTypeToJson(
-        Blog$Query$BlogType$BlogDataType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Blog$Query$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Blog$Query$BlogType$BlogDataType _$Blog$Query$BlogType$BlogDataTypeFromJson(
         Map<String, dynamic> json) =>
@@ -4241,14 +5356,22 @@ Blog$Query$BlogType$BlogDataType _$Blog$Query$BlogType$BlogDataTypeFromJson(
           .toList();
 
 Map<String, dynamic> _$Blog$Query$BlogType$BlogDataTypeToJson(
-        Blog$Query$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    Blog$Query$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Blog$Query$BlogType _$Blog$Query$BlogTypeFromJson(Map<String, dynamic> json) =>
     Blog$Query$BlogType()
@@ -4275,21 +5398,30 @@ Blog$Query$BlogType _$Blog$Query$BlogTypeFromJson(Map<String, dynamic> json) =>
       ..createdAt = DateTime.parse(json['createdAt'] as String)
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String, dynamic> _$Blog$Query$BlogTypeToJson(
-        Blog$Query$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic> _$Blog$Query$BlogTypeToJson(Blog$Query$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Blog$Query _$Blog$QueryFromJson(Map<String, dynamic> json) => Blog$Query()
   ..blog = Blog$Query$BlogType.fromJson(json['blog'] as Map<String, dynamic>);
@@ -4310,13 +5442,21 @@ FindBlogsByTarget$Query$BlogType$UserType$PhoneType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$PhoneTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$PictureTypeFromJson(
@@ -4332,16 +5472,24 @@ FindBlogsByTarget$Query$BlogType$UserType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -4357,17 +5505,25 @@ FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$LanguageType
     _$FindBlogsByTarget$Query$BlogType$UserType$LanguageTypeFromJson(
@@ -4390,17 +5546,26 @@ FindBlogsByTarget$Query$BlogType$UserType$LanguageType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$LanguageTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$LanguageType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -4416,17 +5581,25 @@ FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$CountryType
     _$FindBlogsByTarget$Query$BlogType$UserType$CountryTypeFromJson(
@@ -4450,18 +5623,27 @@ FindBlogsByTarget$Query$BlogType$UserType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$CountryTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$CountryType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -4474,12 +5656,20 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4495,17 +5685,25 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureTyp
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -4529,19 +5727,28 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4557,17 +5764,25 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4591,19 +5806,28 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4619,17 +5843,25 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -4662,23 +5894,32 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4689,12 +5930,20 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$F
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4708,12 +5957,20 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$FullAddressType
     _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressTypeFromJson(
@@ -4740,19 +5997,27 @@ FindBlogsByTarget$Query$BlogType$UserType$FullAddressType
               : FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressTypeToJson(
-        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -4768,17 +6033,25 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -4807,15 +6080,23 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -4832,12 +6113,20 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -4853,12 +6142,21 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -4878,17 +6176,26 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialValueType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueTypeFromJson(
@@ -4900,13 +6207,21 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialValueType
                   .fromJson(json['name'] as Map<String, dynamic>)
           ..value = json['value'] as String?;
 
-Map<String,
-    dynamic> _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueTypeToJson(
-        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType instance) =>
-    <String, dynamic>{
-      'name': instance.name?.toJson(),
-      'value': instance.value,
-    };
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$UserType$SocialValueTypeToJson(
+        FindBlogsByTarget$Query$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -4916,11 +6231,19 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -4935,16 +6258,25 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -4962,19 +6294,28 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -4990,17 +6331,25 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -5025,14 +6374,22 @@ FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$UserEducationType
     _$FindBlogsByTarget$Query$BlogType$UserType$UserEducationTypeFromJson(
@@ -5053,17 +6410,24 @@ FindBlogsByTarget$Query$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$UserEducationTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -5079,17 +6443,25 @@ FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$Pic
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -5113,19 +6485,28 @@ FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -5141,17 +6522,25 @@ FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -5184,23 +6573,32 @@ FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$UserWorkType
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkTypeFromJson(
@@ -5224,17 +6622,25 @@ FindBlogsByTarget$Query$BlogType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$UserWorkTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$UserWorkType instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -5250,17 +6656,25 @@ FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
     _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -5284,19 +6698,28 @@ FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
     _$FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -5312,17 +6735,25 @@ FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType$StateType
     _$FindBlogsByTarget$Query$BlogType$UserType$StateTypeFromJson(
@@ -5355,22 +6786,31 @@ FindBlogsByTarget$Query$BlogType$UserType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByTarget$Query$BlogType$UserType$StateTypeToJson(
-            FindBlogsByTarget$Query$BlogType$UserType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTarget$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$UserType
     _$FindBlogsByTarget$Query$BlogType$UserTypeFromJson(
@@ -5488,52 +6928,66 @@ FindBlogsByTarget$Query$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$UserTypeToJson(
-        FindBlogsByTarget$Query$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    FindBlogsByTarget$Query$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$SeoComponentType$TagType
     _$FindBlogsByTarget$Query$BlogType$SeoComponentType$TagTypeFromJson(
@@ -5542,13 +6996,21 @@ FindBlogsByTarget$Query$BlogType$SeoComponentType$TagType
           ..name = json['name'] as String?
           ..content = json['content'] as String?;
 
-Map<String,
-    dynamic> _$FindBlogsByTarget$Query$BlogType$SeoComponentType$TagTypeToJson(
-        FindBlogsByTarget$Query$BlogType$SeoComponentType$TagType instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'content': instance.content,
-    };
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$SeoComponentType$TagTypeToJson(
+        FindBlogsByTarget$Query$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$SeoComponentType
     _$FindBlogsByTarget$Query$BlogType$SeoComponentTypeFromJson(
@@ -5563,12 +7025,21 @@ FindBlogsByTarget$Query$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$SeoComponentTypeToJson(
-        FindBlogsByTarget$Query$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    FindBlogsByTarget$Query$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$PictureType
     _$FindBlogsByTarget$Query$BlogType$PictureTypeFromJson(
@@ -5583,16 +7054,24 @@ FindBlogsByTarget$Query$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$PictureTypeToJson(
-        FindBlogsByTarget$Query$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    FindBlogsByTarget$Query$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType
     _$FindBlogsByTarget$Query$BlogType$BlogDataType$PictureTypeFromJson(
@@ -5606,18 +7085,26 @@ FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$FindBlogsByTarget$Query$BlogType$BlogDataType$PictureTypeToJson(
-        FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$FindBlogsByTarget$Query$BlogType$BlogDataType$PictureTypeToJson(
+        FindBlogsByTarget$Query$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType$BlogDataType
     _$FindBlogsByTarget$Query$BlogType$BlogDataTypeFromJson(
@@ -5633,14 +7120,22 @@ FindBlogsByTarget$Query$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogType$BlogDataTypeToJson(
-        FindBlogsByTarget$Query$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    FindBlogsByTarget$Query$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTarget$Query$BlogType _$FindBlogsByTarget$Query$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -5669,20 +7164,30 @@ FindBlogsByTarget$Query$BlogType _$FindBlogsByTarget$Query$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$FindBlogsByTarget$Query$BlogTypeToJson(
-        FindBlogsByTarget$Query$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    FindBlogsByTarget$Query$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindBlogsByTarget$Query _$FindBlogsByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -5707,13 +7212,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneTypeFromJson(
@@ -5724,15 +7237,23 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneType
           ..countryCode = json['countryCode'] as String?
           ..validationNumber = json['validationNumber'] as int?;
 
-Map<String,
-    dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneTypeToJson(
-        FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureTypeFromJson(
@@ -5748,17 +7269,24 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -5774,17 +7302,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageTypeFromJson(
@@ -5807,18 +7343,26 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -5834,17 +7378,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryTypeFromJson(
@@ -5868,19 +7420,27 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -5893,12 +7453,20 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -5914,17 +7482,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$Pict
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -5948,19 +7524,28 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -5976,17 +7561,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$Countr
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -6010,19 +7603,28 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$Countr
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -6038,17 +7640,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$Pictur
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -6081,23 +7691,32 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -6108,12 +7727,20 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwner
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -6127,12 +7754,20 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwner
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressTypeFromJson(
@@ -6161,18 +7796,26 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -6188,17 +7831,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -6227,15 +7878,23 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -6252,12 +7911,20 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -6273,12 +7940,21 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$Socia
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -6298,17 +7974,26 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueTypeFromJson(
@@ -6322,12 +8007,20 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -6337,11 +8030,19 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataT
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -6356,16 +8057,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookData
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -6383,19 +8093,28 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -6411,17 +8130,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataTyp
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -6446,14 +8173,22 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationTypeFromJson(
@@ -6474,17 +8209,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -6500,17 +8243,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -6534,19 +8285,28 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -6562,17 +8322,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -6605,23 +8373,32 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkTypeFromJson(
@@ -6645,18 +8422,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType
-                instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -6672,17 +8456,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureTyp
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -6706,19 +8498,28 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -6734,17 +8535,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateTypeFromJson(
@@ -6775,24 +8584,33 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType
               : FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateTypeToJson(
-        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+Map<String, dynamic>
+    _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateTypeToJson(
+        FindBlogsByTargetAndUrl$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$UserType
     _$FindBlogsByTargetAndUrl$Query$BlogType$UserTypeFromJson(
@@ -6911,52 +8729,66 @@ FindBlogsByTargetAndUrl$Query$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$UserTypeToJson(
-        FindBlogsByTargetAndUrl$Query$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    FindBlogsByTargetAndUrl$Query$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagType
     _$FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagTypeFromJson(
@@ -6967,12 +8799,20 @@ FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType$TagType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType
     _$FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentTypeFromJson(
@@ -6988,13 +8828,21 @@ FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType instance) =>
-        <String, dynamic>{
-          'metaTitle': instance.metaTitle,
-          'metaDesription': instance.metaDesription,
-          'metaKeywords':
-              instance.metaKeywords?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$PictureTypeFromJson(
@@ -7009,16 +8857,24 @@ FindBlogsByTargetAndUrl$Query$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogType$PictureTypeToJson(
-        FindBlogsByTargetAndUrl$Query$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    FindBlogsByTargetAndUrl$Query$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
     _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureTypeFromJson(
@@ -7034,17 +8890,25 @@ FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType
     _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataTypeFromJson(
@@ -7061,14 +8925,22 @@ FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType
 
 Map<String, dynamic>
     _$FindBlogsByTargetAndUrl$Query$BlogType$BlogDataTypeToJson(
-            FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType instance) =>
-        <String, dynamic>{
-          'sectionTitle': instance.sectionTitle,
-          'sectionContent': instance.sectionContent,
-          'sectionReference': instance.sectionReference,
-          'sectionPictures':
-              instance.sectionPictures?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetAndUrl$Query$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query$BlogType
     _$FindBlogsByTargetAndUrl$Query$BlogTypeFromJson(
@@ -7100,20 +8972,30 @@ FindBlogsByTargetAndUrl$Query$BlogType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$FindBlogsByTargetAndUrl$Query$BlogTypeToJson(
-        FindBlogsByTargetAndUrl$Query$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    FindBlogsByTargetAndUrl$Query$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindBlogsByTargetAndUrl$Query _$FindBlogsByTargetAndUrl$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -7139,14 +9021,22 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeFromJson(
@@ -7162,17 +9052,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTyp
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -7188,17 +9086,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeFromJson(
@@ -7221,18 +9127,27 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -7248,17 +9163,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTyp
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeFromJson(
@@ -7282,19 +9205,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTyp
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -7307,12 +9239,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -7328,17 +9268,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -7362,19 +9310,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -7390,17 +9347,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -7424,19 +9389,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -7452,17 +9426,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -7495,23 +9477,32 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -7522,12 +9513,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -7541,12 +9540,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeFromJson(
@@ -7575,18 +9582,26 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -7602,17 +9617,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -7641,15 +9664,23 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -7666,12 +9697,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -7687,12 +9726,21 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -7712,17 +9760,26 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeFromJson(
@@ -7736,12 +9793,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -7751,11 +9816,19 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -7770,16 +9843,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -7797,19 +9879,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -7825,17 +9916,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -7860,14 +9959,22 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
@@ -7888,17 +9995,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducat
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -7914,17 +10029,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -7948,19 +10071,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -7976,17 +10108,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -8019,23 +10159,32 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
@@ -8059,18 +10208,26 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
-                instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -8086,17 +10243,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -8120,19 +10285,28 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -8148,17 +10322,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
@@ -8191,23 +10373,32 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
@@ -8327,53 +10518,67 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-          'email': instance.email,
-          'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-          'title': instance.title,
-          'about': instance.about,
-          'gender': _$GenderEnumMap[instance.gender],
-          'locale': instance.locale,
-          'source': _$SourcesEnumEnumMap[instance.source],
-          'status': _$UserStatusEnumMap[instance.status],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'plugged': instance.plugged,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isMailValid': instance.isMailValid,
-          'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-          'phoneNumber': instance.phoneNumber,
-          'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-          'placeOfBirth': instance.placeOfBirth,
-          'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-          'newsletterSubs': instance.newsletterSubs,
-          'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'languages': instance.languages?.map((e) => e.toJson()).toList(),
-          'nationality': instance.nationality?.toJson(),
-          'billingAddress':
-              instance.billingAddress?.map((e) => e.toJson()).toList(),
-          'shippingAddress':
-              instance.shippingAddress?.map((e) => e.toJson()).toList(),
-          'residentialAddress':
-              instance.residentialAddress?.map((e) => e.toJson()).toList(),
-          'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-          'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-          'socialLoginData': instance.socialLoginData?.toJson(),
-          'education': instance.education?.map((e) => e.toJson()).toList(),
-          'work': instance.work?.map((e) => e.toJson()).toList(),
-          'lived': instance.lived?.map((e) => e.toJson()).toList(),
-          'hobbies': instance.hobbies,
-          'interests': instance.interests,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeFromJson(
@@ -8384,12 +10589,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$Ta
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentTypeFromJson(
@@ -8405,14 +10618,22 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
-                instance) =>
-        <String, dynamic>{
-          'metaTitle': instance.metaTitle,
-          'metaDesription': instance.metaDesription,
-          'metaKeywords':
-              instance.metaKeywords?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeFromJson(
@@ -8428,17 +10649,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
@@ -8454,17 +10683,25 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$Pictur
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataTypeFromJson(
@@ -8481,15 +10718,23 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
-                instance) =>
-        <String, dynamic>{
-          'sectionTitle': instance.sectionTitle,
-          'sectionContent': instance.sectionContent,
-          'sectionReference': instance.sectionReference,
-          'sectionPictures':
-              instance.sectionPictures?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogTypeFromJson(
@@ -8523,21 +10768,30 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'url': instance.url,
-          'author': instance.author.toJson(),
-          'title': instance.title,
-          'tags': instance.tags,
-          'seo': instance.seo?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-          'status': instance.status,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query$PaginatedBlogsType
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsTypeFromJson(
@@ -8553,12 +10807,20 @@ FindBlogsByTargetPaginated$Query$PaginatedBlogsType
 
 Map<String, dynamic>
     _$FindBlogsByTargetPaginated$Query$PaginatedBlogsTypeToJson(
-            FindBlogsByTargetPaginated$Query$PaginatedBlogsType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByTargetPaginated$Query$PaginatedBlogsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 FindBlogsByTargetPaginated$Query _$FindBlogsByTargetPaginated$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -8585,13 +10847,21 @@ FindBlogsByAuthor$Query$BlogType$UserType$PhoneType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$PhoneTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$PictureTypeFromJson(
@@ -8607,16 +10877,24 @@ FindBlogsByAuthor$Query$BlogType$UserType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -8632,17 +10910,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$LanguageType
     _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageTypeFromJson(
@@ -8665,17 +10951,26 @@ FindBlogsByAuthor$Query$BlogType$UserType$LanguageType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$LanguageTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$LanguageType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -8691,17 +10986,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$CountryType
     _$FindBlogsByAuthor$Query$BlogType$UserType$CountryTypeFromJson(
@@ -8725,18 +11028,27 @@ FindBlogsByAuthor$Query$BlogType$UserType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$CountryTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$CountryType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -8749,12 +11061,20 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8770,17 +11090,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureTyp
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -8804,19 +11132,28 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8832,17 +11169,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8866,19 +11211,28 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8894,17 +11248,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -8937,23 +11299,32 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8964,12 +11335,20 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$F
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8983,12 +11362,20 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType
     _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressTypeFromJson(
@@ -9015,19 +11402,27 @@ FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType
               : FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$FullAddressOwnerType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -9043,17 +11438,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -9082,15 +11485,23 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -9107,12 +11518,20 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -9128,12 +11547,21 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImage
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -9153,17 +11581,26 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueTypeFromJson(
@@ -9175,13 +11612,21 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType
                   .fromJson(json['name'] as Map<String, dynamic>)
           ..value = json['value'] as String?;
 
-Map<String,
-    dynamic> _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType instance) =>
-    <String, dynamic>{
-      'name': instance.name?.toJson(),
-      'value': instance.value,
-    };
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$UserType$SocialValueTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -9191,11 +11636,19 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -9210,16 +11663,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -9237,19 +11699,28 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -9265,17 +11736,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -9300,14 +11779,22 @@ FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserEducationTypeFromJson(
@@ -9328,17 +11815,24 @@ FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserEducationTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -9354,17 +11848,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$Pic
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -9388,19 +11890,28 @@ FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -9416,17 +11927,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -9459,23 +11978,32 @@ FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkTypeFromJson(
@@ -9499,17 +12027,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$UserWorkTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -9525,17 +12061,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -9559,19 +12103,28 @@ FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -9587,17 +12140,25 @@ FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType$StateType
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateTypeFromJson(
@@ -9630,22 +12191,31 @@ FindBlogsByAuthor$Query$BlogType$UserType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByAuthor$Query$BlogType$UserType$StateTypeToJson(
-            FindBlogsByAuthor$Query$BlogType$UserType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthor$Query$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$UserType
     _$FindBlogsByAuthor$Query$BlogType$UserTypeFromJson(
@@ -9763,52 +12333,66 @@ FindBlogsByAuthor$Query$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$UserTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    FindBlogsByAuthor$Query$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagType
     _$FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagTypeFromJson(
@@ -9817,13 +12401,21 @@ FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagType
           ..name = json['name'] as String?
           ..content = json['content'] as String?;
 
-Map<String,
-    dynamic> _$FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagType instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'content': instance.content,
-    };
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$SeoComponentType
     _$FindBlogsByAuthor$Query$BlogType$SeoComponentTypeFromJson(
@@ -9838,12 +12430,21 @@ FindBlogsByAuthor$Query$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$SeoComponentTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    FindBlogsByAuthor$Query$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$PictureTypeFromJson(
@@ -9858,16 +12459,24 @@ FindBlogsByAuthor$Query$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$PictureTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    FindBlogsByAuthor$Query$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType
     _$FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureTypeFromJson(
@@ -9881,18 +12490,26 @@ FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureTypeToJson(
+        FindBlogsByAuthor$Query$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType$BlogDataType
     _$FindBlogsByAuthor$Query$BlogType$BlogDataTypeFromJson(
@@ -9908,14 +12525,22 @@ FindBlogsByAuthor$Query$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogType$BlogDataTypeToJson(
-        FindBlogsByAuthor$Query$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    FindBlogsByAuthor$Query$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthor$Query$BlogType _$FindBlogsByAuthor$Query$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -9944,20 +12569,30 @@ FindBlogsByAuthor$Query$BlogType _$FindBlogsByAuthor$Query$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$FindBlogsByAuthor$Query$BlogTypeToJson(
-        FindBlogsByAuthor$Query$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    FindBlogsByAuthor$Query$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindBlogsByAuthor$Query _$FindBlogsByAuthor$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -9985,14 +12620,22 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeFromJson(
@@ -10008,17 +12651,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTyp
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -10034,17 +12685,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeFromJson(
@@ -10067,18 +12726,27 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -10094,17 +12762,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTyp
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeFromJson(
@@ -10128,19 +12804,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTyp
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -10153,12 +12838,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10174,17 +12867,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -10208,19 +12909,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -10236,17 +12946,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -10270,19 +12988,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -10298,17 +13025,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -10341,23 +13076,32 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -10368,12 +13112,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -10387,12 +13139,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeFromJson(
@@ -10421,18 +13181,26 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddres
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -10448,17 +13216,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -10487,15 +13263,23 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -10512,12 +13296,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -10533,12 +13325,21 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -10558,17 +13359,26 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeFromJson(
@@ -10582,12 +13392,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValu
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -10597,11 +13415,19 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -10616,16 +13442,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -10643,19 +13478,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -10671,17 +13515,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -10706,14 +13558,22 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLogi
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
@@ -10734,17 +13594,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducat
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -10760,17 +13628,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -10794,19 +13670,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -10822,17 +13707,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -10865,23 +13758,32 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
@@ -10905,18 +13807,26 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTy
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
-                instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -10932,17 +13842,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -10966,19 +13884,28 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -10994,17 +13921,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
@@ -11037,23 +13972,32 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
@@ -11173,53 +14117,67 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-          'email': instance.email,
-          'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-          'title': instance.title,
-          'about': instance.about,
-          'gender': _$GenderEnumMap[instance.gender],
-          'locale': instance.locale,
-          'source': _$SourcesEnumEnumMap[instance.source],
-          'status': _$UserStatusEnumMap[instance.status],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'plugged': instance.plugged,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isMailValid': instance.isMailValid,
-          'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-          'phoneNumber': instance.phoneNumber,
-          'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-          'placeOfBirth': instance.placeOfBirth,
-          'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-          'newsletterSubs': instance.newsletterSubs,
-          'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'languages': instance.languages?.map((e) => e.toJson()).toList(),
-          'nationality': instance.nationality?.toJson(),
-          'billingAddress':
-              instance.billingAddress?.map((e) => e.toJson()).toList(),
-          'shippingAddress':
-              instance.shippingAddress?.map((e) => e.toJson()).toList(),
-          'residentialAddress':
-              instance.residentialAddress?.map((e) => e.toJson()).toList(),
-          'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-          'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-          'socialLoginData': instance.socialLoginData?.toJson(),
-          'education': instance.education?.map((e) => e.toJson()).toList(),
-          'work': instance.work?.map((e) => e.toJson()).toList(),
-          'lived': instance.lived?.map((e) => e.toJson()).toList(),
-          'hobbies': instance.hobbies,
-          'interests': instance.interests,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeFromJson(
@@ -11230,12 +14188,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$Ta
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentTypeFromJson(
@@ -11251,14 +14217,22 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
-                instance) =>
-        <String, dynamic>{
-          'metaTitle': instance.metaTitle,
-          'metaDesription': instance.metaDesription,
-          'metaKeywords':
-              instance.metaKeywords?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$SeoComponentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeFromJson(
@@ -11274,17 +14248,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
@@ -11300,17 +14282,25 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$Pictur
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataTypeFromJson(
@@ -11327,15 +14317,23 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
-                instance) =>
-        <String, dynamic>{
-          'sectionTitle': instance.sectionTitle,
-          'sectionContent': instance.sectionContent,
-          'sectionReference': instance.sectionReference,
-          'sectionPictures':
-              instance.sectionPictures?.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$BlogDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogTypeFromJson(
@@ -11369,21 +14367,30 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'url': instance.url,
-          'author': instance.author.toJson(),
-          'title': instance.title,
-          'tags': instance.tags,
-          'seo': instance.seo?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-          'status': instance.status,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query$PaginatedBlogsType
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsTypeFromJson(
@@ -11399,12 +14406,20 @@ FindBlogsByAuthorPaginated$Query$PaginatedBlogsType
 
 Map<String, dynamic>
     _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsTypeToJson(
-            FindBlogsByAuthorPaginated$Query$PaginatedBlogsType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        FindBlogsByAuthorPaginated$Query$PaginatedBlogsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 FindBlogsByAuthorPaginated$Query _$FindBlogsByAuthorPaginated$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -11431,14 +14446,22 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeFromJson(
@@ -11454,17 +14477,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -11480,17 +14511,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeFromJson(
@@ -11513,18 +14552,27 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -11540,17 +14588,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeFromJson(
@@ -11574,19 +14630,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -11599,12 +14664,20 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTyp
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -11620,17 +14693,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTy
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -11654,19 +14735,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTy
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -11682,17 +14772,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -11716,19 +14814,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -11744,17 +14851,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -11787,23 +14902,32 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -11814,12 +14938,20 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddre
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -11833,12 +14965,20 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddre
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeFromJson(
@@ -11867,18 +15007,26 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -11894,17 +15042,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTyp
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -11933,15 +15089,23 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTyp
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -11958,12 +15122,20 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTyp
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -11979,12 +15151,21 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTyp
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -12004,17 +15185,26 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTyp
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeFromJson(
@@ -12028,12 +15218,20 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -12043,11 +15241,19 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$Oored
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -12062,16 +15268,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$Faceb
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -12089,19 +15304,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$Googl
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -12117,17 +15341,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$Apple
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -12152,14 +15384,22 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
-                instance) =>
-        <String, dynamic>{
-          'ooredoo': instance.ooredoo?.toJson(),
-          'facebook': instance.facebook?.toJson(),
-          'google': instance.google?.toJson(),
-          'apple': instance.apple?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$SocialLoginDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeFromJson(
@@ -12180,17 +15420,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
-                instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserEducationType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -12206,17 +15454,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$Co
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -12240,19 +15496,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$Co
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -12268,17 +15533,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$Pi
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -12311,23 +15584,32 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeFromJson(
@@ -12351,18 +15633,26 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
-                instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$UserWorkType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -12378,17 +15668,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$Pic
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -12412,19 +15710,28 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -12440,17 +15747,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeFromJson(
@@ -12483,23 +15798,32 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserTypeFromJson(
@@ -12619,52 +15943,66 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-          'email': instance.email,
-          'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-          'title': instance.title,
-          'about': instance.about,
-          'gender': _$GenderEnumMap[instance.gender],
-          'locale': instance.locale,
-          'source': _$SourcesEnumEnumMap[instance.source],
-          'status': _$UserStatusEnumMap[instance.status],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'plugged': instance.plugged,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isMailValid': instance.isMailValid,
-          'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-          'phoneNumber': instance.phoneNumber,
-          'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-          'placeOfBirth': instance.placeOfBirth,
-          'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-          'newsletterSubs': instance.newsletterSubs,
-          'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-          'languages': instance.languages?.map((e) => e.toJson()).toList(),
-          'nationality': instance.nationality?.toJson(),
-          'billingAddress':
-              instance.billingAddress?.map((e) => e.toJson()).toList(),
-          'shippingAddress':
-              instance.shippingAddress?.map((e) => e.toJson()).toList(),
-          'residentialAddress':
-              instance.residentialAddress?.map((e) => e.toJson()).toList(),
-          'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-          'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-          'socialLoginData': instance.socialLoginData?.toJson(),
-          'education': instance.education?.map((e) => e.toJson()).toList(),
-          'work': instance.work?.map((e) => e.toJson()).toList(),
-          'lived': instance.lived?.map((e) => e.toJson()).toList(),
-          'hobbies': instance.hobbies,
-          'interests': instance.interests,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeFromJson(
@@ -12675,12 +16013,20 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType$TagType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentTypeFromJson(
@@ -12696,14 +16042,22 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
-                instance) =>
-        <String, dynamic>{
-          'metaTitle': instance.metaTitle,
-          'metaDesription': instance.metaDesription,
-          'metaKeywords':
-              instance.metaKeywords?.map((e) => e.toJson()).toList(),
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$SeoComponentType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeFromJson(
@@ -12717,18 +16071,26 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeFromJson(
@@ -12744,17 +16106,25 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureTypeToJson(
-            SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeFromJson(
@@ -12769,16 +16139,24 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
-        SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataTypeToJson(
+        SearchBlogs$Query$PaginatedBlogsType$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType$BlogType
     _$SearchBlogs$Query$PaginatedBlogsType$BlogTypeFromJson(
@@ -12811,20 +16189,30 @@ SearchBlogs$Query$PaginatedBlogsType$BlogType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$SearchBlogs$Query$PaginatedBlogsType$BlogTypeToJson(
-        SearchBlogs$Query$PaginatedBlogsType$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    SearchBlogs$Query$PaginatedBlogsType$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchBlogs$Query$PaginatedBlogsType
     _$SearchBlogs$Query$PaginatedBlogsTypeFromJson(Map<String, dynamic> json) =>
@@ -12838,12 +16226,20 @@ SearchBlogs$Query$PaginatedBlogsType
               .toList();
 
 Map<String, dynamic> _$SearchBlogs$Query$PaginatedBlogsTypeToJson(
-        SearchBlogs$Query$PaginatedBlogsType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    SearchBlogs$Query$PaginatedBlogsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchBlogs$Query _$SearchBlogs$QueryFromJson(Map<String, dynamic> json) =>
     SearchBlogs$Query()
@@ -12865,13 +16261,21 @@ CreateBlog$Mutation$BlogType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$PhoneTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    CreateBlog$Mutation$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$PictureTypeFromJson(
@@ -12886,16 +16290,24 @@ CreateBlog$Mutation$BlogType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$PictureTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    CreateBlog$Mutation$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -12911,17 +16323,25 @@ CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$LanguageType
     _$CreateBlog$Mutation$BlogType$UserType$LanguageTypeFromJson(
@@ -12943,17 +16363,26 @@ CreateBlog$Mutation$BlogType$UserType$LanguageType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$LanguageTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$LanguageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    CreateBlog$Mutation$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$CountryType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -12969,17 +16398,25 @@ CreateBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$CountryType
     _$CreateBlog$Mutation$BlogType$UserType$CountryTypeFromJson(
@@ -13002,18 +16439,27 @@ CreateBlog$Mutation$BlogType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$CountryTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    CreateBlog$Mutation$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -13026,12 +16472,20 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -13047,17 +16501,25 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -13081,19 +16543,28 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -13109,17 +16580,25 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pict
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -13143,19 +16622,28 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -13171,17 +16659,25 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -13214,23 +16710,32 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -13241,12 +16746,20 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullA
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -13260,12 +16773,20 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$FullAddressType
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressTypeFromJson(
@@ -13294,17 +16815,25 @@ CreateBlog$Mutation$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$FullAddressType instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -13320,17 +16849,25 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -13359,15 +16896,23 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -13384,12 +16929,20 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -13405,12 +16958,21 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -13430,17 +16992,26 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialValueType
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueTypeFromJson(
@@ -13454,11 +17025,19 @@ CreateBlog$Mutation$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialValueType instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -13468,11 +17047,19 @@ CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -13487,16 +17074,25 @@ CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -13514,19 +17110,28 @@ CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -13542,17 +17147,25 @@ CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType
     _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -13575,15 +17188,23 @@ CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType
               : CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
                   .fromJson(json['apple'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) =>
-    <String, dynamic>{
-      'ooredoo': instance.ooredoo?.toJson(),
-      'facebook': instance.facebook?.toJson(),
-      'google': instance.google?.toJson(),
-      'apple': instance.apple?.toJson(),
-    };
+Map<String, dynamic>
+    _$CreateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
+        CreateBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$UserEducationType
     _$CreateBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
@@ -13604,16 +17225,24 @@ CreateBlog$Mutation$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$UserEducationType instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        CreateBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -13629,17 +17258,25 @@ CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$Picture
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -13663,19 +17300,28 @@ CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -13691,17 +17337,25 @@ CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -13734,23 +17388,31 @@ CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$UserWorkType
     _$CreateBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
@@ -13773,17 +17435,25 @@ CreateBlog$Mutation$BlogType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$UserWorkType instance) =>
-    <String, dynamic>{
-      'company': instance.company,
-      'position': instance.position,
-      'description': instance.description,
-      'city': instance.city?.toJson(),
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'current': instance.current,
-    };
+    CreateBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -13799,17 +17469,25 @@ CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$StateType$CountryType
     _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -13833,19 +17511,27 @@ CreateBlog$Mutation$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
     _$CreateBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -13861,17 +17547,24 @@ CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType$StateType
     _$CreateBlog$Mutation$BlogType$UserType$StateTypeFromJson(
@@ -13903,22 +17596,31 @@ CreateBlog$Mutation$BlogType$UserType$StateType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserType$StateTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    CreateBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$UserType
     _$CreateBlog$Mutation$BlogType$UserTypeFromJson(
@@ -14032,52 +17734,66 @@ CreateBlog$Mutation$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$UserTypeToJson(
-        CreateBlog$Mutation$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    CreateBlog$Mutation$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$SeoComponentType$TagType
     _$CreateBlog$Mutation$BlogType$SeoComponentType$TagTypeFromJson(
@@ -14088,11 +17804,19 @@ CreateBlog$Mutation$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(
-            CreateBlog$Mutation$BlogType$SeoComponentType$TagType instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        CreateBlog$Mutation$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$SeoComponentType
     _$CreateBlog$Mutation$BlogType$SeoComponentTypeFromJson(
@@ -14106,12 +17830,21 @@ CreateBlog$Mutation$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$SeoComponentTypeToJson(
-        CreateBlog$Mutation$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    CreateBlog$Mutation$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$PictureType
     _$CreateBlog$Mutation$BlogType$PictureTypeFromJson(
@@ -14126,16 +17859,24 @@ CreateBlog$Mutation$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$PictureTypeToJson(
-        CreateBlog$Mutation$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    CreateBlog$Mutation$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$BlogDataType$PictureType
     _$CreateBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
@@ -14151,16 +17892,24 @@ CreateBlog$Mutation$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$CreateBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
-            CreateBlog$Mutation$BlogType$BlogDataType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateBlog$Mutation$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateBlog$Mutation$BlogType$BlogDataType
     _$CreateBlog$Mutation$BlogType$BlogDataTypeFromJson(
@@ -14175,14 +17924,22 @@ CreateBlog$Mutation$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogType$BlogDataTypeToJson(
-        CreateBlog$Mutation$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    CreateBlog$Mutation$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateBlog$Mutation$BlogType _$CreateBlog$Mutation$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -14211,20 +17968,30 @@ CreateBlog$Mutation$BlogType _$CreateBlog$Mutation$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateBlog$Mutation$BlogTypeToJson(
-        CreateBlog$Mutation$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateBlog$Mutation$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateBlog$Mutation _$CreateBlog$MutationFromJson(Map<String, dynamic> json) =>
     CreateBlog$Mutation()
@@ -14253,15 +18020,26 @@ BlogInput _$BlogInputFromJson(Map<String, dynamic> json) => BlogInput(
           .toList(),
     );
 
-Map<String, dynamic> _$BlogInputToJson(BlogInput instance) => <String, dynamic>{
-      'title': instance.title,
-      'target': instance.target.toJson(),
-      'url': instance.url,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$BlogInputToJson(BlogInput instance) {
+  final val = <String, dynamic>{
+    'title': instance.title,
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SeoComponentInput _$SeoComponentInputFromJson(Map<String, dynamic> json) =>
     SeoComponentInput(
@@ -14272,22 +18050,40 @@ SeoComponentInput _$SeoComponentInputFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$SeoComponentInputToJson(SeoComponentInput instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$SeoComponentInputToJson(SeoComponentInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 TagInput _$TagInputFromJson(Map<String, dynamic> json) => TagInput(
       name: json['name'] as String?,
       content: json['content'] as String?,
     );
 
-Map<String, dynamic> _$TagInputToJson(TagInput instance) => <String, dynamic>{
-      'name': instance.name,
-      'content': instance.content,
-    };
+Map<String, dynamic> _$TagInputToJson(TagInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -14299,16 +18095,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 BlogDataInput _$BlogDataInputFromJson(Map<String, dynamic> json) =>
     BlogDataInput(
@@ -14320,14 +18124,22 @@ BlogDataInput _$BlogDataInputFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$BlogDataInputToJson(BlogDataInput instance) =>
-    <String, dynamic>{
-      'sectionReference': instance.sectionReference,
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$BlogDataInputToJson(BlogDataInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$PhoneType
     _$PublishBlog$Mutation$BlogType$UserType$PhoneTypeFromJson(
@@ -14339,13 +18151,21 @@ PublishBlog$Mutation$BlogType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$PhoneTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    PublishBlog$Mutation$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$PictureTypeFromJson(
@@ -14360,16 +18180,24 @@ PublishBlog$Mutation$BlogType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$PictureTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    PublishBlog$Mutation$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -14385,17 +18213,25 @@ PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$LanguageType
     _$PublishBlog$Mutation$BlogType$UserType$LanguageTypeFromJson(
@@ -14418,17 +18254,26 @@ PublishBlog$Mutation$BlogType$UserType$LanguageType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$LanguageTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$LanguageType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$CountryType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -14444,17 +18289,25 @@ PublishBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$CountryType
     _$PublishBlog$Mutation$BlogType$UserType$CountryTypeFromJson(
@@ -14477,18 +18330,27 @@ PublishBlog$Mutation$BlogType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$CountryTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    PublishBlog$Mutation$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -14501,12 +18363,20 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -14522,17 +18392,25 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -14556,19 +18434,28 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -14584,17 +18471,25 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pic
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -14618,19 +18513,28 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -14646,17 +18550,25 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -14689,23 +18601,32 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -14716,12 +18637,20 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$Full
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -14735,12 +18664,20 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$FullAddressType
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressTypeFromJson(
@@ -14769,17 +18706,25 @@ PublishBlog$Mutation$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$FullAddressType instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -14795,17 +18740,25 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -14834,15 +18787,23 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -14859,12 +18820,20 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -14880,12 +18849,21 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTy
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -14905,17 +18883,26 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialValueType
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueTypeFromJson(
@@ -14929,11 +18916,19 @@ PublishBlog$Mutation$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialValueType instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -14943,11 +18938,19 @@ PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -14962,16 +18965,25 @@ PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -14989,19 +19001,28 @@ PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -15017,17 +19038,25 @@ PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType
     _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -15050,15 +19079,23 @@ PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType
               : PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
                   .fromJson(json['apple'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) =>
-    <String, dynamic>{
-      'ooredoo': instance.ooredoo?.toJson(),
-      'facebook': instance.facebook?.toJson(),
-      'google': instance.google?.toJson(),
-      'apple': instance.apple?.toJson(),
-    };
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$UserEducationType
     _$PublishBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
@@ -15077,18 +19114,26 @@ PublishBlog$Mutation$BlogType$UserType$UserEducationType
               json['to'] == null ? null : DateTime.parse(json['to'] as String)
           ..graduated = json['graduated'] as bool?;
 
-Map<String,
-    dynamic> _$PublishBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType$UserEducationType instance) =>
-    <String, dynamic>{
-      'level': _$AcademicLevelEnumMap[instance.level],
-      'name': instance.name,
-      'description': instance.description,
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'graduated': instance.graduated,
-    };
+Map<String, dynamic>
+    _$PublishBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
+        PublishBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -15104,17 +19149,25 @@ PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$Pictur
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -15138,19 +19191,28 @@ PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -15166,17 +19228,25 @@ PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -15209,23 +19279,32 @@ PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$UserWorkType
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
@@ -15249,17 +19328,25 @@ PublishBlog$Mutation$BlogType$UserType$UserWorkType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$UserWorkType instance) =>
-        <String, dynamic>{
-          'company': instance.company,
-          'position': instance.position,
-          'description': instance.description,
-          'city': instance.city?.toJson(),
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'current': instance.current,
-        };
+        PublishBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -15275,17 +19362,25 @@ PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$StateType$CountryType
     _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -15309,19 +19404,27 @@ PublishBlog$Mutation$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        PublishBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
     _$PublishBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -15337,17 +19440,24 @@ PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType$StateType
     _$PublishBlog$Mutation$BlogType$UserType$StateTypeFromJson(
@@ -15379,22 +19489,31 @@ PublishBlog$Mutation$BlogType$UserType$StateType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserType$StateTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    PublishBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$UserType
     _$PublishBlog$Mutation$BlogType$UserTypeFromJson(
@@ -15513,52 +19632,66 @@ PublishBlog$Mutation$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$UserTypeToJson(
-        PublishBlog$Mutation$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    PublishBlog$Mutation$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$SeoComponentType$TagType
     _$PublishBlog$Mutation$BlogType$SeoComponentType$TagTypeFromJson(
@@ -15569,11 +19702,19 @@ PublishBlog$Mutation$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(
-            PublishBlog$Mutation$BlogType$SeoComponentType$TagType instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        PublishBlog$Mutation$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$SeoComponentType
     _$PublishBlog$Mutation$BlogType$SeoComponentTypeFromJson(
@@ -15588,12 +19729,21 @@ PublishBlog$Mutation$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$SeoComponentTypeToJson(
-        PublishBlog$Mutation$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    PublishBlog$Mutation$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$PictureType
     _$PublishBlog$Mutation$BlogType$PictureTypeFromJson(
@@ -15608,16 +19758,24 @@ PublishBlog$Mutation$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$PictureTypeToJson(
-        PublishBlog$Mutation$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    PublishBlog$Mutation$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$BlogDataType$PictureType
     _$PublishBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
@@ -15633,16 +19791,24 @@ PublishBlog$Mutation$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$PublishBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
-            PublishBlog$Mutation$BlogType$BlogDataType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        PublishBlog$Mutation$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 PublishBlog$Mutation$BlogType$BlogDataType
     _$PublishBlog$Mutation$BlogType$BlogDataTypeFromJson(
@@ -15658,14 +19824,22 @@ PublishBlog$Mutation$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogType$BlogDataTypeToJson(
-        PublishBlog$Mutation$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    PublishBlog$Mutation$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PublishBlog$Mutation$BlogType _$PublishBlog$Mutation$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -15694,20 +19868,30 @@ PublishBlog$Mutation$BlogType _$PublishBlog$Mutation$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$PublishBlog$Mutation$BlogTypeToJson(
-        PublishBlog$Mutation$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    PublishBlog$Mutation$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 PublishBlog$Mutation _$PublishBlog$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -15731,13 +19915,21 @@ UpdateBlog$Mutation$BlogType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$PhoneTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    UpdateBlog$Mutation$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$PictureTypeFromJson(
@@ -15752,16 +19944,24 @@ UpdateBlog$Mutation$BlogType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$PictureTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    UpdateBlog$Mutation$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -15777,17 +19977,25 @@ UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$LanguageType
     _$UpdateBlog$Mutation$BlogType$UserType$LanguageTypeFromJson(
@@ -15809,17 +20017,26 @@ UpdateBlog$Mutation$BlogType$UserType$LanguageType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$LanguageTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$LanguageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    UpdateBlog$Mutation$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -15835,17 +20052,25 @@ UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$CountryType
     _$UpdateBlog$Mutation$BlogType$UserType$CountryTypeFromJson(
@@ -15868,18 +20093,27 @@ UpdateBlog$Mutation$BlogType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$CountryTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    UpdateBlog$Mutation$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -15892,12 +20126,20 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -15913,17 +20155,25 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -15947,19 +20197,28 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -15975,17 +20234,25 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pict
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -16009,19 +20276,28 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -16037,17 +20313,25 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -16080,23 +20364,32 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -16107,12 +20400,20 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullA
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -16126,12 +20427,20 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$FullAddressType
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressTypeFromJson(
@@ -16160,17 +20469,25 @@ UpdateBlog$Mutation$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$FullAddressType instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -16186,17 +20503,25 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -16225,15 +20550,23 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -16250,12 +20583,20 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -16271,12 +20612,21 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -16296,17 +20646,26 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialValueType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueTypeFromJson(
@@ -16320,11 +20679,19 @@ UpdateBlog$Mutation$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialValueType instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -16334,11 +20701,19 @@ UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -16353,16 +20728,25 @@ UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -16380,19 +20764,28 @@ UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -16408,17 +20801,25 @@ UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType
     _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -16441,15 +20842,23 @@ UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType
               : UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
                   .fromJson(json['apple'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) =>
-    <String, dynamic>{
-      'ooredoo': instance.ooredoo?.toJson(),
-      'facebook': instance.facebook?.toJson(),
-      'google': instance.google?.toJson(),
-      'apple': instance.apple?.toJson(),
-    };
+Map<String, dynamic>
+    _$UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
+        UpdateBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$UserEducationType
     _$UpdateBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
@@ -16470,16 +20879,24 @@ UpdateBlog$Mutation$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$UserEducationType instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -16495,17 +20912,25 @@ UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$Picture
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -16529,19 +20954,28 @@ UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -16557,17 +20991,25 @@ UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -16600,23 +21042,31 @@ UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$UserWorkType
     _$UpdateBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
@@ -16639,17 +21089,25 @@ UpdateBlog$Mutation$BlogType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$UserWorkType instance) =>
-    <String, dynamic>{
-      'company': instance.company,
-      'position': instance.position,
-      'description': instance.description,
-      'city': instance.city?.toJson(),
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'current': instance.current,
-    };
+    UpdateBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -16665,17 +21123,25 @@ UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType
     _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -16699,19 +21165,27 @@ UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
     _$UpdateBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -16727,17 +21201,24 @@ UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType$StateType
     _$UpdateBlog$Mutation$BlogType$UserType$StateTypeFromJson(
@@ -16769,22 +21250,31 @@ UpdateBlog$Mutation$BlogType$UserType$StateType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserType$StateTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    UpdateBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$UserType
     _$UpdateBlog$Mutation$BlogType$UserTypeFromJson(
@@ -16898,52 +21388,66 @@ UpdateBlog$Mutation$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$UserTypeToJson(
-        UpdateBlog$Mutation$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    UpdateBlog$Mutation$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$SeoComponentType$TagType
     _$UpdateBlog$Mutation$BlogType$SeoComponentType$TagTypeFromJson(
@@ -16954,11 +21458,19 @@ UpdateBlog$Mutation$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(
-            UpdateBlog$Mutation$BlogType$SeoComponentType$TagType instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        UpdateBlog$Mutation$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$SeoComponentType
     _$UpdateBlog$Mutation$BlogType$SeoComponentTypeFromJson(
@@ -16972,12 +21484,21 @@ UpdateBlog$Mutation$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$SeoComponentTypeToJson(
-        UpdateBlog$Mutation$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    UpdateBlog$Mutation$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$PictureType
     _$UpdateBlog$Mutation$BlogType$PictureTypeFromJson(
@@ -16992,16 +21513,24 @@ UpdateBlog$Mutation$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$PictureTypeToJson(
-        UpdateBlog$Mutation$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    UpdateBlog$Mutation$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$BlogDataType$PictureType
     _$UpdateBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
@@ -17017,16 +21546,24 @@ UpdateBlog$Mutation$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$UpdateBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
-            UpdateBlog$Mutation$BlogType$BlogDataType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateBlog$Mutation$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType$BlogDataType
     _$UpdateBlog$Mutation$BlogType$BlogDataTypeFromJson(
@@ -17041,14 +21578,22 @@ UpdateBlog$Mutation$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogType$BlogDataTypeToJson(
-        UpdateBlog$Mutation$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    UpdateBlog$Mutation$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateBlog$Mutation$BlogType _$UpdateBlog$Mutation$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -17077,20 +21622,30 @@ UpdateBlog$Mutation$BlogType _$UpdateBlog$Mutation$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateBlog$Mutation$BlogTypeToJson(
-        UpdateBlog$Mutation$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateBlog$Mutation$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateBlog$Mutation _$UpdateBlog$MutationFromJson(Map<String, dynamic> json) =>
     UpdateBlog$Mutation()
@@ -17119,15 +21674,24 @@ UpdateBlogInput _$UpdateBlogInputFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$UpdateBlogInputToJson(UpdateBlogInput instance) =>
-    <String, dynamic>{
-      'title': instance.title,
-      'url': instance.url,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$UpdateBlogInputToJson(UpdateBlogInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('url', instance.url);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$PhoneType
     _$DeleteBlog$Mutation$BlogType$UserType$PhoneTypeFromJson(
@@ -17139,13 +21703,21 @@ DeleteBlog$Mutation$BlogType$UserType$PhoneType
           ..validationNumber = json['validationNumber'] as int?;
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$PhoneTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+    DeleteBlog$Mutation$BlogType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$PictureTypeFromJson(
@@ -17160,16 +21732,24 @@ DeleteBlog$Mutation$BlogType$UserType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$PictureTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    DeleteBlog$Mutation$BlogType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeFromJson(
@@ -17185,17 +21765,25 @@ DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$LanguageType
     _$DeleteBlog$Mutation$BlogType$UserType$LanguageTypeFromJson(
@@ -17217,17 +21805,26 @@ DeleteBlog$Mutation$BlogType$UserType$LanguageType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$LanguageTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$LanguageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    DeleteBlog$Mutation$BlogType$UserType$LanguageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureTypeFromJson(
@@ -17243,17 +21840,25 @@ DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$CountryType
     _$DeleteBlog$Mutation$BlogType$UserType$CountryTypeFromJson(
@@ -17276,18 +21881,27 @@ DeleteBlog$Mutation$BlogType$UserType$CountryType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$CountryTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    DeleteBlog$Mutation$BlogType$UserType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
@@ -17300,12 +21914,20 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -17321,17 +21943,25 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeFromJson(
@@ -17355,19 +21985,28 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -17383,17 +22022,25 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$Pict
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeFromJson(
@@ -17417,19 +22064,28 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeFromJson(
@@ -17445,17 +22101,25 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeFromJson(
@@ -17488,23 +22152,32 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -17515,12 +22188,20 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullA
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -17534,12 +22215,20 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$FullAddressType
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressTypeFromJson(
@@ -17568,17 +22257,25 @@ DeleteBlog$Mutation$BlogType$UserType$FullAddressType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$FullAddressTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$FullAddressType instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
@@ -17594,17 +22291,25 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
@@ -17633,15 +22338,23 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
-                instance) =>
-        <String, dynamic>{
-          'size48': instance.size48?.toJson(),
-          'size96': instance.size96?.toJson(),
-          'size144': instance.size144?.toJson(),
-          'size240': instance.size240?.toJson(),
-          'size480': instance.size480?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
@@ -17658,12 +22371,20 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeFromJson(
@@ -17679,12 +22400,21 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTyp
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
-                instance) =>
-        <String, dynamic>{
-          'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeFromJson(
@@ -17704,17 +22434,26 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'fontIcon': instance.fontIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.map((e) => e.toJson()).toList(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialValueType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueTypeFromJson(
@@ -17728,11 +22467,19 @@ DeleteBlog$Mutation$BlogType$UserType$SocialValueType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialValueTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialValueType instance) =>
-        <String, dynamic>{
-          'name': instance.name?.toJson(),
-          'value': instance.value,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialValueType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeFromJson(
@@ -17742,11 +22489,19 @@ DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$OoredooDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeFromJson(
@@ -17761,16 +22516,25 @@ DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'token': instance.token,
-          'email': instance.email,
-          'last_name': instance.lastName,
-          'first_name': instance.firstName,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$FacebookDataType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['token'] = instance.token;
+  val['email'] = instance.email;
+  writeNotNull('last_name', instance.lastName);
+  writeNotNull('first_name', instance.firstName);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeFromJson(
@@ -17788,19 +22552,28 @@ DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
-                instance) =>
-        <String, dynamic>{
-          'sub': instance.sub,
-          'name': instance.name,
-          'email': instance.email,
-          'token': instance.token,
-          'locale': instance.locale,
-          'picture': instance.picture,
-          'given_name': instance.givenName,
-          'family_name': instance.familyName,
-          'email_verified': instance.emailVerified,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$GoogleDataType
+            instance) {
+  final val = <String, dynamic>{
+    'sub': instance.sub,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  val['email'] = instance.email;
+  val['token'] = instance.token;
+  writeNotNull('locale', instance.locale);
+  writeNotNull('picture', instance.picture);
+  writeNotNull('given_name', instance.givenName);
+  writeNotNull('family_name', instance.familyName);
+  writeNotNull('email_verified', instance.emailVerified);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeFromJson(
@@ -17816,17 +22589,25 @@ DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
-                instance) =>
-        <String, dynamic>{
-          'email': instance.email,
-          'status': instance.status,
-          'givenName': instance.givenName,
-          'familyName': instance.familyName,
-          'identityToken': instance.identityToken,
-          'userIdentifier': instance.userIdentifier,
-          'authorizationCode': instance.authorizationCode,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('status', instance.status);
+  writeNotNull('givenName', instance.givenName);
+  writeNotNull('familyName', instance.familyName);
+  val['identityToken'] = instance.identityToken;
+  writeNotNull('userIdentifier', instance.userIdentifier);
+  writeNotNull('authorizationCode', instance.authorizationCode);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType
     _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataTypeFromJson(
@@ -17849,15 +22630,23 @@ DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType
               : DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType$AppleDataType
                   .fromJson(json['apple'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) =>
-    <String, dynamic>{
-      'ooredoo': instance.ooredoo?.toJson(),
-      'facebook': instance.facebook?.toJson(),
-      'google': instance.google?.toJson(),
-      'apple': instance.apple?.toJson(),
-    };
+Map<String, dynamic>
+    _$DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataTypeToJson(
+        DeleteBlog$Mutation$BlogType$UserType$SocialLoginDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('ooredoo', instance.ooredoo?.toJson());
+  writeNotNull('facebook', instance.facebook?.toJson());
+  writeNotNull('google', instance.google?.toJson());
+  writeNotNull('apple', instance.apple?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$UserEducationType
     _$DeleteBlog$Mutation$BlogType$UserType$UserEducationTypeFromJson(
@@ -17878,16 +22667,24 @@ DeleteBlog$Mutation$BlogType$UserType$UserEducationType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$UserEducationTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$UserEducationType instance) =>
-        <String, dynamic>{
-          'level': _$AcademicLevelEnumMap[instance.level],
-          'name': instance.name,
-          'description': instance.description,
-          'tags': instance.tags,
-          'from': instance.from?.toIso8601String(),
-          'to': instance.to?.toIso8601String(),
-          'graduated': instance.graduated,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$UserEducationType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('level', _$AcademicLevelEnumMap[instance.level]);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('graduated', instance.graduated);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeFromJson(
@@ -17903,17 +22700,25 @@ DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$Picture
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeFromJson(
@@ -17937,19 +22742,28 @@ DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeFromJson(
@@ -17965,17 +22779,25 @@ DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeFromJson(
@@ -18008,23 +22830,31 @@ DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$UserWorkType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$UserWorkType
     _$DeleteBlog$Mutation$BlogType$UserType$UserWorkTypeFromJson(
@@ -18047,17 +22877,25 @@ DeleteBlog$Mutation$BlogType$UserType$UserWorkType
           ..current = json['current'] as bool?;
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$UserWorkTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$UserWorkType instance) =>
-    <String, dynamic>{
-      'company': instance.company,
-      'position': instance.position,
-      'description': instance.description,
-      'city': instance.city?.toJson(),
-      'tags': instance.tags,
-      'from': instance.from?.toIso8601String(),
-      'to': instance.to?.toIso8601String(),
-      'current': instance.current,
-    };
+    DeleteBlog$Mutation$BlogType$UserType$UserWorkType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('company', instance.company);
+  writeNotNull('position', instance.position);
+  writeNotNull('description', instance.description);
+  writeNotNull('city', instance.city?.toJson());
+  writeNotNull('tags', instance.tags);
+  writeNotNull('from', instance.from?.toIso8601String());
+  writeNotNull('to', instance.to?.toIso8601String());
+  writeNotNull('current', instance.current);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeFromJson(
@@ -18073,17 +22911,25 @@ DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType
     _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryTypeFromJson(
@@ -18107,19 +22953,27 @@ DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$StateType$CountryTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        DeleteBlog$Mutation$BlogType$UserType$StateType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
     _$DeleteBlog$Mutation$BlogType$UserType$StateType$PictureTypeFromJson(
@@ -18135,17 +22989,24 @@ DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$UserType$StateType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$UserType$StateType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType$StateType
     _$DeleteBlog$Mutation$BlogType$UserType$StateTypeFromJson(
@@ -18177,22 +23038,31 @@ DeleteBlog$Mutation$BlogType$UserType$StateType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserType$StateTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+    DeleteBlog$Mutation$BlogType$UserType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$UserType
     _$DeleteBlog$Mutation$BlogType$UserTypeFromJson(
@@ -18306,52 +23176,66 @@ DeleteBlog$Mutation$BlogType$UserType
               .toList();
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$UserTypeToJson(
-        DeleteBlog$Mutation$BlogType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'apps': instance.apps?.map((e) => _$AppEnumMap[e]!).toList(),
-      'email': instance.email,
-      'roles': instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList(),
-      'title': instance.title,
-      'about': instance.about,
-      'gender': _$GenderEnumMap[instance.gender],
-      'locale': instance.locale,
-      'source': _$SourcesEnumEnumMap[instance.source],
-      'status': _$UserStatusEnumMap[instance.status],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'plugged': instance.plugged,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'isMailValid': instance.isMailValid,
-      'dateOfBirth': instance.dateOfBirth?.toIso8601String(),
-      'phoneNumber': instance.phoneNumber,
-      'mobileTheme': _$MobileThemesEnumEnumMap[instance.mobileTheme],
-      'placeOfBirth': instance.placeOfBirth,
-      'maritalStatus': _$MaritalStatusEnumMap[instance.maritalStatus],
-      'newsletterSubs': instance.newsletterSubs,
-      'hasAutoGeneratedEmail': instance.hasAutoGeneratedEmail,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'languages': instance.languages?.map((e) => e.toJson()).toList(),
-      'nationality': instance.nationality?.toJson(),
-      'billingAddress':
-          instance.billingAddress?.map((e) => e.toJson()).toList(),
-      'shippingAddress':
-          instance.shippingAddress?.map((e) => e.toJson()).toList(),
-      'residentialAddress':
-          instance.residentialAddress?.map((e) => e.toJson()).toList(),
-      'chatContact': instance.chatContact?.map((e) => e.toJson()).toList(),
-      'socialMedia': instance.socialMedia?.map((e) => e.toJson()).toList(),
-      'socialLoginData': instance.socialLoginData?.toJson(),
-      'education': instance.education?.map((e) => e.toJson()).toList(),
-      'work': instance.work?.map((e) => e.toJson()).toList(),
-      'lived': instance.lived?.map((e) => e.toJson()).toList(),
-      'hobbies': instance.hobbies,
-      'interests': instance.interests,
-    };
+    DeleteBlog$Mutation$BlogType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('apps', instance.apps?.map((e) => _$AppEnumMap[e]!).toList());
+  writeNotNull('email', instance.email);
+  writeNotNull(
+      'roles', instance.roles?.map((e) => _$UserRoleEnumMap[e]!).toList());
+  writeNotNull('title', instance.title);
+  writeNotNull('about', instance.about);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('locale', instance.locale);
+  writeNotNull('source', _$SourcesEnumEnumMap[instance.source]);
+  writeNotNull('status', _$UserStatusEnumMap[instance.status]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('plugged', instance.plugged);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isMailValid', instance.isMailValid);
+  writeNotNull('dateOfBirth', instance.dateOfBirth?.toIso8601String());
+  writeNotNull('phoneNumber', instance.phoneNumber);
+  writeNotNull('mobileTheme', _$MobileThemesEnumEnumMap[instance.mobileTheme]);
+  writeNotNull('placeOfBirth', instance.placeOfBirth);
+  writeNotNull('maritalStatus', _$MaritalStatusEnumMap[instance.maritalStatus]);
+  writeNotNull('newsletterSubs', instance.newsletterSubs);
+  writeNotNull('hasAutoGeneratedEmail', instance.hasAutoGeneratedEmail);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('nationality', instance.nationality?.toJson());
+  writeNotNull('billingAddress',
+      instance.billingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('shippingAddress',
+      instance.shippingAddress?.map((e) => e.toJson()).toList());
+  writeNotNull('residentialAddress',
+      instance.residentialAddress?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('socialLoginData', instance.socialLoginData?.toJson());
+  writeNotNull(
+      'education', instance.education?.map((e) => e.toJson()).toList());
+  writeNotNull('work', instance.work?.map((e) => e.toJson()).toList());
+  writeNotNull('lived', instance.lived?.map((e) => e.toJson()).toList());
+  writeNotNull('hobbies', instance.hobbies);
+  writeNotNull('interests', instance.interests);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$SeoComponentType$TagType
     _$DeleteBlog$Mutation$BlogType$SeoComponentType$TagTypeFromJson(
@@ -18362,11 +23246,19 @@ DeleteBlog$Mutation$BlogType$SeoComponentType$TagType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$SeoComponentType$TagTypeToJson(
-            DeleteBlog$Mutation$BlogType$SeoComponentType$TagType instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'content': instance.content,
-        };
+        DeleteBlog$Mutation$BlogType$SeoComponentType$TagType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('content', instance.content);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$SeoComponentType
     _$DeleteBlog$Mutation$BlogType$SeoComponentTypeFromJson(
@@ -18380,12 +23272,21 @@ DeleteBlog$Mutation$BlogType$SeoComponentType
               .toList();
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$SeoComponentTypeToJson(
-        DeleteBlog$Mutation$BlogType$SeoComponentType instance) =>
-    <String, dynamic>{
-      'metaTitle': instance.metaTitle,
-      'metaDesription': instance.metaDesription,
-      'metaKeywords': instance.metaKeywords?.map((e) => e.toJson()).toList(),
-    };
+    DeleteBlog$Mutation$BlogType$SeoComponentType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('metaTitle', instance.metaTitle);
+  writeNotNull('metaDesription', instance.metaDesription);
+  writeNotNull(
+      'metaKeywords', instance.metaKeywords?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$PictureType
     _$DeleteBlog$Mutation$BlogType$PictureTypeFromJson(
@@ -18400,16 +23301,24 @@ DeleteBlog$Mutation$BlogType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$PictureTypeToJson(
-        DeleteBlog$Mutation$BlogType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    DeleteBlog$Mutation$BlogType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$BlogDataType$PictureType
     _$DeleteBlog$Mutation$BlogType$BlogDataType$PictureTypeFromJson(
@@ -18425,16 +23334,24 @@ DeleteBlog$Mutation$BlogType$BlogDataType$PictureType
 
 Map<String, dynamic>
     _$DeleteBlog$Mutation$BlogType$BlogDataType$PictureTypeToJson(
-            DeleteBlog$Mutation$BlogType$BlogDataType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        DeleteBlog$Mutation$BlogType$BlogDataType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType$BlogDataType
     _$DeleteBlog$Mutation$BlogType$BlogDataTypeFromJson(
@@ -18449,14 +23366,22 @@ DeleteBlog$Mutation$BlogType$BlogDataType
               .toList();
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogType$BlogDataTypeToJson(
-        DeleteBlog$Mutation$BlogType$BlogDataType instance) =>
-    <String, dynamic>{
-      'sectionTitle': instance.sectionTitle,
-      'sectionContent': instance.sectionContent,
-      'sectionReference': instance.sectionReference,
-      'sectionPictures':
-          instance.sectionPictures?.map((e) => e.toJson()).toList(),
-    };
+    DeleteBlog$Mutation$BlogType$BlogDataType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('sectionTitle', instance.sectionTitle);
+  writeNotNull('sectionContent', instance.sectionContent);
+  writeNotNull('sectionReference', instance.sectionReference);
+  writeNotNull('sectionPictures',
+      instance.sectionPictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 DeleteBlog$Mutation$BlogType _$DeleteBlog$Mutation$BlogTypeFromJson(
         Map<String, dynamic> json) =>
@@ -18485,20 +23410,30 @@ DeleteBlog$Mutation$BlogType _$DeleteBlog$Mutation$BlogTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$DeleteBlog$Mutation$BlogTypeToJson(
-        DeleteBlog$Mutation$BlogType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'url': instance.url,
-      'author': instance.author.toJson(),
-      'title': instance.title,
-      'tags': instance.tags,
-      'seo': instance.seo?.toJson(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'sectionData': instance.sectionData?.map((e) => e.toJson()).toList(),
-      'status': instance.status,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    DeleteBlog$Mutation$BlogType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('url', instance.url);
+  val['author'] = instance.author.toJson();
+  val['title'] = instance.title;
+  writeNotNull('tags', instance.tags);
+  writeNotNull('seo', instance.seo?.toJson());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  val['status'] = instance.status;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 DeleteBlog$Mutation _$DeleteBlog$MutationFromJson(Map<String, dynamic> json) =>
     DeleteBlog$Mutation()
@@ -18565,10 +23500,18 @@ GetPaginatedBlogsArguments _$GetPaginatedBlogsArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetPaginatedBlogsArgumentsToJson(
-        GetPaginatedBlogsArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetPaginatedBlogsArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 BlogArguments _$BlogArgumentsFromJson(Map<String, dynamic> json) =>
     BlogArguments(
@@ -18623,15 +23566,22 @@ FindBlogsByTargetPaginatedArguments
         );
 
 Map<String, dynamic> _$FindBlogsByTargetPaginatedArgumentsToJson(
-        FindBlogsByTargetPaginatedArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-      'target': instance.target.toJson(),
-      'status': instance.status
-          ?.map((e) => _$VisibilityStatusEnumEnumMap[e]!)
-          .toList(),
-    };
+    FindBlogsByTargetPaginatedArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  val['target'] = instance.target.toJson();
+  writeNotNull('status',
+      instance.status?.map((e) => _$VisibilityStatusEnumEnumMap[e]!).toList());
+  return val;
+}
 
 const _$VisibilityStatusEnumEnumMap = {
   VisibilityStatusEnum.draft: 'DRAFT',
@@ -18663,11 +23613,20 @@ FindBlogsByAuthorPaginatedArguments
         );
 
 Map<String, dynamic> _$FindBlogsByAuthorPaginatedArgumentsToJson(
-        FindBlogsByAuthorPaginatedArguments instance) =>
-    <String, dynamic>{
-      'author': instance.author,
-      'pagination': instance.pagination?.toJson(),
-    };
+    FindBlogsByAuthorPaginatedArguments instance) {
+  final val = <String, dynamic>{
+    'author': instance.author,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 SearchBlogsArguments _$SearchBlogsArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -18680,11 +23639,19 @@ SearchBlogsArguments _$SearchBlogsArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchBlogsArgumentsToJson(
-        SearchBlogsArguments instance) =>
-    <String, dynamic>{
-      'searchString': instance.searchString,
-      'pagination': instance.pagination?.toJson(),
-    };
+    SearchBlogsArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('searchString', instance.searchString);
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 CreateBlogArguments _$CreateBlogArgumentsFromJson(Map<String, dynamic> json) =>
     CreateBlogArguments(

@@ -205,25 +205,25 @@ class GetEcommerceRevenueChartStats$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType
+class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType
     extends JsonSerializable with EquatableMixin {
-  GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType();
+  GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType();
 
-  factory GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType.fromJson(
+  factory GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType.fromJson(
           Map<String, dynamic> json) =>
-      _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeFromJson(
+      _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngTypeFromJson(
           json);
 
-  double? lat;
+  String? lat;
 
-  double? lng;
+  String? lng;
 
   @override
   List<Object?> get props => [lat, lng];
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationTypeToJson(
+      _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngTypeToJson(
           this);
 }
 
@@ -237,7 +237,7 @@ class GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$Analyti
       _$GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersTypeFromJson(
           json);
 
-  GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$GoogleMapsAuditDataLocationType?
+  GetEcommerceSalesByLocation$Query$SalesAnalyticsSalesByCountryType$AnalyticsUsersByCountryLayersType$LatLngType?
       coordination;
 
   double? radius;

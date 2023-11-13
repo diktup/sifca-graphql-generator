@@ -17,14 +17,22 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTy
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PhoneTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureTypeFromJson(
@@ -40,17 +48,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTy
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTypeFromJson(
@@ -74,18 +90,27 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTy
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -103,12 +128,20 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Custom
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatTypeFromJson(
@@ -121,12 +154,20 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLat
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -142,17 +183,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaTypeFromJson(
@@ -171,12 +220,20 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -189,14 +246,22 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -212,17 +277,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserTypeFromJson(
@@ -246,18 +319,27 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -273,17 +355,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -299,17 +389,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -326,13 +424,21 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -345,14 +451,22 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -368,17 +482,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -402,18 +524,27 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -427,11 +558,19 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -447,17 +586,25 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -476,12 +623,20 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -494,12 +649,20 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -510,12 +673,20 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -542,19 +713,27 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupTypeFromJson(
@@ -596,24 +775,33 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$Messag
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'mute': instance.mute,
-          'creator': instance.creator?.toJson(),
-          'profilePicture': instance.profilePicture?.toJson(),
-          'wallpaper': instance.wallpaper?.toJson(),
-          'sound': _$MessageSoundEnumEnumMap[instance.sound],
-          'isDirectMessage': instance.isDirectMessage,
-          'members': instance.members?.toJson(),
-          'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-          'lastMessage': instance.lastMessage?.toJson(),
-          'unreadCount': instance.unreadCount,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$MessageSoundEnumEnumMap = {
   MessageSoundEnum.kw$DEFAULT: 'DEFAULT',
@@ -664,22 +852,31 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'gif': instance.gif,
-          'text': instance.text,
-          'sticker': instance.sticker,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'sender': instance.sender.toJson(),
-          'custom': instance.custom?.toJson(),
-          'location': instance.location?.toJson(),
-          'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-          'media': instance.media?.toJson(),
-          'messageGroup': instance.messageGroup.toJson(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query$MessagePaginateType
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateTypeFromJson(
@@ -695,13 +892,21 @@ GetMessagesByMessageGroupPagination$Query$MessagePaginateType
 
 Map<String, dynamic>
     _$GetMessagesByMessageGroupPagination$Query$MessagePaginateTypeToJson(
-            GetMessagesByMessageGroupPagination$Query$MessagePaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMessageGroupPagination$Query$MessagePaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetMessagesByMessageGroupPagination$Query
     _$GetMessagesByMessageGroupPagination$QueryFromJson(
@@ -725,11 +930,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType$PictureType
     _$GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType$PictureTypeFromJson(
@@ -745,17 +958,25 @@ GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType$PictureType
 
 Map<String, dynamic>
     _$GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType$PictureTypeToJson(
-            GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType
     _$GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateTypeFromJson(
@@ -771,13 +992,21 @@ GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType
 
 Map<String, dynamic>
     _$GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateTypeToJson(
-            GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetMediaOfMessageGroupPagination$Query$MessageMediaPaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetMediaOfMessageGroupPagination$Query
     _$GetMediaOfMessageGroupPagination$QueryFromJson(
@@ -806,14 +1035,22 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$User
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PhoneTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureTypeFromJson(
@@ -829,17 +1066,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$User
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTypeFromJson(
@@ -863,18 +1108,27 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$User
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageTypeFromJson(
@@ -885,12 +1139,20 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Cust
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatTypeFromJson(
@@ -903,12 +1165,20 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonL
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -924,17 +1194,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaTypeFromJson(
@@ -953,12 +1231,20 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -971,14 +1257,22 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -994,17 +1288,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserTypeFromJson(
@@ -1028,18 +1330,27 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -1055,17 +1366,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -1081,17 +1400,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -1108,13 +1435,21 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -1127,14 +1462,22 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -1150,17 +1493,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -1184,18 +1535,27 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -1209,11 +1569,19 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -1229,17 +1597,25 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -1258,12 +1634,20 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -1276,12 +1660,20 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -1292,12 +1684,20 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -1324,19 +1724,27 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupTypeFromJson(
@@ -1378,24 +1786,33 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$Mess
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'mute': instance.mute,
-          'creator': instance.creator?.toJson(),
-          'profilePicture': instance.profilePicture?.toJson(),
-          'wallpaper': instance.wallpaper?.toJson(),
-          'sound': _$MessageSoundEnumEnumMap[instance.sound],
-          'isDirectMessage': instance.isDirectMessage,
-          'members': instance.members?.toJson(),
-          'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-          'lastMessage': instance.lastMessage?.toJson(),
-          'unreadCount': instance.unreadCount,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageTypeFromJson(
@@ -1433,22 +1850,31 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'gif': instance.gif,
-          'text': instance.text,
-          'sticker': instance.sticker,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'sender': instance.sender.toJson(),
-          'custom': instance.custom?.toJson(),
-          'location': instance.location?.toJson(),
-          'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-          'media': instance.media?.toJson(),
-          'messageGroup': instance.messageGroup.toJson(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query$MessagePaginateType
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateTypeFromJson(
@@ -1464,13 +1890,21 @@ SearchMessageByMessageGroupPagination$Query$MessagePaginateType
 
 Map<String, dynamic>
     _$SearchMessageByMessageGroupPagination$Query$MessagePaginateTypeToJson(
-            SearchMessageByMessageGroupPagination$Query$MessagePaginateType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        SearchMessageByMessageGroupPagination$Query$MessagePaginateType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchMessageByMessageGroupPagination$Query
     _$SearchMessageByMessageGroupPagination$QueryFromJson(
@@ -1524,14 +1958,22 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$Phon
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PhoneTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PictureTypeFromJson(
@@ -1547,17 +1989,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$Pict
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserTypeFromJson(
@@ -1581,18 +2031,27 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$CustomMessageType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$CustomMessageTypeFromJson(
@@ -1603,12 +2062,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$CustomMessage
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$CustomMessageTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatTypeFromJson(
@@ -1621,12 +2088,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatType
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -1642,17 +2117,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaTypeFromJson(
@@ -1671,12 +2154,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -1689,14 +2180,22 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -1712,17 +2211,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserTypeFromJson(
@@ -1746,18 +2253,27 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -1773,17 +2289,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -1799,17 +2323,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -1826,13 +2358,21 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -1845,14 +2385,22 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -1868,17 +2416,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -1902,18 +2458,27 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -1927,11 +2492,19 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -1947,17 +2520,25 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -1976,12 +2557,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -1994,12 +2583,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -2010,12 +2607,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -2042,19 +2647,27 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupTypeFromJson(
@@ -2096,24 +2709,33 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupT
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'mute': instance.mute,
-          'creator': instance.creator?.toJson(),
-          'profilePicture': instance.profilePicture?.toJson(),
-          'wallpaper': instance.wallpaper?.toJson(),
-          'sound': _$MessageSoundEnumEnumMap[instance.sound],
-          'isDirectMessage': instance.isDirectMessage,
-          'members': instance.members?.toJson(),
-          'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-          'lastMessage': instance.lastMessage?.toJson(),
-          'unreadCount': instance.unreadCount,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageTypeFromJson(
@@ -2151,22 +2773,31 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'gif': instance.gif,
-          'text': instance.text,
-          'sticker': instance.sticker,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'sender': instance.sender.toJson(),
-          'custom': instance.custom?.toJson(),
-          'location': instance.location?.toJson(),
-          'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-          'media': instance.media?.toJson(),
-          'messageGroup': instance.messageGroup.toJson(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query$MessagePaginateType
     _$GetMessagesByMemberPaginated$Query$MessagePaginateTypeFromJson(
@@ -2182,12 +2813,20 @@ GetMessagesByMemberPaginated$Query$MessagePaginateType
 
 Map<String, dynamic>
     _$GetMessagesByMemberPaginated$Query$MessagePaginateTypeToJson(
-            GetMessagesByMemberPaginated$Query$MessagePaginateType instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        GetMessagesByMemberPaginated$Query$MessagePaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetMessagesByMemberPaginated$Query _$GetMessagesByMemberPaginated$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -2211,13 +2850,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$UserType$PhoneType
     _$CreateMessage$Mutation$MessageType$UserType$PhoneTypeFromJson(
@@ -2230,13 +2877,21 @@ CreateMessage$Mutation$MessageType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$UserType$PhoneTypeToJson(
-            CreateMessage$Mutation$MessageType$UserType$PhoneType instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMessage$Mutation$MessageType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$UserType$PictureType
     _$CreateMessage$Mutation$MessageType$UserType$PictureTypeFromJson(
@@ -2252,16 +2907,24 @@ CreateMessage$Mutation$MessageType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$UserType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$UserType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$UserType
     _$CreateMessage$Mutation$MessageType$UserTypeFromJson(
@@ -2284,17 +2947,26 @@ CreateMessage$Mutation$MessageType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateMessage$Mutation$MessageType$UserTypeToJson(
-        CreateMessage$Mutation$MessageType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    CreateMessage$Mutation$MessageType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$CustomMessageType
     _$CreateMessage$Mutation$MessageType$CustomMessageTypeFromJson(
@@ -2305,11 +2977,19 @@ CreateMessage$Mutation$MessageType$CustomMessageType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$CustomMessageTypeToJson(
-            CreateMessage$Mutation$MessageType$CustomMessageType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        CreateMessage$Mutation$MessageType$CustomMessageType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$LonLatType
     _$CreateMessage$Mutation$MessageType$LonLatTypeFromJson(
@@ -2321,11 +3001,19 @@ CreateMessage$Mutation$MessageType$LonLatType
               .toList();
 
 Map<String, dynamic> _$CreateMessage$Mutation$MessageType$LonLatTypeToJson(
-        CreateMessage$Mutation$MessageType$LonLatType instance) =>
-    <String, dynamic>{
-      'type': instance.type,
-      'coordinates': instance.coordinates,
-    };
+    CreateMessage$Mutation$MessageType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageMediaType$PictureType
     _$CreateMessage$Mutation$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -2341,17 +3029,25 @@ CreateMessage$Mutation$MessageType$MessageMediaType$PictureType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageMediaType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageMediaType
     _$CreateMessage$Mutation$MessageType$MessageMediaTypeFromJson(
@@ -2370,11 +3066,19 @@ CreateMessage$Mutation$MessageType$MessageMediaType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageMediaTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageMediaType instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        CreateMessage$Mutation$MessageType$MessageMediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -2387,14 +3091,22 @@ CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -2410,17 +3122,25 @@ CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$UserType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$UserTypeFromJson(
@@ -2444,18 +3164,26 @@ CreateMessage$Mutation$MessageType$MessageGroupType$UserType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$UserTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$PictureType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -2471,17 +3199,25 @@ CreateMessage$Mutation$MessageType$MessageGroupType$PictureType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -2497,17 +3233,25 @@ CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$Pi
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -2524,13 +3268,21 @@ CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -2543,14 +3295,22 @@ CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTy
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -2566,17 +3326,25 @@ CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$Picture
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -2600,18 +3368,27 @@ CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$MembersType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -2625,11 +3402,19 @@ CreateMessage$Mutation$MessageType$MessageGroupType$MembersType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$MembersTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -2645,17 +3430,25 @@ CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMedia
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -2674,12 +3467,20 @@ CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMedia
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -2692,12 +3493,20 @@ CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -2708,12 +3517,20 @@ CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessag
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -2740,19 +3557,27 @@ CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMessage$Mutation$MessageType$MessageGroupType
     _$CreateMessage$Mutation$MessageType$MessageGroupTypeFromJson(
@@ -2794,23 +3619,32 @@ CreateMessage$Mutation$MessageType$MessageGroupType
 
 Map<String, dynamic>
     _$CreateMessage$Mutation$MessageType$MessageGroupTypeToJson(
-            CreateMessage$Mutation$MessageType$MessageGroupType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'mute': instance.mute,
-          'creator': instance.creator?.toJson(),
-          'profilePicture': instance.profilePicture?.toJson(),
-          'wallpaper': instance.wallpaper?.toJson(),
-          'sound': _$MessageSoundEnumEnumMap[instance.sound],
-          'isDirectMessage': instance.isDirectMessage,
-          'members': instance.members?.toJson(),
-          'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-          'lastMessage': instance.lastMessage?.toJson(),
-          'unreadCount': instance.unreadCount,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateMessage$Mutation$MessageType$MessageGroupType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateMessage$Mutation$MessageType _$CreateMessage$Mutation$MessageTypeFromJson(
         Map<String, dynamic> json) =>
@@ -2844,21 +3678,30 @@ CreateMessage$Mutation$MessageType _$CreateMessage$Mutation$MessageTypeFromJson(
               json['messageGroup'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateMessage$Mutation$MessageTypeToJson(
-        CreateMessage$Mutation$MessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'gif': instance.gif,
-      'text': instance.text,
-      'sticker': instance.sticker,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'sender': instance.sender.toJson(),
-      'custom': instance.custom?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-      'media': instance.media?.toJson(),
-      'messageGroup': instance.messageGroup.toJson(),
-    };
+    CreateMessage$Mutation$MessageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 CreateMessage$Mutation _$CreateMessage$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -2890,17 +3733,25 @@ MessageInput _$MessageInputFromJson(Map<String, dynamic> json) => MessageInput(
           (json['seenBy'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$MessageInputToJson(MessageInput instance) =>
-    <String, dynamic>{
-      'text': instance.text,
-      'gif': instance.gif,
-      'sticker': instance.sticker,
-      'custom': instance.custom?.toJson(),
-      'media': instance.media?.toJson(),
-      'location': instance.location?.toJson(),
-      'messageGroup': instance.messageGroup,
-      'seenBy': instance.seenBy,
-    };
+Map<String, dynamic> _$MessageInputToJson(MessageInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  val['messageGroup'] = instance.messageGroup;
+  writeNotNull('seenBy', instance.seenBy);
+  return val;
+}
 
 CustomMessageInput _$CustomMessageInputFromJson(Map<String, dynamic> json) =>
     CustomMessageInput(
@@ -2908,11 +3759,19 @@ CustomMessageInput _$CustomMessageInputFromJson(Map<String, dynamic> json) =>
       type: json['type'] as String?,
     );
 
-Map<String, dynamic> _$CustomMessageInputToJson(CustomMessageInput instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'type': instance.type,
-    };
+Map<String, dynamic> _$CustomMessageInputToJson(CustomMessageInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 MessageMediaInput _$MessageMediaInputFromJson(Map<String, dynamic> json) =>
     MessageMediaInput(
@@ -2924,11 +3783,19 @@ MessageMediaInput _$MessageMediaInputFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$MessageMediaInputToJson(MessageMediaInput instance) =>
-    <String, dynamic>{
-      'picture': instance.picture?.map((e) => e.toJson()).toList(),
-      'video': instance.video?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$MessageMediaInputToJson(MessageMediaInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -2940,16 +3807,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 LonLatInput _$LonLatInputFromJson(Map<String, dynamic> json) => LonLatInput(
       type: json['type'] as String,
@@ -2975,14 +3850,21 @@ SendMessageToTarget$Mutation$MessageType$UserType$PhoneType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$UserType$PhoneTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SendMessageToTarget$Mutation$MessageType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$UserType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$UserType$PictureTypeFromJson(
@@ -2998,17 +3880,25 @@ SendMessageToTarget$Mutation$MessageType$UserType$PictureType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$UserType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$UserType
     _$SendMessageToTarget$Mutation$MessageType$UserTypeFromJson(
@@ -3031,17 +3921,26 @@ SendMessageToTarget$Mutation$MessageType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$SendMessageToTarget$Mutation$MessageType$UserTypeToJson(
-        SendMessageToTarget$Mutation$MessageType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    SendMessageToTarget$Mutation$MessageType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$CustomMessageType
     _$SendMessageToTarget$Mutation$MessageType$CustomMessageTypeFromJson(
@@ -3050,13 +3949,21 @@ SendMessageToTarget$Mutation$MessageType$CustomMessageType
           ..id = json['id'] as String?
           ..type = json['type'] as String?;
 
-Map<String,
-    dynamic> _$SendMessageToTarget$Mutation$MessageType$CustomMessageTypeToJson(
-        SendMessageToTarget$Mutation$MessageType$CustomMessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'type': instance.type,
-    };
+Map<String, dynamic>
+    _$SendMessageToTarget$Mutation$MessageType$CustomMessageTypeToJson(
+        SendMessageToTarget$Mutation$MessageType$CustomMessageType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$LonLatType
     _$SendMessageToTarget$Mutation$MessageType$LonLatTypeFromJson(
@@ -3069,11 +3976,19 @@ SendMessageToTarget$Mutation$MessageType$LonLatType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$LonLatTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$LonLatType instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SendMessageToTarget$Mutation$MessageType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageMediaType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -3089,17 +4004,25 @@ SendMessageToTarget$Mutation$MessageType$MessageMediaType$PictureType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageMediaType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageMediaType
     _$SendMessageToTarget$Mutation$MessageType$MessageMediaTypeFromJson(
@@ -3116,13 +4039,21 @@ SendMessageToTarget$Mutation$MessageType$MessageMediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$SendMessageToTarget$Mutation$MessageType$MessageMediaTypeToJson(
-        SendMessageToTarget$Mutation$MessageType$MessageMediaType instance) =>
-    <String, dynamic>{
-      'video': instance.video?.map((e) => e.toJson()).toList(),
-      'picture': instance.picture?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$SendMessageToTarget$Mutation$MessageType$MessageMediaTypeToJson(
+        SendMessageToTarget$Mutation$MessageType$MessageMediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PhoneType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -3135,14 +4066,22 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PhoneType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -3158,17 +4097,25 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PictureType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserTypeFromJson(
@@ -3192,18 +4139,27 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -3219,17 +4175,25 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$PictureType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -3245,17 +4209,25 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperT
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -3272,13 +4244,21 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperT
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -3291,14 +4271,22 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$P
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -3314,17 +4302,25 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$P
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -3348,18 +4344,27 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -3373,11 +4378,19 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -3393,17 +4406,25 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$Messag
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -3422,12 +4443,20 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$Messag
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -3440,12 +4469,20 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLat
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -3456,12 +4493,20 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$Custom
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -3488,19 +4533,27 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType
 
 Map<String, dynamic>
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageTypeToJson(
-            SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType$MessageGroupType
     _$SendMessageToTarget$Mutation$MessageType$MessageGroupTypeFromJson(
@@ -3540,25 +4593,34 @@ SendMessageToTarget$Mutation$MessageType$MessageGroupType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$SendMessageToTarget$Mutation$MessageType$MessageGroupTypeToJson(
-        SendMessageToTarget$Mutation$MessageType$MessageGroupType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'mute': instance.mute,
-      'creator': instance.creator?.toJson(),
-      'profilePicture': instance.profilePicture?.toJson(),
-      'wallpaper': instance.wallpaper?.toJson(),
-      'sound': _$MessageSoundEnumEnumMap[instance.sound],
-      'isDirectMessage': instance.isDirectMessage,
-      'members': instance.members?.toJson(),
-      'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-      'lastMessage': instance.lastMessage?.toJson(),
-      'unreadCount': instance.unreadCount,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$SendMessageToTarget$Mutation$MessageType$MessageGroupTypeToJson(
+        SendMessageToTarget$Mutation$MessageType$MessageGroupType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SendMessageToTarget$Mutation$MessageType
     _$SendMessageToTarget$Mutation$MessageTypeFromJson(
@@ -3594,21 +4656,30 @@ SendMessageToTarget$Mutation$MessageType
                   .fromJson(json['messageGroup'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$SendMessageToTarget$Mutation$MessageTypeToJson(
-        SendMessageToTarget$Mutation$MessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'gif': instance.gif,
-      'text': instance.text,
-      'sticker': instance.sticker,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'sender': instance.sender.toJson(),
-      'custom': instance.custom?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-      'media': instance.media?.toJson(),
-      'messageGroup': instance.messageGroup.toJson(),
-    };
+    SendMessageToTarget$Mutation$MessageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 SendMessageToTarget$Mutation _$SendMessageToTarget$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -3643,17 +4714,25 @@ SendMessageToTargetInput _$SendMessageToTargetInputFromJson(
     );
 
 Map<String, dynamic> _$SendMessageToTargetInputToJson(
-        SendMessageToTargetInput instance) =>
-    <String, dynamic>{
-      'text': instance.text,
-      'gif': instance.gif,
-      'sticker': instance.sticker,
-      'custom': instance.custom?.toJson(),
-      'media': instance.media?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy,
-      'target': instance.target.toJson(),
-    };
+    SendMessageToTargetInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy);
+  val['target'] = instance.target.toJson();
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$UserType$PhoneType
     _$CreateDirectMessage$Mutation$MessageType$UserType$PhoneTypeFromJson(
@@ -3666,14 +4745,21 @@ CreateDirectMessage$Mutation$MessageType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$UserType$PhoneTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateDirectMessage$Mutation$MessageType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$UserType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$UserType$PictureTypeFromJson(
@@ -3689,17 +4775,25 @@ CreateDirectMessage$Mutation$MessageType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$UserType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$UserType
     _$CreateDirectMessage$Mutation$MessageType$UserTypeFromJson(
@@ -3722,17 +4816,26 @@ CreateDirectMessage$Mutation$MessageType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateDirectMessage$Mutation$MessageType$UserTypeToJson(
-        CreateDirectMessage$Mutation$MessageType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    CreateDirectMessage$Mutation$MessageType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$CustomMessageType
     _$CreateDirectMessage$Mutation$MessageType$CustomMessageTypeFromJson(
@@ -3741,13 +4844,21 @@ CreateDirectMessage$Mutation$MessageType$CustomMessageType
           ..id = json['id'] as String?
           ..type = json['type'] as String?;
 
-Map<String,
-    dynamic> _$CreateDirectMessage$Mutation$MessageType$CustomMessageTypeToJson(
-        CreateDirectMessage$Mutation$MessageType$CustomMessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'type': instance.type,
-    };
+Map<String, dynamic>
+    _$CreateDirectMessage$Mutation$MessageType$CustomMessageTypeToJson(
+        CreateDirectMessage$Mutation$MessageType$CustomMessageType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$LonLatType
     _$CreateDirectMessage$Mutation$MessageType$LonLatTypeFromJson(
@@ -3760,11 +4871,19 @@ CreateDirectMessage$Mutation$MessageType$LonLatType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$LonLatTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$LonLatType instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateDirectMessage$Mutation$MessageType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageMediaType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -3780,17 +4899,25 @@ CreateDirectMessage$Mutation$MessageType$MessageMediaType$PictureType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageMediaType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageMediaType
     _$CreateDirectMessage$Mutation$MessageType$MessageMediaTypeFromJson(
@@ -3807,13 +4934,21 @@ CreateDirectMessage$Mutation$MessageType$MessageMediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$CreateDirectMessage$Mutation$MessageType$MessageMediaTypeToJson(
-        CreateDirectMessage$Mutation$MessageType$MessageMediaType instance) =>
-    <String, dynamic>{
-      'video': instance.video?.map((e) => e.toJson()).toList(),
-      'picture': instance.picture?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$CreateDirectMessage$Mutation$MessageType$MessageMediaTypeToJson(
+        CreateDirectMessage$Mutation$MessageType$MessageMediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -3826,14 +4961,22 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -3849,17 +4992,25 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserTypeFromJson(
@@ -3883,18 +5034,27 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -3910,17 +5070,25 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$PictureType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -3936,17 +5104,25 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperT
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -3963,13 +5139,21 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperT
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -3982,14 +5166,22 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$P
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -4005,17 +5197,25 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$P
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -4039,18 +5239,27 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -4064,11 +5273,19 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -4084,17 +5301,25 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$Messag
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -4113,12 +5338,20 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$Messag
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -4131,12 +5364,20 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLat
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -4147,12 +5388,20 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$Custom
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -4179,19 +5428,27 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType
 
 Map<String, dynamic>
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageTypeToJson(
-            CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType$MessageGroupType
     _$CreateDirectMessage$Mutation$MessageType$MessageGroupTypeFromJson(
@@ -4231,25 +5488,34 @@ CreateDirectMessage$Mutation$MessageType$MessageGroupType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$CreateDirectMessage$Mutation$MessageType$MessageGroupTypeToJson(
-        CreateDirectMessage$Mutation$MessageType$MessageGroupType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'mute': instance.mute,
-      'creator': instance.creator?.toJson(),
-      'profilePicture': instance.profilePicture?.toJson(),
-      'wallpaper': instance.wallpaper?.toJson(),
-      'sound': _$MessageSoundEnumEnumMap[instance.sound],
-      'isDirectMessage': instance.isDirectMessage,
-      'members': instance.members?.toJson(),
-      'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-      'lastMessage': instance.lastMessage?.toJson(),
-      'unreadCount': instance.unreadCount,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$CreateDirectMessage$Mutation$MessageType$MessageGroupTypeToJson(
+        CreateDirectMessage$Mutation$MessageType$MessageGroupType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateDirectMessage$Mutation$MessageType
     _$CreateDirectMessage$Mutation$MessageTypeFromJson(
@@ -4285,21 +5551,30 @@ CreateDirectMessage$Mutation$MessageType
                   .fromJson(json['messageGroup'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateDirectMessage$Mutation$MessageTypeToJson(
-        CreateDirectMessage$Mutation$MessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'gif': instance.gif,
-      'text': instance.text,
-      'sticker': instance.sticker,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'sender': instance.sender.toJson(),
-      'custom': instance.custom?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-      'media': instance.media?.toJson(),
-      'messageGroup': instance.messageGroup.toJson(),
-    };
+    CreateDirectMessage$Mutation$MessageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 CreateDirectMessage$Mutation _$CreateDirectMessage$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -4337,19 +5612,27 @@ DirectMessageInput _$DirectMessageInputFromJson(Map<String, dynamic> json) =>
           unknownValue: MessageGroupTypeEnum.artemisUnknown),
     );
 
-Map<String, dynamic> _$DirectMessageInputToJson(DirectMessageInput instance) =>
-    <String, dynamic>{
-      'text': instance.text,
-      'gif': instance.gif,
-      'sticker': instance.sticker,
-      'custom': instance.custom?.toJson(),
-      'media': instance.media?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy,
-      'receiver': instance.receiver,
-      'target': instance.target?.toJson(),
-      'type': _$MessageGroupTypeEnumEnumMap[instance.type],
-    };
+Map<String, dynamic> _$DirectMessageInputToJson(DirectMessageInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy);
+  val['receiver'] = instance.receiver;
+  writeNotNull('target', instance.target?.toJson());
+  writeNotNull('type', _$MessageGroupTypeEnumEnumMap[instance.type]);
+  return val;
+}
 
 const _$MessageGroupTypeEnumEnumMap = {
   MessageGroupTypeEnum.support: 'SUPPORT',
@@ -4366,15 +5649,23 @@ MarkMessageAsSeen$Mutation$MessageType$UserType$PhoneType
           ..countryCode = json['countryCode'] as String?
           ..validationNumber = json['validationNumber'] as int?;
 
-Map<String,
-    dynamic> _$MarkMessageAsSeen$Mutation$MessageType$UserType$PhoneTypeToJson(
-        MarkMessageAsSeen$Mutation$MessageType$UserType$PhoneType instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'isValid': instance.isValid,
-      'countryCode': instance.countryCode,
-      'validationNumber': instance.validationNumber,
-    };
+Map<String, dynamic>
+    _$MarkMessageAsSeen$Mutation$MessageType$UserType$PhoneTypeToJson(
+        MarkMessageAsSeen$Mutation$MessageType$UserType$PhoneType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$UserType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$UserType$PictureTypeFromJson(
@@ -4390,17 +5681,24 @@ MarkMessageAsSeen$Mutation$MessageType$UserType$PictureType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$UserType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$UserType
     _$MarkMessageAsSeen$Mutation$MessageType$UserTypeFromJson(
@@ -4423,17 +5721,26 @@ MarkMessageAsSeen$Mutation$MessageType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$MarkMessageAsSeen$Mutation$MessageType$UserTypeToJson(
-        MarkMessageAsSeen$Mutation$MessageType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'phone': instance.phone?.toJson(),
-      'picture': instance.picture?.toJson(),
-    };
+    MarkMessageAsSeen$Mutation$MessageType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$CustomMessageType
     _$MarkMessageAsSeen$Mutation$MessageType$CustomMessageTypeFromJson(
@@ -4442,13 +5749,21 @@ MarkMessageAsSeen$Mutation$MessageType$CustomMessageType
           ..id = json['id'] as String?
           ..type = json['type'] as String?;
 
-Map<String,
-    dynamic> _$MarkMessageAsSeen$Mutation$MessageType$CustomMessageTypeToJson(
-        MarkMessageAsSeen$Mutation$MessageType$CustomMessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'type': instance.type,
-    };
+Map<String, dynamic>
+    _$MarkMessageAsSeen$Mutation$MessageType$CustomMessageTypeToJson(
+        MarkMessageAsSeen$Mutation$MessageType$CustomMessageType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$LonLatType
     _$MarkMessageAsSeen$Mutation$MessageType$LonLatTypeFromJson(
@@ -4460,11 +5775,19 @@ MarkMessageAsSeen$Mutation$MessageType$LonLatType
               .toList();
 
 Map<String, dynamic> _$MarkMessageAsSeen$Mutation$MessageType$LonLatTypeToJson(
-        MarkMessageAsSeen$Mutation$MessageType$LonLatType instance) =>
-    <String, dynamic>{
-      'type': instance.type,
-      'coordinates': instance.coordinates,
-    };
+    MarkMessageAsSeen$Mutation$MessageType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageMediaType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -4480,17 +5803,25 @@ MarkMessageAsSeen$Mutation$MessageType$MessageMediaType$PictureType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageMediaType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageMediaType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageMediaTypeFromJson(
@@ -4509,11 +5840,19 @@ MarkMessageAsSeen$Mutation$MessageType$MessageMediaType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageMediaTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageMediaType instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageMediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PhoneType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -4526,14 +5865,22 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PhoneType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -4549,17 +5896,25 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PictureType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserTypeFromJson(
@@ -4583,18 +5938,27 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -4610,17 +5974,25 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$PictureType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -4636,17 +6008,25 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTyp
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -4663,13 +6043,21 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTyp
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -4682,14 +6070,22 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$Pho
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -4705,17 +6101,25 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$Pic
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -4739,18 +6143,27 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -4764,11 +6177,19 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -4784,17 +6205,25 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageM
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -4813,12 +6242,20 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageM
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -4831,12 +6268,20 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTy
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -4847,12 +6292,20 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMe
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -4879,19 +6332,27 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType$MessageGroupType
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupTypeFromJson(
@@ -4933,23 +6394,32 @@ MarkMessageAsSeen$Mutation$MessageType$MessageGroupType
 
 Map<String, dynamic>
     _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupTypeToJson(
-            MarkMessageAsSeen$Mutation$MessageType$MessageGroupType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'mute': instance.mute,
-          'creator': instance.creator?.toJson(),
-          'profilePicture': instance.profilePicture?.toJson(),
-          'wallpaper': instance.wallpaper?.toJson(),
-          'sound': _$MessageSoundEnumEnumMap[instance.sound],
-          'isDirectMessage': instance.isDirectMessage,
-          'members': instance.members?.toJson(),
-          'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-          'lastMessage': instance.lastMessage?.toJson(),
-          'unreadCount': instance.unreadCount,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        MarkMessageAsSeen$Mutation$MessageType$MessageGroupType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 MarkMessageAsSeen$Mutation$MessageType
     _$MarkMessageAsSeen$Mutation$MessageTypeFromJson(
@@ -4985,21 +6455,30 @@ MarkMessageAsSeen$Mutation$MessageType
                   json['messageGroup'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$MarkMessageAsSeen$Mutation$MessageTypeToJson(
-        MarkMessageAsSeen$Mutation$MessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'gif': instance.gif,
-      'text': instance.text,
-      'sticker': instance.sticker,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'sender': instance.sender.toJson(),
-      'custom': instance.custom?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-      'media': instance.media?.toJson(),
-      'messageGroup': instance.messageGroup.toJson(),
-    };
+    MarkMessageAsSeen$Mutation$MessageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 MarkMessageAsSeen$Mutation _$MarkMessageAsSeen$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -5084,14 +6563,22 @@ ListenForNewMessage$Subscription$MessageType$UserType$PhoneType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$UserType$PhoneTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ListenForNewMessage$Subscription$MessageType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$UserType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$UserType$PictureTypeFromJson(
@@ -5107,17 +6594,25 @@ ListenForNewMessage$Subscription$MessageType$UserType$PictureType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$UserType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$UserType
     _$ListenForNewMessage$Subscription$MessageType$UserTypeFromJson(
@@ -5141,17 +6636,26 @@ ListenForNewMessage$Subscription$MessageType$UserType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$UserTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        ListenForNewMessage$Subscription$MessageType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$CustomMessageType
     _$ListenForNewMessage$Subscription$MessageType$CustomMessageTypeFromJson(
@@ -5162,12 +6666,20 @@ ListenForNewMessage$Subscription$MessageType$CustomMessageType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$CustomMessageTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        ListenForNewMessage$Subscription$MessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$LonLatType
     _$ListenForNewMessage$Subscription$MessageType$LonLatTypeFromJson(
@@ -5180,11 +6692,19 @@ ListenForNewMessage$Subscription$MessageType$LonLatType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$LonLatTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$LonLatType instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        ListenForNewMessage$Subscription$MessageType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageMediaType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$MessageMediaType$PictureTypeFromJson(
@@ -5200,17 +6720,25 @@ ListenForNewMessage$Subscription$MessageType$MessageMediaType$PictureType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageMediaType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageMediaType
     _$ListenForNewMessage$Subscription$MessageType$MessageMediaTypeFromJson(
@@ -5229,12 +6757,20 @@ ListenForNewMessage$Subscription$MessageType$MessageMediaType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageMediaTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PhoneType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PhoneTypeFromJson(
@@ -5247,14 +6783,22 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PhoneType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PhoneTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PictureTypeFromJson(
@@ -5270,17 +6814,25 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PictureTy
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserTypeFromJson(
@@ -5304,18 +6856,27 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$PictureTypeFromJson(
@@ -5331,17 +6892,25 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$PictureType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -5357,17 +6926,25 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpa
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -5384,13 +6961,21 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpa
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PhoneType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -5403,14 +6988,22 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserTy
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -5426,17 +7019,25 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserTy
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserTypeFromJson(
@@ -5460,18 +7061,27 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserTy
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersTypeFromJson(
@@ -5485,11 +7095,19 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -5505,17 +7123,25 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$Me
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -5534,12 +7160,20 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$Me
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$LonLatType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -5552,12 +7186,20 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$Lo
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$CustomMessageType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -5568,12 +7210,20 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$Cu
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageTypeFromJson(
@@ -5600,19 +7250,27 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType$MessageGroupType
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupTypeFromJson(
@@ -5654,24 +7312,33 @@ ListenForNewMessage$Subscription$MessageType$MessageGroupType
 
 Map<String, dynamic>
     _$ListenForNewMessage$Subscription$MessageType$MessageGroupTypeToJson(
-            ListenForNewMessage$Subscription$MessageType$MessageGroupType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'mute': instance.mute,
-          'creator': instance.creator?.toJson(),
-          'profilePicture': instance.profilePicture?.toJson(),
-          'wallpaper': instance.wallpaper?.toJson(),
-          'sound': _$MessageSoundEnumEnumMap[instance.sound],
-          'isDirectMessage': instance.isDirectMessage,
-          'members': instance.members?.toJson(),
-          'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-          'lastMessage': instance.lastMessage?.toJson(),
-          'unreadCount': instance.unreadCount,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        ListenForNewMessage$Subscription$MessageType$MessageGroupType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForNewMessage$Subscription$MessageType
     _$ListenForNewMessage$Subscription$MessageTypeFromJson(
@@ -5707,21 +7374,30 @@ ListenForNewMessage$Subscription$MessageType
                   .fromJson(json['messageGroup'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$ListenForNewMessage$Subscription$MessageTypeToJson(
-        ListenForNewMessage$Subscription$MessageType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'gif': instance.gif,
-      'text': instance.text,
-      'sticker': instance.sticker,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'sender': instance.sender.toJson(),
-      'custom': instance.custom?.toJson(),
-      'location': instance.location?.toJson(),
-      'seenBy': instance.seenBy?.map((e) => e.toJson()).toList(),
-      'media': instance.media?.toJson(),
-      'messageGroup': instance.messageGroup.toJson(),
-    };
+    ListenForNewMessage$Subscription$MessageType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('gif', instance.gif);
+  writeNotNull('text', instance.text);
+  writeNotNull('sticker', instance.sticker);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  val['sender'] = instance.sender.toJson();
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('seenBy', instance.seenBy?.map((e) => e.toJson()).toList());
+  writeNotNull('media', instance.media?.toJson());
+  val['messageGroup'] = instance.messageGroup.toJson();
+  return val;
+}
 
 ListenForNewMessage$Subscription _$ListenForNewMessage$SubscriptionFromJson(
         Map<String, dynamic> json) =>
@@ -5747,14 +7423,22 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PhoneType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PhoneTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PictureType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PictureTypeFromJson(
@@ -5770,17 +7454,25 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PictureType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PictureTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserTypeFromJson(
@@ -5804,18 +7496,27 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$PictureType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$PictureTypeFromJson(
@@ -5831,17 +7532,25 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$PictureType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$PictureTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType$PictureType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
@@ -5857,17 +7566,25 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaper
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperTypeFromJson(
@@ -5884,13 +7601,21 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaper
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType
-                instance) =>
-        <String, dynamic>{
-          'picture': instance.picture?.toJson(),
-          'gradientColors': instance.gradientColors,
-          'assetImage': instance.assetImage,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$MessageGroupWallpaperType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('gradientColors', instance.gradientColors);
+  writeNotNull('assetImage', instance.assetImage);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PhoneType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
@@ -5903,14 +7628,22 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PictureType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
@@ -5926,17 +7659,25 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserTypeFromJson(
@@ -5960,18 +7701,27 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'phone': instance.phone?.toJson(),
-          'picture': instance.picture?.toJson(),
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersTypeFromJson(
@@ -5985,11 +7735,19 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType
-                instance) =>
-        <String, dynamic>{
-          'users': instance.users?.map((e) => e.toJson()).toList(),
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$MembersType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('users', instance.users?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType$PictureType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
@@ -6005,17 +7763,25 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$Messa
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
@@ -6034,12 +7800,20 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$Messa
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType
-                instance) =>
-        <String, dynamic>{
-          'video': instance.video?.map((e) => e.toJson()).toList(),
-          'picture': instance.picture?.map((e) => e.toJson()).toList(),
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$MessageMediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('video', instance.video?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLatType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLatTypeFromJson(
@@ -6052,12 +7826,20 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLa
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLatTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$CustomMessageType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
@@ -6068,12 +7850,20 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$Custo
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$CustomMessageType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'type': instance.type,
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$CustomMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('type', instance.type);
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageTypeFromJson(
@@ -6100,19 +7890,27 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType
 
 Map<String, dynamic>
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageTypeToJson(
-            ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType
-                instance) =>
-        <String, dynamic>{
-          'text': instance.text,
-          'gif': instance.gif,
-          'sticker': instance.sticker,
-          'media': instance.media?.toJson(),
-          'location': instance.location?.toJson(),
-          'custom': instance.custom?.toJson(),
-          'unread': instance.unread,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text);
+  writeNotNull('gif', instance.gif);
+  writeNotNull('sticker', instance.sticker);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('custom', instance.custom?.toJson());
+  writeNotNull('unread', instance.unread);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription$MessageGroupType
     _$ListenForMessageGroupUpdated$Subscription$MessageGroupTypeFromJson(
@@ -6152,25 +7950,34 @@ ListenForMessageGroupUpdated$Subscription$MessageGroupType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$ListenForMessageGroupUpdated$Subscription$MessageGroupTypeToJson(
-        ListenForMessageGroupUpdated$Subscription$MessageGroupType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'mute': instance.mute,
-      'creator': instance.creator?.toJson(),
-      'profilePicture': instance.profilePicture?.toJson(),
-      'wallpaper': instance.wallpaper?.toJson(),
-      'sound': _$MessageSoundEnumEnumMap[instance.sound],
-      'isDirectMessage': instance.isDirectMessage,
-      'members': instance.members?.toJson(),
-      'status': _$MessageGroupStatusEnumEnumMap[instance.status],
-      'lastMessage': instance.lastMessage?.toJson(),
-      'unreadCount': instance.unreadCount,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$ListenForMessageGroupUpdated$Subscription$MessageGroupTypeToJson(
+        ListenForMessageGroupUpdated$Subscription$MessageGroupType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mute', instance.mute);
+  writeNotNull('creator', instance.creator?.toJson());
+  writeNotNull('profilePicture', instance.profilePicture?.toJson());
+  writeNotNull('wallpaper', instance.wallpaper?.toJson());
+  writeNotNull('sound', _$MessageSoundEnumEnumMap[instance.sound]);
+  writeNotNull('isDirectMessage', instance.isDirectMessage);
+  writeNotNull('members', instance.members?.toJson());
+  writeNotNull('status', _$MessageGroupStatusEnumEnumMap[instance.status]);
+  writeNotNull('lastMessage', instance.lastMessage?.toJson());
+  writeNotNull('unreadCount', instance.unreadCount);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForMessageGroupUpdated$Subscription
     _$ListenForMessageGroupUpdated$SubscriptionFromJson(
@@ -6200,11 +8007,20 @@ GetMessagesByMessageGroupPaginationArguments
         );
 
 Map<String, dynamic> _$GetMessagesByMessageGroupPaginationArgumentsToJson(
-        GetMessagesByMessageGroupPaginationArguments instance) =>
-    <String, dynamic>{
-      'messageGroup': instance.messageGroup,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetMessagesByMessageGroupPaginationArguments instance) {
+  final val = <String, dynamic>{
+    'messageGroup': instance.messageGroup,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetMediaOfMessageGroupPaginationArguments
     _$GetMediaOfMessageGroupPaginationArgumentsFromJson(
@@ -6220,12 +8036,21 @@ GetMediaOfMessageGroupPaginationArguments
         );
 
 Map<String, dynamic> _$GetMediaOfMessageGroupPaginationArgumentsToJson(
-        GetMediaOfMessageGroupPaginationArguments instance) =>
-    <String, dynamic>{
-      'messageGroup': instance.messageGroup,
-      'mediaType': _$MediaTypeEnumEnumMap[instance.mediaType]!,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetMediaOfMessageGroupPaginationArguments instance) {
+  final val = <String, dynamic>{
+    'messageGroup': instance.messageGroup,
+    'mediaType': _$MediaTypeEnumEnumMap[instance.mediaType]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 const _$MediaTypeEnumEnumMap = {
   MediaTypeEnum.video: 'VIDEO',
@@ -6246,12 +8071,21 @@ SearchMessageByMessageGroupPaginationArguments
         );
 
 Map<String, dynamic> _$SearchMessageByMessageGroupPaginationArgumentsToJson(
-        SearchMessageByMessageGroupPaginationArguments instance) =>
-    <String, dynamic>{
-      'searchString': instance.searchString,
-      'messageGroup': instance.messageGroup,
-      'pagination': instance.pagination?.toJson(),
-    };
+    SearchMessageByMessageGroupPaginationArguments instance) {
+  final val = <String, dynamic>{
+    'searchString': instance.searchString,
+    'messageGroup': instance.messageGroup,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetMessagesByMemberPaginatedArguments
     _$GetMessagesByMemberPaginatedArgumentsFromJson(
@@ -6269,13 +8103,22 @@ GetMessagesByMemberPaginatedArguments
         );
 
 Map<String, dynamic> _$GetMessagesByMemberPaginatedArgumentsToJson(
-        GetMessagesByMemberPaginatedArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'type': _$MessageGroupTypeEnumEnumMap[instance.type]!,
-      'memberId': instance.memberId,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetMessagesByMemberPaginatedArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+    'type': _$MessageGroupTypeEnumEnumMap[instance.type]!,
+    'memberId': instance.memberId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 CreateMessageArguments _$CreateMessageArgumentsFromJson(
         Map<String, dynamic> json) =>

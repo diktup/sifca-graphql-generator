@@ -20,16 +20,24 @@ GetCompanies$Query$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$MediaType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$MediaType$PictureType instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$MediaType
     _$GetCompanies$Query$CompanyType$MediaTypeFromJson(
@@ -50,12 +58,20 @@ GetCompanies$Query$CompanyType$MediaType
               .toList();
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyType$MediaTypeToJson(
-        GetCompanies$Query$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    GetCompanies$Query$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$LonLatType
     _$GetCompanies$Query$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -66,13 +82,21 @@ GetCompanies$Query$CompanyType$FullAddressType$LonLatType
               ?.map((e) => (e as num).toDouble())
               .toList();
 
-Map<String,
-    dynamic> _$GetCompanies$Query$CompanyType$FullAddressType$LonLatTypeToJson(
-        GetCompanies$Query$CompanyType$FullAddressType$LonLatType instance) =>
-    <String, dynamic>{
-      'type': instance.type,
-      'coordinates': instance.coordinates,
-    };
+Map<String, dynamic>
+    _$GetCompanies$Query$CompanyType$FullAddressType$LonLatTypeToJson(
+        GetCompanies$Query$CompanyType$FullAddressType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType
     _$GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -88,17 +112,25 @@ GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$CountryType
     _$GetCompanies$Query$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -120,20 +152,29 @@ GetCompanies$Query$CompanyType$FullAddressType$CountryType
               : GetCompanies$Query$CompanyType$FullAddressType$CountryType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetCompanies$Query$CompanyType$FullAddressType$CountryTypeToJson(
-        GetCompanies$Query$CompanyType$FullAddressType$CountryType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'dialCode': instance.dialCode,
-      'iconFlag': instance.iconFlag,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetCompanies$Query$CompanyType$FullAddressType$CountryTypeToJson(
+        GetCompanies$Query$CompanyType$FullAddressType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -149,17 +190,25 @@ GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType
     _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -183,19 +232,28 @@ GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType
     _$GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -211,17 +269,25 @@ GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$StateType
     _$GetCompanies$Query$CompanyType$FullAddressType$StateTypeFromJson(
@@ -252,24 +318,33 @@ GetCompanies$Query$CompanyType$FullAddressType$StateType
               : GetCompanies$Query$CompanyType$FullAddressType$StateType$PictureType
                   .fromJson(json['flagWide'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetCompanies$Query$CompanyType$FullAddressType$StateTypeToJson(
-        GetCompanies$Query$CompanyType$FullAddressType$StateType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'adminName': instance.adminName,
-      'capital': _$StateCapitalEnumEnumMap[instance.capital],
-      'population': instance.population,
-      'ascii': instance.ascii,
-      'lat': instance.lat,
-      'lng': instance.lng,
-      'country': instance.country?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'flagSquare': instance.flagSquare?.toJson(),
-      'flagWide': instance.flagWide?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetCompanies$Query$CompanyType$FullAddressType$StateTypeToJson(
+        GetCompanies$Query$CompanyType$FullAddressType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 const _$StateCapitalEnumEnumMap = {
   StateCapitalEnum.primary: 'PRIMARY',
@@ -287,12 +362,20 @@ GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressO
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -306,12 +389,20 @@ GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$FullAddressType
     _$GetCompanies$Query$CompanyType$FullAddressTypeFromJson(
@@ -339,17 +430,25 @@ GetCompanies$Query$CompanyType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyType$FullAddressTypeToJson(
-        GetCompanies$Query$CompanyType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+    GetCompanies$Query$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$CompanyLegalType
     _$GetCompanies$Query$CompanyType$CompanyLegalTypeFromJson(
@@ -360,12 +459,20 @@ GetCompanies$Query$CompanyType$CompanyLegalType
           ..licence = json['licence'] as String?;
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyType$CompanyLegalTypeToJson(
-        GetCompanies$Query$CompanyType$CompanyLegalType instance) =>
-    <String, dynamic>{
-      'vat': instance.vat,
-      'register': instance.register,
-      'licence': instance.licence,
-    };
+    GetCompanies$Query$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -378,12 +485,20 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -399,17 +514,25 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -433,19 +556,28 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -461,17 +593,25 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -495,19 +635,28 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -523,17 +672,25 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -566,23 +723,32 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -593,12 +759,20 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -612,12 +786,20 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -646,18 +828,26 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddress
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -673,13 +863,22 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 const _$BankDetailsHolderTypeEnumEnumMap = {
   BankDetailsHolderTypeEnum.private: 'PRIVATE',
@@ -701,17 +900,25 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureT
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -727,17 +934,25 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserL
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -782,19 +997,27 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserL
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -812,13 +1035,21 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType$BankType
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -837,16 +1068,25 @@ GetCompanies$Query$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$BankDetailsType$BankTypeToJson(
-            GetCompanies$Query$CompanyType$BankDetailsType$BankType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCompanies$Query$CompanyType$BankDetailsType$BankType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompanies$Query$CompanyType$BankDetailsType
     _$GetCompanies$Query$CompanyType$BankDetailsTypeFromJson(
@@ -866,17 +1106,26 @@ GetCompanies$Query$CompanyType$BankDetailsType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyType$BankDetailsTypeToJson(
-        GetCompanies$Query$CompanyType$BankDetailsType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'holder': instance.holder.toJson(),
-      'account': instance.account,
-      'iban': instance.iban,
-      'bank': instance.bank.toJson(),
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetCompanies$Query$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -889,14 +1138,22 @@ GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCompanies$Query$CompanyType$CompanyContactDetailsType
     _$GetCompanies$Query$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -909,14 +1166,22 @@ GetCompanies$Query$CompanyType$CompanyContactDetailsType
               : GetCompanies$Query$CompanyType$CompanyContactDetailsType$PhoneType
                   .fromJson(json['phone'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$GetCompanies$Query$CompanyType$CompanyContactDetailsTypeToJson(
-        GetCompanies$Query$CompanyType$CompanyContactDetailsType instance) =>
-    <String, dynamic>{
-      'website': instance.website,
-      'email': instance.email,
-      'phone': instance.phone?.toJson(),
-    };
+Map<String, dynamic>
+    _$GetCompanies$Query$CompanyType$CompanyContactDetailsTypeToJson(
+        GetCompanies$Query$CompanyType$CompanyContactDetailsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompanies$Query$CompanyType$CompanyCustomerType
     _$GetCompanies$Query$CompanyType$CompanyCustomerTypeFromJson(
@@ -928,11 +1193,19 @@ GetCompanies$Query$CompanyType$CompanyCustomerType
           ..score = json['score'] as String?;
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyType$CompanyCustomerTypeToJson(
-        GetCompanies$Query$CompanyType$CompanyCustomerType instance) =>
-    <String, dynamic>{
-      'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-      'score': instance.score,
-    };
+    GetCompanies$Query$CompanyType$CompanyCustomerType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 const _$CustomerPhaseEnumEnumMap = {
   CustomerPhaseEnum.lead: 'LEAD',
@@ -949,10 +1222,18 @@ GetCompanies$Query$CompanyType$CompanySupplierType
               unknownValue: SupplierTypeEnum.artemisUnknown);
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyType$CompanySupplierTypeToJson(
-        GetCompanies$Query$CompanyType$CompanySupplierType instance) =>
-    <String, dynamic>{
-      'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-    };
+    GetCompanies$Query$CompanyType$CompanySupplierType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 const _$SupplierTypeEnumEnumMap = {
   SupplierTypeEnum.wholesaler: 'WHOLESALER',
@@ -1003,24 +1284,33 @@ GetCompanies$Query$CompanyType _$GetCompanies$Query$CompanyTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetCompanies$Query$CompanyTypeToJson(
-        GetCompanies$Query$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetCompanies$Query$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompanies$Query _$GetCompanies$QueryFromJson(Map<String, dynamic> json) =>
     GetCompanies$Query()
@@ -1047,16 +1337,24 @@ Company$Query$CompanyType$MediaType$PictureType
           ..alt = json['alt'] as String?;
 
 Map<String, dynamic> _$Company$Query$CompanyType$MediaType$PictureTypeToJson(
-        Company$Query$CompanyType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+    Company$Query$CompanyType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$MediaType
     _$Company$Query$CompanyType$MediaTypeFromJson(Map<String, dynamic> json) =>
@@ -1076,12 +1374,20 @@ Company$Query$CompanyType$MediaType
               .toList();
 
 Map<String, dynamic> _$Company$Query$CompanyType$MediaTypeToJson(
-        Company$Query$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    Company$Query$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$LonLatType
     _$Company$Query$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -1094,11 +1400,19 @@ Company$Query$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$LonLatTypeToJson(
-            Company$Query$CompanyType$FullAddressType$LonLatType instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        Company$Query$CompanyType$FullAddressType$LonLatType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$CountryType$PictureType
     _$Company$Query$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -1114,17 +1428,25 @@ Company$Query$CompanyType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            Company$Query$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$CountryType
     _$Company$Query$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -1148,18 +1470,27 @@ Company$Query$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$CountryTypeToJson(
-            Company$Query$CompanyType$FullAddressType$CountryType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Company$Query$CompanyType$FullAddressType$CountryType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -1175,17 +1506,25 @@ Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$StateType$CountryType
     _$Company$Query$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -1209,19 +1548,28 @@ Company$Query$CompanyType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            Company$Query$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Company$Query$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$StateType$PictureType
     _$Company$Query$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -1237,17 +1585,25 @@ Company$Query$CompanyType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            Company$Query$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$StateType
     _$Company$Query$CompanyType$FullAddressType$StateTypeFromJson(
@@ -1280,22 +1636,31 @@ Company$Query$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$StateTypeToJson(
-            Company$Query$CompanyType$FullAddressType$StateType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Company$Query$CompanyType$FullAddressType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$Company$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -1306,12 +1671,20 @@ Company$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerP
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            Company$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        Company$Query$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType$FullAddressOwnerType
     _$Company$Query$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -1325,12 +1698,20 @@ Company$Query$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            Company$Query$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        Company$Query$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$FullAddressType
     _$Company$Query$CompanyType$FullAddressTypeFromJson(
@@ -1358,17 +1739,25 @@ Company$Query$CompanyType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$Company$Query$CompanyType$FullAddressTypeToJson(
-        Company$Query$CompanyType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+    Company$Query$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$CompanyLegalType
     _$Company$Query$CompanyType$CompanyLegalTypeFromJson(
@@ -1379,12 +1768,20 @@ Company$Query$CompanyType$CompanyLegalType
           ..licence = json['licence'] as String?;
 
 Map<String, dynamic> _$Company$Query$CompanyType$CompanyLegalTypeToJson(
-        Company$Query$CompanyType$CompanyLegalType instance) =>
-    <String, dynamic>{
-      'vat': instance.vat,
-      'register': instance.register,
-      'licence': instance.licence,
-    };
+    Company$Query$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -1397,12 +1794,20 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -1418,17 +1823,25 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -1452,19 +1865,28 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -1480,17 +1902,25 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -1514,19 +1944,28 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -1542,17 +1981,25 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -1585,23 +2032,32 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -1612,12 +2068,20 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -1631,12 +2095,20 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -1665,18 +2137,26 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -1692,13 +2172,22 @@ Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -1714,17 +2203,25 @@ Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -1740,17 +2237,25 @@ Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPn
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -1795,19 +2300,27 @@ Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPn
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -1825,13 +2338,21 @@ Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        Company$Query$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType$BankType
     _$Company$Query$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -1849,16 +2370,25 @@ Company$Query$CompanyType$BankDetailsType$BankType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Company$Query$CompanyType$BankDetailsType$BankTypeToJson(
-        Company$Query$CompanyType$BankDetailsType$BankType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'bic': instance.bic,
-      'logo': instance.logo?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Company$Query$CompanyType$BankDetailsType$BankType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Company$Query$CompanyType$BankDetailsType
     _$Company$Query$CompanyType$BankDetailsTypeFromJson(
@@ -1877,17 +2407,26 @@ Company$Query$CompanyType$BankDetailsType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Company$Query$CompanyType$BankDetailsTypeToJson(
-        Company$Query$CompanyType$BankDetailsType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'holder': instance.holder.toJson(),
-      'account': instance.account,
-      'iban': instance.iban,
-      'bank': instance.bank.toJson(),
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Company$Query$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Company$Query$CompanyType$CompanyContactDetailsType$PhoneType
     _$Company$Query$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -1900,14 +2439,22 @@ Company$Query$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            Company$Query$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        Company$Query$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 Company$Query$CompanyType$CompanyContactDetailsType
     _$Company$Query$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -1922,12 +2469,20 @@ Company$Query$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$Company$Query$CompanyType$CompanyContactDetailsTypeToJson(
-            Company$Query$CompanyType$CompanyContactDetailsType instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        Company$Query$CompanyType$CompanyContactDetailsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 Company$Query$CompanyType$CompanyCustomerType
     _$Company$Query$CompanyType$CompanyCustomerTypeFromJson(
@@ -1939,11 +2494,19 @@ Company$Query$CompanyType$CompanyCustomerType
           ..score = json['score'] as String?;
 
 Map<String, dynamic> _$Company$Query$CompanyType$CompanyCustomerTypeToJson(
-        Company$Query$CompanyType$CompanyCustomerType instance) =>
-    <String, dynamic>{
-      'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-      'score': instance.score,
-    };
+    Company$Query$CompanyType$CompanyCustomerType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 Company$Query$CompanyType$CompanySupplierType
     _$Company$Query$CompanyType$CompanySupplierTypeFromJson(
@@ -1953,10 +2516,18 @@ Company$Query$CompanyType$CompanySupplierType
               unknownValue: SupplierTypeEnum.artemisUnknown);
 
 Map<String, dynamic> _$Company$Query$CompanyType$CompanySupplierTypeToJson(
-        Company$Query$CompanyType$CompanySupplierType instance) =>
-    <String, dynamic>{
-      'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-    };
+    Company$Query$CompanyType$CompanySupplierType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 Company$Query$CompanyType _$Company$Query$CompanyTypeFromJson(
         Map<String, dynamic> json) =>
@@ -2000,24 +2571,33 @@ Company$Query$CompanyType _$Company$Query$CompanyTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$Company$Query$CompanyTypeToJson(
-        Company$Query$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    Company$Query$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Company$Query _$Company$QueryFromJson(Map<String, dynamic> json) =>
     Company$Query()
@@ -2043,17 +2623,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType$PictureTy
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -2075,13 +2663,21 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -2094,12 +2690,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Lon
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2115,17 +2719,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Cou
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -2149,19 +2761,28 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Cou
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2177,17 +2798,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2211,19 +2840,28 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2239,17 +2877,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -2282,23 +2928,32 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Sta
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2309,12 +2964,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Ful
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2328,12 +2991,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$Ful
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -2362,18 +3033,26 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -2385,13 +3064,21 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -2404,12 +3091,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -2425,17 +3120,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -2459,19 +3162,28 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -2487,17 +3199,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -2521,19 +3241,28 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -2549,17 +3278,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -2592,23 +3329,32 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -2619,12 +3365,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -2638,12 +3392,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -2672,18 +3434,26 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -2699,13 +3469,22 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -2721,17 +3500,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -2747,17 +3534,25 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -2802,19 +3597,27 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -2832,13 +3635,21 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -2857,17 +3668,26 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ban
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -2888,18 +3708,27 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -2912,14 +3741,22 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetai
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -2934,13 +3771,21 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetai
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -2953,12 +3798,20 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -2969,11 +3822,19 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType$CompanyType
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -3020,25 +3881,33 @@ GetCompaniesPagination$Query$CompanyPaginateType$CompanyType
 
 Map<String, dynamic>
     _$GetCompaniesPagination$Query$CompanyPaginateType$CompanyTypeToJson(
-            GetCompaniesPagination$Query$CompanyPaginateType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'customer': instance.customer?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCompaniesPagination$Query$CompanyPaginateType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompaniesPagination$Query$CompanyPaginateType
     _$GetCompaniesPagination$Query$CompanyPaginateTypeFromJson(
@@ -3053,12 +3922,20 @@ GetCompaniesPagination$Query$CompanyPaginateType
               .toList();
 
 Map<String, dynamic> _$GetCompaniesPagination$Query$CompanyPaginateTypeToJson(
-        GetCompaniesPagination$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    GetCompaniesPagination$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetCompaniesPagination$Query _$GetCompaniesPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -3079,11 +3956,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeFromJson(
@@ -3099,17 +3984,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -3131,13 +4024,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -3150,12 +4050,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -3171,17 +4079,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$P
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -3205,19 +4121,28 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -3233,17 +4158,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$Cou
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -3267,19 +4200,28 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$Cou
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -3295,17 +4237,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$Pic
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -3338,23 +4288,32 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -3365,12 +4324,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOw
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -3384,12 +4351,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOw
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -3418,18 +4393,26 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -3441,13 +4424,21 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -3460,12 +4451,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -3481,17 +4480,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -3515,19 +4522,28 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -3543,17 +4559,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -3577,19 +4601,28 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -3605,17 +4638,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -3648,23 +4689,32 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -3675,12 +4725,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -3694,12 +4752,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -3728,18 +4794,26 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -3755,13 +4829,22 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHo
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -3777,17 +4860,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Brow
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -3803,17 +4894,25 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Brow
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -3858,19 +4957,27 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Brow
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -3888,13 +4995,21 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Brow
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -3913,17 +5028,26 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -3944,18 +5068,27 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -3968,14 +5101,22 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$Pho
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -3990,13 +5131,21 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -4009,12 +5158,20 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -4025,11 +5182,19 @@ GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        GetCustomers$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType$CompanyType
     _$GetCustomers$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -4075,24 +5240,33 @@ GetCustomers$Query$CompanyPaginateType$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetCustomers$Query$CompanyPaginateType$CompanyTypeToJson(
-        GetCustomers$Query$CompanyPaginateType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetCustomers$Query$CompanyPaginateType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCustomers$Query$CompanyPaginateType
     _$GetCustomers$Query$CompanyPaginateTypeFromJson(
@@ -4107,12 +5281,20 @@ GetCustomers$Query$CompanyPaginateType
               .toList();
 
 Map<String, dynamic> _$GetCustomers$Query$CompanyPaginateTypeToJson(
-        GetCustomers$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    GetCustomers$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetCustomers$Query _$GetCustomers$QueryFromJson(Map<String, dynamic> json) =>
     GetCustomers$Query()
@@ -4132,13 +5314,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeFromJson(
@@ -4154,17 +5344,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -4186,13 +5384,21 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -4205,12 +5411,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLa
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4226,17 +5440,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Count
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -4260,19 +5482,28 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Count
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4288,17 +5519,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$State
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4322,19 +5561,28 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$State
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4350,17 +5598,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$State
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -4393,23 +5649,32 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$State
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4420,12 +5685,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullA
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4439,12 +5712,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullA
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -4473,18 +5754,26 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -4496,13 +5785,21 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -4515,12 +5812,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -4536,17 +5841,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -4570,19 +5883,28 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -4598,17 +5920,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -4632,19 +5962,28 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -4660,17 +5999,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -4703,23 +6050,32 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -4730,12 +6086,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -4749,12 +6113,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -4783,18 +6155,26 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -4810,13 +6190,22 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankD
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -4832,17 +6221,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankT
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -4858,17 +6255,25 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankT
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -4913,19 +6318,27 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankT
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -4943,13 +6356,21 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankT
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -4968,17 +6389,26 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankT
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -4999,18 +6429,27 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -5023,14 +6462,22 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetails
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -5045,13 +6492,21 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetails
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -5064,12 +6519,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -5080,11 +6543,19 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType
     _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -5129,26 +6600,35 @@ GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeToJson(
-        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$GetCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeToJson(
+        GetCompaniesByTarget$Query$CompanyPaginateType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetCompaniesByTarget$Query$CompanyPaginateType
     _$GetCompaniesByTarget$Query$CompanyPaginateTypeFromJson(
@@ -5163,12 +6643,20 @@ GetCompaniesByTarget$Query$CompanyPaginateType
               .toList();
 
 Map<String, dynamic> _$GetCompaniesByTarget$Query$CompanyPaginateTypeToJson(
-        GetCompaniesByTarget$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    GetCompaniesByTarget$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetCompaniesByTarget$Query _$GetCompaniesByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -5197,17 +6685,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -5229,13 +6725,21 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -5248,12 +6752,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -5269,17 +6781,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -5303,19 +6823,28 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -5331,17 +6860,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$Co
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -5365,19 +6902,28 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$Co
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -5393,17 +6939,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$Pi
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -5436,23 +6990,32 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -5463,12 +7026,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressO
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -5482,12 +7053,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressO
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -5516,18 +7095,26 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -5539,13 +7126,21 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -5558,12 +7153,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -5579,17 +7182,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -5613,19 +7224,28 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -5641,17 +7261,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -5675,19 +7303,28 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -5703,17 +7340,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -5746,23 +7391,32 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -5773,12 +7427,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -5792,12 +7454,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -5826,18 +7496,26 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -5853,13 +7531,22 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsH
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -5875,17 +7562,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Bro
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -5901,17 +7596,25 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Bro
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -5956,19 +7659,27 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Bro
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -5986,13 +7697,21 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$Bro
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -6011,17 +7730,26 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -6042,18 +7770,27 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -6066,14 +7803,22 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$Ph
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -6088,13 +7833,21 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -6107,12 +7860,20 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -6123,11 +7884,19 @@ SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType$CompanyType
     _$SearchCompany$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -6174,24 +7943,33 @@ SearchCompany$Query$CompanyPaginateType$CompanyType
 
 Map<String, dynamic>
     _$SearchCompany$Query$CompanyPaginateType$CompanyTypeToJson(
-            SearchCompany$Query$CompanyPaginateType$CompanyType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'customer': instance.customer?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchCompany$Query$CompanyPaginateType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchCompany$Query$CompanyPaginateType
     _$SearchCompany$Query$CompanyPaginateTypeFromJson(
@@ -6206,12 +7984,20 @@ SearchCompany$Query$CompanyPaginateType
               .toList();
 
 Map<String, dynamic> _$SearchCompany$Query$CompanyPaginateTypeToJson(
-        SearchCompany$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    SearchCompany$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchCompany$Query _$SearchCompany$QueryFromJson(Map<String, dynamic> json) =>
     SearchCompany$Query()
@@ -6238,17 +8024,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType$
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -6270,13 +8064,21 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -6289,12 +8091,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -6310,17 +8120,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -6344,19 +8162,28 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -6372,17 +8199,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -6406,19 +8241,28 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -6434,17 +8278,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -6477,23 +8329,32 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -6504,12 +8365,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -6523,12 +8392,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -6557,18 +8434,26 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -6580,13 +8465,21 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyLeg
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -6599,12 +8492,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -6620,17 +8521,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -6654,19 +8563,28 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -6682,17 +8600,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -6716,19 +8642,28 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -6744,17 +8679,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -6787,23 +8730,32 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -6814,12 +8766,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -6833,12 +8793,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -6867,18 +8835,26 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -6894,13 +8870,22 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -6916,17 +8901,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -6942,17 +8935,25 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -6997,19 +8998,27 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -7027,13 +9036,21 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -7052,17 +9069,26 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -7083,18 +9109,27 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -7107,14 +9142,22 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCon
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -7129,13 +9172,21 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCon
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -7148,12 +9199,20 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCus
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -7164,11 +9223,19 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySup
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -7215,25 +9282,34 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
 
 Map<String, dynamic>
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyTypeToJson(
-            SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'customer': instance.customer?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query$CompanyPaginateType
     _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateTypeFromJson(
@@ -7247,14 +9323,22 @@ SearchCustomersByTargetAndPhase$Query$CompanyPaginateType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateTypeToJson(
-        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$SearchCustomersByTargetAndPhase$Query$CompanyPaginateTypeToJson(
+        SearchCustomersByTargetAndPhase$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchCustomersByTargetAndPhase$Query
     _$SearchCustomersByTargetAndPhase$QueryFromJson(
@@ -7286,17 +9370,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureT
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -7318,13 +9410,21 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -7337,12 +9437,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Lo
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -7358,17 +9466,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Co
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -7392,19 +9508,28 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Co
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -7420,17 +9545,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -7454,19 +9587,28 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -7482,17 +9624,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -7525,23 +9675,32 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$St
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -7552,12 +9711,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Fu
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -7571,12 +9738,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$Fu
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -7605,18 +9780,26 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -7628,13 +9811,21 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -7647,12 +9838,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -7668,17 +9867,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -7702,19 +9909,28 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -7730,17 +9946,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -7764,19 +9988,28 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -7792,17 +10025,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -7835,23 +10076,32 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -7862,12 +10112,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -7881,12 +10139,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -7915,18 +10181,26 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -7942,13 +10216,22 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -7964,17 +10247,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -7990,17 +10281,25 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -8045,19 +10344,27 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -8075,13 +10382,21 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -8100,17 +10415,26 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$Ba
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -8131,18 +10455,27 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -8155,14 +10488,22 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDeta
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -8177,13 +10518,21 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDeta
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -8196,12 +10545,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTyp
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -8212,11 +10569,19 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTyp
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -8263,25 +10628,34 @@ SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType
 
 Map<String, dynamic>
     _$SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyTypeToJson(
-            SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'customer': instance.customer?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchSuppliersByTarget$Query$CompanyPaginateType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchSuppliersByTarget$Query$CompanyPaginateType
     _$SearchSuppliersByTarget$Query$CompanyPaginateTypeFromJson(
@@ -8296,12 +10670,20 @@ SearchSuppliersByTarget$Query$CompanyPaginateType
               .toList();
 
 Map<String, dynamic> _$SearchSuppliersByTarget$Query$CompanyPaginateTypeToJson(
-        SearchSuppliersByTarget$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    SearchSuppliersByTarget$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchSuppliersByTarget$Query _$SearchSuppliersByTarget$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -8330,17 +10712,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeFromJson(
@@ -8362,13 +10752,21 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -8381,12 +10779,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8402,17 +10808,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -8436,19 +10850,28 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8464,17 +10887,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8498,19 +10929,28 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8526,17 +10966,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeFromJson(
@@ -8569,23 +11017,32 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8596,12 +11053,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8615,12 +11080,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeFromJson(
@@ -8649,18 +11122,26 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddres
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeFromJson(
@@ -8672,13 +11153,21 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLeg
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -8691,12 +11180,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -8712,17 +11209,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -8746,19 +11251,28 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -8774,17 +11288,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -8808,19 +11330,28 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -8836,17 +11367,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -8879,23 +11418,32 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -8906,12 +11454,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -8925,12 +11481,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -8959,18 +11523,26 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -8986,13 +11558,22 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -9008,17 +11589,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -9034,17 +11623,25 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -9089,19 +11686,27 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -9119,13 +11724,21 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -9144,17 +11757,26 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeFromJson(
@@ -9175,18 +11797,27 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetail
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -9199,14 +11830,22 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCon
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -9221,13 +11860,21 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCon
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeFromJson(
@@ -9240,12 +11887,20 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCus
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeFromJson(
@@ -9256,11 +11911,19 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySup
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeFromJson(
@@ -9307,25 +11970,34 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
 
 Map<String, dynamic>
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyTypeToJson(
-            SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'description': instance.description,
-          'media': instance.media?.toJson(),
-          'address': instance.address?.toJson(),
-          'legal': instance.legal?.toJson(),
-          'banks': instance.banks?.map((e) => e.toJson()).toList(),
-          'contact': instance.contact?.toJson(),
-          'customer': instance.customer?.toJson(),
-          'supplier': instance.supplier?.toJson(),
-          'logistic': instance.logistic,
-          'tags': instance.tags,
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query$CompanyPaginateType
     _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateTypeFromJson(
@@ -9339,14 +12011,22 @@ SearchLogisticCompaniesByTarget$Query$CompanyPaginateType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateTypeToJson(
-        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$SearchLogisticCompaniesByTarget$Query$CompanyPaginateTypeToJson(
+        SearchLogisticCompaniesByTarget$Query$CompanyPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 SearchLogisticCompaniesByTarget$Query
     _$SearchLogisticCompaniesByTarget$QueryFromJson(
@@ -9376,18 +12056,26 @@ CreateCompany$Mutation$CompanyType$MediaType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$CreateCompany$Mutation$CompanyType$MediaType$PictureTypeToJson(
-        CreateCompany$Mutation$CompanyType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$CreateCompany$Mutation$CompanyType$MediaType$PictureTypeToJson(
+        CreateCompany$Mutation$CompanyType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$MediaType
     _$CreateCompany$Mutation$CompanyType$MediaTypeFromJson(
@@ -9408,12 +12096,20 @@ CreateCompany$Mutation$CompanyType$MediaType
               .toList();
 
 Map<String, dynamic> _$CreateCompany$Mutation$CompanyType$MediaTypeToJson(
-        CreateCompany$Mutation$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    CreateCompany$Mutation$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$LonLatType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -9426,12 +12122,20 @@ CreateCompany$Mutation$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$LonLatTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -9447,17 +12151,25 @@ CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$CountryType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -9481,19 +12193,28 @@ CreateCompany$Mutation$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$CountryTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -9509,17 +12230,25 @@ CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$Picture
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -9543,19 +12272,28 @@ CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -9571,17 +12309,25 @@ CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$StateType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateTypeFromJson(
@@ -9614,23 +12360,31 @@ CreateCompany$Mutation$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$StateTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -9641,12 +12395,20 @@ CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddr
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
     _$CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -9660,12 +12422,20 @@ CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$FullAddressType
     _$CreateCompany$Mutation$CompanyType$FullAddressTypeFromJson(
@@ -9693,17 +12463,25 @@ CreateCompany$Mutation$CompanyType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreateCompany$Mutation$CompanyType$FullAddressTypeToJson(
-        CreateCompany$Mutation$CompanyType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+    CreateCompany$Mutation$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$CompanyLegalType
     _$CreateCompany$Mutation$CompanyType$CompanyLegalTypeFromJson(
@@ -9715,12 +12493,20 @@ CreateCompany$Mutation$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$CompanyLegalTypeToJson(
-            CreateCompany$Mutation$CompanyType$CompanyLegalType instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        CreateCompany$Mutation$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -9733,12 +12519,20 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -9754,17 +12548,25 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -9788,19 +12590,28 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -9816,17 +12627,25 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -9850,19 +12669,28 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -9878,17 +12706,25 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -9921,23 +12757,32 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -9948,12 +12793,20 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -9967,12 +12820,20 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -10001,18 +12862,26 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -10028,13 +12897,22 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -10050,17 +12928,25 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$Pict
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -10076,17 +12962,25 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$Brow
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -10131,19 +13025,27 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$Brow
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -10161,13 +13063,21 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType$BankType
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -10186,17 +13096,25 @@ CreateCompany$Mutation$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$BankDetailsType$BankTypeToJson(
-            CreateCompany$Mutation$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        CreateCompany$Mutation$CompanyType$BankDetailsType$BankType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$BankDetailsType
     _$CreateCompany$Mutation$CompanyType$BankDetailsTypeFromJson(
@@ -10215,17 +13133,26 @@ CreateCompany$Mutation$CompanyType$BankDetailsType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateCompany$Mutation$CompanyType$BankDetailsTypeToJson(
-        CreateCompany$Mutation$CompanyType$BankDetailsType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'holder': instance.holder.toJson(),
-      'account': instance.account,
-      'iban': instance.iban,
-      'bank': instance.bank.toJson(),
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateCompany$Mutation$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
     _$CreateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -10238,14 +13165,22 @@ CreateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            CreateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        CreateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$CompanyContactDetailsType
     _$CreateCompany$Mutation$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -10260,13 +13195,20 @@ CreateCompany$Mutation$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$CompanyContactDetailsTypeToJson(
-            CreateCompany$Mutation$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        CreateCompany$Mutation$CompanyType$CompanyContactDetailsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$CompanyCustomerType
     _$CreateCompany$Mutation$CompanyType$CompanyCustomerTypeFromJson(
@@ -10279,11 +13221,19 @@ CreateCompany$Mutation$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$CompanyCustomerTypeToJson(
-            CreateCompany$Mutation$CompanyType$CompanyCustomerType instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        CreateCompany$Mutation$CompanyType$CompanyCustomerType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType$CompanySupplierType
     _$CreateCompany$Mutation$CompanyType$CompanySupplierTypeFromJson(
@@ -10294,10 +13244,18 @@ CreateCompany$Mutation$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$CreateCompany$Mutation$CompanyType$CompanySupplierTypeToJson(
-            CreateCompany$Mutation$CompanyType$CompanySupplierType instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        CreateCompany$Mutation$CompanyType$CompanySupplierType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 CreateCompany$Mutation$CompanyType _$CreateCompany$Mutation$CompanyTypeFromJson(
         Map<String, dynamic> json) =>
@@ -10342,24 +13300,33 @@ CreateCompany$Mutation$CompanyType _$CreateCompany$Mutation$CompanyTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateCompany$Mutation$CompanyTypeToJson(
-        CreateCompany$Mutation$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateCompany$Mutation$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateCompany$Mutation _$CreateCompany$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -10407,22 +13374,30 @@ CompanyInput _$CompanyInputFromJson(Map<String, dynamic> json) => CompanyInput(
           : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CompanyInputToJson(CompanyInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'description': instance.description,
-      'tags': instance.tags,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks,
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'externalId': instance.externalId,
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'target': instance.target?.toJson(),
-    };
+Map<String, dynamic> _$CompanyInputToJson(CompanyInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks);
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('target', instance.target?.toJson());
+  return val;
+}
 
 MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
       videos:
@@ -10435,12 +13410,20 @@ MediaInput _$MediaInputFromJson(Map<String, dynamic> json) => MediaInput(
           .toList(),
     );
 
-Map<String, dynamic> _$MediaInputToJson(MediaInput instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic> _$MediaInputToJson(MediaInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -10452,16 +13435,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 FullAddressInput _$FullAddressInputFromJson(Map<String, dynamic> json) =>
     FullAddressInput(
@@ -10480,17 +13471,25 @@ FullAddressInput _$FullAddressInputFromJson(Map<String, dynamic> json) =>
           : LonLatInput.fromJson(json['location'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$FullAddressInputToJson(FullAddressInput instance) =>
-    <String, dynamic>{
-      'owner': instance.owner?.toJson(),
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'city': instance.city,
-      'country': instance.country,
-      'state': instance.state,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-    };
+Map<String, dynamic> _$FullAddressInputToJson(FullAddressInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('city', instance.city);
+  writeNotNull('country', instance.country);
+  writeNotNull('state', instance.state);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  return val;
+}
 
 FullAddressOwnerInput _$FullAddressOwnerInputFromJson(
         Map<String, dynamic> json) =>
@@ -10503,11 +13502,19 @@ FullAddressOwnerInput _$FullAddressOwnerInputFromJson(
     );
 
 Map<String, dynamic> _$FullAddressOwnerInputToJson(
-        FullAddressOwnerInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'phone': instance.phone?.toJson(),
-    };
+    FullAddressOwnerInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 FullAddressOwnerPhoneInput _$FullAddressOwnerPhoneInputFromJson(
         Map<String, dynamic> json) =>
@@ -10517,11 +13524,19 @@ FullAddressOwnerPhoneInput _$FullAddressOwnerPhoneInputFromJson(
     );
 
 Map<String, dynamic> _$FullAddressOwnerPhoneInputToJson(
-        FullAddressOwnerPhoneInput instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'countryCode': instance.countryCode,
-    };
+    FullAddressOwnerPhoneInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 LonLatInput _$LonLatInputFromJson(Map<String, dynamic> json) => LonLatInput(
       type: json['type'] as String,
@@ -10543,12 +13558,20 @@ CompanyLegalInput _$CompanyLegalInputFromJson(Map<String, dynamic> json) =>
       licence: json['licence'] as String?,
     );
 
-Map<String, dynamic> _$CompanyLegalInputToJson(CompanyLegalInput instance) =>
-    <String, dynamic>{
-      'vat': instance.vat,
-      'register': instance.register,
-      'licence': instance.licence,
-    };
+Map<String, dynamic> _$CompanyLegalInputToJson(CompanyLegalInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 CompanyContactDetailsInput _$CompanyContactDetailsInputFromJson(
         Map<String, dynamic> json) =>
@@ -10561,12 +13584,20 @@ CompanyContactDetailsInput _$CompanyContactDetailsInputFromJson(
     );
 
 Map<String, dynamic> _$CompanyContactDetailsInputToJson(
-        CompanyContactDetailsInput instance) =>
-    <String, dynamic>{
-      'website': instance.website,
-      'email': instance.email,
-      'phone': instance.phone?.toJson(),
-    };
+    CompanyContactDetailsInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 PhoneInput _$PhoneInputFromJson(Map<String, dynamic> json) => PhoneInput(
       number: json['number'] as String?,
@@ -10574,12 +13605,20 @@ PhoneInput _$PhoneInputFromJson(Map<String, dynamic> json) => PhoneInput(
       isValid: json['isValid'] as bool?,
     );
 
-Map<String, dynamic> _$PhoneInputToJson(PhoneInput instance) =>
-    <String, dynamic>{
-      'number': instance.number,
-      'countryCode': instance.countryCode,
-      'isValid': instance.isValid,
-    };
+Map<String, dynamic> _$PhoneInputToJson(PhoneInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('isValid', instance.isValid);
+  return val;
+}
 
 CompanyCustomerInput _$CompanyCustomerInputFromJson(
         Map<String, dynamic> json) =>
@@ -10590,11 +13629,19 @@ CompanyCustomerInput _$CompanyCustomerInputFromJson(
     );
 
 Map<String, dynamic> _$CompanyCustomerInputToJson(
-        CompanyCustomerInput instance) =>
-    <String, dynamic>{
-      'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-      'score': instance.score,
-    };
+    CompanyCustomerInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 CompanySupplierInput _$CompanySupplierInputFromJson(
         Map<String, dynamic> json) =>
@@ -10604,10 +13651,18 @@ CompanySupplierInput _$CompanySupplierInputFromJson(
     );
 
 Map<String, dynamic> _$CompanySupplierInputToJson(
-        CompanySupplierInput instance) =>
-    <String, dynamic>{
-      'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-    };
+    CompanySupplierInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$MediaType$PictureType
     _$UpdateCompany$Mutation$CompanyType$MediaType$PictureTypeFromJson(
@@ -10621,18 +13676,26 @@ UpdateCompany$Mutation$CompanyType$MediaType$PictureType
           ..y = json['y'] as int?
           ..alt = json['alt'] as String?;
 
-Map<String,
-    dynamic> _$UpdateCompany$Mutation$CompanyType$MediaType$PictureTypeToJson(
-        UpdateCompany$Mutation$CompanyType$MediaType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-    };
+Map<String, dynamic>
+    _$UpdateCompany$Mutation$CompanyType$MediaType$PictureTypeToJson(
+        UpdateCompany$Mutation$CompanyType$MediaType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$MediaType
     _$UpdateCompany$Mutation$CompanyType$MediaTypeFromJson(
@@ -10653,12 +13716,20 @@ UpdateCompany$Mutation$CompanyType$MediaType
               .toList();
 
 Map<String, dynamic> _$UpdateCompany$Mutation$CompanyType$MediaTypeToJson(
-        UpdateCompany$Mutation$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+    UpdateCompany$Mutation$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$LonLatType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -10671,12 +13742,20 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$LonLatTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10692,17 +13771,25 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -10726,19 +13813,28 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$CountryTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -10754,17 +13850,25 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$Picture
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -10788,19 +13892,28 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -10816,17 +13929,25 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$StateType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateTypeFromJson(
@@ -10859,23 +13980,31 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$StateTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$StateType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -10886,12 +14015,20 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddr
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -10905,12 +14042,20 @@ UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$FullAddressType
     _$UpdateCompany$Mutation$CompanyType$FullAddressTypeFromJson(
@@ -10938,17 +14083,25 @@ UpdateCompany$Mutation$CompanyType$FullAddressType
                   .fromJson(json['owner'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdateCompany$Mutation$CompanyType$FullAddressTypeToJson(
-        UpdateCompany$Mutation$CompanyType$FullAddressType instance) =>
-    <String, dynamic>{
-      'city': instance.city,
-      'address': instance.address,
-      'postCode': instance.postCode,
-      'addressLine': instance.addressLine,
-      'location': instance.location?.toJson(),
-      'country': instance.country?.toJson(),
-      'state': instance.state?.toJson(),
-      'owner': instance.owner?.toJson(),
-    };
+    UpdateCompany$Mutation$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$CompanyLegalType
     _$UpdateCompany$Mutation$CompanyType$CompanyLegalTypeFromJson(
@@ -10960,12 +14113,20 @@ UpdateCompany$Mutation$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$CompanyLegalTypeToJson(
-            UpdateCompany$Mutation$CompanyType$CompanyLegalType instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        UpdateCompany$Mutation$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -10978,12 +14139,20 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -10999,17 +14168,25 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -11033,19 +14210,28 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -11061,17 +14247,25 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -11095,19 +14289,28 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -11123,17 +14326,25 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -11166,23 +14377,32 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -11193,12 +14413,20 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -11212,12 +14440,20 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -11246,18 +14482,26 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAdd
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -11273,13 +14517,22 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -11295,17 +14548,25 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$Pict
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -11321,17 +14582,25 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$Brow
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -11376,19 +14645,27 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$Brow
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -11406,13 +14683,21 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -11431,17 +14716,25 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$BankDetailsType$BankTypeToJson(
-            UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        UpdateCompany$Mutation$CompanyType$BankDetailsType$BankType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$BankDetailsType
     _$UpdateCompany$Mutation$CompanyType$BankDetailsTypeFromJson(
@@ -11460,17 +14753,26 @@ UpdateCompany$Mutation$CompanyType$BankDetailsType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateCompany$Mutation$CompanyType$BankDetailsTypeToJson(
-        UpdateCompany$Mutation$CompanyType$BankDetailsType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'holder': instance.holder.toJson(),
-      'account': instance.account,
-      'iban': instance.iban,
-      'bank': instance.bank.toJson(),
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateCompany$Mutation$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
     _$UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -11483,14 +14785,22 @@ UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType
     _$UpdateCompany$Mutation$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -11505,13 +14815,20 @@ UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$CompanyContactDetailsTypeToJson(
-            UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        UpdateCompany$Mutation$CompanyType$CompanyContactDetailsType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$CompanyCustomerType
     _$UpdateCompany$Mutation$CompanyType$CompanyCustomerTypeFromJson(
@@ -11524,11 +14841,19 @@ UpdateCompany$Mutation$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$CompanyCustomerTypeToJson(
-            UpdateCompany$Mutation$CompanyType$CompanyCustomerType instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        UpdateCompany$Mutation$CompanyType$CompanyCustomerType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType$CompanySupplierType
     _$UpdateCompany$Mutation$CompanyType$CompanySupplierTypeFromJson(
@@ -11539,10 +14864,18 @@ UpdateCompany$Mutation$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$UpdateCompany$Mutation$CompanyType$CompanySupplierTypeToJson(
-            UpdateCompany$Mutation$CompanyType$CompanySupplierType instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        UpdateCompany$Mutation$CompanyType$CompanySupplierType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 UpdateCompany$Mutation$CompanyType _$UpdateCompany$Mutation$CompanyTypeFromJson(
         Map<String, dynamic> json) =>
@@ -11587,24 +14920,33 @@ UpdateCompany$Mutation$CompanyType _$UpdateCompany$Mutation$CompanyTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateCompany$Mutation$CompanyTypeToJson(
-        UpdateCompany$Mutation$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateCompany$Mutation$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateCompany$Mutation _$UpdateCompany$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -11650,21 +14992,29 @@ CompanyUpdateInput _$CompanyUpdateInputFromJson(Map<String, dynamic> json) =>
               json['supplier'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CompanyUpdateInputToJson(CompanyUpdateInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'description': instance.description,
-      'tags': instance.tags,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks,
-      'contact': instance.contact?.toJson(),
-      'logistic': instance.logistic,
-      'externalId': instance.externalId,
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-    };
+Map<String, dynamic> _$CompanyUpdateInputToJson(CompanyUpdateInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks);
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureTypeFromJson(
@@ -11680,17 +15030,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaTypeFromJson(
@@ -11712,12 +15070,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$MediaTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -11730,12 +15096,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -11751,17 +15125,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureT
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -11785,19 +15167,28 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -11813,17 +15204,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -11847,19 +15246,28 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -11875,17 +15283,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateTypeFromJson(
@@ -11918,23 +15334,32 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -11945,12 +15370,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -11964,12 +15397,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressTypeFromJson(
@@ -11998,18 +15439,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$FullAddressType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalTypeFromJson(
@@ -12021,13 +15469,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyLegalType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -12040,12 +15495,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -12061,17 +15524,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -12095,19 +15566,28 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -12123,17 +15603,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -12157,19 +15645,28 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -12185,17 +15682,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -12228,23 +15733,32 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -12255,12 +15769,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -12274,12 +15796,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -12308,18 +15838,26 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -12335,13 +15873,22 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTyp
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -12357,17 +15904,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogo
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -12383,17 +15938,25 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogo
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -12438,19 +16001,27 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogo
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -12468,13 +16039,21 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogo
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -12493,17 +16072,26 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsTypeFromJson(
@@ -12524,18 +16112,26 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$BankDetailsType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -12548,14 +16144,22 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -12570,13 +16174,21 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerTypeFromJson(
@@ -12589,12 +16201,20 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierTypeFromJson(
@@ -12605,11 +16225,19 @@ BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierTypeToJson(
-            BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        BulkUpdateCompanyMedia$Mutation$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation$CompanyType
     _$BulkUpdateCompanyMedia$Mutation$CompanyTypeFromJson(
@@ -12655,24 +16283,33 @@ BulkUpdateCompanyMedia$Mutation$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$BulkUpdateCompanyMedia$Mutation$CompanyTypeToJson(
-        BulkUpdateCompanyMedia$Mutation$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    BulkUpdateCompanyMedia$Mutation$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 BulkUpdateCompanyMedia$Mutation _$BulkUpdateCompanyMedia$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -12713,12 +16350,20 @@ SingleMediaInput _$SingleMediaInputFromJson(Map<String, dynamic> json) =>
           : PictureInput.fromJson(json['deg360'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$SingleMediaInputToJson(SingleMediaInput instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'pictures': instance.pictures?.toJson(),
-      'deg360': instance.deg360?.toJson(),
-    };
+Map<String, dynamic> _$SingleMediaInputToJson(SingleMediaInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('pictures', instance.pictures?.toJson());
+  writeNotNull('deg360', instance.deg360?.toJson());
+  return val;
+}
 
 DeleteCompany$Mutation$DeleteResponseDtoType
     _$DeleteCompany$Mutation$DeleteResponseDtoTypeFromJson(
@@ -12760,17 +16405,25 @@ ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$MediaType
     _$ListenForCompanyCreated$Subscription$CompanyType$MediaTypeFromJson(
@@ -12790,14 +16443,22 @@ ListenForCompanyCreated$Subscription$CompanyType$MediaType
                       .fromJson(e as Map<String, dynamic>))
               .toList();
 
-Map<String,
-    dynamic> _$ListenForCompanyCreated$Subscription$CompanyType$MediaTypeToJson(
-        ListenForCompanyCreated$Subscription$CompanyType$MediaType instance) =>
-    <String, dynamic>{
-      'videos': instance.videos,
-      'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-      'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-    };
+Map<String, dynamic>
+    _$ListenForCompanyCreated$Subscription$CompanyType$MediaTypeToJson(
+        ListenForCompanyCreated$Subscription$CompanyType$MediaType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatTypeFromJson(
@@ -12810,12 +16471,20 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -12831,17 +16500,25 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$Pic
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryTypeFromJson(
@@ -12865,19 +16542,28 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -12893,17 +16579,25 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$Count
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
@@ -12927,19 +16621,28 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$Count
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
@@ -12955,17 +16658,25 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$Pictu
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateTypeFromJson(
@@ -12998,23 +16709,32 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -13025,12 +16745,20 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwne
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -13044,12 +16772,20 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwne
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$FullAddressType
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressTypeFromJson(
@@ -13078,18 +16814,26 @@ ListenForCompanyCreated$Subscription$CompanyType$FullAddressType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$FullAddressTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalTypeFromJson(
@@ -13101,13 +16845,21 @@ ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType
-                instance) =>
-        <String, dynamic>{
-          'vat': instance.vat,
-          'register': instance.register,
-          'licence': instance.licence,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
@@ -13120,12 +16872,20 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
-                instance) =>
-        <String, dynamic>{
-          'type': instance.type,
-          'coordinates': instance.coordinates,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', instance.type);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
@@ -13141,17 +16901,25 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
@@ -13175,19 +16943,28 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
@@ -13203,17 +16980,25 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
@@ -13237,19 +17022,28 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'dialCode': instance.dialCode,
-          'iconFlag': instance.iconFlag,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
@@ -13265,17 +17059,25 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
@@ -13308,23 +17110,32 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'adminName': instance.adminName,
-          'capital': _$StateCapitalEnumEnumMap[instance.capital],
-          'population': instance.population,
-          'ascii': instance.ascii,
-          'lat': instance.lat,
-          'lng': instance.lng,
-          'country': instance.country?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'flagSquare': instance.flagSquare?.toJson(),
-          'flagWide': instance.flagWide?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
@@ -13335,12 +17146,20 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'countryCode': instance.countryCode,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
@@ -13354,12 +17173,20 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'phone': instance.phone?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
@@ -13388,18 +17215,26 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
-                instance) =>
-        <String, dynamic>{
-          'city': instance.city,
-          'address': instance.address,
-          'postCode': instance.postCode,
-          'addressLine': instance.addressLine,
-          'location': instance.location?.toJson(),
-          'country': instance.country?.toJson(),
-          'state': instance.state?.toJson(),
-          'owner': instance.owner?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('addressLine', instance.addressLine);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
@@ -13415,13 +17250,22 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHold
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType
-                instance) =>
-        <String, dynamic>{
-          'name': instance.name,
-          'type': _$BankDetailsHolderTypeEnumEnumMap[instance.type],
-          'address': instance.address.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
@@ -13437,17 +17281,25 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$Browse
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
@@ -13463,17 +17315,25 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$Browse
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-          'alt': instance.alt,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
@@ -13518,19 +17378,27 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$Browse
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
-                instance) =>
-        <String, dynamic>{
-          'default': instance.kw$default?.toJson(),
-          'size16': instance.size16?.toJson(),
-          'size24': instance.size24?.toJson(),
-          'size32': instance.size32?.toJson(),
-          'size48': instance.size48?.toJson(),
-          'size64': instance.size64?.toJson(),
-          'size128': instance.size128?.toJson(),
-          'size256': instance.size256?.toJson(),
-          'size512': instance.size512?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
@@ -13548,13 +17416,21 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$Browse
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType
-                instance) =>
-        <String, dynamic>{
-          'svg': instance.svg?.toJson(),
-          'png': instance.png?.toJson(),
-          'icon': instance.icon,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankTypeFromJson(
@@ -13573,17 +17449,26 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'bic': instance.bic,
-          'logo': instance.logo?.toJson(),
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsTypeFromJson(
@@ -13604,18 +17489,27 @@ ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$BankDetailsTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'holder': instance.holder.toJson(),
-          'account': instance.account,
-          'iban': instance.iban,
-          'bank': instance.bank.toJson(),
-          'externalId': instance.externalId,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
@@ -13628,14 +17522,22 @@ ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$Phone
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType
-                instance) =>
-        <String, dynamic>{
-          'number': instance.number,
-          'isValid': instance.isValid,
-          'countryCode': instance.countryCode,
-          'validationNumber': instance.validationNumber,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsTypeFromJson(
@@ -13650,13 +17552,21 @@ ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType
-                instance) =>
-        <String, dynamic>{
-          'website': instance.website,
-          'email': instance.email,
-          'phone': instance.phone?.toJson(),
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerTypeFromJson(
@@ -13669,12 +17579,20 @@ ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType
-                instance) =>
-        <String, dynamic>{
-          'phase': _$CustomerPhaseEnumEnumMap[instance.phase],
-          'score': instance.score,
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$CompanyCustomerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('phase', _$CustomerPhaseEnumEnumMap[instance.phase]);
+  writeNotNull('score', instance.score);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierTypeFromJson(
@@ -13685,11 +17603,19 @@ ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType
 
 Map<String, dynamic>
     _$ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierTypeToJson(
-            ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType
-                instance) =>
-        <String, dynamic>{
-          'kind': _$SupplierTypeEnumEnumMap[instance.kind],
-        };
+        ListenForCompanyCreated$Subscription$CompanyType$CompanySupplierType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kind', _$SupplierTypeEnumEnumMap[instance.kind]);
+  return val;
+}
 
 ListenForCompanyCreated$Subscription$CompanyType
     _$ListenForCompanyCreated$Subscription$CompanyTypeFromJson(
@@ -13735,24 +17661,33 @@ ListenForCompanyCreated$Subscription$CompanyType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$ListenForCompanyCreated$Subscription$CompanyTypeToJson(
-        ListenForCompanyCreated$Subscription$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'description': instance.description,
-      'media': instance.media?.toJson(),
-      'address': instance.address?.toJson(),
-      'legal': instance.legal?.toJson(),
-      'banks': instance.banks?.map((e) => e.toJson()).toList(),
-      'contact': instance.contact?.toJson(),
-      'customer': instance.customer?.toJson(),
-      'supplier': instance.supplier?.toJson(),
-      'logistic': instance.logistic,
-      'tags': instance.tags,
-      'externalId': instance.externalId,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    ListenForCompanyCreated$Subscription$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('customer', instance.customer?.toJson());
+  writeNotNull('supplier', instance.supplier?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 ListenForCompanyCreated$Subscription
     _$ListenForCompanyCreated$SubscriptionFromJson(Map<String, dynamic> json) =>
@@ -13787,10 +17722,18 @@ GetCompaniesPaginationArguments _$GetCompaniesPaginationArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetCompaniesPaginationArgumentsToJson(
-        GetCompaniesPaginationArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCompaniesPaginationArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetCustomersArguments _$GetCustomersArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -13805,12 +17748,21 @@ GetCustomersArguments _$GetCustomersArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetCustomersArgumentsToJson(
-        GetCustomersArguments instance) =>
-    <String, dynamic>{
-      'phase': _$CustomerPhaseEnumEnumMap[instance.phase]!,
-      'target': instance.target.toJson(),
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCustomersArguments instance) {
+  final val = <String, dynamic>{
+    'phase': _$CustomerPhaseEnumEnumMap[instance.phase]!,
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 GetCompaniesByTargetArguments _$GetCompaniesByTargetArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -13824,12 +17776,21 @@ GetCompaniesByTargetArguments _$GetCompaniesByTargetArgumentsFromJson(
     );
 
 Map<String, dynamic> _$GetCompaniesByTargetArgumentsToJson(
-        GetCompaniesByTargetArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'searchString': instance.searchString,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetCompaniesByTargetArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('searchString', instance.searchString);
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 SearchCompanyArguments _$SearchCompanyArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -13842,11 +17803,19 @@ SearchCompanyArguments _$SearchCompanyArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchCompanyArgumentsToJson(
-        SearchCompanyArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-    };
+    SearchCompanyArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  val['searchString'] = instance.searchString;
+  return val;
+}
 
 SearchCustomersByTargetAndPhaseArguments
     _$SearchCustomersByTargetAndPhaseArgumentsFromJson(
@@ -13864,13 +17833,22 @@ SearchCustomersByTargetAndPhaseArguments
         );
 
 Map<String, dynamic> _$SearchCustomersByTargetAndPhaseArgumentsToJson(
-        SearchCustomersByTargetAndPhaseArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'phase': _$CustomerPhaseEnumEnumMap[instance.phase]!,
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-    };
+    SearchCustomersByTargetAndPhaseArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+    'phase': _$CustomerPhaseEnumEnumMap[instance.phase]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  return val;
+}
 
 SearchSuppliersByTargetArguments _$SearchSuppliersByTargetArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -13888,14 +17866,23 @@ SearchSuppliersByTargetArguments _$SearchSuppliersByTargetArgumentsFromJson(
     );
 
 Map<String, dynamic> _$SearchSuppliersByTargetArgumentsToJson(
-        SearchSuppliersByTargetArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'kinds':
-          instance.kinds?.map((e) => _$SupplierTypeEnumEnumMap[e]!).toList(),
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-    };
+    SearchSuppliersByTargetArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('kinds',
+      instance.kinds?.map((e) => _$SupplierTypeEnumEnumMap[e]!).toList());
+  writeNotNull('pagination', instance.pagination?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  return val;
+}
 
 SearchLogisticCompaniesByTargetArguments
     _$SearchLogisticCompaniesByTargetArgumentsFromJson(
@@ -13911,12 +17898,21 @@ SearchLogisticCompaniesByTargetArguments
         );
 
 Map<String, dynamic> _$SearchLogisticCompaniesByTargetArgumentsToJson(
-        SearchLogisticCompaniesByTargetArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-    };
+    SearchLogisticCompaniesByTargetArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  return val;
+}
 
 CreateCompanyArguments _$CreateCompanyArgumentsFromJson(
         Map<String, dynamic> json) =>

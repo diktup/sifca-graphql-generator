@@ -41,13 +41,21 @@ GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType
 
 Map<String, dynamic>
     _$GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsTypeToJson(
-            GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType
-                instance) =>
-        <String, dynamic>{
-          'activeProjects': instance.activeProjects?.toJson(),
-          'activeBoards': instance.activeBoards?.toJson(),
-          'totalHours': instance.totalHours?.toJson(),
-        };
+        GetCollaborationAnalyticsStats$Query$CollaborationAnalyticsStatsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('activeProjects', instance.activeProjects?.toJson());
+  writeNotNull('activeBoards', instance.activeBoards?.toJson());
+  writeNotNull('totalHours', instance.totalHours?.toJson());
+  return val;
+}
 
 GetCollaborationAnalyticsStats$Query
     _$GetCollaborationAnalyticsStats$QueryFromJson(Map<String, dynamic> json) =>
@@ -75,12 +83,21 @@ AnalyticsDashboardInput _$AnalyticsDashboardInputFromJson(
     );
 
 Map<String, dynamic> _$AnalyticsDashboardInputToJson(
-        AnalyticsDashboardInput instance) =>
-    <String, dynamic>{
-      'to': instance.to.toIso8601String(),
-      'from': instance.from.toIso8601String(),
-      'target': instance.target?.toJson(),
-    };
+    AnalyticsDashboardInput instance) {
+  final val = <String, dynamic>{
+    'to': instance.to.toIso8601String(),
+    'from': instance.from.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', instance.target?.toJson());
+  return val;
+}
 
 TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
     TargetACIInput(
@@ -90,13 +107,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType$CollaborationAnalyticsProjectsOverviewChartType
     _$GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType$CollaborationAnalyticsProjectsOverviewChartTypeFromJson(
@@ -114,13 +139,21 @@ GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewTyp
 
 Map<String, dynamic>
     _$GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType$CollaborationAnalyticsProjectsOverviewChartTypeToJson(
-            GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType$CollaborationAnalyticsProjectsOverviewChartType
-                instance) =>
-        <String, dynamic>{
-          'totalProjects': instance.totalProjects,
-          'activeProjects': instance.activeProjects,
-          'revenue': instance.revenue,
-        };
+        GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType$CollaborationAnalyticsProjectsOverviewChartType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('totalProjects', instance.totalProjects);
+  writeNotNull('activeProjects', instance.activeProjects);
+  writeNotNull('revenue', instance.revenue);
+  return val;
+}
 
 GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType
     _$GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewTypeFromJson(
@@ -137,15 +170,23 @@ GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewTyp
 
 Map<String, dynamic>
     _$GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewTypeToJson(
-            GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType
-                instance) =>
-        <String, dynamic>{
-          'totalProjects': instance.totalProjects,
-          'activeProjects': instance.activeProjects,
-          'revenue': instance.revenue,
-          'hours': instance.hours,
-          'chart': instance.chart?.toJson(),
-        };
+        GetCollaborationProjectsOverview$Query$CollaborationAnalyticsProjectsOverviewType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('totalProjects', instance.totalProjects);
+  writeNotNull('activeProjects', instance.activeProjects);
+  writeNotNull('revenue', instance.revenue);
+  writeNotNull('hours', instance.hours);
+  writeNotNull('chart', instance.chart?.toJson());
+  return val;
+}
 
 GetCollaborationProjectsOverview$Query
     _$GetCollaborationProjectsOverview$QueryFromJson(
@@ -172,12 +213,20 @@ GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$Co
 
 Map<String, dynamic>
     _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType$CollaborationAnalyticsProjectsStatusChartDetailTypeToJson(
-            GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType$CollaborationAnalyticsProjectsStatusChartDetailType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'hours': instance.hours,
-        };
+        GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType$CollaborationAnalyticsProjectsStatusChartDetailType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('hours', instance.hours);
+  return val;
+}
 
 GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType
     _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartTypeFromJson(
@@ -202,14 +251,22 @@ GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$Co
 
 Map<String, dynamic>
     _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartTypeToJson(
-            GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType
-                instance) =>
-        <String, dynamic>{
-          'completed': instance.completed?.toJson(),
-          'inProgress': instance.inProgress?.toJson(),
-          'open': instance.open?.toJson(),
-          'canceled': instance.canceled?.toJson(),
-        };
+        GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType$CollaborationAnalyticsProjectsStatusChartType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('completed', instance.completed?.toJson());
+  writeNotNull('inProgress', instance.inProgress?.toJson());
+  writeNotNull('open', instance.open?.toJson());
+  writeNotNull('canceled', instance.canceled?.toJson());
+  return val;
+}
 
 GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType
     _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusTypeFromJson(
@@ -224,13 +281,21 @@ GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType
 
 Map<String, dynamic>
     _$GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusTypeToJson(
-            GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType
-                instance) =>
-        <String, dynamic>{
-          'totalProjects': instance.totalProjects,
-          'newProjects': instance.newProjects,
-          'chart': instance.chart?.toJson(),
-        };
+        GetCollaborationProjectsStatus$Query$CollaborationAnalyticsProjectsStatusType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('totalProjects', instance.totalProjects);
+  writeNotNull('newProjects', instance.newProjects);
+  writeNotNull('chart', instance.chart?.toJson());
+  return val;
+}
 
 GetCollaborationProjectsStatus$Query _$GetCollaborationProjectsStatus$QueryFromJson(
         Map<String, dynamic> json) =>

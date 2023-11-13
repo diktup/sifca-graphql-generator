@@ -16,12 +16,21 @@ GetTaxes$Query$TaxType$TaxVaType _$GetTaxes$Query$TaxType$TaxVaTypeFromJson(
           unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$GetTaxes$Query$TaxType$TaxVaTypeToJson(
-        GetTaxes$Query$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+    GetTaxes$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 const _$TaxSignEnumEnumMap = {
   TaxSignEnum.positive: 'POSITIVE',
@@ -42,11 +51,20 @@ GetTaxes$Query$TaxType$CompanyType _$GetTaxes$Query$TaxType$CompanyTypeFromJson(
       ..name = json['name'] as String?;
 
 Map<String, dynamic> _$GetTaxes$Query$TaxType$CompanyTypeToJson(
-        GetTaxes$Query$TaxType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+    GetTaxes$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetTaxes$Query$TaxType _$GetTaxes$Query$TaxTypeFromJson(
         Map<String, dynamic> json) =>
@@ -71,18 +89,28 @@ GetTaxes$Query$TaxType _$GetTaxes$Query$TaxTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTaxes$Query$TaxTypeToJson(
-        GetTaxes$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTaxes$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 const _$TaxUseEnumEnumMap = {
   TaxUseEnum.sale: 'SALE',
@@ -112,12 +140,21 @@ Tax$Query$TaxType$TaxVaType _$Tax$Query$TaxType$TaxVaTypeFromJson(
           unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$Tax$Query$TaxType$TaxVaTypeToJson(
-        Tax$Query$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+    Tax$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 Tax$Query$TaxType$CompanyType _$Tax$Query$TaxType$CompanyTypeFromJson(
         Map<String, dynamic> json) =>
@@ -126,11 +163,20 @@ Tax$Query$TaxType$CompanyType _$Tax$Query$TaxType$CompanyTypeFromJson(
       ..name = json['name'] as String?;
 
 Map<String, dynamic> _$Tax$Query$TaxType$CompanyTypeToJson(
-        Tax$Query$TaxType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+    Tax$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 Tax$Query$TaxType _$Tax$Query$TaxTypeFromJson(Map<String, dynamic> json) =>
     Tax$Query$TaxType()
@@ -153,18 +199,28 @@ Tax$Query$TaxType _$Tax$Query$TaxTypeFromJson(Map<String, dynamic> json) =>
       ..createdAt = DateTime.parse(json['createdAt'] as String)
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String, dynamic> _$Tax$Query$TaxTypeToJson(Tax$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic> _$Tax$Query$TaxTypeToJson(Tax$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 Tax$Query _$Tax$QueryFromJson(Map<String, dynamic> json) => Tax$Query()
   ..tax = Tax$Query$TaxType.fromJson(json['tax'] as Map<String, dynamic>);
@@ -184,12 +240,21 @@ GetTaxesByCompany$Query$TaxType$TaxVaType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$GetTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
-        GetTaxesByCompany$Query$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+    GetTaxesByCompany$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetTaxesByCompany$Query$TaxType$CompanyType
     _$GetTaxesByCompany$Query$TaxType$CompanyTypeFromJson(
@@ -199,11 +264,20 @@ GetTaxesByCompany$Query$TaxType$CompanyType
           ..name = json['name'] as String?;
 
 Map<String, dynamic> _$GetTaxesByCompany$Query$TaxType$CompanyTypeToJson(
-        GetTaxesByCompany$Query$TaxType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+    GetTaxesByCompany$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetTaxesByCompany$Query$TaxType _$GetTaxesByCompany$Query$TaxTypeFromJson(
         Map<String, dynamic> json) =>
@@ -228,18 +302,28 @@ GetTaxesByCompany$Query$TaxType _$GetTaxesByCompany$Query$TaxTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetTaxesByCompany$Query$TaxTypeToJson(
-        GetTaxesByCompany$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetTaxesByCompany$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTaxesByCompany$Query _$GetTaxesByCompany$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -268,12 +352,21 @@ GetGlobalSalesTaxesByCompany$Query$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$GetGlobalSalesTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
-            GetGlobalSalesTaxesByCompany$Query$TaxType$TaxVaType instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetGlobalSalesTaxesByCompany$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetGlobalSalesTaxesByCompany$Query$TaxType$CompanyType
     _$GetGlobalSalesTaxesByCompany$Query$TaxType$CompanyTypeFromJson(
@@ -284,11 +377,20 @@ GetGlobalSalesTaxesByCompany$Query$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetGlobalSalesTaxesByCompany$Query$TaxType$CompanyTypeToJson(
-            GetGlobalSalesTaxesByCompany$Query$TaxType$CompanyType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetGlobalSalesTaxesByCompany$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetGlobalSalesTaxesByCompany$Query$TaxType
     _$GetGlobalSalesTaxesByCompany$Query$TaxTypeFromJson(
@@ -314,18 +416,28 @@ GetGlobalSalesTaxesByCompany$Query$TaxType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetGlobalSalesTaxesByCompany$Query$TaxTypeToJson(
-        GetGlobalSalesTaxesByCompany$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetGlobalSalesTaxesByCompany$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetGlobalSalesTaxesByCompany$Query _$GetGlobalSalesTaxesByCompany$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -353,14 +465,23 @@ GetGlobalPurchasesTaxesByCompany$Query$TaxType$TaxVaType
           ..type = $enumDecode(_$DiscountTypeEnumMap, json['type'],
               unknownValue: DiscountType.artemisUnknown);
 
-Map<String,
-    dynamic> _$GetGlobalPurchasesTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
-        GetGlobalPurchasesTaxesByCompany$Query$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+Map<String, dynamic>
+    _$GetGlobalPurchasesTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
+        GetGlobalPurchasesTaxesByCompany$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyType
     _$GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyTypeFromJson(
@@ -369,13 +490,22 @@ GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyType
           ..id = json['id'] as String
           ..name = json['name'] as String?;
 
-Map<String,
-    dynamic> _$GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyTypeToJson(
-        GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+Map<String, dynamic>
+    _$GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyTypeToJson(
+        GetGlobalPurchasesTaxesByCompany$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetGlobalPurchasesTaxesByCompany$Query$TaxType
     _$GetGlobalPurchasesTaxesByCompany$Query$TaxTypeFromJson(
@@ -401,18 +531,28 @@ GetGlobalPurchasesTaxesByCompany$Query$TaxType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetGlobalPurchasesTaxesByCompany$Query$TaxTypeToJson(
-        GetGlobalPurchasesTaxesByCompany$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetGlobalPurchasesTaxesByCompany$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetGlobalPurchasesTaxesByCompany$Query
     _$GetGlobalPurchasesTaxesByCompany$QueryFromJson(
@@ -446,12 +586,21 @@ GetProductSalesTaxesByCompany$Query$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$GetProductSalesTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
-            GetProductSalesTaxesByCompany$Query$TaxType$TaxVaType instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetProductSalesTaxesByCompany$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetProductSalesTaxesByCompany$Query$TaxType$CompanyType
     _$GetProductSalesTaxesByCompany$Query$TaxType$CompanyTypeFromJson(
@@ -462,11 +611,20 @@ GetProductSalesTaxesByCompany$Query$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetProductSalesTaxesByCompany$Query$TaxType$CompanyTypeToJson(
-            GetProductSalesTaxesByCompany$Query$TaxType$CompanyType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetProductSalesTaxesByCompany$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetProductSalesTaxesByCompany$Query$TaxType
     _$GetProductSalesTaxesByCompany$Query$TaxTypeFromJson(
@@ -492,18 +650,28 @@ GetProductSalesTaxesByCompany$Query$TaxType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetProductSalesTaxesByCompany$Query$TaxTypeToJson(
-        GetProductSalesTaxesByCompany$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetProductSalesTaxesByCompany$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetProductSalesTaxesByCompany$Query
     _$GetProductSalesTaxesByCompany$QueryFromJson(Map<String, dynamic> json) =>
@@ -533,14 +701,23 @@ GetProductPurchasesTaxesByCompany$Query$TaxType$TaxVaType
           ..type = $enumDecode(_$DiscountTypeEnumMap, json['type'],
               unknownValue: DiscountType.artemisUnknown);
 
-Map<String,
-    dynamic> _$GetProductPurchasesTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
-        GetProductPurchasesTaxesByCompany$Query$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+Map<String, dynamic>
+    _$GetProductPurchasesTaxesByCompany$Query$TaxType$TaxVaTypeToJson(
+        GetProductPurchasesTaxesByCompany$Query$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetProductPurchasesTaxesByCompany$Query$TaxType$CompanyType
     _$GetProductPurchasesTaxesByCompany$Query$TaxType$CompanyTypeFromJson(
@@ -551,12 +728,20 @@ GetProductPurchasesTaxesByCompany$Query$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetProductPurchasesTaxesByCompany$Query$TaxType$CompanyTypeToJson(
-            GetProductPurchasesTaxesByCompany$Query$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetProductPurchasesTaxesByCompany$Query$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetProductPurchasesTaxesByCompany$Query$TaxType
     _$GetProductPurchasesTaxesByCompany$Query$TaxTypeFromJson(
@@ -582,18 +767,28 @@ GetProductPurchasesTaxesByCompany$Query$TaxType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$GetProductPurchasesTaxesByCompany$Query$TaxTypeToJson(
-        GetProductPurchasesTaxesByCompany$Query$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    GetProductPurchasesTaxesByCompany$Query$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetProductPurchasesTaxesByCompany$Query
     _$GetProductPurchasesTaxesByCompany$QueryFromJson(
@@ -627,13 +822,22 @@ GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$TaxVaType
 
 Map<String, dynamic>
     _$GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$TaxVaTypeToJson(
-            GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$CompanyType
     _$GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$CompanyTypeFromJson(
@@ -644,12 +848,21 @@ GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$CompanyType
 
 Map<String, dynamic>
     _$GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$CompanyTypeToJson(
-            GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType
     _$GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxTypeFromJson(
@@ -674,20 +887,30 @@ GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
-Map<String,
-    dynamic> _$GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxTypeToJson(
-        GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+Map<String, dynamic>
+    _$GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxTypeToJson(
+        GetTaxesByCompanyPaginated$Query$TaxPaginateType$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 GetTaxesByCompanyPaginated$Query$TaxPaginateType
     _$GetTaxesByCompanyPaginated$Query$TaxPaginateTypeFromJson(
@@ -702,12 +925,20 @@ GetTaxesByCompanyPaginated$Query$TaxPaginateType
               .toList();
 
 Map<String, dynamic> _$GetTaxesByCompanyPaginated$Query$TaxPaginateTypeToJson(
-        GetTaxesByCompanyPaginated$Query$TaxPaginateType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    GetTaxesByCompanyPaginated$Query$TaxPaginateType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 GetTaxesByCompanyPaginated$Query _$GetTaxesByCompanyPaginated$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -729,11 +960,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 CreateTax$Mutation$TaxType$TaxVaType
     _$CreateTax$Mutation$TaxType$TaxVaTypeFromJson(Map<String, dynamic> json) =>
@@ -745,12 +984,21 @@ CreateTax$Mutation$TaxType$TaxVaType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$CreateTax$Mutation$TaxType$TaxVaTypeToJson(
-        CreateTax$Mutation$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+    CreateTax$Mutation$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 CreateTax$Mutation$TaxType$CompanyType
     _$CreateTax$Mutation$TaxType$CompanyTypeFromJson(
@@ -760,11 +1008,20 @@ CreateTax$Mutation$TaxType$CompanyType
           ..name = json['name'] as String?;
 
 Map<String, dynamic> _$CreateTax$Mutation$TaxType$CompanyTypeToJson(
-        CreateTax$Mutation$TaxType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+    CreateTax$Mutation$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 CreateTax$Mutation$TaxType _$CreateTax$Mutation$TaxTypeFromJson(
         Map<String, dynamic> json) =>
@@ -789,18 +1046,28 @@ CreateTax$Mutation$TaxType _$CreateTax$Mutation$TaxTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$CreateTax$Mutation$TaxTypeToJson(
-        CreateTax$Mutation$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    CreateTax$Mutation$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 CreateTax$Mutation _$CreateTax$MutationFromJson(Map<String, dynamic> json) =>
     CreateTax$Mutation()
@@ -826,14 +1093,24 @@ TaxInput _$TaxInputFromJson(Map<String, dynamic> json) => TaxInput(
       company: json['company'] as String?,
     );
 
-Map<String, dynamic> _$TaxInputToJson(TaxInput instance) => <String, dynamic>{
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company,
-    };
+Map<String, dynamic> _$TaxInputToJson(TaxInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company);
+  return val;
+}
 
 TaxValueInput _$TaxValueInputFromJson(Map<String, dynamic> json) =>
     TaxValueInput(
@@ -844,12 +1121,21 @@ TaxValueInput _$TaxValueInputFromJson(Map<String, dynamic> json) =>
           unknownValue: DiscountType.artemisUnknown),
     );
 
-Map<String, dynamic> _$TaxValueInputToJson(TaxValueInput instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+Map<String, dynamic> _$TaxValueInputToJson(TaxValueInput instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 UpdateTax$Mutation$TaxType$TaxVaType
     _$UpdateTax$Mutation$TaxType$TaxVaTypeFromJson(Map<String, dynamic> json) =>
@@ -861,12 +1147,21 @@ UpdateTax$Mutation$TaxType$TaxVaType
               unknownValue: DiscountType.artemisUnknown);
 
 Map<String, dynamic> _$UpdateTax$Mutation$TaxType$TaxVaTypeToJson(
-        UpdateTax$Mutation$TaxType$TaxVaType instance) =>
-    <String, dynamic>{
-      'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-      'value': instance.value,
-      'type': _$DiscountTypeEnumMap[instance.type]!,
-    };
+    UpdateTax$Mutation$TaxType$TaxVaType instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 UpdateTax$Mutation$TaxType$CompanyType
     _$UpdateTax$Mutation$TaxType$CompanyTypeFromJson(
@@ -876,11 +1171,20 @@ UpdateTax$Mutation$TaxType$CompanyType
           ..name = json['name'] as String?;
 
 Map<String, dynamic> _$UpdateTax$Mutation$TaxType$CompanyTypeToJson(
-        UpdateTax$Mutation$TaxType$CompanyType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-    };
+    UpdateTax$Mutation$TaxType$CompanyType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 UpdateTax$Mutation$TaxType _$UpdateTax$Mutation$TaxTypeFromJson(
         Map<String, dynamic> json) =>
@@ -905,18 +1209,28 @@ UpdateTax$Mutation$TaxType _$UpdateTax$Mutation$TaxTypeFromJson(
       ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
 Map<String, dynamic> _$UpdateTax$Mutation$TaxTypeToJson(
-        UpdateTax$Mutation$TaxType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'label': instance.label,
-      'externalId': instance.externalId,
-      'value': instance.value?.toJson(),
-      'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-      'product': instance.product,
-      'company': instance.company?.toJson(),
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-    };
+    UpdateTax$Mutation$TaxType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
 
 UpdateTax$Mutation _$UpdateTax$MutationFromJson(Map<String, dynamic> json) =>
     UpdateTax$Mutation()
@@ -1037,12 +1351,21 @@ GetTaxesByCompanyPaginatedArguments
         );
 
 Map<String, dynamic> _$GetTaxesByCompanyPaginatedArgumentsToJson(
-        GetTaxesByCompanyPaginatedArguments instance) =>
-    <String, dynamic>{
-      'company': instance.company,
-      'searchString': instance.searchString,
-      'pagination': instance.pagination?.toJson(),
-    };
+    GetTaxesByCompanyPaginatedArguments instance) {
+  final val = <String, dynamic>{
+    'company': instance.company,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('searchString', instance.searchString);
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 CreateTaxArguments _$CreateTaxArgumentsFromJson(Map<String, dynamic> json) =>
     CreateTaxArguments(

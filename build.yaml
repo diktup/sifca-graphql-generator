@@ -5,19 +5,19 @@ targets:
     builders:
       json_serializable:
         options:
+          disallow_unrecognized_keys: false
+          generic_argument_factories: false
+          create_per_field_to_json: false
+          ignore_unannotated: false
+          create_field_map: false
+          explicit_to_json: false
+          include_if_null: false
+          create_factory: true
+          create_to_json: true
+          field_rename: none
+          constructor: ""
           any_map: false
           checked: false
-          constructor: ""
-          create_factory: true
-          create_field_map: false
-          create_per_field_to_json: false
-          create_to_json: true
-          disallow_unrecognized_keys: false
-          explicit_to_json: false
-          field_rename: none
-          generic_argument_factories: false
-          ignore_unannotated: false
-          include_if_null: true
       artemis:
         options:
           custom_parser_import: lib/time_parser.dart
@@ -168,8 +168,8 @@ targets:
               queries_glob: lib/graphql/attribute.graphql
               output: lib/dart/attribute.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/wallet.graphql
-              output: lib/dart/wallet.graphql.dart
+              queries_glob: lib/graphql/gamification-wallet-wallet.graphql
+              output: lib/dart/gamification-wallet-wallet.graphql.dart
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/onsite-converter.graphql
               output: lib/dart/onsite-converter.graphql.dart
@@ -195,8 +195,8 @@ targets:
               queries_glob: lib/graphql/sales.graphql
               output: lib/dart/sales.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/analytics.graphql
-              output: lib/dart/analytics.graphql.dart
+              queries_glob: lib/graphql/dashboard-analytics.graphql
+              output: lib/dart/dashboard-analytics.graphql.dart
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/target-plugins.graphql
               output: lib/dart/target-plugins.graphql.dart

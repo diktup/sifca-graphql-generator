@@ -19,16 +19,24 @@ FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$Picture
 
 Map<String, dynamic>
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
-            FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
@@ -157,40 +165,48 @@ FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
 
 Map<String, dynamic>
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
-            FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'alt2x': instance.alt2x?.toJson(),
-          'alt_128': instance.alt128?.toJson(),
-          'alt_256': instance.alt256?.toJson(),
-          'alt_512': instance.alt512?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'card_flat2x': instance.cardFlat2x?.toJson(),
-          'card_flat_128': instance.cardFlat128?.toJson(),
-          'card_flat_256': instance.cardFlat256?.toJson(),
-          'card_flat_512': instance.cardFlat512?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'dark2x': instance.dark2x?.toJson(),
-          'dark_128': instance.dark128?.toJson(),
-          'dark_256': instance.dark256?.toJson(),
-          'dark_512': instance.dark512?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'flat2x': instance.flat2x?.toJson(),
-          'flat_128': instance.flat128?.toJson(),
-          'flat_256': instance.flat256?.toJson(),
-          'flat_512': instance.flat512?.toJson(),
-          'light': instance.light?.toJson(),
-          'light2x': instance.light2x?.toJson(),
-          'light_128': instance.light128?.toJson(),
-          'light_256': instance.light256?.toJson(),
-          'light_512': instance.light512?.toJson(),
-          'default': instance.kw$default?.toJson(),
-          'default2x': instance.default2x?.toJson(),
-          'default_128': instance.default128?.toJson(),
-          'default_256': instance.default256?.toJson(),
-          'default_512': instance.default512?.toJson(),
-        };
+        FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
 
 FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
@@ -205,16 +221,24 @@ FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$Picture
 
 Map<String, dynamic>
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
-            FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
@@ -247,16 +271,24 @@ FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
 Map<String, dynamic>
     _$FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
-            FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'light': instance.light?.toJson(),
-          'default': instance.kw$default?.toJson(),
-        };
+        FindPaymentById$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
 
 FindPaymentById$Query$PaymentType$PaymentImagesType
     _$FindPaymentById$Query$PaymentType$PaymentImagesTypeFromJson(
@@ -273,11 +305,19 @@ FindPaymentById$Query$PaymentType$PaymentImagesType
 
 Map<String, dynamic>
     _$FindPaymentById$Query$PaymentType$PaymentImagesTypeToJson(
-            FindPaymentById$Query$PaymentType$PaymentImagesType instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        FindPaymentById$Query$PaymentType$PaymentImagesType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 FindPaymentById$Query$PaymentType _$FindPaymentById$Query$PaymentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -297,17 +337,26 @@ FindPaymentById$Query$PaymentType _$FindPaymentById$Query$PaymentTypeFromJson(
               json['images'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindPaymentById$Query$PaymentTypeToJson(
-        FindPaymentById$Query$PaymentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'paymentType': _$PaymentTypeEnumEnumMap[instance.paymentType],
-      'materialIcon': instance.materialIcon,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'images': instance.images?.toJson(),
-    };
+    FindPaymentById$Query$PaymentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
 
 const _$PaymentTypeEnumEnumMap = {
   PaymentTypeEnum.creditCard: 'CREDIT_CARD',
@@ -341,16 +390,24 @@ FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTyp
 
 Map<String, dynamic>
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
-            FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
@@ -479,40 +536,48 @@ FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
 
 Map<String, dynamic>
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
-            FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'alt2x': instance.alt2x?.toJson(),
-          'alt_128': instance.alt128?.toJson(),
-          'alt_256': instance.alt256?.toJson(),
-          'alt_512': instance.alt512?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'card_flat2x': instance.cardFlat2x?.toJson(),
-          'card_flat_128': instance.cardFlat128?.toJson(),
-          'card_flat_256': instance.cardFlat256?.toJson(),
-          'card_flat_512': instance.cardFlat512?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'dark2x': instance.dark2x?.toJson(),
-          'dark_128': instance.dark128?.toJson(),
-          'dark_256': instance.dark256?.toJson(),
-          'dark_512': instance.dark512?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'flat2x': instance.flat2x?.toJson(),
-          'flat_128': instance.flat128?.toJson(),
-          'flat_256': instance.flat256?.toJson(),
-          'flat_512': instance.flat512?.toJson(),
-          'light': instance.light?.toJson(),
-          'light2x': instance.light2x?.toJson(),
-          'light_128': instance.light128?.toJson(),
-          'light_256': instance.light256?.toJson(),
-          'light_512': instance.light512?.toJson(),
-          'default': instance.kw$default?.toJson(),
-          'default2x': instance.default2x?.toJson(),
-          'default_128': instance.default128?.toJson(),
-          'default_256': instance.default256?.toJson(),
-          'default_512': instance.default512?.toJson(),
-        };
+        FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
 
 FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
@@ -527,16 +592,24 @@ FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTyp
 
 Map<String, dynamic>
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
-            FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
@@ -569,16 +642,24 @@ FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
 Map<String, dynamic>
     _$FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
-            FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'light': instance.light?.toJson(),
-          'default': instance.kw$default?.toJson(),
-        };
+        FindPayments$Query$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
 
 FindPayments$Query$PaymentType$PaymentImagesType
     _$FindPayments$Query$PaymentType$PaymentImagesTypeFromJson(
@@ -594,11 +675,19 @@ FindPayments$Query$PaymentType$PaymentImagesType
                   .fromJson(json['svg'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindPayments$Query$PaymentType$PaymentImagesTypeToJson(
-        FindPayments$Query$PaymentType$PaymentImagesType instance) =>
-    <String, dynamic>{
-      'png': instance.png?.toJson(),
-      'svg': instance.svg?.toJson(),
-    };
+    FindPayments$Query$PaymentType$PaymentImagesType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 FindPayments$Query$PaymentType _$FindPayments$Query$PaymentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -618,17 +707,26 @@ FindPayments$Query$PaymentType _$FindPayments$Query$PaymentTypeFromJson(
               json['images'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$FindPayments$Query$PaymentTypeToJson(
-        FindPayments$Query$PaymentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'paymentType': _$PaymentTypeEnumEnumMap[instance.paymentType],
-      'materialIcon': instance.materialIcon,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'images': instance.images?.toJson(),
-    };
+    FindPayments$Query$PaymentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
 
 FindPayments$Query _$FindPayments$QueryFromJson(Map<String, dynamic> json) =>
     FindPayments$Query()
@@ -655,16 +753,24 @@ FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$
 
 Map<String, dynamic>
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
-            FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
@@ -793,40 +899,48 @@ FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$
 
 Map<String, dynamic>
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
-            FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'alt2x': instance.alt2x?.toJson(),
-          'alt_128': instance.alt128?.toJson(),
-          'alt_256': instance.alt256?.toJson(),
-          'alt_512': instance.alt512?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'card_flat2x': instance.cardFlat2x?.toJson(),
-          'card_flat_128': instance.cardFlat128?.toJson(),
-          'card_flat_256': instance.cardFlat256?.toJson(),
-          'card_flat_512': instance.cardFlat512?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'dark2x': instance.dark2x?.toJson(),
-          'dark_128': instance.dark128?.toJson(),
-          'dark_256': instance.dark256?.toJson(),
-          'dark_512': instance.dark512?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'flat2x': instance.flat2x?.toJson(),
-          'flat_128': instance.flat128?.toJson(),
-          'flat_256': instance.flat256?.toJson(),
-          'flat_512': instance.flat512?.toJson(),
-          'light': instance.light?.toJson(),
-          'light2x': instance.light2x?.toJson(),
-          'light_128': instance.light128?.toJson(),
-          'light_256': instance.light256?.toJson(),
-          'light_512': instance.light512?.toJson(),
-          'default': instance.kw$default?.toJson(),
-          'default2x': instance.default2x?.toJson(),
-          'default_128': instance.default128?.toJson(),
-          'default_256': instance.default256?.toJson(),
-          'default_512': instance.default512?.toJson(),
-        };
+        FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
 
 FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
@@ -841,16 +955,24 @@ FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$
 
 Map<String, dynamic>
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
-            FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
@@ -883,16 +1005,24 @@ FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$
 
 Map<String, dynamic>
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
-            FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'light': instance.light?.toJson(),
-          'default': instance.kw$default?.toJson(),
-        };
+        FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
 
 FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesTypeFromJson(
@@ -909,12 +1039,20 @@ FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType
 
 Map<String, dynamic>
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesTypeToJson(
-            FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType
-                instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType$PaymentImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentTypeFromJson(
@@ -936,18 +1074,27 @@ FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType
 
 Map<String, dynamic>
     _$FindPaymentsPagination$Query$PaymentPaginatedType$PaymentTypeToJson(
-            FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'code': instance.code,
-          'paymentType': _$PaymentTypeEnumEnumMap[instance.paymentType],
-          'materialIcon': instance.materialIcon,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'images': instance.images?.toJson(),
-        };
+        FindPaymentsPagination$Query$PaymentPaginatedType$PaymentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
 
 FindPaymentsPagination$Query$PaymentPaginatedType
     _$FindPaymentsPagination$Query$PaymentPaginatedTypeFromJson(
@@ -962,12 +1109,20 @@ FindPaymentsPagination$Query$PaymentPaginatedType
               .toList();
 
 Map<String, dynamic> _$FindPaymentsPagination$Query$PaymentPaginatedTypeToJson(
-        FindPaymentsPagination$Query$PaymentPaginatedType instance) =>
-    <String, dynamic>{
-      'count': instance.count,
-      'isLast': instance.isLast,
-      'objects': instance.objects.map((e) => e.toJson()).toList(),
-    };
+    FindPaymentsPagination$Query$PaymentPaginatedType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 FindPaymentsPagination$Query _$FindPaymentsPagination$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -988,11 +1143,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeFromJson(
@@ -1007,16 +1170,24 @@ CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$Pictur
 
 Map<String, dynamic>
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
-            CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
@@ -1145,40 +1316,48 @@ CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
 
 Map<String, dynamic>
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
-            CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'alt2x': instance.alt2x?.toJson(),
-          'alt_128': instance.alt128?.toJson(),
-          'alt_256': instance.alt256?.toJson(),
-          'alt_512': instance.alt512?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'card_flat2x': instance.cardFlat2x?.toJson(),
-          'card_flat_128': instance.cardFlat128?.toJson(),
-          'card_flat_256': instance.cardFlat256?.toJson(),
-          'card_flat_512': instance.cardFlat512?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'dark2x': instance.dark2x?.toJson(),
-          'dark_128': instance.dark128?.toJson(),
-          'dark_256': instance.dark256?.toJson(),
-          'dark_512': instance.dark512?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'flat2x': instance.flat2x?.toJson(),
-          'flat_128': instance.flat128?.toJson(),
-          'flat_256': instance.flat256?.toJson(),
-          'flat_512': instance.flat512?.toJson(),
-          'light': instance.light?.toJson(),
-          'light2x': instance.light2x?.toJson(),
-          'light_128': instance.light128?.toJson(),
-          'light_256': instance.light256?.toJson(),
-          'light_512': instance.light512?.toJson(),
-          'default': instance.kw$default?.toJson(),
-          'default2x': instance.default2x?.toJson(),
-          'default_128': instance.default128?.toJson(),
-          'default_256': instance.default256?.toJson(),
-          'default_512': instance.default512?.toJson(),
-        };
+        CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
 
 CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
@@ -1193,16 +1372,24 @@ CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$Pictur
 
 Map<String, dynamic>
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
-            CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
@@ -1235,16 +1422,24 @@ CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
 Map<String, dynamic>
     _$CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
-            CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'light': instance.light?.toJson(),
-          'default': instance.kw$default?.toJson(),
-        };
+        CreatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
 
 CreatePayment$Mutation$PaymentType$PaymentImagesType
     _$CreatePayment$Mutation$PaymentType$PaymentImagesTypeFromJson(
@@ -1261,11 +1456,19 @@ CreatePayment$Mutation$PaymentType$PaymentImagesType
 
 Map<String, dynamic>
     _$CreatePayment$Mutation$PaymentType$PaymentImagesTypeToJson(
-            CreatePayment$Mutation$PaymentType$PaymentImagesType instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        CreatePayment$Mutation$PaymentType$PaymentImagesType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 CreatePayment$Mutation$PaymentType _$CreatePayment$Mutation$PaymentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1285,17 +1488,26 @@ CreatePayment$Mutation$PaymentType _$CreatePayment$Mutation$PaymentTypeFromJson(
               json['images'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$CreatePayment$Mutation$PaymentTypeToJson(
-        CreatePayment$Mutation$PaymentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'paymentType': _$PaymentTypeEnumEnumMap[instance.paymentType],
-      'materialIcon': instance.materialIcon,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'images': instance.images?.toJson(),
-    };
+    CreatePayment$Mutation$PaymentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
 
 CreatePayment$Mutation _$CreatePayment$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -1321,14 +1533,23 @@ PaymentInput _$PaymentInputFromJson(Map<String, dynamic> json) => PaymentInput(
           : PaymentImagesInput.fromJson(json['images'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$PaymentInputToJson(PaymentInput instance) =>
-    <String, dynamic>{
-      'name': instance.name,
-      'code': instance.code,
-      'paymentType': _$PaymentTypeEnumEnumMap[instance.paymentType],
-      'materialIcon': instance.materialIcon,
-      'images': instance.images?.toJson(),
-    };
+Map<String, dynamic> _$PaymentInputToJson(PaymentInput instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
 
 PaymentImagesInput _$PaymentImagesInputFromJson(Map<String, dynamic> json) =>
     PaymentImagesInput(
@@ -1340,11 +1561,19 @@ PaymentImagesInput _$PaymentImagesInputFromJson(Map<String, dynamic> json) =>
           : PaymentImagesPngInput.fromJson(json['png'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$PaymentImagesInputToJson(PaymentImagesInput instance) =>
-    <String, dynamic>{
-      'svg': instance.svg?.toJson(),
-      'png': instance.png?.toJson(),
-    };
+Map<String, dynamic> _$PaymentImagesInputToJson(PaymentImagesInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
 
 PaymentImagesSvgInput _$PaymentImagesSvgInputFromJson(
         Map<String, dynamic> json) =>
@@ -1370,15 +1599,23 @@ PaymentImagesSvgInput _$PaymentImagesSvgInputFromJson(
     );
 
 Map<String, dynamic> _$PaymentImagesSvgInputToJson(
-        PaymentImagesSvgInput instance) =>
-    <String, dynamic>{
-      'alt': instance.alt?.toJson(),
-      'card_flat': instance.cardFlat?.toJson(),
-      'dark': instance.dark?.toJson(),
-      'flat': instance.flat?.toJson(),
-      'light': instance.light?.toJson(),
-      'default': instance.kw$default?.toJson(),
-    };
+    PaymentImagesSvgInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
 
 PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       width: json['width'] as int?,
@@ -1390,16 +1627,24 @@ PictureInput _$PictureInputFromJson(Map<String, dynamic> json) => PictureInput(
       path: json['path'] as String,
     );
 
-Map<String, dynamic> _$PictureInputToJson(PictureInput instance) =>
-    <String, dynamic>{
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-      'alt': instance.alt,
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-    };
+Map<String, dynamic> _$PictureInputToJson(PictureInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  val['baseUrl'] = instance.baseUrl;
+  val['path'] = instance.path;
+  return val;
+}
 
 PaymentImagesPngInput _$PaymentImagesPngInputFromJson(
         Map<String, dynamic> json) =>
@@ -1500,39 +1745,47 @@ PaymentImagesPngInput _$PaymentImagesPngInputFromJson(
     );
 
 Map<String, dynamic> _$PaymentImagesPngInputToJson(
-        PaymentImagesPngInput instance) =>
-    <String, dynamic>{
-      'alt': instance.alt?.toJson(),
-      'alt2x': instance.alt2x?.toJson(),
-      'alt_128': instance.alt128?.toJson(),
-      'alt_256': instance.alt256?.toJson(),
-      'alt_512': instance.alt512?.toJson(),
-      'card_flat': instance.cardFlat?.toJson(),
-      'card_flat2x': instance.cardFlat2x?.toJson(),
-      'card_flat_128': instance.cardFlat128?.toJson(),
-      'card_flat_256': instance.cardFlat256?.toJson(),
-      'card_flat_512': instance.cardFlat512?.toJson(),
-      'dark': instance.dark?.toJson(),
-      'dark2x': instance.dark2x?.toJson(),
-      'dark_128': instance.dark128?.toJson(),
-      'dark_256': instance.dark256?.toJson(),
-      'dark_512': instance.dark512?.toJson(),
-      'flat': instance.flat?.toJson(),
-      'flat2x': instance.flat2x?.toJson(),
-      'flat_128': instance.flat128?.toJson(),
-      'flat_256': instance.flat256?.toJson(),
-      'flat_512': instance.flat512?.toJson(),
-      'light': instance.light?.toJson(),
-      'light2x': instance.light2x?.toJson(),
-      'light_128': instance.light128?.toJson(),
-      'light_256': instance.light256?.toJson(),
-      'light_512': instance.light512?.toJson(),
-      'default': instance.kw$default?.toJson(),
-      'default2x': instance.default2x?.toJson(),
-      'default_128': instance.default128?.toJson(),
-      'default_256': instance.default256?.toJson(),
-      'default_512': instance.default512?.toJson(),
-    };
+    PaymentImagesPngInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
 
 UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeFromJson(
@@ -1547,16 +1800,24 @@ UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$Pictur
 
 Map<String, dynamic>
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
-            UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
@@ -1685,40 +1946,48 @@ UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
 
 Map<String, dynamic>
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
-            UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'alt2x': instance.alt2x?.toJson(),
-          'alt_128': instance.alt128?.toJson(),
-          'alt_256': instance.alt256?.toJson(),
-          'alt_512': instance.alt512?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'card_flat2x': instance.cardFlat2x?.toJson(),
-          'card_flat_128': instance.cardFlat128?.toJson(),
-          'card_flat_256': instance.cardFlat256?.toJson(),
-          'card_flat_512': instance.cardFlat512?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'dark2x': instance.dark2x?.toJson(),
-          'dark_128': instance.dark128?.toJson(),
-          'dark_256': instance.dark256?.toJson(),
-          'dark_512': instance.dark512?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'flat2x': instance.flat2x?.toJson(),
-          'flat_128': instance.flat128?.toJson(),
-          'flat_256': instance.flat256?.toJson(),
-          'flat_512': instance.flat512?.toJson(),
-          'light': instance.light?.toJson(),
-          'light2x': instance.light2x?.toJson(),
-          'light_128': instance.light128?.toJson(),
-          'light_256': instance.light256?.toJson(),
-          'light_512': instance.light512?.toJson(),
-          'default': instance.kw$default?.toJson(),
-          'default2x': instance.default2x?.toJson(),
-          'default_128': instance.default128?.toJson(),
-          'default_256': instance.default256?.toJson(),
-          'default_512': instance.default512?.toJson(),
-        };
+        UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
 
 UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
@@ -1733,16 +2002,24 @@ UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$Pictur
 
 Map<String, dynamic>
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
-            UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
@@ -1775,16 +2052,24 @@ UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
 
 Map<String, dynamic>
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
-            UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
-                instance) =>
-        <String, dynamic>{
-          'alt': instance.alt?.toJson(),
-          'card_flat': instance.cardFlat?.toJson(),
-          'dark': instance.dark?.toJson(),
-          'flat': instance.flat?.toJson(),
-          'light': instance.light?.toJson(),
-          'default': instance.kw$default?.toJson(),
-        };
+        UpdatePayment$Mutation$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
 
 UpdatePayment$Mutation$PaymentType$PaymentImagesType
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesTypeFromJson(
@@ -1801,11 +2086,19 @@ UpdatePayment$Mutation$PaymentType$PaymentImagesType
 
 Map<String, dynamic>
     _$UpdatePayment$Mutation$PaymentType$PaymentImagesTypeToJson(
-            UpdatePayment$Mutation$PaymentType$PaymentImagesType instance) =>
-        <String, dynamic>{
-          'png': instance.png?.toJson(),
-          'svg': instance.svg?.toJson(),
-        };
+        UpdatePayment$Mutation$PaymentType$PaymentImagesType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
 
 UpdatePayment$Mutation$PaymentType _$UpdatePayment$Mutation$PaymentTypeFromJson(
         Map<String, dynamic> json) =>
@@ -1825,17 +2118,26 @@ UpdatePayment$Mutation$PaymentType _$UpdatePayment$Mutation$PaymentTypeFromJson(
               json['images'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$UpdatePayment$Mutation$PaymentTypeToJson(
-        UpdatePayment$Mutation$PaymentType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'name': instance.name,
-      'code': instance.code,
-      'paymentType': _$PaymentTypeEnumEnumMap[instance.paymentType],
-      'materialIcon': instance.materialIcon,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'images': instance.images?.toJson(),
-    };
+    UpdatePayment$Mutation$PaymentType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
 
 UpdatePayment$Mutation _$UpdatePayment$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -1897,10 +2199,18 @@ FindPaymentsPaginationArguments _$FindPaymentsPaginationArgumentsFromJson(
     );
 
 Map<String, dynamic> _$FindPaymentsPaginationArgumentsToJson(
-        FindPaymentsPaginationArguments instance) =>
-    <String, dynamic>{
-      'pagination': instance.pagination?.toJson(),
-    };
+    FindPaymentsPaginationArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  return val;
+}
 
 CreatePaymentArguments _$CreatePaymentArgumentsFromJson(
         Map<String, dynamic> json) =>

@@ -17,17 +17,25 @@ ShoppingCart$Query$ShoppingCartType$UserType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String,
-    dynamic> _$ShoppingCart$Query$ShoppingCartType$UserType$PictureTypeToJson(
-        ShoppingCart$Query$ShoppingCartType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+Map<String, dynamic>
+    _$ShoppingCart$Query$ShoppingCartType$UserType$PictureTypeToJson(
+        ShoppingCart$Query$ShoppingCartType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$UserType
     _$ShoppingCart$Query$ShoppingCartType$UserTypeFromJson(
@@ -46,16 +54,25 @@ ShoppingCart$Query$ShoppingCartType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$ShoppingCart$Query$ShoppingCartType$UserTypeToJson(
-        ShoppingCart$Query$ShoppingCartType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'picture': instance.picture?.toJson(),
-    };
+    ShoppingCart$Query$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 const _$GenderEnumMap = {
   Gender.male: 'MALE',
@@ -73,12 +90,20 @@ ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        ShoppingCart$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$PriceFullType
     _$ShoppingCart$Query$ShoppingCartType$PriceFullTypeFromJson(
@@ -94,11 +119,19 @@ ShoppingCart$Query$ShoppingCartType$PriceFullType
                   .fromJson(json['gross'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$ShoppingCart$Query$ShoppingCartType$PriceFullTypeToJson(
-        ShoppingCart$Query$ShoppingCartType$PriceFullType instance) =>
-    <String, dynamic>{
-      'net': instance.net?.toJson(),
-      'gross': instance.gross?.toJson(),
-    };
+    ShoppingCart$Query$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$DiscountDtoType
     _$ShoppingCart$Query$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -111,11 +144,19 @@ ShoppingCart$Query$ShoppingCartType$DiscountDtoType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$DiscountDtoTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$DiscountDtoType instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        ShoppingCart$Query$ShoppingCartType$DiscountDtoType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 const _$DiscountTypeEnumMap = {
   DiscountType.amount: 'AMOUNT',
@@ -132,11 +173,19 @@ ShoppingCart$Query$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$ReduciblePriceTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$ReduciblePriceType instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        ShoppingCart$Query$ShoppingCartType$ReduciblePriceType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -149,14 +198,22 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -167,12 +224,20 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -186,13 +251,21 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 const _$RecurrenceTypeEnumMap = {
   RecurrenceType.hourly: 'HOURLY',
@@ -214,12 +287,20 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -234,16 +315,24 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$Pictur
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -265,13 +354,21 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -282,12 +379,21 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceList
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -301,12 +407,20 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceList
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -319,14 +433,23 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategor
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -376,12 +499,20 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductA
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -396,16 +527,24 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -425,17 +564,26 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -456,16 +604,24 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -507,23 +663,34 @@ ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType$CartProductType
     _$ShoppingCart$Query$ShoppingCartType$CartProductTypeFromJson(
@@ -547,14 +714,23 @@ ShoppingCart$Query$ShoppingCartType$CartProductType
 
 Map<String, dynamic>
     _$ShoppingCart$Query$ShoppingCartType$CartProductTypeToJson(
-            ShoppingCart$Query$ShoppingCartType$CartProductType instance) =>
-        <String, dynamic>{
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        ShoppingCart$Query$ShoppingCartType$CartProductType instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 ShoppingCart$Query$ShoppingCartType
     _$ShoppingCart$Query$ShoppingCartTypeFromJson(Map<String, dynamic> json) =>
@@ -585,17 +761,26 @@ ShoppingCart$Query$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$ShoppingCart$Query$ShoppingCartTypeToJson(
-        ShoppingCart$Query$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    ShoppingCart$Query$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ShoppingCart$Query _$ShoppingCart$QueryFromJson(Map<String, dynamic> json) =>
     ShoppingCart$Query()
@@ -620,16 +805,24 @@ FindShoppingCartByUser$Query$ShoppingCartType$UserType$PictureType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$UserType$PictureTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$UserType
     _$FindShoppingCartByUser$Query$ShoppingCartType$UserTypeFromJson(
@@ -649,16 +842,25 @@ FindShoppingCartByUser$Query$ShoppingCartType$UserType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$UserTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -669,12 +871,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType
     _$FindShoppingCartByUser$Query$ShoppingCartType$PriceFullTypeFromJson(
@@ -691,12 +901,19 @@ FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$PriceFullTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType
-                instance) =>
-        <String, dynamic>{
-          'net': instance.net?.toJson(),
-          'gross': instance.gross?.toJson(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoType
     _$FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -709,12 +926,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceType
     _$FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceTypeFromJson(
@@ -725,12 +950,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -743,14 +976,22 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -761,12 +1002,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -780,13 +1029,21 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -799,12 +1056,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Discou
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -819,16 +1084,24 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaT
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -850,13 +1123,21 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaT
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -867,12 +1148,21 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Produc
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -886,12 +1176,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Produc
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -904,14 +1202,23 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Catalo
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -961,12 +1268,20 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -981,16 +1296,24 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -1010,17 +1333,26 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -1041,16 +1373,24 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -1092,23 +1432,34 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType$CartProductType
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductTypeFromJson(
@@ -1132,15 +1483,24 @@ FindShoppingCartByUser$Query$ShoppingCartType$CartProductType
 
 Map<String, dynamic>
     _$FindShoppingCartByUser$Query$ShoppingCartType$CartProductTypeToJson(
-            FindShoppingCartByUser$Query$ShoppingCartType$CartProductType
-                instance) =>
-        <String, dynamic>{
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        FindShoppingCartByUser$Query$ShoppingCartType$CartProductType
+            instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 FindShoppingCartByUser$Query$ShoppingCartType
     _$FindShoppingCartByUser$Query$ShoppingCartTypeFromJson(
@@ -1172,17 +1532,26 @@ FindShoppingCartByUser$Query$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$FindShoppingCartByUser$Query$ShoppingCartTypeToJson(
-        FindShoppingCartByUser$Query$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    FindShoppingCartByUser$Query$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindShoppingCartByUser$Query _$FindShoppingCartByUser$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -1206,12 +1575,20 @@ CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType$ReduciblePr
 
 Map<String, dynamic>
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullTypeFromJson(
@@ -1228,12 +1605,20 @@ CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType
 
 Map<String, dynamic>
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullTypeToJson(
-            CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType
-                instance) =>
-        <String, dynamic>{
-          'net': instance.net?.toJson(),
-          'gross': instance.gross?.toJson(),
-        };
+        CalculateShoppingCart$Query$CalculatedShoppingCartType$PriceFullType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoType
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoTypeFromJson(
@@ -1246,12 +1631,20 @@ CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoType
 
 Map<String, dynamic>
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoTypeToJson(
-            CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        CalculateShoppingCart$Query$CalculatedShoppingCartType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceType
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceTypeFromJson(
@@ -1262,12 +1655,20 @@ CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceTypeToJson(
-            CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        CalculateShoppingCart$Query$CalculatedShoppingCartType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 CalculateShoppingCart$Query$CalculatedShoppingCartType
     _$CalculateShoppingCart$Query$CalculatedShoppingCartTypeFromJson(
@@ -1288,12 +1689,20 @@ CalculateShoppingCart$Query$CalculatedShoppingCartType
 
 Map<String, dynamic>
     _$CalculateShoppingCart$Query$CalculatedShoppingCartTypeToJson(
-            CalculateShoppingCart$Query$CalculatedShoppingCartType instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'discount': instance.discount?.toJson(),
-          'taxValue': instance.taxValue?.toJson(),
-        };
+        CalculateShoppingCart$Query$CalculatedShoppingCartType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  return val;
+}
 
 CalculateShoppingCart$Query _$CalculateShoppingCart$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -1321,13 +1730,22 @@ CartProductInput _$CartProductInputFromJson(Map<String, dynamic> json) =>
               json['priceCredit'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$CartProductInputToJson(CartProductInput instance) =>
-    <String, dynamic>{
-      'barcode': instance.barcode,
-      'quantity': instance.quantity,
-      'rent': instance.rent?.toJson(),
-      'priceCredit': instance.priceCredit?.toJson(),
-    };
+Map<String, dynamic> _$CartProductInputToJson(CartProductInput instance) {
+  final val = <String, dynamic>{
+    'barcode': instance.barcode,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('quantity', instance.quantity);
+  writeNotNull('rent', instance.rent?.toJson());
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  return val;
+}
 
 RentalRefInput _$RentalRefInputFromJson(Map<String, dynamic> json) =>
     RentalRefInput(
@@ -1344,15 +1762,23 @@ RentalRefInput _$RentalRefInputFromJson(Map<String, dynamic> json) =>
           : RentalNoteInput.fromJson(json['note'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$RentalRefInputToJson(RentalRefInput instance) =>
-    <String, dynamic>{
-      'location': instance.location,
-      'description': instance.description,
-      'status': _$RentalStatusEnumEnumMap[instance.status],
-      'start': instance.start?.toIso8601String(),
-      'end': instance.end?.toIso8601String(),
-      'note': instance.note?.toJson(),
-    };
+Map<String, dynamic> _$RentalRefInputToJson(RentalRefInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('location', instance.location);
+  writeNotNull('description', instance.description);
+  writeNotNull('status', _$RentalStatusEnumEnumMap[instance.status]);
+  writeNotNull('start', instance.start?.toIso8601String());
+  writeNotNull('end', instance.end?.toIso8601String());
+  writeNotNull('note', instance.note?.toJson());
+  return val;
+}
 
 const _$RentalStatusEnumEnumMap = {
   RentalStatusEnum.returned: 'RETURNED',
@@ -1369,11 +1795,19 @@ RentalNoteInput _$RentalNoteInputFromJson(Map<String, dynamic> json) =>
       delivery: json['delivery'] as String?,
     );
 
-Map<String, dynamic> _$RentalNoteInputToJson(RentalNoteInput instance) =>
-    <String, dynamic>{
-      'return': instance.kw$return,
-      'delivery': instance.delivery,
-    };
+Map<String, dynamic> _$RentalNoteInputToJson(RentalNoteInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('return', instance.kw$return);
+  writeNotNull('delivery', instance.delivery);
+  return val;
+}
 
 PriceCreditInput _$PriceCreditInputFromJson(Map<String, dynamic> json) =>
     PriceCreditInput(
@@ -1384,12 +1818,20 @@ PriceCreditInput _$PriceCreditInputFromJson(Map<String, dynamic> json) =>
           unknownValue: RecurrenceType.artemisUnknown),
     );
 
-Map<String, dynamic> _$PriceCreditInputToJson(PriceCreditInput instance) =>
-    <String, dynamic>{
-      'amount': instance.amount,
-      'periodValue': instance.periodValue,
-      'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-    };
+Map<String, dynamic> _$PriceCreditInputToJson(PriceCreditInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceTypeFromJson(
@@ -1402,14 +1844,22 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceTyp
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueTypeFromJson(
@@ -1420,12 +1870,20 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueType
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditTypeFromJson(
@@ -1439,13 +1897,21 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$DiscountDtoType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -1458,12 +1924,20 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Dis
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$DiscountDtoTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType$PictureType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -1478,16 +1952,24 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Med
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaTypeFromJson(
@@ -1509,13 +1991,21 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Med
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType$PriceType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -1526,12 +2016,21 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Pro
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -1545,12 +2044,20 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Pro
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$CatalogueCategoryType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -1563,14 +2070,23 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Cat
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -1620,12 +2136,20 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Int
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -1640,16 +2164,24 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Int
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -1669,17 +2201,26 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Int
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -1700,16 +2241,24 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$Int
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTypeFromJson(
@@ -1751,23 +2300,34 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductTypeFromJson(
@@ -1801,25 +2361,34 @@ ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType
 
 Map<String, dynamic>
     _$ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductTypeToJson(
-            ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType
-                instance) =>
-        <String, dynamic>{
-          'deliveryFees': instance.deliveryFees,
-          'mobilePickup': instance.mobilePickup,
-          'portalPickup': instance.portalPickup,
-          'mobileDelivery': instance.mobileDelivery,
-          'portalDelivery': instance.portalDelivery,
-          'inDeliveryZone': instance.inDeliveryZone,
-          'activatePickup': instance.activatePickup,
-          'facebookPickup': instance.facebookPickup,
-          'activateDelivery': instance.activateDelivery,
-          'facebookDelivery': instance.facebookDelivery,
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        ValidateShoppingCartByCurrentUser$Query$ValidatedCartProductType
+            instance) {
+  final val = <String, dynamic>{
+    'deliveryFees': instance.deliveryFees,
+    'mobilePickup': instance.mobilePickup,
+    'portalPickup': instance.portalPickup,
+    'mobileDelivery': instance.mobileDelivery,
+    'portalDelivery': instance.portalDelivery,
+    'inDeliveryZone': instance.inDeliveryZone,
+    'activatePickup': instance.activatePickup,
+    'facebookPickup': instance.facebookPickup,
+    'activateDelivery': instance.activateDelivery,
+    'facebookDelivery': instance.facebookDelivery,
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 ValidateShoppingCartByCurrentUser$Query
     _$ValidateShoppingCartByCurrentUser$QueryFromJson(
@@ -1867,16 +2436,24 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType$PictureTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserTypeFromJson(
@@ -1896,17 +2473,26 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -1917,12 +2503,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullTypeFromJson(
@@ -1939,12 +2533,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType
-                instance) =>
-        <String, dynamic>{
-          'net': instance.net?.toJson(),
-          'gross': instance.gross?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$PriceFullType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$DiscountDtoType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$DiscountDtoTypeFromJson(
@@ -1957,12 +2559,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$DiscountDtoTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$ReduciblePriceType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$ReduciblePriceTypeFromJson(
@@ -1973,12 +2583,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$ReduciblePriceTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$ProductPriceType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$ProductPriceTypeFromJson(
@@ -1991,14 +2609,22 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$ProductPriceTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$TaxValueType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$TaxValueTypeFromJson(
@@ -2009,12 +2635,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$TaxValueTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$PriceCreditType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$PriceCreditTypeFromJson(
@@ -2028,13 +2662,21 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$PriceCreditTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType$PictureType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType$PictureTypeFromJson(
@@ -2049,16 +2691,24 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType$PictureTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaTypeFromJson(
@@ -2080,13 +2730,21 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$DiscountDtoType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$DiscountDtoTypeFromJson(
@@ -2099,12 +2757,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$DiscountDtoTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType$PriceType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType$PriceTypeFromJson(
@@ -2115,12 +2781,21 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType$PriceTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListTypeFromJson(
@@ -2134,12 +2809,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$TaxVaType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$TaxVaTypeFromJson(
@@ -2153,13 +2836,22 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$TaxVaTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$TaxVaType
-                instance) =>
-        <String, dynamic>{
-          'sign': _$TaxSignEnumEnumMap[instance.sign]!,
-          'value': instance.value,
-          'type': _$DiscountTypeEnumMap[instance.type]!,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$TaxVaType
+            instance) {
+  final val = <String, dynamic>{
+    'sign': _$TaxSignEnumEnumMap[instance.sign]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('value', instance.value);
+  val['type'] = _$DiscountTypeEnumMap[instance.type]!;
+  return val;
+}
 
 const _$TaxSignEnumEnumMap = {
   TaxSignEnum.positive: 'POSITIVE',
@@ -2176,12 +2868,21 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$CompanyTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$CompanyType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxTypeFromJson(
@@ -2206,17 +2907,27 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'value': instance.value?.toJson(),
-          'use': instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList(),
-          'product': instance.product,
-          'company': instance.company?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType$TaxType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  writeNotNull('externalId', instance.externalId);
+  writeNotNull('value', instance.value?.toJson());
+  writeNotNull(
+      'use', instance.use?.map((e) => _$TaxUseEnumEnumMap[e]!).toList());
+  writeNotNull('product', instance.product);
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
 
 const _$TaxUseEnumEnumMap = {
   TaxUseEnum.sale: 'SALE',
@@ -2236,12 +2947,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType
-                instance) =>
-        <String, dynamic>{
-          'tax': instance.tax?.toJson(),
-          'rank': instance.rank,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$ProductTaxesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tax', instance.tax?.toJson());
+  writeNotNull('rank', instance.rank);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$BarcodePeriodCreditType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$BarcodePeriodCreditTypeFromJson(
@@ -2255,13 +2974,22 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$BarcodePeriodCreditTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$BarcodePeriodCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$BarcodePeriodCreditType
+            instance) {
+  final val = <String, dynamic>{
+    'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle]!,
+    'periodValue': instance.periodValue,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$CatalogueCategoryType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$CatalogueCategoryTypeFromJson(
@@ -2274,14 +3002,23 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$CatalogueCategoryTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$PixelBarcodeType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$PixelBarcodeTypeFromJson(
@@ -2291,11 +3028,19 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$PixelBarcodeTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$PixelBarcodeType
-                instance) =>
-        <String, dynamic>{
-          'include': instance.include,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$PixelBarcodeType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('include', instance.include);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType$PictureType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -2310,16 +3055,24 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -2339,17 +3092,26 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceTypeFromJson(
@@ -2370,16 +3132,24 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
@@ -2389,11 +3159,19 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
-                instance) =>
-        <String, dynamic>{
-          'pixelAttribute': instance.pixelAttribute,
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pixelAttribute', instance.pixelAttribute);
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -2416,19 +3194,28 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-          'externalId': instance.externalId,
-          'variety': _$ProductVarietyEnumEnumMap[instance.variety],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'isRequired': instance.isRequired,
-          'isMultipleChoice': instance.isMultipleChoice,
-          'pixel': instance.pixel?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'label': instance.label,
+    'externalId': instance.externalId,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('isRequired', instance.isRequired);
+  writeNotNull('isMultipleChoice', instance.isMultipleChoice);
+  writeNotNull('pixel', instance.pixel?.toJson());
+  return val;
+}
 
 const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.product: 'PRODUCT',
@@ -2476,12 +3263,20 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetTypeFromJson(
@@ -2543,28 +3338,40 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'condition': _$ProductConditionEnumEnumMap[instance.condition],
-          'status': _$ProductStatusEnumEnumMap[instance.status],
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'media': instance.media?.toJson(),
-          'discount': instance.discount?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'taxes': instance.taxes?.map((e) => e.toJson()).toList(),
-          'priceCredit': instance.priceCredit?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'pixel': instance.pixel?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType$BarcodeForTargetType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  writeNotNull('condition', _$ProductConditionEnumEnumMap[instance.condition]);
+  writeNotNull('status', _$ProductStatusEnumEnumMap[instance.status]);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'priceCredit', instance.priceCredit?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull('pixel', instance.pixel?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  return val;
+}
 
 const _$ProductConditionEnumEnumMap = {
   ProductConditionEnum.kw$NEW: 'NEW',
@@ -2601,15 +3408,24 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType
-                instance) =>
-        <String, dynamic>{
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType$CartProductForTargetType
+            instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetTypeFromJson(
@@ -2642,18 +3458,27 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsF
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'user': instance.user?.toJson(),
-          'price': instance.price?.toJson(),
-          'discount': instance.discount?.toJson(),
-          'taxValue': instance.taxValue?.toJson(),
-          'products': instance.products?.map((e) => e.toJson()).toList(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType$ShoppingCartsForTargetType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedTypeFromJson(
@@ -2669,13 +3494,21 @@ FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType
 
 Map<String, dynamic>
     _$FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedTypeToJson(
-            FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType
-                instance) =>
-        <String, dynamic>{
-          'count': instance.count,
-          'isLast': instance.isLast,
-          'objects': instance.objects.map((e) => e.toJson()).toList(),
-        };
+        FindTargetShoppingCarts$Query$ShoppingCartsForTargetPaginatedType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('count', instance.count);
+  writeNotNull('isLast', instance.isLast);
+  val['objects'] = instance.objects.map((e) => e.toJson()).toList();
+  return val;
+}
 
 FindTargetShoppingCarts$Query _$FindTargetShoppingCarts$QueryFromJson(
         Map<String, dynamic> json) =>
@@ -2699,13 +3532,21 @@ TargetACIInput _$TargetACIInputFromJson(Map<String, dynamic> json) =>
       user: json['user'] as String?,
     );
 
-Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) =>
-    <String, dynamic>{
-      'pos': instance.pos,
-      'wholesaler': instance.wholesaler,
-      'manufacturer': instance.manufacturer,
-      'user': instance.user,
-    };
+Map<String, dynamic> _$TargetACIInputToJson(TargetACIInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('wholesaler', instance.wholesaler);
+  writeNotNull('manufacturer', instance.manufacturer);
+  writeNotNull('user', instance.user);
+  return val;
+}
 
 PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
     PaginationInput(
@@ -2713,11 +3554,19 @@ PaginationInput _$PaginationInputFromJson(Map<String, dynamic> json) =>
       limit: json['limit'] as int?,
     );
 
-Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) =>
-    <String, dynamic>{
-      'page': instance.page,
-      'limit': instance.limit,
-    };
+Map<String, dynamic> _$PaginationInputToJson(PaginationInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('page', instance.page);
+  writeNotNull('limit', instance.limit);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$UserType$PictureType
     _$AddToCart$Mutation$ShoppingCartType$UserType$PictureTypeFromJson(
@@ -2730,17 +3579,25 @@ AddToCart$Mutation$ShoppingCartType$UserType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String,
-    dynamic> _$AddToCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
-        AddToCart$Mutation$ShoppingCartType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+Map<String, dynamic>
+    _$AddToCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
+        AddToCart$Mutation$ShoppingCartType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$UserType
     _$AddToCart$Mutation$ShoppingCartType$UserTypeFromJson(
@@ -2759,16 +3616,25 @@ AddToCart$Mutation$ShoppingCartType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$AddToCart$Mutation$ShoppingCartType$UserTypeToJson(
-        AddToCart$Mutation$ShoppingCartType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'picture': instance.picture?.toJson(),
-    };
+    AddToCart$Mutation$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -2779,12 +3645,20 @@ AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        AddToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$PriceFullType
     _$AddToCart$Mutation$ShoppingCartType$PriceFullTypeFromJson(
@@ -2800,11 +3674,19 @@ AddToCart$Mutation$ShoppingCartType$PriceFullType
                   .fromJson(json['gross'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$AddToCart$Mutation$ShoppingCartType$PriceFullTypeToJson(
-        AddToCart$Mutation$ShoppingCartType$PriceFullType instance) =>
-    <String, dynamic>{
-      'net': instance.net?.toJson(),
-      'gross': instance.gross?.toJson(),
-    };
+    AddToCart$Mutation$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$DiscountDtoType
     _$AddToCart$Mutation$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -2817,11 +3699,19 @@ AddToCart$Mutation$ShoppingCartType$DiscountDtoType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$DiscountDtoType instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        AddToCart$Mutation$ShoppingCartType$DiscountDtoType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$ReduciblePriceType
     _$AddToCart$Mutation$ShoppingCartType$ReduciblePriceTypeFromJson(
@@ -2832,11 +3722,19 @@ AddToCart$Mutation$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$ReduciblePriceType instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        AddToCart$Mutation$ShoppingCartType$ReduciblePriceType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -2849,14 +3747,22 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -2867,12 +3773,20 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -2886,13 +3800,21 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -2905,12 +3827,20 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -2925,16 +3855,24 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$Pictur
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -2956,13 +3894,21 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -2973,12 +3919,21 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceList
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -2992,12 +3947,20 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceList
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -3010,14 +3973,23 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategor
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -3067,12 +4039,20 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductA
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -3087,16 +4067,24 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -3116,17 +4104,26 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -3147,16 +4144,24 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -3198,23 +4203,34 @@ AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType$CartProductType
     _$AddToCart$Mutation$ShoppingCartType$CartProductTypeFromJson(
@@ -3238,14 +4254,23 @@ AddToCart$Mutation$ShoppingCartType$CartProductType
 
 Map<String, dynamic>
     _$AddToCart$Mutation$ShoppingCartType$CartProductTypeToJson(
-            AddToCart$Mutation$ShoppingCartType$CartProductType instance) =>
-        <String, dynamic>{
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        AddToCart$Mutation$ShoppingCartType$CartProductType instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 AddToCart$Mutation$ShoppingCartType
     _$AddToCart$Mutation$ShoppingCartTypeFromJson(Map<String, dynamic> json) =>
@@ -3276,17 +4301,26 @@ AddToCart$Mutation$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$AddToCart$Mutation$ShoppingCartTypeToJson(
-        AddToCart$Mutation$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    AddToCart$Mutation$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 AddToCart$Mutation _$AddToCart$MutationFromJson(Map<String, dynamic> json) =>
     AddToCart$Mutation()
@@ -3311,16 +4345,24 @@ RemoveFromCart$Mutation$ShoppingCartType$UserType$PictureType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$UserType
     _$RemoveFromCart$Mutation$ShoppingCartType$UserTypeFromJson(
@@ -3339,16 +4381,25 @@ RemoveFromCart$Mutation$ShoppingCartType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$RemoveFromCart$Mutation$ShoppingCartType$UserTypeToJson(
-        RemoveFromCart$Mutation$ShoppingCartType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'picture': instance.picture?.toJson(),
-    };
+    RemoveFromCart$Mutation$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -3359,12 +4410,20 @@ RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$PriceFullType
     _$RemoveFromCart$Mutation$ShoppingCartType$PriceFullTypeFromJson(
@@ -3381,11 +4440,19 @@ RemoveFromCart$Mutation$ShoppingCartType$PriceFullType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$PriceFullTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$PriceFullType instance) =>
-        <String, dynamic>{
-          'net': instance.net?.toJson(),
-          'gross': instance.gross?.toJson(),
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoType
     _$RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -3396,13 +4463,21 @@ RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoType
               _$DiscountTypeEnumMap, json['discountType'],
               unknownValue: DiscountType.artemisUnknown);
 
-Map<String,
-    dynamic> _$RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
-        RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoType instance) =>
-    <String, dynamic>{
-      'amount': instance.amount,
-      'discountType': _$DiscountTypeEnumMap[instance.discountType],
-    };
+Map<String, dynamic>
+    _$RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
+        RemoveFromCart$Mutation$ShoppingCartType$DiscountDtoType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceType
     _$RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceTypeFromJson(
@@ -3413,12 +4488,19 @@ RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$ReduciblePriceType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -3431,14 +4513,22 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -3449,12 +4539,20 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -3468,13 +4566,21 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -3487,12 +4593,20 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDto
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -3507,16 +4621,24 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$P
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -3538,13 +4660,21 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -3555,12 +4685,21 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPric
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -3574,12 +4713,20 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPric
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -3592,14 +4739,23 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCa
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -3649,12 +4805,20 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPro
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -3669,16 +4833,24 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPro
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -3698,17 +4870,26 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPro
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -3729,16 +4910,24 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalPro
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -3780,23 +4969,34 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType$CartProductType
     _$RemoveFromCart$Mutation$ShoppingCartType$CartProductTypeFromJson(
@@ -3818,16 +5018,25 @@ RemoveFromCart$Mutation$ShoppingCartType$CartProductType
               : RemoveFromCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
                   .fromJson(json['barcode'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$RemoveFromCart$Mutation$ShoppingCartType$CartProductTypeToJson(
-        RemoveFromCart$Mutation$ShoppingCartType$CartProductType instance) =>
-    <String, dynamic>{
-      'quantity': instance.quantity,
-      'price': instance.price.toJson(),
-      'taxValue': instance.taxValue.toJson(),
-      'priceCredit': instance.priceCredit?.toJson(),
-      'barcode': instance.barcode?.toJson(),
-    };
+Map<String, dynamic>
+    _$RemoveFromCart$Mutation$ShoppingCartType$CartProductTypeToJson(
+        RemoveFromCart$Mutation$ShoppingCartType$CartProductType instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 RemoveFromCart$Mutation$ShoppingCartType
     _$RemoveFromCart$Mutation$ShoppingCartTypeFromJson(
@@ -3859,17 +5068,26 @@ RemoveFromCart$Mutation$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$RemoveFromCart$Mutation$ShoppingCartTypeToJson(
-        RemoveFromCart$Mutation$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    RemoveFromCart$Mutation$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 RemoveFromCart$Mutation _$RemoveFromCart$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -3896,16 +5114,24 @@ AddDiscoutToCart$Mutation$ShoppingCartType$UserType$PictureType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$UserType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$UserTypeFromJson(
@@ -3925,16 +5151,25 @@ AddDiscoutToCart$Mutation$ShoppingCartType$UserType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$UserTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -3945,12 +5180,20 @@ AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullTypeFromJson(
@@ -3965,13 +5208,21 @@ AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType
               : AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
                   .fromJson(json['gross'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullTypeToJson(
-        AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType instance) =>
-    <String, dynamic>{
-      'net': instance.net?.toJson(),
-      'gross': instance.gross?.toJson(),
-    };
+Map<String, dynamic>
+    _$AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullTypeToJson(
+        AddDiscoutToCart$Mutation$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -3982,13 +5233,21 @@ AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoType
               _$DiscountTypeEnumMap, json['discountType'],
               unknownValue: DiscountType.artemisUnknown);
 
-Map<String,
-    dynamic> _$AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
-        AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoType instance) =>
-    <String, dynamic>{
-      'amount': instance.amount,
-      'discountType': _$DiscountTypeEnumMap[instance.discountType],
-    };
+Map<String, dynamic>
+    _$AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
+        AddDiscoutToCart$Mutation$ShoppingCartType$DiscountDtoType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceTypeFromJson(
@@ -3999,12 +5258,20 @@ AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -4017,14 +5284,22 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -4035,12 +5310,20 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -4054,13 +5337,21 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -4073,12 +5364,20 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountD
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -4093,16 +5392,24 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -4124,13 +5431,21 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -4141,12 +5456,21 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPr
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -4160,12 +5484,20 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPr
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -4178,14 +5510,23 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$Catalogue
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -4235,12 +5576,20 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalP
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -4255,16 +5604,24 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalP
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -4284,17 +5641,26 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalP
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -4315,16 +5681,24 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalP
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -4366,23 +5740,34 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType
     _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductTypeFromJson(
@@ -4404,16 +5789,25 @@ AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType
               : AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
                   .fromJson(json['barcode'] as Map<String, dynamic>);
 
-Map<String,
-    dynamic> _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductTypeToJson(
-        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType instance) =>
-    <String, dynamic>{
-      'quantity': instance.quantity,
-      'price': instance.price.toJson(),
-      'taxValue': instance.taxValue.toJson(),
-      'priceCredit': instance.priceCredit?.toJson(),
-      'barcode': instance.barcode?.toJson(),
-    };
+Map<String, dynamic>
+    _$AddDiscoutToCart$Mutation$ShoppingCartType$CartProductTypeToJson(
+        AddDiscoutToCart$Mutation$ShoppingCartType$CartProductType instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 AddDiscoutToCart$Mutation$ShoppingCartType
     _$AddDiscoutToCart$Mutation$ShoppingCartTypeFromJson(
@@ -4445,17 +5839,26 @@ AddDiscoutToCart$Mutation$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$AddDiscoutToCart$Mutation$ShoppingCartTypeToJson(
-        AddDiscoutToCart$Mutation$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    AddDiscoutToCart$Mutation$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 AddDiscoutToCart$Mutation _$AddDiscoutToCart$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -4476,11 +5879,20 @@ DiscountDtoInput _$DiscountDtoInputFromJson(Map<String, dynamic> json) =>
       amount: json['amount'] as String?,
     );
 
-Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) =>
-    <String, dynamic>{
-      'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
-      'amount': instance.amount,
-    };
+Map<String, dynamic> _$DiscountDtoInputToJson(DiscountDtoInput instance) {
+  final val = <String, dynamic>{
+    'discountType': _$DiscountTypeEnumMap[instance.discountType]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$UserType$PictureType
     _$EmptyCart$Mutation$ShoppingCartType$UserType$PictureTypeFromJson(
@@ -4493,17 +5905,25 @@ EmptyCart$Mutation$ShoppingCartType$UserType$PictureType
           ..x = json['x'] as int?
           ..y = json['y'] as int?;
 
-Map<String,
-    dynamic> _$EmptyCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
-        EmptyCart$Mutation$ShoppingCartType$UserType$PictureType instance) =>
-    <String, dynamic>{
-      'baseUrl': instance.baseUrl,
-      'path': instance.path,
-      'width': instance.width,
-      'height': instance.height,
-      'x': instance.x,
-      'y': instance.y,
-    };
+Map<String, dynamic>
+    _$EmptyCart$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
+        EmptyCart$Mutation$ShoppingCartType$UserType$PictureType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$UserType
     _$EmptyCart$Mutation$ShoppingCartType$UserTypeFromJson(
@@ -4522,16 +5942,25 @@ EmptyCart$Mutation$ShoppingCartType$UserType
                   .fromJson(json['picture'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$EmptyCart$Mutation$ShoppingCartType$UserTypeToJson(
-        EmptyCart$Mutation$ShoppingCartType$UserType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'email': instance.email,
-      'gender': _$GenderEnumMap[instance.gender],
-      'lastName': instance.lastName,
-      'username': instance.username,
-      'firstName': instance.firstName,
-      'picture': instance.picture?.toJson(),
-    };
+    EmptyCart$Mutation$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -4542,12 +5971,20 @@ EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        EmptyCart$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$PriceFullType
     _$EmptyCart$Mutation$ShoppingCartType$PriceFullTypeFromJson(
@@ -4563,11 +6000,19 @@ EmptyCart$Mutation$ShoppingCartType$PriceFullType
                   .fromJson(json['gross'] as Map<String, dynamic>);
 
 Map<String, dynamic> _$EmptyCart$Mutation$ShoppingCartType$PriceFullTypeToJson(
-        EmptyCart$Mutation$ShoppingCartType$PriceFullType instance) =>
-    <String, dynamic>{
-      'net': instance.net?.toJson(),
-      'gross': instance.gross?.toJson(),
-    };
+    EmptyCart$Mutation$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$DiscountDtoType
     _$EmptyCart$Mutation$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -4580,11 +6025,19 @@ EmptyCart$Mutation$ShoppingCartType$DiscountDtoType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$DiscountDtoType instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        EmptyCart$Mutation$ShoppingCartType$DiscountDtoType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$ReduciblePriceType
     _$EmptyCart$Mutation$ShoppingCartType$ReduciblePriceTypeFromJson(
@@ -4595,11 +6048,19 @@ EmptyCart$Mutation$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$ReduciblePriceType instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        EmptyCart$Mutation$ShoppingCartType$ReduciblePriceType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -4612,14 +6073,22 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -4630,12 +6099,20 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -4649,13 +6126,21 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -4668,12 +6153,20 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -4688,16 +6181,24 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$Pictur
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -4719,13 +6220,21 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -4736,12 +6245,21 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceList
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -4755,12 +6273,20 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceList
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -4773,14 +6299,23 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategor
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -4830,12 +6365,20 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductA
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -4850,16 +6393,24 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -4879,17 +6430,26 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -4910,16 +6470,24 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductM
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -4961,23 +6529,34 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType$CartProductType
     _$EmptyCart$Mutation$ShoppingCartType$CartProductTypeFromJson(
@@ -5001,14 +6580,23 @@ EmptyCart$Mutation$ShoppingCartType$CartProductType
 
 Map<String, dynamic>
     _$EmptyCart$Mutation$ShoppingCartType$CartProductTypeToJson(
-            EmptyCart$Mutation$ShoppingCartType$CartProductType instance) =>
-        <String, dynamic>{
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        EmptyCart$Mutation$ShoppingCartType$CartProductType instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 EmptyCart$Mutation$ShoppingCartType
     _$EmptyCart$Mutation$ShoppingCartTypeFromJson(Map<String, dynamic> json) =>
@@ -5039,17 +6627,26 @@ EmptyCart$Mutation$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$EmptyCart$Mutation$ShoppingCartTypeToJson(
-        EmptyCart$Mutation$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    EmptyCart$Mutation$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 EmptyCart$Mutation _$EmptyCart$MutationFromJson(Map<String, dynamic> json) =>
     EmptyCart$Mutation()
@@ -5074,16 +6671,24 @@ UpdateProductCredit$Mutation$ShoppingCartType$UserType$PictureType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$UserType$PictureTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$UserType
     _$UpdateProductCredit$Mutation$ShoppingCartType$UserTypeFromJson(
@@ -5103,16 +6708,25 @@ UpdateProductCredit$Mutation$ShoppingCartType$UserType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$UserTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$UserType instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
     _$UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeFromJson(
@@ -5123,12 +6737,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType
     _$UpdateProductCredit$Mutation$ShoppingCartType$PriceFullTypeFromJson(
@@ -5145,12 +6767,19 @@ UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$PriceFullTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType
-                instance) =>
-        <String, dynamic>{
-          'net': instance.net?.toJson(),
-          'gross': instance.gross?.toJson(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$PriceFullType instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('net', instance.net?.toJson());
+  writeNotNull('gross', instance.gross?.toJson());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoType
     _$UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoTypeFromJson(
@@ -5163,12 +6792,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceType
     _$UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceTypeFromJson(
@@ -5179,12 +6816,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceType
-                instance) =>
-        <String, dynamic>{
-          'beforeReduction': instance.beforeReduction,
-          'afterReduction': instance.afterReduction,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$ReduciblePriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('beforeReduction', instance.beforeReduction);
+  writeNotNull('afterReduction', instance.afterReduction);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeFromJson(
@@ -5197,14 +6842,22 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceType
-                instance) =>
-        <String, dynamic>{
-          'unitNet': instance.unitNet,
-          'unitGross': instance.unitGross,
-          'net': instance.net,
-          'gross': instance.gross,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$ProductPriceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unitNet', instance.unitNet);
+  writeNotNull('unitGross', instance.unitGross);
+  writeNotNull('net', instance.net);
+  writeNotNull('gross', instance.gross);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueTypeFromJson(
@@ -5215,12 +6868,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueType
-                instance) =>
-        <String, dynamic>{
-          'unit': instance.unit,
-          'total': instance.total,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$TaxValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('unit', instance.unit);
+  writeNotNull('total', instance.total);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeFromJson(
@@ -5234,13 +6895,21 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditType
-                instance) =>
-        <String, dynamic>{
-          'periodCycle': _$RecurrenceTypeEnumMap[instance.periodCycle],
-          'periodValue': instance.periodValue,
-          'amount': instance.amount,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$PriceCreditType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('periodCycle', _$RecurrenceTypeEnumMap[instance.periodCycle]);
+  writeNotNull('periodValue', instance.periodValue);
+  writeNotNull('amount', instance.amount);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeFromJson(
@@ -5253,12 +6922,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Discou
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
-                instance) =>
-        <String, dynamic>{
-          'amount': instance.amount,
-          'discountType': _$DiscountTypeEnumMap[instance.discountType],
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$DiscountDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('amount', instance.amount);
+  writeNotNull('discountType', _$DiscountTypeEnumMap[instance.discountType]);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeFromJson(
@@ -5273,16 +6950,24 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaT
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeFromJson(
@@ -5304,13 +6989,21 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaT
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
-                instance) =>
-        <String, dynamic>{
-          'videos': instance.videos,
-          'deg360': instance.deg360?.map((e) => e.toJson()).toList(),
-          'pictures': instance.pictures?.map((e) => e.toJson()).toList(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeFromJson(
@@ -5321,12 +7014,21 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Produc
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'label': instance.label,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType$PriceType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('label', instance.label);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeFromJson(
@@ -5340,12 +7042,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Produc
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
-                instance) =>
-        <String, dynamic>{
-          'price': instance.price?.toJson(),
-          'value': instance.value,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$ProductPriceListType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeFromJson(
@@ -5358,14 +7068,23 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Catalo
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'rank': instance.rank,
-          'layer': instance.layer,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$CatalogueCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('rank', instance.rank);
+  val['layer'] = instance.layer;
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
@@ -5415,12 +7134,20 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
-                instance) =>
-        <String, dynamic>{
-          'attributesValues':
-              instance.attributesValues?.map((e) => e.toJson()).toList(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductAttributesValuesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('attributesValues',
+      instance.attributesValues?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeFromJson(
@@ -5435,16 +7162,24 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
-                instance) =>
-        <String, dynamic>{
-          'baseUrl': instance.baseUrl,
-          'path': instance.path,
-          'width': instance.width,
-          'height': instance.height,
-          'x': instance.x,
-          'y': instance.y,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeFromJson(
@@ -5464,17 +7199,26 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'email': instance.email,
-          'gender': _$GenderEnumMap[instance.gender],
-          'lastName': instance.lastName,
-          'username': instance.username,
-          'firstName': instance.firstName,
-          'picture': instance.picture?.toJson(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeFromJson(
@@ -5495,16 +7239,24 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$Intern
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
-                instance) =>
-        <String, dynamic>{
-          'active': instance.active,
-          'owner': instance.owner?.toJson(),
-          'technician': instance.technician?.toJson(),
-          'prevMaintenanceDuration': instance.prevMaintenanceDuration,
-          'maintenanceDuration': instance.maintenanceDuration,
-          'expectedMeantime': instance.expectedMeantime,
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType$InternalProductMaintenanceType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('active', instance.active);
+  writeNotNull('owner', instance.owner?.toJson());
+  writeNotNull('technician', instance.technician?.toJson());
+  writeNotNull('prevMaintenanceDuration', instance.prevMaintenanceDuration);
+  writeNotNull('maintenanceDuration', instance.maintenanceDuration);
+  writeNotNull('expectedMeantime', instance.expectedMeantime);
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeTypeFromJson(
@@ -5546,23 +7298,34 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-          'name': instance.name,
-          'price': instance.price,
-          'barcode': instance.barcode,
-          'createdAt': instance.createdAt.toIso8601String(),
-          'updatedAt': instance.updatedAt.toIso8601String(),
-          'discount': instance.discount?.toJson(),
-          'media': instance.media?.toJson(),
-          'priceList': instance.priceList?.map((e) => e.toJson()).toList(),
-          'catalogueCategory':
-              instance.catalogueCategory?.map((e) => e.toJson()).toList(),
-          'productAttributesValues': instance.productAttributesValues?.toJson(),
-          'maintenance': instance.maintenance?.toJson(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType$BarcodeType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('price', instance.price);
+  val['barcode'] = instance.barcode;
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull(
+      'priceList', instance.priceList?.map((e) => e.toJson()).toList());
+  writeNotNull('catalogueCategory',
+      instance.catalogueCategory?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'productAttributesValues', instance.productAttributesValues?.toJson());
+  writeNotNull('maintenance', instance.maintenance?.toJson());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType$CartProductType
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductTypeFromJson(
@@ -5586,15 +7349,24 @@ UpdateProductCredit$Mutation$ShoppingCartType$CartProductType
 
 Map<String, dynamic>
     _$UpdateProductCredit$Mutation$ShoppingCartType$CartProductTypeToJson(
-            UpdateProductCredit$Mutation$ShoppingCartType$CartProductType
-                instance) =>
-        <String, dynamic>{
-          'quantity': instance.quantity,
-          'price': instance.price.toJson(),
-          'taxValue': instance.taxValue.toJson(),
-          'priceCredit': instance.priceCredit?.toJson(),
-          'barcode': instance.barcode?.toJson(),
-        };
+        UpdateProductCredit$Mutation$ShoppingCartType$CartProductType
+            instance) {
+  final val = <String, dynamic>{
+    'quantity': instance.quantity,
+    'price': instance.price.toJson(),
+    'taxValue': instance.taxValue.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('priceCredit', instance.priceCredit?.toJson());
+  writeNotNull('barcode', instance.barcode?.toJson());
+  return val;
+}
 
 UpdateProductCredit$Mutation$ShoppingCartType
     _$UpdateProductCredit$Mutation$ShoppingCartTypeFromJson(
@@ -5626,17 +7398,26 @@ UpdateProductCredit$Mutation$ShoppingCartType
               .toList();
 
 Map<String, dynamic> _$UpdateProductCredit$Mutation$ShoppingCartTypeToJson(
-        UpdateProductCredit$Mutation$ShoppingCartType instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'createdAt': instance.createdAt.toIso8601String(),
-      'updatedAt': instance.updatedAt.toIso8601String(),
-      'user': instance.user?.toJson(),
-      'price': instance.price?.toJson(),
-      'discount': instance.discount?.toJson(),
-      'taxValue': instance.taxValue?.toJson(),
-      'products': instance.products?.map((e) => e.toJson()).toList(),
-    };
+    UpdateProductCredit$Mutation$ShoppingCartType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('user', instance.user?.toJson());
+  writeNotNull('price', instance.price?.toJson());
+  writeNotNull('discount', instance.discount?.toJson());
+  writeNotNull('taxValue', instance.taxValue?.toJson());
+  writeNotNull('products', instance.products?.map((e) => e.toJson()).toList());
+  return val;
+}
 
 UpdateProductCredit$Mutation _$UpdateProductCredit$MutationFromJson(
         Map<String, dynamic> json) =>
@@ -5664,13 +7445,22 @@ CartProductUpdateCreditInput _$CartProductUpdateCreditInputFromJson(
     );
 
 Map<String, dynamic> _$CartProductUpdateCreditInputToJson(
-        CartProductUpdateCreditInput instance) =>
-    <String, dynamic>{
-      'barcode': instance.barcode,
-      'quantity': instance.quantity,
-      'rent': instance.rent?.toJson(),
-      'priceCredit': instance.priceCredit.toJson(),
-    };
+    CartProductUpdateCreditInput instance) {
+  final val = <String, dynamic>{
+    'barcode': instance.barcode,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('quantity', instance.quantity);
+  writeNotNull('rent', instance.rent?.toJson());
+  val['priceCredit'] = instance.priceCredit.toJson();
+  return val;
+}
 
 ShoppingCartArguments _$ShoppingCartArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -5691,10 +7481,18 @@ FindShoppingCartByUserArguments _$FindShoppingCartByUserArgumentsFromJson(
     );
 
 Map<String, dynamic> _$FindShoppingCartByUserArgumentsToJson(
-        FindShoppingCartByUserArguments instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
+    FindShoppingCartByUserArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  return val;
+}
 
 CalculateShoppingCartArguments _$CalculateShoppingCartArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -5720,10 +7518,18 @@ ValidateShoppingCartByCurrentUserArguments
         );
 
 Map<String, dynamic> _$ValidateShoppingCartByCurrentUserArgumentsToJson(
-        ValidateShoppingCartByCurrentUserArguments instance) =>
-    <String, dynamic>{
-      'location': instance.location?.toJson(),
-    };
+    ValidateShoppingCartByCurrentUserArguments instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('location', instance.location?.toJson());
+  return val;
+}
 
 FindTargetShoppingCartsArguments _$FindTargetShoppingCartsArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -5737,12 +7543,21 @@ FindTargetShoppingCartsArguments _$FindTargetShoppingCartsArgumentsFromJson(
     );
 
 Map<String, dynamic> _$FindTargetShoppingCartsArgumentsToJson(
-        FindTargetShoppingCartsArguments instance) =>
-    <String, dynamic>{
-      'target': instance.target.toJson(),
-      'pagination': instance.pagination?.toJson(),
-      'searchString': instance.searchString,
-    };
+    FindTargetShoppingCartsArguments instance) {
+  final val = <String, dynamic>{
+    'target': instance.target.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pagination', instance.pagination?.toJson());
+  writeNotNull('searchString', instance.searchString);
+  return val;
+}
 
 AddToCartArguments _$AddToCartArgumentsFromJson(Map<String, dynamic> json) =>
     AddToCartArguments(
@@ -5753,11 +7568,20 @@ AddToCartArguments _$AddToCartArgumentsFromJson(Map<String, dynamic> json) =>
           : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$AddToCartArgumentsToJson(AddToCartArguments instance) =>
-    <String, dynamic>{
-      'product': instance.product.toJson(),
-      'target': instance.target?.toJson(),
-    };
+Map<String, dynamic> _$AddToCartArgumentsToJson(AddToCartArguments instance) {
+  final val = <String, dynamic>{
+    'product': instance.product.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', instance.target?.toJson());
+  return val;
+}
 
 RemoveFromCartArguments _$RemoveFromCartArgumentsFromJson(
         Map<String, dynamic> json) =>

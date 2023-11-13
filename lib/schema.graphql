@@ -2017,29 +2017,129 @@ type AudienceCriteriaPaginateType {
   objects: [AudienceCriteriaType!]!
 }
 
-type DeliveryZonePathType {
-  lng: Float!
-  lat: Float!
-  order: Float!
+type RemunerationDtoType {
+  pocketType: PocketTypeEnum
+  amount: String
 }
 
-type DeliveryZonesType {
+enum PocketTypeEnum {
+  QUANTITATIVE
+  QUALITATIVE
+}
+
+type RemunerationWithReputationDtoType {
+  qualitativeAmount: String!
+  quantitativeAmount: String!
+  reputationLevel: ReputationType
+}
+
+type QuestTypeRemunerationType {
+  min: String
+  max: String
+}
+
+type QuestTypeType {
   id: ID!
-  target: TargetType!
-  radius: Float
-  order: Float
-  minPrice: String
-  extraFees: String
-  color: String
-  type: ZoneTypesEnum!
-  paths: [DeliveryZonePathType!]!
+  title: String
+  description: String
+  icon: String
+  media: MediaType
+  activityTypes: [ActivityTypeType!]
+  maxActivities: Int
+  rewardPoints: String
+  quantitative: QuestTypeRemunerationType
+  qualitative: QuestTypeRemunerationType
+  fees: String
+  score: Boolean
+  profile: Boolean
+  admin: Boolean
+  transition: Boolean
+  condition: Boolean
+  enable: Boolean
+  target: TargetType
   createdAt: DateTime!
   updatedAt: DateTime!
 }
 
-enum ZoneTypesEnum {
-  Point
-  Polygon
+type QuestTypePaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestTypeType!]!
+}
+
+type QuestActionsRecurrenceType {
+  enable: Boolean
+  cycle: Int
+}
+
+type QuestType {
+  id: ID!
+  title: String
+  description: String
+  media: MediaType
+  questType: QuestTypeType
+  category: QuestCategoryEnum
+  status: QuestStatusEnum
+  recurrence: QuestActionsRecurrenceType
+  remuneration: [RemunerationDtoType!]
+  activityType: ActivityTypeType
+  creator: UserType
+  sponsored: Boolean
+  leaderboard: Boolean
+  rewards: String
+  maxAnswers: Int
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum QuestCategoryEnum {
+  INDUSTRY
+  FAMILY
+  FITNESS
+  GASTRONOMY
+}
+
+enum QuestStatusEnum {
+  DRAFT
+  ONGOING
+  ON_HOLD
+  FINISHED
+}
+
+type QuestWithRepeatDateType {
+  id: ID!
+  title: String
+  description: String
+  media: MediaType
+  questType: QuestTypeType
+  category: QuestCategoryEnum
+  status: QuestStatusEnum
+  recurrence: QuestActionsRecurrenceType
+  remuneration: [RemunerationDtoType!]
+  activityType: ActivityTypeType
+  creator: UserType
+  sponsored: Boolean
+  leaderboard: Boolean
+  rewards: String
+  maxAnswers: Int
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  repeatDate: DateTime!
+}
+
+type QuestPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestType!]!
+}
+
+type QuestRecurrencyStatusType {
+  isReccurent: Boolean!
+  repeatDate: DateTime
 }
 
 type QuestActionDefinitionDefinitionTextBoxType {
@@ -2229,174 +2329,6 @@ type QuestActionDefinitionPaginateType {
   objects: [QuestActionDefinitionType!]!
 }
 
-type RemunerationDtoType {
-  pocketType: PocketTypeEnum
-  amount: String
-}
-
-enum PocketTypeEnum {
-  QUANTITATIVE
-  QUALITATIVE
-}
-
-type RemunerationWithReputationDtoType {
-  qualitativeAmount: String!
-  quantitativeAmount: String!
-  reputationLevel: ReputationType
-}
-
-type QuestActionsRecurrenceType {
-  enable: Boolean
-  cycle: Int
-}
-
-type QuestType {
-  id: ID!
-  title: String
-  description: String
-  media: MediaType
-  category: QuestCategoryEnum
-  status: QuestStatusEnum
-  recurrence: QuestActionsRecurrenceType
-  remuneration: [RemunerationDtoType!]
-  activityType: ActivityTypeType
-  creator: UserType
-  sponsored: Boolean
-  leaderboard: Boolean
-  rewards: String
-  maxAnswers: Int
-  audience: AudienceType
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-enum QuestCategoryEnum {
-  INDUSTRY
-  FAMILY
-  FITNESS
-  GASTRONOMY
-}
-
-enum QuestStatusEnum {
-  DRAFT
-  ONGOING
-  ON_HOLD
-  FINISHED
-}
-
-type QuestWithRepeatDateType {
-  id: ID!
-  title: String
-  description: String
-  media: MediaType
-  category: QuestCategoryEnum
-  status: QuestStatusEnum
-  recurrence: QuestActionsRecurrenceType
-  remuneration: [RemunerationDtoType!]
-  activityType: ActivityTypeType
-  creator: UserType
-  sponsored: Boolean
-  leaderboard: Boolean
-  rewards: String
-  maxAnswers: Int
-  audience: AudienceType
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  repeatDate: DateTime!
-}
-
-type QuestPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [QuestType!]!
-}
-
-type QuestRecurrencyStatusType {
-  isReccurent: Boolean!
-  repeatDate: DateTime
-}
-
-type QuestActivityIntType {
-  id: ID!
-  title: String
-  description: String
-  tags: [String!]
-  media: MediaType
-}
-
-type IQuestActivityActivitiesConditionConditionActionType {
-  definition: QuestActivityIntType
-  action: QuestActionActionType
-}
-
-type IQuestActivityActivitiesConditionConditionScoreType {
-  operator: OperatorEnum
-  value: OperatorEnum
-}
-
-type IQuestActivityActivitiesConditionConditionType {
-  action: IQuestActivityActivitiesConditionConditionActionType
-  score: IQuestActivityActivitiesConditionConditionScoreType
-}
-
-type IQuestActivityActivitiesConditionTransitionGotoType {
-  action: QuestActivityIntType
-}
-
-type IQuestActivityActivitiesConditionTransitionType {
-  transition: QuestActivityTransitionType
-  goto: IQuestActivityActivitiesConditionTransitionGotoType
-  endMessage: String
-}
-
-enum QuestActivityTransitionType {
-  CONNECTION
-  END
-}
-
-type IQuestActivityActivitiesConditionType {
-  conditionType: QuestActivityConditionType
-  condition: IQuestActivityActivitiesConditionConditionType
-  transition: IQuestActivityActivitiesConditionTransitionType
-}
-
-enum QuestActivityConditionType {
-  ACTION
-  SCORE
-}
-
-type IQuestActivityActivitiesTransitionType {
-  title: String
-  description: String
-}
-
-type IQuestActivityActivitiesType {
-  action: QuestActionDefinitionType
-  transition: IQuestActivityActivitiesTransitionType
-  condition: IQuestActivityActivitiesConditionType
-}
-
-type QuestActivityType {
-  id: ID!
-  title: String
-  description: String
-  tags: [String!]
-  media: MediaType
-  quest: QuestType
-  rank: Int
-  activity: IQuestActivityActivitiesType
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type QuestActivityPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [QuestActivityType!]!
-}
-
 type TargetDtoType {
   pos: PointOfSaleType
   user: UserType
@@ -2504,6 +2436,115 @@ type QuestActionPaginateType {
   objects: [QuestActionType!]!
 }
 
+type QuestActivityIntType {
+  id: ID!
+  title: String
+  description: String
+  tags: [String!]
+  media: MediaType
+}
+
+type IQuestActivityActivitiesConditionConditionActionType {
+  definition: QuestActivityIntType
+  action: QuestActionActionType
+}
+
+type IQuestActivityActivitiesConditionConditionScoreType {
+  operator: OperatorEnum
+  value: OperatorEnum
+}
+
+type IQuestActivityActivitiesConditionConditionType {
+  action: IQuestActivityActivitiesConditionConditionActionType
+  score: IQuestActivityActivitiesConditionConditionScoreType
+}
+
+type IQuestActivityActivitiesConditionTransitionGotoType {
+  action: QuestActivityIntType
+}
+
+type IQuestActivityActivitiesConditionTransitionType {
+  transition: QuestActivityTransitionType
+  goto: IQuestActivityActivitiesConditionTransitionGotoType
+  endMessage: String
+}
+
+enum QuestActivityTransitionType {
+  CONNECTION
+  END
+}
+
+type IQuestActivityActivitiesConditionType {
+  conditionType: QuestActivityConditionType
+  condition: IQuestActivityActivitiesConditionConditionType
+  transition: IQuestActivityActivitiesConditionTransitionType
+}
+
+enum QuestActivityConditionType {
+  ACTION
+  SCORE
+}
+
+type IQuestActivityActivitiesTransitionType {
+  title: String
+  description: String
+}
+
+type IQuestActivityActivitiesType {
+  action: QuestActionDefinitionType
+  transition: IQuestActivityActivitiesTransitionType
+  condition: IQuestActivityActivitiesConditionType
+}
+
+type QuestActivityType {
+  id: ID!
+  title: String
+  description: String
+  tags: [String!]
+  media: MediaType
+  quest: QuestType
+  rank: Int
+  activity: IQuestActivityActivitiesType
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type QuestActivityPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [QuestActivityType!]!
+}
+
+type DeliveryZonePathType {
+  lng: Float!
+  lat: Float!
+  order: Float!
+}
+
+type DeliveryZonesType {
+  id: ID!
+  target: TargetType!
+  radius: Float
+  order: Float
+  minPrice: String
+  extraFees: String
+  color: String
+  type: ZoneTypesEnum!
+  paths: [DeliveryZonePathType!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum ZoneTypesEnum {
+  Point
+  Polygon
+}
+
+type QuestAudienceSegmentFilterValuesType {
+  activity: QuestActivityType
+  action: QuestActionActionType
+}
+
 type AudienceReachType {
   reach: Int
   total: Int
@@ -2527,11 +2568,11 @@ type AudienceSegmentFilterValuesType {
   reputations: [ReputationType!]
   countries: [CountryType!]
   states: [StateType!]
+  quest: QuestAudienceSegmentFilterValuesType
 }
 
 type AudienceSegmentFilterFieldType {
   value: AudienceCriteriaFieldEnum
-  action: QuestActionDefinitionType
 }
 
 type AudienceSegmentFilterType {
@@ -2835,6 +2876,7 @@ type AccessLoggerRequestType {
   port: String
   token: String
   origin: String
+  referer: String
   hostname: String
   pathname: String
   protocol: String
@@ -5665,68 +5707,6 @@ type CorporateNotificationResponse {
   success: Boolean!
 }
 
-type GoogleMapsAuditDataOrderType {
-  name: String
-  url: String
-}
-
-type GoogleMapsAuditDataReviewsType {
-  oneStar: Float
-  twoStar: Float
-  threeStar: Float
-  fourStar: Float
-  fiveStar: Float
-}
-
-type GoogleMapsAuditDataLocationType {
-  lat: Float
-  lng: Float
-}
-
-type GoogleMapsAuditDataType {
-  title: String
-  subTitle: String
-  price: String
-  menu: String
-  categoryName: String
-  address: String
-  locatedIn: String
-  neighborhood: String
-  street: String
-  city: String
-  postalCode: String
-  state: String
-  countryCode: String
-  plusCode: String
-  website: String
-  phone: String
-  temporarilyClosed: Boolean
-  location: GoogleMapsAuditDataLocationType
-  permanentlyClosed: Boolean
-  totalScore: String
-  isAdvertisement: Boolean
-  rank: Float
-  placeId: String
-  categories: [String!]
-  cid: String
-  url: String
-  searchPageUrl: String
-  searchString: String
-  scrapedAt: DateTime
-  reviewsCount: Float
-  reviewsDistribution: GoogleMapsAuditDataReviewsType
-  reviews: [String!]
-  orderBy: GoogleMapsAuditDataOrderType
-}
-
-type GoogleMapsAuditType {
-  id: ID
-  data: [GoogleMapsAuditDataType!]!
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
 type AnalyticsStatsInfoType {
   value: String!
   percentage: String!
@@ -5739,15 +5719,20 @@ type AnalyticsStatsType {
   conversions: AnalyticsStatsInfoType
 }
 
+type LatLngType {
+  lat: String
+  lng: String
+}
+
 type AnalyticsUsersByCountryLayersType {
-  coordination: GoogleMapsAuditDataLocationType
+  coordination: LatLngType
   radius: Float
 }
 
 type AnalyticsUsersByCountrySegmentsType {
-  duration: String
-  sessions: Float
-  views: Float
+  country: CountryType!
+  impressions: Float
+  conversions: Float
 }
 
 type AnalyticsUsersByCountryType {
@@ -5756,19 +5741,19 @@ type AnalyticsUsersByCountryType {
 }
 
 type AnalyticsSessionsByCountriesType {
-  country: CountryType
-  value: Int
-  color: String
+  country: CountryType!
+  value: Int!
+  color: String!
 }
 
 type AnalyticsRateCompareType {
-  rate: Float!
+  rate: String!
   compare: String!
 }
 
 type AnalyticsAudienceMetricsChartType {
-  last: [Float!]!
-  current: [Float!]!
+  conversions: [String!]!
+  impressions: [String!]!
 }
 
 type AnalyticsAudienceMetricsType {
@@ -5813,9 +5798,9 @@ type AnalyticsTopOperatingSystemsType {
 }
 
 type AnalyticsTopPagesType {
-  page: String
-  active: Int
-  users: Float
+  page: String!
+  active: Int!
+  users: String!
 }
 
 type CrmAnalyticsStatsInfoType {
@@ -7991,6 +7976,68 @@ type FacebookProfileAuditDataType {
   verified: Boolean
 }
 
+type GoogleMapsAuditDataOrderType {
+  name: String
+  url: String
+}
+
+type GoogleMapsAuditDataReviewsType {
+  oneStar: Float
+  twoStar: Float
+  threeStar: Float
+  fourStar: Float
+  fiveStar: Float
+}
+
+type GoogleMapsAuditDataLocationType {
+  lat: Float
+  lng: Float
+}
+
+type GoogleMapsAuditDataType {
+  title: String
+  subTitle: String
+  price: String
+  menu: String
+  categoryName: String
+  address: String
+  locatedIn: String
+  neighborhood: String
+  street: String
+  city: String
+  postalCode: String
+  state: String
+  countryCode: String
+  plusCode: String
+  website: String
+  phone: String
+  temporarilyClosed: Boolean
+  location: GoogleMapsAuditDataLocationType
+  permanentlyClosed: Boolean
+  totalScore: String
+  isAdvertisement: Boolean
+  rank: Float
+  placeId: String
+  categories: [String!]
+  cid: String
+  url: String
+  searchPageUrl: String
+  searchString: String
+  scrapedAt: DateTime
+  reviewsCount: Float
+  reviewsDistribution: GoogleMapsAuditDataReviewsType
+  reviews: [String!]
+  orderBy: GoogleMapsAuditDataOrderType
+}
+
+type GoogleMapsAuditType {
+  id: ID
+  data: [GoogleMapsAuditDataType!]!
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
 type GoogleMapsAuditConfigType {
   id: ID
   searchStringsArray: [String!]
@@ -8761,34 +8808,6 @@ type QuestActivitiesCountType {
   total: Int!
 }
 
-type QuestTypeType {
-  id: ID!
-  title: String
-  description: String
-  icon: String
-  media: MediaType
-  activityTypes: [ActivityTypeType!]
-  maxActivities: Int
-  rewardPoints: String
-  minCoins: String
-  fees: String
-  score: Boolean
-  profile: Boolean
-  admin: Boolean
-  transition: Boolean
-  condition: Boolean
-  enable: Boolean
-  target: TargetType
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-type QuestTypePaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [QuestTypeType!]!
-}
-
 type OwnerDtoType {
   pos: PointOfSaleType
   user: UserType
@@ -9178,6 +9197,18 @@ type LoyaltySettingsWalletSubscribersType {
   verification: Boolean!
 }
 
+type LoyaltySettingsPrelevelPerksType {
+  description: String
+  discount: String
+}
+
+type LoyaltySettingsPrelevelType {
+  name: String
+  picture: PictureType
+  perks: LoyaltySettingsPrelevelPerksType
+  color: String
+}
+
 type LoyaltySettingsType {
   id: ID!
   qualitative: LoyaltySettingsWalletType
@@ -9186,6 +9217,8 @@ type LoyaltySettingsType {
   loyaltyCard: LoyaltySettingsWalletCardType
   leaderboard: LoyaltySettingsWalletLeaderboardType
   subscribers: LoyaltySettingsWalletSubscribersType
+  prelevel: LoyaltySettingsPrelevelType
+  redeem: [String!]
   target: TargetType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -12605,7 +12638,6 @@ input QuestTypesFilterInput {
   activityTypes: [ID!]
   maxActivities: NumberRangeInput
   rewardPoints: NumberRangeInput
-  minCoins: NumberRangeInput
   fees: PriceRangeInput
   score: Boolean
   profile: Boolean
@@ -12659,7 +12691,6 @@ input AudienceSegmentFilterInput {
 
 input AudienceSegmentFilterFieldInput {
   value: AudienceCriteriaFieldEnum
-  action: ID
 }
 
 input AudienceSegmentFilterValuesInput {
@@ -16339,6 +16370,7 @@ input QuestInput {
   status: QuestStatusEnum
   recurrence: QuestActionsRecurrenceInput
   remuneration: [RemunerationInput!]
+  questType: ID
   activityType: ID
   sponsored: Boolean
   leaderboard: Boolean
@@ -16572,7 +16604,8 @@ input QuestTypeInput {
   activityTypes: [ID!]
   maxActivities: Int
   rewardPoints: String
-  minCoins: String
+  quantitative: QuestTypeRemunerationInput
+  qualitative: QuestTypeRemunerationInput
   fees: String
   score: Boolean
   profile: Boolean
@@ -16581,6 +16614,11 @@ input QuestTypeInput {
   condition: Boolean
   enable: Boolean
   target: TargetACIInput
+}
+
+input QuestTypeRemunerationInput {
+  min: String
+  max: String
 }
 
 input ActivityTypeInput {
@@ -17068,6 +17106,8 @@ input LoyaltySettingsUpdateInput {
   loyaltyCard: LoyaltySettingsWalletCardInput
   leaderboard: LoyaltySettingsWalletLeaderboardInput
   subscribers: LoyaltySettingsWalletSubscribersInput
+  prelevel: LoyaltySettingsPrelevelInput
+  redeem: [String!]
   id: ID!
 }
 
@@ -17107,6 +17147,18 @@ input LoyaltySettingsWalletLeaderboardInput {
 
 input LoyaltySettingsWalletSubscribersInput {
   verification: Boolean
+}
+
+input LoyaltySettingsPrelevelInput {
+  name: String
+  picture: PictureInput
+  perks: LoyaltySettingsPrelevelPerksInput
+  color: String
+}
+
+input LoyaltySettingsPrelevelPerksInput {
+  description: String
+  discount: String
 }
 
 input GoogleAnalyticsUpdateInput {
