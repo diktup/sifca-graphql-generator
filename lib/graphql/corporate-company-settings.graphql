@@ -1,0 +1,82 @@
+ query getCompanySettingsByCompany($company: ID!) {
+  getCompanySettingsByCompany(company: $company) {
+    id
+    sale {
+      quotation {
+        reference
+        prefix
+        label
+        validity {
+          period
+          cycle
+        }
+        color
+        note
+      }
+      order {
+        reference
+        prefix
+        label
+        validity {
+          period
+          cycle
+        }
+        color
+        note
+      }
+      invoice {
+        reference
+        prefix
+        label
+        validity {
+          period
+          cycle
+        }
+        color
+        note
+      }
+      deliveryNote {
+        reference
+        prefix
+        label
+        validity {
+          period
+          cycle
+        }
+        color
+        note
+      }
+      issueNote {
+        reference
+        prefix
+        label
+        validity {
+          period
+          cycle
+        }
+        color
+        note
+      }
+    }
+ 
+    tickets {
+      prefix
+    }
+    logistic {
+      prefix
+    }
+    documentLogo {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    
+    createdAt
+    updatedAt
+  }
+}
+ 
