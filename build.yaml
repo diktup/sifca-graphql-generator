@@ -236,3 +236,6 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/corporate-warehouse.graphql
               output: lib/dart/corporate-warehouse.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-company-location.graphql
+              output: lib/dart/corporate-company-location.graphql.dart
