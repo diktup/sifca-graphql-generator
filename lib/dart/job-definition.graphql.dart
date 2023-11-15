@@ -1241,6 +1241,7 @@ class JobDefinitionInput extends JsonSerializable with EquatableMixin {
     this.description,
     this.responsibility,
     this.offer,
+    this.translation,
     required this.target,
   });
 
@@ -1262,6 +1263,8 @@ class JobDefinitionInput extends JsonSerializable with EquatableMixin {
 
   JobDescriptionInput? offer;
 
+  List<JobDefinitionTranslationInput>? translation;
+
   late TargetACIInput target;
 
   @override
@@ -1273,6 +1276,7 @@ class JobDefinitionInput extends JsonSerializable with EquatableMixin {
         description,
         responsibility,
         offer,
+        translation,
         target
       ];
 
@@ -1321,6 +1325,61 @@ class JobDescriptionInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$JobDescriptionInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinitionTranslationInput extends JsonSerializable
+    with EquatableMixin {
+  JobDefinitionTranslationInput({
+    required this.language,
+    required this.content,
+  });
+
+  factory JobDefinitionTranslationInput.fromJson(Map<String, dynamic> json) =>
+      _$JobDefinitionTranslationInputFromJson(json);
+
+  late String language;
+
+  late JobDefinitionTranslationContentInput content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() => _$JobDefinitionTranslationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinitionTranslationContentInput extends JsonSerializable
+    with EquatableMixin {
+  JobDefinitionTranslationContentInput({
+    required this.title,
+    this.specs,
+    this.description,
+    this.responsibility,
+    this.offer,
+  });
+
+  factory JobDefinitionTranslationContentInput.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinitionTranslationContentInputFromJson(json);
+
+  late String title;
+
+  List<JobSpecsInput>? specs;
+
+  JobDescriptionInput? description;
+
+  JobDescriptionInput? responsibility;
+
+  JobDescriptionInput? offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinitionTranslationContentInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1474,6 +1533,7 @@ class JobDefinitionUpdateInput extends JsonSerializable with EquatableMixin {
     this.description,
     this.responsibility,
     this.offer,
+    this.translation,
   });
 
   factory JobDefinitionUpdateInput.fromJson(Map<String, dynamic> json) =>
@@ -1494,9 +1554,19 @@ class JobDefinitionUpdateInput extends JsonSerializable with EquatableMixin {
 
   JobDescriptionInput? offer;
 
+  List<JobDefinitionTranslationInput>? translation;
+
   @override
-  List<Object?> get props =>
-      [title, status, department, specs, description, responsibility, offer];
+  List<Object?> get props => [
+        title,
+        status,
+        department,
+        specs,
+        description,
+        responsibility,
+        offer,
+        translation
+      ];
 
   @override
   Map<String, dynamic> toJson() => _$JobDefinitionUpdateInputToJson(this);

@@ -8265,6 +8265,7 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
     this.pixel,
     this.priceList,
     this.taxes,
+    this.translation,
     this.supplier,
     required this.id,
   });
@@ -8306,6 +8307,8 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
 
   List<ProductTaxesInput>? taxes;
 
+  List<BarcodeTranslationInput>? translation;
+
   String? supplier;
 
   late String id;
@@ -8328,6 +8331,7 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
         pixel,
         priceList,
         taxes,
+        translation,
         supplier,
         id
       ];
@@ -8541,6 +8545,44 @@ class ProductTaxesInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$ProductTaxesInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BarcodeTranslationInput extends JsonSerializable with EquatableMixin {
+  BarcodeTranslationInput({
+    required this.language,
+    required this.content,
+  });
+
+  factory BarcodeTranslationInput.fromJson(Map<String, dynamic> json) =>
+      _$BarcodeTranslationInputFromJson(json);
+
+  late String language;
+
+  late BarcodeTranslationContentInput content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() => _$BarcodeTranslationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BarcodeTranslationContentInput extends JsonSerializable
+    with EquatableMixin {
+  BarcodeTranslationContentInput({required this.name});
+
+  factory BarcodeTranslationContentInput.fromJson(Map<String, dynamic> json) =>
+      _$BarcodeTranslationContentInputFromJson(json);
+
+  late String name;
+
+  @override
+  List<Object?> get props => [name];
+
+  @override
+  Map<String, dynamic> toJson() => _$BarcodeTranslationContentInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -11458,6 +11500,7 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
     this.pixel,
     this.priceList,
     this.taxes,
+    this.translation,
     this.supplier,
   });
 
@@ -11498,6 +11541,8 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
 
   List<ProductTaxesInput>? taxes;
 
+  List<BarcodeTranslationInput>? translation;
+
   String? supplier;
 
   @override
@@ -11518,6 +11563,7 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
         pixel,
         priceList,
         taxes,
+        translation,
         supplier
       ];
 

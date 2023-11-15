@@ -8934,6 +8934,10 @@ BarcodeUpdateInput _$BarcodeUpdateInputFromJson(Map<String, dynamic> json) =>
       taxes: (json['taxes'] as List<dynamic>?)
           ?.map((e) => ProductTaxesInput.fromJson(e as Map<String, dynamic>))
           .toList(),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) =>
+              BarcodeTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       supplier: json['supplier'] as String?,
       id: json['id'] as String,
     );
@@ -8965,6 +8969,8 @@ Map<String, dynamic> _$BarcodeUpdateInputToJson(BarcodeUpdateInput instance) {
   writeNotNull(
       'priceList', instance.priceList?.map((e) => e.toJson()).toList());
   writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   writeNotNull('supplier', instance.supplier);
   val['id'] = instance.id;
   return val;
@@ -9154,6 +9160,33 @@ Map<String, dynamic> _$ProductTaxesInputToJson(ProductTaxesInput instance) =>
     <String, dynamic>{
       'tax': instance.tax,
       'rank': instance.rank,
+    };
+
+BarcodeTranslationInput _$BarcodeTranslationInputFromJson(
+        Map<String, dynamic> json) =>
+    BarcodeTranslationInput(
+      language: json['language'] as String,
+      content: BarcodeTranslationContentInput.fromJson(
+          json['content'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$BarcodeTranslationInputToJson(
+        BarcodeTranslationInput instance) =>
+    <String, dynamic>{
+      'language': instance.language,
+      'content': instance.content.toJson(),
+    };
+
+BarcodeTranslationContentInput _$BarcodeTranslationContentInputFromJson(
+        Map<String, dynamic> json) =>
+    BarcodeTranslationContentInput(
+      name: json['name'] as String,
+    );
+
+Map<String, dynamic> _$BarcodeTranslationContentInputToJson(
+        BarcodeTranslationContentInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
     };
 
 BulkUpdateBarcodeMedia$Mutation$BarcodeType$MediaType$PictureType
@@ -12302,6 +12335,10 @@ BarcodeInput _$BarcodeInputFromJson(Map<String, dynamic> json) => BarcodeInput(
       taxes: (json['taxes'] as List<dynamic>?)
           ?.map((e) => ProductTaxesInput.fromJson(e as Map<String, dynamic>))
           .toList(),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) =>
+              BarcodeTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       supplier: json['supplier'] as String?,
     );
 
@@ -12332,6 +12369,8 @@ Map<String, dynamic> _$BarcodeInputToJson(BarcodeInput instance) {
   writeNotNull(
       'priceList', instance.priceList?.map((e) => e.toJson()).toList());
   writeNotNull('taxes', instance.taxes?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   writeNotNull('supplier', instance.supplier);
   return val;
 }

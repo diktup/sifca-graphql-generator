@@ -2921,6 +2921,10 @@ CatalogueCategoryInput _$CatalogueCategoryInputFromJson(
               json['seo'] as Map<String, dynamic>),
       variety: $enumDecodeNullable(_$ProductVarietyEnumEnumMap, json['variety'],
           unknownValue: ProductVarietyEnum.artemisUnknown),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) => CatalogueCategoryTranslationInput.fromJson(
+              e as Map<String, dynamic>))
+          .toList(),
       name: json['name'] as String,
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
       layer: json['layer'] as int,
@@ -2946,6 +2950,8 @@ Map<String, dynamic> _$CatalogueCategoryInputToJson(
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   val['name'] = instance.name;
   val['target'] = instance.target.toJson();
   val['layer'] = instance.layer;
@@ -3029,6 +3035,36 @@ Map<String, dynamic> _$MetaKeywordsInputToJson(MetaKeywordsInput instance) {
   writeNotNull('content', instance.content);
   return val;
 }
+
+CatalogueCategoryTranslationInput _$CatalogueCategoryTranslationInputFromJson(
+        Map<String, dynamic> json) =>
+    CatalogueCategoryTranslationInput(
+      language: json['language'] as String,
+      content: CatalogueCategoryTranslationContentInput.fromJson(
+          json['content'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$CatalogueCategoryTranslationInputToJson(
+        CatalogueCategoryTranslationInput instance) =>
+    <String, dynamic>{
+      'language': instance.language,
+      'content': instance.content.toJson(),
+    };
+
+CatalogueCategoryTranslationContentInput
+    _$CatalogueCategoryTranslationContentInputFromJson(
+            Map<String, dynamic> json) =>
+        CatalogueCategoryTranslationContentInput(
+          name: json['name'] as String,
+          description: json['description'] as String,
+        );
+
+Map<String, dynamic> _$CatalogueCategoryTranslationContentInputToJson(
+        CatalogueCategoryTranslationContentInput instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'description': instance.description,
+    };
 
 UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsType
     _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
@@ -3212,6 +3248,10 @@ CatalogueCategoryUpdateInput _$CatalogueCategoryUpdateInputFromJson(
               json['seo'] as Map<String, dynamic>),
       variety: $enumDecodeNullable(_$ProductVarietyEnumEnumMap, json['variety'],
           unknownValue: ProductVarietyEnum.artemisUnknown),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) => CatalogueCategoryTranslationInput.fromJson(
+              e as Map<String, dynamic>))
+          .toList(),
       id: json['id'] as String,
       name: json['name'] as String?,
       layer: json['layer'] as int?,
@@ -3237,6 +3277,8 @@ Map<String, dynamic> _$CatalogueCategoryUpdateInputToJson(
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
   writeNotNull('seo', instance.seo?.toJson());
   writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   val['id'] = instance.id;
   writeNotNull('name', instance.name);
   writeNotNull('layer', instance.layer);

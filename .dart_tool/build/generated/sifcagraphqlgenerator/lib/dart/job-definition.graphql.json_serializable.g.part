@@ -1246,6 +1246,10 @@ JobDefinitionInput _$JobDefinitionInputFromJson(Map<String, dynamic> json) =>
       offer: json['offer'] == null
           ? null
           : JobDescriptionInput.fromJson(json['offer'] as Map<String, dynamic>),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) =>
+              JobDefinitionTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
     );
 
@@ -1266,6 +1270,8 @@ Map<String, dynamic> _$JobDefinitionInputToJson(JobDefinitionInput instance) {
   writeNotNull('description', instance.description?.toJson());
   writeNotNull('responsibility', instance.responsibility?.toJson());
   writeNotNull('offer', instance.offer?.toJson());
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   val['target'] = instance.target.toJson();
   return val;
 }
@@ -1297,6 +1303,61 @@ Map<String, dynamic> _$JobDescriptionInputToJson(
       'description': instance.description,
       'descriptionList': instance.descriptionList,
     };
+
+JobDefinitionTranslationInput _$JobDefinitionTranslationInputFromJson(
+        Map<String, dynamic> json) =>
+    JobDefinitionTranslationInput(
+      language: json['language'] as String,
+      content: JobDefinitionTranslationContentInput.fromJson(
+          json['content'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$JobDefinitionTranslationInputToJson(
+        JobDefinitionTranslationInput instance) =>
+    <String, dynamic>{
+      'language': instance.language,
+      'content': instance.content.toJson(),
+    };
+
+JobDefinitionTranslationContentInput
+    _$JobDefinitionTranslationContentInputFromJson(Map<String, dynamic> json) =>
+        JobDefinitionTranslationContentInput(
+          title: json['title'] as String,
+          specs: (json['specs'] as List<dynamic>?)
+              ?.map((e) => JobSpecsInput.fromJson(e as Map<String, dynamic>))
+              .toList(),
+          description: json['description'] == null
+              ? null
+              : JobDescriptionInput.fromJson(
+                  json['description'] as Map<String, dynamic>),
+          responsibility: json['responsibility'] == null
+              ? null
+              : JobDescriptionInput.fromJson(
+                  json['responsibility'] as Map<String, dynamic>),
+          offer: json['offer'] == null
+              ? null
+              : JobDescriptionInput.fromJson(
+                  json['offer'] as Map<String, dynamic>),
+        );
+
+Map<String, dynamic> _$JobDefinitionTranslationContentInputToJson(
+    JobDefinitionTranslationContentInput instance) {
+  final val = <String, dynamic>{
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('specs', instance.specs?.map((e) => e.toJson()).toList());
+  writeNotNull('description', instance.description?.toJson());
+  writeNotNull('responsibility', instance.responsibility?.toJson());
+  writeNotNull('offer', instance.offer?.toJson());
+  return val;
+}
 
 UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType
     _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentTypeFromJson(
@@ -1460,6 +1521,10 @@ JobDefinitionUpdateInput _$JobDefinitionUpdateInputFromJson(
       offer: json['offer'] == null
           ? null
           : JobDescriptionInput.fromJson(json['offer'] as Map<String, dynamic>),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) =>
+              JobDefinitionTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$JobDefinitionUpdateInputToJson(
@@ -1479,6 +1544,8 @@ Map<String, dynamic> _$JobDefinitionUpdateInputToJson(
   writeNotNull('description', instance.description?.toJson());
   writeNotNull('responsibility', instance.responsibility?.toJson());
   writeNotNull('offer', instance.offer?.toJson());
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   return val;
 }
 

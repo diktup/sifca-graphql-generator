@@ -2947,6 +2947,7 @@ class CatalogueCategoryInput extends JsonSerializable with EquatableMixin {
     this.pictures,
     this.seo,
     this.variety,
+    this.translation,
     required this.name,
     required this.target,
     required this.layer,
@@ -2976,6 +2977,8 @@ class CatalogueCategoryInput extends JsonSerializable with EquatableMixin {
   @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
   ProductVarietyEnum? variety;
 
+  List<CatalogueCategoryTranslationInput>? translation;
+
   late String name;
 
   late TargetACIInput target;
@@ -2994,6 +2997,7 @@ class CatalogueCategoryInput extends JsonSerializable with EquatableMixin {
         pictures,
         seo,
         variety,
+        translation,
         name,
         target,
         layer
@@ -3085,6 +3089,54 @@ class MetaKeywordsInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$MetaKeywordsInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategoryTranslationInput extends JsonSerializable
+    with EquatableMixin {
+  CatalogueCategoryTranslationInput({
+    required this.language,
+    required this.content,
+  });
+
+  factory CatalogueCategoryTranslationInput.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategoryTranslationInputFromJson(json);
+
+  late String language;
+
+  late CatalogueCategoryTranslationContentInput content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategoryTranslationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategoryTranslationContentInput extends JsonSerializable
+    with EquatableMixin {
+  CatalogueCategoryTranslationContentInput({
+    required this.name,
+    required this.description,
+  });
+
+  factory CatalogueCategoryTranslationContentInput.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategoryTranslationContentInputFromJson(json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategoryTranslationContentInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -3272,6 +3324,7 @@ class CatalogueCategoryUpdateInput extends JsonSerializable
     this.pictures,
     this.seo,
     this.variety,
+    this.translation,
     required this.id,
     this.name,
     this.layer,
@@ -3301,6 +3354,8 @@ class CatalogueCategoryUpdateInput extends JsonSerializable
   @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
   ProductVarietyEnum? variety;
 
+  List<CatalogueCategoryTranslationInput>? translation;
+
   late String id;
 
   String? name;
@@ -3319,6 +3374,7 @@ class CatalogueCategoryUpdateInput extends JsonSerializable
         pictures,
         seo,
         variety,
+        translation,
         id,
         name,
         layer

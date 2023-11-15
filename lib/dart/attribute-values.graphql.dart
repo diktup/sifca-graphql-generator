@@ -1517,6 +1517,7 @@ class AttributeValueInput extends JsonSerializable with EquatableMixin {
     required this.externalId,
     required this.target,
     required this.attribute,
+    this.translation,
   });
 
   factory AttributeValueInput.fromJson(Map<String, dynamic> json) =>
@@ -1530,11 +1531,55 @@ class AttributeValueInput extends JsonSerializable with EquatableMixin {
 
   late String attribute;
 
+  List<AttributeValueTranslationInput>? translation;
+
   @override
-  List<Object?> get props => [label, externalId, target, attribute];
+  List<Object?> get props =>
+      [label, externalId, target, attribute, translation];
 
   @override
   Map<String, dynamic> toJson() => _$AttributeValueInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AttributeValueTranslationInput extends JsonSerializable
+    with EquatableMixin {
+  AttributeValueTranslationInput({
+    required this.language,
+    required this.content,
+  });
+
+  factory AttributeValueTranslationInput.fromJson(Map<String, dynamic> json) =>
+      _$AttributeValueTranslationInputFromJson(json);
+
+  late String language;
+
+  late AttributeValueTranslationContentInput content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() => _$AttributeValueTranslationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AttributeValueTranslationContentInput extends JsonSerializable
+    with EquatableMixin {
+  AttributeValueTranslationContentInput({required this.label});
+
+  factory AttributeValueTranslationContentInput.fromJson(
+          Map<String, dynamic> json) =>
+      _$AttributeValueTranslationContentInputFromJson(json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AttributeValueTranslationContentInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1776,6 +1821,7 @@ class AttributeValueUpdateInput extends JsonSerializable with EquatableMixin {
   AttributeValueUpdateInput({
     this.label,
     this.attribute,
+    this.translation,
     required this.id,
   });
 
@@ -1786,10 +1832,12 @@ class AttributeValueUpdateInput extends JsonSerializable with EquatableMixin {
 
   String? attribute;
 
+  List<AttributeValueTranslationInput>? translation;
+
   late String id;
 
   @override
-  List<Object?> get props => [label, attribute, id];
+  List<Object?> get props => [label, attribute, translation, id];
 
   @override
   Map<String, dynamic> toJson() => _$AttributeValueUpdateInputToJson(this);

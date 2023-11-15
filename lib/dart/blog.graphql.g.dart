@@ -18018,6 +18018,9 @@ BlogInput _$BlogInputFromJson(Map<String, dynamic> json) => BlogInput(
       sectionData: (json['sectionData'] as List<dynamic>?)
           ?.map((e) => BlogDataInput.fromJson(e as Map<String, dynamic>))
           .toList(),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) => BlogTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$BlogInputToJson(BlogInput instance) {
@@ -18038,6 +18041,8 @@ Map<String, dynamic> _$BlogInputToJson(BlogInput instance) {
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   return val;
 }
 
@@ -18140,6 +18145,37 @@ Map<String, dynamic> _$BlogDataInputToJson(BlogDataInput instance) {
       instance.sectionPictures?.map((e) => e.toJson()).toList());
   return val;
 }
+
+BlogTranslationInput _$BlogTranslationInputFromJson(
+        Map<String, dynamic> json) =>
+    BlogTranslationInput(
+      language: json['language'] as String,
+      content: BlogTranslationContentInput.fromJson(
+          json['content'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$BlogTranslationInputToJson(
+        BlogTranslationInput instance) =>
+    <String, dynamic>{
+      'language': instance.language,
+      'content': instance.content.toJson(),
+    };
+
+BlogTranslationContentInput _$BlogTranslationContentInputFromJson(
+        Map<String, dynamic> json) =>
+    BlogTranslationContentInput(
+      title: json['title'] as String,
+      sectionData: (json['sectionData'] as List<dynamic>)
+          .map((e) => BlogDataInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$BlogTranslationContentInputToJson(
+        BlogTranslationContentInput instance) =>
+    <String, dynamic>{
+      'title': instance.title,
+      'sectionData': instance.sectionData.map((e) => e.toJson()).toList(),
+    };
 
 PublishBlog$Mutation$BlogType$UserType$PhoneType
     _$PublishBlog$Mutation$BlogType$UserType$PhoneTypeFromJson(
@@ -21672,6 +21708,9 @@ UpdateBlogInput _$UpdateBlogInputFromJson(Map<String, dynamic> json) =>
       sectionData: (json['sectionData'] as List<dynamic>?)
           ?.map((e) => BlogDataInput.fromJson(e as Map<String, dynamic>))
           .toList(),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) => BlogTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$UpdateBlogInputToJson(UpdateBlogInput instance) {
@@ -21690,6 +21729,8 @@ Map<String, dynamic> _$UpdateBlogInputToJson(UpdateBlogInput instance) {
   writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
   writeNotNull(
       'sectionData', instance.sectionData?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   return val;
 }
 

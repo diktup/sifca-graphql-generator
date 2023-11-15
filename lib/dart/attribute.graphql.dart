@@ -922,6 +922,7 @@ class AttributeCreateInput extends JsonSerializable with EquatableMixin {
     this.isMultipleChoice,
     this.pixel,
     this.variety,
+    this.translation,
     this.target,
   });
 
@@ -941,11 +942,21 @@ class AttributeCreateInput extends JsonSerializable with EquatableMixin {
   @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
   ProductVarietyEnum? variety;
 
+  List<AttributeTranslationInput>? translation;
+
   TargetACIInput? target;
 
   @override
-  List<Object?> get props =>
-      [label, externalId, isRequired, isMultipleChoice, pixel, variety, target];
+  List<Object?> get props => [
+        label,
+        externalId,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        variety,
+        translation,
+        target
+      ];
 
   @override
   Map<String, dynamic> toJson() => _$AttributeCreateInputToJson(this);
@@ -965,6 +976,46 @@ class AttributePixelInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$AttributePixelInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AttributeTranslationInput extends JsonSerializable with EquatableMixin {
+  AttributeTranslationInput({
+    required this.language,
+    required this.content,
+  });
+
+  factory AttributeTranslationInput.fromJson(Map<String, dynamic> json) =>
+      _$AttributeTranslationInputFromJson(json);
+
+  late String language;
+
+  late AttributeTranslationContentInput content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() => _$AttributeTranslationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class AttributeTranslationContentInput extends JsonSerializable
+    with EquatableMixin {
+  AttributeTranslationContentInput({required this.label});
+
+  factory AttributeTranslationContentInput.fromJson(
+          Map<String, dynamic> json) =>
+      _$AttributeTranslationContentInputFromJson(json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$AttributeTranslationContentInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1137,6 +1188,7 @@ class AttributeUpdateInput extends JsonSerializable with EquatableMixin {
     this.isMultipleChoice,
     this.pixel,
     this.variety,
+    this.translation,
     required this.id,
   });
 
@@ -1154,11 +1206,13 @@ class AttributeUpdateInput extends JsonSerializable with EquatableMixin {
   @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
   ProductVarietyEnum? variety;
 
+  List<AttributeTranslationInput>? translation;
+
   late String id;
 
   @override
   List<Object?> get props =>
-      [label, isRequired, isMultipleChoice, pixel, variety, id];
+      [label, isRequired, isMultipleChoice, pixel, variety, translation, id];
 
   @override
   Map<String, dynamic> toJson() => _$AttributeUpdateInputToJson(this);

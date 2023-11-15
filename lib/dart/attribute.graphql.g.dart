@@ -880,6 +880,10 @@ AttributeCreateInput _$AttributeCreateInputFromJson(
           : AttributePixelInput.fromJson(json['pixel'] as Map<String, dynamic>),
       variety: $enumDecodeNullable(_$ProductVarietyEnumEnumMap, json['variety'],
           unknownValue: ProductVarietyEnum.artemisUnknown),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) =>
+              AttributeTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       target: json['target'] == null
           ? null
           : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
@@ -902,6 +906,8 @@ Map<String, dynamic> _$AttributeCreateInputToJson(
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   writeNotNull('target', instance.target?.toJson());
   return val;
 }
@@ -923,6 +929,33 @@ Map<String, dynamic> _$AttributePixelInputToJson(AttributePixelInput instance) {
   writeNotNull('pixelAttribute', instance.pixelAttribute);
   return val;
 }
+
+AttributeTranslationInput _$AttributeTranslationInputFromJson(
+        Map<String, dynamic> json) =>
+    AttributeTranslationInput(
+      language: json['language'] as String,
+      content: AttributeTranslationContentInput.fromJson(
+          json['content'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$AttributeTranslationInputToJson(
+        AttributeTranslationInput instance) =>
+    <String, dynamic>{
+      'language': instance.language,
+      'content': instance.content.toJson(),
+    };
+
+AttributeTranslationContentInput _$AttributeTranslationContentInputFromJson(
+        Map<String, dynamic> json) =>
+    AttributeTranslationContentInput(
+      label: json['label'] as String,
+    );
+
+Map<String, dynamic> _$AttributeTranslationContentInputToJson(
+        AttributeTranslationContentInput instance) =>
+    <String, dynamic>{
+      'label': instance.label,
+    };
 
 CreateAttribute$Mutation$AttributeType$AttributePixelType
     _$CreateAttribute$Mutation$AttributeType$AttributePixelTypeFromJson(
@@ -1085,6 +1118,10 @@ AttributeUpdateInput _$AttributeUpdateInputFromJson(
           : AttributePixelInput.fromJson(json['pixel'] as Map<String, dynamic>),
       variety: $enumDecodeNullable(_$ProductVarietyEnumEnumMap, json['variety'],
           unknownValue: ProductVarietyEnum.artemisUnknown),
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) =>
+              AttributeTranslationInput.fromJson(e as Map<String, dynamic>))
+          .toList(),
       id: json['id'] as String,
     );
 
@@ -1103,6 +1140,8 @@ Map<String, dynamic> _$AttributeUpdateInputToJson(
   writeNotNull('isMultipleChoice', instance.isMultipleChoice);
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull('variety', _$ProductVarietyEnumEnumMap[instance.variety]);
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   val['id'] = instance.id;
   return val;
 }

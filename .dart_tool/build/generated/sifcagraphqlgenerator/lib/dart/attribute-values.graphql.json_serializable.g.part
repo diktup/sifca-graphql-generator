@@ -1377,15 +1377,57 @@ AttributeValueInput _$AttributeValueInputFromJson(Map<String, dynamic> json) =>
       externalId: json['externalId'] as String,
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
       attribute: json['attribute'] as String,
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) => AttributeValueTranslationInput.fromJson(
+              e as Map<String, dynamic>))
+          .toList(),
     );
 
-Map<String, dynamic> _$AttributeValueInputToJson(
-        AttributeValueInput instance) =>
+Map<String, dynamic> _$AttributeValueInputToJson(AttributeValueInput instance) {
+  final val = <String, dynamic>{
+    'label': instance.label,
+    'externalId': instance.externalId,
+    'target': instance.target.toJson(),
+    'attribute': instance.attribute,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+AttributeValueTranslationInput _$AttributeValueTranslationInputFromJson(
+        Map<String, dynamic> json) =>
+    AttributeValueTranslationInput(
+      language: json['language'] as String,
+      content: AttributeValueTranslationContentInput.fromJson(
+          json['content'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$AttributeValueTranslationInputToJson(
+        AttributeValueTranslationInput instance) =>
+    <String, dynamic>{
+      'language': instance.language,
+      'content': instance.content.toJson(),
+    };
+
+AttributeValueTranslationContentInput
+    _$AttributeValueTranslationContentInputFromJson(
+            Map<String, dynamic> json) =>
+        AttributeValueTranslationContentInput(
+          label: json['label'] as String,
+        );
+
+Map<String, dynamic> _$AttributeValueTranslationContentInputToJson(
+        AttributeValueTranslationContentInput instance) =>
     <String, dynamic>{
       'label': instance.label,
-      'externalId': instance.externalId,
-      'target': instance.target.toJson(),
-      'attribute': instance.attribute,
     };
 
 CreateAttributeValue$Mutation$AttributeValueType$AttributeType$AttributePixelType
@@ -1599,6 +1641,10 @@ AttributeValueUpdateInput _$AttributeValueUpdateInputFromJson(
     AttributeValueUpdateInput(
       label: json['label'] as String?,
       attribute: json['attribute'] as String?,
+      translation: (json['translation'] as List<dynamic>?)
+          ?.map((e) => AttributeValueTranslationInput.fromJson(
+              e as Map<String, dynamic>))
+          .toList(),
       id: json['id'] as String,
     );
 
@@ -1614,6 +1660,8 @@ Map<String, dynamic> _$AttributeValueUpdateInputToJson(
 
   writeNotNull('label', instance.label);
   writeNotNull('attribute', instance.attribute);
+  writeNotNull(
+      'translation', instance.translation?.map((e) => e.toJson()).toList());
   val['id'] = instance.id;
   return val;
 }

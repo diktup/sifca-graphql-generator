@@ -17160,6 +17160,7 @@ class BlogInput extends JsonSerializable with EquatableMixin {
     this.seo,
     this.pictures,
     this.sectionData,
+    this.translation,
   });
 
   factory BlogInput.fromJson(Map<String, dynamic> json) =>
@@ -17179,9 +17180,11 @@ class BlogInput extends JsonSerializable with EquatableMixin {
 
   List<BlogDataInput>? sectionData;
 
+  List<BlogTranslationInput>? translation;
+
   @override
   List<Object?> get props =>
-      [title, target, url, tags, seo, pictures, sectionData];
+      [title, target, url, tags, seo, pictures, sectionData, translation];
 
   @override
   Map<String, dynamic> toJson() => _$BlogInputToJson(this);
@@ -17294,6 +17297,48 @@ class BlogDataInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$BlogDataInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BlogTranslationInput extends JsonSerializable with EquatableMixin {
+  BlogTranslationInput({
+    required this.language,
+    required this.content,
+  });
+
+  factory BlogTranslationInput.fromJson(Map<String, dynamic> json) =>
+      _$BlogTranslationInputFromJson(json);
+
+  late String language;
+
+  late BlogTranslationContentInput content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() => _$BlogTranslationInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BlogTranslationContentInput extends JsonSerializable with EquatableMixin {
+  BlogTranslationContentInput({
+    required this.title,
+    required this.sectionData,
+  });
+
+  factory BlogTranslationContentInput.fromJson(Map<String, dynamic> json) =>
+      _$BlogTranslationContentInputFromJson(json);
+
+  late String title;
+
+  late List<BlogDataInput> sectionData;
+
+  @override
+  List<Object?> get props => [title, sectionData];
+
+  @override
+  Map<String, dynamic> toJson() => _$BlogTranslationContentInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -20652,6 +20697,7 @@ class UpdateBlogInput extends JsonSerializable with EquatableMixin {
     this.seo,
     this.pictures,
     this.sectionData,
+    this.translation,
   });
 
   factory UpdateBlogInput.fromJson(Map<String, dynamic> json) =>
@@ -20669,8 +20715,11 @@ class UpdateBlogInput extends JsonSerializable with EquatableMixin {
 
   List<BlogDataInput>? sectionData;
 
+  List<BlogTranslationInput>? translation;
+
   @override
-  List<Object?> get props => [title, url, tags, seo, pictures, sectionData];
+  List<Object?> get props =>
+      [title, url, tags, seo, pictures, sectionData, translation];
 
   @override
   Map<String, dynamic> toJson() => _$UpdateBlogInputToJson(this);

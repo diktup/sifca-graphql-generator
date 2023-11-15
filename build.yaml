@@ -239,3 +239,6 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/corporate-company-location.graphql
               output: lib/dart/corporate-company-location.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/corporate-internal-product-stock.graphql
+              output: lib/dart/corporate-internal-product-stock.graphql.dart

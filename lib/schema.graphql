@@ -3009,6 +3009,16 @@ type CatalogueCategorySeoType {
   metaKeywords: [MetaKeywordsType!]
 }
 
+type CatalogueCategoryTranslationContentType {
+  name: String!
+  description: String!
+}
+
+type CatalogueCategoryTranslationType {
+  language: LanguageType!
+  content: CatalogueCategoryTranslationContentType!
+}
+
 type CatalogueCategoryBaseType {
   id: ID!
   name: String
@@ -3025,6 +3035,7 @@ type CatalogueCategoryBaseType {
   rank: Int
   layer: Int!
   seo: CatalogueCategorySeoType
+  translation: [CatalogueCategoryTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -3052,6 +3063,7 @@ type CatalogueCategoryType {
   rank: Int
   layer: Int!
   seo: CatalogueCategorySeoType
+  translation: [CatalogueCategoryTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   target: TargetType!
@@ -3073,10 +3085,17 @@ type CatalogueCategoryWithChildrenType {
   rank: Int
   layer: Int!
   seo: CatalogueCategorySeoType
+  translation: [CatalogueCategoryTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   target: TargetType!
   children: [CatalogueCategoryWithChildrenType!]
+}
+
+type CatalogueCategoryPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [CatalogueCategoryType!]!
 }
 
 type BrandType {
@@ -3140,10 +3159,20 @@ type PricePaginateType {
   objects: [PriceType!]!
 }
 
+type AttributeValueTranslationContentType {
+  label: String!
+}
+
+type AttributeValueTranslationType {
+  language: LanguageType!
+  content: AttributeValueTranslationContentType!
+}
+
 type AttributeValueBaseType {
   id: ID!
   label: String!
   externalId: String!
+  translation: [AttributeValueTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -3152,6 +3181,7 @@ type AttributeValueBaseRawType {
   id: ID!
   label: String!
   externalId: String!
+  translation: [AttributeValueTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   attribute: AttributeBaseType!
@@ -3161,6 +3191,7 @@ type AttributeValueType {
   id: ID!
   label: String!
   externalId: String!
+  translation: [AttributeValueTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   target: TargetType!
@@ -3188,6 +3219,15 @@ type AttributeRawBaseType {
   label: String!
 }
 
+type AttributeTranslationContentType {
+  label: String!
+}
+
+type AttributeTranslationType {
+  language: LanguageType!
+  content: AttributeTranslationContentType!
+}
+
 type AttributeBaseType {
   id: ID!
   label: String!
@@ -3196,6 +3236,7 @@ type AttributeBaseType {
   isMultipleChoice: Boolean
   pixel: AttributePixelType
   variety: ProductVarietyEnum
+  translation: [AttributeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -3214,6 +3255,7 @@ type AttributeType {
   isMultipleChoice: Boolean
   pixel: AttributePixelType
   variety: ProductVarietyEnum
+  translation: [AttributeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   target: TargetType
@@ -3345,6 +3387,18 @@ type GlobalCategoryProductType {
   facebookCategory: GlobalCategoryType
 }
 
+type InternalProductTranslationContentType {
+  name: String!
+  description: String!
+  descriptionList: [String!]
+  specs: [ProductSpecsType!]
+}
+
+type InternalProductTranslationType {
+  language: LanguageType!
+  content: InternalProductTranslationContentType!
+}
+
 type InternalProductType {
   id: ID
   name: String
@@ -3371,6 +3425,7 @@ type InternalProductType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3415,6 +3470,7 @@ type InternalProductWithStockType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3449,6 +3505,7 @@ type InternalProductWithFavoriteStatusType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3483,6 +3540,7 @@ type RecentlyViewedInternalProductWithFavoriteStatusType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3517,6 +3575,7 @@ type InternalProductWithBarcodesWithPublicPriceType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3550,6 +3609,7 @@ type InternalProductWithoutClassType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3591,6 +3651,7 @@ type InternalProductWithoutClassWithFavoriteStatusType {
   globalCategory: GlobalCategoryProductType
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3631,6 +3692,7 @@ type InternalProductWithRatingsType {
   catalogueCategory: [CatalogueCategoryType!]
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3664,6 +3726,7 @@ type InternalProductWithRatingsWithFavoriteStatusType {
   catalogueCategory: [CatalogueCategoryType!]
   tax: String
   seo: CatalogueCategorySeoType
+  translation: [InternalProductTranslationType!]
   brand: BrandType
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -3684,6 +3747,15 @@ type PixelBarcodeType {
   include: Boolean
 }
 
+type BarcodeTranslationContentType {
+  name: String!
+}
+
+type BarcodeTranslationType {
+  language: LanguageType!
+  content: BarcodeTranslationContentType!
+}
+
 type BarcodeBaseRawType {
   id: ID!
   barcode: String!
@@ -3700,6 +3772,7 @@ type BarcodeBaseRawType {
   pixel: PixelBarcodeType
   priceList: [ProductPriceListType!]
   taxes: [ProductTaxesType!]
+  translation: [BarcodeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   productAttributesValues: InternalProductAttributesValuesBaseType
@@ -3721,6 +3794,7 @@ type BarcodeType {
   pixel: PixelBarcodeType
   priceList: [ProductPriceListType!]
   taxes: [ProductTaxesType!]
+  translation: [BarcodeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   product: ProductType
@@ -3743,6 +3817,7 @@ type BarcodeWithPublicPriceType {
   supplier: CompanyType
   pixel: PixelBarcodeType
   priceList: [ProductPriceListType!]
+  translation: [BarcodeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   product: ProductType
@@ -3767,6 +3842,7 @@ type BarcodeWithStockDataType {
   pixel: PixelBarcodeType
   priceList: [ProductPriceListType!]
   taxes: [ProductTaxesType!]
+  translation: [BarcodeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   product: ProductType
@@ -3792,6 +3868,7 @@ type BarcodeWithStockType {
   pixel: PixelBarcodeType
   priceList: [ProductPriceListType!]
   taxes: [ProductTaxesType!]
+  translation: [BarcodeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   product: ProductType
@@ -3816,6 +3893,7 @@ type BarcodeForTargetType {
   pixel: PixelBarcodeType
   priceList: [ProductPriceListType!]
   taxes: [ProductTaxesType!]
+  translation: [BarcodeTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   productAttributesValues: InternalProductAttributesValuesType
@@ -4405,12 +4483,18 @@ type MessageMediaPaginateType {
   objects: [PictureType!]!
 }
 
+type CorporateEmailTemplateTranslationType {
+  language: LanguageType!
+  content: String!
+}
+
 type CorporateEmailTemplateType {
   id: ID!
   name: EmailTemplateTypeEnum
   content: String!
   icon: String
   color: String
+  translation: [CorporateEmailTemplateTranslationType!]
   target: TargetType!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -4775,6 +4859,22 @@ type InventoryCategoryPaginateType {
   objects: [InventoryCategoryType!]!
 }
 
+type StaticTranslationType {
+  id: ID!
+  reference: String!
+  content: String!
+  language: LanguageType!
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type StaticTranslationPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [StaticTranslationType!]!
+}
+
 type ProductsByCatalogueCategoryCountType {
   id: ID!
   name: String
@@ -4791,6 +4891,7 @@ type ProductsByCatalogueCategoryCountType {
   rank: Int
   layer: Int!
   seo: CatalogueCategorySeoType
+  translation: [CatalogueCategoryTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   numberOfProducts: Int!
@@ -4841,6 +4942,7 @@ type InternalProductsByCatalogueCategoryCountType {
   rank: Int
   layer: Int!
   seo: CatalogueCategorySeoType
+  translation: [CatalogueCategoryTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   numberOfProducts: Int!
@@ -5578,12 +5680,6 @@ type FeaturedCorporatePaginateType {
   objects: [FeaturedCorporateType!]!
 }
 
-type CatalogueCategoryPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [CatalogueCategoryType!]!
-}
-
 type CorporateUserCardType {
   id: ID!
   user: UserType!
@@ -5937,6 +6033,23 @@ type SeoComponentType {
   metaKeywords: [TagType!]
 }
 
+type BlogDataType {
+  sectionReference: String
+  sectionTitle: String
+  sectionContent: String
+  sectionPictures: [PictureType!]
+}
+
+type BlogTranslationContentType {
+  title: String!
+  sectionData: [BlogDataType!]!
+}
+
+type BlogTranslationType {
+  language: LanguageType!
+  content: BlogTranslationContentType!
+}
+
 type BlogType {
   id: ID!
   target: TargetType!
@@ -5948,21 +6061,33 @@ type BlogType {
   seo: SeoComponentType
   pictures: [PictureType!]
   sectionData: [BlogDataType!]
+  translation: [BlogTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
-}
-
-type BlogDataType {
-  sectionReference: String
-  sectionTitle: String
-  sectionContent: String
-  sectionPictures: [PictureType!]
 }
 
 type PaginatedBlogsType {
   count: Int
   isLast: Boolean
   objects: [BlogType!]!
+}
+
+type LandingPagesDataType {
+  sectionReference: String
+  sectionTitle: String
+  sectionContent: String
+  sectionPictures: [PictureType!]
+}
+
+type LandingPagesTranslationContentType {
+  pageTitle: String!
+  pageDescription: String!
+  sectionData: [LandingPagesDataType!]!
+}
+
+type LandingPagesTranslationType {
+  language: LanguageType!
+  content: LandingPagesTranslationContentType!
 }
 
 type LandingPagesType {
@@ -5977,6 +6102,7 @@ type LandingPagesType {
   tags: [String!]
   seo: SeoComponentType
   sectionData: [LandingPagesDataType!]
+  translation: [LandingPagesTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -5996,32 +6122,10 @@ enum LandingPageTypeEnum {
   BLOG
 }
 
-type LandingPagesDataType {
-  sectionReference: String
-  sectionTitle: String
-  sectionContent: String
-  sectionPictures: [PictureType!]
-}
-
 type PaginatedLandingPagesType {
   count: Int
   isLast: Boolean
   objects: [LandingPagesType!]!
-}
-
-type SlidesType {
-  id: ID!
-  target: TargetType!
-  reference: String
-  visualType: SlideVisualTypeEnum
-  content: [SlidesContentType!]
-  createdAt: DateTime!
-  updatedAt: DateTime!
-}
-
-enum SlideVisualTypeEnum {
-  PICTURE
-  ICON
 }
 
 type SlidesContentType {
@@ -6030,6 +6134,27 @@ type SlidesContentType {
   title: String
   description: String
   calltoaction: String
+}
+
+type SlidesTranslationType {
+  language: LanguageType!
+  content: [SlidesContentType!]!
+}
+
+type SlidesType {
+  id: ID!
+  target: TargetType!
+  reference: String
+  visualType: SlideVisualTypeEnum
+  content: [SlidesContentType!]
+  translation: [SlidesTranslationType!]
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum SlideVisualTypeEnum {
+  PICTURE
+  ICON
 }
 
 type PaginatedSlidesType {
@@ -6091,6 +6216,19 @@ enum JobDefinitionSpecEnum {
   HOMEOFFICE
 }
 
+type JobDefinitionTranslationContentType {
+  title: String!
+  specs: [JobSpecsType!]
+  description: JobDescriptionType
+  responsibility: JobDescriptionType
+  offer: JobDescriptionType
+}
+
+type JobDefinitionTranslationType {
+  language: LanguageType!
+  content: JobDefinitionTranslationContentType!
+}
+
 type JobDefinitionBaseType {
   id: ID!
   title: String!
@@ -6100,6 +6238,7 @@ type JobDefinitionBaseType {
   description: JobDescriptionType
   responsibility: JobDescriptionType
   offer: JobDescriptionType
+  translation: [JobDefinitionTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
 }
@@ -6119,6 +6258,7 @@ type JobDefinitionType {
   description: JobDescriptionType
   responsibility: JobDescriptionType
   offer: JobDescriptionType
+  translation: [JobDefinitionTranslationType!]
   createdAt: DateTime!
   updatedAt: DateTime!
   target: TargetType!
@@ -8785,6 +8925,35 @@ type WidgetIntegrationType {
   active: Boolean
   content: WidgetIntegrationContentType
   actions: [WidgetIntegrationActionsType!]
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type WebsiteIntegrationMultilanguageLanguageType {
+  default: Boolean
+  language: LanguageType
+}
+
+type WebsiteIntegrationMultilanguageType {
+  active: Boolean
+  languages: WebsiteIntegrationMultilanguageLanguageType
+}
+
+type WebsiteIntegrationMulticurrencyCurrencyType {
+  default: Boolean
+  currency: CurrencyType
+}
+
+type WebsiteIntegrationMulticurrencyType {
+  active: Boolean
+  currencies: WebsiteIntegrationMulticurrencyCurrencyType
+}
+
+type WebsiteIntegrationType {
+  id: ID!
+  multilanguage: WebsiteIntegrationMultilanguageType
+  multicurrency: WebsiteIntegrationMulticurrencyType
   target: TargetType!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -11699,6 +11868,11 @@ type Query {
     pagination: PaginationInput = { page: 0, limit: 20 }
     target: TargetACIInput!
   ): ActivityTypeWithActiveStatusPaginateType!
+  getWebsiteIntegration: [WebsiteIntegrationType!]!
+  websiteIntegration(id: ID!): WebsiteIntegrationType!
+  getWebsiteIntegrationByTarget(
+    target: TargetACIInput!
+  ): WebsiteIntegrationType!
   findCounteryById(id: ID!): CountryType!
   getCountries: [CountryType!]!
   findCountriesPagination(
@@ -11764,6 +11938,21 @@ type Query {
   findCorporateTemplateByTarget(
     target: TargetACIInput!
   ): [CorporateTemplateType!]!
+  getStaticTranslation: [StaticTranslationType!]!
+  staticTranslation(id: ID!): StaticTranslationType!
+  getStaticTranslationsByTargetPaginated(
+    target: TargetACIInput!
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): StaticTranslationPaginateType!
+  getStaticTranslationsByTargetAndLanguagePaginated(
+    target: TargetACIInput!
+    language: ID!
+    pagination: PaginationInput = { page: 0, limit: 20 }
+  ): StaticTranslationPaginateType!
+  getStaticTranslationsByTargetAndLanguage(
+    target: TargetACIInput!
+    language: ID!
+  ): [StaticTranslationType!]!
   getPricesCalculations(
     input: CalculationsInput!
   ): InvoicingPricesCalculationType!
@@ -14394,6 +14583,11 @@ type Mutation {
     id: ID!
   ): WidgetIntegrationType!
   deleteWidgetIntegration(id: ID!): DeleteResponseDtoType!
+  updateWebsiteIntegration(
+    input: WebsiteIntegrationInput!
+    id: ID!
+  ): WebsiteIntegrationType!
+  deleteWebsiteIntegration(id: ID!): DeleteResponseDtoType!
   createCountry(input: CountryInput!): CountryType!
   updateCountry(input: CountryInput!, id: ID!): CountryType!
   deleteCountry(id: ID!): DeleteResponseDtoType!
@@ -14449,6 +14643,14 @@ type Mutation {
     hostname: String!
   ): CorporateTemplateType!
   deleteCorporateTemplate(id: ID!): DeleteResponseDtoType!
+  createStaticTranslation(
+    input: StaticTranslationInput!
+  ): StaticTranslationType!
+  updateStaticTranslation(
+    input: StaticTranslationInput!
+    id: ID!
+  ): StaticTranslationType!
+  deleteStaticTranslation(id: ID!): DeleteResponseDtoType!
   importInvoicingByExcel(
     # base64 string from excel file.
     base64: String
@@ -14725,7 +14927,13 @@ input CorporateEmailTemplateInput {
   content: String
   icon: String
   color: String
+  translation: [CorporateEmailTemplateTranslationInput!]
   target: TargetACIInput
+}
+
+input CorporateEmailTemplateTranslationInput {
+  language: ID!
+  content: String!
 }
 
 input UserInput {
@@ -15041,6 +15249,7 @@ input BarcodeUpdateInput {
   pixel: PixelBarcodeInput
   priceList: [ProductPriceListInput!]
   taxes: [ProductTaxesInput!]
+  translation: [BarcodeTranslationInput!]
   supplier: ID
   id: ID!
 }
@@ -15073,6 +15282,15 @@ input PixelBarcodeInput {
 input ProductPriceListInput {
   price: ID!
   value: String
+}
+
+input BarcodeTranslationInput {
+  language: ID!
+  content: BarcodeTranslationContentInput!
+}
+
+input BarcodeTranslationContentInput {
+  name: String!
 }
 
 input UpdateMediaInput {
@@ -15274,6 +15492,7 @@ input CatalogueCategoryInput {
   pictures: [PictureInput!]
   seo: CatalogueCategorySeoInput
   variety: ProductVarietyEnum
+  translation: [CatalogueCategoryTranslationInput!]
   name: String!
   target: TargetACIInput!
   layer: Int!
@@ -15291,6 +15510,16 @@ input MetaKeywordsInput {
   content: String
 }
 
+input CatalogueCategoryTranslationInput {
+  language: ID!
+  content: CatalogueCategoryTranslationContentInput!
+}
+
+input CatalogueCategoryTranslationContentInput {
+  name: String!
+  description: String!
+}
+
 input CatalogueCategoryBulkInput {
   portal: Boolean
   pickup: Boolean
@@ -15302,6 +15531,7 @@ input CatalogueCategoryBulkInput {
   pictures: [PictureInput!]
   seo: CatalogueCategorySeoInput
   variety: ProductVarietyEnum
+  translation: [CatalogueCategoryTranslationInput!]
   name: String!
   hasChildren: Boolean!
   target: TargetACIInput!
@@ -15320,6 +15550,7 @@ input CatalogueCategoryUpdateInput {
   pictures: [PictureInput!]
   seo: CatalogueCategorySeoInput
   variety: ProductVarietyEnum
+  translation: [CatalogueCategoryTranslationInput!]
   id: ID!
   name: String
   layer: Int
@@ -15443,11 +15674,21 @@ input AttributeCreateInput {
   isMultipleChoice: Boolean
   pixel: AttributePixelInput
   variety: ProductVarietyEnum
+  translation: [AttributeTranslationInput!]
   target: TargetACIInput
 }
 
 input AttributePixelInput {
   pixelAttribute: String
+}
+
+input AttributeTranslationInput {
+  language: ID!
+  content: AttributeTranslationContentInput!
+}
+
+input AttributeTranslationContentInput {
+  label: String!
 }
 
 input AttributeUpdateInput {
@@ -15456,6 +15697,7 @@ input AttributeUpdateInput {
   isMultipleChoice: Boolean
   pixel: AttributePixelInput
   variety: ProductVarietyEnum
+  translation: [AttributeTranslationInput!]
   id: ID!
 }
 
@@ -15464,11 +15706,22 @@ input AttributeValueInput {
   externalId: String!
   target: TargetACIInput!
   attribute: ID!
+  translation: [AttributeValueTranslationInput!]
+}
+
+input AttributeValueTranslationInput {
+  language: ID!
+  content: AttributeValueTranslationContentInput!
+}
+
+input AttributeValueTranslationContentInput {
+  label: String!
 }
 
 input AttributeValueUpdateInput {
   label: String
   attribute: ID
+  translation: [AttributeValueTranslationInput!]
   id: ID!
 }
 
@@ -15507,6 +15760,7 @@ input BarcodeInput {
   pixel: PixelBarcodeInput
   priceList: [ProductPriceListInput!]
   taxes: [ProductTaxesInput!]
+  translation: [BarcodeTranslationInput!]
   supplier: ID
 }
 
@@ -15526,6 +15780,7 @@ input CreateSimpleProductInput {
   discount: DiscountDtoInput
   sku: String
   seo: CatalogueCategorySeoInput
+  translation: [InternalProductTranslationInput!]
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -15537,6 +15792,18 @@ input CreateSimpleProductInput {
   target: TargetACIInput!
   catalogueCategory: [String!]
   globalCategory: GlobalCategoryInput
+}
+
+input InternalProductTranslationInput {
+  language: ID!
+  content: InternalProductTranslationContentInput!
+}
+
+input InternalProductTranslationContentInput {
+  name: String!
+  description: String!
+  descriptionList: [String!]
+  specs: [ProductSpecsInput!]
 }
 
 input GlobalCategoryInput {
@@ -15560,6 +15827,7 @@ input UpdateSimpleProductInput {
   discount: DiscountDtoInput
   sku: String
   seo: CatalogueCategorySeoInput
+  translation: [InternalProductTranslationInput!]
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -15589,6 +15857,7 @@ input CreateInternalProductInput {
   discount: DiscountDtoInput
   sku: String
   seo: CatalogueCategorySeoInput
+  translation: [InternalProductTranslationInput!]
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -15633,6 +15902,7 @@ input CreateCustomInternalProductInput {
   discount: DiscountDtoInput
   sku: String
   seo: CatalogueCategorySeoInput
+  translation: [InternalProductTranslationInput!]
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -15668,6 +15938,7 @@ input UpdateInternalProductInput {
   discount: DiscountDtoInput
   sku: String
   seo: CatalogueCategorySeoInput
+  translation: [InternalProductTranslationInput!]
   brand: String
   picture: PictureInput
   pictures: [PictureInput!]
@@ -16022,6 +16293,7 @@ input LandingPagesInput {
   tags: [String!]
   seo: SeoComponentInput
   sectionData: [LandingPagesDataInput!]
+  translation: [LandingPagesTranslationInput!]
 }
 
 input SeoComponentInput {
@@ -16037,6 +16309,17 @@ input LandingPagesDataInput {
   sectionPictures: [PictureInput!]
 }
 
+input LandingPagesTranslationInput {
+  language: ID!
+  content: LandingPagesTranslationContentInput!
+}
+
+input LandingPagesTranslationContentInput {
+  pageTitle: String!
+  pageDescription: String!
+  sectionData: [LandingPagesDataInput!]!
+}
+
 input UpdateLandingPagesInput {
   pageType: LandingPageTypeEnum
   pageReference: String
@@ -16046,6 +16329,7 @@ input UpdateLandingPagesInput {
   tags: [String!]
   seo: SeoComponentInput
   sectionData: [LandingPagesDataInput!]
+  translation: [LandingPagesTranslationInput!]
 }
 
 input SlidesInput {
@@ -16053,6 +16337,7 @@ input SlidesInput {
   reference: String
   visualType: SlideVisualTypeEnum
   content: [SlidesContentInput!]
+  translation: [SlidesTranslationInput!]
 }
 
 input SlidesContentInput {
@@ -16063,10 +16348,16 @@ input SlidesContentInput {
   calltoaction: String
 }
 
+input SlidesTranslationInput {
+  language: ID!
+  content: [SlidesContentInput!]!
+}
+
 input UpdateSlidesInput {
   reference: String
   visualType: SlideVisualTypeEnum
   content: [SlidesContentInput!]
+  translation: [SlidesTranslationInput!]
 }
 
 input BlogInput {
@@ -16077,6 +16368,7 @@ input BlogInput {
   seo: SeoComponentInput
   pictures: [PictureInput!]
   sectionData: [BlogDataInput!]
+  translation: [BlogTranslationInput!]
 }
 
 input BlogDataInput {
@@ -16086,6 +16378,16 @@ input BlogDataInput {
   sectionPictures: [PictureInput!]
 }
 
+input BlogTranslationInput {
+  language: ID!
+  content: BlogTranslationContentInput!
+}
+
+input BlogTranslationContentInput {
+  title: String!
+  sectionData: [BlogDataInput!]!
+}
+
 input UpdateBlogInput {
   title: String
   url: String
@@ -16093,6 +16395,7 @@ input UpdateBlogInput {
   seo: SeoComponentInput
   pictures: [PictureInput!]
   sectionData: [BlogDataInput!]
+  translation: [BlogTranslationInput!]
 }
 
 input CouponInput {
@@ -16267,6 +16570,7 @@ input JobDefinitionInput {
   description: JobDescriptionInput
   responsibility: JobDescriptionInput
   offer: JobDescriptionInput
+  translation: [JobDefinitionTranslationInput!]
   target: TargetACIInput!
 }
 
@@ -16280,6 +16584,19 @@ input JobDescriptionInput {
   descriptionList: [String!]!
 }
 
+input JobDefinitionTranslationInput {
+  language: ID!
+  content: JobDefinitionTranslationContentInput!
+}
+
+input JobDefinitionTranslationContentInput {
+  title: String!
+  specs: [JobSpecsInput!]
+  description: JobDescriptionInput
+  responsibility: JobDescriptionInput
+  offer: JobDescriptionInput
+}
+
 input JobDefinitionUpdateInput {
   title: String
   status: JobDefinitionStatusEnum
@@ -16288,6 +16605,7 @@ input JobDefinitionUpdateInput {
   description: JobDescriptionInput
   responsibility: JobDescriptionInput
   offer: JobDescriptionInput
+  translation: [JobDefinitionTranslationInput!]
 }
 
 input JobApplicationInput {
@@ -17339,6 +17657,32 @@ input WidgetIntegrationActionsBaseInput {
   activity: PredefinedActionsEnum!
 }
 
+input WebsiteIntegrationInput {
+  multilanguage: WebsiteIntegrationMultilanguageInput
+  multicurrency: WebsiteIntegrationMulticurrencyInput
+  target: TargetACIInput
+}
+
+input WebsiteIntegrationMultilanguageInput {
+  active: Boolean
+  languages: WebsiteIntegrationMultilanguageLanguageInput
+}
+
+input WebsiteIntegrationMultilanguageLanguageInput {
+  default: Boolean
+  language: ID
+}
+
+input WebsiteIntegrationMulticurrencyInput {
+  active: Boolean
+  currencies: WebsiteIntegrationMulticurrencyCurrencyInput
+}
+
+input WebsiteIntegrationMulticurrencyCurrencyInput {
+  default: Boolean
+  currency: ID
+}
+
 input CountryInput {
   name: String!
   code: String
@@ -17583,6 +17927,13 @@ input OSLogoPngInput {
 input CorporateTemplateInput {
   name: CorporateTemplateTypeEnum!
   content: String!
+  target: TargetACIInput!
+}
+
+input StaticTranslationInput {
+  reference: String!
+  content: String!
+  language: ID!
   target: TargetACIInput!
 }
 
