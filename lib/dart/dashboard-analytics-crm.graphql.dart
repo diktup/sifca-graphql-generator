@@ -4,7 +4,7 @@ import 'package:artemis/artemis.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:equatable/equatable.dart';
 import 'package:gql/ast.dart';
-part 'crm.graphql.g.dart';
+part 'dashboard-analytics-crm.graphql.g.dart';
 
 @JsonSerializable(explicitToJson: true)
 class GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoType
@@ -17,17 +17,17 @@ class GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoType
 
   double? sent;
 
-  double? annualProfit;
+  String? totalProfit;
 
-  double? leadConversion;
+  String? leadConversion;
 
-  double? dailyIncome;
+  String? dailyIncome;
 
-  double? annualDeals;
+  double? totalDeals;
 
   @override
   List<Object?> get props =>
-      [sent, annualProfit, leadConversion, dailyIncome, annualDeals];
+      [sent, totalProfit, leadConversion, dailyIncome, totalDeals];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -161,7 +161,7 @@ class GetCrmAnalyticsDealType$Query$CrmAnalyticsDealTypeType
   @JsonKey(name: 'class')
   double? kw$class;
 
-  double? value;
+  int? value;
 
   @override
   List<Object?> get props => [year, kw$class, value];
@@ -202,7 +202,7 @@ class GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType$CrmAn
   @JsonKey(unknownEnumValue: CrmKindEnum.artemisUnknown)
   CrmKindEnum? kind;
 
-  List<double>? data;
+  List<String>? data;
 
   @override
   List<Object?> get props => [kind, data];
@@ -223,17 +223,17 @@ class GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType
       _$GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewTypeFromJson(
           json);
 
-  double? revenue;
+  String? revenue;
 
-  double? expense;
+  String? pending;
 
-  double? profit;
+  String? conversionRate;
 
   List<GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType$CrmAnalyticsBalanceOverviewChartType>?
       chart;
 
   @override
-  List<Object?> get props => [revenue, expense, profit, chart];
+  List<Object?> get props => [revenue, pending, conversionRate, chart];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -261,11 +261,38 @@ class GetCrmAnalyticsBalanceOverview$Query extends JsonSerializable
       _$GetCrmAnalyticsBalanceOverview$QueryToJson(this);
 }
 
+@JsonSerializable(explicitToJson: true)
+class CRMDashboardInput extends JsonSerializable with EquatableMixin {
+  CRMDashboardInput({
+    required this.to,
+    required this.from,
+    this.target,
+    this.year,
+  });
+
+  factory CRMDashboardInput.fromJson(Map<String, dynamic> json) =>
+      _$CRMDashboardInputFromJson(json);
+
+  late DateTime to;
+
+  late DateTime from;
+
+  TargetACIInput? target;
+
+  int? year;
+
+  @override
+  List<Object?> get props => [to, from, target, year];
+
+  @override
+  Map<String, dynamic> toJson() => _$CRMDashboardInputToJson(this);
+}
+
 enum CrmKindEnum {
   @JsonValue('REVENUE')
   revenue,
-  @JsonValue('EXPENSE')
-  expense,
+  @JsonValue('PENDING')
+  pending,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -326,7 +353,7 @@ final GET_CRM_ANALYTICS_STATS_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'annualProfit'),
+            name: NameNode(value: 'totalProfit'),
             alias: null,
             arguments: [],
             directives: [],
@@ -347,7 +374,7 @@ final GET_CRM_ANALYTICS_STATS_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'annualDeals'),
+            name: NameNode(value: 'totalDeals'),
             alias: null,
             arguments: [],
             directives: [],
@@ -590,7 +617,7 @@ class GetCrmAnalyticsBalanceOverviewArguments extends JsonSerializable
           Map<String, dynamic> json) =>
       _$GetCrmAnalyticsBalanceOverviewArgumentsFromJson(json);
 
-  late AnalyticsDashboardInput input;
+  late CRMDashboardInput input;
 
   @override
   List<Object?> get props => [input];
@@ -611,7 +638,7 @@ final GET_CRM_ANALYTICS_BALANCE_OVERVIEW_QUERY_DOCUMENT =
       VariableDefinitionNode(
         variable: VariableNode(name: NameNode(value: 'input')),
         type: NamedTypeNode(
-          name: NameNode(value: 'AnalyticsDashboardInput'),
+          name: NameNode(value: 'CRMDashboardInput'),
           isNonNull: true,
         ),
         defaultValue: DefaultValueNode(value: null),
@@ -639,14 +666,14 @@ final GET_CRM_ANALYTICS_BALANCE_OVERVIEW_QUERY_DOCUMENT =
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'expense'),
+            name: NameNode(value: 'pending'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: null,
           ),
           FieldNode(
-            name: NameNode(value: 'profit'),
+            name: NameNode(value: 'conversionRate'),
             alias: null,
             arguments: [],
             directives: [],

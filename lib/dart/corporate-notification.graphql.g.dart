@@ -178,6 +178,7 @@ CorporateNotificationInput _$CorporateNotificationInputFromJson(
       picture: json['picture'] == null
           ? null
           : PictureInput.fromJson(json['picture'] as Map<String, dynamic>),
+      audience: json['audience'] as String?,
       target: TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
       executedAt: json['executedAt'] == null
           ? null
@@ -199,6 +200,7 @@ Map<String, dynamic> _$CorporateNotificationInputToJson(
   writeNotNull('userIds', instance.userIds);
   val['description'] = instance.description;
   writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('audience', instance.audience);
   val['target'] = instance.target.toJson();
   writeNotNull('executedAt', instance.executedAt?.toIso8601String());
   return val;

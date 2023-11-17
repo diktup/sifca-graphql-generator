@@ -141,6 +141,7 @@ class CorporateNotificationInput extends JsonSerializable with EquatableMixin {
     this.userIds,
     required this.description,
     this.picture,
+    this.audience,
     required this.target,
     this.executedAt,
   });
@@ -156,13 +157,15 @@ class CorporateNotificationInput extends JsonSerializable with EquatableMixin {
 
   PictureInput? picture;
 
+  String? audience;
+
   late TargetACIInput target;
 
   DateTime? executedAt;
 
   @override
   List<Object?> get props =>
-      [title, userIds, description, picture, target, executedAt];
+      [title, userIds, description, picture, audience, target, executedAt];
 
   @override
   Map<String, dynamic> toJson() => _$CorporateNotificationInputToJson(this);

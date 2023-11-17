@@ -1,10 +1,10 @@
 query getCrmAnalyticsStats($input: AnalyticsDashboardInput!) {
   getCrmAnalyticsStats(input: $input) {
     sent
-    annualProfit
+    totalProfit
     leadConversion
     dailyIncome
-    annualDeals
+    totalDeals
   }
 }
 query getCrmAnalyticsSalesForecast($input: AnalyticsDashboardInput!) {
@@ -21,11 +21,11 @@ query getCrmAnalyticsDealType($input: AnalyticsDashboardInput!) {
     value
   }
 }
-query getCrmAnalyticsBalanceOverview($input: AnalyticsDashboardInput!) {
+query getCrmAnalyticsBalanceOverview($input: CRMDashboardInput!) {
   getCrmAnalyticsBalanceOverview(input: $input) {
     revenue
-    expense
-    profit
+    pending
+    conversionRate
     chart {
       kind
       data

@@ -7,10 +7,10 @@ GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoType
             Map<String, dynamic> json) =>
         GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoType()
           ..sent = (json['sent'] as num?)?.toDouble()
-          ..annualProfit = (json['annualProfit'] as num?)?.toDouble()
-          ..leadConversion = (json['leadConversion'] as num?)?.toDouble()
-          ..dailyIncome = (json['dailyIncome'] as num?)?.toDouble()
-          ..annualDeals = (json['annualDeals'] as num?)?.toDouble();
+          ..totalProfit = json['totalProfit'] as String?
+          ..leadConversion = json['leadConversion'] as String?
+          ..dailyIncome = json['dailyIncome'] as String?
+          ..totalDeals = (json['totalDeals'] as num?)?.toDouble();
 
 Map<String, dynamic>
     _$GetCrmAnalyticsStats$Query$CrmAnalyticsStatsInfoTypeToJson(
@@ -24,10 +24,10 @@ Map<String, dynamic>
   }
 
   writeNotNull('sent', instance.sent);
-  writeNotNull('annualProfit', instance.annualProfit);
+  writeNotNull('totalProfit', instance.totalProfit);
   writeNotNull('leadConversion', instance.leadConversion);
   writeNotNull('dailyIncome', instance.dailyIncome);
-  writeNotNull('annualDeals', instance.annualDeals);
+  writeNotNull('totalDeals', instance.totalDeals);
   return val;
 }
 
@@ -142,7 +142,7 @@ GetCrmAnalyticsDealType$Query$CrmAnalyticsDealTypeType
         GetCrmAnalyticsDealType$Query$CrmAnalyticsDealTypeType()
           ..year = (json['year'] as num?)?.toDouble()
           ..kw$class = (json['class'] as num?)?.toDouble()
-          ..value = (json['value'] as num?)?.toDouble();
+          ..value = json['value'] as int?;
 
 Map<String, dynamic>
     _$GetCrmAnalyticsDealType$Query$CrmAnalyticsDealTypeTypeToJson(
@@ -185,7 +185,7 @@ GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType$CrmAnalytic
           ..kind = $enumDecodeNullable(_$CrmKindEnumEnumMap, json['kind'],
               unknownValue: CrmKindEnum.artemisUnknown)
           ..data = (json['data'] as List<dynamic>?)
-              ?.map((e) => (e as num).toDouble())
+              ?.map((e) => e as String)
               .toList();
 
 Map<String, dynamic>
@@ -207,7 +207,7 @@ Map<String, dynamic>
 
 const _$CrmKindEnumEnumMap = {
   CrmKindEnum.revenue: 'REVENUE',
-  CrmKindEnum.expense: 'EXPENSE',
+  CrmKindEnum.pending: 'PENDING',
   CrmKindEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
 };
 
@@ -215,9 +215,9 @@ GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType
     _$GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewTypeFromJson(
             Map<String, dynamic> json) =>
         GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType()
-          ..revenue = (json['revenue'] as num?)?.toDouble()
-          ..expense = (json['expense'] as num?)?.toDouble()
-          ..profit = (json['profit'] as num?)?.toDouble()
+          ..revenue = json['revenue'] as String?
+          ..pending = json['pending'] as String?
+          ..conversionRate = json['conversionRate'] as String?
           ..chart = (json['chart'] as List<dynamic>?)
               ?.map((e) =>
                   GetCrmAnalyticsBalanceOverview$Query$CrmAnalyticsBalanceOverviewType$CrmAnalyticsBalanceOverviewChartType
@@ -237,8 +237,8 @@ Map<String, dynamic>
   }
 
   writeNotNull('revenue', instance.revenue);
-  writeNotNull('expense', instance.expense);
-  writeNotNull('profit', instance.profit);
+  writeNotNull('pending', instance.pending);
+  writeNotNull('conversionRate', instance.conversionRate);
   writeNotNull('chart', instance.chart?.map((e) => e.toJson()).toList());
   return val;
 }
@@ -257,6 +257,33 @@ Map<String, dynamic> _$GetCrmAnalyticsBalanceOverview$QueryToJson(
       'getCrmAnalyticsBalanceOverview':
           instance.getCrmAnalyticsBalanceOverview.toJson(),
     };
+
+CRMDashboardInput _$CRMDashboardInputFromJson(Map<String, dynamic> json) =>
+    CRMDashboardInput(
+      to: DateTime.parse(json['to'] as String),
+      from: DateTime.parse(json['from'] as String),
+      target: json['target'] == null
+          ? null
+          : TargetACIInput.fromJson(json['target'] as Map<String, dynamic>),
+      year: json['year'] as int?,
+    );
+
+Map<String, dynamic> _$CRMDashboardInputToJson(CRMDashboardInput instance) {
+  final val = <String, dynamic>{
+    'to': instance.to.toIso8601String(),
+    'from': instance.from.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', instance.target?.toJson());
+  writeNotNull('year', instance.year);
+  return val;
+}
 
 GetCrmAnalyticsStatsArguments _$GetCrmAnalyticsStatsArgumentsFromJson(
         Map<String, dynamic> json) =>
@@ -302,8 +329,8 @@ GetCrmAnalyticsBalanceOverviewArguments
     _$GetCrmAnalyticsBalanceOverviewArgumentsFromJson(
             Map<String, dynamic> json) =>
         GetCrmAnalyticsBalanceOverviewArguments(
-          input: AnalyticsDashboardInput.fromJson(
-              json['input'] as Map<String, dynamic>),
+          input:
+              CRMDashboardInput.fromJson(json['input'] as Map<String, dynamic>),
         );
 
 Map<String, dynamic> _$GetCrmAnalyticsBalanceOverviewArgumentsToJson(

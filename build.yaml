@@ -186,8 +186,8 @@ targets:
               queries_glob: lib/graphql/collaboration.graphql
               output: lib/dart/collaboration.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/crm.graphql
-              output: lib/dart/crm.graphql.dart
+              queries_glob: lib/graphql/dashboard-analytics-crm.graphql
+              output: lib/dart/dashboard-analytics-crm.graphql.dart
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/ecommerce.graphql
               output: lib/dart/ecommerce.graphql.dart

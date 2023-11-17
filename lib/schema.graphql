@@ -5728,81 +5728,6 @@ type MarketPlaceProductFilterType {
   targets: TargetsType
 }
 
-type AdhocCorporateNotificationType {
-  title: String
-  executed: Boolean
-  executedAt: DateTime
-  description: String
-  picture: PictureType
-}
-
-type CorporateNotificationOnsiteConverterType {
-  qualitativeAmountPushed: String
-  quantitativeAmountPushed: String
-}
-
-type CorporateActionType {
-  reputationLoss: Float
-  internalProduct: String
-  onsite: CorporateNotificationOnsiteConverterType
-  adhocNotification: AdhocCorporateNotificationType
-  booking: BookingType
-  subscription: String
-  order: String
-  adhocOrder: String
-  table: String
-  quest: String
-  activity: String
-}
-
-type CorporateNotificationType {
-  id: ID!
-  event: EventTypeEnum
-  seen: Boolean
-  executed: Boolean
-  executedAt: DateTime
-  user: UserType
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  action: CorporateActionType
-}
-
-type AdhocCorporateNotificationTestType {
-  event: EventTypeEnum
-  executed: Boolean
-  executedAt: DateTime
-  seen: Boolean
-  action: CorporateActionType
-}
-
-type UnseenCorporateNotificationCountType {
-  count: Int!
-}
-
-type CorporateNotificationFullType {
-  id: ID!
-  event: EventTypeEnum
-  seen: Boolean
-  executed: Boolean
-  executedAt: DateTime
-  user: UserType
-  target: TargetType!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  action: CorporateActionType
-}
-
-type CorporateNotificationPaginateType {
-  count: Int
-  isLast: Boolean
-  objects: [CorporateNotificationType!]!
-}
-
-type CorporateNotificationResponse {
-  success: Boolean!
-}
-
 type AnalyticsStatsInfoType {
   value: String!
   percentage: String!
@@ -5901,10 +5826,10 @@ type AnalyticsTopPagesType {
 
 type CrmAnalyticsStatsInfoType {
   sent: Float
-  annualProfit: Float
-  leadConversion: Float
-  dailyIncome: Float
-  annualDeals: Float
+  totalProfit: String
+  leadConversion: String
+  dailyIncome: String
+  totalDeals: Float
 }
 
 type CrmAnalyticsSalesForecastType {
@@ -5916,23 +5841,23 @@ type CrmAnalyticsSalesForecastType {
 type CrmAnalyticsDealTypeType {
   year: Float
   class: Float
-  value: Float
+  value: Int
 }
 
 type CrmAnalyticsBalanceOverviewChartType {
   kind: CrmKindEnum
-  data: [Float!]
+  data: [String!]
 }
 
 enum CrmKindEnum {
   REVENUE
-  EXPENSE
+  PENDING
 }
 
 type CrmAnalyticsBalanceOverviewType {
-  revenue: Float
-  expense: Float
-  profit: Float
+  revenue: String
+  pending: String
+  conversionRate: String
   chart: [CrmAnalyticsBalanceOverviewChartType!]
 }
 
@@ -9408,6 +9333,83 @@ type ChallengeActionPaginateType {
   objects: [ChallengeActionType!]!
 }
 
+type AdhocCorporateNotificationType {
+  title: String
+  executed: Boolean
+  executedAt: DateTime
+  description: String
+  picture: PictureType
+}
+
+type CorporateNotificationType {
+  id: ID!
+  event: EventTypeEnum
+  seen: Boolean
+  executed: Boolean
+  executedAt: DateTime
+  user: UserType
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  action: CorporateActionType
+}
+
+type AdhocCorporateNotificationTestType {
+  event: EventTypeEnum
+  executed: Boolean
+  executedAt: DateTime
+  seen: Boolean
+  action: CorporateActionType
+}
+
+type UnseenCorporateNotificationCountType {
+  count: Int!
+}
+
+type CorporateNotificationFullType {
+  id: ID!
+  event: EventTypeEnum
+  seen: Boolean
+  executed: Boolean
+  executedAt: DateTime
+  user: UserType
+  audience: AudienceType
+  target: TargetType!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  action: CorporateActionType
+}
+
+type CorporateNotificationPaginateType {
+  count: Int
+  isLast: Boolean
+  objects: [CorporateNotificationType!]!
+}
+
+type CorporateNotificationResponse {
+  success: Boolean!
+}
+
+type CorporateNotificationOnsiteConverterType {
+  qualitativeAmountPushed: String
+  quantitativeAmountPushed: String
+}
+
+type CorporateActionType {
+  reputationLoss: Float
+  internalProduct: String
+  onsite: CorporateNotificationOnsiteConverterType
+  adhocNotification: AdhocCorporateNotificationType
+  booking: BookingType
+  subscription: String
+  order: String
+  adhocOrder: String
+  table: String
+  quest: String
+  activity: String
+}
+
 type LabelType {
   id: ID!
   name: String!
@@ -12385,7 +12387,7 @@ type Query {
     input: AnalyticsDashboardInput!
   ): [CrmAnalyticsDealTypeType!]!
   getCrmAnalyticsBalanceOverview(
-    input: AnalyticsDashboardInput!
+    input: CRMDashboardInput!
   ): CrmAnalyticsBalanceOverviewType!
   getEcommerceAnalyticsStats(
     input: AnalyticsDashboardInput!
@@ -12795,6 +12797,7 @@ input CorporateNotificationInput {
   userIds: [ID!]
   description: String!
   picture: PictureInput
+  audience: ID
   target: TargetACIInput!
   executedAt: DateTime
 }
@@ -12919,7 +12922,7 @@ input QuestActionActionInput {
   rating: QuestActionActionContentInput
   calculated: QuestActionActionContentBaseInput
   date: QuestActionActionContentBaseInput
-  contact: QuestActionActionContentBaseInput
+  contact: QuestActionActionContactInput
   number: QuestActionActionNumberInput
   api: QuestActionActionApiInput
   matrix: QuestActionActionContentInput
@@ -12941,6 +12944,47 @@ input QuestActionActionContentBaseInput {
 input QuestActionActionContentInput {
   content: String
   value: Int
+}
+
+input QuestActionActionContactInput {
+  firstname: String
+  lastname: String
+  email: String
+  phone: String
+  description: String
+  address: FullAddressInput
+  birthday: DateTime
+  gender: Gender
+  civility: MaritalStatus
+  profession: String
+  academicLevel: AcademicLevel
+  language: [ID!]
+}
+
+input FullAddressInput {
+  owner: FullAddressOwnerInput
+  address: String
+  postCode: String
+  city: String
+  country: ID
+  state: ID
+  addressLine: String
+  location: LonLatInput
+}
+
+input FullAddressOwnerInput {
+  name: String
+  phone: FullAddressOwnerPhoneInput
+}
+
+input FullAddressOwnerPhoneInput {
+  number: String
+  countryCode: String
+}
+
+input LonLatInput {
+  type: String!
+  coordinates: [Float!]!
 }
 
 input QuestActionActionNumberInput {
@@ -13002,11 +13046,6 @@ input ResponseFilterInput {
   users: [String!]
   forms: [String!]
   executors: [String!]
-}
-
-input LonLatInput {
-  type: String!
-  coordinates: [Float!]!
 }
 
 input CartProductInput {
@@ -13496,6 +13535,13 @@ input AnalyticsDashboardInput {
   to: DateTime!
   from: DateTime!
   target: TargetACIInput
+}
+
+input CRMDashboardInput {
+  to: DateTime!
+  from: DateTime!
+  target: TargetACIInput
+  year: Int = 2023
 }
 
 type Mutation {
@@ -15000,27 +15046,6 @@ input UserWorkInput {
 input SocialValueInput {
   name: ID!
   value: String!
-}
-
-input FullAddressInput {
-  owner: FullAddressOwnerInput
-  address: String
-  postCode: String
-  city: String
-  country: ID
-  state: ID
-  addressLine: String
-  location: LonLatInput
-}
-
-input FullAddressOwnerInput {
-  name: String
-  phone: FullAddressOwnerPhoneInput
-}
-
-input FullAddressOwnerPhoneInput {
-  number: String
-  countryCode: String
 }
 
 input UserWithTargetInput {
