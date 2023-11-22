@@ -1,0 +1,156 @@
+query findCurrencyById($id: ID!) {
+  findCurrencyById(id: $id) {
+    id
+    name
+    code
+    symbol
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+query getCurrencies {
+  getCurrencies {
+    id
+    name
+    code
+    symbol
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+query findCurrenciesPagination($pagination: PaginationInput) {
+  findCurrenciesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      symbol
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+  }
+}
+
+mutation createCurrency($input: CurrencyInput!) {
+  createCurrency(input: $input) {
+    id
+    name
+    code
+    symbol
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+mutation updateCurrency($id: ID!, $input: CurrencyInput!) {
+  updateCurrency(id: $id, input: $input) {
+    id
+    name
+    code
+    symbol
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+mutation deleteCurrency($id: ID!) {
+  deleteCurrency(id: $id) {
+    success
+    message
+  }
+}

@@ -245,3 +245,9 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/collaboration-time-track.graphql
               output: lib/dart/collaboration-time-track.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/models-modules-currency.graphql
+              output: lib/dart/models-modules-currency.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/models-modules-language.graphql
+              output: lib/dart/models-modules-language.graphql.dart

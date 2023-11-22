@@ -1,0 +1,151 @@
+query getLanguages {
+  getLanguages {
+    id
+    name
+    code
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+query findLanguageById($id: ID!) {
+  findLanguageById(id: $id) {
+    id
+    name
+    code
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+query findlanguagesPagination($pagination: PaginationInput) {
+  findlanguagesPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+  }
+}
+
+mutation createLanguage($input: LanguageInput!) {
+  createLanguage(input: $input) {
+    id
+    name
+    code
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+mutation updateLanguage($id: ID!, $input: LanguageInput!) {
+  updateLanguage(id: $id, input: $input) {
+    id
+    name
+    code
+    iconFlag
+    createdAt
+    updatedAt
+    flagSquare {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    flagWide {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}
+mutation deleteLanguage($id: ID!) {
+  deleteLanguage(id: $id) {
+    success
+    message
+  }
+}
