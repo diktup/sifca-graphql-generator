@@ -26,86 +26,6 @@ class GetStocks$Query$StockType$StockPixelType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetStocks$Query$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetStocks$Query$StockType$TargetType$PointOfSaleType();
-
-  factory GetStocks$Query$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocks$Query$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocks$Query$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocks$Query$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetStocks$Query$StockType$TargetType$WholesalerType();
-
-  factory GetStocks$Query$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocks$Query$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocks$Query$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocks$Query$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetStocks$Query$StockType$TargetType$ManufacturerType();
-
-  factory GetStocks$Query$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocks$Query$StockType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocks$Query$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocks$Query$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  GetStocks$Query$StockType$TargetType();
-
-  factory GetStocks$Query$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocks$Query$StockType$TargetTypeFromJson(json);
-
-  GetStocks$Query$StockType$TargetType$PointOfSaleType? pos;
-
-  GetStocks$Query$StockType$TargetType$WholesalerType? wholesaler;
-
-  GetStocks$Query$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocks$Query$StockType$TargetTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class GetStocks$Query$StockType$WarehouseType$MediaType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetStocks$Query$StockType$WarehouseType$MediaType$PictureType();
@@ -2031,8 +1951,6 @@ class GetStocks$Query$StockType extends JsonSerializable with EquatableMixin {
 
   GetStocks$Query$StockType$StockPixelType? pixel;
 
-  late GetStocks$Query$StockType$TargetType target;
-
   GetStocks$Query$StockType$WarehouseType? warehouse;
 
   late GetStocks$Query$StockType$BarcodeType barcode;
@@ -2048,7 +1966,6 @@ class GetStocks$Query$StockType extends JsonSerializable with EquatableMixin {
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -2180,86 +2097,6 @@ class GetStock$Query$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$GetStock$Query$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStock$Query$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetStock$Query$StockType$TargetType$PointOfSaleType();
-
-  factory GetStock$Query$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStock$Query$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStock$Query$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStock$Query$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetStock$Query$StockType$TargetType$WholesalerType();
-
-  factory GetStock$Query$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStock$Query$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStock$Query$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStock$Query$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetStock$Query$StockType$TargetType$ManufacturerType();
-
-  factory GetStock$Query$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStock$Query$StockType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStock$Query$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStock$Query$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  GetStock$Query$StockType$TargetType();
-
-  factory GetStock$Query$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStock$Query$StockType$TargetTypeFromJson(json);
-
-  GetStock$Query$StockType$TargetType$PointOfSaleType? pos;
-
-  GetStock$Query$StockType$TargetType$WholesalerType? wholesaler;
-
-  GetStock$Query$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStock$Query$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -4188,8 +4025,6 @@ class GetStock$Query$StockType extends JsonSerializable with EquatableMixin {
 
   GetStock$Query$StockType$StockPixelType? pixel;
 
-  late GetStock$Query$StockType$TargetType target;
-
   GetStock$Query$StockType$WarehouseType? warehouse;
 
   late GetStock$Query$StockType$BarcodeType barcode;
@@ -4205,7 +4040,6 @@ class GetStock$Query$StockType extends JsonSerializable with EquatableMixin {
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -4248,97 +4082,6 @@ class GetStocksByTarget$Query$StockPaginateType$StockType$StockPixelType
   @override
   Map<String, dynamic> toJson() =>
       _$GetStocksByTarget$Query$StockPaginateType$StockType$StockPixelTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType();
-
-  factory GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType();
-
-  factory GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType();
-
-  factory GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetStocksByTarget$Query$StockPaginateType$StockType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType();
-
-  factory GetStocksByTarget$Query$StockPaginateType$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetTypeFromJson(
-          json);
-
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType?
-      pos;
-
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType?
-      wholesaler;
-
-  GetStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetStocksByTarget$Query$StockPaginateType$StockType$TargetTypeToJson(
           this);
 }
 
@@ -6294,8 +6037,6 @@ class GetStocksByTarget$Query$StockPaginateType$StockType
 
   GetStocksByTarget$Query$StockPaginateType$StockType$StockPixelType? pixel;
 
-  late GetStocksByTarget$Query$StockPaginateType$StockType$TargetType target;
-
   GetStocksByTarget$Query$StockPaginateType$StockType$WarehouseType? warehouse;
 
   late GetStocksByTarget$Query$StockPaginateType$StockType$BarcodeType barcode;
@@ -6311,7 +6052,6 @@ class GetStocksByTarget$Query$StockPaginateType$StockType
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -6399,97 +6139,6 @@ class SearchStocksByTarget$Query$StockPaginateType$StockType$StockPixelType
   @override
   Map<String, dynamic> toJson() =>
       _$SearchStocksByTarget$Query$StockPaginateType$StockType$StockPixelTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType();
-
-  factory SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType();
-
-  factory SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType();
-
-  factory SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType();
-
-  factory SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetTypeFromJson(
-          json);
-
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType?
-      pos;
-
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType?
-      wholesaler;
-
-  SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchStocksByTarget$Query$StockPaginateType$StockType$TargetTypeToJson(
           this);
 }
 
@@ -8445,8 +8094,6 @@ class SearchStocksByTarget$Query$StockPaginateType$StockType
 
   SearchStocksByTarget$Query$StockPaginateType$StockType$StockPixelType? pixel;
 
-  late SearchStocksByTarget$Query$StockPaginateType$StockType$TargetType target;
-
   SearchStocksByTarget$Query$StockPaginateType$StockType$WarehouseType?
       warehouse;
 
@@ -8464,7 +8111,6 @@ class SearchStocksByTarget$Query$StockPaginateType$StockType
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -8531,97 +8177,6 @@ class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$StockPixelTyp
   @override
   Map<String, dynamic> toJson() =>
       _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$StockPixelTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType();
-
-  factory SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType();
-
-  factory SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType();
-
-  factory SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType();
-
-  factory SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetTypeFromJson(
-          json);
-
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$PointOfSaleType?
-      pos;
-
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$WholesalerType?
-      wholesaler;
-
-  SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetTypeToJson(
           this);
 }
 
@@ -10579,9 +10134,6 @@ class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType
   SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$StockPixelType?
       pixel;
 
-  late SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$TargetType
-      target;
-
   SearchSimpleStocksByTarget$Query$StockPaginateType$StockType$WarehouseType?
       warehouse;
 
@@ -10599,7 +10151,6 @@ class SearchSimpleStocksByTarget$Query$StockPaginateType$StockType
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -10671,87 +10222,6 @@ class CreateStock$Mutation$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$CreateStock$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateStock$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateStock$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory CreateStock$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateStock$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateStock$Mutation$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateStock$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateStock$Mutation$StockType$TargetType$WholesalerType();
-
-  factory CreateStock$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateStock$Mutation$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateStock$Mutation$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateStock$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateStock$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory CreateStock$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateStock$Mutation$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateStock$Mutation$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateStock$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  CreateStock$Mutation$StockType$TargetType();
-
-  factory CreateStock$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateStock$Mutation$StockType$TargetTypeFromJson(json);
-
-  CreateStock$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  CreateStock$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  CreateStock$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateStock$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -12689,8 +12159,6 @@ class CreateStock$Mutation$StockType extends JsonSerializable
 
   CreateStock$Mutation$StockType$StockPixelType? pixel;
 
-  late CreateStock$Mutation$StockType$TargetType target;
-
   CreateStock$Mutation$StockType$WarehouseType? warehouse;
 
   late CreateStock$Mutation$StockType$BarcodeType barcode;
@@ -12706,7 +12174,6 @@ class CreateStock$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -12748,87 +12215,6 @@ class UpdateStock$Mutation$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateStock$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateStock$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  UpdateStock$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory UpdateStock$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateStock$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateStock$Mutation$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateStock$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateStock$Mutation$StockType$TargetType$WholesalerType();
-
-  factory UpdateStock$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateStock$Mutation$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateStock$Mutation$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateStock$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  UpdateStock$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory UpdateStock$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateStock$Mutation$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateStock$Mutation$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UpdateStock$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  UpdateStock$Mutation$StockType$TargetType();
-
-  factory UpdateStock$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UpdateStock$Mutation$StockType$TargetTypeFromJson(json);
-
-  UpdateStock$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  UpdateStock$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  UpdateStock$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UpdateStock$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -14766,8 +14152,6 @@ class UpdateStock$Mutation$StockType extends JsonSerializable
 
   UpdateStock$Mutation$StockType$StockPixelType? pixel;
 
-  late UpdateStock$Mutation$StockType$TargetType target;
-
   UpdateStock$Mutation$StockType$WarehouseType? warehouse;
 
   late UpdateStock$Mutation$StockType$BarcodeType barcode;
@@ -14783,7 +14167,6 @@ class UpdateStock$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -14825,86 +14208,6 @@ class ResetStock$Mutation$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$ResetStock$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ResetStock$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  ResetStock$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory ResetStock$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ResetStock$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ResetStock$Mutation$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ResetStock$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  ResetStock$Mutation$StockType$TargetType$WholesalerType();
-
-  factory ResetStock$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ResetStock$Mutation$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ResetStock$Mutation$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ResetStock$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  ResetStock$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory ResetStock$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ResetStock$Mutation$StockType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ResetStock$Mutation$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class ResetStock$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  ResetStock$Mutation$StockType$TargetType();
-
-  factory ResetStock$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$ResetStock$Mutation$StockType$TargetTypeFromJson(json);
-
-  ResetStock$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  ResetStock$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  ResetStock$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$ResetStock$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -16839,8 +16142,6 @@ class ResetStock$Mutation$StockType extends JsonSerializable
 
   ResetStock$Mutation$StockType$StockPixelType? pixel;
 
-  late ResetStock$Mutation$StockType$TargetType target;
-
   ResetStock$Mutation$StockType$WarehouseType? warehouse;
 
   late ResetStock$Mutation$StockType$BarcodeType barcode;
@@ -16856,7 +16157,6 @@ class ResetStock$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -16935,86 +16235,6 @@ class AddToStock$Mutation$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$AddToStock$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStock$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  AddToStock$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory AddToStock$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStock$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStock$Mutation$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStock$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  AddToStock$Mutation$StockType$TargetType$WholesalerType();
-
-  factory AddToStock$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStock$Mutation$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStock$Mutation$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStock$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  AddToStock$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory AddToStock$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStock$Mutation$StockType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStock$Mutation$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStock$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  AddToStock$Mutation$StockType$TargetType();
-
-  factory AddToStock$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStock$Mutation$StockType$TargetTypeFromJson(json);
-
-  AddToStock$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  AddToStock$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  AddToStock$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStock$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -18949,8 +18169,6 @@ class AddToStock$Mutation$StockType extends JsonSerializable
 
   AddToStock$Mutation$StockType$StockPixelType? pixel;
 
-  late AddToStock$Mutation$StockType$TargetType target;
-
   AddToStock$Mutation$StockType$WarehouseType? warehouse;
 
   late AddToStock$Mutation$StockType$BarcodeType barcode;
@@ -18966,7 +18184,6 @@ class AddToStock$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -19085,92 +18302,6 @@ class RemoveFromStock$Mutation$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromStock$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStock$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStock$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory RemoveFromStock$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStock$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStock$Mutation$StockType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStock$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStock$Mutation$StockType$TargetType$WholesalerType();
-
-  factory RemoveFromStock$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStock$Mutation$StockType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStock$Mutation$StockType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStock$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStock$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory RemoveFromStock$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStock$Mutation$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStock$Mutation$StockType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStock$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  RemoveFromStock$Mutation$StockType$TargetType();
-
-  factory RemoveFromStock$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStock$Mutation$StockType$TargetTypeFromJson(json);
-
-  RemoveFromStock$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  RemoveFromStock$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  RemoveFromStock$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStock$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -21114,8 +20245,6 @@ class RemoveFromStock$Mutation$StockType extends JsonSerializable
 
   RemoveFromStock$Mutation$StockType$StockPixelType? pixel;
 
-  late RemoveFromStock$Mutation$StockType$TargetType target;
-
   RemoveFromStock$Mutation$StockType$WarehouseType? warehouse;
 
   late RemoveFromStock$Mutation$StockType$BarcodeType barcode;
@@ -21131,7 +20260,6 @@ class RemoveFromStock$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -21174,92 +20302,6 @@ class AddToStockCustom$Mutation$StockType$StockPixelType
   @override
   Map<String, dynamic> toJson() =>
       _$AddToStockCustom$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStockCustom$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  AddToStockCustom$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory AddToStockCustom$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStockCustom$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStockCustom$Mutation$StockType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStockCustom$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  AddToStockCustom$Mutation$StockType$TargetType$WholesalerType();
-
-  factory AddToStockCustom$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStockCustom$Mutation$StockType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStockCustom$Mutation$StockType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStockCustom$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  AddToStockCustom$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory AddToStockCustom$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStockCustom$Mutation$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStockCustom$Mutation$StockType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class AddToStockCustom$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  AddToStockCustom$Mutation$StockType$TargetType();
-
-  factory AddToStockCustom$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$AddToStockCustom$Mutation$StockType$TargetTypeFromJson(json);
-
-  AddToStockCustom$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  AddToStockCustom$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  AddToStockCustom$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$AddToStockCustom$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -23203,8 +22245,6 @@ class AddToStockCustom$Mutation$StockType extends JsonSerializable
 
   AddToStockCustom$Mutation$StockType$StockPixelType? pixel;
 
-  late AddToStockCustom$Mutation$StockType$TargetType target;
-
   AddToStockCustom$Mutation$StockType$WarehouseType? warehouse;
 
   late AddToStockCustom$Mutation$StockType$BarcodeType barcode;
@@ -23220,7 +22260,6 @@ class AddToStockCustom$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -23263,94 +22302,6 @@ class RemoveFromStockCustom$Mutation$StockType$StockPixelType
   @override
   Map<String, dynamic> toJson() =>
       _$RemoveFromStockCustom$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStockCustom$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStockCustom$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory RemoveFromStockCustom$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStockCustom$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStockCustom$Mutation$StockType$TargetType$WholesalerType();
-
-  factory RemoveFromStockCustom$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStockCustom$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStockCustom$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory RemoveFromStockCustom$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class RemoveFromStockCustom$Mutation$StockType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  RemoveFromStockCustom$Mutation$StockType$TargetType();
-
-  factory RemoveFromStockCustom$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetTypeFromJson(json);
-
-  RemoveFromStockCustom$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  RemoveFromStockCustom$Mutation$StockType$TargetType$WholesalerType?
-      wholesaler;
-
-  RemoveFromStockCustom$Mutation$StockType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$RemoveFromStockCustom$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -25298,8 +24249,6 @@ class RemoveFromStockCustom$Mutation$StockType extends JsonSerializable
 
   RemoveFromStockCustom$Mutation$StockType$StockPixelType? pixel;
 
-  late RemoveFromStockCustom$Mutation$StockType$TargetType target;
-
   RemoveFromStockCustom$Mutation$StockType$WarehouseType? warehouse;
 
   late RemoveFromStockCustom$Mutation$StockType$BarcodeType barcode;
@@ -25315,7 +24264,6 @@ class RemoveFromStockCustom$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -25359,86 +24307,6 @@ class InitStock$Mutation$StockType$StockPixelType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$InitStock$Mutation$StockType$StockPixelTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class InitStock$Mutation$StockType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  InitStock$Mutation$StockType$TargetType$PointOfSaleType();
-
-  factory InitStock$Mutation$StockType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$InitStock$Mutation$StockType$TargetType$PointOfSaleTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$InitStock$Mutation$StockType$TargetType$PointOfSaleTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class InitStock$Mutation$StockType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  InitStock$Mutation$StockType$TargetType$WholesalerType();
-
-  factory InitStock$Mutation$StockType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$InitStock$Mutation$StockType$TargetType$WholesalerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$InitStock$Mutation$StockType$TargetType$WholesalerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class InitStock$Mutation$StockType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  InitStock$Mutation$StockType$TargetType$ManufacturerType();
-
-  factory InitStock$Mutation$StockType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$InitStock$Mutation$StockType$TargetType$ManufacturerTypeFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$InitStock$Mutation$StockType$TargetType$ManufacturerTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class InitStock$Mutation$StockType$TargetType extends JsonSerializable
-    with EquatableMixin {
-  InitStock$Mutation$StockType$TargetType();
-
-  factory InitStock$Mutation$StockType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$InitStock$Mutation$StockType$TargetTypeFromJson(json);
-
-  InitStock$Mutation$StockType$TargetType$PointOfSaleType? pos;
-
-  InitStock$Mutation$StockType$TargetType$WholesalerType? wholesaler;
-
-  InitStock$Mutation$StockType$TargetType$ManufacturerType? manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$InitStock$Mutation$StockType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -27373,8 +26241,6 @@ class InitStock$Mutation$StockType extends JsonSerializable
 
   InitStock$Mutation$StockType$StockPixelType? pixel;
 
-  late InitStock$Mutation$StockType$TargetType target;
-
   InitStock$Mutation$StockType$WarehouseType? warehouse;
 
   late InitStock$Mutation$StockType$BarcodeType barcode;
@@ -27390,7 +26256,6 @@ class InitStock$Mutation$StockType extends JsonSerializable
         stockPercentage,
         minimumStockQuantity,
         pixel,
-        target,
         warehouse,
         barcode
       ];
@@ -28280,97 +27145,6 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttrib
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-          json);
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     extends JsonSerializable with EquatableMixin {
   CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
@@ -28396,20 +27170,9 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttrib
   late CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
       attribute;
 
-  late CreateBarcodeForTargetWithStock$Mutation$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-      target;
-
   @override
-  List<Object?> get props => [
-        id,
-        label,
-        externalId,
-        translation,
-        createdAt,
-        updatedAt,
-        attribute,
-        target
-      ];
+  List<Object?> get props =>
+      [id, label, externalId, translation, createdAt, updatedAt, attribute];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -31029,97 +29792,6 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAt
 }
 
 @JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-          json);
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
     extends JsonSerializable with EquatableMixin {
   CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType();
@@ -31152,9 +29824,6 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAt
   List<CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType>?
       translation;
 
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType?
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -31166,104 +29835,12 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAt
         isRequired,
         isMultipleChoice,
         pixel,
-        translation,
-        target
+        translation
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-          json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType
-    extends JsonSerializable with EquatableMixin {
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType();
-
-  factory CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType.fromJson(
-          Map<String, dynamic> json) =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-          json);
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType?
-      pos;
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType?
-      wholesaler;
-
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType?
-      manufacturer;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
           this);
 }
 
@@ -31294,9 +29871,6 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAt
   late CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$AttributeType
       attribute;
 
-  CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAttributeType$TargetType?
-      target;
-
   @override
   List<Object?> get props => [
         id,
@@ -31306,8 +29880,7 @@ class CreateBarcodeForTargetWithStock$Mutation$BarcodeType$ProductType$ProductAt
         isRequired,
         possibleValues,
         isMultipleChoice,
-        attribute,
-        target
+        attribute
       ];
 
   @override
@@ -32072,59 +30645,6 @@ final GET_STOCKS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               )
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
             ]),
           ),
           FieldNode(
@@ -35947,59 +34467,6 @@ final GET_STOCK_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'warehouse'),
             alias: null,
             arguments: [],
@@ -39690,59 +38157,6 @@ final GET_STOCKS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
                 ]),
               ),
               FieldNode(
@@ -43560,59 +41974,6 @@ final SEARCH_STOCKS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'warehouse'),
                 alias: null,
                 arguments: [],
@@ -47410,59 +45771,6 @@ final SEARCH_SIMPLE_STOCKS_BY_TARGET_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'target'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'pos'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'wholesaler'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'manufacturer'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'id'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      )
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
                 name: NameNode(value: 'warehouse'),
                 alias: null,
                 arguments: [],
@@ -51196,59 +49504,6 @@ final CREATE_STOCK_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'warehouse'),
             alias: null,
             arguments: [],
@@ -54940,59 +53195,6 @@ final UPDATE_STOCK_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'warehouse'),
             alias: null,
             arguments: [],
@@ -58630,59 +56832,6 @@ final RESET_STOCK_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               )
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
             ]),
           ),
           FieldNode(
@@ -62444,59 +60593,6 @@ final ADD_TO_STOCK_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               )
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
             ]),
           ),
           FieldNode(
@@ -66354,59 +64450,6 @@ final REMOVE_FROM_STOCK_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'warehouse'),
             alias: null,
             arguments: [],
@@ -70095,59 +68138,6 @@ final ADD_TO_STOCK_CUSTOM_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               )
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
             ]),
           ),
           FieldNode(
@@ -73844,59 +71834,6 @@ final REMOVE_FROM_STOCK_CUSTOM_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
             name: NameNode(value: 'warehouse'),
             alias: null,
             arguments: [],
@@ -77585,59 +75522,6 @@ final INIT_STOCK_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               )
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'target'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'pos'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'wholesaler'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'manufacturer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  )
-                ]),
-              ),
             ]),
           ),
           FieldNode(
@@ -82659,59 +80543,6 @@ final CREATE_BARCODE_FOR_TARGET_WITH_STOCK_MUTATION_DOCUMENT =
                       ),
                     ]),
                   ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                    ]),
-                  ),
                 ]),
               )
             ]),
@@ -87461,112 +85292,6 @@ final CREATE_BARCODE_FOR_TARGET_WITH_STOCK_MUTATION_DOCUMENT =
                               )
                             ]),
                           ),
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'target'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'pos'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'wholesaler'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'manufacturer'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: SelectionSetNode(selections: [
-                              FieldNode(
-                                name: NameNode(value: 'id'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              )
-                            ]),
-                          ),
-                        ]),
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'target'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'pos'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'wholesaler'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
-                        ]),
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'manufacturer'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: SelectionSetNode(selections: [
-                          FieldNode(
-                            name: NameNode(value: 'id'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          )
                         ]),
                       ),
                     ]),

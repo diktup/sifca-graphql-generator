@@ -849,83 +849,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -937,9 +860,6 @@ GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -961,7 +881,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -2013,83 +1932,6 @@ const _$ProductVarietyEnumEnumMap = {
   ProductVarietyEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
 };
 
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -2106,10 +1948,7 @@ GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$Inte
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -2132,7 +1971,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['attribute'] = instance.attribute.toJson();
-  val['target'] = instance.target.toJson();
   return val;
 }
 
@@ -4857,83 +4695,6 @@ Map<String, dynamic>
           'content': instance.content.toJson(),
         };
 
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -4956,11 +4717,7 @@ GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$Prod
               ?.map((e) =>
                   GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
                       .fromJson(e as Map<String, dynamic>))
-              .toList()
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+              .toList();
 
 Map<String, dynamic>
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -4986,84 +4743,6 @@ Map<String, dynamic>
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull(
       'translation', instance.translation?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -5082,36 +4761,22 @@ GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$Prod
           ..isMultipleChoice = json['isMultipleChoice'] as bool
           ..attribute =
               GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'reference': instance.reference,
-    'isRequired': instance.isRequired,
-    'possibleValues': instance.possibleValues,
-    'isMultipleChoice': instance.isMultipleChoice,
-    'attribute': instance.attribute.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'reference': instance.reference,
+          'isRequired': instance.isRequired,
+          'possibleValues': instance.possibleValues,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'attribute': instance.attribute.toJson(),
+        };
 
 GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductTypeFromJson(
@@ -6088,83 +5753,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -6181,9 +5769,6 @@ GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$Bo
                   GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -6206,7 +5791,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -10361,83 +9945,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeToJson(
-        GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType
     _$GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketTypeFromJson(
             Map<String, dynamic> json) =>
@@ -10480,10 +9987,6 @@ GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType
                   GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$DocumentType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracks$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -10515,7 +10018,6 @@ Map<String, dynamic>
   writeNotNull('project', instance.project?.toJson());
   writeNotNull(
       'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -11432,83 +10934,6 @@ Map<String, dynamic>
   return val;
 }
 
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -11520,9 +10945,6 @@ Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -11544,7 +10966,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -12555,83 +11976,6 @@ Map<String, dynamic>
   return val;
 }
 
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -12648,10 +11992,7 @@ Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$Internal
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -12674,7 +12015,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['attribute'] = instance.attribute.toJson();
-  val['target'] = instance.target.toJson();
   return val;
 }
 
@@ -15373,83 +14713,6 @@ Map<String, dynamic>
           'content': instance.content.toJson(),
         };
 
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -15472,11 +14735,7 @@ Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductT
               ?.map((e) =>
                   Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
                       .fromJson(e as Map<String, dynamic>))
-              .toList()
-          ..target = json['target'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+              .toList();
 
 Map<String, dynamic>
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -15502,84 +14761,6 @@ Map<String, dynamic>
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull(
       'translation', instance.translation?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -15598,36 +14779,22 @@ Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductT
           ..isMultipleChoice = json['isMultipleChoice'] as bool
           ..attribute =
               Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'reference': instance.reference,
-    'isRequired': instance.isRequired,
-    'possibleValues': instance.possibleValues,
-    'isMultipleChoice': instance.isMultipleChoice,
-    'attribute': instance.attribute.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'reference': instance.reference,
+          'isRequired': instance.isRequired,
+          'possibleValues': instance.possibleValues,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'attribute': instance.attribute.toJson(),
+        };
 
 Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductTypeFromJson(
@@ -16596,83 +15763,6 @@ Map<String, dynamic>
   return val;
 }
 
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -16689,9 +15779,6 @@ Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardT
                   Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              Timetrack$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -16714,7 +15801,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -20836,83 +19922,6 @@ Map<String, dynamic>
   return val;
 }
 
-Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeToJson(
-            Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeToJson(
-        Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType
     _$Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketTypeFromJson(
             Map<String, dynamic> json) =>
@@ -20955,10 +19964,6 @@ Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType
                   Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$DocumentType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target = json['target'] == null
-              ? null
-              : Timetrack$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -20990,7 +19995,6 @@ Map<String, dynamic>
   writeNotNull('project', instance.project?.toJson());
   writeNotNull(
       'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -21891,83 +20895,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -21979,9 +20906,6 @@ GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTyp
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -22003,7 +20927,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -23014,83 +21937,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -23107,10 +21953,7 @@ GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeT
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -23133,7 +21976,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['attribute'] = instance.attribute.toJson();
-  val['target'] = instance.target.toJson();
   return val;
 }
 
@@ -25832,83 +24674,6 @@ Map<String, dynamic>
           'content': instance.content.toJson(),
         };
 
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -25931,11 +24696,7 @@ GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeT
               ?.map((e) =>
                   GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
                       .fromJson(e as Map<String, dynamic>))
-              .toList()
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+              .toList();
 
 Map<String, dynamic>
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -25961,84 +24722,6 @@ Map<String, dynamic>
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull(
       'translation', instance.translation?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -26057,36 +24740,22 @@ GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeT
           ..isMultipleChoice = json['isMultipleChoice'] as bool
           ..attribute =
               GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'reference': instance.reference,
-    'isRequired': instance.isRequired,
-    'possibleValues': instance.possibleValues,
-    'isMultipleChoice': instance.isMultipleChoice,
-    'attribute': instance.attribute.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'reference': instance.reference,
+          'isRequired': instance.isRequired,
+          'possibleValues': instance.possibleValues,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'attribute': instance.attribute.toJson(),
+        };
 
 GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductTypeFromJson(
@@ -27055,83 +25724,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -27148,9 +25740,6 @@ GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardLis
                   GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -27173,7 +25762,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -31296,83 +29884,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeToJson(
-        GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType
     _$GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketTypeFromJson(
             Map<String, dynamic> json) =>
@@ -31415,10 +29926,6 @@ GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType
                   GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$DocumentType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracksByHolder$Query$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -31451,7 +29958,6 @@ Map<String, dynamic>
   writeNotNull('project', instance.project?.toJson());
   writeNotNull(
       'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -32386,83 +30892,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -32474,9 +30903,6 @@ GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTra
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -32498,7 +30924,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -33509,83 +31934,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -33602,10 +31950,7 @@ GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTra
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -33628,7 +31973,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['attribute'] = instance.attribute.toJson();
-  val['target'] = instance.target.toJson();
   return val;
 }
 
@@ -36327,83 +34671,6 @@ Map<String, dynamic>
           'content': instance.content.toJson(),
         };
 
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -36426,11 +34693,7 @@ GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTra
               ?.map((e) =>
                   GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
                       .fromJson(e as Map<String, dynamic>))
-              .toList()
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+              .toList();
 
 Map<String, dynamic>
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -36456,84 +34719,6 @@ Map<String, dynamic>
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull(
       'translation', instance.translation?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -36552,36 +34737,22 @@ GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTra
           ..isMultipleChoice = json['isMultipleChoice'] as bool
           ..attribute =
               GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'reference': instance.reference,
-    'isRequired': instance.isRequired,
-    'possibleValues': instance.possibleValues,
-    'isMultipleChoice': instance.isMultipleChoice,
-    'attribute': instance.attribute.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'reference': instance.reference,
+          'isRequired': instance.isRequired,
+          'possibleValues': instance.possibleValues,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'attribute': instance.attribute.toJson(),
+        };
 
 GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductTypeFromJson(
@@ -37550,83 +35721,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -37643,9 +35737,6 @@ GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTra
                   GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -37668,7 +35759,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -41791,83 +39881,6 @@ Map<String, dynamic>
   return val;
 }
 
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeToJson(
-            GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeToJson(
-        GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType
     _$GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketTypeFromJson(
             Map<String, dynamic> json) =>
@@ -41910,10 +39923,6 @@ GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTra
                   GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$DocumentType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target = json['target'] == null
-              ? null
-              : GetTimeTracksByHolderPaginated$Query$TimeTrackPaginateType$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -41946,7 +39955,6 @@ Map<String, dynamic>
   writeNotNull('project', instance.project?.toJson());
   writeNotNull(
       'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -42907,83 +40915,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -42995,9 +40926,6 @@ CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -43019,7 +40947,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -44030,83 +41957,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -44123,10 +41973,7 @@ CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -44149,7 +41996,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['attribute'] = instance.attribute.toJson();
-  val['target'] = instance.target.toJson();
   return val;
 }
 
@@ -46848,83 +44694,6 @@ Map<String, dynamic>
           'content': instance.content.toJson(),
         };
 
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -46947,11 +44716,7 @@ CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType
               ?.map((e) =>
                   CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
                       .fromJson(e as Map<String, dynamic>))
-              .toList()
-          ..target = json['target'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+              .toList();
 
 Map<String, dynamic>
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -46977,84 +44742,6 @@ Map<String, dynamic>
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull(
       'translation', instance.translation?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -47073,36 +44760,22 @@ CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType
           ..isMultipleChoice = json['isMultipleChoice'] as bool
           ..attribute =
               CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'reference': instance.reference,
-    'isRequired': instance.isRequired,
-    'possibleValues': instance.possibleValues,
-    'isMultipleChoice': instance.isMultipleChoice,
-    'attribute': instance.attribute.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'reference': instance.reference,
+          'isRequired': instance.isRequired,
+          'possibleValues': instance.possibleValues,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'attribute': instance.attribute.toJson(),
+        };
 
 CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductTypeFromJson(
@@ -48071,83 +45744,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -48164,9 +45760,6 @@ CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListTy
                   CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -48189,7 +45782,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -52312,83 +49904,6 @@ Map<String, dynamic>
   return val;
 }
 
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeToJson(
-            CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeToJson(
-        CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType
     _$CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketTypeFromJson(
             Map<String, dynamic> json) =>
@@ -52431,10 +49946,6 @@ CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType
                   CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$DocumentType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target = json['target'] == null
-              ? null
-              : CreateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -52467,7 +49978,6 @@ Map<String, dynamic>
   writeNotNull('project', instance.project?.toJson());
   writeNotNull(
       'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -53405,83 +50915,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelTypeFromJson(
             Map<String, dynamic> json) =>
@@ -53493,9 +50926,6 @@ UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType
           ..category = $enumDecodeNullable(
               _$LabelTypeEnumEnumMap, json['category'],
               unknownValue: LabelTypeEnum.artemisUnknown)
-          ..target =
-              UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$LabelType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -53517,7 +50947,6 @@ Map<String, dynamic>
   writeNotNull('icon', instance.icon);
   writeNotNull('color', instance.color);
   writeNotNull('category', _$LabelTypeEnumEnumMap[instance.category]);
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -54528,83 +51957,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
             Map<String, dynamic> json) =>
@@ -54621,10 +51973,7 @@ UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType
           ..updatedAt = DateTime.parse(json['updatedAt'] as String)
           ..attribute =
               UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target =
-              UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
@@ -54647,7 +51996,6 @@ Map<String, dynamic>
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   val['attribute'] = instance.attribute.toJson();
-  val['target'] = instance.target.toJson();
   return val;
 }
 
@@ -57346,83 +54694,6 @@ Map<String, dynamic>
           'content': instance.content.toJson(),
         };
 
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeFromJson(
             Map<String, dynamic> json) =>
@@ -57445,11 +54716,7 @@ UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType
               ?.map((e) =>
                   UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
                       .fromJson(e as Map<String, dynamic>))
-              .toList()
-          ..target = json['target'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+              .toList();
 
 Map<String, dynamic>
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
@@ -57475,84 +54742,6 @@ Map<String, dynamic>
   writeNotNull('pixel', instance.pixel?.toJson());
   writeNotNull(
       'translation', instance.translation?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
   return val;
 }
 
@@ -57571,36 +54760,22 @@ UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType
           ..isMultipleChoice = json['isMultipleChoice'] as bool
           ..attribute =
               UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
-                  .fromJson(json['attribute'] as Map<String, dynamic>)
-          ..target = json['target'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>);
+                  .fromJson(json['attribute'] as Map<String, dynamic>);
 
 Map<String, dynamic>
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
-            instance) {
-  final val = <String, dynamic>{
-    'id': instance.id,
-    'createdAt': instance.createdAt.toIso8601String(),
-    'updatedAt': instance.updatedAt.toIso8601String(),
-    'reference': instance.reference,
-    'isRequired': instance.isRequired,
-    'possibleValues': instance.possibleValues,
-    'isMultipleChoice': instance.isMultipleChoice,
-    'attribute': instance.attribute.toJson(),
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('target', instance.target?.toJson());
-  return val;
-}
+            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType$ProductAttributeType
+                instance) =>
+        <String, dynamic>{
+          'id': instance.id,
+          'createdAt': instance.createdAt.toIso8601String(),
+          'updatedAt': instance.updatedAt.toIso8601String(),
+          'reference': instance.reference,
+          'isRequired': instance.isRequired,
+          'possibleValues': instance.possibleValues,
+          'isMultipleChoice': instance.isMultipleChoice,
+          'attribute': instance.attribute.toJson(),
+        };
 
 UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductType
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BarcodeType$ProductTypeFromJson(
@@ -58569,83 +55744,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardTypeFromJson(
             Map<String, dynamic> json) =>
@@ -58662,9 +55760,6 @@ UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListTy
                   UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$UserType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target =
-              UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$BoardCardType$BoardListType$BoardType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -58687,7 +55782,6 @@ Map<String, dynamic>
   writeNotNull('description', instance.description);
   writeNotNull('category', _$BoardCategoryEnumEnumMap[instance.category]);
   writeNotNull('members', instance.members?.map((e) => e.toJson()).toList());
-  val['target'] = instance.target.toJson();
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;
@@ -62810,83 +59904,6 @@ Map<String, dynamic>
   return val;
 }
 
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType()
-          ..id = json['id'] as String;
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerTypeToJson(
-            UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                instance) =>
-        <String, dynamic>{
-          'id': instance.id,
-        };
-
-UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeFromJson(
-            Map<String, dynamic> json) =>
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType()
-          ..pos = json['pos'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$PointOfSaleType
-                  .fromJson(json['pos'] as Map<String, dynamic>)
-          ..wholesaler = json['wholesaler'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$WholesalerType
-                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
-          ..manufacturer = json['manufacturer'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType$ManufacturerType
-                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
-
-Map<String, dynamic>
-    _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetTypeToJson(
-        UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-            instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('pos', instance.pos?.toJson());
-  writeNotNull('wholesaler', instance.wholesaler?.toJson());
-  writeNotNull('manufacturer', instance.manufacturer?.toJson());
-  return val;
-}
-
 UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType
     _$UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketTypeFromJson(
             Map<String, dynamic> json) =>
@@ -62929,10 +59946,6 @@ UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType
                   UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$DocumentType
                       .fromJson(e as Map<String, dynamic>))
               .toList()
-          ..target = json['target'] == null
-              ? null
-              : UpdateTimeTrack$Mutation$TimeTrackType$TimeTrackOnType$TicketType$TargetType
-                  .fromJson(json['target'] as Map<String, dynamic>)
           ..createdAt = DateTime.parse(json['createdAt'] as String)
           ..updatedAt = DateTime.parse(json['updatedAt'] as String);
 
@@ -62965,7 +59978,6 @@ Map<String, dynamic>
   writeNotNull('project', instance.project?.toJson());
   writeNotNull(
       'attachments', instance.attachments?.map((e) => e.toJson()).toList());
-  writeNotNull('target', instance.target?.toJson());
   val['createdAt'] = instance.createdAt.toIso8601String();
   val['updatedAt'] = instance.updatedAt.toIso8601String();
   return val;

@@ -1,0 +1,556 @@
+query findSocialById($id: ID!) {
+  findSocialById(id: $id) {
+    id
+    name
+    code
+    fontIcon
+    createdAt
+    updatedAt
+    images {
+      style
+      images {
+        svg {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        png {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+    }
+  }
+}
+query findSocialByCode($code: String!) {
+  findSocialByCode(code: $code) {
+    id
+    name
+    code
+    fontIcon
+    createdAt
+    updatedAt
+    images {
+      style
+      images {
+        svg {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        png {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+    }
+  }
+}
+query findSocialsPagination($pagination: PaginationInput) {
+  findSocialsPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      name
+      code
+      fontIcon
+      createdAt
+      updatedAt
+      images {
+        style
+        images {
+          svg {
+            size48 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size96 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size144 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size240 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size480 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          png {
+            size48 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size96 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size144 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size240 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            size480 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+mutation createSocial($input: SocialInput!) {
+  createSocial(input: $input) {
+    id
+    name
+    code
+    fontIcon
+    createdAt
+    updatedAt
+    images {
+      style
+      images {
+        svg {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        png {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+    }
+  }
+}
+mutation updateSocial($id: ID!, $input: SocialInput!) {
+  updateSocial(id: $id, input: $input) {
+    id
+    name
+    code
+    fontIcon
+    createdAt
+    updatedAt
+    images {
+      style
+      images {
+        svg {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        png {
+          size48 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size96 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size144 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size240 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          size480 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+    }
+  }
+}
+mutation deleteSocial($id: ID!) {
+  deleteSocial(id: $id) {
+    success
+    message
+  }
+}

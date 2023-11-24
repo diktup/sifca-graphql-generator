@@ -12,17 +12,7 @@ query getStocks {
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -611,17 +601,7 @@ query getStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $ware
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -1201,17 +1181,7 @@ query getStocksByTarget($pagination: PaginationInput, $target: TargetACIInput!, 
         quantityToSellOnFacebook
       }
 
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+      
       warehouse {
         id
         name
@@ -1808,17 +1778,7 @@ query searchStocksByTarget(
         quantityToSellOnFacebook
       }
 
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+    
       warehouse {
         id
         name
@@ -2412,18 +2372,7 @@ query searchSimpleStocksByTarget(
       pixel {
         quantityToSellOnFacebook
       }
-
-      target {
-        pos {
-          id
-        }
-        wholesaler {
-          id
-        }
-        manufacturer {
-          id
-        }
-      }
+ 
       warehouse {
         id
         name
@@ -3002,17 +2951,7 @@ mutation createStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String,
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -3590,17 +3529,7 @@ mutation updateStock($id: ID!, $stockCapacity: Int, $minimumStockQuantity: Int, 
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -4178,17 +4107,7 @@ mutation resetStock($id: ID!) {
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -4771,17 +4690,7 @@ mutation addToStock($id: ID!, $quantity: Int!, $warehouse: ID) {
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -5370,17 +5279,7 @@ mutation removeFromStock($id: ID!, $quantity: Int!, $warehouse: ID) {
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -5957,17 +5856,7 @@ mutation addToStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcode: St
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -6544,17 +6433,7 @@ mutation removeFromStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcod
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -7131,17 +7010,7 @@ mutation initStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $
       quantityToSellOnFacebook
     }
 
-    target {
-      pos {
-        id
-      }
-      wholesaler {
-        id
-      }
-      manufacturer {
-        id
-      }
-    }
+    
     warehouse {
       id
       name
@@ -7941,17 +7810,7 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
             }
           }
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
       }
     }
     internalProduct {
@@ -8711,29 +8570,9 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
               label
             }
           }
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
       }
     }
   }

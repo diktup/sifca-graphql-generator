@@ -251,3 +251,6 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/models-modules-language.graphql
               output: lib/dart/models-modules-language.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/models-modules-social.graphql
+              output: lib/dart/models-modules-social.graphql.dart

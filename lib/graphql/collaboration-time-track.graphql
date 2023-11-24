@@ -331,17 +331,7 @@ query getTimeTracks {
           icon
           color
           category
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
           createdAt
           updatedAt
         }
@@ -604,17 +594,7 @@ query getTimeTracks {
                   }
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
           internalProduct {
@@ -1374,29 +1354,9 @@ query getTimeTracks {
                     label
                   }
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -1709,17 +1669,7 @@ query getTimeTracks {
                 alt
               }
             }
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
             createdAt
             updatedAt
           }
@@ -2993,17 +2943,7 @@ query getTimeTracks {
           createdAt
           updatedAt
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -3345,17 +3285,7 @@ query timetrack($id: ID!) {
           icon
           color
           category
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
           createdAt
           updatedAt
         }
@@ -3618,17 +3548,7 @@ query timetrack($id: ID!) {
                   }
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
           internalProduct {
@@ -4388,29 +4308,9 @@ query timetrack($id: ID!) {
                     label
                   }
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -4723,17 +4623,7 @@ query timetrack($id: ID!) {
                 alt
               }
             }
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
             createdAt
             updatedAt
           }
@@ -6007,17 +5897,7 @@ query timetrack($id: ID!) {
           createdAt
           updatedAt
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -6359,17 +6239,7 @@ query getTimeTracksByHolder($holder: TimeTrackOnInput!) {
           icon
           color
           category
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
           createdAt
           updatedAt
         }
@@ -6632,17 +6502,7 @@ query getTimeTracksByHolder($holder: TimeTrackOnInput!) {
                   }
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
           internalProduct {
@@ -7402,29 +7262,9 @@ query getTimeTracksByHolder($holder: TimeTrackOnInput!) {
                     label
                   }
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -7737,17 +7577,7 @@ query getTimeTracksByHolder($holder: TimeTrackOnInput!) {
                 alt
               }
             }
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
             createdAt
             updatedAt
           }
@@ -9021,17 +8851,7 @@ query getTimeTracksByHolder($holder: TimeTrackOnInput!) {
           createdAt
           updatedAt
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -9376,17 +9196,7 @@ query getTimeTracksByHolderPaginated($holder: TimeTrackOnInput!, $pagination: Pa
             icon
             color
             category
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
             createdAt
             updatedAt
           }
@@ -9649,17 +9459,7 @@ query getTimeTracksByHolderPaginated($holder: TimeTrackOnInput!, $pagination: Pa
                     }
                   }
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
             }
             internalProduct {
@@ -10419,29 +10219,9 @@ query getTimeTracksByHolderPaginated($holder: TimeTrackOnInput!, $pagination: Pa
                       label
                     }
                   }
-                  target {
-                    pos {
-                      id
-                    }
-                    wholesaler {
-                      id
-                    }
-                    manufacturer {
-                      id
-                    }
-                  }
+                 
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
             }
           }
@@ -10754,17 +10534,7 @@ query getTimeTracksByHolderPaginated($holder: TimeTrackOnInput!, $pagination: Pa
                   alt
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
               createdAt
               updatedAt
             }
@@ -12038,17 +11808,7 @@ query getTimeTracksByHolderPaginated($holder: TimeTrackOnInput!, $pagination: Pa
             createdAt
             updatedAt
           }
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
           createdAt
           updatedAt
         }
@@ -12392,17 +12152,7 @@ mutation createTimeTrack($input: TimeTrackInput!) {
           icon
           color
           category
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
           createdAt
           updatedAt
         }
@@ -12665,17 +12415,7 @@ mutation createTimeTrack($input: TimeTrackInput!) {
                   }
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
           internalProduct {
@@ -13435,29 +13175,9 @@ mutation createTimeTrack($input: TimeTrackInput!) {
                     label
                   }
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -13770,17 +13490,7 @@ mutation createTimeTrack($input: TimeTrackInput!) {
                 alt
               }
             }
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
             createdAt
             updatedAt
           }
@@ -15054,17 +14764,7 @@ mutation createTimeTrack($input: TimeTrackInput!) {
           createdAt
           updatedAt
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
@@ -15406,17 +15106,7 @@ mutation updateTimeTrack($id: ID!, $input: TimeTrackInput!) {
           icon
           color
           category
-          target {
-            pos {
-              id
-            }
-            wholesaler {
-              id
-            }
-            manufacturer {
-              id
-            }
-          }
+          
           createdAt
           updatedAt
         }
@@ -15679,17 +15369,7 @@ mutation updateTimeTrack($id: ID!, $input: TimeTrackInput!) {
                   }
                 }
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
           internalProduct {
@@ -16449,29 +16129,9 @@ mutation updateTimeTrack($id: ID!, $input: TimeTrackInput!) {
                     label
                   }
                 }
-                target {
-                  pos {
-                    id
-                  }
-                  wholesaler {
-                    id
-                  }
-                  manufacturer {
-                    id
-                  }
-                }
+                
               }
-              target {
-                pos {
-                  id
-                }
-                wholesaler {
-                  id
-                }
-                manufacturer {
-                  id
-                }
-              }
+              
             }
           }
         }
@@ -16784,17 +16444,7 @@ mutation updateTimeTrack($id: ID!, $input: TimeTrackInput!) {
                 alt
               }
             }
-            target {
-              pos {
-                id
-              }
-              wholesaler {
-                id
-              }
-              manufacturer {
-                id
-              }
-            }
+            
             createdAt
             updatedAt
           }
@@ -18068,17 +17718,7 @@ mutation updateTimeTrack($id: ID!, $input: TimeTrackInput!) {
           createdAt
           updatedAt
         }
-        target {
-          pos {
-            id
-          }
-          wholesaler {
-            id
-          }
-          manufacturer {
-            id
-          }
-        }
+        
         createdAt
         updatedAt
       }
