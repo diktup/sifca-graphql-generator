@@ -1,0 +1,1758 @@
+query getChallengeSteps {
+  getChallengeSteps {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    randomize
+    rank
+    challenge {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getChallengeStepsPaginated($pagination: PaginationInput) {
+  getChallengeStepsPaginated(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      randomize
+      rank
+      challenge {
+        id
+        title
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        challengeType {
+          id
+          title
+          description
+          rules
+          icon
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          minStep
+          minCheckPoints
+          minGiftValue
+          claimReward
+          activityTypes {
+            id
+            title
+            code
+            description
+            icon
+            theme
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            predefined {
+              enable
+              action
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+          }
+          jockers {
+            jocker {
+              id
+              title
+              description
+              icon
+              cost
+              kind
+              media {
+                videos
+                deg360 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                pictures {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
+              createdAt
+              updatedAt
+            }
+            cost
+          }
+          fees
+          enable
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        creator {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        startDate
+        endDate
+        status
+        winners {
+          rank
+          reward
+        }
+        checkpoints {
+          checkpoint
+          amount
+        }
+        maxAnswers
+        audience {
+          id
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getChallengeStepsByChallengePaginated($challenge: ID!, $pagination: PaginationInput) {
+  getChallengeStepsByChallengePaginated(challenge: $challenge, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      randomize
+      rank
+      challenge {
+        id
+        title
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        challengeType {
+          id
+          title
+          description
+          rules
+          icon
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          minStep
+          minCheckPoints
+          minGiftValue
+          claimReward
+          activityTypes {
+            id
+            title
+            code
+            description
+            icon
+            theme
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            predefined {
+              enable
+              action
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+          }
+          jockers {
+            jocker {
+              id
+              title
+              description
+              icon
+              cost
+              kind
+              media {
+                videos
+                deg360 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                pictures {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
+              createdAt
+              updatedAt
+            }
+            cost
+          }
+          fees
+          enable
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        creator {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        startDate
+        endDate
+        status
+        winners {
+          rank
+          reward
+        }
+        checkpoints {
+          checkpoint
+          amount
+        }
+        maxAnswers
+        audience {
+          id
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query challengeStep($id: String!) {
+  challengeStep(id: $id) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    randomize
+    rank
+    challenge {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+mutation createChallengeStep($input: ChallengeStepInput!) {
+  createChallengeStep(input: $input) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    randomize
+    rank
+    challenge {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateChallengeStep($id: ID!, $input: ChallengeStepInput!) {
+  updateChallengeStep(id: $id, input: $input) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    randomize
+    rank
+    challenge {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation reorderChallengeStep($id: ID!, $rank: Int!) {
+  reorderChallengeStep(id: $id, rank: $rank) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    randomize
+    rank
+    challenge {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteChallengeStep($id: ID!) {
+  deleteChallengeStep(id: $id) {
+    success
+    message
+  }
+}

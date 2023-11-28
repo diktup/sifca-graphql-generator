@@ -254,3 +254,21 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/models-modules-social.graphql
               output: lib/dart/models-modules-social.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/forms-question.graphql
+              output: lib/dart/forms-question.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/gamification-challenge-jocker.graphql
+              output: lib/dart/gamification-challenge-jocker.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/gamification-challenge-step.graphql
+              output: lib/dart/gamification-challenge-step.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/gamification-challenge-type.graphql
+              output: lib/dart/gamification-challenge-type.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/gamification-challenge.graphql
+              output: lib/dart/gamification-challenge.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/gamification-reputation.graphql
+              output: lib/dart/gamification-reputation.graphql.dart

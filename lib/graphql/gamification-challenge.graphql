@@ -1,0 +1,4477 @@
+query getChallenges {
+  getChallenges {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    challengeType {
+      id
+      title
+      description
+      rules
+      icon
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      minStep
+      minCheckPoints
+      minGiftValue
+      claimReward
+      activityTypes {
+        id
+        title
+        code
+        description
+        icon
+        theme
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        predefined {
+          enable
+          action
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+      }
+      jockers {
+        jocker {
+          id
+          title
+          description
+          icon
+          cost
+          kind
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        cost
+      }
+      fees
+      enable
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    creator {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    status
+    winners {
+      rank
+      reward
+    }
+    checkpoints {
+      checkpoint
+      amount
+    }
+    maxAnswers
+    audience {
+      id
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getChallengesPaginated($pagination: PaginationInput) {
+  getChallengesPaginated(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query challenge($id: String!) {
+  challenge(id: $id) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    challengeType {
+      id
+      title
+      description
+      rules
+      icon
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      minStep
+      minCheckPoints
+      minGiftValue
+      claimReward
+      activityTypes {
+        id
+        title
+        code
+        description
+        icon
+        theme
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        predefined {
+          enable
+          action
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+      }
+      jockers {
+        jocker {
+          id
+          title
+          description
+          icon
+          cost
+          kind
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        cost
+      }
+      fees
+      enable
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    creator {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    status
+    winners {
+      rank
+      reward
+    }
+    checkpoints {
+      checkpoint
+      amount
+    }
+    maxAnswers
+    audience {
+      id
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getChallengesByTargetPaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getChallengesByTargetPaginated(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getChallengesByTargetAndCreatorPaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getChallengesByTargetAndCreatorPaginated(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getChallengesByTargetAndUserAudiencePaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getChallengesByTargetAndUserAudiencePaginated(target: $target, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      challengeType {
+        id
+        title
+        description
+        rules
+        icon
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        minStep
+        minCheckPoints
+        minGiftValue
+        claimReward
+        activityTypes {
+          id
+          title
+          code
+          description
+          icon
+          theme
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          predefined {
+            enable
+            action
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+        }
+        jockers {
+          jocker {
+            id
+            title
+            description
+            icon
+            cost
+            kind
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+            createdAt
+            updatedAt
+          }
+          cost
+        }
+        fees
+        enable
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      creator {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      startDate
+      endDate
+      status
+      winners {
+        rank
+        reward
+      }
+      checkpoints {
+        checkpoint
+        amount
+      }
+      maxAnswers
+      audience {
+        id
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getLeaderboardByChallenge($challenge: ID!, $pagination: PaginationInput) {
+  getLeaderboardByChallenge(challenge: $challenge, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      user {
+        id
+        apps
+        email
+        roles
+        title
+        about
+        gender
+        locale
+        source
+        status
+        lastName
+        username
+        firstName
+        plugged
+        createdAt
+        updatedAt
+        isMailValid
+        dateOfBirth
+        phoneNumber
+        mobileTheme
+        placeOfBirth
+        maritalStatus
+        newsletterSubs
+        hasAutoGeneratedEmail
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        languages {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        nationality {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        billingAddress {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        shippingAddress {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        residentialAddress {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        chatContact {
+          name {
+            id
+            name
+            code
+            fontIcon
+            createdAt
+            updatedAt
+            images {
+              style
+              images {
+                svg {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                png {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
+            }
+          }
+          value
+        }
+        socialMedia {
+          name {
+            id
+            name
+            code
+            fontIcon
+            createdAt
+            updatedAt
+            images {
+              style
+              images {
+                svg {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                png {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
+            }
+          }
+          value
+        }
+        socialLoginData {
+          ooredoo {
+            id
+          }
+          facebook {
+            id
+            name
+            token
+            email
+            last_name
+            first_name
+          }
+          google {
+            sub
+            name
+            email
+            token
+            locale
+            picture
+            given_name
+            family_name
+            email_verified
+          }
+          apple {
+            email
+            status
+            givenName
+            familyName
+            identityToken
+            userIdentifier
+            authorizationCode
+          }
+        }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
+      }
+      rank
+      amount
+      reputationLevel {
+        id
+        rank
+        color
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        perks {
+          discount
+          description
+        }
+        lossAmount
+        nextLevelMax
+        inactivityCycle
+        levelInterval {
+          min
+          max
+        }
+        reputationLevel
+        createdAt
+        updatedAt
+      }
+    }
+    currentUser {
+      user {
+        id
+        apps
+        email
+        roles
+        title
+        about
+        gender
+        locale
+        source
+        status
+        lastName
+        username
+        firstName
+        plugged
+        createdAt
+        updatedAt
+        isMailValid
+        dateOfBirth
+        phoneNumber
+        mobileTheme
+        placeOfBirth
+        maritalStatus
+        newsletterSubs
+        hasAutoGeneratedEmail
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        languages {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        nationality {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        billingAddress {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        shippingAddress {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        residentialAddress {
+          city
+          address
+          postCode
+          addressLine
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        chatContact {
+          name {
+            id
+            name
+            code
+            fontIcon
+            createdAt
+            updatedAt
+            images {
+              style
+              images {
+                svg {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                png {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
+            }
+          }
+          value
+        }
+        socialMedia {
+          name {
+            id
+            name
+            code
+            fontIcon
+            createdAt
+            updatedAt
+            images {
+              style
+              images {
+                svg {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                png {
+                  size48 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size96 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size144 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size240 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  size480 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
+            }
+          }
+          value
+        }
+        socialLoginData {
+          ooredoo {
+            id
+          }
+          facebook {
+            id
+            name
+            token
+            email
+            last_name
+            first_name
+          }
+          google {
+            sub
+            name
+            email
+            token
+            locale
+            picture
+            given_name
+            family_name
+            email_verified
+          }
+          apple {
+            email
+            status
+            givenName
+            familyName
+            identityToken
+            userIdentifier
+            authorizationCode
+          }
+        }
+        education {
+          level
+          name
+          description
+          tags
+          from
+          to
+          graduated
+        }
+        work {
+          company
+          position
+          description
+          city {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          tags
+          from
+          to
+          current
+        }
+        lived {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        hobbies
+        interests
+      }
+      rank
+      amount
+      reputationLevel {
+        id
+        rank
+        color
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        perks {
+          discount
+          description
+        }
+        lossAmount
+        nextLevelMax
+        inactivityCycle
+        levelInterval {
+          min
+          max
+        }
+        reputationLevel
+      
+        createdAt
+        updatedAt
+      }
+    }
+  }
+}
+
+mutation createChallenge($input: ChallengeInput!) {
+  createChallenge(input: $input) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    challengeType {
+      id
+      title
+      description
+      rules
+      icon
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      minStep
+      minCheckPoints
+      minGiftValue
+      claimReward
+      activityTypes {
+        id
+        title
+        code
+        description
+        icon
+        theme
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        predefined {
+          enable
+          action
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+      }
+      jockers {
+        jocker {
+          id
+          title
+          description
+          icon
+          cost
+          kind
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        cost
+      }
+      fees
+      enable
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    creator {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    status
+    winners {
+      rank
+      reward
+    }
+    checkpoints {
+      checkpoint
+      amount
+    }
+    maxAnswers
+    audience {
+      id
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateChallenge($id: ID!, $input: ChallengeInput!) {
+  updateChallenge(id: $id, input: $input) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    challengeType {
+      id
+      title
+      description
+      rules
+      icon
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      minStep
+      minCheckPoints
+      minGiftValue
+      claimReward
+      activityTypes {
+        id
+        title
+        code
+        description
+        icon
+        theme
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        predefined {
+          enable
+          action
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+      }
+      jockers {
+        jocker {
+          id
+          title
+          description
+          icon
+          cost
+          kind
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        cost
+      }
+      fees
+      enable
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    creator {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    status
+    winners {
+      rank
+      reward
+    }
+    checkpoints {
+      checkpoint
+      amount
+    }
+    maxAnswers
+    audience {
+      id
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation removeAudienceFromChallenge($id: ID!) {
+  removeAudienceFromChallenge(id: $id) {
+    id
+    title
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    challengeType {
+      id
+      title
+      description
+      rules
+      icon
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      minStep
+      minCheckPoints
+      minGiftValue
+      claimReward
+      activityTypes {
+        id
+        title
+        code
+        description
+        icon
+        theme
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        predefined {
+          enable
+          action
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+      }
+      jockers {
+        jocker {
+          id
+          title
+          description
+          icon
+          cost
+          kind
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        cost
+      }
+      fees
+      enable
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    creator {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    startDate
+    endDate
+    status
+    winners {
+      rank
+      reward
+    }
+    checkpoints {
+      checkpoint
+      amount
+    }
+    maxAnswers
+    audience {
+      id
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteChallenge($id: ID!) {
+  deleteChallenge(id: $id) {
+    success
+    message
+  }
+}
+mutation performChallengeByUser($challengeId: ID!, $jockers: [String!]!, $response: ResponseInput!) {
+  performChallengeByUser(challengeId: $challengeId, jockers: $jockers, response: $response) {
+    id
+    executor {
+      id
+      apps
+      email
+      roles
+      title
+      about
+      gender
+      locale
+      source
+      status
+      lastName
+      username
+      firstName
+      plugged
+      createdAt
+      updatedAt
+      isMailValid
+      dateOfBirth
+      phoneNumber
+      mobileTheme
+      placeOfBirth
+      maritalStatus
+      newsletterSubs
+      hasAutoGeneratedEmail
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      languages {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      nationality {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      billingAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      shippingAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      residentialAddress {
+        city
+        address
+        postCode
+        addressLine
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      chatContact {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialMedia {
+        name {
+          id
+          name
+          code
+          fontIcon
+          createdAt
+          updatedAt
+          images {
+            style
+            images {
+              svg {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              png {
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size96 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size144 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size240 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size480 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
+          }
+        }
+        value
+      }
+      socialLoginData {
+        ooredoo {
+          id
+        }
+        facebook {
+          id
+          name
+          token
+          email
+          last_name
+          first_name
+        }
+        google {
+          sub
+          name
+          email
+          token
+          locale
+          picture
+          given_name
+          family_name
+          email_verified
+        }
+        apple {
+          email
+          status
+          givenName
+          familyName
+          identityToken
+          userIdentifier
+          authorizationCode
+        }
+      }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
+    }
+    answers: question {
+      id
+      order
+      title
+      description
+      choices {
+        item
+        enable
+      }
+      mandatory
+      duration
+      type
+      challengeStep {
+        id
+        title
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+      points
+      score
+      createdAt
+      updatedAt
+    }
+  
+    createdAt
+    updatedAt
+  }
+}

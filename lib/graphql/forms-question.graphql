@@ -1,0 +1,330 @@
+query getQuestionsPagination($pagination: PaginationInput) {
+  getQuestionsPagination(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      order
+      title
+      description
+      choices {
+        item
+        enable
+      }
+      mandatory
+      duration
+      type
+      challengeStep {
+        id
+        title
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+      points
+      score
+      createdAt
+      updatedAt
+    }
+  }
+}
+query getQuestions {
+  getQuestions {
+    id
+    order
+    title
+    description
+    choices {
+      item
+      enable
+    }
+    mandatory
+    duration
+    type
+    challengeStep {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+    }
+    points
+    score
+    createdAt
+    updatedAt
+  }
+}
+query question($id: ID!) {
+  question(id: $id) {
+    id
+    order
+    title
+    description
+    choices {
+      item
+      enable
+    }
+    mandatory
+    duration
+    type
+    challengeStep {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+    }
+    points
+    score
+    createdAt
+    updatedAt
+  }
+}
+query getQuestionsByChallengeStep($id: ID!, $pagination: PaginationInput) {
+  getQuestionsByChallengeStep(id: $id, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      order
+      title
+      description
+      choices {
+        item
+        enable
+      }
+      mandatory
+      duration
+      type
+      challengeStep {
+        id
+        title
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
+      points
+      score
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+mutation createQuestion($input: QuestionInput!) {
+  createQuestion(input: $input) {
+    id
+    order
+    title
+    description
+    choices {
+      item
+      enable
+    }
+    mandatory
+    duration
+    type
+    challengeStep {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+    }
+    points
+    score
+    createdAt
+    updatedAt
+  }
+}
+mutation updateQuestion($id: ID!, $input: QuestionInput!) {
+  updateQuestion(id: $id, input: $input) {
+    id
+    order
+    title
+    description
+    choices {
+      item
+      enable
+    }
+    mandatory
+    duration
+    type
+    challengeStep {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+    }
+    points
+    score
+    createdAt
+    updatedAt
+  }
+}
+mutation reorderQuestion($id: ID!, $order: Int!) {
+  reorderQuestion(id: $id, order: $order) {
+    id
+    order
+    title
+    description
+    choices {
+      item
+      enable
+    }
+    mandatory
+    duration
+    type
+    challengeStep {
+      id
+      title
+      description
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+    }
+    points
+    score
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteQuestion($id: ID!) {
+  deleteQuestion(id: $id) {
+    success
+    message
+  }
+}

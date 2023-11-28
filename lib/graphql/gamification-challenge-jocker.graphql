@@ -1,0 +1,231 @@
+query getJockers {
+  getJockers {
+    id
+    title
+    description
+    icon
+    cost
+    kind
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+query getJockersPaginated($pagination: PaginationInput) {
+  getJockersPaginated(pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      icon
+      cost
+      kind
+      media {
+        videos
+        deg360 {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        pictures {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+query jocker($id: String!) {
+  jocker(id: $id) {
+    id
+    title
+    description
+    icon
+    cost
+    kind
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+mutation createJocker($input: JockerInput!) {
+  createJocker(input: $input) {
+    id
+    title
+    description
+    icon
+    cost
+    kind
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation updateJocker($id: ID!, $input: JockerInput!) {
+  updateJocker(id: $id, input: $input) {
+    id
+    title
+    description
+    icon
+    cost
+    kind
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation deleteJocker($id: ID!) {
+  deleteJocker(id: $id) {
+    success
+    message
+  }
+}
