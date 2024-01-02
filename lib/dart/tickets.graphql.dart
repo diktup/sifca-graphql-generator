@@ -2159,6 +2159,86 @@ class GetTickets$Query$TicketType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetTickets$Query$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetTickets$Query$TicketType$TargetType$PointOfSaleType();
+
+  factory GetTickets$Query$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTickets$Query$TicketType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTickets$Query$TicketType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTickets$Query$TicketType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetTickets$Query$TicketType$TargetType$WholesalerType();
+
+  factory GetTickets$Query$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTickets$Query$TicketType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTickets$Query$TicketType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTickets$Query$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetTickets$Query$TicketType$TargetType$ManufacturerType();
+
+  factory GetTickets$Query$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTickets$Query$TicketType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTickets$Query$TicketType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTickets$Query$TicketType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetTickets$Query$TicketType$TargetType();
+
+  factory GetTickets$Query$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTickets$Query$TicketType$TargetTypeFromJson(json);
+
+  GetTickets$Query$TicketType$TargetType$PointOfSaleType? pos;
+
+  GetTickets$Query$TicketType$TargetType$WholesalerType? wholesaler;
+
+  GetTickets$Query$TicketType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTickets$Query$TicketType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetTickets$Query$TicketType extends JsonSerializable with EquatableMixin {
   GetTickets$Query$TicketType();
 
@@ -2195,6 +2275,8 @@ class GetTickets$Query$TicketType extends JsonSerializable with EquatableMixin {
 
   List<GetTickets$Query$TicketType$DocumentType>? attachments;
 
+  GetTickets$Query$TicketType$TargetType? target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -2215,6 +2297,7 @@ class GetTickets$Query$TicketType extends JsonSerializable with EquatableMixin {
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -4378,6 +4461,86 @@ class Ticket$Query$TicketType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class Ticket$Query$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  Ticket$Query$TicketType$TargetType$PointOfSaleType();
+
+  factory Ticket$Query$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Ticket$Query$TicketType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Ticket$Query$TicketType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Ticket$Query$TicketType$TargetType$WholesalerType extends JsonSerializable
+    with EquatableMixin {
+  Ticket$Query$TicketType$TargetType$WholesalerType();
+
+  factory Ticket$Query$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Ticket$Query$TicketType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Ticket$Query$TicketType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Ticket$Query$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  Ticket$Query$TicketType$TargetType$ManufacturerType();
+
+  factory Ticket$Query$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Ticket$Query$TicketType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Ticket$Query$TicketType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Ticket$Query$TicketType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  Ticket$Query$TicketType$TargetType();
+
+  factory Ticket$Query$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Ticket$Query$TicketType$TargetTypeFromJson(json);
+
+  Ticket$Query$TicketType$TargetType$PointOfSaleType? pos;
+
+  Ticket$Query$TicketType$TargetType$WholesalerType? wholesaler;
+
+  Ticket$Query$TicketType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Ticket$Query$TicketType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Ticket$Query$TicketType extends JsonSerializable with EquatableMixin {
   Ticket$Query$TicketType();
 
@@ -4414,6 +4577,8 @@ class Ticket$Query$TicketType extends JsonSerializable with EquatableMixin {
 
   List<Ticket$Query$TicketType$DocumentType>? attachments;
 
+  Ticket$Query$TicketType$TargetType? target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -4434,6 +4599,7 @@ class Ticket$Query$TicketType extends JsonSerializable with EquatableMixin {
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -6638,6 +6804,92 @@ class GetTicketsByTarget$Query$TicketType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetTicketsByTarget$Query$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTarget$Query$TicketType$TargetType$PointOfSaleType();
+
+  factory GetTicketsByTarget$Query$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTarget$Query$TicketType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTarget$Query$TicketType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTicketsByTarget$Query$TicketType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTarget$Query$TicketType$TargetType$WholesalerType();
+
+  factory GetTicketsByTarget$Query$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTarget$Query$TicketType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTarget$Query$TicketType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTicketsByTarget$Query$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTarget$Query$TicketType$TargetType$ManufacturerType();
+
+  factory GetTicketsByTarget$Query$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTarget$Query$TicketType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTarget$Query$TicketType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTicketsByTarget$Query$TicketType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetTicketsByTarget$Query$TicketType$TargetType();
+
+  factory GetTicketsByTarget$Query$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTarget$Query$TicketType$TargetTypeFromJson(json);
+
+  GetTicketsByTarget$Query$TicketType$TargetType$PointOfSaleType? pos;
+
+  GetTicketsByTarget$Query$TicketType$TargetType$WholesalerType? wholesaler;
+
+  GetTicketsByTarget$Query$TicketType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTarget$Query$TicketType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetTicketsByTarget$Query$TicketType extends JsonSerializable
     with EquatableMixin {
   GetTicketsByTarget$Query$TicketType();
@@ -6676,6 +6928,8 @@ class GetTicketsByTarget$Query$TicketType extends JsonSerializable
 
   List<GetTicketsByTarget$Query$TicketType$DocumentType>? attachments;
 
+  GetTicketsByTarget$Query$TicketType$TargetType? target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -6696,6 +6950,7 @@ class GetTicketsByTarget$Query$TicketType extends JsonSerializable
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -8966,6 +9221,97 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$Document
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$PointOfSaleType();
+
+  factory GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$WholesalerType();
+
+  factory GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$ManufacturerType();
+
+  factory GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType();
+
+  factory GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetTypeFromJson(
+          json);
+
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$PointOfSaleType?
+      pos;
+
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
     extends JsonSerializable with EquatableMixin {
   GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType();
@@ -9010,6 +9356,9 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
   List<GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$DocumentType>?
       attachments;
 
+  GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$TargetType?
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -9030,6 +9379,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -11584,6 +11934,90 @@ class CreateTicket$Mutation$TicketType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateTicket$Mutation$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateTicket$Mutation$TicketType$TargetType$PointOfSaleType();
+
+  factory CreateTicket$Mutation$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateTicket$Mutation$TicketType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateTicket$Mutation$TicketType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateTicket$Mutation$TicketType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateTicket$Mutation$TicketType$TargetType$WholesalerType();
+
+  factory CreateTicket$Mutation$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateTicket$Mutation$TicketType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateTicket$Mutation$TicketType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateTicket$Mutation$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateTicket$Mutation$TicketType$TargetType$ManufacturerType();
+
+  factory CreateTicket$Mutation$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateTicket$Mutation$TicketType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateTicket$Mutation$TicketType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateTicket$Mutation$TicketType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  CreateTicket$Mutation$TicketType$TargetType();
+
+  factory CreateTicket$Mutation$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateTicket$Mutation$TicketType$TargetTypeFromJson(json);
+
+  CreateTicket$Mutation$TicketType$TargetType$PointOfSaleType? pos;
+
+  CreateTicket$Mutation$TicketType$TargetType$WholesalerType? wholesaler;
+
+  CreateTicket$Mutation$TicketType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateTicket$Mutation$TicketType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateTicket$Mutation$TicketType extends JsonSerializable
     with EquatableMixin {
   CreateTicket$Mutation$TicketType();
@@ -11622,6 +12056,8 @@ class CreateTicket$Mutation$TicketType extends JsonSerializable
 
   List<CreateTicket$Mutation$TicketType$DocumentType>? attachments;
 
+  CreateTicket$Mutation$TicketType$TargetType? target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -11642,6 +12078,7 @@ class CreateTicket$Mutation$TicketType extends JsonSerializable
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -13974,6 +14411,90 @@ class UpdateTicket$Mutation$TicketType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateTicket$Mutation$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateTicket$Mutation$TicketType$TargetType$PointOfSaleType();
+
+  factory UpdateTicket$Mutation$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateTicket$Mutation$TicketType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateTicket$Mutation$TicketType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateTicket$Mutation$TicketType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateTicket$Mutation$TicketType$TargetType$WholesalerType();
+
+  factory UpdateTicket$Mutation$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateTicket$Mutation$TicketType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateTicket$Mutation$TicketType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateTicket$Mutation$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateTicket$Mutation$TicketType$TargetType$ManufacturerType();
+
+  factory UpdateTicket$Mutation$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateTicket$Mutation$TicketType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateTicket$Mutation$TicketType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateTicket$Mutation$TicketType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  UpdateTicket$Mutation$TicketType$TargetType();
+
+  factory UpdateTicket$Mutation$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateTicket$Mutation$TicketType$TargetTypeFromJson(json);
+
+  UpdateTicket$Mutation$TicketType$TargetType$PointOfSaleType? pos;
+
+  UpdateTicket$Mutation$TicketType$TargetType$WholesalerType? wholesaler;
+
+  UpdateTicket$Mutation$TicketType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateTicket$Mutation$TicketType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateTicket$Mutation$TicketType extends JsonSerializable
     with EquatableMixin {
   UpdateTicket$Mutation$TicketType();
@@ -14012,6 +14533,8 @@ class UpdateTicket$Mutation$TicketType extends JsonSerializable
 
   List<UpdateTicket$Mutation$TicketType$DocumentType>? attachments;
 
+  UpdateTicket$Mutation$TicketType$TargetType? target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -14032,6 +14555,7 @@ class UpdateTicket$Mutation$TicketType extends JsonSerializable
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -16331,6 +16855,94 @@ class BulkUpdateTicketMedia$Mutation$TicketType$DocumentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class BulkUpdateTicketMedia$Mutation$TicketType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType$PointOfSaleType();
+
+  factory BulkUpdateTicketMedia$Mutation$TicketType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateTicketMedia$Mutation$TicketType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType$WholesalerType();
+
+  factory BulkUpdateTicketMedia$Mutation$TicketType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateTicketMedia$Mutation$TicketType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType$ManufacturerType();
+
+  factory BulkUpdateTicketMedia$Mutation$TicketType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateTicketMedia$Mutation$TicketType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType();
+
+  factory BulkUpdateTicketMedia$Mutation$TicketType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetTypeFromJson(json);
+
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType$PointOfSaleType? pos;
+
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType$WholesalerType?
+      wholesaler;
+
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateTicketMedia$Mutation$TicketType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class BulkUpdateTicketMedia$Mutation$TicketType extends JsonSerializable
     with EquatableMixin {
   BulkUpdateTicketMedia$Mutation$TicketType();
@@ -16369,6 +16981,8 @@ class BulkUpdateTicketMedia$Mutation$TicketType extends JsonSerializable
 
   List<BulkUpdateTicketMedia$Mutation$TicketType$DocumentType>? attachments;
 
+  BulkUpdateTicketMedia$Mutation$TicketType$TargetType? target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -16389,6 +17003,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType extends JsonSerializable
         customer,
         project,
         attachments,
+        target,
         createdAt,
         updatedAt
       ];
@@ -21468,6 +22083,59 @@ final GET_TICKETS_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'createdAt'),
             alias: null,
             arguments: [],
@@ -26391,6 +27059,59 @@ final TICKET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -31321,6 +32042,59 @@ final GET_TICKETS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -36342,6 +37116,59 @@ final GET_TICKETS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -42116,6 +42943,59 @@ final CREATE_TICKET_MUTATION_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'createdAt'),
             alias: null,
             arguments: [],
@@ -47043,6 +47923,59 @@ final UPDATE_TICKET_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -51979,6 +52912,59 @@ final BULK_UPDATE_TICKET_MEDIA_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),

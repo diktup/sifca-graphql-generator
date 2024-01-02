@@ -31,12 +31,8 @@ query getTasks {
         manufacturer {
           id
         }
-      }
-      createdAt
-      updatedAt
+      } 
     }
-    createdAt
-    updatedAt
   }
 }
 query getTask($id: ID!) {
@@ -72,12 +68,8 @@ query getTask($id: ID!) {
         manufacturer {
           id
         }
-      }
-      createdAt
-      updatedAt
+      } 
     }
-    createdAt
-    updatedAt
   }
 }
 query getTasksBySection($taskSection: ID!) {
@@ -113,12 +105,8 @@ query getTasksBySection($taskSection: ID!) {
         manufacturer {
           id
         }
-      }
-      createdAt
-      updatedAt
+      } 
     }
-    createdAt
-    updatedAt
   }
 }
 
@@ -175,12 +163,8 @@ mutation createTask(
         manufacturer {
           id
         }
-      }
-      createdAt
-      updatedAt
+      } 
     }
-    createdAt
-    updatedAt
   }
 }
 mutation reorderTask($id: ID!, $rank: Int!) {
@@ -220,8 +204,6 @@ mutation reorderTask($id: ID!, $rank: Int!) {
       createdAt
       updatedAt
     }
-    createdAt
-    updatedAt
   }
 }
 mutation updateTask(
@@ -282,9 +264,7 @@ mutation updateTask(
       }
       createdAt
       updatedAt
-    }
-    createdAt
-    updatedAt
+    } 
   }
 }
 mutation deleteTask($id: ID!) {

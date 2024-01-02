@@ -8,26 +8,28 @@ query getSalesAnalyticsStats($input: AnalyticsDashboardInput!) {
       value
       percentage
     }
-    customers {
+    unpaidInvoices {
       value
       percentage
     }
-    balance {
+    partiallyPaidInvoices {
       value
       percentage
     }
   }
 }
-query getSalesRevenueChartStats($input: AnalyticsDashboardInput!) {
+query getSalesRevenueChartStats($input: CRMDashboardInput!) {
   getSalesRevenueChartStats(input: $input) {
     orders
-    earnings
-    refunds
+    paid
+    unpaid
+    partiallyPaid
     conversions
     chart {
       orders
-      earnings
-      refunds
+      paid
+      unpaid
+      partiallyPaid
     }
   }
 }
@@ -72,7 +74,7 @@ query getSalesByLocation($input: AnalyticsDashboardInput!) {
     }
   }
 }
-query getSalesTopCatalogueCategories($input: AnalyticsDashboardInput!) {
+query getSalesTopCatalogueCategories($input: SalesDashboardInput!) {
   getSalesTopCatalogueCategories(input: $input) {
     category {
       id

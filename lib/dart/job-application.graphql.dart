@@ -28,8 +28,10 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -143,6 +145,33 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$DocumentContentTy
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PictureType();
@@ -164,8 +193,10 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PictureT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -196,12 +227,15 @@ class GetJobApplications$Query$JobApplicationType$DocumentType$UserType
 
   String? firstName;
 
+  GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetJobApplications$Query$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -317,6 +351,182 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDescripti
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplications$Query$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetJobApplications$Query$JobApplicationType$JobDefinitionType();
@@ -348,6 +558,9 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType
   GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<GetJobApplications$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -362,6 +575,7 @@ class GetJobApplications$Query$JobApplicationType$JobDefinitionType
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -463,8 +677,10 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType$C
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -578,6 +794,33 @@ class JobApplication$Query$JobApplicationType$DocumentType$DocumentContentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory JobApplication$Query$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class JobApplication$Query$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   JobApplication$Query$JobApplicationType$DocumentType$UserType$PictureType();
@@ -599,8 +842,10 @@ class JobApplication$Query$JobApplicationType$DocumentType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -631,12 +876,15 @@ class JobApplication$Query$JobApplicationType$DocumentType$UserType
 
   String? firstName;
 
+  JobApplication$Query$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   JobApplication$Query$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -752,6 +1000,182 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDescriptionTy
 }
 
 @JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class JobApplication$Query$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   JobApplication$Query$JobApplicationType$JobDefinitionType();
@@ -782,6 +1206,9 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType
   JobApplication$Query$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<JobApplication$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -796,6 +1223,7 @@ class JobApplication$Query$JobApplicationType$JobDefinitionType
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -895,8 +1323,10 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1010,6 +1440,33 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$DocumentC
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PictureType();
@@ -1031,8 +1488,10 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1063,12 +1522,15 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType
 
   String? firstName;
 
+  GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetJobApplicationsByTarget$Query$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1187,6 +1649,182 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobD
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType();
@@ -1218,6 +1856,9 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType
   GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1232,6 +1873,7 @@ class GetJobApplicationsByTarget$Query$JobApplicationType$JobDefinitionType
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -1364,8 +2006,10 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1479,6 +2123,33 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureType();
@@ -1500,8 +2171,10 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1532,12 +2205,15 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 
   String? firstName;
 
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1656,6 +2332,182 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType();
+
+  factory GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType();
@@ -1687,6 +2539,9 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
   GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDescriptionType?
       offer;
 
+  List<GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1701,6 +2556,7 @@ class GetJobApplicationsByTargetPagination$Query$JobApplicationBasePaginatedType
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -1858,8 +2714,10 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1973,6 +2831,33 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureType();
@@ -1994,8 +2879,10 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2026,12 +2913,15 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 
   String? firstName;
 
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2150,6 +3040,182 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType();
@@ -2181,6 +3247,9 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
   GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -2195,6 +3264,7 @@ class GetJobApplicationsByJobDefinition$Query$JobApplicationPaginatedType$JobApp
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -2331,8 +3401,10 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2446,6 +3518,33 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureType();
@@ -2467,8 +3566,10 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2499,12 +3600,15 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 
   String? firstName;
 
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2623,6 +3727,182 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType();
@@ -2654,6 +3934,9 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
   GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginatedType$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -2668,6 +3951,7 @@ class GetJobApplicationsByTargetAndStatusPagination$Query$JobApplicationPaginate
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -2804,8 +4088,10 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2919,6 +4205,33 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureType();
@@ -2940,8 +4253,10 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2972,12 +4287,15 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 
   String? firstName;
 
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3096,6 +4414,182 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType();
+
+  factory GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType();
@@ -3127,6 +4621,9 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
   GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDescriptionType?
       offer;
 
+  List<GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePaginatedType$JobApplicationBaseType$JobDefinitionBaseType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -3141,6 +4638,7 @@ class GetJobApplicationsByTargetWithFilterPagination$Query$JobApplicationBasePag
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -3400,8 +4898,10 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3515,6 +5015,33 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureType();
@@ -3536,8 +5063,10 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3568,12 +5097,15 @@ class CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType
 
   String? firstName;
 
+  CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   CreateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3691,6 +5223,182 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDesc
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType();
@@ -3722,6 +5430,9 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType
   CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -3736,6 +5447,7 @@ class CreateJobApplication$Mutation$JobApplicationType$JobDefinitionType
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -3879,8 +5591,10 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3994,6 +5708,33 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$DocumentCont
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureType();
@@ -4015,8 +5756,10 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4047,12 +5790,15 @@ class UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType
 
   String? firstName;
 
+  UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PhoneType?
+      phone;
+
   UpdateJobApplication$Mutation$JobApplicationType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4170,6 +5916,182 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDesc
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType();
@@ -4201,6 +6123,9 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType
   UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -4215,6 +6140,7 @@ class UpdateJobApplication$Mutation$JobApplicationType$JobDefinitionType
         description,
         responsibility,
         offer,
+        translation,
         createdAt,
         updatedAt
       ];
@@ -4590,6 +6516,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4635,6 +6568,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4698,6 +6638,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4743,6 +6690,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4806,6 +6760,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4851,6 +6812,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4929,6 +6897,42 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -4971,6 +6975,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5109,6 +7120,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5154,6 +7172,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5217,6 +7242,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5262,6 +7294,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5325,6 +7364,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5370,6 +7416,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5448,6 +7501,42 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -5490,6 +7579,13 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5670,6 +7766,281 @@ final GET_JOB_APPLICATIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
                   ),
                 ]),
               ),
@@ -5922,6 +8293,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5967,6 +8345,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6030,6 +8415,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6075,6 +8467,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6138,6 +8537,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6183,6 +8589,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6261,6 +8674,42 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -6303,6 +8752,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -6441,6 +8897,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6486,6 +8949,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6549,6 +9019,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6594,6 +9071,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6657,6 +9141,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6702,6 +9193,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6780,6 +9278,42 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -6822,6 +9356,13 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -7002,6 +9543,281 @@ final JOB_APPLICATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
                   ),
                 ]),
               ),
@@ -7261,6 +10077,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7306,6 +10129,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7369,6 +10199,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7414,6 +10251,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7477,6 +10321,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7522,6 +10373,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7600,6 +10458,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -7642,6 +10536,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -7780,6 +10681,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7825,6 +10733,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7888,6 +10803,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7933,6 +10855,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7996,6 +10925,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -8041,6 +10977,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -8119,6 +11062,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -8161,6 +11140,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -8341,6 +11327,281 @@ final GET_JOB_APPLICATIONS_BY_TARGET_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
                   ),
                 ]),
               ),
@@ -8639,6 +11900,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8684,6 +11952,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8747,6 +12022,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8792,6 +12074,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8855,6 +12144,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8900,6 +12196,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8978,6 +12281,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -9020,6 +12359,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -9158,6 +12504,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -9203,6 +12556,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -9266,6 +12626,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -9311,6 +12678,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -9374,6 +12748,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -9419,6 +12800,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -9497,6 +12885,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -9539,6 +12963,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -9719,6 +13150,281 @@ final GET_JOB_APPLICATIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'title'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'responsibility'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'offer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -10021,6 +13727,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -10066,6 +13779,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -10129,6 +13849,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -10174,6 +13901,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -10237,6 +13971,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -10282,6 +14023,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -10360,6 +14108,42 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -10402,6 +14186,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -10540,6 +14331,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -10585,6 +14383,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -10648,6 +14453,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -10693,6 +14505,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -10756,6 +14575,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -10801,6 +14627,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -10879,6 +14712,42 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -10921,6 +14790,13 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -11101,6 +14977,281 @@ final GET_JOB_APPLICATIONS_BY_JOB_DEFINITION_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'title'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'responsibility'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'offer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -11420,6 +15571,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -11465,6 +15623,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -11528,6 +15693,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -11573,6 +15745,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -11636,6 +15815,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -11681,6 +15867,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -11759,6 +15952,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -11801,6 +16030,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -11939,6 +16175,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -11984,6 +16227,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -12047,6 +16297,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -12092,6 +16349,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -12155,6 +16419,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -12200,6 +16471,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -12278,6 +16556,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -12320,6 +16634,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -12504,6 +16825,281 @@ final GET_JOB_APPLICATIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                     ]),
                   ),
                   FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'title'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'responsibility'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'offer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'createdAt'),
                     alias: null,
                     arguments: [],
@@ -12570,6 +17166,7 @@ class GetJobApplicationsByTargetAndStatusPaginationQuery extends GraphQLQuery<
 class GetJobApplicationsByTargetWithFilterPaginationArguments
     extends JsonSerializable with EquatableMixin {
   GetJobApplicationsByTargetWithFilterPaginationArguments({
+    this.searchString,
     required this.target,
     required this.filter,
     this.pagination,
@@ -12580,6 +17177,8 @@ class GetJobApplicationsByTargetWithFilterPaginationArguments
           Map<String, dynamic> json) =>
       _$GetJobApplicationsByTargetWithFilterPaginationArgumentsFromJson(json);
 
+  final String? searchString;
+
   late TargetACIInput target;
 
   late JobApplicationFilterInput filter;
@@ -12587,7 +17186,7 @@ class GetJobApplicationsByTargetWithFilterPaginationArguments
   final PaginationInput? pagination;
 
   @override
-  List<Object?> get props => [target, filter, pagination];
+  List<Object?> get props => [searchString, target, filter, pagination];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12602,6 +17201,15 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
     type: OperationType.query,
     name: NameNode(value: 'getJobApplicationsByTargetWithFilterPagination'),
     variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'searchString')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
       VariableDefinitionNode(
         variable: VariableNode(name: NameNode(value: 'target')),
         type: NamedTypeNode(
@@ -12636,6 +17244,10 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
         name: NameNode(value: 'getJobApplicationsByTargetWithFilterPagination'),
         alias: null,
         arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'searchString'),
+            value: VariableNode(name: NameNode(value: 'searchString')),
+          ),
           ArgumentNode(
             name: NameNode(value: 'target'),
             value: VariableNode(name: NameNode(value: 'target')),
@@ -12819,6 +17431,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -12864,6 +17483,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -12927,6 +17553,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -12972,6 +17605,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -13035,6 +17675,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -13080,6 +17727,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -13158,6 +17812,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -13200,6 +17890,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -13338,6 +18035,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -13383,6 +18087,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -13446,6 +18157,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -13491,6 +18209,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -13554,6 +18279,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -13599,6 +18331,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -13677,6 +18416,42 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -13719,6 +18494,13 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -13899,6 +18681,281 @@ final GET_JOB_APPLICATIONS_BY_TARGET_WITH_FILTER_PAGINATION_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'title'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'responsibility'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'offer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'descriptionList'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -14108,7 +19165,7 @@ class SendJobApplicationsByMailArguments extends JsonSerializable
     required this.target,
     this.filter,
     this.searchString,
-    required this.email,
+    this.emails,
     required this.subject,
   });
 
@@ -14123,12 +19180,12 @@ class SendJobApplicationsByMailArguments extends JsonSerializable
 
   final String? searchString;
 
-  late String email;
+  final List<String>? emails;
 
   late String subject;
 
   @override
-  List<Object?> get props => [target, filter, searchString, email, subject];
+  List<Object?> get props => [target, filter, searchString, emails, subject];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -14170,10 +19227,13 @@ final SEND_JOB_APPLICATIONS_BY_MAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
         directives: [],
       ),
       VariableDefinitionNode(
-        variable: VariableNode(name: NameNode(value: 'email')),
-        type: NamedTypeNode(
-          name: NameNode(value: 'String'),
-          isNonNull: true,
+        variable: VariableNode(name: NameNode(value: 'emails')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          isNonNull: false,
         ),
         defaultValue: DefaultValueNode(value: null),
         directives: [],
@@ -14207,8 +19267,8 @@ final SEND_JOB_APPLICATIONS_BY_MAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
             value: VariableNode(name: NameNode(value: 'searchString')),
           ),
           ArgumentNode(
-            name: NameNode(value: 'email'),
-            value: VariableNode(name: NameNode(value: 'email')),
+            name: NameNode(value: 'emails'),
+            value: VariableNode(name: NameNode(value: 'emails')),
           ),
           ArgumentNode(
             name: NameNode(value: 'subject'),
@@ -14490,6 +19550,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -14535,6 +19602,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -14598,6 +19672,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -14643,6 +19724,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -14706,6 +19794,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -14751,6 +19846,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -14829,6 +19931,42 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -14871,6 +20009,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -15009,6 +20154,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15054,6 +20206,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15117,6 +20276,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15162,6 +20328,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15225,6 +20398,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15270,6 +20450,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15348,6 +20535,42 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -15390,6 +20613,13 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -15570,6 +20800,281 @@ final CREATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
                   ),
                 ]),
               ),
@@ -15845,6 +21350,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15890,6 +21402,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -15953,6 +21472,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -15998,6 +21524,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16061,6 +21594,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16106,6 +21646,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16184,6 +21731,42 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -16226,6 +21809,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -16364,6 +21954,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16409,6 +22006,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16472,6 +22076,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16517,6 +22128,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16580,6 +22198,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -16625,6 +22250,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -16703,6 +22335,42 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -16745,6 +22413,13 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -16925,6 +22600,281 @@ final UPDATE_JOB_APPLICATION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
                   ),
                 ]),
               ),

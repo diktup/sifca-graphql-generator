@@ -27,8 +27,10 @@ class GetProjects$Query$ProjectType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -79,12 +81,41 @@ class GetProjects$Query$ProjectType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjects$Query$ProjectType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjects$Query$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetProjects$Query$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory GetProjects$Query$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjects$Query$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjects$Query$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -109,8 +140,10 @@ class GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -140,11 +173,13 @@ class GetProjects$Query$ProjectType$ProjectMemberType$UserType
 
   String? firstName;
 
+  GetProjects$Query$ProjectType$ProjectMemberType$UserType$PhoneType? phone;
+
   GetProjects$Query$ProjectType$ProjectMemberType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -195,8 +230,10 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType$ContentType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -310,6 +347,33 @@ class GetProjects$Query$ProjectType$DocumentType$DocumentContentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjects$Query$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetProjects$Query$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory GetProjects$Query$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjects$Query$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjects$Query$ProjectType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetProjects$Query$ProjectType$DocumentType$UserType$PictureType();
@@ -331,8 +395,10 @@ class GetProjects$Query$ProjectType$DocumentType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -362,11 +428,13 @@ class GetProjects$Query$ProjectType$DocumentType$UserType
 
   String? firstName;
 
+  GetProjects$Query$ProjectType$DocumentType$UserType$PhoneType? phone;
+
   GetProjects$Query$ProjectType$DocumentType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -406,6 +474,27 @@ class GetProjects$Query$ProjectType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjects$Query$ProjectType$BoardCardsStatsType extends JsonSerializable
+    with EquatableMixin {
+  GetProjects$Query$ProjectType$BoardCardsStatsType();
+
+  factory GetProjects$Query$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjects$Query$ProjectType$BoardCardsStatsTypeFromJson(json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjects$Query$ProjectType$BoardCardsStatsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetProjects$Query$ProjectType extends JsonSerializable
     with EquatableMixin {
   GetProjects$Query$ProjectType();
@@ -436,6 +525,8 @@ class GetProjects$Query$ProjectType extends JsonSerializable
 
   String? color;
 
+  String? externalId;
+
   GetProjects$Query$ProjectType$PictureType? picture;
 
   List<GetProjects$Query$ProjectType$ProjectMemberType>? members;
@@ -443,6 +534,8 @@ class GetProjects$Query$ProjectType extends JsonSerializable
   List<GetProjects$Query$ProjectType$DocumentType>? resources;
 
   List<GetProjects$Query$ProjectType$DocumentType>? attachments;
+
+  GetProjects$Query$ProjectType$BoardCardsStatsType? boardCardsStats;
 
   late DateTime createdAt;
 
@@ -460,10 +553,12 @@ class GetProjects$Query$ProjectType extends JsonSerializable
         priority,
         status,
         color,
+        externalId,
         picture,
         members,
         resources,
         attachments,
+        boardCardsStats,
         createdAt,
         updatedAt
       ];
@@ -509,8 +604,10 @@ class Project$Query$ProjectType$MediaType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -561,12 +658,41 @@ class Project$Query$ProjectType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$Project$Query$ProjectType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Project$Query$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  Project$Query$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory Project$Query$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Project$Query$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Project$Query$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -591,8 +717,10 @@ class Project$Query$ProjectType$ProjectMemberType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -622,11 +750,13 @@ class Project$Query$ProjectType$ProjectMemberType$UserType
 
   String? firstName;
 
+  Project$Query$ProjectType$ProjectMemberType$UserType$PhoneType? phone;
+
   Project$Query$ProjectType$ProjectMemberType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -677,8 +807,10 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType$ContentTypeType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -791,6 +923,31 @@ class Project$Query$ProjectType$DocumentType$DocumentContentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class Project$Query$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  Project$Query$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory Project$Query$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Project$Query$ProjectType$DocumentType$UserType$PhoneTypeFromJson(json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Project$Query$ProjectType$DocumentType$UserType$PhoneTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Project$Query$ProjectType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   Project$Query$ProjectType$DocumentType$UserType$PictureType();
@@ -812,8 +969,10 @@ class Project$Query$ProjectType$DocumentType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -842,11 +1001,13 @@ class Project$Query$ProjectType$DocumentType$UserType extends JsonSerializable
 
   String? firstName;
 
+  Project$Query$ProjectType$DocumentType$UserType$PhoneType? phone;
+
   Project$Query$ProjectType$DocumentType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -886,6 +1047,27 @@ class Project$Query$ProjectType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class Project$Query$ProjectType$BoardCardsStatsType extends JsonSerializable
+    with EquatableMixin {
+  Project$Query$ProjectType$BoardCardsStatsType();
+
+  factory Project$Query$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Project$Query$ProjectType$BoardCardsStatsTypeFromJson(json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Project$Query$ProjectType$BoardCardsStatsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Project$Query$ProjectType extends JsonSerializable with EquatableMixin {
   Project$Query$ProjectType();
 
@@ -915,6 +1097,8 @@ class Project$Query$ProjectType extends JsonSerializable with EquatableMixin {
 
   String? color;
 
+  String? externalId;
+
   Project$Query$ProjectType$PictureType? picture;
 
   List<Project$Query$ProjectType$ProjectMemberType>? members;
@@ -922,6 +1106,8 @@ class Project$Query$ProjectType extends JsonSerializable with EquatableMixin {
   List<Project$Query$ProjectType$DocumentType>? resources;
 
   List<Project$Query$ProjectType$DocumentType>? attachments;
+
+  Project$Query$ProjectType$BoardCardsStatsType? boardCardsStats;
 
   late DateTime createdAt;
 
@@ -939,10 +1125,12 @@ class Project$Query$ProjectType extends JsonSerializable with EquatableMixin {
         priority,
         status,
         color,
+        externalId,
         picture,
         members,
         resources,
         attachments,
+        boardCardsStats,
         createdAt,
         updatedAt
       ];
@@ -989,8 +1177,10 @@ class GetProjectsByTarget$Query$ProjectType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1041,12 +1231,41 @@ class GetProjectsByTarget$Query$ProjectType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTarget$Query$ProjectType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1071,8 +1290,10 @@ class GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureTy
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1103,12 +1324,15 @@ class GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType
 
   String? firstName;
 
+  GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PhoneType?
+      phone;
+
   GetProjectsByTarget$Query$ProjectType$ProjectMemberType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1160,8 +1384,10 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType$Con
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1275,6 +1501,33 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$DocumentContentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType();
@@ -1296,8 +1549,10 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1328,12 +1583,14 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType$UserType
 
   String? firstName;
 
+  GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PhoneType? phone;
+
   GetProjectsByTarget$Query$ProjectType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1374,6 +1631,27 @@ class GetProjectsByTarget$Query$ProjectType$DocumentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjectsByTarget$Query$ProjectType$BoardCardsStatsType
+    extends JsonSerializable with EquatableMixin {
+  GetProjectsByTarget$Query$ProjectType$BoardCardsStatsType();
+
+  factory GetProjectsByTarget$Query$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByTarget$Query$ProjectType$BoardCardsStatsTypeFromJson(json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByTarget$Query$ProjectType$BoardCardsStatsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetProjectsByTarget$Query$ProjectType extends JsonSerializable
     with EquatableMixin {
   GetProjectsByTarget$Query$ProjectType();
@@ -1405,6 +1683,8 @@ class GetProjectsByTarget$Query$ProjectType extends JsonSerializable
 
   String? color;
 
+  String? externalId;
+
   GetProjectsByTarget$Query$ProjectType$PictureType? picture;
 
   List<GetProjectsByTarget$Query$ProjectType$ProjectMemberType>? members;
@@ -1412,6 +1692,8 @@ class GetProjectsByTarget$Query$ProjectType extends JsonSerializable
   List<GetProjectsByTarget$Query$ProjectType$DocumentType>? resources;
 
   List<GetProjectsByTarget$Query$ProjectType$DocumentType>? attachments;
+
+  GetProjectsByTarget$Query$ProjectType$BoardCardsStatsType? boardCardsStats;
 
   late DateTime createdAt;
 
@@ -1429,10 +1711,12 @@ class GetProjectsByTarget$Query$ProjectType extends JsonSerializable
         priority,
         status,
         color,
+        externalId,
         picture,
         members,
         resources,
         attachments,
+        boardCardsStats,
         createdAt,
         updatedAt
       ];
@@ -1507,8 +1791,10 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$MediaT
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1565,12 +1851,41 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
           this);
 }
 
@@ -1596,8 +1911,10 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Projec
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1628,12 +1945,15 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Projec
 
   String? firstName;
 
+  GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PhoneType?
+      phone;
+
   GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$ProjectMemberType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1688,8 +2008,10 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1803,6 +2125,33 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureType();
@@ -1824,8 +2173,10 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1856,12 +2207,15 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 
   String? firstName;
 
+  GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PhoneType?
+      phone;
+
   GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1906,6 +2260,29 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$Docume
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$BoardCardsStatsType
+    extends JsonSerializable with EquatableMixin {
+  GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$BoardCardsStatsType();
+
+  factory GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$BoardCardsStatsTypeFromJson(
+          json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$BoardCardsStatsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
     extends JsonSerializable with EquatableMixin {
   GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType();
@@ -1939,6 +2316,8 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
 
   String? color;
 
+  String? externalId;
+
   GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$PictureType?
       picture;
 
@@ -1950,6 +2329,9 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
 
   List<GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$DocumentType>?
       attachments;
+
+  GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType$BoardCardsStatsType?
+      boardCardsStats;
 
   late DateTime createdAt;
 
@@ -1967,10 +2349,12 @@ class GetProjectsByTargetWithFilter$Query$ProjectPaginateType$ProjectType
         priority,
         status,
         color,
+        externalId,
         picture,
         members,
         resources,
         attachments,
+        boardCardsStats,
         createdAt,
         updatedAt
       ];
@@ -2083,6 +2467,194 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetProjectsByExcel$Query$InvoicePDFType extends JsonSerializable
+    with EquatableMixin {
+  GetProjectsByExcel$Query$InvoicePDFType();
+
+  factory GetProjectsByExcel$Query$InvoicePDFType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsByExcel$Query$InvoicePDFTypeFromJson(json);
+
+  String? content;
+
+  @override
+  List<Object?> get props => [content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsByExcel$Query$InvoicePDFTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsByExcel$Query extends JsonSerializable with EquatableMixin {
+  GetProjectsByExcel$Query();
+
+  factory GetProjectsByExcel$Query.fromJson(Map<String, dynamic> json) =>
+      _$GetProjectsByExcel$QueryFromJson(json);
+
+  late GetProjectsByExcel$Query$InvoicePDFType getProjectsByExcel;
+
+  @override
+  List<Object?> get props => [getProjectsByExcel];
+
+  @override
+  Map<String, dynamic> toJson() => _$GetProjectsByExcel$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SendProjectsBymail$Query$MailResponseDto extends JsonSerializable
+    with EquatableMixin {
+  SendProjectsBymail$Query$MailResponseDto();
+
+  factory SendProjectsBymail$Query$MailResponseDto.fromJson(
+          Map<String, dynamic> json) =>
+      _$SendProjectsBymail$Query$MailResponseDtoFromJson(json);
+
+  late List<String> accepted;
+
+  late List<String> rejected;
+
+  late String response;
+
+  late String messageId;
+
+  late double messageTime;
+
+  late double messageSize;
+
+  late double envelopeTime;
+
+  @override
+  List<Object?> get props => [
+        accepted,
+        rejected,
+        response,
+        messageId,
+        messageTime,
+        messageSize,
+        envelopeTime
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SendProjectsBymail$Query$MailResponseDtoToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SendProjectsBymail$Query extends JsonSerializable with EquatableMixin {
+  SendProjectsBymail$Query();
+
+  factory SendProjectsBymail$Query.fromJson(Map<String, dynamic> json) =>
+      _$SendProjectsBymail$QueryFromJson(json);
+
+  late SendProjectsBymail$Query$MailResponseDto sendProjectsBymail;
+
+  @override
+  List<Object?> get props => [sendProjectsBymail];
+
+  @override
+  Map<String, dynamic> toJson() => _$SendProjectsBymail$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsTemplateByExcel$Query$InvoicePDFType extends JsonSerializable
+    with EquatableMixin {
+  GetProjectsTemplateByExcel$Query$InvoicePDFType();
+
+  factory GetProjectsTemplateByExcel$Query$InvoicePDFType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsTemplateByExcel$Query$InvoicePDFTypeFromJson(json);
+
+  String? content;
+
+  @override
+  List<Object?> get props => [content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsTemplateByExcel$Query$InvoicePDFTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsTemplateByExcel$Query extends JsonSerializable
+    with EquatableMixin {
+  GetProjectsTemplateByExcel$Query();
+
+  factory GetProjectsTemplateByExcel$Query.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsTemplateByExcel$QueryFromJson(json);
+
+  late GetProjectsTemplateByExcel$Query$InvoicePDFType
+      getProjectsTemplateByExcel;
+
+  @override
+  List<Object?> get props => [getProjectsTemplateByExcel];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsTemplateByExcel$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SendProjectsTemplateBymail$Query$MailResponseDto extends JsonSerializable
+    with EquatableMixin {
+  SendProjectsTemplateBymail$Query$MailResponseDto();
+
+  factory SendProjectsTemplateBymail$Query$MailResponseDto.fromJson(
+          Map<String, dynamic> json) =>
+      _$SendProjectsTemplateBymail$Query$MailResponseDtoFromJson(json);
+
+  late List<String> accepted;
+
+  late List<String> rejected;
+
+  late String response;
+
+  late String messageId;
+
+  late double messageTime;
+
+  late double messageSize;
+
+  late double envelopeTime;
+
+  @override
+  List<Object?> get props => [
+        accepted,
+        rejected,
+        response,
+        messageId,
+        messageTime,
+        messageSize,
+        envelopeTime
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SendProjectsTemplateBymail$Query$MailResponseDtoToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SendProjectsTemplateBymail$Query extends JsonSerializable
+    with EquatableMixin {
+  SendProjectsTemplateBymail$Query();
+
+  factory SendProjectsTemplateBymail$Query.fromJson(
+          Map<String, dynamic> json) =>
+      _$SendProjectsTemplateBymail$QueryFromJson(json);
+
+  late SendProjectsTemplateBymail$Query$MailResponseDto
+      sendProjectsTemplateBymail;
+
+  @override
+  List<Object?> get props => [sendProjectsTemplateBymail];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SendProjectsTemplateBymail$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateProject$Mutation$ProjectType$MediaType$PictureType
     extends JsonSerializable with EquatableMixin {
   CreateProject$Mutation$ProjectType$MediaType$PictureType();
@@ -2103,8 +2675,10 @@ class CreateProject$Mutation$ProjectType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2155,12 +2729,41 @@ class CreateProject$Mutation$ProjectType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateProject$Mutation$ProjectType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -2185,8 +2788,10 @@ class CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2217,12 +2822,15 @@ class CreateProject$Mutation$ProjectType$ProjectMemberType$UserType
 
   String? firstName;
 
+  CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType?
+      phone;
+
   CreateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2274,8 +2882,10 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2389,6 +2999,33 @@ class CreateProject$Mutation$ProjectType$DocumentType$DocumentContentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  CreateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory CreateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateProject$Mutation$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateProject$Mutation$ProjectType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType();
@@ -2410,8 +3047,10 @@ class CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2441,11 +3080,13 @@ class CreateProject$Mutation$ProjectType$DocumentType$UserType
 
   String? firstName;
 
+  CreateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType? phone;
+
   CreateProject$Mutation$ProjectType$DocumentType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2485,6 +3126,27 @@ class CreateProject$Mutation$ProjectType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateProject$Mutation$ProjectType$BoardCardsStatsType
+    extends JsonSerializable with EquatableMixin {
+  CreateProject$Mutation$ProjectType$BoardCardsStatsType();
+
+  factory CreateProject$Mutation$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateProject$Mutation$ProjectType$BoardCardsStatsTypeFromJson(json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateProject$Mutation$ProjectType$BoardCardsStatsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateProject$Mutation$ProjectType extends JsonSerializable
     with EquatableMixin {
   CreateProject$Mutation$ProjectType();
@@ -2516,6 +3178,8 @@ class CreateProject$Mutation$ProjectType extends JsonSerializable
 
   String? color;
 
+  String? externalId;
+
   CreateProject$Mutation$ProjectType$PictureType? picture;
 
   List<CreateProject$Mutation$ProjectType$ProjectMemberType>? members;
@@ -2523,6 +3187,8 @@ class CreateProject$Mutation$ProjectType extends JsonSerializable
   List<CreateProject$Mutation$ProjectType$DocumentType>? resources;
 
   List<CreateProject$Mutation$ProjectType$DocumentType>? attachments;
+
+  CreateProject$Mutation$ProjectType$BoardCardsStatsType? boardCardsStats;
 
   late DateTime createdAt;
 
@@ -2540,10 +3206,12 @@ class CreateProject$Mutation$ProjectType extends JsonSerializable
         priority,
         status,
         color,
+        externalId,
         picture,
         members,
         resources,
         attachments,
+        boardCardsStats,
         createdAt,
         updatedAt
       ];
@@ -2751,8 +3419,10 @@ class UpdateProject$Mutation$ProjectType$MediaType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2803,12 +3473,41 @@ class UpdateProject$Mutation$ProjectType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateProject$Mutation$ProjectType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -2833,8 +3532,10 @@ class UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2865,12 +3566,15 @@ class UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType
 
   String? firstName;
 
+  UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType?
+      phone;
+
   UpdateProject$Mutation$ProjectType$ProjectMemberType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2922,8 +3626,10 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType$Conten
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3037,6 +3743,33 @@ class UpdateProject$Mutation$ProjectType$DocumentType$DocumentContentType
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  UpdateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory UpdateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateProject$Mutation$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateProject$Mutation$ProjectType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType();
@@ -3058,8 +3791,10 @@ class UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3089,11 +3824,13 @@ class UpdateProject$Mutation$ProjectType$DocumentType$UserType
 
   String? firstName;
 
+  UpdateProject$Mutation$ProjectType$DocumentType$UserType$PhoneType? phone;
+
   UpdateProject$Mutation$ProjectType$DocumentType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3133,6 +3870,27 @@ class UpdateProject$Mutation$ProjectType$DocumentType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateProject$Mutation$ProjectType$BoardCardsStatsType
+    extends JsonSerializable with EquatableMixin {
+  UpdateProject$Mutation$ProjectType$BoardCardsStatsType();
+
+  factory UpdateProject$Mutation$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateProject$Mutation$ProjectType$BoardCardsStatsTypeFromJson(json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateProject$Mutation$ProjectType$BoardCardsStatsTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateProject$Mutation$ProjectType extends JsonSerializable
     with EquatableMixin {
   UpdateProject$Mutation$ProjectType();
@@ -3164,6 +3922,8 @@ class UpdateProject$Mutation$ProjectType extends JsonSerializable
 
   String? color;
 
+  String? externalId;
+
   UpdateProject$Mutation$ProjectType$PictureType? picture;
 
   List<UpdateProject$Mutation$ProjectType$ProjectMemberType>? members;
@@ -3171,6 +3931,8 @@ class UpdateProject$Mutation$ProjectType extends JsonSerializable
   List<UpdateProject$Mutation$ProjectType$DocumentType>? resources;
 
   List<UpdateProject$Mutation$ProjectType$DocumentType>? attachments;
+
+  UpdateProject$Mutation$ProjectType$BoardCardsStatsType? boardCardsStats;
 
   late DateTime createdAt;
 
@@ -3188,10 +3950,12 @@ class UpdateProject$Mutation$ProjectType extends JsonSerializable
         priority,
         status,
         color,
+        externalId,
         picture,
         members,
         resources,
         attachments,
+        boardCardsStats,
         createdAt,
         updatedAt
       ];
@@ -3301,6 +4065,651 @@ class ProjectUpdateInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$MediaType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$MediaTypeFromJson(json);
+
+  List<String>? videos;
+
+  List<BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureType>?
+      deg360;
+
+  List<BulkUpdateProjectMedia$Mutation$ProjectType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$MediaTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$PictureType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$PictureTypeFromJson(json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PictureType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserTypeFromJson(
+          json);
+
+  late String id;
+
+  String? email;
+
+  @JsonKey(unknownEnumValue: Gender.artemisUnknown)
+  Gender? gender;
+
+  String? lastName;
+
+  String? username;
+
+  String? firstName;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PhoneType?
+      phone;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType$PictureType?
+      picture;
+
+  @override
+  List<Object?> get props =>
+      [id, email, gender, lastName, username, firstName, phone, picture];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberTypeFromJson(
+          json);
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType$UserType?
+      member;
+
+  @JsonKey(unknownEnumValue: ProjectRoleEnum.artemisUnknown)
+  ProjectRoleEnum? role;
+
+  @override
+  List<Object?> get props => [member, role];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeFromJson(
+          json);
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType?
+      png;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType$PictureType?
+      svg;
+
+  @override
+  List<Object?> get props => [png, svg];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeFromJson(
+          json);
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType?
+      background;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType?
+      black;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType$ContentTypeImageFormatType?
+      white;
+
+  String? icon;
+
+  @override
+  List<Object?> get props => [background, black, white, icon];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? type;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType$ContentTypeImageType?
+      image;
+
+  @override
+  List<Object?> get props => [id, name, type, image];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentTypeFromJson(
+          json);
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType$ContentTypeType?
+      type;
+
+  @override
+  List<Object?> get props => [type];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PhoneType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PictureType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserTypeFromJson(
+          json);
+
+  late String id;
+
+  String? email;
+
+  @JsonKey(unknownEnumValue: Gender.artemisUnknown)
+  Gender? gender;
+
+  String? lastName;
+
+  String? username;
+
+  String? firstName;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PhoneType?
+      phone;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType$PictureType?
+      picture;
+
+  @override
+  List<Object?> get props =>
+      [id, email, gender, lastName, username, firstName, phone, picture];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentTypeFromJson(json);
+
+  late String id;
+
+  late String name;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$DocumentContentType?
+      content;
+
+  double? size;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType$UserType? owner;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, name, content, size, owner, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$DocumentTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType$BoardCardsStatsType
+    extends JsonSerializable with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType$BoardCardsStatsType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType$BoardCardsStatsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$BoardCardsStatsTypeFromJson(
+          json);
+
+  late int total;
+
+  late int archived;
+
+  @override
+  List<Object?> get props => [total, archived];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectType$BoardCardsStatsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation$ProjectType extends JsonSerializable
+    with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation$ProjectType();
+
+  factory BulkUpdateProjectMedia$Mutation$ProjectType.fromJson(
+          Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectTypeFromJson(json);
+
+  late String id;
+
+  String? name;
+
+  String? description;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$MediaType? media;
+
+  @JsonKey(unknownEnumValue: ProjectPrivacyEnum.artemisUnknown)
+  ProjectPrivacyEnum? privacy;
+
+  List<String>? tags;
+
+  DateTime? deadline;
+
+  @JsonKey(unknownEnumValue: ProjectPriorityEnum.artemisUnknown)
+  ProjectPriorityEnum? priority;
+
+  @JsonKey(unknownEnumValue: ProjectStatusEnum.artemisUnknown)
+  ProjectStatusEnum? status;
+
+  String? color;
+
+  String? externalId;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$PictureType? picture;
+
+  List<BulkUpdateProjectMedia$Mutation$ProjectType$ProjectMemberType>? members;
+
+  List<BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType>? resources;
+
+  List<BulkUpdateProjectMedia$Mutation$ProjectType$DocumentType>? attachments;
+
+  BulkUpdateProjectMedia$Mutation$ProjectType$BoardCardsStatsType?
+      boardCardsStats;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        description,
+        media,
+        privacy,
+        tags,
+        deadline,
+        priority,
+        status,
+        color,
+        externalId,
+        picture,
+        members,
+        resources,
+        attachments,
+        boardCardsStats,
+        createdAt,
+        updatedAt
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$Mutation$ProjectTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMedia$Mutation extends JsonSerializable
+    with EquatableMixin {
+  BulkUpdateProjectMedia$Mutation();
+
+  factory BulkUpdateProjectMedia$Mutation.fromJson(Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMedia$MutationFromJson(json);
+
+  late List<BulkUpdateProjectMedia$Mutation$ProjectType> bulkUpdateProjectMedia;
+
+  @override
+  List<Object?> get props => [bulkUpdateProjectMedia];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMedia$MutationToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateMediaInput extends JsonSerializable with EquatableMixin {
+  UpdateMediaInput({
+    required this.id,
+    required this.media,
+  });
+
+  factory UpdateMediaInput.fromJson(Map<String, dynamic> json) =>
+      _$UpdateMediaInputFromJson(json);
+
+  late String id;
+
+  late SingleMediaInput media;
+
+  @override
+  List<Object?> get props => [id, media];
+
+  @override
+  Map<String, dynamic> toJson() => _$UpdateMediaInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SingleMediaInput extends JsonSerializable with EquatableMixin {
+  SingleMediaInput({
+    this.videos,
+    this.pictures,
+    this.deg360,
+  });
+
+  factory SingleMediaInput.fromJson(Map<String, dynamic> json) =>
+      _$SingleMediaInputFromJson(json);
+
+  String? videos;
+
+  PictureInput? pictures;
+
+  PictureInput? deg360;
+
+  @override
+  List<Object?> get props => [videos, pictures, deg360];
+
+  @override
+  Map<String, dynamic> toJson() => _$SingleMediaInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class DeleteProject$Mutation$DeleteResponseDtoType extends JsonSerializable
     with EquatableMixin {
   DeleteProject$Mutation$DeleteResponseDtoType();
@@ -3335,6 +4744,45 @@ class DeleteProject$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$DeleteProject$MutationToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ImportProjectsByExcel$Mutation$SuccessResponseDtoType
+    extends JsonSerializable with EquatableMixin {
+  ImportProjectsByExcel$Mutation$SuccessResponseDtoType();
+
+  factory ImportProjectsByExcel$Mutation$SuccessResponseDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ImportProjectsByExcel$Mutation$SuccessResponseDtoTypeFromJson(json);
+
+  late String message;
+
+  late bool success;
+
+  @override
+  List<Object?> get props => [message, success];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ImportProjectsByExcel$Mutation$SuccessResponseDtoTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ImportProjectsByExcel$Mutation extends JsonSerializable
+    with EquatableMixin {
+  ImportProjectsByExcel$Mutation();
+
+  factory ImportProjectsByExcel$Mutation.fromJson(Map<String, dynamic> json) =>
+      _$ImportProjectsByExcel$MutationFromJson(json);
+
+  late ImportProjectsByExcel$Mutation$SuccessResponseDtoType
+      importProjectsByExcel;
+
+  @override
+  List<Object?> get props => [importProjectsByExcel];
+
+  @override
+  Map<String, dynamic> toJson() => _$ImportProjectsByExcel$MutationToJson(this);
 }
 
 enum ProjectPrivacyEnum {
@@ -3488,6 +4936,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -3533,6 +4988,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -3585,6 +5047,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'picture'),
             alias: null,
             arguments: [],
@@ -3627,6 +5096,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -3689,6 +5165,42 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -3731,6 +5243,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -3862,6 +5381,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -3907,6 +5433,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -3970,6 +5503,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4015,6 +5555,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4078,6 +5625,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4123,6 +5677,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4201,6 +5762,42 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -4243,6 +5840,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -4381,6 +5985,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4426,6 +6037,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4489,6 +6107,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4534,6 +6159,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4597,6 +6229,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -4642,6 +6281,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -4720,6 +6366,42 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -4767,6 +6449,13 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -4780,6 +6469,28 @@ final GET_PROJECTS_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'boardCardsStats'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'total'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'archived'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -4953,6 +6664,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -4998,6 +6716,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -5050,6 +6775,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'picture'),
             alias: null,
             arguments: [],
@@ -5092,6 +6824,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -5154,6 +6893,42 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -5196,6 +6971,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5327,6 +7109,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5372,6 +7161,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5435,6 +7231,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5480,6 +7283,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5543,6 +7353,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5588,6 +7405,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5666,6 +7490,42 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -5708,6 +7568,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5846,6 +7713,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5891,6 +7765,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -5954,6 +7835,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -5999,6 +7887,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6062,6 +7957,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6107,6 +8009,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6185,6 +8094,42 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -6232,6 +8177,13 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -6245,6 +8197,28 @@ final PROJECT_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'boardCardsStats'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'total'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'archived'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -6422,6 +8396,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -6467,6 +8448,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -6519,6 +8507,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'picture'),
             alias: null,
             arguments: [],
@@ -6561,6 +8556,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -6623,6 +8625,42 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -6665,6 +8703,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -6796,6 +8841,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6841,6 +8893,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -6904,6 +8963,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -6949,6 +9015,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7012,6 +9085,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7057,6 +9137,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7135,6 +9222,42 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -7177,6 +9300,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -7315,6 +9445,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7360,6 +9497,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7423,6 +9567,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7468,6 +9619,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7531,6 +9689,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -7576,6 +9741,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -7654,6 +9826,42 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -7701,6 +9909,13 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -7714,6 +9929,28 @@ final GET_PROJECTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'boardCardsStats'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'total'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'archived'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -7966,6 +10203,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -8011,6 +10255,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -8063,6 +10314,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'externalId'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
                 name: NameNode(value: 'picture'),
                 alias: null,
                 arguments: [],
@@ -8105,6 +10363,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -8167,6 +10432,42 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -8209,6 +10510,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -8340,6 +10648,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8385,6 +10700,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8448,6 +10770,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8493,6 +10822,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8556,6 +10892,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8601,6 +10944,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8679,6 +11029,42 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -8721,6 +11107,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -8859,6 +11252,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -8904,6 +11304,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -8967,6 +11374,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -9012,6 +11426,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -9075,6 +11496,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                         directives: [],
                                         selectionSet: null,
                                       ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
                                     ]),
                                   ),
                                   FieldNode(
@@ -9120,6 +11548,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                                       ),
                                       FieldNode(
                                         name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -9198,6 +11633,42 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'phone'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'number'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'isValid'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'countryCode'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'validationNumber'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'picture'),
                         alias: null,
                         arguments: [],
@@ -9245,6 +11716,13 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                     ]),
@@ -9258,6 +11736,28 @@ final GET_PROJECTS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'boardCardsStats'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'total'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'archived'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -9309,6 +11809,564 @@ class GetProjectsByTargetWithFilterQuery extends GraphQLQuery<
   @override
   GetProjectsByTargetWithFilter$Query parse(Map<String, dynamic> json) =>
       GetProjectsByTargetWithFilter$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsByExcelArguments extends JsonSerializable with EquatableMixin {
+  GetProjectsByExcelArguments({
+    required this.target,
+    this.filter,
+    this.searchString,
+    this.path,
+  });
+
+  @override
+  factory GetProjectsByExcelArguments.fromJson(Map<String, dynamic> json) =>
+      _$GetProjectsByExcelArgumentsFromJson(json);
+
+  late TargetACIInput target;
+
+  final ProjectFilterInput? filter;
+
+  final String? searchString;
+
+  final String? path;
+
+  @override
+  List<Object?> get props => [target, filter, searchString, path];
+
+  @override
+  Map<String, dynamic> toJson() => _$GetProjectsByExcelArgumentsToJson(this);
+}
+
+final GET_PROJECTS_BY_EXCEL_QUERY_DOCUMENT_OPERATION_NAME =
+    'getProjectsByExcel';
+final GET_PROJECTS_BY_EXCEL_QUERY_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'getProjectsByExcel'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'filter')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ProjectFilterInput'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'searchString')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'path')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'getProjectsByExcel'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'filter'),
+            value: VariableNode(name: NameNode(value: 'filter')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'searchString'),
+            value: VariableNode(name: NameNode(value: 'searchString')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'path'),
+            value: VariableNode(name: NameNode(value: 'path')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'content'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          )
+        ]),
+      )
+    ]),
+  )
+]);
+
+class GetProjectsByExcelQuery extends GraphQLQuery<GetProjectsByExcel$Query,
+    GetProjectsByExcelArguments> {
+  GetProjectsByExcelQuery({required this.variables});
+
+  @override
+  final DocumentNode document = GET_PROJECTS_BY_EXCEL_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      GET_PROJECTS_BY_EXCEL_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final GetProjectsByExcelArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  GetProjectsByExcel$Query parse(Map<String, dynamic> json) =>
+      GetProjectsByExcel$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SendProjectsBymailArguments extends JsonSerializable with EquatableMixin {
+  SendProjectsBymailArguments({
+    required this.target,
+    this.filter,
+    this.searchString,
+    this.emails,
+    required this.subject,
+  });
+
+  @override
+  factory SendProjectsBymailArguments.fromJson(Map<String, dynamic> json) =>
+      _$SendProjectsBymailArgumentsFromJson(json);
+
+  late TargetACIInput target;
+
+  final ProjectFilterInput? filter;
+
+  final String? searchString;
+
+  final List<String>? emails;
+
+  late String subject;
+
+  @override
+  List<Object?> get props => [target, filter, searchString, emails, subject];
+
+  @override
+  Map<String, dynamic> toJson() => _$SendProjectsBymailArgumentsToJson(this);
+}
+
+final SEND_PROJECTS_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME = 'sendProjectsBymail';
+final SEND_PROJECTS_BYMAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'sendProjectsBymail'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'filter')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'ProjectFilterInput'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'searchString')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'emails')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'subject')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'sendProjectsBymail'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'filter'),
+            value: VariableNode(name: NameNode(value: 'filter')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'searchString'),
+            value: VariableNode(name: NameNode(value: 'searchString')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'emails'),
+            value: VariableNode(name: NameNode(value: 'emails')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'subject'),
+            value: VariableNode(name: NameNode(value: 'subject')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'accepted'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'rejected'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'response'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'messageId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'messageTime'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'messageSize'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'envelopeTime'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class SendProjectsBymailQuery extends GraphQLQuery<SendProjectsBymail$Query,
+    SendProjectsBymailArguments> {
+  SendProjectsBymailQuery({required this.variables});
+
+  @override
+  final DocumentNode document = SEND_PROJECTS_BYMAIL_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      SEND_PROJECTS_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final SendProjectsBymailArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  SendProjectsBymail$Query parse(Map<String, dynamic> json) =>
+      SendProjectsBymail$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetProjectsTemplateByExcelArguments extends JsonSerializable
+    with EquatableMixin {
+  GetProjectsTemplateByExcelArguments({this.path});
+
+  @override
+  factory GetProjectsTemplateByExcelArguments.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetProjectsTemplateByExcelArgumentsFromJson(json);
+
+  final String? path;
+
+  @override
+  List<Object?> get props => [path];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetProjectsTemplateByExcelArgumentsToJson(this);
+}
+
+final GET_PROJECTS_TEMPLATE_BY_EXCEL_QUERY_DOCUMENT_OPERATION_NAME =
+    'getProjectsTemplateByExcel';
+final GET_PROJECTS_TEMPLATE_BY_EXCEL_QUERY_DOCUMENT =
+    DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'getProjectsTemplateByExcel'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'path')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'getProjectsTemplateByExcel'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'path'),
+            value: VariableNode(name: NameNode(value: 'path')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'content'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          )
+        ]),
+      )
+    ]),
+  )
+]);
+
+class GetProjectsTemplateByExcelQuery extends GraphQLQuery<
+    GetProjectsTemplateByExcel$Query, GetProjectsTemplateByExcelArguments> {
+  GetProjectsTemplateByExcelQuery({required this.variables});
+
+  @override
+  final DocumentNode document = GET_PROJECTS_TEMPLATE_BY_EXCEL_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      GET_PROJECTS_TEMPLATE_BY_EXCEL_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final GetProjectsTemplateByExcelArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  GetProjectsTemplateByExcel$Query parse(Map<String, dynamic> json) =>
+      GetProjectsTemplateByExcel$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SendProjectsTemplateBymailArguments extends JsonSerializable
+    with EquatableMixin {
+  SendProjectsTemplateBymailArguments({
+    required this.subject,
+    this.emails,
+  });
+
+  @override
+  factory SendProjectsTemplateBymailArguments.fromJson(
+          Map<String, dynamic> json) =>
+      _$SendProjectsTemplateBymailArgumentsFromJson(json);
+
+  late String subject;
+
+  final List<String>? emails;
+
+  @override
+  List<Object?> get props => [subject, emails];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SendProjectsTemplateBymailArgumentsToJson(this);
+}
+
+final SEND_PROJECTS_TEMPLATE_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME =
+    'sendProjectsTemplateBymail';
+final SEND_PROJECTS_TEMPLATE_BYMAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'sendProjectsTemplateBymail'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'subject')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'emails')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'sendProjectsTemplateBymail'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'subject'),
+            value: VariableNode(name: NameNode(value: 'subject')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'emails'),
+            value: VariableNode(name: NameNode(value: 'emails')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'accepted'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'rejected'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'response'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'messageId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'messageTime'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'messageSize'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'envelopeTime'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class SendProjectsTemplateBymailQuery extends GraphQLQuery<
+    SendProjectsTemplateBymail$Query, SendProjectsTemplateBymailArguments> {
+  SendProjectsTemplateBymailQuery({required this.variables});
+
+  @override
+  final DocumentNode document = SEND_PROJECTS_TEMPLATE_BYMAIL_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      SEND_PROJECTS_TEMPLATE_BYMAIL_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final SendProjectsTemplateBymailArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  SendProjectsTemplateBymail$Query parse(Map<String, dynamic> json) =>
+      SendProjectsTemplateBymail$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -9439,6 +12497,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -9484,6 +12549,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -9536,6 +12608,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'picture'),
             alias: null,
             arguments: [],
@@ -9578,6 +12657,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -9640,6 +12726,42 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -9682,6 +12804,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -9813,6 +12942,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -9858,6 +12994,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -9921,6 +13064,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -9966,6 +13116,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -10029,6 +13186,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -10074,6 +13238,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -10152,6 +13323,42 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -10194,6 +13401,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -10332,6 +13546,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -10377,6 +13598,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -10440,6 +13668,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -10485,6 +13720,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -10548,6 +13790,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -10593,6 +13842,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -10671,6 +13927,42 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -10718,6 +14010,13 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -10731,6 +14030,28 @@ final CREATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'boardCardsStats'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'total'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'archived'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -10907,6 +14228,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -10952,6 +14280,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -11004,6 +14339,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'picture'),
             alias: null,
             arguments: [],
@@ -11046,6 +14388,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -11108,6 +14457,42 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -11150,6 +14535,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -11281,6 +14673,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -11326,6 +14725,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -11389,6 +14795,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -11434,6 +14847,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -11497,6 +14917,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -11542,6 +14969,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -11620,6 +15054,42 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -11662,6 +15132,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -11800,6 +15277,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -11845,6 +15329,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -11908,6 +15399,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -11953,6 +15451,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -12016,6 +15521,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                     directives: [],
                                     selectionSet: null,
                                   ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
                                 ]),
                               ),
                               FieldNode(
@@ -12061,6 +15573,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -12139,6 +15658,42 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -12186,6 +15741,13 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                 ]),
@@ -12199,6 +15761,28 @@ final UPDATE_PROJECT_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
               FieldNode(
                 name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'boardCardsStats'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'total'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'archived'),
                 alias: null,
                 arguments: [],
                 directives: [],
@@ -12245,6 +15829,1744 @@ class UpdateProjectMutation
   @override
   UpdateProject$Mutation parse(Map<String, dynamic> json) =>
       UpdateProject$Mutation.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BulkUpdateProjectMediaArguments extends JsonSerializable
+    with EquatableMixin {
+  BulkUpdateProjectMediaArguments({required this.input});
+
+  @override
+  factory BulkUpdateProjectMediaArguments.fromJson(Map<String, dynamic> json) =>
+      _$BulkUpdateProjectMediaArgumentsFromJson(json);
+
+  late List<UpdateMediaInput> input;
+
+  @override
+  List<Object?> get props => [input];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$BulkUpdateProjectMediaArgumentsToJson(this);
+}
+
+final BULK_UPDATE_PROJECT_MEDIA_MUTATION_DOCUMENT_OPERATION_NAME =
+    'bulkUpdateProjectMedia';
+final BULK_UPDATE_PROJECT_MEDIA_MUTATION_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.mutation,
+    name: NameNode(value: 'bulkUpdateProjectMedia'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'input')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'UpdateMediaInput'),
+            isNonNull: true,
+          ),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'bulkUpdateProjectMedia'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'input'),
+            value: VariableNode(name: NameNode(value: 'input')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'id'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'name'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'description'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'media'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'videos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'deg360'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'pictures'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'privacy'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'tags'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'deadline'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'priority'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'status'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'color'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'externalId'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'picture'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'baseUrl'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'path'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'width'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'height'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'x'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'y'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'members'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'member'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'email'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'gender'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lastName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'username'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'firstName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'picture'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'role'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'resources'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'type'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'image'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'background'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'png'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'svg'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'black'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'png'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'svg'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'white'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'png'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'svg'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'icon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'size'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'owner'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'email'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'gender'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lastName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'username'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'firstName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'picture'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'attachments'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'type'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'type'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'image'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'background'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'png'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'svg'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'black'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'png'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'svg'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'white'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'png'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'svg'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'icon'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'size'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'owner'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'email'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'gender'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'lastName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'username'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'firstName'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'picture'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'boardCardsStats'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'total'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'archived'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class BulkUpdateProjectMediaMutation extends GraphQLQuery<
+    BulkUpdateProjectMedia$Mutation, BulkUpdateProjectMediaArguments> {
+  BulkUpdateProjectMediaMutation({required this.variables});
+
+  @override
+  final DocumentNode document = BULK_UPDATE_PROJECT_MEDIA_MUTATION_DOCUMENT;
+
+  @override
+  final String operationName =
+      BULK_UPDATE_PROJECT_MEDIA_MUTATION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final BulkUpdateProjectMediaArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  BulkUpdateProjectMedia$Mutation parse(Map<String, dynamic> json) =>
+      BulkUpdateProjectMedia$Mutation.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -12332,4 +17654,128 @@ class DeleteProjectMutation
   @override
   DeleteProject$Mutation parse(Map<String, dynamic> json) =>
       DeleteProject$Mutation.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ImportProjectsByExcelArguments extends JsonSerializable
+    with EquatableMixin {
+  ImportProjectsByExcelArguments({
+    required this.target,
+    this.base64,
+    this.path,
+  });
+
+  @override
+  factory ImportProjectsByExcelArguments.fromJson(Map<String, dynamic> json) =>
+      _$ImportProjectsByExcelArgumentsFromJson(json);
+
+  late TargetACIInput target;
+
+  final String? base64;
+
+  final String? path;
+
+  @override
+  List<Object?> get props => [target, base64, path];
+
+  @override
+  Map<String, dynamic> toJson() => _$ImportProjectsByExcelArgumentsToJson(this);
+}
+
+final IMPORT_PROJECTS_BY_EXCEL_MUTATION_DOCUMENT_OPERATION_NAME =
+    'importProjectsByExcel';
+final IMPORT_PROJECTS_BY_EXCEL_MUTATION_DOCUMENT = DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.mutation,
+    name: NameNode(value: 'importProjectsByExcel'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'base64')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'path')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'String'),
+          isNonNull: false,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      ),
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'importProjectsByExcel'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'base64'),
+            value: VariableNode(name: NameNode(value: 'base64')),
+          ),
+          ArgumentNode(
+            name: NameNode(value: 'path'),
+            value: VariableNode(name: NameNode(value: 'path')),
+          ),
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'message'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'success'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class ImportProjectsByExcelMutation extends GraphQLQuery<
+    ImportProjectsByExcel$Mutation, ImportProjectsByExcelArguments> {
+  ImportProjectsByExcelMutation({required this.variables});
+
+  @override
+  final DocumentNode document = IMPORT_PROJECTS_BY_EXCEL_MUTATION_DOCUMENT;
+
+  @override
+  final String operationName =
+      IMPORT_PROJECTS_BY_EXCEL_MUTATION_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final ImportProjectsByExcelArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  ImportProjectsByExcel$Mutation parse(Map<String, dynamic> json) =>
+      ImportProjectsByExcel$Mutation.fromJson(json);
 }

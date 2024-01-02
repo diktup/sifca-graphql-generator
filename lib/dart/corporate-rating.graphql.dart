@@ -7,6 +7,33 @@ import 'package:gql/ast.dart';
 part 'corporate-rating.graphql.g.dart';
 
 @JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$UserType$PhoneType();
+
+  factory CorporateRating$Query$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CorporateRating$Query$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   CorporateRating$Query$CorporateRatingType$UserType$PictureType();
@@ -28,8 +55,10 @@ class CorporateRating$Query$CorporateRatingType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -59,15 +88,105 @@ class CorporateRating$Query$CorporateRatingType$UserType
 
   String? firstName;
 
+  CorporateRating$Query$CorporateRatingType$UserType$PhoneType? phone;
+
   CorporateRating$Query$CorporateRatingType$UserType$PictureType? picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$UserTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType();
+
+  factory CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$TargetType();
+
+  factory CorporateRating$Query$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$TargetTypeFromJson(json);
+
+  CorporateRating$Query$CorporateRatingType$TargetType$PointOfSaleType? pos;
+
+  CorporateRating$Query$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  CorporateRating$Query$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -92,8 +211,10 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType$Pi
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -125,6 +246,204 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -174,8 +493,10 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -203,6 +524,366 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCat
   @override
   Map<String, dynamic> toJson() =>
       _$CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -243,6 +924,12 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType
   CorporateRating$Query$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   CorporateRating$Query$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -259,6 +946,9 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType
   List<CorporateRating$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<CorporateRating$Query$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -273,12 +963,15 @@ class CorporateRating$Query$CorporateRatingType$InternalProductType
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -331,14 +1024,25 @@ class CorporateRating$Query$CorporateRatingType extends JsonSerializable
 
   late CorporateRating$Query$CorporateRatingType$UserType user;
 
+  late CorporateRating$Query$CorporateRatingType$TargetType target;
+
   CorporateRating$Query$CorporateRatingType$InternalProductType? product;
 
   late CorporateRating$Query$CorporateRatingType$CorporateRatingDefinitionType
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -359,6 +1063,33 @@ class CorporateRating$Query extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$CorporateRating$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$UserType$PhoneType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -383,8 +1114,10 @@ class GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -414,16 +1147,108 @@ class GetAllCorporateRatings$Query$CorporateRatingType$UserType
 
   String? firstName;
 
+  GetAllCorporateRatings$Query$CorporateRatingType$UserType$PhoneType? phone;
+
   GetAllCorporateRatings$Query$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$UserTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -448,8 +1273,10 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Media
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -481,6 +1308,204 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Media
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -530,8 +1555,10 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Pictu
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -559,6 +1586,366 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$Catal
   @override
   Map<String, dynamic> toJson() =>
       _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -599,6 +1986,12 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
   GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -615,6 +2008,9 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
   List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -629,12 +2025,15 @@ class GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -687,14 +2086,25 @@ class GetAllCorporateRatings$Query$CorporateRatingType extends JsonSerializable
 
   late GetAllCorporateRatings$Query$CorporateRatingType$UserType user;
 
+  late GetAllCorporateRatings$Query$CorporateRatingType$TargetType target;
+
   GetAllCorporateRatings$Query$CorporateRatingType$InternalProductType? product;
 
   late GetAllCorporateRatings$Query$CorporateRatingType$CorporateRatingDefinitionType
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -720,6 +2130,33 @@ class GetAllCorporateRatings$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType();
@@ -741,8 +2178,10 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -773,16 +2212,110 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   String? firstName;
 
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType?
+      phone;
+
   GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -808,8 +2341,10 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -841,6 +2376,204 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -890,8 +2623,10 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -919,6 +2654,366 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -959,6 +3054,12 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -975,6 +3076,9 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -989,12 +3093,15 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -1049,6 +3156,9 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
   late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
       user;
 
+  late GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
+      target;
+
   GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType?
       product;
 
@@ -1056,8 +3166,17 @@ class GetCorporateRatingsBytarget$Query$CorporateRatingPaginateType$CorporateRat
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1161,6 +3280,33 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType();
@@ -1182,8 +3328,10 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1214,16 +3362,110 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   String? firstName;
 
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType?
+      phone;
+
   GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -1249,8 +3491,10 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1282,6 +3526,204 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -1331,8 +3773,10 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1360,6 +3804,366 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -1400,6 +4204,12 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
   GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -1416,6 +4226,9 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
   List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -1430,12 +4243,15 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -1490,6 +4306,9 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
   late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
       user;
 
+  late GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
+      target;
+
   GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType?
       product;
 
@@ -1497,8 +4316,17 @@ class GetCorporateRatings$Query$CorporateRatingPaginateType$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1549,6 +4377,33 @@ class GetCorporateRatings$Query extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PhoneType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureType();
@@ -1570,8 +4425,10 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1602,16 +4459,110 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
 
   String? firstName;
 
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PhoneType?
+      phone;
+
   GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -1637,8 +4588,10 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1670,6 +4623,204 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -1719,8 +4870,10 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1748,6 +4901,366 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
   @override
   Map<String, dynamic> toJson() =>
       _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -1788,6 +5301,12 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
   GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -1804,6 +5323,9 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
   List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -1818,12 +5340,15 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$Internal
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -1878,6 +5403,9 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
   late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$UserType
       user;
 
+  late GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$TargetType
+      target;
+
   GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType$InternalProductType?
       product;
 
@@ -1885,8 +5413,17 @@ class GetCurrentUserCorporateRatingsByProduct$Query$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1915,6 +5452,33 @@ class GetCurrentUserCorporateRatingsByProduct$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType();
@@ -1936,8 +5500,10 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1968,16 +5534,110 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   String? firstName;
 
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PhoneType?
+      phone;
+
   GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -2003,8 +5663,10 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2036,6 +5698,204 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -2085,8 +5945,10 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2114,6 +5976,366 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -2154,6 +6376,12 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -2170,6 +6398,9 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -2184,12 +6415,15 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -2244,6 +6478,9 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
   late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$UserType
       user;
 
+  late GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$TargetType
+      target;
+
   GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRatingType$InternalProductType?
       product;
 
@@ -2251,8 +6488,17 @@ class GetCorporateRatingsByProduct$Query$CorporateRatingPaginateType$CorporateRa
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2308,6 +6554,33 @@ class GetCorporateRatingsByProduct$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PhoneType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureType();
@@ -2329,8 +6602,10 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2361,16 +6636,110 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   String? firstName;
 
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PhoneType?
+      phone;
+
   GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetTypeToJson(
           this);
 }
 
@@ -2396,8 +6765,10 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2429,6 +6800,204 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -2478,8 +7047,10 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2507,6 +7078,366 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   @override
   Map<String, dynamic> toJson() =>
       _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -2547,6 +7478,12 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -2563,6 +7500,9 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -2577,12 +7517,15 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -2637,6 +7580,9 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
   late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$UserType
       user;
 
+  late GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$TargetType
+      target;
+
   GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPaginatedType$CorporateRatingType$InternalProductType?
       product;
 
@@ -2644,8 +7590,17 @@ class GetCorporateRatingsByProductWithStats$Query$CorporateRatingWithStatsPagina
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2795,6 +7750,33 @@ class GetAverageCorporateProductRatingsByProduct$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType();
@@ -2816,8 +7798,10 @@ class CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2848,16 +7832,109 @@ class CreateCorporateRating$Mutation$CorporateRatingType$UserType
 
   String? firstName;
 
+  CreateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType? phone;
+
   CreateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$TargetTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -2882,8 +7959,10 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2915,6 +7994,204 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -2964,8 +8241,10 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2993,6 +8272,366 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Cat
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -3033,6 +8672,12 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
   CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -3049,6 +8694,9 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
   List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -3063,12 +8711,15 @@ class CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -3121,6 +8772,8 @@ class CreateCorporateRating$Mutation$CorporateRatingType
 
   late CreateCorporateRating$Mutation$CorporateRatingType$UserType user;
 
+  late CreateCorporateRating$Mutation$CorporateRatingType$TargetType target;
+
   CreateCorporateRating$Mutation$CorporateRatingType$InternalProductType?
       product;
 
@@ -3128,8 +8781,17 @@ class CreateCorporateRating$Mutation$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3184,6 +8846,33 @@ class CorporateRatingInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneTypeFromJson(
+          json);
+
+  String? number;
+
+  bool? isValid;
+
+  String? countryCode;
+
+  int? validationNumber;
+
+  @override
+  List<Object?> get props => [number, isValid, countryCode, validationNumber];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
     extends JsonSerializable with EquatableMixin {
   UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType();
@@ -3205,8 +8894,10 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3237,16 +8928,109 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$UserType
 
   String? firstName;
 
+  UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PhoneType? phone;
+
   UpdateCorporateRating$Mutation$CorporateRatingType$UserType$PictureType?
       picture;
 
   @override
   List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, picture];
+      [id, email, gender, lastName, username, firstName, phone, picture];
 
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$UserTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetTypeFromJson(
+          json);
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$TargetTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -3271,8 +9055,10 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3304,6 +9090,204 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Med
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
+          json);
+
+  String? name;
+
+  String? content;
+
+  @override
+  List<Object?> get props => [name, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeFromJson(
+          json);
+
+  String? urlKey;
+
+  String? metaTitle;
+
+  String? metaDesription;
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType$MetaKeywordsType>?
+      metaKeywords;
+
+  @override
+  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  List<String>? descriptionList;
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType$ProductSpecsType>?
+      specs;
+
+  @override
+  List<Object?> get props => [name, description, descriptionList, specs];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationTypeToJson(
           this);
 }
 
@@ -3353,8 +9337,10 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Pic
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3382,6 +9368,366 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$Cat
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeFromJson(
+          json);
+
+  String? amount;
+
+  @JsonKey(unknownEnumValue: DiscountType.artemisUnknown)
+  DiscountType? discountType;
+
+  @override
+  List<Object?> get props => [amount, discountType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeFromJson(
+          json);
+
+  List<String>? videos;
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      deg360;
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType$PictureType>?
+      pictures;
+
+  @override
+  List<Object?> get props => [videos, deg360, pictures];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeFromJson(
+          json);
+
+  String? pixelAttribute;
+
+  @override
+  List<Object?> get props => [pixelAttribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late String externalId;
+
+  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
+  ProductVarietyEnum? variety;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  bool? isRequired;
+
+  bool? isMultipleChoice;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
+      pixel;
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  @override
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        variety,
+        createdAt,
+        updatedAt,
+        isRequired,
+        isMultipleChoice,
+        pixel,
+        translation
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeFromJson(
+          json);
+
+  late String id;
+
+  late String label;
+
+  late UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
+      attribute;
+
+  @override
+  List<Object?> get props => [id, label, attribute];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeFromJson(
+          json);
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType>?
+      attributesValues;
+
+  @override
+  List<Object?> get props => [attributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType();
+
+  factory UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  String? price;
+
+  late String barcode;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$DiscountDtoType?
+      discount;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$MediaType?
+      media;
+
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType$InternalProductAttributesValuesType?
+      productAttributesValues;
+
+  @override
+  List<Object?> get props =>
+      [id, name, price, barcode, discount, media, productAttributesValues];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeTypeToJson(
           this);
 }
 
@@ -3422,6 +9768,12 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
   UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$MediaType?
       media;
 
+  UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategorySeoType?
+      seo;
+
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   List<String>? descriptionList;
 
   UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$DiscountDtoType?
@@ -3438,6 +9790,9 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
   List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType$BarcodeType>?
+      barcodes;
+
   @override
   List<Object?> get props => [
         id,
@@ -3452,12 +9807,15 @@ class UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType
         externalId,
         description,
         media,
+        seo,
+        translation,
         descriptionList,
         discount,
         priceBeforeReduction,
         picture,
         pictures,
-        catalogueCategory
+        catalogueCategory,
+        barcodes
       ];
 
   @override
@@ -3510,6 +9868,8 @@ class UpdateCorporateRating$Mutation$CorporateRatingType
 
   late UpdateCorporateRating$Mutation$CorporateRatingType$UserType user;
 
+  late UpdateCorporateRating$Mutation$CorporateRatingType$TargetType target;
+
   UpdateCorporateRating$Mutation$CorporateRatingType$InternalProductType?
       product;
 
@@ -3517,8 +9877,17 @@ class UpdateCorporateRating$Mutation$CorporateRatingType
       reviewType;
 
   @override
-  List<Object?> get props =>
-      [id, mark, comment, createdAt, updatedAt, user, product, reviewType];
+  List<Object?> get props => [
+        id,
+        mark,
+        comment,
+        createdAt,
+        updatedAt,
+        user,
+        target,
+        product,
+        reviewType
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3641,6 +10010,19 @@ enum DiscountType {
   amount,
   @JsonValue('PERCENTAGE')
   percentage,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum ProductVarietyEnum {
+  @JsonValue('PRODUCT')
+  product,
+  @JsonValue('EQUIPMENT')
+  equipment,
+  @JsonValue('SERVICE')
+  service,
+  @JsonValue('VEHICULE')
+  vehicule,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -3775,6 +10157,42 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'picture'),
                 alias: null,
                 arguments: [],
@@ -3822,6 +10240,66 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -3970,6 +10448,13 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -4019,6 +10504,287 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'seo'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'urlKey'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaTitle'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaDesription'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaKeywords'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -4108,6 +10874,13 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -4158,6 +10931,13 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -4179,6 +10959,491 @@ final CORPORATE_RATING_QUERY_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'barcodes'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'price'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'discount'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'amount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discountType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'media'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'videos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'deg360'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'pictures'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'productAttributesValues'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'attributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'label'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'attribute'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'externalId'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'variety'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isRequired'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isMultipleChoice'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pixel'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pixelAttribute'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -4332,6 +11597,42 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'picture'),
                 alias: null,
                 arguments: [],
@@ -4379,6 +11680,66 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -4527,6 +11888,13 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -4576,6 +11944,287 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'seo'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'urlKey'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaTitle'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaDesription'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaKeywords'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -4665,6 +12314,13 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -4715,6 +12371,13 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -4736,6 +12399,491 @@ final GET_ALL_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'barcodes'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'price'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'discount'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'amount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discountType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'media'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'videos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'deg360'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'pictures'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'productAttributesValues'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'attributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'label'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'attribute'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'externalId'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'variety'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isRequired'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isMultipleChoice'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pixel'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pixelAttribute'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -4961,6 +13109,42 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -5008,6 +13192,66 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -5156,6 +13400,13 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5205,6 +13456,287 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                             arguments: [],
                             directives: [],
                             selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'seo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'urlKey'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaTitle'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaDesription'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaKeywords'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'content'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
                           ),
                         ]),
                       ),
@@ -5294,6 +13826,13 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -5344,6 +13883,13 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -5365,6 +13911,495 @@ final GET_CORPORATE_RATINGS_BYTARGET_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcodes'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'price'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'barcode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'amount'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'discountType'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'media'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'videos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'deg360'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'pictures'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'productAttributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'attributesValues'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'attribute'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'label'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'externalId'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'variety'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isRequired'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isMultipleChoice'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'pixel'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          )
+                        ]),
                       ),
                     ]),
                   ),
@@ -5574,6 +14609,42 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -5621,6 +14692,66 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -5769,6 +14900,13 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -5818,6 +14956,287 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                             arguments: [],
                             directives: [],
                             selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'seo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'urlKey'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaTitle'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaDesription'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaKeywords'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'content'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
                           ),
                         ]),
                       ),
@@ -5907,6 +15326,13 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -5957,6 +15383,13 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -5978,6 +15411,495 @@ final GET_CORPORATE_RATINGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcodes'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'price'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'barcode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'amount'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'discountType'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'media'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'videos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'deg360'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'pictures'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'productAttributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'attributesValues'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'attribute'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'label'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'externalId'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'variety'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isRequired'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isMultipleChoice'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'pixel'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          )
+                        ]),
                       ),
                     ]),
                   ),
@@ -6170,6 +16092,42 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'picture'),
                 alias: null,
                 arguments: [],
@@ -6217,6 +16175,66 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -6365,6 +16383,13 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -6414,6 +16439,287 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'seo'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'urlKey'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaTitle'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaDesription'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaKeywords'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -6503,6 +16809,13 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -6553,6 +16866,13 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -6574,6 +16894,491 @@ final GET_CURRENT_USER_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'barcodes'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'price'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'discount'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'amount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discountType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'media'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'videos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'deg360'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'pictures'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'productAttributesValues'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'attributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'label'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'attribute'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'externalId'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'variety'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isRequired'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isMultipleChoice'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pixel'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pixelAttribute'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -6805,6 +17610,42 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -6852,6 +17693,66 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -7000,6 +17901,13 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7049,6 +17957,287 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                             arguments: [],
                             directives: [],
                             selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'seo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'urlKey'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaTitle'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaDesription'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaKeywords'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'content'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
                           ),
                         ]),
                       ),
@@ -7138,6 +18327,13 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -7188,6 +18384,13 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -7209,6 +18412,495 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcodes'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'price'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'barcode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'amount'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'discountType'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'media'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'videos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'deg360'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'pictures'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'productAttributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'attributesValues'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'attribute'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'label'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'externalId'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'variety'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isRequired'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isMultipleChoice'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'pixel'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          )
+                        ]),
                       ),
                     ]),
                   ),
@@ -7439,6 +19131,42 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'phone'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'number'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'isValid'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'countryCode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'validationNumber'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'picture'),
                     alias: null,
                     arguments: [],
@@ -7486,6 +19214,66 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -7634,6 +19422,13 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
                         ]),
                       ),
                       FieldNode(
@@ -7683,6 +19478,287 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                             arguments: [],
                             directives: [],
                             selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'seo'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'urlKey'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaTitle'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaDesription'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'metaKeywords'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'content'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'specs'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'key'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'value'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
                           ),
                         ]),
                       ),
@@ -7772,6 +19848,13 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -7822,6 +19905,13 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -7843,6 +19933,495 @@ final GET_CORPORATE_RATINGS_BY_PRODUCT_WITH_STATS_QUERY_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcodes'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'price'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'barcode'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'amount'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'discountType'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'media'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'videos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'deg360'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'pictures'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'productAttributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'attributesValues'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'attribute'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'label'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'externalId'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'variety'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isRequired'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'isMultipleChoice'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'pixel'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          )
+                        ]),
                       ),
                     ]),
                   ),
@@ -8169,6 +20748,42 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'picture'),
                 alias: null,
                 arguments: [],
@@ -8216,6 +20831,66 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -8364,6 +21039,13 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -8413,6 +21095,287 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'seo'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'urlKey'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaTitle'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaDesription'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaKeywords'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -8502,6 +21465,13 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -8552,6 +21522,13 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -8573,6 +21550,491 @@ final CREATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'barcodes'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'price'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'discount'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'amount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discountType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'media'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'videos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'deg360'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'pictures'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'productAttributesValues'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'attributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'label'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'attribute'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'externalId'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'variety'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isRequired'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isMultipleChoice'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pixel'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pixelAttribute'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -8778,6 +22240,42 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'phone'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'number'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'isValid'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'countryCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'validationNumber'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'picture'),
                 alias: null,
                 arguments: [],
@@ -8825,6 +22323,66 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -8973,6 +22531,13 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -9022,6 +22587,287 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'seo'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'urlKey'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaTitle'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaDesription'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'metaKeywords'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
                       ),
                     ]),
                   ),
@@ -9111,6 +22957,13 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -9161,6 +23014,13 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
                 ]),
               ),
               FieldNode(
@@ -9182,6 +23042,491 @@ final UPDATE_CORPORATE_RATING_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'barcodes'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'price'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'barcode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'discount'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'amount'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'discountType'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'media'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'videos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'deg360'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'pictures'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'productAttributesValues'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'attributesValues'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'label'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'attribute'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'externalId'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'variety'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isRequired'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'isMultipleChoice'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'pixel'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pixelAttribute'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      )
+                    ]),
                   ),
                 ]),
               ),

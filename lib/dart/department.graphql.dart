@@ -7,6 +7,92 @@ import 'package:gql/ast.dart';
 part 'department.graphql.g.dart';
 
 @JsonSerializable(explicitToJson: true)
+class GetDepartments$Query$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartments$Query$DepartmentType$TargetType$PointOfSaleType();
+
+  factory GetDepartments$Query$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartments$Query$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartments$Query$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetDepartments$Query$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartments$Query$DepartmentType$TargetType$WholesalerType();
+
+  factory GetDepartments$Query$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartments$Query$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartments$Query$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetDepartments$Query$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartments$Query$DepartmentType$TargetType$ManufacturerType();
+
+  factory GetDepartments$Query$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartments$Query$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartments$Query$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetDepartments$Query$DepartmentType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetDepartments$Query$DepartmentType$TargetType();
+
+  factory GetDepartments$Query$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartments$Query$DepartmentType$TargetTypeFromJson(json);
+
+  GetDepartments$Query$DepartmentType$TargetType$PointOfSaleType? pos;
+
+  GetDepartments$Query$DepartmentType$TargetType$WholesalerType? wholesaler;
+
+  GetDepartments$Query$DepartmentType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartments$Query$DepartmentType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetDepartments$Query$DepartmentType extends JsonSerializable
     with EquatableMixin {
   GetDepartments$Query$DepartmentType();
@@ -19,12 +105,14 @@ class GetDepartments$Query$DepartmentType extends JsonSerializable
 
   late String name;
 
+  late GetDepartments$Query$DepartmentType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -48,6 +136,88 @@ class GetDepartments$Query extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class Department$Query$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  Department$Query$DepartmentType$TargetType$PointOfSaleType();
+
+  factory Department$Query$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Department$Query$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Department$Query$DepartmentType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Department$Query$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  Department$Query$DepartmentType$TargetType$WholesalerType();
+
+  factory Department$Query$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Department$Query$DepartmentType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Department$Query$DepartmentType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Department$Query$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  Department$Query$DepartmentType$TargetType$ManufacturerType();
+
+  factory Department$Query$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Department$Query$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Department$Query$DepartmentType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Department$Query$DepartmentType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  Department$Query$DepartmentType$TargetType();
+
+  factory Department$Query$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Department$Query$DepartmentType$TargetTypeFromJson(json);
+
+  Department$Query$DepartmentType$TargetType$PointOfSaleType? pos;
+
+  Department$Query$DepartmentType$TargetType$WholesalerType? wholesaler;
+
+  Department$Query$DepartmentType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Department$Query$DepartmentType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Department$Query$DepartmentType extends JsonSerializable
     with EquatableMixin {
   Department$Query$DepartmentType();
@@ -59,12 +229,14 @@ class Department$Query$DepartmentType extends JsonSerializable
 
   late String name;
 
+  late Department$Query$DepartmentType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -88,6 +260,94 @@ class Department$Query extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetDepartmentsByTarget$Query$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType$PointOfSaleType();
+
+  factory GetDepartmentsByTarget$Query$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetDepartmentsByTarget$Query$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType$WholesalerType();
+
+  factory GetDepartmentsByTarget$Query$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetDepartmentsByTarget$Query$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType$ManufacturerType();
+
+  factory GetDepartmentsByTarget$Query$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetDepartmentsByTarget$Query$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType();
+
+  factory GetDepartmentsByTarget$Query$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetTypeFromJson(json);
+
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType$PointOfSaleType? pos;
+
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetDepartmentsByTarget$Query$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetDepartmentsByTarget$Query$DepartmentType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetDepartmentsByTarget$Query$DepartmentType extends JsonSerializable
     with EquatableMixin {
   GetDepartmentsByTarget$Query$DepartmentType();
@@ -100,12 +360,14 @@ class GetDepartmentsByTarget$Query$DepartmentType extends JsonSerializable
 
   late String name;
 
+  late GetDepartmentsByTarget$Query$DepartmentType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -157,6 +419,97 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$WholesalerType();
+
+  factory SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$ManufacturerType();
+
+  factory SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType();
+
+  factory SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType();
@@ -170,12 +523,15 @@ class SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType
 
   late String name;
 
+  late SearchDepartmentsByTarget$Query$DepartmentPaginatedType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -249,6 +605,94 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType();
+
+  factory CreateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateDepartment$Mutation$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateDepartment$Mutation$DepartmentType$TargetType$WholesalerType();
+
+  factory CreateDepartment$Mutation$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType();
+
+  factory CreateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateDepartment$Mutation$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateDepartment$Mutation$DepartmentType$TargetType();
+
+  factory CreateDepartment$Mutation$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetTypeFromJson(json);
+
+  CreateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType? pos;
+
+  CreateDepartment$Mutation$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateDepartment$Mutation$DepartmentType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateDepartment$Mutation$DepartmentType extends JsonSerializable
     with EquatableMixin {
   CreateDepartment$Mutation$DepartmentType();
@@ -261,12 +705,14 @@ class CreateDepartment$Mutation$DepartmentType extends JsonSerializable
 
   late String name;
 
+  late CreateDepartment$Mutation$DepartmentType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -311,6 +757,94 @@ class DepartmentInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType();
+
+  factory UpdateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateDepartment$Mutation$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateDepartment$Mutation$DepartmentType$TargetType$WholesalerType();
+
+  factory UpdateDepartment$Mutation$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType();
+
+  factory UpdateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateDepartment$Mutation$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateDepartment$Mutation$DepartmentType$TargetType();
+
+  factory UpdateDepartment$Mutation$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetTypeFromJson(json);
+
+  UpdateDepartment$Mutation$DepartmentType$TargetType$PointOfSaleType? pos;
+
+  UpdateDepartment$Mutation$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateDepartment$Mutation$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateDepartment$Mutation$DepartmentType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateDepartment$Mutation$DepartmentType extends JsonSerializable
     with EquatableMixin {
   UpdateDepartment$Mutation$DepartmentType();
@@ -323,12 +857,14 @@ class UpdateDepartment$Mutation$DepartmentType extends JsonSerializable
 
   late String name;
 
+  late UpdateDepartment$Mutation$DepartmentType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -415,6 +951,59 @@ final GET_DEPARTMENTS_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -513,6 +1102,59 @@ final DEPARTMENT_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -617,6 +1259,59 @@ final GET_DEPARTMENTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -779,6 +1474,59 @@ final SEARCH_DEPARTMENTS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -881,6 +1629,59 @@ final CREATE_DEPARTMENT_MUTATION_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),
@@ -1001,6 +1802,59 @@ final UPDATE_DEPARTMENT_MUTATION_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'createdAt'),

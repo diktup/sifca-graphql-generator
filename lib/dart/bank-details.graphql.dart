@@ -239,6 +239,8 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -268,6 +270,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -1547,6 +1550,8 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -1576,6 +1581,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -2327,6 +2333,8 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -2356,6 +2364,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -3087,6 +3096,13 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: SelectionSetNode(selections: [
                       FieldNode(
                         name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -5919,6 +5935,13 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'adminName'),
                         alias: null,
                         arguments: [],
@@ -7328,6 +7351,13 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: SelectionSetNode(selections: [
                       FieldNode(
                         name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
                         alias: null,
                         arguments: [],
                         directives: [],

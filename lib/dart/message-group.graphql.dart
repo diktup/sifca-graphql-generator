@@ -3502,6 +3502,186 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$PictureType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsTypeFromJson(
+          json);
+
+  late GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+      permission;
+
+  bool? read;
+
+  bool? write;
+
+  bool? create;
+
+  @override
+  List<Object?> get props => [permission, read, write, create];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$PointOfSaleType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$WholesalerType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$ManufacturerType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetTypeFromJson(
+          json);
+
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType
+    extends JsonSerializable with EquatableMixin {
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType();
+
+  factory GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  List<GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$PermissionPermissionsType>?
+      permissions;
+
+  late GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType$TargetType
+      target;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, name, permissions, target, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageType$PictureType();
@@ -4874,6 +5054,9 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType
   List<GetMessageGroupMembers$Query$UserPaginateType$UserType$PictureType>?
       pictures;
 
+  GetMessageGroupMembers$Query$UserPaginateType$UserType$PermissionType?
+      permission;
+
   List<GetMessageGroupMembers$Query$UserPaginateType$UserType$LanguageType>?
       languages;
 
@@ -4939,6 +5122,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType
         phone,
         picture,
         pictures,
+        permission,
         languages,
         nationality,
         billingAddress,
@@ -6731,547 +6915,6 @@ class ArchiveMessageGroup$Mutation extends JsonSerializable
 
   @override
   Map<String, dynamic> toJson() => _$ArchiveMessageGroup$MutationToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeFromJson(
-          json);
-
-  String? number;
-
-  bool? isValid;
-
-  String? countryCode;
-
-  int? validationNumber;
-
-  @override
-  List<Object?> get props => [number, isValid, countryCode, validationNumber];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeFromJson(
-          json);
-
-  String? baseUrl;
-
-  String? path;
-
-  int? width;
-
-  int? height;
-
-  int? x;
-
-  int? y;
-
-  String? alt;
-
-  @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$UserType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$UserType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$UserType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserTypeFromJson(json);
-
-  late String id;
-
-  String? email;
-
-  @JsonKey(unknownEnumValue: Gender.artemisUnknown)
-  Gender? gender;
-
-  String? lastName;
-
-  String? username;
-
-  String? firstName;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PhoneType? phone;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$UserType$PictureType? picture;
-
-  @override
-  List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, phone, picture];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$UserTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$PictureType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$PictureType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$PictureType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$PictureTypeFromJson(
-          json);
-
-  String? baseUrl;
-
-  String? path;
-
-  int? width;
-
-  int? height;
-
-  int? x;
-
-  int? y;
-
-  String? alt;
-
-  @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$PictureTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeFromJson(
-          json);
-
-  String? baseUrl;
-
-  String? path;
-
-  int? width;
-
-  int? height;
-
-  int? x;
-
-  int? y;
-
-  String? alt;
-
-  @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeFromJson(
-          json);
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType$PictureType?
-      picture;
-
-  List<String>? gradientColors;
-
-  String? assetImage;
-
-  @override
-  List<Object?> get props => [picture, gradientColors, assetImage];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeFromJson(
-          json);
-
-  String? number;
-
-  bool? isValid;
-
-  String? countryCode;
-
-  int? validationNumber;
-
-  @override
-  List<Object?> get props => [number, isValid, countryCode, validationNumber];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeFromJson(
-          json);
-
-  String? baseUrl;
-
-  String? path;
-
-  int? width;
-
-  int? height;
-
-  int? x;
-
-  int? y;
-
-  String? alt;
-
-  @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeFromJson(
-          json);
-
-  late String id;
-
-  String? email;
-
-  @JsonKey(unknownEnumValue: Gender.artemisUnknown)
-  Gender? gender;
-
-  String? lastName;
-
-  String? username;
-
-  String? firstName;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PhoneType?
-      phone;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType$PictureType?
-      picture;
-
-  @override
-  List<Object?> get props =>
-      [id, email, gender, lastName, username, firstName, phone, picture];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersTypeFromJson(
-          json);
-
-  List<UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType$UserType>?
-      users;
-
-  @override
-  List<Object?> get props => [users];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$MembersTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeFromJson(
-          json);
-
-  String? baseUrl;
-
-  String? path;
-
-  int? width;
-
-  int? height;
-
-  int? x;
-
-  int? y;
-
-  String? alt;
-
-  @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeFromJson(
-          json);
-
-  List<UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureType>?
-      video;
-
-  List<UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType$PictureType>?
-      picture;
-
-  @override
-  List<Object?> get props => [video, picture];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
-          json);
-
-  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
-  ZoneTypesEnum? type;
-
-  List<double>? coordinates;
-
-  @override
-  List<Object?> get props => [type, coordinates];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeFromJson(
-          json);
-
-  String? id;
-
-  String? type;
-
-  @override
-  List<Object?> get props => [id, type];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType
-    extends JsonSerializable with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageTypeFromJson(
-          json);
-
-  String? text;
-
-  String? gif;
-
-  String? sticker;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$MessageMediaType?
-      media;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType?
-      location;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$CustomMessageType?
-      custom;
-
-  bool? unread;
-
-  late DateTime createdAt;
-
-  late DateTime updatedAt;
-
-  @override
-  List<Object?> get props => [
-        text,
-        gif,
-        sticker,
-        media,
-        location,
-        custom,
-        unread,
-        createdAt,
-        updatedAt
-      ];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation$MessageGroupType extends JsonSerializable
-    with EquatableMixin {
-  UnarchiveMessageGroup$Mutation$MessageGroupType();
-
-  factory UnarchiveMessageGroup$Mutation$MessageGroupType.fromJson(
-          Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupTypeFromJson(json);
-
-  late String id;
-
-  String? name;
-
-  bool? mute;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$UserType? creator;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$PictureType? profilePicture;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MessageGroupWallpaperType?
-      wallpaper;
-
-  @JsonKey(unknownEnumValue: MessageSoundEnum.artemisUnknown)
-  MessageSoundEnum? sound;
-
-  bool? isDirectMessage;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$MembersType? members;
-
-  @JsonKey(unknownEnumValue: MessageGroupStatusEnum.artemisUnknown)
-  MessageGroupStatusEnum? status;
-
-  UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType? lastMessage;
-
-  int? unreadCount;
-
-  late DateTime createdAt;
-
-  late DateTime updatedAt;
-
-  @override
-  List<Object?> get props => [
-        id,
-        name,
-        mute,
-        creator,
-        profilePicture,
-        wallpaper,
-        sound,
-        isDirectMessage,
-        members,
-        status,
-        lastMessage,
-        unreadCount,
-        createdAt,
-        updatedAt
-      ];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$UnarchiveMessageGroup$Mutation$MessageGroupTypeToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroup$Mutation extends JsonSerializable
-    with EquatableMixin {
-  UnarchiveMessageGroup$Mutation();
-
-  factory UnarchiveMessageGroup$Mutation.fromJson(Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroup$MutationFromJson(json);
-
-  late UnarchiveMessageGroup$Mutation$MessageGroupType unarchiveMessageGroup;
-
-  @override
-  List<Object?> get props => [unarchiveMessageGroup];
-
-  @override
-  Map<String, dynamic> toJson() => _$UnarchiveMessageGroup$MutationToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -15628,6 +15271,160 @@ final GET_MESSAGE_GROUP_MEMBERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'permission'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'permissions'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'permission'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'read'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'write'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'create'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'languages'),
                 alias: null,
                 arguments: [],
@@ -22631,791 +22428,6 @@ class ArchiveMessageGroupMutation extends GraphQLQuery<
   @override
   ArchiveMessageGroup$Mutation parse(Map<String, dynamic> json) =>
       ArchiveMessageGroup$Mutation.fromJson(json);
-}
-
-@JsonSerializable(explicitToJson: true)
-class UnarchiveMessageGroupArguments extends JsonSerializable
-    with EquatableMixin {
-  UnarchiveMessageGroupArguments({required this.id});
-
-  @override
-  factory UnarchiveMessageGroupArguments.fromJson(Map<String, dynamic> json) =>
-      _$UnarchiveMessageGroupArgumentsFromJson(json);
-
-  late String id;
-
-  @override
-  List<Object?> get props => [id];
-
-  @override
-  Map<String, dynamic> toJson() => _$UnarchiveMessageGroupArgumentsToJson(this);
-}
-
-final UNARCHIVE_MESSAGE_GROUP_MUTATION_DOCUMENT_OPERATION_NAME =
-    'unarchiveMessageGroup';
-final UNARCHIVE_MESSAGE_GROUP_MUTATION_DOCUMENT = DocumentNode(definitions: [
-  OperationDefinitionNode(
-    type: OperationType.mutation,
-    name: NameNode(value: 'unarchiveMessageGroup'),
-    variableDefinitions: [
-      VariableDefinitionNode(
-        variable: VariableNode(name: NameNode(value: 'id')),
-        type: NamedTypeNode(
-          name: NameNode(value: 'ID'),
-          isNonNull: true,
-        ),
-        defaultValue: DefaultValueNode(value: null),
-        directives: [],
-      )
-    ],
-    directives: [],
-    selectionSet: SelectionSetNode(selections: [
-      FieldNode(
-        name: NameNode(value: 'unarchiveMessageGroup'),
-        alias: null,
-        arguments: [
-          ArgumentNode(
-            name: NameNode(value: 'id'),
-            value: VariableNode(name: NameNode(value: 'id')),
-          )
-        ],
-        directives: [],
-        selectionSet: SelectionSetNode(selections: [
-          FieldNode(
-            name: NameNode(value: 'id'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'name'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'mute'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'creator'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'id'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'email'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'gender'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'lastName'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'username'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'firstName'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'phone'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'number'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'isValid'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'countryCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'validationNumber'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'picture'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'baseUrl'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'path'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'width'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'height'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'x'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'y'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'alt'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                ]),
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'profilePicture'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'baseUrl'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'path'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'width'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'height'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'x'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'y'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'alt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'wallpaper'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'picture'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'baseUrl'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'path'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'width'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'height'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'x'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'y'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'alt'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'gradientColors'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'assetImage'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'sound'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'isDirectMessage'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'members'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'users'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'email'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'gender'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'lastName'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'username'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'firstName'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'phone'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'number'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'isValid'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'countryCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'validationNumber'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'picture'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'baseUrl'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'path'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'width'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'height'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'x'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'y'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'alt'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                    ]),
-                  ),
-                ]),
-              )
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'status'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'lastMessage'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'text'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'gif'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'sticker'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'media'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'video'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'baseUrl'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'path'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'width'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'height'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'x'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'y'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'alt'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                    ]),
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'picture'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: SelectionSetNode(selections: [
-                      FieldNode(
-                        name: NameNode(value: 'baseUrl'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'path'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'width'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'height'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'x'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'y'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'alt'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                    ]),
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'location'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'type'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'coordinates'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'custom'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: SelectionSetNode(selections: [
-                  FieldNode(
-                    name: NameNode(value: 'id'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'type'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                ]),
-              ),
-              FieldNode(
-                name: NameNode(value: 'unread'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'createdAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'updatedAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'unreadCount'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'createdAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'updatedAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-        ]),
-      )
-    ]),
-  )
-]);
-
-class UnarchiveMessageGroupMutation extends GraphQLQuery<
-    UnarchiveMessageGroup$Mutation, UnarchiveMessageGroupArguments> {
-  UnarchiveMessageGroupMutation({required this.variables});
-
-  @override
-  final DocumentNode document = UNARCHIVE_MESSAGE_GROUP_MUTATION_DOCUMENT;
-
-  @override
-  final String operationName =
-      UNARCHIVE_MESSAGE_GROUP_MUTATION_DOCUMENT_OPERATION_NAME;
-
-  @override
-  final UnarchiveMessageGroupArguments variables;
-
-  @override
-  List<Object?> get props => [document, operationName, variables];
-
-  @override
-  UnarchiveMessageGroup$Mutation parse(Map<String, dynamic> json) =>
-      UnarchiveMessageGroup$Mutation.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)

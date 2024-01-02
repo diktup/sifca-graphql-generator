@@ -79,12 +79,224 @@ class GetCatalogueCategories$Query$CatalogueCategoryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategories$Query$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategories$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategories$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategories$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategories$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -132,6 +344,11 @@ class GetCatalogueCategories$Query$CatalogueCategoryType
   List<GetCatalogueCategories$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategories$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategories$Query$CatalogueCategoryType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -149,7 +366,9 @@ class GetCatalogueCategories$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -274,12 +493,221 @@ class CatalogueCategory$Query$CatalogueCategoryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CatalogueCategory$Query$CatalogueCategoryType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CatalogueCategory$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType();
+
+  factory CatalogueCategory$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetTypeFromJson(json);
+
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType$PointOfSaleType? pos;
+
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  CatalogueCategory$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CatalogueCategory$Query$CatalogueCategoryType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -324,6 +752,11 @@ class CatalogueCategory$Query$CatalogueCategoryType extends JsonSerializable
 
   List<CatalogueCategory$Query$CatalogueCategoryType$PictureType>? pictures;
 
+  List<CatalogueCategory$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late CatalogueCategory$Query$CatalogueCategoryType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -341,7 +774,9 @@ class CatalogueCategory$Query$CatalogueCategoryType extends JsonSerializable
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -438,12 +873,224 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -491,6 +1138,11 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType
   List<GetCatalogueCategoryPath$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoryPath$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoryPath$Query$CatalogueCategoryType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -508,7 +1160,9 @@ class GetCatalogueCategoryPath$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -607,12 +1261,224 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -661,6 +1527,12 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
   List<GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -678,7 +1550,9 @@ class GetCatalogueCategoriesByTargetForPortal$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -780,12 +1654,224 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -862,12 +1948,224 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -944,12 +2242,224 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -1026,12 +2536,224 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -1108,12 +2830,224 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -1190,12 +3124,224 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetTypeToJson(
           this);
 }
 
@@ -1244,6 +3390,12 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -1261,7 +3413,9 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -1315,6 +3469,12 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+      target;
+
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -1336,6 +3496,8 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
+        translation,
+        target,
         children
       ];
 
@@ -1390,6 +3552,12 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+      target;
+
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -1411,6 +3579,8 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
+        translation,
+        target,
         children
       ];
 
@@ -1465,6 +3635,12 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+      target;
+
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -1486,6 +3662,8 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
+        translation,
+        target,
         children
       ];
 
@@ -1540,6 +3718,12 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$TargetType
+      target;
+
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -1561,6 +3745,8 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
+        translation,
+        target,
         children
       ];
 
@@ -1615,6 +3801,12 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$TargetType
+      target;
+
   List<GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChildrenType$CatalogueCategoryWithChildrenType>?
       children;
 
@@ -1636,6 +3828,8 @@ class GetCatalogueCategoriesByTargetWithChildren$Query$CatalogueCategoryWithChil
         delivery,
         seo,
         pictures,
+        translation,
+        target,
         children
       ];
 
@@ -1739,12 +3933,224 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$Pictur
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -1793,6 +4199,12 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
   List<GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -1810,7 +4222,9 @@ class GetCatalogueCategoriesByTargetAndUrlKey$Query$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -1912,12 +4326,224 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -1966,6 +4592,12 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
   List<GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -1983,7 +4615,9 @@ class GetCatalogueCategoriesByTargetPaginated$Query$CatalogueCategoryPaginateTyp
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -2133,8 +4767,10 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Picture
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2143,64 +4779,13 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Picture
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
     extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType();
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
 
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType.fromJson(
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
           Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsTypeFromJson(
-          json);
-
-  String? name;
-
-  String? content;
-
-  @override
-  List<Object?> get props => [name, content];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType();
-
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoTypeFromJson(
-          json);
-
-  String? urlKey;
-
-  String? metaTitle;
-
-  String? metaDesription;
-
-  List<GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType$MetaKeywordsType>?
-      metaKeywords;
-
-  @override
-  List<Object?> get props => [urlKey, metaTitle, metaDesription, metaKeywords];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType
-    extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType();
-
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureTypeFromJson(
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
           json);
 
   String? baseUrl;
@@ -2215,83 +4800,191 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$Catalog
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureTypeToJson(
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
           this);
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
     extends JsonSerializable with EquatableMixin {
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType();
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
 
-  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType.fromJson(
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
           Map<String, dynamic> json) =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseTypeFromJson(
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
           json);
 
   late String id;
 
-  String? name;
+  late String name;
 
-  int? rank;
+  String? code;
 
-  late int layer;
+  String? iconFlag;
 
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
-  @JsonKey(unknownEnumValue: ProductVarietyEnum.artemisUnknown)
-  ProductVarietyEnum? variety;
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
 
-  String? externalId;
-
-  late bool hasChildren;
-
-  String? description;
-
-  bool? portal;
-
-  bool? pickup;
-
-  bool? booking;
-
-  bool? delivery;
-
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$CatalogueCategorySeoType?
-      seo;
-
-  List<GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType$PictureType>?
-      pictures;
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
 
   @override
-  List<Object?> get props => [
-        id,
-        name,
-        rank,
-        layer,
-        createdAt,
-        updatedAt,
-        variety,
-        externalId,
-        hasChildren,
-        description,
-        portal,
-        pickup,
-        booking,
-        delivery,
-        seo,
-        pictures
-      ];
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
 
   @override
   Map<String, dynamic> toJson() =>
-      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseTypeToJson(
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -2340,8 +5033,11 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
   List<GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
-  GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryBaseType?
-      parent;
+  List<GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType$TargetType
+      target;
 
   @override
   List<Object?> get props => [
@@ -2361,7 +5057,8 @@ class GetCatalogueCategoriesByLayerAndParent$Query$CatalogueCategoryType
         delivery,
         seo,
         pictures,
-        parent
+        translation,
+        target
       ];
 
   @override
@@ -2463,12 +5160,224 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType();
+
+  factory GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -2517,6 +5426,12 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
   List<GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -2534,7 +5449,9 @@ class GetCatalogueCategoriesByLayerAndParentForPortal$Query$CatalogueCategoryTyp
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -2637,12 +5554,224 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType();
+
+  factory SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -2691,6 +5820,12 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
   List<SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCategoryType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -2708,7 +5843,9 @@ class SearchCatalogueCategories$Query$CatalogueCategoryPaginateType$CatalogueCat
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -2836,12 +5973,224 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType();
+
+  factory CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -2889,6 +6238,11 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType
   List<CreateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<CreateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late CreateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -2906,7 +6260,9 @@ class CreateCatalogueCategory$Mutation$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -3212,12 +6568,224 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType();
+
+  factory UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -3265,6 +6833,11 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType
   List<UpdateCatalogueCategory$Mutation$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<UpdateCatalogueCategory$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late UpdateCatalogueCategory$Mutation$CatalogueCategoryType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -3282,7 +6855,9 @@ class UpdateCatalogueCategory$Mutation$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -3498,12 +7073,224 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  late String description;
+
+  @override
+  List<Object?> get props => [name, description];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationTypeFromJson(
+          json);
+
+  late ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$LanguageType
+      language;
+
+  late ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType$CatalogueCategoryTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType();
+
+  factory ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetTypeFromJson(
+          json);
+
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$PointOfSaleType?
+      pos;
+
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$WholesalerType?
+      wholesaler;
+
+  ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetTypeToJson(
           this);
 }
 
@@ -3551,6 +7338,12 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType
   List<ReorderCatalogueCategories$Mutation$CatalogueCategoryType$PictureType>?
       pictures;
 
+  List<ReorderCatalogueCategories$Mutation$CatalogueCategoryType$CatalogueCategoryTranslationType>?
+      translation;
+
+  late ReorderCatalogueCategories$Mutation$CatalogueCategoryType$TargetType
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -3568,7 +7361,9 @@ class ReorderCatalogueCategories$Mutation$CatalogueCategoryType
         booking,
         delivery,
         seo,
-        pictures
+        pictures,
+        translation,
+        target
       ];
 
   @override
@@ -3855,6 +7650,260 @@ final GET_CATALOGUE_CATEGORIES_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
             ]),
           ),
         ]),
@@ -4127,6 +8176,260 @@ final CATALOGUE_CATEGORY_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -4403,6 +8706,260 @@ final GET_CATALOGUE_CATEGORY_PATH_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -4681,6 +9238,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_FOR_PORTAL_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -4963,6 +9774,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
             ]),
           ),
           FieldNode(
@@ -5167,6 +10232,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -5373,6 +10692,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -5577,6 +11150,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                             arguments: [],
                             directives: [],
                             selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'translation'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'language'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'content'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'description'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'target'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'pos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'wholesaler'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'manufacturer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
                           ),
                         ]),
                       ),
@@ -5783,6 +11610,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                                 directives: [],
                                 selectionSet: null,
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'translation'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'language'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'content'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'description'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'target'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'pos'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'wholesaler'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'manufacturer'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -5987,6 +12068,262 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_WITH_CHILDREN_QUERY_DOCUMENT =
                                     arguments: [],
                                     directives: [],
                                     selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'description'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
                                   ),
                                 ]),
                               ),
@@ -6296,6 +12633,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_AND_URL_KEY_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -6615,6 +13206,260 @@ final GET_CATALOGUE_CATEGORIES_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -6950,154 +13795,176 @@ final GET_CATALOGUE_CATEGORIES_BY_LAYER_AND_PARENT_QUERY_DOCUMENT =
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'parent'),
+            name: NameNode(value: 'translation'),
             alias: null,
             arguments: [],
             directives: [],
             selectionSet: SelectionSetNode(selections: [
               FieldNode(
-                name: NameNode(value: 'id'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'name'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'rank'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'layer'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'createdAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'updatedAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'variety'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'externalId'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'hasChildren'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'description'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'portal'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'pickup'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'booking'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'delivery'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'seo'),
+                name: NameNode(value: 'language'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
-                    name: NameNode(value: 'urlKey'),
+                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'metaTitle'),
+                    name: NameNode(value: 'name'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'metaDesription'),
+                    name: NameNode(value: 'code'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'metaKeywords'),
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: SelectionSetNode(selections: [
                       FieldNode(
-                        name: NameNode(value: 'name'),
+                        name: NameNode(value: 'baseUrl'),
                         alias: null,
                         arguments: [],
                         directives: [],
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'content'),
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -7108,53 +13975,78 @@ final GET_CATALOGUE_CATEGORIES_BY_LAYER_AND_PARENT_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'pictures'),
+                name: NameNode(value: 'content'),
                 alias: null,
                 arguments: [],
                 directives: [],
                 selectionSet: SelectionSetNode(selections: [
                   FieldNode(
-                    name: NameNode(value: 'baseUrl'),
+                    name: NameNode(value: 'name'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'path'),
+                    name: NameNode(value: 'description'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
                   ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
                   FieldNode(
-                    name: NameNode(value: 'width'),
+                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
-                  ),
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
                   FieldNode(
-                    name: NameNode(value: 'height'),
+                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
-                  ),
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
                   FieldNode(
-                    name: NameNode(value: 'x'),
+                    name: NameNode(value: 'id'),
                     alias: null,
                     arguments: [],
                     directives: [],
                     selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'y'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
+                  )
                 ]),
               ),
             ]),
@@ -7472,6 +14364,260 @@ final GET_CATALOGUE_CATEGORIES_BY_LAYER_AND_PARENT_FOR_PORTAL_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -7792,6 +14938,260 @@ final SEARCH_CATALOGUE_CATEGORIES_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
                 ]),
               ),
             ]),
@@ -8071,6 +15471,260 @@ final CREATE_CATALOGUE_CATEGORY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
             ]),
           ),
         ]),
@@ -8347,6 +16001,260 @@ final UPDATE_CATALOGUE_CATEGORY_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -8751,6 +16659,260 @@ final REORDER_CATALOGUE_CATEGORIES_MUTATION_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),

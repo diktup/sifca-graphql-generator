@@ -501,6 +501,86 @@ class GetRequests$Query$RequestType$RequestRequestType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetRequests$Query$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetRequests$Query$RequestType$TargetType$PointOfSaleType();
+
+  factory GetRequests$Query$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequests$Query$RequestType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequests$Query$RequestType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequests$Query$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequests$Query$RequestType$TargetType$WholesalerType();
+
+  factory GetRequests$Query$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequests$Query$RequestType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequests$Query$RequestType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequests$Query$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequests$Query$RequestType$TargetType$ManufacturerType();
+
+  factory GetRequests$Query$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequests$Query$RequestType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequests$Query$RequestType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequests$Query$RequestType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetRequests$Query$RequestType$TargetType();
+
+  factory GetRequests$Query$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequests$Query$RequestType$TargetTypeFromJson(json);
+
+  GetRequests$Query$RequestType$TargetType$PointOfSaleType? pos;
+
+  GetRequests$Query$RequestType$TargetType$WholesalerType? wholesaler;
+
+  GetRequests$Query$RequestType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequests$Query$RequestType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetRequests$Query$RequestType extends JsonSerializable
     with EquatableMixin {
   GetRequests$Query$RequestType();
@@ -519,6 +599,8 @@ class GetRequests$Query$RequestType extends JsonSerializable
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  GetRequests$Query$RequestType$TargetType? target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -527,8 +609,17 @@ class GetRequests$Query$RequestType extends JsonSerializable
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() => _$GetRequests$Query$RequestTypeToJson(this);
@@ -1045,6 +1136,86 @@ class GetRequest$Query$RequestType$RequestRequestType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetRequest$Query$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetRequest$Query$RequestType$TargetType$PointOfSaleType();
+
+  factory GetRequest$Query$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequest$Query$RequestType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequest$Query$RequestType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequest$Query$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequest$Query$RequestType$TargetType$WholesalerType();
+
+  factory GetRequest$Query$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequest$Query$RequestType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequest$Query$RequestType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequest$Query$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequest$Query$RequestType$TargetType$ManufacturerType();
+
+  factory GetRequest$Query$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequest$Query$RequestType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequest$Query$RequestType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequest$Query$RequestType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetRequest$Query$RequestType$TargetType();
+
+  factory GetRequest$Query$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequest$Query$RequestType$TargetTypeFromJson(json);
+
+  GetRequest$Query$RequestType$TargetType$PointOfSaleType? pos;
+
+  GetRequest$Query$RequestType$TargetType$WholesalerType? wholesaler;
+
+  GetRequest$Query$RequestType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequest$Query$RequestType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetRequest$Query$RequestType extends JsonSerializable
     with EquatableMixin {
   GetRequest$Query$RequestType();
@@ -1063,6 +1234,8 @@ class GetRequest$Query$RequestType extends JsonSerializable
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  GetRequest$Query$RequestType$TargetType? target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -1071,8 +1244,17 @@ class GetRequest$Query$RequestType extends JsonSerializable
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() => _$GetRequest$Query$RequestTypeToJson(this);
@@ -1599,6 +1781,97 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestRequestT
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType();
+
+  factory GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType();
+
+  factory GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType();
+
+  factory GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType();
+
+  factory GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetTypeFromJson(
+          json);
+
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType?
+      pos;
+
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetRequestsPaginated$Query$RequestPaginateType$RequestType
     extends JsonSerializable with EquatableMixin {
   GetRequestsPaginated$Query$RequestPaginateType$RequestType();
@@ -1622,6 +1895,8 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  GetRequestsPaginated$Query$RequestPaginateType$RequestType$TargetType? target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -1630,8 +1905,17 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2203,6 +2487,97 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestRe
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType();
+
+  factory GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType();
+
+  factory GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType();
+
+  factory GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType();
+
+  factory GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetTypeFromJson(
+          json);
+
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType?
+      pos;
+
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType
     extends JsonSerializable with EquatableMixin {
   GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType();
@@ -2226,6 +2601,9 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$TargetType?
+      target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -2234,8 +2612,17 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2792,6 +3179,97 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType();
+
+  factory GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType();
+
+  factory GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType();
+
+  factory GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType();
+
+  factory GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetTypeFromJson(
+          json);
+
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$PointOfSaleType?
+      pos;
+
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType
     extends JsonSerializable with EquatableMixin {
   GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType();
@@ -2815,6 +3293,9 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$TargetType?
+      target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -2823,8 +3304,17 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3493,6 +3983,92 @@ class CreateRequest$Mutation$RequestType$RequestRequestType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateRequest$Mutation$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateRequest$Mutation$RequestType$TargetType$PointOfSaleType();
+
+  factory CreateRequest$Mutation$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateRequest$Mutation$RequestType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateRequest$Mutation$RequestType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateRequest$Mutation$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateRequest$Mutation$RequestType$TargetType$WholesalerType();
+
+  factory CreateRequest$Mutation$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateRequest$Mutation$RequestType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateRequest$Mutation$RequestType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateRequest$Mutation$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateRequest$Mutation$RequestType$TargetType$ManufacturerType();
+
+  factory CreateRequest$Mutation$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateRequest$Mutation$RequestType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateRequest$Mutation$RequestType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateRequest$Mutation$RequestType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  CreateRequest$Mutation$RequestType$TargetType();
+
+  factory CreateRequest$Mutation$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateRequest$Mutation$RequestType$TargetTypeFromJson(json);
+
+  CreateRequest$Mutation$RequestType$TargetType$PointOfSaleType? pos;
+
+  CreateRequest$Mutation$RequestType$TargetType$WholesalerType? wholesaler;
+
+  CreateRequest$Mutation$RequestType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateRequest$Mutation$RequestType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateRequest$Mutation$RequestType extends JsonSerializable
     with EquatableMixin {
   CreateRequest$Mutation$RequestType();
@@ -3512,6 +4088,8 @@ class CreateRequest$Mutation$RequestType extends JsonSerializable
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  CreateRequest$Mutation$RequestType$TargetType? target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -3520,8 +4098,17 @@ class CreateRequest$Mutation$RequestType extends JsonSerializable
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4290,6 +4877,94 @@ class UpdateRequestStatus$Mutation$RequestType$RequestRequestType
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateRequestStatus$Mutation$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateRequestStatus$Mutation$RequestType$TargetType$PointOfSaleType();
+
+  factory UpdateRequestStatus$Mutation$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateRequestStatus$Mutation$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateRequestStatus$Mutation$RequestType$TargetType$WholesalerType();
+
+  factory UpdateRequestStatus$Mutation$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateRequestStatus$Mutation$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateRequestStatus$Mutation$RequestType$TargetType$ManufacturerType();
+
+  factory UpdateRequestStatus$Mutation$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateRequestStatus$Mutation$RequestType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateRequestStatus$Mutation$RequestType$TargetType();
+
+  factory UpdateRequestStatus$Mutation$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetTypeFromJson(json);
+
+  UpdateRequestStatus$Mutation$RequestType$TargetType$PointOfSaleType? pos;
+
+  UpdateRequestStatus$Mutation$RequestType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateRequestStatus$Mutation$RequestType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateRequestStatus$Mutation$RequestType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateRequestStatus$Mutation$RequestType extends JsonSerializable
     with EquatableMixin {
   UpdateRequestStatus$Mutation$RequestType();
@@ -4309,6 +4984,8 @@ class UpdateRequestStatus$Mutation$RequestType extends JsonSerializable
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  UpdateRequestStatus$Mutation$RequestType$TargetType? target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -4317,8 +4994,17 @@ class UpdateRequestStatus$Mutation$RequestType extends JsonSerializable
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4847,6 +5533,94 @@ class ListenForRequest$Subscription$RequestType$RequestRequestType
 }
 
 @JsonSerializable(explicitToJson: true)
+class ListenForRequest$Subscription$RequestType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  ListenForRequest$Subscription$RequestType$TargetType$PointOfSaleType();
+
+  factory ListenForRequest$Subscription$RequestType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForRequest$Subscription$RequestType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForRequest$Subscription$RequestType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForRequest$Subscription$RequestType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForRequest$Subscription$RequestType$TargetType$WholesalerType();
+
+  factory ListenForRequest$Subscription$RequestType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForRequest$Subscription$RequestType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForRequest$Subscription$RequestType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForRequest$Subscription$RequestType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForRequest$Subscription$RequestType$TargetType$ManufacturerType();
+
+  factory ListenForRequest$Subscription$RequestType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForRequest$Subscription$RequestType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForRequest$Subscription$RequestType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForRequest$Subscription$RequestType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  ListenForRequest$Subscription$RequestType$TargetType();
+
+  factory ListenForRequest$Subscription$RequestType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForRequest$Subscription$RequestType$TargetTypeFromJson(json);
+
+  ListenForRequest$Subscription$RequestType$TargetType$PointOfSaleType? pos;
+
+  ListenForRequest$Subscription$RequestType$TargetType$WholesalerType?
+      wholesaler;
+
+  ListenForRequest$Subscription$RequestType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForRequest$Subscription$RequestType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class ListenForRequest$Subscription$RequestType extends JsonSerializable
     with EquatableMixin {
   ListenForRequest$Subscription$RequestType();
@@ -4866,6 +5640,8 @@ class ListenForRequest$Subscription$RequestType extends JsonSerializable
   @JsonKey(unknownEnumValue: RequestTypeEnum.artemisUnknown)
   RequestTypeEnum? type;
 
+  ListenForRequest$Subscription$RequestType$TargetType? target;
+
   @JsonKey(unknownEnumValue: RequestStatusEnum.artemisUnknown)
   RequestStatusEnum? status;
 
@@ -4874,8 +5650,17 @@ class ListenForRequest$Subscription$RequestType extends JsonSerializable
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, requestor, company, request, type, status, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        requestor,
+        company,
+        request,
+        type,
+        target,
+        status,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5735,6 +6520,59 @@ final GET_REQUESTS_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'status'),
@@ -6607,6 +7445,59 @@ final GET_REQUEST_QUERY_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'status'),
@@ -7504,6 +8395,59 @@ final GET_REQUESTS_PAGINATED_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
               ),
               FieldNode(
                 name: NameNode(value: 'status'),
@@ -8426,6 +9370,59 @@ final GET_REQUESTS_BY_TYPE_PAGINATED_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
               ),
               FieldNode(
                 name: NameNode(value: 'status'),
@@ -9380,6 +10377,59 @@ final GET_REQUESTS_BY_TYPE_AND_TARGET_PAGINATED_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
               ),
               FieldNode(
                 name: NameNode(value: 'status'),
@@ -10588,6 +11638,59 @@ final CREATE_REQUEST_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'status'),
             alias: null,
             arguments: [],
@@ -11484,6 +12587,59 @@ final UPDATE_REQUEST_STATUS_MUTATION_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'status'),
             alias: null,
             arguments: [],
@@ -12327,6 +13483,59 @@ final LISTEN_FOR_REQUEST_SUBSCRIPTION_DOCUMENT = DocumentNode(definitions: [
             arguments: [],
             directives: [],
             selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
           FieldNode(
             name: NameNode(value: 'status'),

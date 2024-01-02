@@ -840,8 +840,6 @@ query getCoupons {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 query coupon($id: ID!) {
@@ -1686,8 +1684,6 @@ query coupon($id: ID!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 query isCouponValid($couponCode: String!, $target: TargetACIInput!) {
@@ -1698,8 +1694,6 @@ query isCouponValid($couponCode: String!, $target: TargetACIInput!) {
       to
       from
       redeemed
-      createdAt
-      updatedAt
       couponCode
       user {
         id
@@ -1739,8 +1733,6 @@ query isCouponValid($couponCode: String!, $target: TargetACIInput!) {
           id
         }
       }
-      createdAt
-      updatedAt
     }
   }
 }
@@ -1753,8 +1745,6 @@ query getPaginatedCoupons($pagination: PaginationInput) {
       to
       from
       redeemed
-      createdAt
-      updatedAt
       couponCode
       user {
         id
@@ -1794,8 +1784,6 @@ query getPaginatedCoupons($pagination: PaginationInput) {
           id
         }
       }
-      createdAt
-      updatedAt
     }
   }
 }
@@ -2641,8 +2629,6 @@ query findCouponsByTarget($target: TargetACIInput!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 query findCouponsByTargetWithFilterPaginated(
@@ -2659,8 +2645,6 @@ query findCouponsByTargetWithFilterPaginated(
       to
       from
       redeemed
-      createdAt
-      updatedAt
       couponCode
       user {
         id
@@ -3547,8 +3531,6 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 query getCouponsByExcel($target: TargetACIInput!, $filter: CouponFilterInput, $searchString: String, $path: String) {
@@ -3621,8 +3603,6 @@ mutation createCoupon($input: CouponInput!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
@@ -3672,8 +3652,6 @@ mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 mutation generateCoupons($input: CouponsInput!) {
@@ -3723,8 +3701,6 @@ mutation generateCoupons($input: CouponsInput!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
@@ -3774,8 +3750,6 @@ mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }
 mutation disableCoupon($id: String!) {
@@ -3825,7 +3799,5 @@ mutation disableCoupon($id: String!) {
         id
       }
     }
-    createdAt
-    updatedAt
   }
 }

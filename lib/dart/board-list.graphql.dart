@@ -102,6 +102,94 @@ class GetBoardLists$Query$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBoardLists$Query$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardLists$Query$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory GetBoardLists$Query$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardLists$Query$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardLists$Query$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory GetBoardLists$Query$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardLists$Query$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardLists$Query$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory GetBoardLists$Query$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardLists$Query$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardLists$Query$BoardListType$BoardType$TargetType();
+
+  factory GetBoardLists$Query$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetTypeFromJson(json);
+
+  GetBoardLists$Query$BoardListType$BoardType$TargetType$PointOfSaleType? pos;
+
+  GetBoardLists$Query$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetBoardLists$Query$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardLists$Query$BoardListType$BoardType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBoardLists$Query$BoardListType$BoardType extends JsonSerializable
     with EquatableMixin {
   GetBoardLists$Query$BoardListType$BoardType();
@@ -123,13 +211,24 @@ class GetBoardLists$Query$BoardListType$BoardType extends JsonSerializable
 
   List<GetBoardLists$Query$BoardListType$BoardType$UserType>? members;
 
+  late GetBoardLists$Query$BoardListType$BoardType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -283,6 +382,94 @@ class GetBoardList$Query$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBoardList$Query$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardList$Query$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory GetBoardList$Query$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardList$Query$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardList$Query$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory GetBoardList$Query$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardList$Query$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardList$Query$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory GetBoardList$Query$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardList$Query$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardList$Query$BoardListType$BoardType$TargetType();
+
+  factory GetBoardList$Query$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetTypeFromJson(json);
+
+  GetBoardList$Query$BoardListType$BoardType$TargetType$PointOfSaleType? pos;
+
+  GetBoardList$Query$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetBoardList$Query$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardList$Query$BoardListType$BoardType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBoardList$Query$BoardListType$BoardType extends JsonSerializable
     with EquatableMixin {
   GetBoardList$Query$BoardListType$BoardType();
@@ -304,13 +491,24 @@ class GetBoardList$Query$BoardListType$BoardType extends JsonSerializable
 
   List<GetBoardList$Query$BoardListType$BoardType$UserType>? members;
 
+  late GetBoardList$Query$BoardListType$BoardType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -466,6 +664,97 @@ class GetBoardListByBoard$Query$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBoardListByBoard$Query$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType();
+
+  factory GetBoardListByBoard$Query$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetTypeFromJson(
+          json);
+
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$PointOfSaleType?
+      pos;
+
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetBoardListByBoard$Query$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBoardListByBoard$Query$BoardListType$BoardType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBoardListByBoard$Query$BoardListType$BoardType extends JsonSerializable
     with EquatableMixin {
   GetBoardListByBoard$Query$BoardListType$BoardType();
@@ -487,13 +776,24 @@ class GetBoardListByBoard$Query$BoardListType$BoardType extends JsonSerializable
 
   List<GetBoardListByBoard$Query$BoardListType$BoardType$UserType>? members;
 
+  late GetBoardListByBoard$Query$BoardListType$BoardType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1239,6 +1539,94 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetTypeFromJson(json);
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType? pos;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCRMBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType
     extends JsonSerializable with EquatableMixin {
   GetCRMBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType();
@@ -1318,6 +1706,97 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetTypeFromJson(
+          json);
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
     extends JsonSerializable with EquatableMixin {
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType();
@@ -1338,13 +1817,16 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1448,6 +1930,112 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? symbol;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType?
+      flagSquare;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        symbol,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesTypeFromJson(
+          json);
+
+  String? price;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType?
+      currency;
+
+  @override
+  List<Object?> get props => [price, currency];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesTypeToJson(
           this);
 }
 
@@ -2008,6 +2596,123 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationTypeFromJson(
+          json);
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType
+      language;
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     extends JsonSerializable with EquatableMixin {
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
@@ -2025,6 +2730,123 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
           this);
 }
 
@@ -2058,6 +2880,9 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
       pixel;
 
+  List<GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
   @override
   List<Object?> get props => [
         id,
@@ -2068,12 +2893,104 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         updatedAt,
         isRequired,
         isMultipleChoice,
-        pixel
+        pixel,
+        translation
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
+          json);
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
           this);
 }
 
@@ -2093,6 +3010,9 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   late String externalId;
 
+  List<GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -2100,9 +3020,20 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
       attribute;
 
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
+      target;
+
   @override
-  List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute];
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        translation,
+        createdAt,
+        updatedAt,
+        attribute,
+        target
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2240,6 +3171,123 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  @override
+  List<Object?> get props => [name];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
     extends JsonSerializable with EquatableMixin {
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType();
@@ -2286,6 +3334,9 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   List<GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   @override
   List<Object?> get props => [
         id,
@@ -2303,7 +3354,8 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         descriptionList,
         discount,
         priceBeforeReduction,
-        catalogueCategory
+        catalogueCategory,
+        translation
       ];
 
   @override
@@ -4414,6 +5466,97 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetTypeFromJson(
+          json);
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
     extends JsonSerializable with EquatableMixin {
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType();
@@ -4441,6 +5584,9 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType?
       manufacturer;
 
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -4450,7 +5596,8 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -4477,6 +5624,214 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
+          json);
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
           this);
 }
 
@@ -4510,6 +5865,12 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType?
       pixel;
 
+  List<GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -4520,12 +5881,105 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         updatedAt,
         isRequired,
         isMultipleChoice,
-        pixel
+        pixel,
+        translation,
+        target
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType();
+
+  factory GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
+          json);
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
           this);
 }
 
@@ -4556,6 +6010,9 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   late GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
       attribute;
 
+  GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -4565,7 +6022,8 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         isRequired,
         possibleValues,
         isMultipleChoice,
-        attribute
+        attribute,
+        target
       ];
 
   @override
@@ -4688,6 +6146,9 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   String? price;
 
+  List<GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType>?
+      prices;
+
   late String barcode;
 
   @JsonKey(unknownEnumValue: ProductConditionEnum.artemisUnknown)
@@ -4741,6 +6202,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
         id,
         name,
         price,
+        prices,
         barcode,
         condition,
         status,
@@ -6049,6 +7511,8 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -6078,6 +7542,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardFo
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -7026,6 +8491,8 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType extends JsonSerializable
 
   List<GetCRMBoard$Query$BoardWithListsAndCardsType$ProjectType>? projects;
 
+  late GetCRMBoard$Query$BoardWithListsAndCardsType$TargetType target;
+
   GetCRMBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType?
       boardCardsStats;
 
@@ -7045,6 +8512,7 @@ class GetCRMBoard$Query$BoardWithListsAndCardsType extends JsonSerializable
         category,
         members,
         projects,
+        target,
         boardCardsStats,
         createdAt,
         updatedAt,
@@ -7795,6 +9263,97 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetTypeFromJson(
+          json);
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType
     extends JsonSerializable with EquatableMixin {
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType();
@@ -7874,6 +9433,97 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetTypeFromJson(
+          json);
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType
     extends JsonSerializable with EquatableMixin {
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType();
@@ -7894,13 +9544,16 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$LabelType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8004,6 +9657,112 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$UserTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? symbol;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType?
+      flagSquare;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        symbol,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesTypeFromJson(
+          json);
+
+  String? price;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType$CurrencyType?
+      currency;
+
+  @override
+  List<Object?> get props => [price, currency];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesTypeToJson(
           this);
 }
 
@@ -8564,6 +10323,123 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationTypeFromJson(
+          json);
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType
+      language;
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     extends JsonSerializable with EquatableMixin {
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
@@ -8581,6 +10457,123 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
           this);
 }
 
@@ -8614,6 +10607,9 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
       pixel;
 
+  List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
   @override
   List<Object?> get props => [
         id,
@@ -8624,12 +10620,104 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         updatedAt,
         isRequired,
         isMultipleChoice,
-        pixel
+        pixel,
+        translation
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
+          json);
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
           this);
 }
 
@@ -8649,6 +10737,9 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   late String externalId;
 
+  List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -8656,9 +10747,20 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
       attribute;
 
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
+      target;
+
   @override
-  List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute];
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        translation,
+        createdAt,
+        updatedAt,
+        attribute,
+        target
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8796,6 +10898,123 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  @override
+  List<Object?> get props => [name];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType
     extends JsonSerializable with EquatableMixin {
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType();
@@ -8842,6 +11061,9 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   @override
   List<Object?> get props => [
         id,
@@ -8859,7 +11081,8 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         descriptionList,
         discount,
         priceBeforeReduction,
-        catalogueCategory
+        catalogueCategory,
+        translation
       ];
 
   @override
@@ -10970,6 +13193,97 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetTypeFromJson(
+          json);
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType
     extends JsonSerializable with EquatableMixin {
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType();
@@ -10997,6 +13311,9 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType?
       manufacturer;
 
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -11006,7 +13323,8 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -11033,6 +13351,214 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
+          json);
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
           this);
 }
 
@@ -11066,6 +13592,12 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType?
       pixel;
 
+  List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -11076,12 +13608,105 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         updatedAt,
         isRequired,
         isMultipleChoice,
-        pixel
+        pixel,
+        translation,
+        target
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType();
+
+  factory GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
+          json);
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType?
+      pos;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
           this);
 }
 
@@ -11112,6 +13737,9 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$AttributeType
       attribute;
 
+  GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$ProductAttributeType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -11121,7 +13749,8 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         isRequired,
         possibleValues,
         isMultipleChoice,
-        attribute
+        attribute,
+        target
       ];
 
   @override
@@ -11244,6 +13873,9 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   String? price;
 
+  List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$BarcodePricesType>?
+      prices;
+
   late String barcode;
 
   @JsonKey(unknownEnumValue: ProductConditionEnum.artemisUnknown)
@@ -11297,6 +13929,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
         id,
         name,
         price,
+        prices,
         barcode,
         condition,
         status,
@@ -12605,6 +15238,8 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -12634,6 +15269,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ListWithCardsType$Boa
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -13583,6 +16219,8 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType
   List<GetMaintenanceBoard$Query$BoardWithListsAndCardsType$ProjectType>?
       projects;
 
+  late GetMaintenanceBoard$Query$BoardWithListsAndCardsType$TargetType target;
+
   GetMaintenanceBoard$Query$BoardWithListsAndCardsType$BoardCardsStatsType?
       boardCardsStats;
 
@@ -13602,6 +16240,7 @@ class GetMaintenanceBoard$Query$BoardWithListsAndCardsType
         category,
         members,
         projects,
+        target,
         boardCardsStats,
         createdAt,
         updatedAt,
@@ -13726,6 +16365,96 @@ class CreateBoardList$Mutation$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory CreateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory CreateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory CreateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateBoardList$Mutation$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType();
+
+  factory CreateBoardList$Mutation$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetTypeFromJson(
+          json);
+
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBoardList$Mutation$BoardListType$BoardType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
     with EquatableMixin {
   CreateBoardList$Mutation$BoardListType$BoardType();
@@ -13747,13 +16476,24 @@ class CreateBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
 
   List<CreateBoardList$Mutation$BoardListType$BoardType$UserType>? members;
 
+  late CreateBoardList$Mutation$BoardListType$BoardType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13868,6 +16608,97 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardCardTasksType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetTypeFromJson(
+          json);
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType
     extends JsonSerializable with EquatableMixin {
   CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType();
@@ -13888,13 +16719,16 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$LabelType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13996,6 +16830,112 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$UserType
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$UserTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? symbol;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureType?
+      flagSquare;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        symbol,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesTypeFromJson(
+          json);
+
+  String? price;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType$CurrencyType?
+      currency;
+
+  @override
+  List<Object?> get props => [price, currency];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -14555,6 +17495,123 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationTypeFromJson(
+          json);
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$LanguageType
+      language;
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType$AttributeValueTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType
     extends JsonSerializable with EquatableMixin {
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType();
@@ -14572,6 +17629,123 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationTypeToJson(
           this);
 }
 
@@ -14605,6 +17779,9 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributePixelType?
       pixel;
 
+  List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType$AttributeTranslationType>?
+      translation;
+
   @override
   List<Object?> get props => [
         id,
@@ -14615,12 +17792,104 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
         updatedAt,
         isRequired,
         isMultipleChoice,
-        pixel
+        pixel,
+        translation
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeFromJson(
+          json);
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetTypeToJson(
           this);
 }
 
@@ -14640,6 +17909,9 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 
   late String externalId;
 
+  List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeValueTranslationType>?
+      translation;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -14647,9 +17919,20 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
   late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$AttributeType
       attribute;
 
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductAttributesValuesType$AttributeValueType$TargetType
+      target;
+
   @override
-  List<Object?> get props =>
-      [id, label, externalId, createdAt, updatedAt, attribute];
+  List<Object?> get props => [
+        id,
+        label,
+        externalId,
+        translation,
+        createdAt,
+        updatedAt,
+        attribute,
+        target
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -14787,6 +18070,123 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeFromJson(
+          json);
+
+  late String name;
+
+  @override
+  List<Object?> get props => [name];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationTypeFromJson(
+          json);
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$LanguageType
+      language;
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType$InternalProductTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType
     extends JsonSerializable with EquatableMixin {
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType();
@@ -14833,6 +18233,9 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
   List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$CatalogueCategoryType>?
       catalogueCategory;
 
+  List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProductType$InternalProductTranslationType>?
+      translation;
+
   @override
   List<Object?> get props => [
         id,
@@ -14850,7 +18253,8 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$InternalProd
         descriptionList,
         discount,
         priceBeforeReduction,
-        catalogueCategory
+        catalogueCategory,
+        translation
       ];
 
   @override
@@ -16004,6 +19408,8 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -16033,6 +19439,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -16958,6 +20365,97 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetTypeFromJson(
+          json);
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType
     extends JsonSerializable with EquatableMixin {
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType();
@@ -16985,6 +20483,9 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType?
       manufacturer;
 
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$BrandType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -16994,7 +20495,8 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -17021,6 +20523,214 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeFromJson(
+          json);
+
+  late String label;
+
+  @override
+  List<Object?> get props => [label];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationTypeFromJson(
+          json);
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$LanguageType
+      language;
+
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType$AttributeTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeFromJson(
+          json);
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetTypeToJson(
           this);
 }
 
@@ -17054,6 +20764,12 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributePixelType?
       pixel;
 
+  List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$AttributeTranslationType>?
+      translation;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -17064,12 +20780,105 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         updatedAt,
         isRequired,
         isMultipleChoice,
-        pixel
+        pixel,
+        translation,
+        target
       ];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeFromJson(
+          json);
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetTypeToJson(
           this);
 }
 
@@ -17100,6 +20909,9 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
   late CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$AttributeType
       attribute;
 
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$ProductAttributeType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -17109,7 +20921,8 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$ProductType$
         isRequired,
         possibleValues,
         isMultipleChoice,
-        attribute
+        attribute,
+        target
       ];
 
   @override
@@ -17232,6 +21045,9 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
 
   String? price;
 
+  List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType$BarcodePricesType>?
+      prices;
+
   late String barcode;
 
   @JsonKey(unknownEnumValue: ProductConditionEnum.artemisUnknown)
@@ -17285,6 +21101,7 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BarcodeType
         id,
         name,
         price,
+        prices,
         barcode,
         condition,
         status,
@@ -18006,6 +21823,97 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType();
+
+  factory CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeFromJson(
+          json);
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
     extends JsonSerializable with EquatableMixin {
   CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType();
@@ -18029,13 +21937,25 @@ class CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType
   List<CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$UserType>?
       members;
 
+  late CreateMaintenanceBoardCard$Mutation$BoardCardType$BoardListType$BoardType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -19970,6 +23890,97 @@ class ReorderBoardList$Mutation$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
+class ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ReorderBoardList$Mutation$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType();
+
+  factory ReorderBoardList$Mutation$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetTypeFromJson(
+          json);
+
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType?
+      pos;
+
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  ReorderBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ReorderBoardList$Mutation$BoardListType$BoardType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class ReorderBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
     with EquatableMixin {
   ReorderBoardList$Mutation$BoardListType$BoardType();
@@ -19991,13 +24002,24 @@ class ReorderBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
 
   List<ReorderBoardList$Mutation$BoardListType$BoardType$UserType>? members;
 
+  late ReorderBoardList$Mutation$BoardListType$BoardType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -20152,6 +24174,96 @@ class UpdateBoardList$Mutation$BoardListType$BoardType$UserType
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType();
+
+  factory UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType();
+
+  factory UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType();
+
+  factory UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateBoardList$Mutation$BoardListType$BoardType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType();
+
+  factory UpdateBoardList$Mutation$BoardListType$BoardType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetTypeFromJson(
+          json);
+
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateBoardList$Mutation$BoardListType$BoardType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBoardList$Mutation$BoardListType$BoardType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
     with EquatableMixin {
   UpdateBoardList$Mutation$BoardListType$BoardType();
@@ -20173,13 +24285,24 @@ class UpdateBoardList$Mutation$BoardListType$BoardType extends JsonSerializable
 
   List<UpdateBoardList$Mutation$BoardListType$BoardType$UserType>? members;
 
+  late UpdateBoardList$Mutation$BoardListType$BoardType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props =>
-      [id, icon, title, description, category, members, createdAt, updatedAt];
+  List<Object?> get props => [
+        id,
+        icon,
+        title,
+        description,
+        category,
+        members,
+        target,
+        createdAt,
+        updatedAt
+      ];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -20741,6 +24864,59 @@ final GET_BOARD_LISTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -21055,6 +25231,59 @@ final GET_BOARD_LIST_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -21379,6 +25608,59 @@ final GET_BOARD_LIST_BY_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -23332,6 +27614,59 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'boardCardsStats'),
             alias: null,
             arguments: [],
@@ -23598,6 +27933,59 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'target'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'pos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'wholesaler'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'manufacturer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'createdAt'),
                         alias: null,
                         arguments: [],
@@ -23789,6 +28177,192 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'prices'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'price'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'currency'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'symbol'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
                       ),
                       FieldNode(
                         name: NameNode(value: 'barcode'),
@@ -24730,6 +29304,195 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
                                 name: NameNode(value: 'createdAt'),
                                 alias: null,
                                 arguments: [],
@@ -24813,6 +29576,252 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: SelectionSetNode(selections: [
                                       FieldNode(
                                         name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -25093,6 +30102,193 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'translation'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'language'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'content'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
                               ),
                             ]),
                           ),
@@ -29387,6 +34583,59 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                 ]),
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -29514,6 +34763,308 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: SelectionSetNode(selections: [
                                       FieldNode(
                                         name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'target'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'pos'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'wholesaler'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'manufacturer'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -32302,6 +37853,13 @@ final GET_C_R_M_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: SelectionSetNode(selections: [
                                       FieldNode(
                                         name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -36083,6 +41641,59 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
             name: NameNode(value: 'boardCardsStats'),
             alias: null,
             arguments: [],
@@ -36349,6 +41960,59 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'target'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'pos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'wholesaler'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'manufacturer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'createdAt'),
                         alias: null,
                         arguments: [],
@@ -36540,6 +42204,192 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'prices'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'price'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'currency'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'symbol'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
                       ),
                       FieldNode(
                         name: NameNode(value: 'barcode'),
@@ -37481,6 +43331,195 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 selectionSet: null,
                               ),
                               FieldNode(
+                                name: NameNode(value: 'translation'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'language'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'code'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'iconFlag'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'createdAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'updatedAt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagSquare'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'flagWide'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'baseUrl'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'path'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'width'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'height'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'x'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'y'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'alt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'content'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'label'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
                                 name: NameNode(value: 'createdAt'),
                                 alias: null,
                                 arguments: [],
@@ -37564,6 +43603,252 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: SelectionSetNode(selections: [
                                       FieldNode(
                                         name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -37844,6 +44129,193 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                 arguments: [],
                                 directives: [],
                                 selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'translation'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'language'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'content'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
                               ),
                             ]),
                           ),
@@ -42138,6 +48610,59 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                 ]),
                               ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                ]),
+                              ),
                             ]),
                           ),
                           FieldNode(
@@ -42265,6 +48790,308 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                     selectionSet: SelectionSetNode(selections: [
                                       FieldNode(
                                         name: NameNode(value: 'pixelAttribute'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'translation'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'language'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'name'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'code'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'iconFlag'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'createdAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'updatedAt'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagSquare'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                          FieldNode(
+                                            name: NameNode(value: 'flagWide'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet:
+                                                SelectionSetNode(selections: [
+                                              FieldNode(
+                                                name:
+                                                    NameNode(value: 'baseUrl'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'path'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'width'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'height'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'x'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'y'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                              FieldNode(
+                                                name: NameNode(value: 'alt'),
+                                                alias: null,
+                                                arguments: [],
+                                                directives: [],
+                                                selectionSet: null,
+                                              ),
+                                            ]),
+                                          ),
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'content'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'label'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'target'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'pos'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'wholesaler'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'manufacturer'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet:
+                                            SelectionSetNode(selections: [
+                                          FieldNode(
+                                            name: NameNode(value: 'id'),
+                                            alias: null,
+                                            arguments: [],
+                                            directives: [],
+                                            selectionSet: null,
+                                          )
+                                        ]),
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'target'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'pos'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'wholesaler'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      )
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'manufacturer'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'id'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -45059,6 +51886,13 @@ final GET_MAINTENANCE_BOARD_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         selectionSet: null,
                                       ),
                                       FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
                                         name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
@@ -47242,6 +54076,59 @@ final CREATE_BOARD_LIST_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -47527,6 +54414,59 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -47711,6 +54651,192 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'prices'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'price'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'currency'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'symbol'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
               ),
               FieldNode(
                 name: NameNode(value: 'barcode'),
@@ -48652,6 +55778,193 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
+                        name: NameNode(value: 'translation'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'language'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'name'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'code'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'iconFlag'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'createdAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'updatedAt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagSquare'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'flagWide'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'baseUrl'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'path'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'width'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'height'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'x'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'y'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'alt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'content'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'label'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
                         name: NameNode(value: 'createdAt'),
                         alias: null,
                         arguments: [],
@@ -48735,6 +56048,246 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                             selectionSet: SelectionSetNode(selections: [
                               FieldNode(
                                 name: NameNode(value: 'pixelAttribute'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'translation'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'language'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'content'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'label'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'target'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'pos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'wholesaler'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'manufacturer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -49015,6 +56568,193 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                         arguments: [],
                         directives: [],
                         selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'translation'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'language'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'code'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'iconFlag'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagSquare'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'flagWide'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'baseUrl'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'path'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'width'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'height'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'x'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'y'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'alt'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'content'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
                       ),
                     ]),
                   ),
@@ -51053,6 +58793,13 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                                     selectionSet: SelectionSetNode(selections: [
                                       FieldNode(
                                         name: NameNode(value: 'id'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'name'),
                                         alias: null,
                                         arguments: [],
                                         directives: [],
@@ -53102,6 +60849,59 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                           ),
                         ]),
                       ),
+                      FieldNode(
+                        name: NameNode(value: 'target'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'pos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'wholesaler'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'manufacturer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                        ]),
+                      ),
                     ]),
                   ),
                   FieldNode(
@@ -53229,6 +61029,299 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                             selectionSet: SelectionSetNode(selections: [
                               FieldNode(
                                 name: NameNode(value: 'pixelAttribute'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'translation'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'language'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'name'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'code'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'iconFlag'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'createdAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'updatedAt'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagSquare'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                  FieldNode(
+                                    name: NameNode(value: 'flagWide'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: SelectionSetNode(selections: [
+                                      FieldNode(
+                                        name: NameNode(value: 'baseUrl'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'path'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'width'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'height'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'x'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'y'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
+                                        name: NameNode(value: 'alt'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                    ]),
+                                  ),
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'content'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'label'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'target'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'pos'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'wholesaler'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                              FieldNode(
+                                name: NameNode(value: 'manufacturer'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: SelectionSetNode(selections: [
+                                  FieldNode(
+                                    name: NameNode(value: 'id'),
+                                    alias: null,
+                                    arguments: [],
+                                    directives: [],
+                                    selectionSet: null,
+                                  )
+                                ]),
+                              ),
+                            ]),
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'target'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'pos'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'wholesaler'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
+                                alias: null,
+                                arguments: [],
+                                directives: [],
+                                selectionSet: null,
+                              )
+                            ]),
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'manufacturer'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: SelectionSetNode(selections: [
+                              FieldNode(
+                                name: NameNode(value: 'id'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -55131,6 +63224,59 @@ final CREATE_MAINTENANCE_BOARD_CARD_MUTATION_DOCUMENT =
                             directives: [],
                             selectionSet: null,
                           ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
                         ]),
                       ),
                     ]),
@@ -58394,6 +66540,59 @@ final REORDER_BOARD_LIST_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -58762,6 +66961,59 @@ final UPDATE_BOARD_LIST_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),

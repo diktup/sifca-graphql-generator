@@ -63,6 +63,183 @@ class GetCoupons$Query$CouponType$UserType$PictureType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeFromJson(
+          json);
+
+  late GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+      permission;
+
+  bool? read;
+
+  bool? write;
+
+  bool? create;
+
+  @override
+  List<Object?> get props => [permission, read, write, create];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetTypeFromJson(
+          json);
+
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCoupons$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$UserType$PermissionType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$UserType$PermissionType();
+
+  factory GetCoupons$Query$CouponType$UserType$PermissionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionTypeFromJson(json);
+
+  late String id;
+
+  String? name;
+
+  List<GetCoupons$Query$CouponType$UserType$PermissionType$PermissionPermissionsType>?
+      permissions;
+
+  late GetCoupons$Query$CouponType$UserType$PermissionType$TargetType target;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, name, permissions, target, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$UserType$PermissionTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCoupons$Query$CouponType$UserType$LanguageType$PictureType
     extends JsonSerializable with EquatableMixin {
   GetCoupons$Query$CouponType$UserType$LanguageType$PictureType();
@@ -1402,6 +1579,8 @@ class GetCoupons$Query$CouponType$UserType extends JsonSerializable
 
   List<GetCoupons$Query$CouponType$UserType$PictureType>? pictures;
 
+  GetCoupons$Query$CouponType$UserType$PermissionType? permission;
+
   List<GetCoupons$Query$CouponType$UserType$LanguageType>? languages;
 
   GetCoupons$Query$CouponType$UserType$CountryType? nationality;
@@ -1458,6 +1637,7 @@ class GetCoupons$Query$CouponType$UserType extends JsonSerializable
         phone,
         picture,
         pictures,
+        permission,
         languages,
         nationality,
         billingAddress,
@@ -1501,6 +1681,86 @@ class GetCoupons$Query$CouponType$DiscountDtoType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$TargetType$PointOfSaleType();
+
+  factory GetCoupons$Query$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$TargetType$WholesalerType();
+
+  factory GetCoupons$Query$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCoupons$Query$CouponType$TargetType$ManufacturerType();
+
+  factory GetCoupons$Query$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCoupons$Query$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetCoupons$Query$CouponType$TargetType();
+
+  factory GetCoupons$Query$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCoupons$Query$CouponType$TargetTypeFromJson(json);
+
+  GetCoupons$Query$CouponType$TargetType$PointOfSaleType? pos;
+
+  GetCoupons$Query$CouponType$TargetType$WholesalerType? wholesaler;
+
+  GetCoupons$Query$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCoupons$Query$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCoupons$Query$CouponType extends JsonSerializable with EquatableMixin {
   GetCoupons$Query$CouponType();
 
@@ -1525,6 +1785,8 @@ class GetCoupons$Query$CouponType extends JsonSerializable with EquatableMixin {
 
   GetCoupons$Query$CouponType$DiscountDtoType? discount;
 
+  late GetCoupons$Query$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -1535,7 +1797,8 @@ class GetCoupons$Query$CouponType extends JsonSerializable with EquatableMixin {
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -1612,6 +1875,182 @@ class Coupon$Query$CouponType$UserType$PictureType extends JsonSerializable
   @override
   Map<String, dynamic> toJson() =>
       _$Coupon$Query$CouponType$UserType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeFromJson(
+          json);
+
+  late Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+      permission;
+
+  bool? read;
+
+  bool? write;
+
+  bool? create;
+
+  @override
+  List<Object?> get props => [permission, read, write, create];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetTypeFromJson(
+          json);
+
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType?
+      pos;
+
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType?
+      wholesaler;
+
+  Coupon$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$UserType$PermissionType extends JsonSerializable
+    with EquatableMixin {
+  Coupon$Query$CouponType$UserType$PermissionType();
+
+  factory Coupon$Query$CouponType$UserType$PermissionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$UserType$PermissionTypeFromJson(json);
+
+  late String id;
+
+  String? name;
+
+  List<Coupon$Query$CouponType$UserType$PermissionType$PermissionPermissionsType>?
+      permissions;
+
+  late Coupon$Query$CouponType$UserType$PermissionType$TargetType target;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, name, permissions, target, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$UserType$PermissionTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -2938,6 +3377,8 @@ class Coupon$Query$CouponType$UserType extends JsonSerializable
 
   List<Coupon$Query$CouponType$UserType$PictureType>? pictures;
 
+  Coupon$Query$CouponType$UserType$PermissionType? permission;
+
   List<Coupon$Query$CouponType$UserType$LanguageType>? languages;
 
   Coupon$Query$CouponType$UserType$CountryType? nationality;
@@ -2993,6 +3434,7 @@ class Coupon$Query$CouponType$UserType extends JsonSerializable
         phone,
         picture,
         pictures,
+        permission,
         languages,
         nationality,
         billingAddress,
@@ -3036,6 +3478,86 @@ class Coupon$Query$CouponType$DiscountDtoType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$TargetType$PointOfSaleType();
+
+  factory Coupon$Query$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$TargetType$WholesalerType extends JsonSerializable
+    with EquatableMixin {
+  Coupon$Query$CouponType$TargetType$WholesalerType();
+
+  factory Coupon$Query$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  Coupon$Query$CouponType$TargetType$ManufacturerType();
+
+  factory Coupon$Query$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Coupon$Query$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  Coupon$Query$CouponType$TargetType();
+
+  factory Coupon$Query$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Coupon$Query$CouponType$TargetTypeFromJson(json);
+
+  Coupon$Query$CouponType$TargetType$PointOfSaleType? pos;
+
+  Coupon$Query$CouponType$TargetType$WholesalerType? wholesaler;
+
+  Coupon$Query$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Coupon$Query$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Coupon$Query$CouponType extends JsonSerializable with EquatableMixin {
   Coupon$Query$CouponType();
 
@@ -3060,6 +3582,8 @@ class Coupon$Query$CouponType extends JsonSerializable with EquatableMixin {
 
   Coupon$Query$CouponType$DiscountDtoType? discount;
 
+  late Coupon$Query$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -3070,7 +3594,8 @@ class Coupon$Query$CouponType extends JsonSerializable with EquatableMixin {
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -3214,6 +3739,96 @@ class IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType
 }
 
 @JsonSerializable(explicitToJson: true)
+class IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$PointOfSaleType();
+
+  factory IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$WholesalerType();
+
+  factory IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$ManufacturerType();
+
+  factory IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class IsCouponValid$Query$IsCouponValidType$CouponType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType();
+
+  factory IsCouponValid$Query$IsCouponValidType$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetTypeFromJson(
+          json);
+
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$PointOfSaleType?
+      pos;
+
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$WholesalerType?
+      wholesaler;
+
+  IsCouponValid$Query$IsCouponValidType$CouponType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$IsCouponValid$Query$IsCouponValidType$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class IsCouponValid$Query$IsCouponValidType$CouponType extends JsonSerializable
     with EquatableMixin {
   IsCouponValid$Query$IsCouponValidType$CouponType();
@@ -3230,28 +3845,17 @@ class IsCouponValid$Query$IsCouponValidType$CouponType extends JsonSerializable
 
   bool? redeemed;
 
-  late DateTime createdAt;
-
-  late DateTime updatedAt;
-
   String? couponCode;
 
   IsCouponValid$Query$IsCouponValidType$CouponType$UserType? user;
 
   IsCouponValid$Query$IsCouponValidType$CouponType$DiscountDtoType? discount;
 
+  late IsCouponValid$Query$IsCouponValidType$CouponType$TargetType target;
+
   @override
-  List<Object?> get props => [
-        id,
-        to,
-        from,
-        redeemed,
-        createdAt,
-        updatedAt,
-        couponCode,
-        user,
-        discount
-      ];
+  List<Object?> get props =>
+      [id, to, from, redeemed, couponCode, user, discount, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3446,6 +4050,97 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType();
+
+  factory GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType();
+
+  factory GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType();
+
+  factory GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType();
+
+  factory GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetTypeFromJson(
+          json);
+
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType?
+      pos;
+
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType
     extends JsonSerializable with EquatableMixin {
   GetPaginatedCoupons$Query$PaginatedCouponType$CouponType();
@@ -3462,10 +4157,6 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType
 
   bool? redeemed;
 
-  late DateTime createdAt;
-
-  late DateTime updatedAt;
-
   String? couponCode;
 
   GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$UserType? user;
@@ -3473,18 +4164,12 @@ class GetPaginatedCoupons$Query$PaginatedCouponType$CouponType
   GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$DiscountDtoType?
       discount;
 
+  late GetPaginatedCoupons$Query$PaginatedCouponType$CouponType$TargetType
+      target;
+
   @override
-  List<Object?> get props => [
-        id,
-        to,
-        from,
-        redeemed,
-        createdAt,
-        updatedAt,
-        couponCode,
-        user,
-        discount
-      ];
+  List<Object?> get props =>
+      [id, to, from, redeemed, couponCode, user, discount, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3605,6 +4290,186 @@ class FindCouponsByTarget$Query$CouponType$UserType$PictureType
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponsByTarget$Query$CouponType$UserType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeFromJson(
+          json);
+
+  late FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+      permission;
+
+  bool? read;
+
+  bool? write;
+
+  bool? create;
+
+  @override
+  List<Object?> get props => [permission, read, write, create];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetTypeFromJson(
+          json);
+
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType?
+      pos;
+
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$UserType$PermissionType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType();
+
+  factory FindCouponsByTarget$Query$CouponType$UserType$PermissionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  List<FindCouponsByTarget$Query$CouponType$UserType$PermissionType$PermissionPermissionsType>?
+      permissions;
+
+  late FindCouponsByTarget$Query$CouponType$UserType$PermissionType$TargetType
+      target;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, name, permissions, target, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$UserType$PermissionTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -4970,6 +5835,8 @@ class FindCouponsByTarget$Query$CouponType$UserType extends JsonSerializable
 
   List<FindCouponsByTarget$Query$CouponType$UserType$PictureType>? pictures;
 
+  FindCouponsByTarget$Query$CouponType$UserType$PermissionType? permission;
+
   List<FindCouponsByTarget$Query$CouponType$UserType$LanguageType>? languages;
 
   FindCouponsByTarget$Query$CouponType$UserType$CountryType? nationality;
@@ -5032,6 +5899,7 @@ class FindCouponsByTarget$Query$CouponType$UserType extends JsonSerializable
         phone,
         picture,
         pictures,
+        permission,
         languages,
         nationality,
         billingAddress,
@@ -5075,6 +5943,93 @@ class FindCouponsByTarget$Query$CouponType$DiscountDtoType
 }
 
 @JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$TargetType$PointOfSaleType();
+
+  factory FindCouponsByTarget$Query$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$TargetType$WholesalerType();
+
+  factory FindCouponsByTarget$Query$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$TargetType$ManufacturerType();
+
+  factory FindCouponsByTarget$Query$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTarget$Query$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  FindCouponsByTarget$Query$CouponType$TargetType();
+
+  factory FindCouponsByTarget$Query$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTarget$Query$CouponType$TargetTypeFromJson(json);
+
+  FindCouponsByTarget$Query$CouponType$TargetType$PointOfSaleType? pos;
+
+  FindCouponsByTarget$Query$CouponType$TargetType$WholesalerType? wholesaler;
+
+  FindCouponsByTarget$Query$CouponType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTarget$Query$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class FindCouponsByTarget$Query$CouponType extends JsonSerializable
     with EquatableMixin {
   FindCouponsByTarget$Query$CouponType();
@@ -5101,6 +6056,8 @@ class FindCouponsByTarget$Query$CouponType extends JsonSerializable
 
   FindCouponsByTarget$Query$CouponType$DiscountDtoType? discount;
 
+  late FindCouponsByTarget$Query$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -5111,7 +6068,8 @@ class FindCouponsByTarget$Query$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -5259,6 +6217,97 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
 }
 
 @JsonSerializable(explicitToJson: true)
+class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType();
+
+  factory FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType();
+
+  factory FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType();
+
+  factory FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType();
+
+  factory FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetTypeFromJson(
+          json);
+
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$PointOfSaleType?
+      pos;
+
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType
     extends JsonSerializable with EquatableMixin {
   FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType();
@@ -5276,10 +6325,6 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
 
   bool? redeemed;
 
-  late DateTime createdAt;
-
-  late DateTime updatedAt;
-
   String? couponCode;
 
   FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$UserType?
@@ -5288,17 +6333,25 @@ class FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponTyp
   FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$DiscountDtoType?
       discount;
 
+  late FindCouponsByTargetWithFilterPaginated$Query$PaginatedCouponType$CouponType$TargetType
+      target;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
   @override
   List<Object?> get props => [
         id,
         to,
         from,
         redeemed,
-        createdAt,
-        updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target,
+        createdAt,
+        updatedAt
       ];
 
   @override
@@ -5439,6 +6492,186 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType
   @override
   Map<String, dynamic> toJson() =>
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props => [id, name, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeFromJson(
+          json);
+
+  late FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType$PermissionDefinitionType
+      permission;
+
+  bool? read;
+
+  bool? write;
+
+  bool? create;
+
+  @override
+  List<Object?> get props => [permission, read, write, create];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetTypeFromJson(
+          json);
+
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$PointOfSaleType?
+      pos;
+
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionTypeFromJson(
+          json);
+
+  late String id;
+
+  String? name;
+
+  List<FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$PermissionPermissionsType>?
+      permissions;
+
+  late FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType$TargetType
+      target;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  @override
+  List<Object?> get props =>
+      [id, name, permissions, target, createdAt, updatedAt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionTypeToJson(
           this);
 }
 
@@ -6815,6 +8048,9 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType
   List<FindCouponByTargetAndCode$Query$CouponType$UserType$PictureType>?
       pictures;
 
+  FindCouponByTargetAndCode$Query$CouponType$UserType$PermissionType?
+      permission;
+
   List<FindCouponByTargetAndCode$Query$CouponType$UserType$LanguageType>?
       languages;
 
@@ -6878,6 +8114,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType
         phone,
         picture,
         pictures,
+        permission,
         languages,
         nationality,
         billingAddress,
@@ -6922,6 +8159,94 @@ class FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType
 }
 
 @JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$TargetType$PointOfSaleType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$TargetType$WholesalerType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$TargetType$ManufacturerType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindCouponByTargetAndCode$Query$CouponType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindCouponByTargetAndCode$Query$CouponType$TargetType();
+
+  factory FindCouponByTargetAndCode$Query$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetTypeFromJson(json);
+
+  FindCouponByTargetAndCode$Query$CouponType$TargetType$PointOfSaleType? pos;
+
+  FindCouponByTargetAndCode$Query$CouponType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindCouponByTargetAndCode$Query$CouponType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindCouponByTargetAndCode$Query$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class FindCouponByTargetAndCode$Query$CouponType extends JsonSerializable
     with EquatableMixin {
   FindCouponByTargetAndCode$Query$CouponType();
@@ -6948,6 +8273,8 @@ class FindCouponByTargetAndCode$Query$CouponType extends JsonSerializable
 
   FindCouponByTargetAndCode$Query$CouponType$DiscountDtoType? discount;
 
+  late FindCouponByTargetAndCode$Query$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -6958,7 +8285,8 @@ class FindCouponByTargetAndCode$Query$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -7188,6 +8516,90 @@ class CreateCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateCoupon$Mutation$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateCoupon$Mutation$CouponType$TargetType$PointOfSaleType();
+
+  factory CreateCoupon$Mutation$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCoupon$Mutation$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCoupon$Mutation$CouponType$TargetType$WholesalerType();
+
+  factory CreateCoupon$Mutation$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCoupon$Mutation$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCoupon$Mutation$CouponType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCoupon$Mutation$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCoupon$Mutation$CouponType$TargetType$ManufacturerType();
+
+  factory CreateCoupon$Mutation$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCoupon$Mutation$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCoupon$Mutation$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCoupon$Mutation$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  CreateCoupon$Mutation$CouponType$TargetType();
+
+  factory CreateCoupon$Mutation$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCoupon$Mutation$CouponType$TargetTypeFromJson(json);
+
+  CreateCoupon$Mutation$CouponType$TargetType$PointOfSaleType? pos;
+
+  CreateCoupon$Mutation$CouponType$TargetType$WholesalerType? wholesaler;
+
+  CreateCoupon$Mutation$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCoupon$Mutation$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateCoupon$Mutation$CouponType extends JsonSerializable
     with EquatableMixin {
   CreateCoupon$Mutation$CouponType();
@@ -7214,6 +8626,8 @@ class CreateCoupon$Mutation$CouponType extends JsonSerializable
 
   CreateCoupon$Mutation$CouponType$DiscountDtoType? discount;
 
+  late CreateCoupon$Mutation$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -7224,7 +8638,8 @@ class CreateCoupon$Mutation$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -7411,6 +8826,90 @@ class UpdateCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateCoupon$Mutation$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCoupon$Mutation$CouponType$TargetType$PointOfSaleType();
+
+  factory UpdateCoupon$Mutation$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCoupon$Mutation$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCoupon$Mutation$CouponType$TargetType$WholesalerType();
+
+  factory UpdateCoupon$Mutation$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCoupon$Mutation$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCoupon$Mutation$CouponType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCoupon$Mutation$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCoupon$Mutation$CouponType$TargetType$ManufacturerType();
+
+  factory UpdateCoupon$Mutation$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCoupon$Mutation$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCoupon$Mutation$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCoupon$Mutation$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  UpdateCoupon$Mutation$CouponType$TargetType();
+
+  factory UpdateCoupon$Mutation$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCoupon$Mutation$CouponType$TargetTypeFromJson(json);
+
+  UpdateCoupon$Mutation$CouponType$TargetType$PointOfSaleType? pos;
+
+  UpdateCoupon$Mutation$CouponType$TargetType$WholesalerType? wholesaler;
+
+  UpdateCoupon$Mutation$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCoupon$Mutation$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateCoupon$Mutation$CouponType extends JsonSerializable
     with EquatableMixin {
   UpdateCoupon$Mutation$CouponType();
@@ -7437,6 +8936,8 @@ class UpdateCoupon$Mutation$CouponType extends JsonSerializable
 
   UpdateCoupon$Mutation$CouponType$DiscountDtoType? discount;
 
+  late UpdateCoupon$Mutation$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -7447,7 +8948,8 @@ class UpdateCoupon$Mutation$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -7609,6 +9111,92 @@ class GenerateCoupons$Mutation$CouponType$DiscountDtoType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GenerateCoupons$Mutation$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GenerateCoupons$Mutation$CouponType$TargetType$PointOfSaleType();
+
+  factory GenerateCoupons$Mutation$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GenerateCoupons$Mutation$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GenerateCoupons$Mutation$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GenerateCoupons$Mutation$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GenerateCoupons$Mutation$CouponType$TargetType$WholesalerType();
+
+  factory GenerateCoupons$Mutation$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GenerateCoupons$Mutation$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GenerateCoupons$Mutation$CouponType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GenerateCoupons$Mutation$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GenerateCoupons$Mutation$CouponType$TargetType$ManufacturerType();
+
+  factory GenerateCoupons$Mutation$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GenerateCoupons$Mutation$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GenerateCoupons$Mutation$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GenerateCoupons$Mutation$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GenerateCoupons$Mutation$CouponType$TargetType();
+
+  factory GenerateCoupons$Mutation$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GenerateCoupons$Mutation$CouponType$TargetTypeFromJson(json);
+
+  GenerateCoupons$Mutation$CouponType$TargetType$PointOfSaleType? pos;
+
+  GenerateCoupons$Mutation$CouponType$TargetType$WholesalerType? wholesaler;
+
+  GenerateCoupons$Mutation$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GenerateCoupons$Mutation$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GenerateCoupons$Mutation$CouponType extends JsonSerializable
     with EquatableMixin {
   GenerateCoupons$Mutation$CouponType();
@@ -7635,6 +9223,8 @@ class GenerateCoupons$Mutation$CouponType extends JsonSerializable
 
   GenerateCoupons$Mutation$CouponType$DiscountDtoType? discount;
 
+  late GenerateCoupons$Mutation$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -7645,7 +9235,8 @@ class GenerateCoupons$Mutation$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -7813,6 +9404,90 @@ class RedeemCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class RedeemCoupon$Mutation$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  RedeemCoupon$Mutation$CouponType$TargetType$PointOfSaleType();
+
+  factory RedeemCoupon$Mutation$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$RedeemCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$RedeemCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class RedeemCoupon$Mutation$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  RedeemCoupon$Mutation$CouponType$TargetType$WholesalerType();
+
+  factory RedeemCoupon$Mutation$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$RedeemCoupon$Mutation$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$RedeemCoupon$Mutation$CouponType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class RedeemCoupon$Mutation$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  RedeemCoupon$Mutation$CouponType$TargetType$ManufacturerType();
+
+  factory RedeemCoupon$Mutation$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$RedeemCoupon$Mutation$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$RedeemCoupon$Mutation$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class RedeemCoupon$Mutation$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  RedeemCoupon$Mutation$CouponType$TargetType();
+
+  factory RedeemCoupon$Mutation$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$RedeemCoupon$Mutation$CouponType$TargetTypeFromJson(json);
+
+  RedeemCoupon$Mutation$CouponType$TargetType$PointOfSaleType? pos;
+
+  RedeemCoupon$Mutation$CouponType$TargetType$WholesalerType? wholesaler;
+
+  RedeemCoupon$Mutation$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$RedeemCoupon$Mutation$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class RedeemCoupon$Mutation$CouponType extends JsonSerializable
     with EquatableMixin {
   RedeemCoupon$Mutation$CouponType();
@@ -7839,6 +9514,8 @@ class RedeemCoupon$Mutation$CouponType extends JsonSerializable
 
   RedeemCoupon$Mutation$CouponType$DiscountDtoType? discount;
 
+  late RedeemCoupon$Mutation$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -7849,7 +9526,8 @@ class RedeemCoupon$Mutation$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -7987,6 +9665,91 @@ class DisableCoupon$Mutation$CouponType$DiscountDtoType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class DisableCoupon$Mutation$CouponType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  DisableCoupon$Mutation$CouponType$TargetType$PointOfSaleType();
+
+  factory DisableCoupon$Mutation$CouponType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DisableCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DisableCoupon$Mutation$CouponType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DisableCoupon$Mutation$CouponType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  DisableCoupon$Mutation$CouponType$TargetType$WholesalerType();
+
+  factory DisableCoupon$Mutation$CouponType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DisableCoupon$Mutation$CouponType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DisableCoupon$Mutation$CouponType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DisableCoupon$Mutation$CouponType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  DisableCoupon$Mutation$CouponType$TargetType$ManufacturerType();
+
+  factory DisableCoupon$Mutation$CouponType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DisableCoupon$Mutation$CouponType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DisableCoupon$Mutation$CouponType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class DisableCoupon$Mutation$CouponType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  DisableCoupon$Mutation$CouponType$TargetType();
+
+  factory DisableCoupon$Mutation$CouponType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$DisableCoupon$Mutation$CouponType$TargetTypeFromJson(json);
+
+  DisableCoupon$Mutation$CouponType$TargetType$PointOfSaleType? pos;
+
+  DisableCoupon$Mutation$CouponType$TargetType$WholesalerType? wholesaler;
+
+  DisableCoupon$Mutation$CouponType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$DisableCoupon$Mutation$CouponType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class DisableCoupon$Mutation$CouponType extends JsonSerializable
     with EquatableMixin {
   DisableCoupon$Mutation$CouponType();
@@ -8013,6 +9776,8 @@ class DisableCoupon$Mutation$CouponType extends JsonSerializable
 
   DisableCoupon$Mutation$CouponType$DiscountDtoType? discount;
 
+  late DisableCoupon$Mutation$CouponType$TargetType target;
+
   @override
   List<Object?> get props => [
         id,
@@ -8023,7 +9788,8 @@ class DisableCoupon$Mutation$CouponType extends JsonSerializable
         updatedAt,
         couponCode,
         user,
-        discount
+        discount,
+        target
       ];
 
   @override
@@ -8655,6 +10421,160 @@ final GET_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'permission'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'permissions'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'permission'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'read'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'write'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'create'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'languages'),
                 alias: null,
                 arguments: [],
@@ -13279,6 +15199,59 @@ final GET_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -13725,6 +15698,160 @@ final COUPON_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'permission'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'permissions'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'permission'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'read'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'write'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'create'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'languages'),
                 alias: null,
                 arguments: [],
@@ -18352,6 +20479,59 @@ final COUPON_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -18483,20 +20663,6 @@ final IS_COUPON_VALID_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'createdAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'updatedAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'couponCode'),
                 alias: null,
                 arguments: [],
@@ -18665,6 +20831,59 @@ final IS_COUPON_VALID_QUERY_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -18794,20 +21013,6 @@ final GET_PAGINATED_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'createdAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'updatedAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'couponCode'),
                 alias: null,
                 arguments: [],
@@ -18976,6 +21181,59 @@ final GET_PAGINATED_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -19431,6 +21689,160 @@ final FIND_COUPONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'permission'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'permissions'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'permission'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'read'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'write'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'create'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'languages'),
                 alias: null,
                 arguments: [],
@@ -24058,6 +26470,59 @@ final FIND_COUPONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -24236,20 +26701,6 @@ final FIND_COUPONS_BY_TARGET_WITH_FILTER_PAGINATED_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'createdAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'updatedAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'couponCode'),
                 alias: null,
                 arguments: [],
@@ -24420,6 +26871,73 @@ final FIND_COUPONS_BY_TARGET_WITH_FILTER_PAGINATED_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                 ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
               ),
             ]),
           ),
@@ -24897,6 +27415,160 @@ final FIND_COUPON_BY_TARGET_AND_CODE_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
+                name: NameNode(value: 'permission'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'permissions'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'permission'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'name'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'createdAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'updatedAt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'read'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'write'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'create'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'languages'),
                 alias: null,
                 arguments: [],
@@ -29521,6 +32193,59 @@ final FIND_COUPON_BY_TARGET_AND_CODE_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -30135,6 +32860,59 @@ final CREATE_COUPON_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -30440,6 +33218,59 @@ final UPDATE_COUPON_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -30724,6 +33555,59 @@ final GENERATE_COUPONS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -31033,6 +33917,59 @@ final REDEEM_COUPON_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -31317,6 +34254,59 @@ final DISABLE_COUPON_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),

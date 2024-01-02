@@ -30,6 +30,97 @@ class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$Corpo
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType();
+
+  factory GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$WholesalerType();
+
+  factory GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType();
+
+  factory GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType();
+
+  factory GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetTypeFromJson(
+          json);
+
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType?
+      pos;
+
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType
     extends JsonSerializable with EquatableMixin {
   GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType();
@@ -41,18 +132,21 @@ class GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType
 
   String? id;
 
-  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
-      reviewDefinition;
-
   bool? active;
 
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
+      reviewDefinition;
+
+  GetAllCorporateRatingAssignments$Query$CorporateRatingAssignmentType$TargetType?
+      target;
+
   @override
   List<Object?> get props =>
-      [id, reviewDefinition, active, createdAt, updatedAt];
+      [id, active, createdAt, updatedAt, reviewDefinition, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -105,6 +199,97 @@ class CorporateRatingAssignment$Query$CorporateRatingAssignmentType$CorporateRat
 }
 
 @JsonSerializable(explicitToJson: true)
+class CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType();
+
+  factory CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$WholesalerType();
+
+  factory CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType();
+
+  factory CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType();
+
+  factory CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetTypeFromJson(
+          json);
+
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$PointOfSaleType?
+      pos;
+
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CorporateRatingAssignment$Query$CorporateRatingAssignmentType
     extends JsonSerializable with EquatableMixin {
   CorporateRatingAssignment$Query$CorporateRatingAssignmentType();
@@ -116,18 +301,21 @@ class CorporateRatingAssignment$Query$CorporateRatingAssignmentType
 
   String? id;
 
-  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
-      reviewDefinition;
-
   bool? active;
 
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
+      reviewDefinition;
+
+  CorporateRatingAssignment$Query$CorporateRatingAssignmentType$TargetType?
+      target;
+
   @override
   List<Object?> get props =>
-      [id, reviewDefinition, active, createdAt, updatedAt];
+      [id, active, createdAt, updatedAt, reviewDefinition, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -155,6 +343,108 @@ class CorporateRatingAssignment$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType();
+
+  factory GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeFromJson(
+          json);
+
+  String? id;
+
+  String? reviewType;
+
+  @override
+  List<Object?> get props => [id, reviewType];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType();
+
+  factory GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentTypeFromJson(
+          json);
+
+  String? id;
+
+  bool? active;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
+      reviewDefinition;
+
+  @override
+  List<Object?> get props =>
+      [id, active, createdAt, updatedAt, reviewDefinition];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignmentByTarget$Query extends JsonSerializable
+    with EquatableMixin {
+  GetCorporateRatingAssignmentByTarget$Query();
+
+  factory GetCorporateRatingAssignmentByTarget$Query.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignmentByTarget$QueryFromJson(json);
+
+  late List<
+          GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType>
+      getCorporateRatingAssignmentByTarget;
+
+  @override
+  List<Object?> get props => [getCorporateRatingAssignmentByTarget];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignmentByTarget$QueryToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class TargetACIInput extends JsonSerializable with EquatableMixin {
+  TargetACIInput({
+    this.pos,
+    this.wholesaler,
+    this.manufacturer,
+    this.user,
+  });
+
+  factory TargetACIInput.fromJson(Map<String, dynamic> json) =>
+      _$TargetACIInputFromJson(json);
+
+  String? pos;
+
+  String? wholesaler;
+
+  String? manufacturer;
+
+  String? user;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer, user];
+
+  @override
+  Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$CorporateRatingDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$CorporateRatingDefinitionType();
@@ -178,6 +468,97 @@ class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$PointOfSaleType();
+
+  factory GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$WholesalerType();
+
+  factory GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$ManufacturerType();
+
+  factory GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType();
+
+  factory GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetTypeFromJson(
+          json);
+
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$PointOfSaleType?
+      pos;
+
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType
     extends JsonSerializable with EquatableMixin {
   GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType();
@@ -189,18 +570,21 @@ class GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$
 
   String? id;
 
-  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
-      reviewDefinition;
-
   bool? active;
 
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
+      reviewDefinition;
+
+  GetCorporateRatingAssignments$Query$CorporateRatingAssignmentPaginateType$CorporateRatingAssignmentType$TargetType?
+      target;
+
   @override
   List<Object?> get props =>
-      [id, reviewDefinition, active, createdAt, updatedAt];
+      [id, active, createdAt, updatedAt, reviewDefinition, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -277,108 +661,6 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
-class GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType();
-
-  factory GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeFromJson(
-          json);
-
-  String? id;
-
-  String? reviewType;
-
-  @override
-  List<Object?> get props => [id, reviewType];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType
-    extends JsonSerializable with EquatableMixin {
-  GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType();
-
-  factory GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentTypeFromJson(
-          json);
-
-  String? id;
-
-  GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
-      reviewDefinition;
-
-  bool? active;
-
-  late DateTime createdAt;
-
-  late DateTime updatedAt;
-
-  @override
-  List<Object?> get props =>
-      [id, reviewDefinition, active, createdAt, updatedAt];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentTypeToJson(
-          this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingAssignmentByTarget$Query extends JsonSerializable
-    with EquatableMixin {
-  GetCorporateRatingAssignmentByTarget$Query();
-
-  factory GetCorporateRatingAssignmentByTarget$Query.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingAssignmentByTarget$QueryFromJson(json);
-
-  late List<
-          GetCorporateRatingAssignmentByTarget$Query$CorporateRatingAssignmentType>
-      getCorporateRatingAssignmentByTarget;
-
-  @override
-  List<Object?> get props => [getCorporateRatingAssignmentByTarget];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingAssignmentByTarget$QueryToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
-class TargetACIInput extends JsonSerializable with EquatableMixin {
-  TargetACIInput({
-    this.pos,
-    this.wholesaler,
-    this.manufacturer,
-    this.user,
-  });
-
-  factory TargetACIInput.fromJson(Map<String, dynamic> json) =>
-      _$TargetACIInputFromJson(json);
-
-  String? pos;
-
-  String? wholesaler;
-
-  String? manufacturer;
-
-  String? user;
-
-  @override
-  List<Object?> get props => [pos, wholesaler, manufacturer, user];
-
-  @override
-  Map<String, dynamic> toJson() => _$TargetACIInputToJson(this);
-}
-
-@JsonSerializable(explicitToJson: true)
 class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionType
     extends JsonSerializable with EquatableMixin {
   CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionType();
@@ -402,6 +684,97 @@ class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$Cor
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType();
+
+  factory CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType();
+
+  factory CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType();
+
+  factory CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType();
+
+  factory CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetTypeFromJson(
+          json);
+
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType
     extends JsonSerializable with EquatableMixin {
   CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType();
@@ -413,18 +786,21 @@ class CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType
 
   String? id;
 
-  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
-      reviewDefinition;
-
   bool? active;
 
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
+      reviewDefinition;
+
+  CreateCorporateRatingAssignment$Mutation$CorporateRatingAssignmentType$TargetType?
+      target;
+
   @override
   List<Object?> get props =>
-      [id, reviewDefinition, active, createdAt, updatedAt];
+      [id, active, createdAt, updatedAt, reviewDefinition, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -501,6 +877,97 @@ class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentTy
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType();
+
+  factory UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType();
+
+  factory UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType();
+
+  factory UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType();
+
+  factory UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetTypeFromJson(
+          json);
+
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType
     extends JsonSerializable with EquatableMixin {
   UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType();
@@ -512,18 +979,21 @@ class UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentTy
 
   String? id;
 
-  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
-      reviewDefinition;
-
   bool? active;
 
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$CorporateRatingDefinitionType?
+      reviewDefinition;
+
+  UpdateCorporateRatingAssignmentStatus$Mutation$CorporateRatingAssignmentType$TargetType?
+      target;
+
   @override
   List<Object?> get props =>
-      [id, reviewDefinition, active, createdAt, updatedAt];
+      [id, active, createdAt, updatedAt, reviewDefinition, target];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -618,6 +1088,27 @@ final GET_ALL_CORPORATE_RATING_ASSIGNMENTS_QUERY_DOCUMENT =
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'active'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'reviewDefinition'),
             alias: null,
             arguments: [],
@@ -640,25 +1131,57 @@ final GET_ALL_CORPORATE_RATING_ASSIGNMENTS_QUERY_DOCUMENT =
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'active'),
+            name: NameNode(value: 'target'),
             alias: null,
             arguments: [],
             directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'createdAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'updatedAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
         ]),
       )
@@ -744,6 +1267,27 @@ final CORPORATE_RATING_ASSIGNMENT_QUERY_DOCUMENT = DocumentNode(definitions: [
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'active'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'reviewDefinition'),
             alias: null,
             arguments: [],
@@ -766,25 +1310,57 @@ final CORPORATE_RATING_ASSIGNMENT_QUERY_DOCUMENT = DocumentNode(definitions: [
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'active'),
+            name: NameNode(value: 'target'),
             alias: null,
             arguments: [],
             directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'createdAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'updatedAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
         ]),
       )
@@ -812,6 +1388,137 @@ class CorporateRatingAssignmentQuery extends GraphQLQuery<
   @override
   CorporateRatingAssignment$Query parse(Map<String, dynamic> json) =>
       CorporateRatingAssignment$Query.fromJson(json);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetCorporateRatingAssignmentByTargetArguments extends JsonSerializable
+    with EquatableMixin {
+  GetCorporateRatingAssignmentByTargetArguments({required this.target});
+
+  @override
+  factory GetCorporateRatingAssignmentByTargetArguments.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetCorporateRatingAssignmentByTargetArgumentsFromJson(json);
+
+  late TargetACIInput target;
+
+  @override
+  List<Object?> get props => [target];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetCorporateRatingAssignmentByTargetArgumentsToJson(this);
+}
+
+final GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME =
+    'getCorporateRatingAssignmentByTarget';
+final GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT =
+    DocumentNode(definitions: [
+  OperationDefinitionNode(
+    type: OperationType.query,
+    name: NameNode(value: 'getCorporateRatingAssignmentByTarget'),
+    variableDefinitions: [
+      VariableDefinitionNode(
+        variable: VariableNode(name: NameNode(value: 'target')),
+        type: NamedTypeNode(
+          name: NameNode(value: 'TargetACIInput'),
+          isNonNull: true,
+        ),
+        defaultValue: DefaultValueNode(value: null),
+        directives: [],
+      )
+    ],
+    directives: [],
+    selectionSet: SelectionSetNode(selections: [
+      FieldNode(
+        name: NameNode(value: 'getCorporateRatingAssignmentByTarget'),
+        alias: null,
+        arguments: [
+          ArgumentNode(
+            name: NameNode(value: 'target'),
+            value: VariableNode(name: NameNode(value: 'target')),
+          )
+        ],
+        directives: [],
+        selectionSet: SelectionSetNode(selections: [
+          FieldNode(
+            name: NameNode(value: 'id'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'active'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'reviewDefinition'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'reviewType'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+        ]),
+      )
+    ]),
+  )
+]);
+
+class GetCorporateRatingAssignmentByTargetQuery extends GraphQLQuery<
+    GetCorporateRatingAssignmentByTarget$Query,
+    GetCorporateRatingAssignmentByTargetArguments> {
+  GetCorporateRatingAssignmentByTargetQuery({required this.variables});
+
+  @override
+  final DocumentNode document =
+      GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT;
+
+  @override
+  final String operationName =
+      GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME;
+
+  @override
+  final GetCorporateRatingAssignmentByTargetArguments variables;
+
+  @override
+  List<Object?> get props => [document, operationName, variables];
+
+  @override
+  GetCorporateRatingAssignmentByTarget$Query parse(Map<String, dynamic> json) =>
+      GetCorporateRatingAssignmentByTarget$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -893,6 +1600,27 @@ final GET_CORPORATE_RATING_ASSIGNMENTS_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'active'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
                 name: NameNode(value: 'reviewDefinition'),
                 alias: null,
                 arguments: [],
@@ -915,25 +1643,57 @@ final GET_CORPORATE_RATING_ASSIGNMENTS_QUERY_DOCUMENT =
                 ]),
               ),
               FieldNode(
-                name: NameNode(value: 'active'),
+                name: NameNode(value: 'target'),
                 alias: null,
                 arguments: [],
                 directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'createdAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'updatedAt'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
               ),
             ]),
           ),
@@ -964,137 +1724,6 @@ class GetCorporateRatingAssignmentsQuery extends GraphQLQuery<
   @override
   GetCorporateRatingAssignments$Query parse(Map<String, dynamic> json) =>
       GetCorporateRatingAssignments$Query.fromJson(json);
-}
-
-@JsonSerializable(explicitToJson: true)
-class GetCorporateRatingAssignmentByTargetArguments extends JsonSerializable
-    with EquatableMixin {
-  GetCorporateRatingAssignmentByTargetArguments({required this.target});
-
-  @override
-  factory GetCorporateRatingAssignmentByTargetArguments.fromJson(
-          Map<String, dynamic> json) =>
-      _$GetCorporateRatingAssignmentByTargetArgumentsFromJson(json);
-
-  late TargetACIInput target;
-
-  @override
-  List<Object?> get props => [target];
-
-  @override
-  Map<String, dynamic> toJson() =>
-      _$GetCorporateRatingAssignmentByTargetArgumentsToJson(this);
-}
-
-final GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME =
-    'getCorporateRatingAssignmentByTarget';
-final GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT =
-    DocumentNode(definitions: [
-  OperationDefinitionNode(
-    type: OperationType.query,
-    name: NameNode(value: 'getCorporateRatingAssignmentByTarget'),
-    variableDefinitions: [
-      VariableDefinitionNode(
-        variable: VariableNode(name: NameNode(value: 'target')),
-        type: NamedTypeNode(
-          name: NameNode(value: 'TargetACIInput'),
-          isNonNull: true,
-        ),
-        defaultValue: DefaultValueNode(value: null),
-        directives: [],
-      )
-    ],
-    directives: [],
-    selectionSet: SelectionSetNode(selections: [
-      FieldNode(
-        name: NameNode(value: 'getCorporateRatingAssignmentByTarget'),
-        alias: null,
-        arguments: [
-          ArgumentNode(
-            name: NameNode(value: 'target'),
-            value: VariableNode(name: NameNode(value: 'target')),
-          )
-        ],
-        directives: [],
-        selectionSet: SelectionSetNode(selections: [
-          FieldNode(
-            name: NameNode(value: 'id'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'reviewDefinition'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: SelectionSetNode(selections: [
-              FieldNode(
-                name: NameNode(value: 'id'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
-                name: NameNode(value: 'reviewType'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-            ]),
-          ),
-          FieldNode(
-            name: NameNode(value: 'active'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'createdAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'updatedAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-        ]),
-      )
-    ]),
-  )
-]);
-
-class GetCorporateRatingAssignmentByTargetQuery extends GraphQLQuery<
-    GetCorporateRatingAssignmentByTarget$Query,
-    GetCorporateRatingAssignmentByTargetArguments> {
-  GetCorporateRatingAssignmentByTargetQuery({required this.variables});
-
-  @override
-  final DocumentNode document =
-      GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT;
-
-  @override
-  final String operationName =
-      GET_CORPORATE_RATING_ASSIGNMENT_BY_TARGET_QUERY_DOCUMENT_OPERATION_NAME;
-
-  @override
-  final GetCorporateRatingAssignmentByTargetArguments variables;
-
-  @override
-  List<Object?> get props => [document, operationName, variables];
-
-  @override
-  GetCorporateRatingAssignmentByTarget$Query parse(Map<String, dynamic> json) =>
-      GetCorporateRatingAssignmentByTarget$Query.fromJson(json);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -1156,6 +1785,27 @@ final CREATE_CORPORATE_RATING_ASSIGNMENT_MUTATION_DOCUMENT =
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'active'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'reviewDefinition'),
             alias: null,
             arguments: [],
@@ -1178,25 +1828,57 @@ final CREATE_CORPORATE_RATING_ASSIGNMENT_MUTATION_DOCUMENT =
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'active'),
+            name: NameNode(value: 'target'),
             alias: null,
             arguments: [],
             directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'createdAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'updatedAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
         ]),
       )
@@ -1305,6 +1987,27 @@ final UPDATE_CORPORATE_RATING_ASSIGNMENT_STATUS_MUTATION_DOCUMENT =
             selectionSet: null,
           ),
           FieldNode(
+            name: NameNode(value: 'active'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'createdAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
+            name: NameNode(value: 'updatedAt'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: null,
+          ),
+          FieldNode(
             name: NameNode(value: 'reviewDefinition'),
             alias: null,
             arguments: [],
@@ -1327,25 +2030,57 @@ final UPDATE_CORPORATE_RATING_ASSIGNMENT_STATUS_MUTATION_DOCUMENT =
             ]),
           ),
           FieldNode(
-            name: NameNode(value: 'active'),
+            name: NameNode(value: 'target'),
             alias: null,
             arguments: [],
             directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'createdAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
-          ),
-          FieldNode(
-            name: NameNode(value: 'updatedAt'),
-            alias: null,
-            arguments: [],
-            directives: [],
-            selectionSet: null,
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
           ),
         ]),
       )

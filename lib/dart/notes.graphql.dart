@@ -27,12 +27,100 @@ class GetNotes$Query$NotesType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotes$Query$NotesType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetNotes$Query$NotesType$LabelType$TargetType$PointOfSaleType();
+
+  factory GetNotes$Query$NotesType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotes$Query$NotesType$LabelType$TargetType$WholesalerType();
+
+  factory GetNotes$Query$NotesType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotes$Query$NotesType$LabelType$TargetType$ManufacturerType();
+
+  factory GetNotes$Query$NotesType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$LabelType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetNotes$Query$NotesType$LabelType$TargetType();
+
+  factory GetNotes$Query$NotesType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$LabelType$TargetTypeFromJson(json);
+
+  GetNotes$Query$NotesType$LabelType$TargetType$PointOfSaleType? pos;
+
+  GetNotes$Query$NotesType$LabelType$TargetType$WholesalerType? wholesaler;
+
+  GetNotes$Query$NotesType$LabelType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$LabelType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -55,17 +143,99 @@ class GetNotes$Query$NotesType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late GetNotes$Query$NotesType$LabelType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotes$Query$NotesType$LabelTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetNotes$Query$NotesType$TargetType$PointOfSaleType();
+
+  factory GetNotes$Query$NotesType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotes$Query$NotesType$TargetType$WholesalerType();
+
+  factory GetNotes$Query$NotesType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotes$Query$NotesType$TargetType$ManufacturerType();
+
+  factory GetNotes$Query$NotesType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotes$Query$NotesType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetNotes$Query$NotesType$TargetType();
+
+  factory GetNotes$Query$NotesType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotes$Query$NotesType$TargetTypeFromJson(json);
+
+  GetNotes$Query$NotesType$TargetType$PointOfSaleType? pos;
+
+  GetNotes$Query$NotesType$TargetType$WholesalerType? wholesaler;
+
+  GetNotes$Query$NotesType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotes$Query$NotesType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -87,6 +257,8 @@ class GetNotes$Query$NotesType extends JsonSerializable with EquatableMixin {
 
   late List<GetNotes$Query$NotesType$LabelType> labels;
 
+  late GetNotes$Query$NotesType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -99,6 +271,7 @@ class GetNotes$Query$NotesType extends JsonSerializable with EquatableMixin {
         description,
         picture,
         labels,
+        target,
         createdAt,
         updatedAt
       ];
@@ -144,12 +317,99 @@ class GetNote$Query$NotesType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetNote$Query$NotesType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetNote$Query$NotesType$LabelType$TargetType$PointOfSaleType();
+
+  factory GetNote$Query$NotesType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetNote$Query$NotesType$LabelType$TargetType$WholesalerType();
+
+  factory GetNote$Query$NotesType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$LabelType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetNote$Query$NotesType$LabelType$TargetType$ManufacturerType();
+
+  factory GetNote$Query$NotesType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$LabelType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetNote$Query$NotesType$LabelType$TargetType();
+
+  factory GetNote$Query$NotesType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$LabelType$TargetTypeFromJson(json);
+
+  GetNote$Query$NotesType$LabelType$TargetType$PointOfSaleType? pos;
+
+  GetNote$Query$NotesType$LabelType$TargetType$WholesalerType? wholesaler;
+
+  GetNote$Query$NotesType$LabelType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$LabelType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -172,17 +432,99 @@ class GetNote$Query$NotesType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late GetNote$Query$NotesType$LabelType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetNote$Query$NotesType$LabelTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetNote$Query$NotesType$TargetType$PointOfSaleType();
+
+  factory GetNote$Query$NotesType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$TargetType$WholesalerType extends JsonSerializable
+    with EquatableMixin {
+  GetNote$Query$NotesType$TargetType$WholesalerType();
+
+  factory GetNote$Query$NotesType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetNote$Query$NotesType$TargetType$ManufacturerType();
+
+  factory GetNote$Query$NotesType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNote$Query$NotesType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetNote$Query$NotesType$TargetType();
+
+  factory GetNote$Query$NotesType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNote$Query$NotesType$TargetTypeFromJson(json);
+
+  GetNote$Query$NotesType$TargetType$PointOfSaleType? pos;
+
+  GetNote$Query$NotesType$TargetType$WholesalerType? wholesaler;
+
+  GetNote$Query$NotesType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNote$Query$NotesType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -204,6 +546,8 @@ class GetNote$Query$NotesType extends JsonSerializable with EquatableMixin {
 
   late List<GetNote$Query$NotesType$LabelType> labels;
 
+  late GetNote$Query$NotesType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -216,6 +560,7 @@ class GetNote$Query$NotesType extends JsonSerializable with EquatableMixin {
         description,
         picture,
         labels,
+        target,
         createdAt,
         updatedAt
       ];
@@ -261,12 +606,102 @@ class GetNotesByTarget$Query$NotesType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotesByTarget$Query$NotesType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType();
+
+  factory GetNotesByTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType$WholesalerType();
+
+  factory GetNotesByTarget$Query$NotesType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType$ManufacturerType();
+
+  factory GetNotesByTarget$Query$NotesType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType();
+
+  factory GetNotesByTarget$Query$NotesType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetTypeFromJson(json);
+
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType? pos;
+
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetNotesByTarget$Query$NotesType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$LabelType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -289,17 +724,103 @@ class GetNotesByTarget$Query$NotesType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late GetNotesByTarget$Query$NotesType$LabelType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$GetNotesByTarget$Query$NotesType$LabelTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$TargetType$PointOfSaleType();
+
+  factory GetNotesByTarget$Query$NotesType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$TargetType$WholesalerType();
+
+  factory GetNotesByTarget$Query$NotesType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$TargetType$ManufacturerType();
+
+  factory GetNotesByTarget$Query$NotesType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetNotesByTarget$Query$NotesType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetNotesByTarget$Query$NotesType$TargetType();
+
+  factory GetNotesByTarget$Query$NotesType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetNotesByTarget$Query$NotesType$TargetTypeFromJson(json);
+
+  GetNotesByTarget$Query$NotesType$TargetType$PointOfSaleType? pos;
+
+  GetNotesByTarget$Query$NotesType$TargetType$WholesalerType? wholesaler;
+
+  GetNotesByTarget$Query$NotesType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetNotesByTarget$Query$NotesType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -323,6 +844,8 @@ class GetNotesByTarget$Query$NotesType extends JsonSerializable
 
   late List<GetNotesByTarget$Query$NotesType$LabelType> labels;
 
+  late GetNotesByTarget$Query$NotesType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -335,6 +858,7 @@ class GetNotesByTarget$Query$NotesType extends JsonSerializable
         description,
         picture,
         labels,
+        target,
         createdAt,
         updatedAt
       ];
@@ -408,12 +932,105 @@ class FindNotesByLabelAndTarget$Query$NotesType$PictureType
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTarget$Query$NotesType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$WholesalerType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$ManufacturerType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetTypeFromJson(
+          json);
+
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$PointOfSaleType?
+      pos;
+
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetTypeToJson(
+          this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -436,17 +1053,107 @@ class FindNotesByLabelAndTarget$Query$NotesType$LabelType
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late FindNotesByLabelAndTarget$Query$NotesType$LabelType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$FindNotesByLabelAndTarget$Query$NotesType$LabelTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType$PointOfSaleType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType$WholesalerType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType$ManufacturerType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindNotesByLabelAndTarget$Query$NotesType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType();
+
+  factory FindNotesByLabelAndTarget$Query$NotesType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetTypeFromJson(json);
+
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType$PointOfSaleType? pos;
+
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindNotesByLabelAndTarget$Query$NotesType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindNotesByLabelAndTarget$Query$NotesType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -470,6 +1177,8 @@ class FindNotesByLabelAndTarget$Query$NotesType extends JsonSerializable
 
   late List<FindNotesByLabelAndTarget$Query$NotesType$LabelType> labels;
 
+  late FindNotesByLabelAndTarget$Query$NotesType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -482,6 +1191,7 @@ class FindNotesByLabelAndTarget$Query$NotesType extends JsonSerializable
         description,
         picture,
         labels,
+        target,
         createdAt,
         updatedAt
       ];
@@ -531,12 +1241,101 @@ class CreateNote$Mutation$NotesType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateNote$Mutation$NotesType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType();
+
+  factory CreateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType();
+
+  factory CreateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType();
+
+  factory CreateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$LabelType$TargetType();
+
+  factory CreateNote$Mutation$NotesType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetTypeFromJson(json);
+
+  CreateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType? pos;
+
+  CreateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType? wholesaler;
+
+  CreateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$LabelType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -559,17 +1358,99 @@ class CreateNote$Mutation$NotesType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late CreateNote$Mutation$NotesType$LabelType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$CreateNote$Mutation$NotesType$LabelTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$TargetType$PointOfSaleType();
+
+  factory CreateNote$Mutation$NotesType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$TargetType$WholesalerType();
+
+  factory CreateNote$Mutation$NotesType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateNote$Mutation$NotesType$TargetType$ManufacturerType();
+
+  factory CreateNote$Mutation$NotesType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateNote$Mutation$NotesType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  CreateNote$Mutation$NotesType$TargetType();
+
+  factory CreateNote$Mutation$NotesType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateNote$Mutation$NotesType$TargetTypeFromJson(json);
+
+  CreateNote$Mutation$NotesType$TargetType$PointOfSaleType? pos;
+
+  CreateNote$Mutation$NotesType$TargetType$WholesalerType? wholesaler;
+
+  CreateNote$Mutation$NotesType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateNote$Mutation$NotesType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -592,6 +1473,8 @@ class CreateNote$Mutation$NotesType extends JsonSerializable
 
   late List<CreateNote$Mutation$NotesType$LabelType> labels;
 
+  late CreateNote$Mutation$NotesType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -604,6 +1487,7 @@ class CreateNote$Mutation$NotesType extends JsonSerializable
         description,
         picture,
         labels,
+        target,
         createdAt,
         updatedAt
       ];
@@ -706,12 +1590,101 @@ class UpdateNote$Mutation$NotesType$PictureType extends JsonSerializable
 
   int? y;
 
+  String? alt;
+
   @override
-  List<Object?> get props => [baseUrl, path, width, height, x, y];
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateNote$Mutation$NotesType$PictureTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType();
+
+  factory UpdateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType();
+
+  factory UpdateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType();
+
+  factory UpdateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$LabelType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$LabelType$TargetType();
+
+  factory UpdateNote$Mutation$NotesType$LabelType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetTypeFromJson(json);
+
+  UpdateNote$Mutation$NotesType$LabelType$TargetType$PointOfSaleType? pos;
+
+  UpdateNote$Mutation$NotesType$LabelType$TargetType$WholesalerType? wholesaler;
+
+  UpdateNote$Mutation$NotesType$LabelType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$LabelType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -734,17 +1707,99 @@ class UpdateNote$Mutation$NotesType$LabelType extends JsonSerializable
   @JsonKey(unknownEnumValue: LabelTypeEnum.artemisUnknown)
   LabelTypeEnum? category;
 
+  late UpdateNote$Mutation$NotesType$LabelType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
   List<Object?> get props =>
-      [id, name, icon, color, category, createdAt, updatedAt];
+      [id, name, icon, color, category, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
       _$UpdateNote$Mutation$NotesType$LabelTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$TargetType$PointOfSaleType();
+
+  factory UpdateNote$Mutation$NotesType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$TargetType$WholesalerType();
+
+  factory UpdateNote$Mutation$NotesType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateNote$Mutation$NotesType$TargetType$ManufacturerType();
+
+  factory UpdateNote$Mutation$NotesType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateNote$Mutation$NotesType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  UpdateNote$Mutation$NotesType$TargetType();
+
+  factory UpdateNote$Mutation$NotesType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateNote$Mutation$NotesType$TargetTypeFromJson(json);
+
+  UpdateNote$Mutation$NotesType$TargetType$PointOfSaleType? pos;
+
+  UpdateNote$Mutation$NotesType$TargetType$WholesalerType? wholesaler;
+
+  UpdateNote$Mutation$NotesType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateNote$Mutation$NotesType$TargetTypeToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -767,6 +1822,8 @@ class UpdateNote$Mutation$NotesType extends JsonSerializable
 
   late List<UpdateNote$Mutation$NotesType$LabelType> labels;
 
+  late UpdateNote$Mutation$NotesType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -779,6 +1836,7 @@ class UpdateNote$Mutation$NotesType extends JsonSerializable
         description,
         picture,
         labels,
+        target,
         createdAt,
         updatedAt
       ];
@@ -939,6 +1997,13 @@ final GET_NOTES_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -983,6 +2048,59 @@ final GET_NOTES_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -995,6 +2113,59 @@ final GET_NOTES_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1157,6 +2328,13 @@ final GET_NOTE_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -1201,6 +2379,59 @@ final GET_NOTE_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -1213,6 +2444,59 @@ final GET_NOTE_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1378,6 +2662,13 @@ final GET_NOTES_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -1422,6 +2713,59 @@ final GET_NOTES_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -1434,6 +2778,59 @@ final GET_NOTES_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1624,6 +3021,13 @@ final FIND_NOTES_BY_LABEL_AND_TARGET_QUERY_DOCUMENT =
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -1668,6 +3072,59 @@ final FIND_NOTES_BY_LABEL_AND_TARGET_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -1680,6 +3137,59 @@ final FIND_NOTES_BY_LABEL_AND_TARGET_QUERY_DOCUMENT =
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1952,6 +3462,13 @@ final CREATE_NOTE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -1996,6 +3513,59 @@ final CREATE_NOTE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -2008,6 +3578,59 @@ final CREATE_NOTE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -2295,6 +3918,13 @@ final UPDATE_NOTE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 directives: [],
                 selectionSet: null,
               ),
+              FieldNode(
+                name: NameNode(value: 'alt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
             ]),
           ),
           FieldNode(
@@ -2339,6 +3969,59 @@ final UPDATE_NOTE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -2351,6 +4034,59 @@ final UPDATE_NOTE_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),

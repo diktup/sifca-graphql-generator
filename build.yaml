@@ -5,19 +5,7 @@ targets:
     builders:
       json_serializable:
         options:
-          disallow_unrecognized_keys: false
-          generic_argument_factories: false
-          create_per_field_to_json: false
-          ignore_unannotated: false
-          create_field_map: false
-          explicit_to_json: false
           include_if_null: false
-          create_factory: true
-          create_to_json: true
-          field_rename: none
-          constructor: ""
-          any_map: false
-          checked: false
       artemis:
         options:
           custom_parser_import: lib/time_parser.dart
@@ -144,9 +132,6 @@ targets:
               queries_glob: lib/graphql/newsletter.graphql
               output: lib/dart/newsletter.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/corporate-notification.graphql
-              output: lib/dart/corporate-notification.graphql.dart
-            - schema: lib/schema.graphql
               queries_glob: lib/graphql/corporate-authentication.graphql
               output: lib/dart/corporate-authentication.graphql.dart
             - schema: lib/schema.graphql
@@ -255,9 +240,6 @@ targets:
               queries_glob: lib/graphql/models-modules-social.graphql
               output: lib/dart/models-modules-social.graphql.dart
             - schema: lib/schema.graphql
-              queries_glob: lib/graphql/forms-question.graphql
-              output: lib/dart/forms-question.graphql.dart
-            - schema: lib/schema.graphql
               queries_glob: lib/graphql/gamification-challenge-jocker.graphql
               output: lib/dart/gamification-challenge-jocker.graphql.dart
             - schema: lib/schema.graphql
@@ -266,9 +248,6 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/gamification-challenge-type.graphql
               output: lib/dart/gamification-challenge-type.graphql.dart
-            - schema: lib/schema.graphql
-              queries_glob: lib/graphql/gamification-challenge.graphql
-              output: lib/dart/gamification-challenge.graphql.dart
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/gamification-reputation.graphql
               output: lib/dart/gamification-reputation.graphql.dart

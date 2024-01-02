@@ -7,6 +7,97 @@ import 'package:gql/ast.dart';
 part 'job-definition.graphql.g.dart';
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitions$Query$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   GetJobDefinitions$Query$JobDefinitionType$DepartmentType();
@@ -19,12 +110,15 @@ class GetJobDefinitions$Query$JobDefinitionType$DepartmentType
 
   late String name;
 
+  late GetJobDefinitions$Query$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -77,6 +171,270 @@ class GetJobDefinitions$Query$JobDefinitionType$JobDescriptionType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$TargetType$WholesalerType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitions$Query$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitions$Query$JobDefinitionType$TargetType();
+
+  factory GetJobDefinitions$Query$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetTypeFromJson(json);
+
+  GetJobDefinitions$Query$JobDefinitionType$TargetType$PointOfSaleType? pos;
+
+  GetJobDefinitions$Query$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitions$Query$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitions$Query$JobDefinitionType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitions$Query$JobDefinitionType extends JsonSerializable
     with EquatableMixin {
   GetJobDefinitions$Query$JobDefinitionType();
@@ -102,6 +460,11 @@ class GetJobDefinitions$Query$JobDefinitionType extends JsonSerializable
 
   GetJobDefinitions$Query$JobDefinitionType$JobDescriptionType? offer;
 
+  List<GetJobDefinitions$Query$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late GetJobDefinitions$Query$JobDefinitionType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -116,6 +479,8 @@ class GetJobDefinitions$Query$JobDefinitionType extends JsonSerializable
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -142,6 +507,97 @@ class GetJobDefinitions$Query extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType();
+
+  factory JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class JobDefinition$Query$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   JobDefinition$Query$JobDefinitionType$DepartmentType();
@@ -154,12 +610,14 @@ class JobDefinition$Query$JobDefinitionType$DepartmentType
 
   late String name;
 
+  late JobDefinition$Query$JobDefinitionType$DepartmentType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -210,6 +668,269 @@ class JobDefinition$Query$JobDefinitionType$JobDescriptionType
 }
 
 @JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory JobDefinition$Query$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$TargetType$WholesalerType();
+
+  factory JobDefinition$Query$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory JobDefinition$Query$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class JobDefinition$Query$JobDefinitionType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  JobDefinition$Query$JobDefinitionType$TargetType();
+
+  factory JobDefinition$Query$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$JobDefinition$Query$JobDefinitionType$TargetTypeFromJson(json);
+
+  JobDefinition$Query$JobDefinitionType$TargetType$PointOfSaleType? pos;
+
+  JobDefinition$Query$JobDefinitionType$TargetType$WholesalerType? wholesaler;
+
+  JobDefinition$Query$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$JobDefinition$Query$JobDefinitionType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class JobDefinition$Query$JobDefinitionType extends JsonSerializable
     with EquatableMixin {
   JobDefinition$Query$JobDefinitionType();
@@ -235,6 +956,11 @@ class JobDefinition$Query$JobDefinitionType extends JsonSerializable
 
   JobDefinition$Query$JobDefinitionType$JobDescriptionType? offer;
 
+  List<JobDefinition$Query$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late JobDefinition$Query$JobDefinitionType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -249,6 +975,8 @@ class JobDefinition$Query$JobDefinitionType extends JsonSerializable
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -275,6 +1003,97 @@ class JobDefinition$Query extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType();
@@ -288,12 +1107,15 @@ class GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType
 
   late String name;
 
+  late GetJobDefinitionsByTarget$Query$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -349,6 +1171,273 @@ class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$WholesalerType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType();
+
+  factory GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitionsByTarget$Query$JobDefinitionType extends JsonSerializable
     with EquatableMixin {
   GetJobDefinitionsByTarget$Query$JobDefinitionType();
@@ -377,6 +1466,11 @@ class GetJobDefinitionsByTarget$Query$JobDefinitionType extends JsonSerializable
 
   GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDescriptionType? offer;
 
+  List<GetJobDefinitionsByTarget$Query$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late GetJobDefinitionsByTarget$Query$JobDefinitionType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -391,6 +1485,8 @@ class GetJobDefinitionsByTarget$Query$JobDefinitionType extends JsonSerializable
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -447,6 +1543,97 @@ class TargetACIInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType();
@@ -460,12 +1647,15 @@ class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDe
 
   late String name;
 
+  late GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -521,6 +1711,273 @@ class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDe
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType();
+
+  factory GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType();
@@ -552,6 +2009,12 @@ class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDe
   GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -566,6 +2029,8 @@ class GetJobDefinitionsByTargetPagination$Query$JobDefinitionPaginatedType$JobDe
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -645,6 +2110,97 @@ class PaginationInput extends JsonSerializable with EquatableMixin {
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType();
@@ -658,12 +2214,15 @@ class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitio
 
   late String name;
 
+  late SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -719,6 +2278,273 @@ class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitio
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType();
+
+  factory SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetTypeFromJson(
+          json);
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType?
+      pos;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType();
@@ -750,6 +2576,12 @@ class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitio
   SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -764,6 +2596,8 @@ class SearchJobDefinitionsByTarget$Query$JobDefinitionPaginatedType$JobDefinitio
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -822,6 +2656,97 @@ class SearchJobDefinitionsByTarget$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType();
@@ -835,12 +2760,15 @@ class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedT
 
   late String name;
 
+  late GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -896,6 +2824,273 @@ class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedT
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType();
+
+  factory GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetTypeFromJson(
+          json);
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$PointOfSaleType?
+      pos;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType
     extends JsonSerializable with EquatableMixin {
   GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType();
@@ -927,6 +3122,12 @@ class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedT
   GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDescriptionType?
       offer;
 
+  List<GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedType$JobDefinitionType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -941,6 +3142,8 @@ class GetJobDefinitionsByTargetAndStatusPagination$Query$JobDefinitionPaginatedT
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -1091,6 +3294,97 @@ class SendJobDefinitionsBymail$Query extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType();
@@ -1104,12 +3398,15 @@ class CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType
 
   late String name;
 
+  late CreateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1164,6 +3461,271 @@ class CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateJobDefinition$Mutation$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType();
+
+  factory CreateJobDefinition$Mutation$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetTypeFromJson(json);
+
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateJobDefinition$Mutation$JobDefinitionType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateJobDefinition$Mutation$JobDefinitionType extends JsonSerializable
     with EquatableMixin {
   CreateJobDefinition$Mutation$JobDefinitionType();
@@ -1191,6 +3753,11 @@ class CreateJobDefinition$Mutation$JobDefinitionType extends JsonSerializable
 
   CreateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType? offer;
 
+  List<CreateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late CreateJobDefinition$Mutation$JobDefinitionType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1205,6 +3772,8 @@ class CreateJobDefinition$Mutation$JobDefinitionType extends JsonSerializable
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -1383,6 +3952,97 @@ class JobDefinitionTranslationContentInput extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetTypeFromJson(
+          json);
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType
     extends JsonSerializable with EquatableMixin {
   UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType();
@@ -1396,12 +4056,15 @@ class UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType
 
   late String name;
 
+  late UpdateJobDefinition$Mutation$JobDefinitionType$DepartmentType$TargetType
+      target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
 
   @override
-  List<Object?> get props => [id, name, createdAt, updatedAt];
+  List<Object?> get props => [id, name, target, createdAt, updatedAt];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1456,6 +4119,271 @@ class UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagSquare;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props =>
+      [id, name, code, iconFlag, createdAt, updatedAt, flagSquare, flagWide];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: JobDefinitionSpecEnum.artemisUnknown)
+  JobDefinitionSpecEnum? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeFromJson(
+          json);
+
+  String? description;
+
+  List<String>? descriptionList;
+
+  @override
+  List<Object?> get props => [description, descriptionList];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeFromJson(
+          json);
+
+  late String title;
+
+  List<UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobSpecsType>?
+      specs;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      description;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      responsibility;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType$JobDescriptionType?
+      offer;
+
+  @override
+  List<Object?> get props => [title, specs, description, responsibility, offer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationTypeFromJson(
+          json);
+
+  late UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$LanguageType
+      language;
+
+  late UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType$JobDefinitionTranslationContentType
+      content;
+
+  @override
+  List<Object?> get props => [language, content];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateJobDefinition$Mutation$JobDefinitionType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType();
+
+  factory UpdateJobDefinition$Mutation$JobDefinitionType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetTypeFromJson(json);
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateJobDefinition$Mutation$JobDefinitionType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateJobDefinition$Mutation$JobDefinitionType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateJobDefinition$Mutation$JobDefinitionType extends JsonSerializable
     with EquatableMixin {
   UpdateJobDefinition$Mutation$JobDefinitionType();
@@ -1483,6 +4411,11 @@ class UpdateJobDefinition$Mutation$JobDefinitionType extends JsonSerializable
 
   UpdateJobDefinition$Mutation$JobDefinitionType$JobDescriptionType? offer;
 
+  List<UpdateJobDefinition$Mutation$JobDefinitionType$JobDefinitionTranslationType>?
+      translation;
+
+  late UpdateJobDefinition$Mutation$JobDefinitionType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -1497,6 +4430,8 @@ class UpdateJobDefinition$Mutation$JobDefinitionType extends JsonSerializable
         description,
         responsibility,
         offer,
+        translation,
+        target,
         createdAt,
         updatedAt
       ];
@@ -1696,6 +4631,59 @@ final GET_JOB_DEFINITIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -1796,6 +4784,334 @@ final GET_JOB_DEFINITIONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'specs'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'key'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'responsibility'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'offer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1926,6 +5242,59 @@ final JOB_DEFINITION_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -2026,6 +5395,334 @@ final JOB_DEFINITION_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'specs'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'key'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'responsibility'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'offer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -2162,6 +5859,59 @@ final GET_JOB_DEFINITIONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -2262,6 +6012,334 @@ final GET_JOB_DEFINITIONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'specs'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'key'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'responsibility'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'offer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -2438,6 +6516,59 @@ final GET_JOB_DEFINITIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'createdAt'),
                     alias: null,
                     arguments: [],
@@ -2538,6 +6669,334 @@ final GET_JOB_DEFINITIONS_BY_TARGET_PAGINATION_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -2754,6 +7213,59 @@ final SEARCH_JOB_DEFINITIONS_BY_TARGET_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'createdAt'),
                     alias: null,
                     arguments: [],
@@ -2854,6 +7366,334 @@ final SEARCH_JOB_DEFINITIONS_BY_TARGET_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -3049,6 +7889,59 @@ final GET_JOB_DEFINITIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
+                    name: NameNode(value: 'target'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'pos'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'wholesaler'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'manufacturer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'id'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          )
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
                     name: NameNode(value: 'createdAt'),
                     alias: null,
                     arguments: [],
@@ -3149,6 +8042,334 @@ final GET_JOB_DEFINITIONS_BY_TARGET_AND_STATUS_PAGINATION_QUERY_DOCUMENT =
                     arguments: [],
                     directives: [],
                     selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'translation'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'language'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'name'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'code'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'iconFlag'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'createdAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'updatedAt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagSquare'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'flagWide'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'baseUrl'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'path'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'width'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'height'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'x'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'y'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'alt'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'content'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'title'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'specs'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'key'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'value'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'responsibility'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'offer'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: SelectionSetNode(selections: [
+                          FieldNode(
+                            name: NameNode(value: 'description'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                          FieldNode(
+                            name: NameNode(value: 'descriptionList'),
+                            alias: null,
+                            arguments: [],
+                            directives: [],
+                            selectionSet: null,
+                          ),
+                        ]),
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
                   ),
                 ]),
               ),
@@ -3345,7 +8566,7 @@ class SendJobDefinitionsBymailArguments extends JsonSerializable
     required this.target,
     this.status,
     this.searchString,
-    required this.email,
+    this.emails,
     required this.subject,
   });
 
@@ -3361,12 +8582,12 @@ class SendJobDefinitionsBymailArguments extends JsonSerializable
 
   final String? searchString;
 
-  late String email;
+  final List<String>? emails;
 
   late String subject;
 
   @override
-  List<Object?> get props => [target, status, searchString, email, subject];
+  List<Object?> get props => [target, status, searchString, emails, subject];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3411,10 +8632,13 @@ final SEND_JOB_DEFINITIONS_BYMAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
         directives: [],
       ),
       VariableDefinitionNode(
-        variable: VariableNode(name: NameNode(value: 'email')),
-        type: NamedTypeNode(
-          name: NameNode(value: 'String'),
-          isNonNull: true,
+        variable: VariableNode(name: NameNode(value: 'emails')),
+        type: ListTypeNode(
+          type: NamedTypeNode(
+            name: NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          isNonNull: false,
         ),
         defaultValue: DefaultValueNode(value: null),
         directives: [],
@@ -3448,8 +8672,8 @@ final SEND_JOB_DEFINITIONS_BYMAIL_QUERY_DOCUMENT = DocumentNode(definitions: [
             value: VariableNode(name: NameNode(value: 'searchString')),
           ),
           ArgumentNode(
-            name: NameNode(value: 'email'),
-            value: VariableNode(name: NameNode(value: 'email')),
+            name: NameNode(value: 'emails'),
+            value: VariableNode(name: NameNode(value: 'emails')),
           ),
           ArgumentNode(
             name: NameNode(value: 'subject'),
@@ -3625,6 +8849,59 @@ final CREATE_JOB_DEFINITION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -3725,6 +9002,334 @@ final CREATE_JOB_DEFINITION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'specs'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'key'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'responsibility'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'offer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -3878,6 +9483,59 @@ final UPDATE_JOB_DEFINITION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
                 name: NameNode(value: 'createdAt'),
                 alias: null,
                 arguments: [],
@@ -3978,6 +9636,334 @@ final UPDATE_JOB_DEFINITION_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'translation'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'language'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'content'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'title'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'specs'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'key'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'value'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'description'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'responsibility'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'offer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'description'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'descriptionList'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),

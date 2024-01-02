@@ -1784,6 +1784,86 @@ class GetBrands$Query$BrandType$ManufacturerType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBrands$Query$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBrands$Query$BrandType$TargetType$PointOfSaleType();
+
+  factory GetBrands$Query$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrands$Query$BrandType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrands$Query$BrandType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrands$Query$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrands$Query$BrandType$TargetType$WholesalerType();
+
+  factory GetBrands$Query$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrands$Query$BrandType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrands$Query$BrandType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrands$Query$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrands$Query$BrandType$TargetType$ManufacturerType();
+
+  factory GetBrands$Query$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrands$Query$BrandType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrands$Query$BrandType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrands$Query$BrandType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetBrands$Query$BrandType$TargetType();
+
+  factory GetBrands$Query$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrands$Query$BrandType$TargetTypeFromJson(json);
+
+  GetBrands$Query$BrandType$TargetType$PointOfSaleType? pos;
+
+  GetBrands$Query$BrandType$TargetType$WholesalerType? wholesaler;
+
+  GetBrands$Query$BrandType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrands$Query$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBrands$Query$BrandType extends JsonSerializable with EquatableMixin {
   GetBrands$Query$BrandType();
 
@@ -1806,6 +1886,8 @@ class GetBrands$Query$BrandType extends JsonSerializable with EquatableMixin {
 
   GetBrands$Query$BrandType$ManufacturerType? manufacturer;
 
+  GetBrands$Query$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -1815,7 +1897,8 @@ class GetBrands$Query$BrandType extends JsonSerializable with EquatableMixin {
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -3623,6 +3706,91 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBrandsByTarget$Query$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTarget$Query$BrandType$TargetType$PointOfSaleType();
+
+  factory GetBrandsByTarget$Query$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTarget$Query$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTarget$Query$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsByTarget$Query$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTarget$Query$BrandType$TargetType$WholesalerType();
+
+  factory GetBrandsByTarget$Query$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTarget$Query$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTarget$Query$BrandType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsByTarget$Query$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTarget$Query$BrandType$TargetType$ManufacturerType();
+
+  factory GetBrandsByTarget$Query$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTarget$Query$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTarget$Query$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsByTarget$Query$BrandType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  GetBrandsByTarget$Query$BrandType$TargetType();
+
+  factory GetBrandsByTarget$Query$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTarget$Query$BrandType$TargetTypeFromJson(json);
+
+  GetBrandsByTarget$Query$BrandType$TargetType$PointOfSaleType? pos;
+
+  GetBrandsByTarget$Query$BrandType$TargetType$WholesalerType? wholesaler;
+
+  GetBrandsByTarget$Query$BrandType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTarget$Query$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBrandsByTarget$Query$BrandType extends JsonSerializable
     with EquatableMixin {
   GetBrandsByTarget$Query$BrandType();
@@ -3647,6 +3815,8 @@ class GetBrandsByTarget$Query$BrandType extends JsonSerializable
 
   GetBrandsByTarget$Query$BrandType$ManufacturerType? manufacturer;
 
+  GetBrandsByTarget$Query$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -3656,7 +3826,8 @@ class GetBrandsByTarget$Query$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -5477,6 +5648,86 @@ class Brand$Query$BrandType$ManufacturerType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class Brand$Query$BrandType$TargetType$PointOfSaleType extends JsonSerializable
+    with EquatableMixin {
+  Brand$Query$BrandType$TargetType$PointOfSaleType();
+
+  factory Brand$Query$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Brand$Query$BrandType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Brand$Query$BrandType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Brand$Query$BrandType$TargetType$WholesalerType extends JsonSerializable
+    with EquatableMixin {
+  Brand$Query$BrandType$TargetType$WholesalerType();
+
+  factory Brand$Query$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Brand$Query$BrandType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Brand$Query$BrandType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Brand$Query$BrandType$TargetType$ManufacturerType extends JsonSerializable
+    with EquatableMixin {
+  Brand$Query$BrandType$TargetType$ManufacturerType();
+
+  factory Brand$Query$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Brand$Query$BrandType$TargetType$ManufacturerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Brand$Query$BrandType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class Brand$Query$BrandType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  Brand$Query$BrandType$TargetType();
+
+  factory Brand$Query$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$Brand$Query$BrandType$TargetTypeFromJson(json);
+
+  Brand$Query$BrandType$TargetType$PointOfSaleType? pos;
+
+  Brand$Query$BrandType$TargetType$WholesalerType? wholesaler;
+
+  Brand$Query$BrandType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$Brand$Query$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class Brand$Query$BrandType extends JsonSerializable with EquatableMixin {
   Brand$Query$BrandType();
 
@@ -5499,6 +5750,8 @@ class Brand$Query$BrandType extends JsonSerializable with EquatableMixin {
 
   Brand$Query$BrandType$ManufacturerType? manufacturer;
 
+  Brand$Query$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -5508,7 +5761,8 @@ class Brand$Query$BrandType extends JsonSerializable with EquatableMixin {
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -6760,6 +7014,8 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -6789,6 +7045,7 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -7320,6 +7577,97 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType();
+
+  factory GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$WholesalerType();
+
+  factory GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType();
+
+  factory GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType();
+
+  factory GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetTypeFromJson(
+          json);
+
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType?
+      pos;
+
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBrandsPagination$Query$BrandPaginateType$BrandType
     extends JsonSerializable with EquatableMixin {
   GetBrandsPagination$Query$BrandPaginateType$BrandType();
@@ -7345,6 +7693,8 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType?
       manufacturer;
 
+  GetBrandsPagination$Query$BrandPaginateType$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -7354,7 +7704,8 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -8651,6 +9002,8 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -8680,6 +9033,7 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -9211,6 +9565,97 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType();
+
+  factory GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$WholesalerType();
+
+  factory GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType();
+
+  factory GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType();
+
+  factory GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetTypeFromJson(
+          json);
+
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType?
+      pos;
+
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType
     extends JsonSerializable with EquatableMixin {
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType();
@@ -9238,6 +9683,9 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType?
       manufacturer;
 
+  GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$TargetType?
+      target;
+
   @override
   List<Object?> get props => [
         id,
@@ -9247,7 +9695,8 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -10527,6 +10976,8 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   late String id;
 
+  late String name;
+
   String? adminName;
 
   @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
@@ -10556,6 +11007,7 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
   @override
   List<Object?> get props => [
         id,
+        name,
         adminName,
         capital,
         population,
@@ -11087,6 +11539,94 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class SearchBrand$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType();
+
+  factory SearchBrand$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchBrand$Query$BrandPaginateType$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType$WholesalerType();
+
+  factory SearchBrand$Query$BrandPaginateType$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchBrand$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType();
+
+  factory SearchBrand$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SearchBrand$Query$BrandPaginateType$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType();
+
+  factory SearchBrand$Query$BrandPaginateType$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetTypeFromJson(json);
+
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType$PointOfSaleType? pos;
+
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SearchBrand$Query$BrandPaginateType$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SearchBrand$Query$BrandPaginateType$BrandType extends JsonSerializable
     with EquatableMixin {
   SearchBrand$Query$BrandPaginateType$BrandType();
@@ -11111,6 +11651,8 @@ class SearchBrand$Query$BrandPaginateType$BrandType extends JsonSerializable
 
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType? manufacturer;
 
+  SearchBrand$Query$BrandPaginateType$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -11120,7 +11662,8 @@ class SearchBrand$Query$BrandPaginateType$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -12958,6 +13501,95 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$PointOfSaleType();
+
+  factory FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$WholesalerType();
+
+  factory FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$ManufacturerType();
+
+  factory FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class FindBrandByExternalIdAndTarget$Query$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType();
+
+  factory FindBrandByExternalIdAndTarget$Query$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetTypeFromJson(json);
+
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$PointOfSaleType?
+      pos;
+
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$FindBrandByExternalIdAndTarget$Query$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class FindBrandByExternalIdAndTarget$Query$BrandType extends JsonSerializable
     with EquatableMixin {
   FindBrandByExternalIdAndTarget$Query$BrandType();
@@ -12982,6 +13614,8 @@ class FindBrandByExternalIdAndTarget$Query$BrandType extends JsonSerializable
 
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType? manufacturer;
 
+  FindBrandByExternalIdAndTarget$Query$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -12991,7 +13625,8 @@ class FindBrandByExternalIdAndTarget$Query$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -14803,6 +15438,88 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class SyncOneBrand$Mutation$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  SyncOneBrand$Mutation$BrandType$TargetType$PointOfSaleType();
+
+  factory SyncOneBrand$Mutation$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SyncOneBrand$Mutation$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SyncOneBrand$Mutation$BrandType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SyncOneBrand$Mutation$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  SyncOneBrand$Mutation$BrandType$TargetType$WholesalerType();
+
+  factory SyncOneBrand$Mutation$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SyncOneBrand$Mutation$BrandType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SyncOneBrand$Mutation$BrandType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SyncOneBrand$Mutation$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  SyncOneBrand$Mutation$BrandType$TargetType$ManufacturerType();
+
+  factory SyncOneBrand$Mutation$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SyncOneBrand$Mutation$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SyncOneBrand$Mutation$BrandType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class SyncOneBrand$Mutation$BrandType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  SyncOneBrand$Mutation$BrandType$TargetType();
+
+  factory SyncOneBrand$Mutation$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$SyncOneBrand$Mutation$BrandType$TargetTypeFromJson(json);
+
+  SyncOneBrand$Mutation$BrandType$TargetType$PointOfSaleType? pos;
+
+  SyncOneBrand$Mutation$BrandType$TargetType$WholesalerType? wholesaler;
+
+  SyncOneBrand$Mutation$BrandType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$SyncOneBrand$Mutation$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class SyncOneBrand$Mutation$BrandType extends JsonSerializable
     with EquatableMixin {
   SyncOneBrand$Mutation$BrandType();
@@ -14826,6 +15543,8 @@ class SyncOneBrand$Mutation$BrandType extends JsonSerializable
 
   SyncOneBrand$Mutation$BrandType$ManufacturerType? manufacturer;
 
+  SyncOneBrand$Mutation$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -14835,7 +15554,8 @@ class SyncOneBrand$Mutation$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -16711,6 +17431,87 @@ class CreateBrand$Mutation$BrandType$ManufacturerType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateBrand$Mutation$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateBrand$Mutation$BrandType$TargetType$PointOfSaleType();
+
+  factory CreateBrand$Mutation$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBrand$Mutation$BrandType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBrand$Mutation$BrandType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateBrand$Mutation$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateBrand$Mutation$BrandType$TargetType$WholesalerType();
+
+  factory CreateBrand$Mutation$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBrand$Mutation$BrandType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBrand$Mutation$BrandType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateBrand$Mutation$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateBrand$Mutation$BrandType$TargetType$ManufacturerType();
+
+  factory CreateBrand$Mutation$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBrand$Mutation$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBrand$Mutation$BrandType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateBrand$Mutation$BrandType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  CreateBrand$Mutation$BrandType$TargetType();
+
+  factory CreateBrand$Mutation$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateBrand$Mutation$BrandType$TargetTypeFromJson(json);
+
+  CreateBrand$Mutation$BrandType$TargetType$PointOfSaleType? pos;
+
+  CreateBrand$Mutation$BrandType$TargetType$WholesalerType? wholesaler;
+
+  CreateBrand$Mutation$BrandType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateBrand$Mutation$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateBrand$Mutation$BrandType extends JsonSerializable
     with EquatableMixin {
   CreateBrand$Mutation$BrandType();
@@ -16734,6 +17535,8 @@ class CreateBrand$Mutation$BrandType extends JsonSerializable
 
   CreateBrand$Mutation$BrandType$ManufacturerType? manufacturer;
 
+  CreateBrand$Mutation$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -16743,7 +17546,8 @@ class CreateBrand$Mutation$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -18548,6 +19352,87 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType extends JsonSerializable
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateBrand$Mutation$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBrand$Mutation$BrandType$TargetType$PointOfSaleType();
+
+  factory UpdateBrand$Mutation$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBrand$Mutation$BrandType$TargetType$PointOfSaleTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBrand$Mutation$BrandType$TargetType$PointOfSaleTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateBrand$Mutation$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBrand$Mutation$BrandType$TargetType$WholesalerType();
+
+  factory UpdateBrand$Mutation$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBrand$Mutation$BrandType$TargetType$WholesalerTypeFromJson(json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBrand$Mutation$BrandType$TargetType$WholesalerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateBrand$Mutation$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateBrand$Mutation$BrandType$TargetType$ManufacturerType();
+
+  factory UpdateBrand$Mutation$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBrand$Mutation$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBrand$Mutation$BrandType$TargetType$ManufacturerTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateBrand$Mutation$BrandType$TargetType extends JsonSerializable
+    with EquatableMixin {
+  UpdateBrand$Mutation$BrandType$TargetType();
+
+  factory UpdateBrand$Mutation$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateBrand$Mutation$BrandType$TargetTypeFromJson(json);
+
+  UpdateBrand$Mutation$BrandType$TargetType$PointOfSaleType? pos;
+
+  UpdateBrand$Mutation$BrandType$TargetType$WholesalerType? wholesaler;
+
+  UpdateBrand$Mutation$BrandType$TargetType$ManufacturerType? manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateBrand$Mutation$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateBrand$Mutation$BrandType extends JsonSerializable
     with EquatableMixin {
   UpdateBrand$Mutation$BrandType();
@@ -18571,6 +19456,8 @@ class UpdateBrand$Mutation$BrandType extends JsonSerializable
 
   UpdateBrand$Mutation$BrandType$ManufacturerType? manufacturer;
 
+  UpdateBrand$Mutation$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -18580,7 +19467,8 @@ class UpdateBrand$Mutation$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -20430,6 +21318,94 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType
 }
 
 @JsonSerializable(explicitToJson: true)
+class ListenForBrandCreated$Subscription$BrandType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  ListenForBrandCreated$Subscription$BrandType$TargetType$PointOfSaleType();
+
+  factory ListenForBrandCreated$Subscription$BrandType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForBrandCreated$Subscription$BrandType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForBrandCreated$Subscription$BrandType$TargetType$WholesalerType();
+
+  factory ListenForBrandCreated$Subscription$BrandType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForBrandCreated$Subscription$BrandType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  ListenForBrandCreated$Subscription$BrandType$TargetType$ManufacturerType();
+
+  factory ListenForBrandCreated$Subscription$BrandType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class ListenForBrandCreated$Subscription$BrandType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  ListenForBrandCreated$Subscription$BrandType$TargetType();
+
+  factory ListenForBrandCreated$Subscription$BrandType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetTypeFromJson(json);
+
+  ListenForBrandCreated$Subscription$BrandType$TargetType$PointOfSaleType? pos;
+
+  ListenForBrandCreated$Subscription$BrandType$TargetType$WholesalerType?
+      wholesaler;
+
+  ListenForBrandCreated$Subscription$BrandType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$ListenForBrandCreated$Subscription$BrandType$TargetTypeToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class ListenForBrandCreated$Subscription$BrandType extends JsonSerializable
     with EquatableMixin {
   ListenForBrandCreated$Subscription$BrandType();
@@ -20454,6 +21430,8 @@ class ListenForBrandCreated$Subscription$BrandType extends JsonSerializable
 
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType? manufacturer;
 
+  ListenForBrandCreated$Subscription$BrandType$TargetType? target;
+
   @override
   List<Object?> get props => [
         id,
@@ -20463,7 +21441,8 @@ class ListenForBrandCreated$Subscription$BrandType extends JsonSerializable
         updatedAt,
         externalId,
         picture,
-        manufacturer
+        manufacturer,
+        target
       ];
 
   @override
@@ -23802,6 +24781,59 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -27136,6 +28168,59 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -30483,6 +31568,59 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -32678,6 +33816,13 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         selectionSet: null,
                                       ),
                                       FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
                                         name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
@@ -33852,6 +34997,59 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -36077,6 +37275,13 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                         selectionSet: null,
                                       ),
                                       FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
                                         name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
@@ -37251,6 +38456,59 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         directives: [],
                         selectionSet: null,
                       ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -39487,6 +40745,13 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                                         selectionSet: null,
                                       ),
                                       FieldNode(
+                                        name: NameNode(value: 'name'),
+                                        alias: null,
+                                        arguments: [],
+                                        directives: [],
+                                        selectionSet: null,
+                                      ),
+                                      FieldNode(
                                         name: NameNode(value: 'adminName'),
                                         alias: null,
                                         arguments: [],
@@ -40661,6 +41926,59 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                         directives: [],
                         selectionSet: null,
                       ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'target'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'pos'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'wholesaler'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'manufacturer'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'id'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      )
                     ]),
                   ),
                 ]),
@@ -44032,6 +45350,59 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -47377,6 +48748,59 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
               ),
             ]),
           ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+            ]),
+          ),
         ]),
       )
     ]),
@@ -50715,6 +52139,59 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -54075,6 +55552,59 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     directives: [],
                     selectionSet: null,
                   ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),
@@ -57474,6 +59004,59 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                     directives: [],
                     selectionSet: null,
                   ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
                 ]),
               ),
             ]),

@@ -53,6 +53,404 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType
 }
 
 @JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureType?
+      flagSquare;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  String? population;
+
+  String? ascii;
+
+  String? lat;
+
+  String? lng;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureType?
+      flagSquare;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsExtraFeesType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsExtraFeesType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsExtraFeesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsExtraFeesTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsExtraFeesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsEmailsType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsEmailsType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsEmailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsEmailsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: OrderEmailActionEnum.artemisUnknown)
+  OrderEmailActionEnum? definition;
+
+  bool? enabled;
+
+  @override
+  List<Object?> get props => [definition, enabled];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsEmailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSaleType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$WholesalerType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$ManufacturerType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType();
+
+  factory GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetTypeFromJson(
+          json);
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$PointOfSaleType?
+      pos;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$WholesalerType?
+      wholesaler;
+
+  GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class GetOrderSettingsByTarget$Query$OrderSettingsFullType
     extends JsonSerializable with EquatableMixin {
   GetOrderSettingsByTarget$Query$OrderSettingsFullType();
@@ -93,6 +491,20 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType
   List<GetOrderSettingsByTarget$Query$OrderSettingsFullType$MonthDaysType>?
       nonDeliveryDays;
 
+  List<GetOrderSettingsByTarget$Query$OrderSettingsFullType$CountryType>?
+      deliveryCountries;
+
+  List<GetOrderSettingsByTarget$Query$OrderSettingsFullType$StateType>?
+      deliveryStates;
+
+  List<GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsExtraFeesType>?
+      extraFees;
+
+  List<GetOrderSettingsByTarget$Query$OrderSettingsFullType$OrderSettingsEmailsType>?
+      emails;
+
+  late GetOrderSettingsByTarget$Query$OrderSettingsFullType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -113,6 +525,11 @@ class GetOrderSettingsByTarget$Query$OrderSettingsFullType
         facebookDelivery,
         nonPickupDays,
         nonDeliveryDays,
+        deliveryCountries,
+        deliveryStates,
+        extraFees,
+        emails,
+        target,
         createdAt,
         updatedAt
       ];
@@ -214,6 +631,404 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
 }
 
 @JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType?
+      flagSquare;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$StateType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  String? population;
+
+  String? ascii;
+
+  String? lat;
+
+  String? lng;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType?
+      flagSquare;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: OrderEmailActionEnum.artemisUnknown)
+  OrderEmailActionEnum? definition;
+
+  bool? enabled;
+
+  @override
+  List<Object?> get props => [definition, enabled];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType();
+
+  factory CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetTypeFromJson(
+          json);
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType?
+      pos;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType?
+      wholesaler;
+
+  CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$CreateOrderSettings$Mutation$OrderSettingsFullType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class CreateOrderSettings$Mutation$OrderSettingsFullType
     extends JsonSerializable with EquatableMixin {
   CreateOrderSettings$Mutation$OrderSettingsFullType();
@@ -253,6 +1068,20 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType
   List<CreateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType>?
       nonDeliveryDays;
 
+  List<CreateOrderSettings$Mutation$OrderSettingsFullType$CountryType>?
+      deliveryCountries;
+
+  List<CreateOrderSettings$Mutation$OrderSettingsFullType$StateType>?
+      deliveryStates;
+
+  List<CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType>?
+      extraFees;
+
+  List<CreateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType>?
+      emails;
+
+  late CreateOrderSettings$Mutation$OrderSettingsFullType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -273,6 +1102,11 @@ class CreateOrderSettings$Mutation$OrderSettingsFullType
         facebookDelivery,
         nonPickupDays,
         nonDeliveryDays,
+        deliveryCountries,
+        deliveryStates,
+        extraFees,
+        emails,
+        target,
         createdAt,
         updatedAt
       ];
@@ -519,6 +1353,404 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType
 }
 
 @JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType?
+      flagSquare;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? code;
+
+  String? dialCode;
+
+  String? iconFlag;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType?
+      flagSquare;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        code,
+        dialCode,
+        iconFlag,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureTypeFromJson(
+          json);
+
+  String? baseUrl;
+
+  String? path;
+
+  int? width;
+
+  int? height;
+
+  int? x;
+
+  int? y;
+
+  String? alt;
+
+  @override
+  List<Object?> get props => [baseUrl, path, width, height, x, y, alt];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateTypeFromJson(
+          json);
+
+  late String id;
+
+  late String name;
+
+  String? adminName;
+
+  @JsonKey(unknownEnumValue: StateCapitalEnum.artemisUnknown)
+  StateCapitalEnum? capital;
+
+  String? population;
+
+  String? ascii;
+
+  String? lat;
+
+  String? lng;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$CountryType?
+      country;
+
+  late DateTime createdAt;
+
+  late DateTime updatedAt;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType?
+      flagSquare;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType$PictureType?
+      flagWide;
+
+  @override
+  List<Object?> get props => [
+        id,
+        name,
+        adminName,
+        capital,
+        population,
+        ascii,
+        lat,
+        lng,
+        country,
+        createdAt,
+        updatedAt,
+        flagSquare,
+        flagWide
+      ];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$StateTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesTypeFromJson(
+          json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsTypeFromJson(
+          json);
+
+  @JsonKey(unknownEnumValue: OrderEmailActionEnum.artemisUnknown)
+  OrderEmailActionEnum? definition;
+
+  bool? enabled;
+
+  @override
+  List<Object?> get props => [definition, enabled];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerTypeFromJson(
+          json);
+
+  late String id;
+
+  @override
+  List<Object?> get props => [id];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType
+    extends JsonSerializable with EquatableMixin {
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType();
+
+  factory UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType.fromJson(
+          Map<String, dynamic> json) =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetTypeFromJson(
+          json);
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$PointOfSaleType?
+      pos;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$WholesalerType?
+      wholesaler;
+
+  UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType$ManufacturerType?
+      manufacturer;
+
+  @override
+  List<Object?> get props => [pos, wholesaler, manufacturer];
+
+  @override
+  Map<String, dynamic> toJson() =>
+      _$UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetTypeToJson(
+          this);
+}
+
+@JsonSerializable(explicitToJson: true)
 class UpdateOrderSettings$Mutation$OrderSettingsFullType
     extends JsonSerializable with EquatableMixin {
   UpdateOrderSettings$Mutation$OrderSettingsFullType();
@@ -558,6 +1790,20 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType
   List<UpdateOrderSettings$Mutation$OrderSettingsFullType$MonthDaysType>?
       nonDeliveryDays;
 
+  List<UpdateOrderSettings$Mutation$OrderSettingsFullType$CountryType>?
+      deliveryCountries;
+
+  List<UpdateOrderSettings$Mutation$OrderSettingsFullType$StateType>?
+      deliveryStates;
+
+  List<UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsExtraFeesType>?
+      extraFees;
+
+  List<UpdateOrderSettings$Mutation$OrderSettingsFullType$OrderSettingsEmailsType>?
+      emails;
+
+  late UpdateOrderSettings$Mutation$OrderSettingsFullType$TargetType target;
+
   late DateTime createdAt;
 
   late DateTime updatedAt;
@@ -578,6 +1824,11 @@ class UpdateOrderSettings$Mutation$OrderSettingsFullType
         facebookDelivery,
         nonPickupDays,
         nonDeliveryDays,
+        deliveryCountries,
+        deliveryStates,
+        extraFees,
+        emails,
+        target,
         createdAt,
         updatedAt
       ];
@@ -686,6 +1937,17 @@ class OrderSettingsUpdateInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$OrderSettingsUpdateInputToJson(this);
+}
+
+enum StateCapitalEnum {
+  @JsonValue('PRIMARY')
+  primary,
+  @JsonValue('ADMIN')
+  admin,
+  @JsonValue('MINOR')
+  minor,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
 }
 
 enum OrderEmailActionEnum {
@@ -908,6 +2170,637 @@ final GET_ORDER_SETTINGS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'deliveryCountries'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'code'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'dialCode'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'iconFlag'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagSquare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagWide'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'deliveryStates'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'adminName'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'capital'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'population'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'ascii'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lng'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'country'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'dialCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagSquare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagWide'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'extraFees'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'key'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'value'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'emails'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'definition'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'enabled'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1156,6 +3049,637 @@ final CREATE_ORDER_SETTINGS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'deliveryCountries'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'code'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'dialCode'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'iconFlag'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagSquare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagWide'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'deliveryStates'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'adminName'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'capital'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'population'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'ascii'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lng'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'country'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'dialCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagSquare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagWide'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'extraFees'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'key'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'value'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'emails'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'definition'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'enabled'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
@@ -1422,6 +3946,637 @@ final UPDATE_ORDER_SETTINGS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 arguments: [],
                 directives: [],
                 selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'deliveryCountries'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'code'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'dialCode'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'iconFlag'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagSquare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagWide'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'deliveryStates'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'id'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'name'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'adminName'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'capital'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'population'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'ascii'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lat'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'lng'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'country'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'name'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'code'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'dialCode'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'iconFlag'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'createdAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'updatedAt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagSquare'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'flagWide'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: SelectionSetNode(selections: [
+                      FieldNode(
+                        name: NameNode(value: 'baseUrl'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'path'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'width'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'height'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'x'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'y'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                      FieldNode(
+                        name: NameNode(value: 'alt'),
+                        alias: null,
+                        arguments: [],
+                        directives: [],
+                        selectionSet: null,
+                      ),
+                    ]),
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'createdAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'updatedAt'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagSquare'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'flagWide'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'baseUrl'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'path'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'width'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'height'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'x'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'y'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                  FieldNode(
+                    name: NameNode(value: 'alt'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  ),
+                ]),
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'extraFees'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'key'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'value'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'emails'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'definition'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+              FieldNode(
+                name: NameNode(value: 'enabled'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: null,
+              ),
+            ]),
+          ),
+          FieldNode(
+            name: NameNode(value: 'target'),
+            alias: null,
+            arguments: [],
+            directives: [],
+            selectionSet: SelectionSetNode(selections: [
+              FieldNode(
+                name: NameNode(value: 'pos'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'wholesaler'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
+              ),
+              FieldNode(
+                name: NameNode(value: 'manufacturer'),
+                alias: null,
+                arguments: [],
+                directives: [],
+                selectionSet: SelectionSetNode(selections: [
+                  FieldNode(
+                    name: NameNode(value: 'id'),
+                    alias: null,
+                    arguments: [],
+                    directives: [],
+                    selectionSet: null,
+                  )
+                ]),
               ),
             ]),
           ),
