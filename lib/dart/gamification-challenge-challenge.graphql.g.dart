@@ -12163,6 +12163,12754 @@ Map<String, dynamic> _$DeleteChallenge$MutationToJson(
       'deleteChallenge': instance.deleteChallenge.toJson(),
     };
 
+PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$UserType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$UserTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$UserType()
+          ..id = json['id'] as String
+          ..email = json['email'] as String?
+          ..gender = $enumDecodeNullable(_$GenderEnumMap, json['gender'],
+              unknownValue: Gender.artemisUnknown)
+          ..lastName = json['lastName'] as String?
+          ..username = json['username'] as String?
+          ..firstName = json['firstName'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>)
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$UserType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$UserTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$UserType instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionChoiceDtoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionChoiceDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionChoiceDtoType()
+          ..item = json['item'] as String
+          ..enable = json['enable'] as bool?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionChoiceDtoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionChoiceDtoType
+            instance) {
+  final val = <String, dynamic>{
+    'item': instance.item,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('enable', instance.enable);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..symbol = json['symbol'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType()
+          ..currency = json['currency'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType
+                  .fromJson(json['currency'] as Map<String, dynamic>)
+          ..kw$default = json['default'] as bool?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType()
+          ..day = $enumDecodeNullable(_$DaysEnumMap, json['day'],
+              unknownValue: Days.artemisUnknown)
+          ..from = json['from'] as String?
+          ..to = json['to'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('day', _$DaysEnumMap[instance.day]);
+  writeNotNull('from', instance.from);
+  writeNotNull('to', instance.to);
+  return val;
+}
+
+const _$DaysEnumMap = {
+  Days.monday: 'MONDAY',
+  Days.tuesday: 'TUESDAY',
+  Days.wednesday: 'WEDNESDAY',
+  Days.thursday: 'THURSDAY',
+  Days.friday: 'FRIDAY',
+  Days.saturday: 'SATURDAY',
+  Days.sunday: 'SUNDAY',
+  Days.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType()
+          ..status = $enumDecodeNullable(_$OpeningStatusEnumMap, json['status'],
+              unknownValue: OpeningStatus.artemisUnknown)
+          ..hours = (json['hours'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('status', _$OpeningStatusEnumMap[instance.status]);
+  writeNotNull('hours', instance.hours?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+const _$OpeningStatusEnumMap = {
+  OpeningStatus.alwaysOpen: 'ALWAYS_OPEN',
+  OpeningStatus.notAvailable: 'NOT_AVAILABLE',
+  OpeningStatus.selectedHours: 'SELECTED_HOURS',
+  OpeningStatus.permanentlyClosed: 'PERMANENTLY_CLOSED',
+  OpeningStatus.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType()
+          ..day = $enumDecodeNullable(_$DaysEnumMap, json['day'],
+              unknownValue: Days.artemisUnknown)
+          ..from = json['from'] as String?
+          ..to = json['to'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('day', _$DaysEnumMap[instance.day]);
+  writeNotNull('from', instance.from);
+  writeNotNull('to', instance.to);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType()
+          ..offerType = $enumDecodeNullable(
+              _$SpecialOffersTypeEnumMap, json['offerType'],
+              unknownValue: SpecialOffersType.artemisUnknown)
+          ..hours = (json['hours'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('offerType', _$SpecialOffersTypeEnumMap[instance.offerType]);
+  writeNotNull('hours', instance.hours?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+const _$SpecialOffersTypeEnumMap = {
+  SpecialOffersType.bar: 'BAR',
+  SpecialOffersType.lunch: 'LUNCH',
+  SpecialOffersType.brunch: 'BRUNCH',
+  SpecialOffersType.dinner: 'DINNER',
+  SpecialOffersType.breakfast: 'BREAKFAST',
+  SpecialOffersType.happyHour: 'HAPPY_HOUR',
+  SpecialOffersType.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType()
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size96 = json['size96'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size96'] as Map<String, dynamic>)
+          ..size144 = json['size144'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size144'] as Map<String, dynamic>)
+          ..size240 = json['size240'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size240'] as Map<String, dynamic>)
+          ..size480 = json['size480'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size480'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['png'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType()
+          ..style = $enumDecode(_$SocialImageStyleEnumEnumMap, json['style'],
+              unknownValue: SocialImageStyleEnum.artemisUnknown)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..fontIcon = json['fontIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType()
+          ..name = json['name'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType$SocialType
+                  .fromJson(json['name'] as Map<String, dynamic>)
+          ..value = json['value'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalType()
+          ..vat = json['vat'] as String?
+          ..register = json['register'] as String?
+          ..licence = json['licence'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType()
+          ..name = json['name'] as String
+          ..type = $enumDecodeNullable(
+              _$BankDetailsHolderTypeEnumEnumMap, json['type'],
+              unknownValue: BankDetailsHolderTypeEnum.artemisUnknown)
+          ..address =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
+
+const _$BankDetailsHolderTypeEnumEnumMap = {
+  BankDetailsHolderTypeEnum.private: 'PRIVATE',
+  BankDetailsHolderTypeEnum.company: 'COMPANY',
+  BankDetailsHolderTypeEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType()
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..size16 = json['size16'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size16'] as Map<String, dynamic>)
+          ..size24 = json['size24'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size24'] as Map<String, dynamic>)
+          ..size32 = json['size32'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size32'] as Map<String, dynamic>)
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size64 = json['size64'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size64'] as Map<String, dynamic>)
+          ..size128 = json['size128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size128'] as Map<String, dynamic>)
+          ..size256 = json['size256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size256'] as Map<String, dynamic>)
+          ..size512 = json['size512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..icon = json['icon'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..bic = json['bic'] as String?
+          ..logo = json['logo'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+                  .fromJson(json['logo'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType()
+          ..id = json['id'] as String
+          ..holder =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+                  .fromJson(json['holder'] as Map<String, dynamic>)
+          ..account = json['account'] as String
+          ..iban = json['iban'] as String?
+          ..bank =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+                  .fromJson(json['bank'] as Map<String, dynamic>)
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType()
+          ..website = json['website'] as String?
+          ..email = json['email'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..legal = json['legal'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyLegalType
+                  .fromJson(json['legal'] as Map<String, dynamic>)
+          ..banks = (json['banks'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$BankDetailsType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..contact = json['contact'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+                  .fromJson(json['contact'] as Map<String, dynamic>)
+          ..logistic = json['logistic'] as bool?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..mapPicture = json['mapPicture'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mapPicture', instance.mapPicture);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSServicesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSServicesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSServicesType()
+          ..id = json['id'] as String?
+          ..index = json['index'] as int?
+          ..name = json['name'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSServicesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSServicesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('index', instance.index);
+  writeNotNull('name', instance.name);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType()
+          ..alt = json['alt'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt'] as Map<String, dynamic>)
+          ..alt2x = json['alt2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt2x'] as Map<String, dynamic>)
+          ..alt128 = json['alt_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt_128'] as Map<String, dynamic>)
+          ..alt256 = json['alt_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt_256'] as Map<String, dynamic>)
+          ..alt512 = json['alt_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt_512'] as Map<String, dynamic>)
+          ..cardFlat = json['card_flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat'] as Map<String, dynamic>)
+          ..cardFlat2x = json['card_flat2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat2x'] as Map<String, dynamic>)
+          ..cardFlat128 = json['card_flat_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat_128'] as Map<String, dynamic>)
+          ..cardFlat256 = json['card_flat_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat_256'] as Map<String, dynamic>)
+          ..cardFlat512 = json['card_flat_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat_512'] as Map<String, dynamic>)
+          ..dark = json['dark'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark'] as Map<String, dynamic>)
+          ..dark2x = json['dark2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark2x'] as Map<String, dynamic>)
+          ..dark128 = json['dark_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark_128'] as Map<String, dynamic>)
+          ..dark256 = json['dark_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark_256'] as Map<String, dynamic>)
+          ..dark512 = json['dark_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark_512'] as Map<String, dynamic>)
+          ..flat = json['flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat'] as Map<String, dynamic>)
+          ..flat2x = json['flat2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat2x'] as Map<String, dynamic>)
+          ..flat128 = json['flat_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat_128'] as Map<String, dynamic>)
+          ..flat256 = json['flat_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat_256'] as Map<String, dynamic>)
+          ..flat512 = json['flat_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat_512'] as Map<String, dynamic>)
+          ..light = json['light'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light'] as Map<String, dynamic>)
+          ..light2x = json['light2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light2x'] as Map<String, dynamic>)
+          ..light128 = json['light_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light_128'] as Map<String, dynamic>)
+          ..light256 = json['light_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light_256'] as Map<String, dynamic>)
+          ..light512 = json['light_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light_512'] as Map<String, dynamic>)
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..default2x = json['default2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default2x'] as Map<String, dynamic>)
+          ..default128 = json['default_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default_128'] as Map<String, dynamic>)
+          ..default256 = json['default_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default_256'] as Map<String, dynamic>)
+          ..default512 = json['default_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default_512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType()
+          ..alt = json['alt'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['alt'] as Map<String, dynamic>)
+          ..cardFlat = json['card_flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['card_flat'] as Map<String, dynamic>)
+          ..dark = json['dark'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['dark'] as Map<String, dynamic>)
+          ..flat = json['flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['flat'] as Map<String, dynamic>)
+          ..light = json['light'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['light'] as Map<String, dynamic>)
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType()
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+                  .fromJson(json['svg'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..paymentType = $enumDecodeNullable(
+              _$PaymentTypeEnumEnumMap, json['paymentType'],
+              unknownValue: PaymentTypeEnum.artemisUnknown)
+          ..materialIcon = json['materialIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = json['images'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType$PaymentImagesType
+                  .fromJson(json['images'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
+
+const _$PaymentTypeEnumEnumMap = {
+  PaymentTypeEnum.creditCard: 'CREDIT_CARD',
+  PaymentTypeEnum.payment: 'PAYMENT',
+  PaymentTypeEnum.methods: 'METHODS',
+  PaymentTypeEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType()
+          ..vat = json['vat'] as String?
+          ..register = json['register'] as String?
+          ..licence = json['licence'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType()
+          ..name = json['name'] as String
+          ..type = $enumDecodeNullable(
+              _$BankDetailsHolderTypeEnumEnumMap, json['type'],
+              unknownValue: BankDetailsHolderTypeEnum.artemisUnknown)
+          ..address =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType()
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..size16 = json['size16'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size16'] as Map<String, dynamic>)
+          ..size24 = json['size24'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size24'] as Map<String, dynamic>)
+          ..size32 = json['size32'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size32'] as Map<String, dynamic>)
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size64 = json['size64'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size64'] as Map<String, dynamic>)
+          ..size128 = json['size128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size128'] as Map<String, dynamic>)
+          ..size256 = json['size256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size256'] as Map<String, dynamic>)
+          ..size512 = json['size512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..icon = json['icon'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..bic = json['bic'] as String?
+          ..logo = json['logo'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+                  .fromJson(json['logo'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType()
+          ..id = json['id'] as String
+          ..holder =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+                  .fromJson(json['holder'] as Map<String, dynamic>)
+          ..account = json['account'] as String
+          ..iban = json['iban'] as String?
+          ..bank =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+                  .fromJson(json['bank'] as Map<String, dynamic>)
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType()
+          ..website = json['website'] as String?
+          ..email = json['email'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..legal = json['legal'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+                  .fromJson(json['legal'] as Map<String, dynamic>)
+          ..banks = (json['banks'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..contact = json['contact'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+                  .fromJson(json['contact'] as Map<String, dynamic>)
+          ..logistic = json['logistic'] as bool?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType()
+          ..id = json['id'] as String
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..programName = json['programName'] as String?
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..company = json['company'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+                  .fromJson(json['company'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('programName', instance.programName);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType()
+          ..to = DateTime.parse(json['to'] as String)
+          ..from = DateTime.parse(json['from'] as String)
+          ..loyaltyProgram = json['loyaltyProgram'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+                  .fromJson(json['loyaltyProgram'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType
+            instance) {
+  final val = <String, dynamic>{
+    'to': instance.to.toIso8601String(),
+    'from': instance.from.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('loyaltyProgram', instance.loyaltyProgram?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType()
+          ..id = json['id'] as String
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..name = json['name'] as String?
+          ..title = json['title'] as String?
+          ..email = (json['email'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..phone = (json['phone'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..website = json['website'] as String?
+          ..subtitle = json['subtitle'] as String?
+          ..currencies = (json['currencies'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$TargetCurrencyType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..turnover = json['turnover'] as String?
+          ..reference = json['reference'] as String?
+          ..published = json['published'] as bool?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..brandColor = json['brandColor'] as String?
+          ..isFollowed = json['isFollowed'] as bool?
+          ..description = json['description'] as String?
+          ..contactEmails = (json['contactEmails'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..averageCustomers = (json['averageCustomers'] as num?)?.toDouble()
+          ..languages = (json['languages'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$LanguageType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..outsidePictures = (json['outsidePictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..insidePictures = (json['insidePictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..openingHours = json['openingHours'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$OpeningHoursType
+                  .fromJson(json['openingHours'] as Map<String, dynamic>)
+          ..specialOffers = (json['specialOffers'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SpecialOfferType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..locations = (json['locations'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..chatContact = (json['chatContact'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialMedia = (json['socialMedia'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..company = json['company'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$CompanyType
+                  .fromJson(json['company'] as Map<String, dynamic>)
+          ..posCategory = (json['posCategory'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSCategoryType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..services = (json['services'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSServicesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..paymentMethods = (json['paymentMethods'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$PaymentType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..loyaltyPrograms = (json['loyaltyPrograms'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType$POSLoyaltyType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tags', instance.tags);
+  writeNotNull('name', instance.name);
+  writeNotNull('title', instance.title);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone);
+  writeNotNull('website', instance.website);
+  writeNotNull('subtitle', instance.subtitle);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  writeNotNull('turnover', instance.turnover);
+  writeNotNull('reference', instance.reference);
+  writeNotNull('published', instance.published);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('brandColor', instance.brandColor);
+  writeNotNull('isFollowed', instance.isFollowed);
+  writeNotNull('description', instance.description);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull('averageCustomers', instance.averageCustomers);
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('outsidePictures',
+      instance.outsidePictures?.map((e) => e.toJson()).toList());
+  writeNotNull('insidePictures',
+      instance.insidePictures?.map((e) => e.toJson()).toList());
+  writeNotNull('openingHours', instance.openingHours?.toJson());
+  writeNotNull(
+      'specialOffers', instance.specialOffers?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'locations', instance.locations?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('company', instance.company?.toJson());
+  writeNotNull(
+      'posCategory', instance.posCategory?.map((e) => e.toJson()).toList());
+  writeNotNull('services', instance.services?.map((e) => e.toJson()).toList());
+  writeNotNull('paymentMethods',
+      instance.paymentMethods?.map((e) => e.toJson()).toList());
+  writeNotNull('loyaltyPrograms',
+      instance.loyaltyPrograms?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..symbol = json['symbol'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType()
+          ..currency = json['currency'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType$CurrencyType
+                  .fromJson(json['currency'] as Map<String, dynamic>)
+          ..kw$default = json['default'] as bool?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyLegalType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyLegalTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyLegalType()
+          ..vat = json['vat'] as String?
+          ..register = json['register'] as String?
+          ..licence = json['licence'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyLegalTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType()
+          ..name = json['name'] as String
+          ..type = $enumDecodeNullable(
+              _$BankDetailsHolderTypeEnumEnumMap, json['type'],
+              unknownValue: BankDetailsHolderTypeEnum.artemisUnknown)
+          ..address =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType()
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..size16 = json['size16'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size16'] as Map<String, dynamic>)
+          ..size24 = json['size24'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size24'] as Map<String, dynamic>)
+          ..size32 = json['size32'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size32'] as Map<String, dynamic>)
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size64 = json['size64'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size64'] as Map<String, dynamic>)
+          ..size128 = json['size128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size128'] as Map<String, dynamic>)
+          ..size256 = json['size256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size256'] as Map<String, dynamic>)
+          ..size512 = json['size512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..icon = json['icon'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..bic = json['bic'] as String?
+          ..logo = json['logo'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+                  .fromJson(json['logo'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType()
+          ..id = json['id'] as String
+          ..holder =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankDetailsHolderType
+                  .fromJson(json['holder'] as Map<String, dynamic>)
+          ..account = json['account'] as String
+          ..iban = json['iban'] as String?
+          ..bank =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType$BankType
+                  .fromJson(json['bank'] as Map<String, dynamic>)
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType()
+          ..website = json['website'] as String?
+          ..email = json['email'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..legal = json['legal'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyLegalType
+                  .fromJson(json['legal'] as Map<String, dynamic>)
+          ..banks = (json['banks'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$BankDetailsType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..contact = json['contact'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType$CompanyContactDetailsType
+                  .fromJson(json['contact'] as Map<String, dynamic>)
+          ..logistic = json['logistic'] as bool?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..email = json['email'] as String?
+          ..website = json['website'] as String?
+          ..currencies = (json['currencies'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$TargetCurrencyType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>)
+          ..fax = json['fax'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$IPhoneType
+                  .fromJson(json['fax'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..description = json['description'] as String?
+          ..contactEmails = (json['contactEmails'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..company = json['company'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$CompanyType
+                  .fromJson(json['company'] as Map<String, dynamic>)
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('email', instance.email);
+  writeNotNull('website', instance.website);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('fax', instance.fax?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('description', instance.description);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..symbol = json['symbol'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType()
+          ..currency = json['currency'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType$CurrencyType
+                  .fromJson(json['currency'] as Map<String, dynamic>)
+          ..kw$default = json['default'] as bool?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyLegalType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyLegalTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyLegalType()
+          ..vat = json['vat'] as String?
+          ..register = json['register'] as String?
+          ..licence = json['licence'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyLegalTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType()
+          ..name = json['name'] as String
+          ..type = $enumDecodeNullable(
+              _$BankDetailsHolderTypeEnumEnumMap, json['type'],
+              unknownValue: BankDetailsHolderTypeEnum.artemisUnknown)
+          ..address =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType()
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..size16 = json['size16'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size16'] as Map<String, dynamic>)
+          ..size24 = json['size24'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size24'] as Map<String, dynamic>)
+          ..size32 = json['size32'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size32'] as Map<String, dynamic>)
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size64 = json['size64'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size64'] as Map<String, dynamic>)
+          ..size128 = json['size128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size128'] as Map<String, dynamic>)
+          ..size256 = json['size256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size256'] as Map<String, dynamic>)
+          ..size512 = json['size512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..icon = json['icon'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..bic = json['bic'] as String?
+          ..logo = json['logo'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+                  .fromJson(json['logo'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType()
+          ..id = json['id'] as String
+          ..holder =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType
+                  .fromJson(json['holder'] as Map<String, dynamic>)
+          ..account = json['account'] as String
+          ..iban = json['iban'] as String?
+          ..bank =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType$BankType
+                  .fromJson(json['bank'] as Map<String, dynamic>)
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType()
+          ..website = json['website'] as String?
+          ..email = json['email'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..legal = json['legal'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyLegalType
+                  .fromJson(json['legal'] as Map<String, dynamic>)
+          ..banks = (json['banks'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$BankDetailsType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..contact = json['contact'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType$CompanyContactDetailsType
+                  .fromJson(json['contact'] as Map<String, dynamic>)
+          ..logistic = json['logistic'] as bool?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType()
+          ..id = json['id'] as String
+          ..email = json['email'] as String?
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..website = json['website'] as String?
+          ..contactEmails = (json['contactEmails'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..currencies = (json['currencies'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$TargetCurrencyType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..company = json['company'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType$CompanyType
+                  .fromJson(json['company'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('website', instance.website);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType()
+          ..pos = json['pos'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$PointOfSaleType
+                  .fromJson(json['pos'] as Map<String, dynamic>)
+          ..wholesaler = json['wholesaler'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$WholesalerType
+                  .fromJson(json['wholesaler'] as Map<String, dynamic>)
+          ..manufacturer = json['manufacturer'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType$ManufacturerType
+                  .fromJson(json['manufacturer'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos?.toJson());
+  writeNotNull('wholesaler', instance.wholesaler?.toJson());
+  writeNotNull('manufacturer', instance.manufacturer?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType()
+          ..id = json['id'] as String
+          ..title = json['title'] as String
+          ..type = $enumDecodeNullable(_$FormTypeEnumMap, json['type'],
+              unknownValue: FormType.artemisUnknown)
+          ..status = $enumDecodeNullable(_$FormStatusEnumMap, json['status'],
+              unknownValue: FormStatus.artemisUnknown)
+          ..description = json['description'] as String
+          ..owner =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType$FormOwnerDtoType
+                  .fromJson(json['owner'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'title': instance.title,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$FormTypeEnumMap[instance.type]);
+  writeNotNull('status', _$FormStatusEnumMap[instance.status]);
+  val['description'] = instance.description;
+  val['owner'] = instance.owner.toJson();
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+const _$FormTypeEnumMap = {
+  FormType.guided: 'GUIDED',
+  FormType.autonomous: 'AUTONOMOUS',
+  FormType.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+const _$FormStatusEnumMap = {
+  FormStatus.draft: 'DRAFT',
+  FormStatus.checked: 'CHECKED',
+  FormStatus.ongoing: 'ONGOING',
+  FormStatus.finished: 'FINISHED',
+  FormStatus.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType()
+          ..id = json['id'] as String
+          ..title = json['title'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('title', instance.title);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsTextType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsTextTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsTextType()
+          ..max = (json['max'] as num).toDouble()
+          ..min = (json['min'] as num).toDouble();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsTextTypeToJson(
+            PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsTextType
+                instance) =>
+        <String, dynamic>{
+          'max': instance.max,
+          'min': instance.min,
+        };
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsDateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsDateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsDateType()
+          ..outdated = json['outdated'] as bool
+          ..interval = json['interval'] as bool;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsDateTypeToJson(
+            PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsDateType
+                instance) =>
+        <String, dynamic>{
+          'outdated': instance.outdated,
+          'interval': instance.interval,
+        };
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsNumberType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsNumberTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsNumberType()
+          ..minValue = (json['minValue'] as num).toDouble()
+          ..maxValue = (json['maxValue'] as num).toDouble()
+          ..interval = json['interval'] as bool;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsNumberTypeToJson(
+            PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsNumberType
+                instance) =>
+        <String, dynamic>{
+          'minValue': instance.minValue,
+          'maxValue': instance.maxValue,
+          'interval': instance.interval,
+        };
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsToggleType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsToggleTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsToggleType()
+          ..leftLabel = json['leftLabel'] as String
+          ..rightLabel = json['rightLabel'] as String;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsToggleTypeToJson(
+            PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsToggleType
+                instance) =>
+        <String, dynamic>{
+          'leftLabel': instance.leftLabel,
+          'rightLabel': instance.rightLabel,
+        };
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType()
+          ..rank = (json['rank'] as num).toDouble()
+          ..icon = json['icon'] as String?
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType
+            instance) {
+  final val = <String, dynamic>{
+    'rank': instance.rank,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('icon', instance.icon);
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType()
+          ..levels = (json['levels'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType$QuestionSettingsSmileyObjType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('levels', instance.levels?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType()
+          ..text = json['text'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsTextType
+                  .fromJson(json['text'] as Map<String, dynamic>)
+          ..date = json['date'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsDateType
+                  .fromJson(json['date'] as Map<String, dynamic>)
+          ..number = json['number'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsNumberType
+                  .fromJson(json['number'] as Map<String, dynamic>)
+          ..toggle = json['toggle'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsToggleType
+                  .fromJson(json['toggle'] as Map<String, dynamic>)
+          ..smiley = json['smiley'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType$QuestionSettingsSmileyType
+                  .fromJson(json['smiley'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('text', instance.text?.toJson());
+  writeNotNull('date', instance.date?.toJson());
+  writeNotNull('number', instance.number?.toJson());
+  writeNotNull('toggle', instance.toggle?.toJson());
+  writeNotNull('smiley', instance.smiley?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$Answers
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$AnswersFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers()
+          ..id = json['id'] as String
+          ..order = json['order'] as int?
+          ..title = json['title'] as String?
+          ..description = json['description'] as String?
+          ..choices = (json['choices'] as List<dynamic>)
+              .map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionChoiceDtoType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..type = $enumDecodeNullable(_$QuestionTypeEnumEnumMap, json['type'],
+              unknownValue: QuestionTypeEnum.artemisUnknown)
+          ..form = json['form'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$FormDtoType
+                  .fromJson(json['form'] as Map<String, dynamic>)
+          ..challengeStep = json['challengeStep'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$ChallengeStepType
+                  .fromJson(json['challengeStep'] as Map<String, dynamic>)
+          ..settings = json['settings'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$Answers$QuestionSettingsType
+                  .fromJson(json['settings'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$AnswersToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$Answers instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('order', instance.order);
+  writeNotNull('title', instance.title);
+  writeNotNull('description', instance.description);
+  val['choices'] = instance.choices.map((e) => e.toJson()).toList();
+  writeNotNull('type', _$QuestionTypeEnumEnumMap[instance.type]);
+  writeNotNull('form', instance.form?.toJson());
+  writeNotNull('challengeStep', instance.challengeStep?.toJson());
+  writeNotNull('settings', instance.settings?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+const _$QuestionTypeEnumEnumMap = {
+  QuestionTypeEnum.shortAnswer: 'SHORT_ANSWER',
+  QuestionTypeEnum.paragraph: 'PARAGRAPH',
+  QuestionTypeEnum.multipleChoice: 'MULTIPLE_CHOICE',
+  QuestionTypeEnum.singleChoice: 'SINGLE_CHOICE',
+  QuestionTypeEnum.picture: 'PICTURE',
+  QuestionTypeEnum.datetime: 'DATETIME',
+  QuestionTypeEnum.number: 'NUMBER',
+  QuestionTypeEnum.toggle: 'TOGGLE',
+  QuestionTypeEnum.smiley: 'SMILEY',
+  QuestionTypeEnum.artemisUnknown: 'ARTEMIS_UNKNOWN',
+};
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..symbol = json['symbol'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('symbol', instance.symbol);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType()
+          ..currency = json['currency'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType$CurrencyType
+                  .fromJson(json['currency'] as Map<String, dynamic>)
+          ..kw$default = json['default'] as bool?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('currency', instance.currency?.toJson());
+  writeNotNull('default', instance.kw$default);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType()
+          ..day = $enumDecodeNullable(_$DaysEnumMap, json['day'],
+              unknownValue: Days.artemisUnknown)
+          ..from = json['from'] as String?
+          ..to = json['to'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('day', _$DaysEnumMap[instance.day]);
+  writeNotNull('from', instance.from);
+  writeNotNull('to', instance.to);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType()
+          ..status = $enumDecodeNullable(_$OpeningStatusEnumMap, json['status'],
+              unknownValue: OpeningStatus.artemisUnknown)
+          ..hours = (json['hours'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType$OpeningHoursDayType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('status', _$OpeningStatusEnumMap[instance.status]);
+  writeNotNull('hours', instance.hours?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType()
+          ..day = $enumDecodeNullable(_$DaysEnumMap, json['day'],
+              unknownValue: Days.artemisUnknown)
+          ..from = json['from'] as String?
+          ..to = json['to'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('day', _$DaysEnumMap[instance.day]);
+  writeNotNull('from', instance.from);
+  writeNotNull('to', instance.to);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType()
+          ..offerType = $enumDecodeNullable(
+              _$SpecialOffersTypeEnumMap, json['offerType'],
+              unknownValue: SpecialOffersType.artemisUnknown)
+          ..hours = (json['hours'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType$OpeningHoursDayType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('offerType', _$SpecialOffersTypeEnumMap[instance.offerType]);
+  writeNotNull('hours', instance.hours?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType()
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size96 = json['size96'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size96'] as Map<String, dynamic>)
+          ..size144 = json['size144'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size144'] as Map<String, dynamic>)
+          ..size240 = json['size240'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size240'] as Map<String, dynamic>)
+          ..size480 = json['size480'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType$PictureType
+                  .fromJson(json['size480'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size96', instance.size96?.toJson());
+  writeNotNull('size144', instance.size144?.toJson());
+  writeNotNull('size240', instance.size240?.toJson());
+  writeNotNull('size480', instance.size480?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType$SocialImagesImagesSetType
+                  .fromJson(json['png'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType()
+          ..style = $enumDecode(_$SocialImageStyleEnumEnumMap, json['style'],
+              unknownValue: SocialImageStyleEnum.artemisUnknown)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType$SocialImagesImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+            instance) {
+  final val = <String, dynamic>{
+    'style': _$SocialImageStyleEnumEnumMap[instance.style]!,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..fontIcon = json['fontIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = (json['images'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType$SocialImagesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('fontIcon', instance.fontIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType()
+          ..name = json['name'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType$SocialType
+                  .fromJson(json['name'] as Map<String, dynamic>)
+          ..value = json['value'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name?.toJson());
+  writeNotNull('value', instance.value);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyLegalType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyLegalTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyLegalType()
+          ..vat = json['vat'] as String?
+          ..register = json['register'] as String?
+          ..licence = json['licence'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyLegalTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType()
+          ..name = json['name'] as String
+          ..type = $enumDecodeNullable(
+              _$BankDetailsHolderTypeEnumEnumMap, json['type'],
+              unknownValue: BankDetailsHolderTypeEnum.artemisUnknown)
+          ..address =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType()
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..size16 = json['size16'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size16'] as Map<String, dynamic>)
+          ..size24 = json['size24'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size24'] as Map<String, dynamic>)
+          ..size32 = json['size32'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size32'] as Map<String, dynamic>)
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size64 = json['size64'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size64'] as Map<String, dynamic>)
+          ..size128 = json['size128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size128'] as Map<String, dynamic>)
+          ..size256 = json['size256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size256'] as Map<String, dynamic>)
+          ..size512 = json['size512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..icon = json['icon'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..bic = json['bic'] as String?
+          ..logo = json['logo'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+                  .fromJson(json['logo'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType()
+          ..id = json['id'] as String
+          ..holder =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankDetailsHolderType
+                  .fromJson(json['holder'] as Map<String, dynamic>)
+          ..account = json['account'] as String
+          ..iban = json['iban'] as String?
+          ..bank =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType$BankType
+                  .fromJson(json['bank'] as Map<String, dynamic>)
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType()
+          ..website = json['website'] as String?
+          ..email = json['email'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..legal = json['legal'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyLegalType
+                  .fromJson(json['legal'] as Map<String, dynamic>)
+          ..banks = (json['banks'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$BankDetailsType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..contact = json['contact'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType$CompanyContactDetailsType
+                  .fromJson(json['contact'] as Map<String, dynamic>)
+          ..logistic = json['logistic'] as bool?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..mapPicture = json['mapPicture'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('mapPicture', instance.mapPicture);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSServicesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSServicesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSServicesType()
+          ..id = json['id'] as String?
+          ..index = json['index'] as int?
+          ..name = json['name'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSServicesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSServicesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('id', instance.id);
+  writeNotNull('index', instance.index);
+  writeNotNull('name', instance.name);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType()
+          ..alt = json['alt'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt'] as Map<String, dynamic>)
+          ..alt2x = json['alt2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt2x'] as Map<String, dynamic>)
+          ..alt128 = json['alt_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt_128'] as Map<String, dynamic>)
+          ..alt256 = json['alt_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt_256'] as Map<String, dynamic>)
+          ..alt512 = json['alt_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['alt_512'] as Map<String, dynamic>)
+          ..cardFlat = json['card_flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat'] as Map<String, dynamic>)
+          ..cardFlat2x = json['card_flat2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat2x'] as Map<String, dynamic>)
+          ..cardFlat128 = json['card_flat_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat_128'] as Map<String, dynamic>)
+          ..cardFlat256 = json['card_flat_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat_256'] as Map<String, dynamic>)
+          ..cardFlat512 = json['card_flat_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['card_flat_512'] as Map<String, dynamic>)
+          ..dark = json['dark'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark'] as Map<String, dynamic>)
+          ..dark2x = json['dark2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark2x'] as Map<String, dynamic>)
+          ..dark128 = json['dark_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark_128'] as Map<String, dynamic>)
+          ..dark256 = json['dark_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark_256'] as Map<String, dynamic>)
+          ..dark512 = json['dark_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['dark_512'] as Map<String, dynamic>)
+          ..flat = json['flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat'] as Map<String, dynamic>)
+          ..flat2x = json['flat2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat2x'] as Map<String, dynamic>)
+          ..flat128 = json['flat_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat_128'] as Map<String, dynamic>)
+          ..flat256 = json['flat_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat_256'] as Map<String, dynamic>)
+          ..flat512 = json['flat_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['flat_512'] as Map<String, dynamic>)
+          ..light = json['light'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light'] as Map<String, dynamic>)
+          ..light2x = json['light2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light2x'] as Map<String, dynamic>)
+          ..light128 = json['light_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light_128'] as Map<String, dynamic>)
+          ..light256 = json['light_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light_256'] as Map<String, dynamic>)
+          ..light512 = json['light_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['light_512'] as Map<String, dynamic>)
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..default2x = json['default2x'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default2x'] as Map<String, dynamic>)
+          ..default128 = json['default_128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default_128'] as Map<String, dynamic>)
+          ..default256 = json['default_256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default_256'] as Map<String, dynamic>)
+          ..default512 = json['default_512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType$PictureType
+                  .fromJson(json['default_512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('alt2x', instance.alt2x?.toJson());
+  writeNotNull('alt_128', instance.alt128?.toJson());
+  writeNotNull('alt_256', instance.alt256?.toJson());
+  writeNotNull('alt_512', instance.alt512?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('card_flat2x', instance.cardFlat2x?.toJson());
+  writeNotNull('card_flat_128', instance.cardFlat128?.toJson());
+  writeNotNull('card_flat_256', instance.cardFlat256?.toJson());
+  writeNotNull('card_flat_512', instance.cardFlat512?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('dark2x', instance.dark2x?.toJson());
+  writeNotNull('dark_128', instance.dark128?.toJson());
+  writeNotNull('dark_256', instance.dark256?.toJson());
+  writeNotNull('dark_512', instance.dark512?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('flat2x', instance.flat2x?.toJson());
+  writeNotNull('flat_128', instance.flat128?.toJson());
+  writeNotNull('flat_256', instance.flat256?.toJson());
+  writeNotNull('flat_512', instance.flat512?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('light2x', instance.light2x?.toJson());
+  writeNotNull('light_128', instance.light128?.toJson());
+  writeNotNull('light_256', instance.light256?.toJson());
+  writeNotNull('light_512', instance.light512?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('default2x', instance.default2x?.toJson());
+  writeNotNull('default_128', instance.default128?.toJson());
+  writeNotNull('default_256', instance.default256?.toJson());
+  writeNotNull('default_512', instance.default512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType()
+          ..alt = json['alt'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['alt'] as Map<String, dynamic>)
+          ..cardFlat = json['card_flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['card_flat'] as Map<String, dynamic>)
+          ..dark = json['dark'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['dark'] as Map<String, dynamic>)
+          ..flat = json['flat'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['flat'] as Map<String, dynamic>)
+          ..light = json['light'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['light'] as Map<String, dynamic>)
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('alt', instance.alt?.toJson());
+  writeNotNull('card_flat', instance.cardFlat?.toJson());
+  writeNotNull('dark', instance.dark?.toJson());
+  writeNotNull('flat', instance.flat?.toJson());
+  writeNotNull('light', instance.light?.toJson());
+  writeNotNull('default', instance.kw$default?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType()
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType$PaymentImagesSvgType
+                  .fromJson(json['svg'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('svg', instance.svg?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..paymentType = $enumDecodeNullable(
+              _$PaymentTypeEnumEnumMap, json['paymentType'],
+              unknownValue: PaymentTypeEnum.artemisUnknown)
+          ..materialIcon = json['materialIcon'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..images = json['images'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType$PaymentImagesType
+                  .fromJson(json['images'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('paymentType', _$PaymentTypeEnumEnumMap[instance.paymentType]);
+  writeNotNull('materialIcon', instance.materialIcon);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('images', instance.images?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType()
+          ..videos = (json['videos'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..deg360 = (json['deg360'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..pictures = (json['pictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('videos', instance.videos);
+  writeNotNull('deg360', instance.deg360?.map((e) => e.toJson()).toList());
+  writeNotNull('pictures', instance.pictures?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType()
+          ..vat = json['vat'] as String?
+          ..register = json['register'] as String?
+          ..licence = json['licence'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('vat', instance.vat);
+  writeNotNull('register', instance.register);
+  writeNotNull('licence', instance.licence);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType()
+          ..type = $enumDecodeNullable(_$ZoneTypesEnumEnumMap, json['type'],
+              unknownValue: ZoneTypesEnum.artemisUnknown)
+          ..coordinates = (json['coordinates'] as List<dynamic>?)
+              ?.map((e) => (e as num).toDouble())
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$ZoneTypesEnumEnumMap[instance.type]);
+  writeNotNull('coordinates', instance.coordinates);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..dialCode = json['dialCode'] as String?
+          ..iconFlag = json['iconFlag'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('dialCode', instance.dialCode);
+  writeNotNull('iconFlag', instance.iconFlag);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..adminName = json['adminName'] as String?
+          ..capital = $enumDecodeNullable(
+              _$StateCapitalEnumEnumMap, json['capital'],
+              unknownValue: StateCapitalEnum.artemisUnknown)
+          ..population = json['population'] as String?
+          ..ascii = json['ascii'] as String?
+          ..lat = json['lat'] as String?
+          ..lng = json['lng'] as String?
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..flagSquare = json['flagSquare'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagSquare'] as Map<String, dynamic>)
+          ..flagWide = json['flagWide'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType$PictureType
+                  .fromJson(json['flagWide'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('adminName', instance.adminName);
+  writeNotNull('capital', _$StateCapitalEnumEnumMap[instance.capital]);
+  writeNotNull('population', instance.population);
+  writeNotNull('ascii', instance.ascii);
+  writeNotNull('lat', instance.lat);
+  writeNotNull('lng', instance.lng);
+  writeNotNull('country', instance.country?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('flagSquare', instance.flagSquare?.toJson());
+  writeNotNull('flagWide', instance.flagWide?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType()
+          ..number = json['number'] as String?
+          ..countryCode = json['countryCode'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('countryCode', instance.countryCode);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType()
+          ..name = json['name'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType$FullAddressOwnerPhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType()
+          ..city = json['city'] as String?
+          ..address = json['address'] as String?
+          ..postCode = json['postCode'] as String?
+          ..location = json['location'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType
+                  .fromJson(json['location'] as Map<String, dynamic>)
+          ..country = json['country'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$CountryType
+                  .fromJson(json['country'] as Map<String, dynamic>)
+          ..state = json['state'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$StateType
+                  .fromJson(json['state'] as Map<String, dynamic>)
+          ..owner = json['owner'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$FullAddressOwnerType
+                  .fromJson(json['owner'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('city', instance.city);
+  writeNotNull('address', instance.address);
+  writeNotNull('postCode', instance.postCode);
+  writeNotNull('location', instance.location?.toJson());
+  writeNotNull('country', instance.country?.toJson());
+  writeNotNull('state', instance.state?.toJson());
+  writeNotNull('owner', instance.owner?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType()
+          ..name = json['name'] as String
+          ..type = $enumDecodeNullable(
+              _$BankDetailsHolderTypeEnumEnumMap, json['type'],
+              unknownValue: BankDetailsHolderTypeEnum.artemisUnknown)
+          ..address =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+            instance) {
+  final val = <String, dynamic>{
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('type', _$BankDetailsHolderTypeEnumEnumMap[instance.type]);
+  val['address'] = instance.address.toJson();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType()
+          ..kw$default = json['default'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['default'] as Map<String, dynamic>)
+          ..size16 = json['size16'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size16'] as Map<String, dynamic>)
+          ..size24 = json['size24'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size24'] as Map<String, dynamic>)
+          ..size32 = json['size32'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size32'] as Map<String, dynamic>)
+          ..size48 = json['size48'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size48'] as Map<String, dynamic>)
+          ..size64 = json['size64'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size64'] as Map<String, dynamic>)
+          ..size128 = json['size128'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size128'] as Map<String, dynamic>)
+          ..size256 = json['size256'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size256'] as Map<String, dynamic>)
+          ..size512 = json['size512'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType$PictureType
+                  .fromJson(json['size512'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('default', instance.kw$default?.toJson());
+  writeNotNull('size16', instance.size16?.toJson());
+  writeNotNull('size24', instance.size24?.toJson());
+  writeNotNull('size32', instance.size32?.toJson());
+  writeNotNull('size48', instance.size48?.toJson());
+  writeNotNull('size64', instance.size64?.toJson());
+  writeNotNull('size128', instance.size128?.toJson());
+  writeNotNull('size256', instance.size256?.toJson());
+  writeNotNull('size512', instance.size512?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType()
+          ..svg = json['svg'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$PictureType
+                  .fromJson(json['svg'] as Map<String, dynamic>)
+          ..png = json['png'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType$BrowserLogoPngType
+                  .fromJson(json['png'] as Map<String, dynamic>)
+          ..icon = json['icon'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('svg', instance.svg?.toJson());
+  writeNotNull('png', instance.png?.toJson());
+  writeNotNull('icon', instance.icon);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String
+          ..code = json['code'] as String?
+          ..bic = json['bic'] as String?
+          ..logo = json['logo'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType$BrowserLogoType
+                  .fromJson(json['logo'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'name': instance.name,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('code', instance.code);
+  writeNotNull('bic', instance.bic);
+  writeNotNull('logo', instance.logo?.toJson());
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType()
+          ..id = json['id'] as String
+          ..holder =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankDetailsHolderType
+                  .fromJson(json['holder'] as Map<String, dynamic>)
+          ..account = json['account'] as String
+          ..iban = json['iban'] as String?
+          ..bank =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType$BankType
+                  .fromJson(json['bank'] as Map<String, dynamic>)
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'holder': instance.holder.toJson(),
+    'account': instance.account,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('iban', instance.iban);
+  val['bank'] = instance.bank.toJson();
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType()
+          ..website = json['website'] as String?
+          ..email = json['email'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('website', instance.website);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType()
+          ..id = json['id'] as String
+          ..name = json['name'] as String?
+          ..description = json['description'] as String?
+          ..media = json['media'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$MediaType
+                  .fromJson(json['media'] as Map<String, dynamic>)
+          ..address = json['address'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$FullAddressType
+                  .fromJson(json['address'] as Map<String, dynamic>)
+          ..legal = json['legal'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyLegalType
+                  .fromJson(json['legal'] as Map<String, dynamic>)
+          ..banks = (json['banks'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$BankDetailsType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..contact = json['contact'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType$CompanyContactDetailsType
+                  .fromJson(json['contact'] as Map<String, dynamic>)
+          ..logistic = json['logistic'] as bool?
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..externalId = json['externalId'] as String?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('name', instance.name);
+  writeNotNull('description', instance.description);
+  writeNotNull('media', instance.media?.toJson());
+  writeNotNull('address', instance.address?.toJson());
+  writeNotNull('legal', instance.legal?.toJson());
+  writeNotNull('banks', instance.banks?.map((e) => e.toJson()).toList());
+  writeNotNull('contact', instance.contact?.toJson());
+  writeNotNull('logistic', instance.logistic);
+  writeNotNull('tags', instance.tags);
+  writeNotNull('externalId', instance.externalId);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType()
+          ..id = json['id'] as String
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..programName = json['programName'] as String?
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..company = json['company'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType$CompanyType
+                  .fromJson(json['company'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+    'createdAt': instance.createdAt.toIso8601String(),
+    'updatedAt': instance.updatedAt.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('programName', instance.programName);
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('company', instance.company?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType()
+          ..to = DateTime.parse(json['to'] as String)
+          ..from = DateTime.parse(json['from'] as String)
+          ..loyaltyProgram = json['loyaltyProgram'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType$LoyaltyProgramType
+                  .fromJson(json['loyaltyProgram'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType
+            instance) {
+  final val = <String, dynamic>{
+    'to': instance.to.toIso8601String(),
+    'from': instance.from.toIso8601String(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('loyaltyProgram', instance.loyaltyProgram?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType()
+          ..id = json['id'] as String
+          ..tags =
+              (json['tags'] as List<dynamic>?)?.map((e) => e as String).toList()
+          ..name = json['name'] as String?
+          ..title = json['title'] as String?
+          ..email = (json['email'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..phone = (json['phone'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..website = json['website'] as String?
+          ..subtitle = json['subtitle'] as String?
+          ..currencies = (json['currencies'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$TargetCurrencyType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..turnover = json['turnover'] as String?
+          ..reference = json['reference'] as String?
+          ..published = json['published'] as bool?
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String)
+          ..brandColor = json['brandColor'] as String?
+          ..isFollowed = json['isFollowed'] as bool?
+          ..description = json['description'] as String?
+          ..contactEmails = (json['contactEmails'] as List<dynamic>?)
+              ?.map((e) => e as String)
+              .toList()
+          ..averageCustomers = (json['averageCustomers'] as num?)?.toDouble()
+          ..languages = (json['languages'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$LanguageType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>)
+          ..outsidePictures = (json['outsidePictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..insidePictures = (json['insidePictures'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PictureType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..openingHours = json['openingHours'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$OpeningHoursType
+                  .fromJson(json['openingHours'] as Map<String, dynamic>)
+          ..specialOffers = (json['specialOffers'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SpecialOfferType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..locations = (json['locations'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$FullAddressType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..chatContact = (json['chatContact'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..socialMedia = (json['socialMedia'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$SocialValueType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..company = json['company'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$CompanyType
+                  .fromJson(json['company'] as Map<String, dynamic>)
+          ..posCategory = (json['posCategory'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSCategoryType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..services = (json['services'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSServicesType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..paymentMethods = (json['paymentMethods'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$PaymentType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList()
+          ..loyaltyPrograms = (json['loyaltyPrograms'] as List<dynamic>?)
+              ?.map((e) =>
+                  PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType$POSLoyaltyType
+                      .fromJson(e as Map<String, dynamic>))
+              .toList();
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('tags', instance.tags);
+  writeNotNull('name', instance.name);
+  writeNotNull('title', instance.title);
+  writeNotNull('email', instance.email);
+  writeNotNull('phone', instance.phone);
+  writeNotNull('website', instance.website);
+  writeNotNull('subtitle', instance.subtitle);
+  writeNotNull(
+      'currencies', instance.currencies?.map((e) => e.toJson()).toList());
+  writeNotNull('turnover', instance.turnover);
+  writeNotNull('reference', instance.reference);
+  writeNotNull('published', instance.published);
+  val['createdAt'] = instance.createdAt.toIso8601String();
+  val['updatedAt'] = instance.updatedAt.toIso8601String();
+  writeNotNull('brandColor', instance.brandColor);
+  writeNotNull('isFollowed', instance.isFollowed);
+  writeNotNull('description', instance.description);
+  writeNotNull('contactEmails', instance.contactEmails);
+  writeNotNull('averageCustomers', instance.averageCustomers);
+  writeNotNull(
+      'languages', instance.languages?.map((e) => e.toJson()).toList());
+  writeNotNull('picture', instance.picture?.toJson());
+  writeNotNull('outsidePictures',
+      instance.outsidePictures?.map((e) => e.toJson()).toList());
+  writeNotNull('insidePictures',
+      instance.insidePictures?.map((e) => e.toJson()).toList());
+  writeNotNull('openingHours', instance.openingHours?.toJson());
+  writeNotNull(
+      'specialOffers', instance.specialOffers?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'locations', instance.locations?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'chatContact', instance.chatContact?.map((e) => e.toJson()).toList());
+  writeNotNull(
+      'socialMedia', instance.socialMedia?.map((e) => e.toJson()).toList());
+  writeNotNull('company', instance.company?.toJson());
+  writeNotNull(
+      'posCategory', instance.posCategory?.map((e) => e.toJson()).toList());
+  writeNotNull('services', instance.services?.map((e) => e.toJson()).toList());
+  writeNotNull('paymentMethods',
+      instance.paymentMethods?.map((e) => e.toJson()).toList());
+  writeNotNull('loyaltyPrograms',
+      instance.loyaltyPrograms?.map((e) => e.toJson()).toList());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PhoneType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PhoneTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PhoneType()
+          ..number = json['number'] as String?
+          ..isValid = json['isValid'] as bool?
+          ..countryCode = json['countryCode'] as String?
+          ..validationNumber = json['validationNumber'] as int?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PhoneTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PhoneType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('number', instance.number);
+  writeNotNull('isValid', instance.isValid);
+  writeNotNull('countryCode', instance.countryCode);
+  writeNotNull('validationNumber', instance.validationNumber);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PictureType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PictureTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PictureType()
+          ..baseUrl = json['baseUrl'] as String?
+          ..path = json['path'] as String?
+          ..width = json['width'] as int?
+          ..height = json['height'] as int?
+          ..x = json['x'] as int?
+          ..y = json['y'] as int?
+          ..alt = json['alt'] as String?;
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PictureTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PictureType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('baseUrl', instance.baseUrl);
+  writeNotNull('path', instance.path);
+  writeNotNull('width', instance.width);
+  writeNotNull('height', instance.height);
+  writeNotNull('x', instance.x);
+  writeNotNull('y', instance.y);
+  writeNotNull('alt', instance.alt);
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType()
+          ..id = json['id'] as String
+          ..email = json['email'] as String?
+          ..gender = $enumDecodeNullable(_$GenderEnumMap, json['gender'],
+              unknownValue: Gender.artemisUnknown)
+          ..lastName = json['lastName'] as String?
+          ..username = json['username'] as String?
+          ..firstName = json['firstName'] as String?
+          ..phone = json['phone'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PhoneType
+                  .fromJson(json['phone'] as Map<String, dynamic>)
+          ..picture = json['picture'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType$PictureType
+                  .fromJson(json['picture'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType
+            instance) {
+  final val = <String, dynamic>{
+    'id': instance.id,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('email', instance.email);
+  writeNotNull('gender', _$GenderEnumMap[instance.gender]);
+  writeNotNull('lastName', instance.lastName);
+  writeNotNull('username', instance.username);
+  writeNotNull('firstName', instance.firstName);
+  writeNotNull('phone', instance.phone?.toJson());
+  writeNotNull('picture', instance.picture?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType()
+          ..pos = json['pos'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$PointOfSaleType
+                  .fromJson(json['pos'] as Map<String, dynamic>)
+          ..user = json['user'] == null
+              ? null
+              : PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType$UserType
+                  .fromJson(json['user'] as Map<String, dynamic>);
+
+Map<String, dynamic>
+    _$PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType
+            instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos?.toJson());
+  writeNotNull('user', instance.user?.toJson());
+  return val;
+}
+
+PerformChallengeByUser$Mutation$ResponseDtoType
+    _$PerformChallengeByUser$Mutation$ResponseDtoTypeFromJson(
+            Map<String, dynamic> json) =>
+        PerformChallengeByUser$Mutation$ResponseDtoType()
+          ..id = json['id'] as String
+          ..executor =
+              PerformChallengeByUser$Mutation$ResponseDtoType$UserType.fromJson(
+                  json['executor'] as Map<String, dynamic>)
+          ..answers =
+              PerformChallengeByUser$Mutation$ResponseDtoType$Answers.fromJson(
+                  json['answers'] as Map<String, dynamic>)
+          ..target =
+              PerformChallengeByUser$Mutation$ResponseDtoType$TargetDtoType
+                  .fromJson(json['target'] as Map<String, dynamic>)
+          ..createdAt = DateTime.parse(json['createdAt'] as String)
+          ..updatedAt = DateTime.parse(json['updatedAt'] as String);
+
+Map<String, dynamic> _$PerformChallengeByUser$Mutation$ResponseDtoTypeToJson(
+        PerformChallengeByUser$Mutation$ResponseDtoType instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'executor': instance.executor.toJson(),
+      'answers': instance.answers.toJson(),
+      'target': instance.target.toJson(),
+      'createdAt': instance.createdAt.toIso8601String(),
+      'updatedAt': instance.updatedAt.toIso8601String(),
+    };
+
+PerformChallengeByUser$Mutation _$PerformChallengeByUser$MutationFromJson(
+        Map<String, dynamic> json) =>
+    PerformChallengeByUser$Mutation()
+      ..performChallengeByUser =
+          PerformChallengeByUser$Mutation$ResponseDtoType.fromJson(
+              json['performChallengeByUser'] as Map<String, dynamic>);
+
+Map<String, dynamic> _$PerformChallengeByUser$MutationToJson(
+        PerformChallengeByUser$Mutation instance) =>
+    <String, dynamic>{
+      'performChallengeByUser': instance.performChallengeByUser.toJson(),
+    };
+
+ResponseInput _$ResponseInputFromJson(Map<String, dynamic> json) =>
+    ResponseInput(
+      question: json['question'] as String,
+      target: json['target'] == null
+          ? null
+          : TargetInput.fromJson(json['target'] as Map<String, dynamic>),
+      answers:
+          (json['answers'] as List<dynamic>).map((e) => e as String).toList(),
+    );
+
+Map<String, dynamic> _$ResponseInputToJson(ResponseInput instance) {
+  final val = <String, dynamic>{
+    'question': instance.question,
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('target', instance.target?.toJson());
+  val['answers'] = instance.answers;
+  return val;
+}
+
+TargetInput _$TargetInputFromJson(Map<String, dynamic> json) => TargetInput(
+      pos: json['pos'] as String?,
+      user: json['user'] as String?,
+    );
+
+Map<String, dynamic> _$TargetInputToJson(TargetInput instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('pos', instance.pos);
+  writeNotNull('user', instance.user);
+  return val;
+}
+
 GetChallengesPaginatedArguments _$GetChallengesPaginatedArgumentsFromJson(
         Map<String, dynamic> json) =>
     GetChallengesPaginatedArguments(
@@ -12355,4 +25103,22 @@ Map<String, dynamic> _$DeleteChallengeArgumentsToJson(
         DeleteChallengeArguments instance) =>
     <String, dynamic>{
       'id': instance.id,
+    };
+
+PerformChallengeByUserArguments _$PerformChallengeByUserArgumentsFromJson(
+        Map<String, dynamic> json) =>
+    PerformChallengeByUserArguments(
+      challengeId: json['challengeId'] as String,
+      jockers:
+          (json['jockers'] as List<dynamic>).map((e) => e as String).toList(),
+      response:
+          ResponseInput.fromJson(json['response'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$PerformChallengeByUserArgumentsToJson(
+        PerformChallengeByUserArguments instance) =>
+    <String, dynamic>{
+      'challengeId': instance.challengeId,
+      'jockers': instance.jockers,
+      'response': instance.response.toJson(),
     };
