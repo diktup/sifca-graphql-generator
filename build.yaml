@@ -254,3 +254,6 @@ targets:
             - schema: lib/schema.graphql
               queries_glob: lib/graphql/gamification-challenge-challenge.graphql
               output: lib/dart/gamification-challenge-challenge.graphql.dart
+            - schema: lib/schema.graphql
+              queries_glob: lib/graphql/forms-question.graphql
+              output: lib/dart/forms-question.graphql.dart
