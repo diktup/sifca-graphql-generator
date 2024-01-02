@@ -131,7 +131,6 @@ query pointOfSale($id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -477,7 +476,6 @@ query pointOfSale($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -588,7 +586,6 @@ query pointOfSale($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -622,8 +619,8 @@ query pointOfSale($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1219,7 +1216,6 @@ adminName
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1253,8 +1249,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1330,7 +1326,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1364,7 +1359,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -1680,7 +1675,6 @@ query pointOfSaleByOrigin($website: String!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -2026,7 +2020,6 @@ query pointOfSaleByOrigin($website: String!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2137,7 +2130,6 @@ query pointOfSaleByOrigin($website: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2171,8 +2163,8 @@ query pointOfSaleByOrigin($website: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2768,7 +2760,6 @@ adminName
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2802,8 +2793,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2879,7 +2870,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2913,7 +2903,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -3232,7 +3222,6 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3578,7 +3567,6 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3613,7 +3601,6 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -3690,7 +3677,6 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4321,7 +4307,6 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4432,7 +4417,6 @@ query getPointOfSalesPagination($pagination: PaginationInput, $posCategory: ID) 
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -4786,7 +4770,6 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -5132,7 +5115,6 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -5167,7 +5149,6 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -5244,7 +5225,6 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -5875,7 +5855,6 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -5986,7 +5965,6 @@ query searchPos($pagination: PaginationInput, $searchString: String!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -6340,7 +6318,6 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -6686,7 +6663,6 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -6721,7 +6697,6 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -6798,7 +6773,6 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -7429,7 +7403,6 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -7540,7 +7513,6 @@ query findPOSNearbyPagination($pagination: PaginationInput, $rad: Float!, $lat: 
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -7908,7 +7880,6 @@ query searchPOSNearbyPagination(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -8254,7 +8225,6 @@ query searchPOSNearbyPagination(
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -8289,7 +8259,6 @@ query searchPOSNearbyPagination(
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -8366,7 +8335,6 @@ query searchPOSNearbyPagination(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -8997,7 +8965,6 @@ query searchPOSNearbyPagination(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -9108,7 +9075,6 @@ query searchPOSNearbyPagination(
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -9465,7 +9431,6 @@ mutation createPointOfSale($input: PointOfSaleInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -9811,7 +9776,6 @@ mutation createPointOfSale($input: PointOfSaleInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -9922,7 +9886,6 @@ mutation createPointOfSale($input: PointOfSaleInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -9956,8 +9919,8 @@ mutation createPointOfSale($input: PointOfSaleInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -10553,7 +10516,6 @@ adminName
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -10587,8 +10549,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -10664,7 +10626,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -10698,7 +10659,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -11014,7 +10975,6 @@ mutation updatePointOfSale($input: PointOfSaleInput!, $id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -11360,7 +11320,6 @@ mutation updatePointOfSale($input: PointOfSaleInput!, $id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -11471,7 +11430,6 @@ mutation updatePointOfSale($input: PointOfSaleInput!, $id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -11505,8 +11463,8 @@ mutation updatePointOfSale($input: PointOfSaleInput!, $id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -12102,7 +12060,6 @@ adminName
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -12136,8 +12093,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -12213,7 +12170,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -12247,7 +12203,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -12563,7 +12519,6 @@ mutation deletePointOfSale($id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -12909,7 +12864,6 @@ mutation deletePointOfSale($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -13020,7 +12974,6 @@ mutation deletePointOfSale($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -13054,8 +13007,8 @@ mutation deletePointOfSale($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -13651,7 +13604,6 @@ adminName
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -13685,8 +13637,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -13762,7 +13714,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -13796,7 +13747,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -14113,7 +14064,6 @@ subscription pointOfSaleCreated {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -14459,7 +14409,6 @@ subscription pointOfSaleCreated {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -14570,7 +14519,6 @@ subscription pointOfSaleCreated {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -14604,8 +14552,8 @@ subscription pointOfSaleCreated {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -15201,7 +15149,6 @@ adminName
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -15235,8 +15182,8 @@ adminName
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -15312,7 +15259,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -15346,7 +15292,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population

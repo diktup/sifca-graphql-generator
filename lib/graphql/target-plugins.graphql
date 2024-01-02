@@ -35,7 +35,17 @@ query getTargetPlugins {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -77,7 +87,17 @@ query targetPlugin($id: ID!) {
       createdAt
       updatedAt
     }
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -119,7 +139,17 @@ query findPluginByTargetAndPlugin($id: ID!, $target: TargetACIInput!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -161,7 +191,17 @@ query getTargetPluginsByTarget($target: TargetACIInput!) {
       createdAt
       updatedAt
     }
-     
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -204,7 +244,17 @@ mutation createTargetPlugin($input: TargetPluginInput!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -246,7 +296,17 @@ mutation updateTargetPlugin($input: TargetPluginUpdateInput!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

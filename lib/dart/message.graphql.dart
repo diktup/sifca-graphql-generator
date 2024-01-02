@@ -138,7 +138,8 @@ class GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$
       _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -589,7 +590,8 @@ class GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$
       _$GetMessagesByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1086,7 +1088,8 @@ class SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageTyp
       _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1537,7 +1540,8 @@ class SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageTyp
       _$SearchMessageByMessageGroupPagination$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1968,7 +1972,8 @@ class GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatT
       _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2419,7 +2424,8 @@ class GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$Message
       _$GetMessagesByMemberPaginated$Query$MessagePaginateType$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2828,7 +2834,8 @@ class CreateMessage$Mutation$MessageType$LonLatType extends JsonSerializable
           Map<String, dynamic> json) =>
       _$CreateMessage$Mutation$MessageType$LonLatTypeFromJson(json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3274,7 +3281,8 @@ class CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLat
       _$CreateMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3616,14 +3624,15 @@ class PictureInput extends JsonSerializable with EquatableMixin {
 @JsonSerializable(explicitToJson: true)
 class LonLatInput extends JsonSerializable with EquatableMixin {
   LonLatInput({
-    required this.type,
+    this.type,
     required this.coordinates,
   });
 
   factory LonLatInput.fromJson(Map<String, dynamic> json) =>
       _$LonLatInputFromJson(json);
 
-  late String type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   late List<double> coordinates;
 
@@ -3759,7 +3768,8 @@ class SendMessageToTarget$Mutation$MessageType$LonLatType
           Map<String, dynamic> json) =>
       _$SendMessageToTarget$Mutation$MessageType$LonLatTypeFromJson(json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4207,7 +4217,8 @@ class SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$
       _$SendMessageToTarget$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4595,7 +4606,8 @@ class CreateDirectMessage$Mutation$MessageType$LonLatType
           Map<String, dynamic> json) =>
       _$CreateDirectMessage$Mutation$MessageType$LonLatTypeFromJson(json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5043,7 +5055,8 @@ class CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$
       _$CreateDirectMessage$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5445,7 +5458,8 @@ class MarkMessageAsSeen$Mutation$MessageType$LonLatType extends JsonSerializable
           Map<String, dynamic> json) =>
       _$MarkMessageAsSeen$Mutation$MessageType$LonLatTypeFromJson(json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5893,7 +5907,8 @@ class MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$Lo
       _$MarkMessageAsSeen$Mutation$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6322,7 +6337,8 @@ class ListenForNewMessage$Subscription$MessageType$LonLatType
           Map<String, dynamic> json) =>
       _$ListenForNewMessage$Subscription$MessageType$LonLatTypeFromJson(json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6772,7 +6788,8 @@ class ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageT
       _$ListenForNewMessage$Subscription$MessageType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7381,7 +7398,8 @@ class ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType
       _$ListenForMessageGroupUpdated$Subscription$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7561,6 +7579,15 @@ enum Gender {
   female,
   @JsonValue('PREFER_NOT_TO_SAY')
   preferNotToSay,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }

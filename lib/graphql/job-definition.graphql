@@ -6,7 +6,17 @@ query getJobDefinitions {
     department {
       id
       name
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -26,7 +36,64 @@ query getJobDefinitions {
       description
       descriptionList
     }
-   
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        title
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -39,7 +106,17 @@ query jobDefinition($id: ID!) {
     department {
       id
       name
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -59,7 +136,64 @@ query jobDefinition($id: ID!) {
       description
       descriptionList
     }
-    
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        title
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -72,7 +206,17 @@ query getJobDefinitionsByTarget($target: TargetACIInput!) {
     department {
       id
       name
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -92,7 +236,64 @@ query getJobDefinitionsByTarget($target: TargetACIInput!) {
       description
       descriptionList
     }
-    
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        title
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -108,7 +309,17 @@ query getJobDefinitionsByTargetPagination($target: TargetACIInput!, $pagination:
       department {
         id
         name
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -128,7 +339,64 @@ query getJobDefinitionsByTargetPagination($target: TargetACIInput!, $pagination:
         description
         descriptionList
       }
-      
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -150,7 +418,17 @@ query searchJobDefinitionsByTarget(
       department {
         id
         name
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -170,7 +448,64 @@ query searchJobDefinitionsByTarget(
         description
         descriptionList
       }
-      
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -191,7 +526,17 @@ query getJobDefinitionsByTargetAndStatusPagination(
       department {
         id
         name
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -211,7 +556,64 @@ query getJobDefinitionsByTargetAndStatusPagination(
         description
         descriptionList
       }
-      
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -226,10 +628,10 @@ query sendJobDefinitionsBymail(
   $target: TargetACIInput!
   $status: [JobDefinitionStatusEnum!]
   $searchString: String
-  $email: String!
+  $emails: [String!]
   $subject: String!
 ) {
-  sendJobDefinitionsBymail(target: $target, status: $status, searchString: $searchString, email: $email, subject: $subject) {
+  sendJobDefinitionsBymail(target: $target, status: $status, searchString: $searchString, emails: $emails, subject: $subject) {
     accepted
     rejected
     response
@@ -248,7 +650,17 @@ mutation createJobDefinition($input: JobDefinitionInput!) {
     department {
       id
       name
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -268,7 +680,64 @@ mutation createJobDefinition($input: JobDefinitionInput!) {
       description
       descriptionList
     }
-   
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        title
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -281,7 +750,17 @@ mutation updateJobDefinition($id: ID!, $input: JobDefinitionUpdateInput!) {
     department {
       id
       name
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -301,7 +780,64 @@ mutation updateJobDefinition($id: ID!, $input: JobDefinitionUpdateInput!) {
       description
       descriptionList
     }
-   
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        title
+        specs {
+          key
+          value
+        }
+        description {
+          description
+          descriptionList
+        }
+        responsibility {
+          description
+          descriptionList
+        }
+        offer {
+          description
+          descriptionList
+        }
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

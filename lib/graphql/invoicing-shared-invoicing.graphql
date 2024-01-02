@@ -56,6 +56,36 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -128,6 +158,37 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
               isMultipleChoice
               pixel {
                 pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
               }
             }
           }
@@ -203,7 +264,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -304,7 +364,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -564,7 +623,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -675,7 +733,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -902,7 +959,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1030,7 +1086,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1131,7 +1186,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1391,7 +1445,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1502,7 +1555,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -1729,7 +1781,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1857,7 +1908,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1958,7 +2008,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2218,7 +2267,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2329,7 +2377,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -2556,7 +2603,6 @@ query getRentalsInPeriod($input: RentalFilterInput!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -2698,6 +2744,36 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           createdAt
           updatedAt
@@ -2770,6 +2846,37 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                 isMultipleChoice
                 pixel {
                   pixelAttribute
+                }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
                 }
               }
             }
@@ -2845,7 +2952,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2946,7 +3052,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3206,7 +3311,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -3317,7 +3421,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -3544,7 +3647,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3672,7 +3774,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3773,7 +3874,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4033,7 +4133,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -4144,7 +4243,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -4371,7 +4469,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -4499,7 +4596,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4600,7 +4696,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4860,7 +4955,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -4971,7 +5065,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -5198,7 +5291,6 @@ query getRentalsInPeriodPaginated($input: RentalFilterInput!, $pagination: Pagin
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates

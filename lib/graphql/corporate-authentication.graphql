@@ -48,6 +48,34 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
       y
       alt
     }
+    permission {
+      id
+      name
+      permissions {
+        permission {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        read
+        write
+        create
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
     languages {
       id
       name
@@ -105,7 +133,6 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -206,7 +233,6 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -307,7 +333,6 @@ query getCorporateUsersByTarget($target: TargetACIInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -846,6 +871,34 @@ query loginForTarget($login: String, $phone: IPhoneInput, $password: String!, $t
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -903,7 +956,6 @@ query loginForTarget($login: String, $phone: IPhoneInput, $password: String!, $t
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1004,7 +1056,6 @@ query loginForTarget($login: String, $phone: IPhoneInput, $password: String!, $t
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1105,7 +1156,6 @@ query loginForTarget($login: String, $phone: IPhoneInput, $password: String!, $t
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1644,6 +1694,34 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -1701,7 +1779,6 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1802,7 +1879,6 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1903,7 +1979,6 @@ query isLoginForTargetExist($input: IsLoginForTargetExistInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2455,6 +2530,34 @@ query searchCorporateUsersByTarget(
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -2512,7 +2615,6 @@ query searchCorporateUsersByTarget(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2613,7 +2715,6 @@ query searchCorporateUsersByTarget(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2714,7 +2815,6 @@ query searchCorporateUsersByTarget(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3299,6 +3399,34 @@ mutation validateEmailForTarget($token: String!) {
       y
       alt
     }
+    permission {
+      id
+      name
+      permissions {
+        permission {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        read
+        write
+        create
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
     languages {
       id
       name
@@ -3356,7 +3484,6 @@ mutation validateEmailForTarget($token: String!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -3457,7 +3584,6 @@ mutation validateEmailForTarget($token: String!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -3558,7 +3684,6 @@ mutation validateEmailForTarget($token: String!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4094,6 +4219,34 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
       y
       alt
     }
+    permission {
+      id
+      name
+      permissions {
+        permission {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        read
+        write
+        create
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
     languages {
       id
       name
@@ -4151,7 +4304,6 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4252,7 +4404,6 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4353,7 +4504,6 @@ mutation processWelcomeMailForTarget($token: String!, $password: String) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4889,6 +5039,34 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
       y
       alt
     }
+    permission {
+      id
+      name
+      permissions {
+        permission {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        read
+        write
+        create
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
     languages {
       id
       name
@@ -4946,7 +5124,6 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -5047,7 +5224,6 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -5148,7 +5324,6 @@ mutation saveCurrentCorporateUserStatus($status: UserStatus!, $target: TargetACI
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -5684,6 +5859,34 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
       y
       alt
     }
+    permission {
+      id
+      name
+      permissions {
+        permission {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        read
+        write
+        create
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
     languages {
       id
       name
@@ -5741,7 +5944,6 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -5842,7 +6044,6 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -5943,7 +6144,6 @@ mutation resetPasswordForTarget($password: String!, $token: String!, $target: Ta
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -6493,6 +6693,34 @@ mutation registerForTarget($input: UserWithTargetInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -6550,7 +6778,6 @@ mutation registerForTarget($input: UserWithTargetInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -6651,7 +6878,6 @@ mutation registerForTarget($input: UserWithTargetInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -6752,7 +6978,6 @@ mutation registerForTarget($input: UserWithTargetInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -7289,6 +7514,34 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
       y
       alt
     }
+    permission {
+      id
+      name
+      permissions {
+        permission {
+          id
+          name
+          createdAt
+          updatedAt
+        }
+        read
+        write
+        create
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
+    }
     languages {
       id
       name
@@ -7346,7 +7599,6 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -7447,7 +7699,6 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -7548,7 +7799,6 @@ mutation addUserForTarget($input: UserWithTargetInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -8088,6 +8338,34 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -8145,7 +8423,6 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -8246,7 +8523,6 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -8347,7 +8623,6 @@ subscription listenForCorporateUserStatusChanged($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates

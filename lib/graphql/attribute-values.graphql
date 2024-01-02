@@ -6,6 +6,37 @@ query getAttributeValuesPagination($pagination: PaginationInput) {
       id
       label
       externalId
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
       createdAt
       updatedAt
       attribute {
@@ -20,8 +51,49 @@ query getAttributeValuesPagination($pagination: PaginationInput) {
         pixel {
           pixelAttribute
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
       }
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -33,6 +105,37 @@ query getAttributeValuesByTargetPaginated($target: TargetACIInput!, $pagination:
       id
       label
       externalId
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
       createdAt
       updatedAt
       attribute {
@@ -47,8 +150,49 @@ query getAttributeValuesByTargetPaginated($target: TargetACIInput!, $pagination:
         pixel {
           pixelAttribute
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
       }
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -57,6 +201,37 @@ query getAttributeValues {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -71,8 +246,49 @@ query getAttributeValues {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query getAttributeValuesByTarget($target: TargetACIInput!) {
@@ -80,6 +296,37 @@ query getAttributeValuesByTarget($target: TargetACIInput!) {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -94,8 +341,49 @@ query getAttributeValuesByTarget($target: TargetACIInput!) {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query getAttributeValuesByAttribute($attributId: ID!) {
@@ -103,6 +391,37 @@ query getAttributeValuesByAttribute($attributId: ID!) {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -117,8 +436,49 @@ query getAttributeValuesByAttribute($attributId: ID!) {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query attributeValue($id: ID!) {
@@ -126,6 +486,37 @@ query attributeValue($id: ID!) {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -140,8 +531,49 @@ query attributeValue($id: ID!) {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query searchAttributeValue($pagination: PaginationInput, $searchString: String!) {
@@ -152,6 +584,37 @@ query searchAttributeValue($pagination: PaginationInput, $searchString: String!)
       id
       label
       externalId
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
       createdAt
       updatedAt
       attribute {
@@ -166,8 +629,49 @@ query searchAttributeValue($pagination: PaginationInput, $searchString: String!)
         pixel {
           pixelAttribute
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
       }
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -179,6 +683,37 @@ query getAttributeValuesByAttributePaginated($pagination: PaginationInput, $attr
       id
       label
       externalId
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
       createdAt
       updatedAt
       attribute {
@@ -193,8 +728,49 @@ query getAttributeValuesByAttributePaginated($pagination: PaginationInput, $attr
         pixel {
           pixelAttribute
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
       }
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -206,6 +782,37 @@ query searchAttributeValueByTarget($pagination: PaginationInput, $searchString: 
       id
       label
       externalId
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
       createdAt
       updatedAt
       attribute {
@@ -220,8 +827,49 @@ query searchAttributeValueByTarget($pagination: PaginationInput, $searchString: 
         pixel {
           pixelAttribute
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
       }
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -231,6 +879,37 @@ query findAttributeValueByExternalIdAndTarget($externalId: String!, $target: Tar
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -245,8 +924,49 @@ query findAttributeValueByExternalIdAndTarget($externalId: String!, $target: Tar
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 
@@ -255,6 +975,37 @@ mutation syncOneAttributeValue($input: AttributeValueInput!) {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -269,8 +1020,49 @@ mutation syncOneAttributeValue($input: AttributeValueInput!) {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 
@@ -279,6 +1071,37 @@ mutation createAttributeValue($input: AttributeValueInput!) {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -293,8 +1116,49 @@ mutation createAttributeValue($input: AttributeValueInput!) {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation updateAttributeValue($input: AttributeValueUpdateInput!) {
@@ -302,6 +1166,37 @@ mutation updateAttributeValue($input: AttributeValueUpdateInput!) {
     id
     label
     externalId
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
     createdAt
     updatedAt
     attribute {
@@ -316,8 +1211,49 @@ mutation updateAttributeValue($input: AttributeValueUpdateInput!) {
       pixel {
         pixelAttribute
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation deleteAttributeValue($id: ID!) {

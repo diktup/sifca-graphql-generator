@@ -223,7 +223,8 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLat
       _$UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -557,8 +558,6 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -573,7 +572,7 @@ class UpdateCurrentUserLogins$Mutation$LoginType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1233,6 +1232,7 @@ class UserInput extends JsonSerializable with EquatableMixin {
     this.email,
     this.username,
     this.phone,
+    this.permission,
     required this.password,
     this.picture,
     this.pictures,
@@ -1277,6 +1277,8 @@ class UserInput extends JsonSerializable with EquatableMixin {
   String? username;
 
   IPhoneInput? phone;
+
+  String? permission;
 
   late String password;
 
@@ -1358,6 +1360,7 @@ class UserInput extends JsonSerializable with EquatableMixin {
         email,
         username,
         phone,
+        permission,
         password,
         picture,
         pictures,
@@ -1542,7 +1545,6 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
     this.city,
     this.country,
     this.state,
-    this.addressLine,
     this.location,
   });
 
@@ -1561,13 +1563,11 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
 
   String? state;
 
-  String? addressLine;
-
   LonLatInput? location;
 
   @override
   List<Object?> get props =>
-      [owner, address, postCode, city, country, state, addressLine, location];
+      [owner, address, postCode, city, country, state, location];
 
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
@@ -1618,14 +1618,15 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 @JsonSerializable(explicitToJson: true)
 class LonLatInput extends JsonSerializable with EquatableMixin {
   LonLatInput({
-    required this.type,
+    this.type,
     required this.coordinates,
   });
 
   factory LonLatInput.fromJson(Map<String, dynamic> json) =>
       _$LonLatInputFromJson(json);
 
-  late String type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   late List<double> coordinates;
 
@@ -1824,6 +1825,15 @@ enum MaritalStatus {
   inRelationship,
   @JsonValue('PREFER_NOT_TO_SAY')
   preferNotToSay,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -2606,13 +2616,6 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -3221,13 +3224,6 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -3830,13 +3826,6 @@ final UPDATE_CURRENT_USER_LOGINS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],

@@ -56,6 +56,34 @@ query getCoupons {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -113,7 +141,6 @@ query getCoupons {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -214,7 +241,6 @@ query getCoupons {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -315,7 +341,6 @@ query getCoupons {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -804,7 +829,19 @@ query getCoupons {
       amount
       discountType
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 query coupon($id: ID!) {
@@ -865,6 +902,34 @@ query coupon($id: ID!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -922,7 +987,6 @@ query coupon($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1023,7 +1087,6 @@ query coupon($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1124,7 +1187,6 @@ query coupon($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1613,7 +1675,19 @@ query coupon($id: ID!) {
       amount
       discountType
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 query isCouponValid($couponCode: String!, $target: TargetACIInput!) {
@@ -1654,7 +1728,19 @@ query isCouponValid($couponCode: String!, $target: TargetACIInput!) {
         amount
         discountType
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
     }
   }
 }
@@ -1697,7 +1783,19 @@ query getPaginatedCoupons($pagination: PaginationInput) {
         amount
         discountType
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
     }
   }
 }
@@ -1759,6 +1857,34 @@ query findCouponsByTarget($target: TargetACIInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -1816,7 +1942,6 @@ query findCouponsByTarget($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1917,7 +2042,6 @@ query findCouponsByTarget($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2018,7 +2142,6 @@ query findCouponsByTarget($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2507,7 +2630,19 @@ query findCouponsByTarget($target: TargetACIInput!) {
       amount
       discountType
     }
-   
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 query findCouponsByTargetWithFilterPaginated(
@@ -2554,7 +2689,19 @@ query findCouponsByTargetWithFilterPaginated(
         amount
         discountType
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
+      createdAt
+      updatedAt
     }
   }
 }
@@ -2616,6 +2763,34 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -2673,7 +2848,6 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2774,7 +2948,6 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2875,7 +3048,6 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3363,7 +3535,20 @@ query findCouponByTargetAndCode($couponCode: String!, $target: TargetACIInput!) 
     discount {
       amount
       discountType
-    } 
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 query getCouponsByExcel($target: TargetACIInput!, $filter: CouponFilterInput, $searchString: String, $path: String) {
@@ -3425,7 +3610,19 @@ mutation createCoupon($input: CouponInput!) {
       amount
       discountType
     }
-     
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
@@ -3464,7 +3661,19 @@ mutation updateCoupon($input: UpdateCouponInput!, $id: ID!) {
       amount
       discountType
     }
-     
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 mutation generateCoupons($input: CouponsInput!) {
@@ -3503,7 +3712,19 @@ mutation generateCoupons($input: CouponsInput!) {
       amount
       discountType
     }
-     
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
@@ -3542,7 +3763,19 @@ mutation redeemCoupon($couponCode: String!, $target: TargetACIInput!) {
       amount
       discountType
     }
-     
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }
 mutation disableCoupon($id: String!) {
@@ -3581,6 +3814,18 @@ mutation disableCoupon($id: String!) {
       amount
       discountType
     }
-     
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    createdAt
+    updatedAt
   }
 }

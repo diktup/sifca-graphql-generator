@@ -4,7 +4,7 @@ query getCollaborationAnalyticsStats($input: AnalyticsDashboardInput!) {
       value
       percentage
     }
-    activeBoards {
+    activeBoardCards {
       value
       percentage
     }
@@ -14,7 +14,7 @@ query getCollaborationAnalyticsStats($input: AnalyticsDashboardInput!) {
     }
   }
 }
-query getCollaborationProjectsOverview($input: AnalyticsDashboardInput!) {
+query getCollaborationProjectsOverview($input: CRMDashboardInput!) {
   getCollaborationProjectsOverview(input: $input) {
     totalProjects
     activeProjects
@@ -29,22 +29,22 @@ query getCollaborationProjectsOverview($input: AnalyticsDashboardInput!) {
 }
 query getCollaborationProjectsStatus($input: AnalyticsDashboardInput!) {
   getCollaborationProjectsStatus(input: $input) {
-    totalProjects
     newProjects
+    totalProjects
     chart {
-      completed {
+      ACTIVE {
         count
         hours
       }
-      inProgress {
+      BLOCKED {
         count
         hours
       }
-      open {
+      CANCELLED {
         count
         hours
       }
-      canceled {
+      DELIVERED {
         count
         hours
       }

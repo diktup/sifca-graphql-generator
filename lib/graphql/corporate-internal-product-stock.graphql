@@ -12,7 +12,17 @@ query getStocks {
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -93,7 +103,6 @@ query getStocks {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -204,7 +213,6 @@ query getStocks {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -431,7 +439,6 @@ query getStocks {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -601,7 +608,17 @@ query getStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $ware
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -682,7 +699,6 @@ query getStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $ware
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -793,7 +809,6 @@ query getStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $ware
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1020,7 +1035,6 @@ query getStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $ware
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1181,7 +1195,17 @@ query getStocksByTarget($pagination: PaginationInput, $target: TargetACIInput!, 
         quantityToSellOnFacebook
       }
 
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       warehouse {
         id
         name
@@ -1262,7 +1286,6 @@ query getStocksByTarget($pagination: PaginationInput, $target: TargetACIInput!, 
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1373,7 +1396,6 @@ query getStocksByTarget($pagination: PaginationInput, $target: TargetACIInput!, 
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -1600,7 +1622,6 @@ query getStocksByTarget($pagination: PaginationInput, $target: TargetACIInput!, 
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1778,7 +1799,17 @@ query searchStocksByTarget(
         quantityToSellOnFacebook
       }
 
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       warehouse {
         id
         name
@@ -1859,7 +1890,6 @@ query searchStocksByTarget(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1970,7 +2000,6 @@ query searchStocksByTarget(
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -2197,7 +2226,6 @@ query searchStocksByTarget(
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2372,7 +2400,18 @@ query searchSimpleStocksByTarget(
       pixel {
         quantityToSellOnFacebook
       }
- 
+
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       warehouse {
         id
         name
@@ -2453,7 +2492,6 @@ query searchSimpleStocksByTarget(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -2564,7 +2602,6 @@ query searchSimpleStocksByTarget(
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -2791,7 +2828,6 @@ query searchSimpleStocksByTarget(
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2951,7 +2987,17 @@ mutation createStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String,
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -3032,7 +3078,6 @@ mutation createStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String,
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3143,7 +3188,6 @@ mutation createStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String,
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3370,7 +3414,6 @@ mutation createStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String,
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3529,7 +3572,17 @@ mutation updateStock($id: ID!, $stockCapacity: Int, $minimumStockQuantity: Int, 
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -3610,7 +3663,6 @@ mutation updateStock($id: ID!, $stockCapacity: Int, $minimumStockQuantity: Int, 
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3721,7 +3773,6 @@ mutation updateStock($id: ID!, $stockCapacity: Int, $minimumStockQuantity: Int, 
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3948,7 +3999,6 @@ mutation updateStock($id: ID!, $stockCapacity: Int, $minimumStockQuantity: Int, 
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4107,7 +4157,17 @@ mutation resetStock($id: ID!) {
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -4188,7 +4248,6 @@ mutation resetStock($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4299,7 +4358,6 @@ mutation resetStock($id: ID!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -4526,7 +4584,6 @@ mutation resetStock($id: ID!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4690,7 +4747,17 @@ mutation addToStock($id: ID!, $quantity: Int!, $warehouse: ID) {
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -4771,7 +4838,6 @@ mutation addToStock($id: ID!, $quantity: Int!, $warehouse: ID) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4882,7 +4948,6 @@ mutation addToStock($id: ID!, $quantity: Int!, $warehouse: ID) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -5109,7 +5174,6 @@ mutation addToStock($id: ID!, $quantity: Int!, $warehouse: ID) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -5279,7 +5343,17 @@ mutation removeFromStock($id: ID!, $quantity: Int!, $warehouse: ID) {
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -5360,7 +5434,6 @@ mutation removeFromStock($id: ID!, $quantity: Int!, $warehouse: ID) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -5471,7 +5544,6 @@ mutation removeFromStock($id: ID!, $quantity: Int!, $warehouse: ID) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -5698,7 +5770,6 @@ mutation removeFromStock($id: ID!, $quantity: Int!, $warehouse: ID) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -5856,7 +5927,17 @@ mutation addToStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcode: St
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -5937,7 +6018,6 @@ mutation addToStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcode: St
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -6048,7 +6128,6 @@ mutation addToStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcode: St
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -6275,7 +6354,6 @@ mutation addToStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcode: St
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -6433,7 +6511,17 @@ mutation removeFromStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcod
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -6514,7 +6602,6 @@ mutation removeFromStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcod
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -6625,7 +6712,6 @@ mutation removeFromStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcod
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -6852,7 +6938,6 @@ mutation removeFromStockCustom($target: TargetACIInput!, $barcodeId: ID, $barcod
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -7010,7 +7095,17 @@ mutation initStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $
       quantityToSellOnFacebook
     }
 
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     warehouse {
       id
       name
@@ -7091,7 +7186,6 @@ mutation initStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -7202,7 +7296,6 @@ mutation initStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -7429,7 +7522,6 @@ mutation initStock($target: TargetACIInput!, $barcodeId: ID, $barcode: String, $
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -7578,6 +7670,36 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
     id
     name
     price
+    prices {
+      price
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+    }
     barcode
     condition
     status
@@ -7810,7 +7932,17 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
             }
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
     }
     internalProduct {
@@ -8055,7 +8187,6 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -8181,7 +8312,6 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -8292,7 +8422,6 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -8516,7 +8645,17 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
             updatedAt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
       productAttributes {
         id
@@ -8570,9 +8709,29 @@ mutation createBarcodeForTargetWithStock($input: BarcodeInput!, $target: TargetA
               label
             }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
     }
   }

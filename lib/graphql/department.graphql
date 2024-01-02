@@ -2,7 +2,17 @@ query getDepartments {
   getDepartments {
     id
     name
-   
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -11,7 +21,17 @@ query department($id: ID!) {
   department(id: $id) {
     id
     name
- 
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -20,7 +40,17 @@ query getDepartmentsByTarget($target: TargetACIInput!) {
   getDepartmentsByTarget(target: $target) {
     id
     name
- 
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -32,7 +62,17 @@ query searchDepartmentsByTarget($searchString: String, $target: TargetACIInput!,
     objects {
       id
       name
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -42,7 +82,18 @@ query searchDepartmentsByTarget($searchString: String, $target: TargetACIInput!,
 mutation createDepartment($input: DepartmentInput!) {
   createDepartment(input: $input) {
     id
- name
+    name
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -51,7 +102,17 @@ mutation updateDepartment($id: ID!, $input: DepartmentInput!) {
   updateDepartment(id: $id, input: $input) {
     id
     name
- 
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

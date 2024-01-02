@@ -61,6 +61,34 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -118,7 +146,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -153,7 +180,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -220,7 +246,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -255,7 +280,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -322,7 +346,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -357,7 +380,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -808,11 +830,10 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
         hobbies
         interests
       }
-      deliveryAddress {
+      billingAddress {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -908,6 +929,110 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
             countryCode
           }
         }
+      }
+      deliveryAddress {
+        city
+        address
+        postCode
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      extraFees {
+        key
+        value
       }
       installments {
         _id
@@ -1256,7 +1381,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
         deadline
       }
       shoppingCart {
-        deliveryFees
         price {
           net {
             beforeReduction
@@ -1266,8 +1390,22 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
             beforeReduction
             afterReduction
           }
+          toPay {
+            beforeReduction
+            afterReduction
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         discount {
           amount
           discountType
@@ -1294,6 +1432,36 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -1449,6 +1617,37 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -1463,8 +1662,49 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -1509,6 +1749,37 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -1678,7 +1949,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -1804,7 +2074,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -1915,7 +2184,6 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -2139,7 +2407,17 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                     updatedAt
                   }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -2162,12 +2440,90 @@ query findTargetOrders($input: MarketPlaceOrderFilterInput!, $searchString: Stri
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
+        }
+      }
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
         }
       }
     }
@@ -2236,6 +2592,34 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -2293,7 +2677,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2328,7 +2711,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -2395,7 +2777,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2430,7 +2811,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -2497,7 +2877,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2532,7 +2911,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -2983,11 +3361,10 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
         hobbies
         interests
       }
-      deliveryAddress {
+      billingAddress {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3083,6 +3460,110 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
             countryCode
           }
         }
+      }
+      deliveryAddress {
+        city
+        address
+        postCode
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      extraFees {
+        key
+        value
       }
       installments {
         _id
@@ -3431,7 +3912,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
         deadline
       }
       shoppingCart {
-        deliveryFees
         price {
           net {
             beforeReduction
@@ -3441,8 +3921,22 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
             beforeReduction
             afterReduction
           }
+          toPay {
+            beforeReduction
+            afterReduction
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         discount {
           amount
           discountType
@@ -3469,6 +3963,36 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -3624,6 +4148,37 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -3638,8 +4193,49 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -3684,6 +4280,37 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -3853,7 +4480,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -3979,7 +4605,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -4090,7 +4715,6 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -4314,7 +4938,17 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                     updatedAt
                   }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -4337,12 +4971,90 @@ query findTargetOrdersByCurrentUser($target: TargetACIInput!, $pagination: Pagin
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
+        }
+      }
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
         }
       }
     }
@@ -4411,6 +5123,34 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -4468,7 +5208,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4503,7 +5242,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4570,7 +5308,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4605,7 +5342,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4672,7 +5408,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4707,7 +5442,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -5158,11 +5892,10 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
         hobbies
         interests
       }
-      deliveryAddress {
+      billingAddress {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -5258,6 +5991,110 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
             countryCode
           }
         }
+      }
+      deliveryAddress {
+        city
+        address
+        postCode
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      extraFees {
+        key
+        value
       }
       installments {
         _id
@@ -5606,7 +6443,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
         deadline
       }
       shoppingCart {
-        deliveryFees
         price {
           net {
             beforeReduction
@@ -5616,8 +6452,22 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
             beforeReduction
             afterReduction
           }
+          toPay {
+            beforeReduction
+            afterReduction
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         discount {
           amount
           discountType
@@ -5644,6 +6494,36 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -5799,6 +6679,37 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -5813,8 +6724,49 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -5859,6 +6811,37 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -6028,7 +7011,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -6154,7 +7136,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -6265,7 +7246,6 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -6489,7 +7469,17 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                     updatedAt
                   }
                 }
-               
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -6512,12 +7502,90 @@ query getDeliveryTargetOrders($target: TargetACIInput!, $pagination: PaginationI
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
+        }
+      }
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
         }
       }
     }
@@ -6542,6 +7610,37 @@ query sendTargetOrdersBymail($input: MarketPlaceOrderFilterInput!, $emails: [Str
 query getTargetOrderInvoice($orderId: ID!) {
   getTargetOrderInvoice(orderId: $orderId) {
     content
+  }
+}
+query calculateTargetShoppingCart($input: CalculateTargetShoppingCartInput!) {
+  calculateTargetShoppingCart(input: $input) {
+    deliveryFees
+    extraFees {
+      key
+      value
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
   }
 }
 
@@ -6605,6 +7704,34 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -6662,7 +7789,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -6763,7 +7889,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -6864,7 +7989,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -7349,11 +8473,10 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
       hobbies
       interests
     }
-    deliveryAddress {
+    billingAddress {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -7449,6 +8572,110 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
           countryCode
         }
       }
+    }
+    deliveryAddress {
+      city
+      address
+      postCode
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    extraFees {
+      key
+      value
     }
     installments {
       _id
@@ -7797,7 +9024,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
       deadline
     }
     shoppingCart {
-      deliveryFees
       price {
         net {
           beforeReduction
@@ -7807,8 +9033,22 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
           beforeReduction
           afterReduction
         }
+        toPay {
+          beforeReduction
+          afterReduction
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       discount {
         amount
         discountType
@@ -7835,6 +9075,36 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -7990,6 +9260,37 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -8004,8 +9305,49 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -8050,6 +9392,37 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -8219,7 +9592,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -8345,7 +9717,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -8456,7 +9827,6 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -8680,7 +10050,17 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
                   updatedAt
                 }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -8703,12 +10083,90 @@ mutation createTargetOrderByCart($input: MarketPlaceOrderInput!, $target: Target
                 pixel {
                   pixelAttribute
                 }
-                
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
+      }
+    }
+    currency {
+      id
+      name
+      code
+      symbol
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
       }
     }
   }
@@ -8773,6 +10231,34 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -8830,7 +10316,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -8931,7 +10416,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -9032,7 +10516,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -9517,11 +11000,10 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
       hobbies
       interests
     }
-    deliveryAddress {
+    billingAddress {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -9617,6 +11099,110 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
           countryCode
         }
       }
+    }
+    deliveryAddress {
+      city
+      address
+      postCode
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    extraFees {
+      key
+      value
     }
     installments {
       _id
@@ -9965,7 +11551,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
       deadline
     }
     shoppingCart {
-      deliveryFees
       price {
         net {
           beforeReduction
@@ -9975,8 +11560,22 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
           beforeReduction
           afterReduction
         }
+        toPay {
+          beforeReduction
+          afterReduction
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       discount {
         amount
         discountType
@@ -10003,6 +11602,36 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -10158,6 +11787,37 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -10172,8 +11832,49 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -10218,6 +11919,37 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -10387,7 +12119,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -10513,7 +12244,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -10624,7 +12354,6 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -10848,7 +12577,17 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
                   updatedAt
                 }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -10871,12 +12610,90 @@ mutation createTargetOrderWithCart($input: MarketPlaceOrderWithCartInput!) {
                 pixel {
                   pixelAttribute
                 }
-                
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
+      }
+    }
+    currency {
+      id
+      name
+      code
+      symbol
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
       }
     }
   }
@@ -10944,6 +12761,34 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -11001,7 +12846,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -11036,7 +12880,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -11103,7 +12946,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -11138,7 +12980,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -11205,7 +13046,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -11240,7 +13080,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -11691,11 +13530,10 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
         hobbies
         interests
       }
-      deliveryAddress {
+      billingAddress {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -11791,6 +13629,110 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
             countryCode
           }
         }
+      }
+      deliveryAddress {
+        city
+        address
+        postCode
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      extraFees {
+        key
+        value
       }
       installments {
         _id
@@ -12139,7 +14081,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
         deadline
       }
       shoppingCart {
-        deliveryFees
         price {
           net {
             beforeReduction
@@ -12149,8 +14090,22 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
             beforeReduction
             afterReduction
           }
+          toPay {
+            beforeReduction
+            afterReduction
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         discount {
           amount
           discountType
@@ -12177,6 +14132,36 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -12332,6 +14317,37 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -12346,8 +14362,49 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -12392,6 +14449,37 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -12561,7 +14649,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -12687,7 +14774,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -12798,7 +14884,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -13022,7 +15107,17 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                     updatedAt
                   }
                 }
-                 
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -13045,12 +15140,90 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
+        }
+      }
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
         }
       }
     }
@@ -13102,6 +15275,34 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
         x
         y
         alt
+      }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
       }
       languages {
         id
@@ -13160,7 +15361,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -13261,7 +15461,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -13362,7 +15561,6 @@ mutation createTargetOrderWithCartAndRegisterUser($input: MarketPlaceOrderWithCa
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -13861,7 +16059,17 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
     updatedAt
     description
     number
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     order {
       id
       notes
@@ -13921,6 +16129,34 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -13978,7 +16214,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -14013,7 +16248,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -14080,7 +16314,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -14115,7 +16348,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -14182,7 +16414,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -14217,7 +16448,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -14668,11 +16898,10 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
         hobbies
         interests
       }
-      deliveryAddress {
+      billingAddress {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -14768,6 +16997,110 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
             countryCode
           }
         }
+      }
+      deliveryAddress {
+        city
+        address
+        postCode
+        location {
+          type
+          coordinates
+        }
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        state {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        owner {
+          name
+          phone {
+            number
+            countryCode
+          }
+        }
+      }
+      extraFees {
+        key
+        value
       }
       installments {
         _id
@@ -15116,7 +17449,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
         deadline
       }
       shoppingCart {
-        deliveryFees
         price {
           net {
             beforeReduction
@@ -15126,8 +17458,22 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
             beforeReduction
             afterReduction
           }
+          toPay {
+            beforeReduction
+            afterReduction
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         discount {
           amount
           discountType
@@ -15154,6 +17500,36 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -15309,6 +17685,37 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -15323,8 +17730,49 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -15369,6 +17817,37 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -15538,7 +18017,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -15664,7 +18142,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -15775,7 +18252,6 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -15999,7 +18475,17 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                     updatedAt
                   }
                 }
-             
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -16022,12 +18508,90 @@ mutation generateTargetOrderInvoice($orderId: ID!, $dueDate: DateTime!, $descrip
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
+        }
+      }
+      currency {
+        id
+        name
+        code
+        symbol
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
         }
       }
     }
@@ -16093,6 +18657,34 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -16150,7 +18742,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -16251,7 +18842,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -16352,7 +18942,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -16837,11 +19426,10 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
       hobbies
       interests
     }
-    deliveryAddress {
+    billingAddress {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -16937,6 +19525,110 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
           countryCode
         }
       }
+    }
+    deliveryAddress {
+      city
+      address
+      postCode
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    extraFees {
+      key
+      value
     }
     installments {
       _id
@@ -17285,7 +19977,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
       deadline
     }
     shoppingCart {
-      deliveryFees
       price {
         net {
           beforeReduction
@@ -17295,8 +19986,22 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
           beforeReduction
           afterReduction
         }
+        toPay {
+          beforeReduction
+          afterReduction
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       discount {
         amount
         discountType
@@ -17323,6 +20028,36 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -17478,6 +20213,37 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -17492,8 +20258,49 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -17538,6 +20345,37 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -17707,7 +20545,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -17833,7 +20670,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -17944,7 +20780,6 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -18168,7 +21003,17 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
                   updatedAt
                 }
               }
-             
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -18191,12 +21036,90 @@ mutation cancelProductByConsumer($input: MarketPlaceOrderProductInput!) {
                 pixel {
                   pixelAttribute
                 }
-                
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
+      }
+    }
+    currency {
+      id
+      name
+      code
+      symbol
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
       }
     }
   }
@@ -18261,6 +21184,34 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -18318,7 +21269,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -18419,7 +21369,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -18520,7 +21469,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -19005,11 +21953,10 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
       hobbies
       interests
     }
-    deliveryAddress {
+    billingAddress {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -19105,6 +22052,110 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
           countryCode
         }
       }
+    }
+    deliveryAddress {
+      city
+      address
+      postCode
+      location {
+        type
+        coordinates
+      }
+      country {
+        id
+        name
+        code
+        dialCode
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      state {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      owner {
+        name
+        phone {
+          number
+          countryCode
+        }
+      }
+    }
+    extraFees {
+      key
+      value
     }
     installments {
       _id
@@ -19453,7 +22504,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
       deadline
     }
     shoppingCart {
-      deliveryFees
       price {
         net {
           beforeReduction
@@ -19463,8 +22513,22 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
           beforeReduction
           afterReduction
         }
+        toPay {
+          beforeReduction
+          afterReduction
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       discount {
         amount
         discountType
@@ -19491,6 +22555,36 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -19646,6 +22740,37 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -19660,8 +22785,49 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -19706,6 +22872,37 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -19875,7 +23072,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -20001,7 +23197,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -20112,7 +23307,6 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -20336,7 +23530,17 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
                   updatedAt
                 }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -20359,12 +23563,90 @@ mutation cancelProductByTarget($subject: String!, $target: TargetACIInput, $inpu
                 pixel {
                   pixelAttribute
                 }
-                
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
+      }
+    }
+    currency {
+      id
+      name
+      code
+      symbol
+      iconFlag
+      createdAt
+      updatedAt
+      flagSquare {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      flagWide {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
       }
     }
   }

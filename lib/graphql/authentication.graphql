@@ -1,11 +1,50 @@
-mutation updateCurrentUserLogins(
-  $email: String
-  $username: String
-  $phone: IPhoneInput
-) {
-  updateCurrentUserLogins(email: $email, username: $username, phone: $phone) {
+query loginForApp($input: LoginInput!) {
+  loginForApp(input: $input)  {
     accessToken
     expiresIn
+  }
+}
+query login($input: LoginInput!) {
+  login(input: $input) {
+    accessToken
+    expiresIn
+  }
+}
+query loginWithFacebook($token: String!) {
+  loginWithFacebook(token: $token)  {
+    accessToken
+    expiresIn
+  }
+}
+query loginWithGoogle($token: String!) {
+  loginWithGoogle(token: $token)  {
+    accessToken
+    expiresIn
+  }
+}
+query loginWithApple($authorizationData: AuthorizationDataInput!) {
+  loginWithApple(authorizationData: $authorizationData)  {
+    accessToken
+    expiresIn
+  }
+}
+
+mutation register($subject: String!, $input: UserInput!, $brand: EmailTempVariablesBrandInput!) {
+  registerForApp(subject: $subject, brand: $brand, input: $input) {
+    accessToken
+    expiresIn
+  }
+}
+mutation registerForApp($subject: String!, $input: UserInput!, $brand: EmailTempVariablesBrandInput!) {
+  registerForApp(subject: $subject, brand: $brand, input: $input)  {
+    accessToken
+    expiresIn
+  }
+}
+
+subscription listenForUserAuthentication {
+  listenForUserAuthentication {
+    actionType
     user {
       id
       apps
@@ -44,6 +83,7 @@ mutation updateCurrentUserLogins(
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -52,6 +92,35 @@ mutation updateCurrentUserLogins(
         height
         x
         y
+        alt
+      }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
       }
       languages {
         id
@@ -67,6 +136,7 @@ mutation updateCurrentUserLogins(
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -75,6 +145,7 @@ mutation updateCurrentUserLogins(
           height
           x
           y
+          alt
         }
       }
       nationality {
@@ -92,6 +163,7 @@ mutation updateCurrentUserLogins(
           height
           x
           y
+          alt
         }
         flagWide {
           baseUrl
@@ -100,13 +172,13 @@ mutation updateCurrentUserLogins(
           height
           x
           y
+          alt
         }
       }
       billingAddress {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -126,6 +198,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -134,12 +207,12 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-
           adminName
           capital
           population
@@ -206,7 +279,6 @@ mutation updateCurrentUserLogins(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -226,6 +298,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -234,12 +307,12 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-
           adminName
           capital
           population
@@ -306,7 +379,6 @@ mutation updateCurrentUserLogins(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -326,6 +398,7 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
           flagWide {
             baseUrl
@@ -334,12 +407,12 @@ mutation updateCurrentUserLogins(
             height
             x
             y
+            alt
           }
         }
         state {
           id
           name
-
           adminName
           capital
           population
@@ -421,6 +494,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -429,6 +503,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -437,6 +512,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -445,6 +521,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -453,6 +530,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -463,6 +541,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -471,6 +550,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -479,6 +559,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -487,6 +568,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -495,6 +577,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -521,6 +604,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -529,6 +613,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -537,6 +622,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -545,6 +631,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -553,6 +640,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
               }
               png {
@@ -563,6 +651,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size96 {
                   baseUrl
@@ -571,6 +660,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size144 {
                   baseUrl
@@ -579,6 +669,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size240 {
                   baseUrl
@@ -587,6 +678,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
                 size480 {
                   baseUrl
@@ -595,6 +687,7 @@ mutation updateCurrentUserLogins(
                   height
                   x
                   y
+                  alt
                 }
               }
             }
@@ -635,23 +728,140 @@ mutation updateCurrentUserLogins(
           authorizationCode
         }
       }
+      education {
+        level
+        name
+        description
+        tags
+        from
+        to
+        graduated
+      }
+      work {
+        company
+        position
+        description
+        city {
+          id
+          name
+          adminName
+          capital
+          population
+          ascii
+          lat
+          lng
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        tags
+        from
+        to
+        current
+      }
+      lived {
+        id
+        name
+        adminName
+        capital
+        population
+        ascii
+        lat
+        lng
+        country {
+          id
+          name
+          code
+          dialCode
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      hobbies
+      interests
     }
-  }
-}
-query loginForApp($input: LoginInput!) {
-  loginForApp(input: $input) {
-    accessToken
-    expiresIn
-  }
-}
-
-mutation registerForApp(
-  $subject: String!
-  $input: UserInput!
-  $brand: EmailTempVariablesBrandInput!
-) {
-  registerForApp(subject: $subject, brand: $brand, input: $input) {
-    accessToken
-    expiresIn
   }
 }

@@ -64,7 +64,8 @@ class GetRequests$Query$RequestType$RequestCompanyType$FullAddressType$LonLatTyp
       _$GetRequests$Query$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -400,8 +401,6 @@ class GetRequests$Query$RequestType$RequestCompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetRequests$Query$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -416,7 +415,7 @@ class GetRequests$Query$RequestType$RequestCompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -609,7 +608,8 @@ class GetRequest$Query$RequestType$RequestCompanyType$FullAddressType$LonLatType
       _$GetRequest$Query$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -945,8 +945,6 @@ class GetRequest$Query$RequestType$RequestCompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetRequest$Query$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -961,7 +959,7 @@ class GetRequest$Query$RequestType$RequestCompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1157,7 +1155,8 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyT
       _$GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1493,8 +1492,6 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyT
 
   String? postCode;
 
-  String? addressLine;
-
   GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -1509,7 +1506,7 @@ class GetRequestsPaginated$Query$RequestPaginateType$RequestType$RequestCompanyT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1762,7 +1759,8 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCo
       _$GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2098,8 +2096,6 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCo
 
   String? postCode;
 
-  String? addressLine;
-
   GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -2114,7 +2110,7 @@ class GetRequestsByTypePaginated$Query$RequestPaginateType$RequestType$RequestCo
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2352,7 +2348,8 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$
       _$GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2688,8 +2685,6 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$
 
   String? postCode;
 
-  String? addressLine;
-
   GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -2704,7 +2699,7 @@ class GetRequestsByTypeAndTargetPaginated$Query$RequestPaginateType$RequestType$
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3059,7 +3054,8 @@ class CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType$LonL
       _$CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3395,8 +3391,6 @@ class CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -3411,7 +3405,7 @@ class CreateRequest$Mutation$RequestType$RequestCompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3641,7 +3635,6 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
     this.city,
     this.country,
     this.state,
-    this.addressLine,
     this.location,
   });
 
@@ -3660,13 +3653,11 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
 
   String? state;
 
-  String? addressLine;
-
   LonLatInput? location;
 
   @override
   List<Object?> get props =>
-      [owner, address, postCode, city, country, state, addressLine, location];
+      [owner, address, postCode, city, country, state, location];
 
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
@@ -3717,14 +3708,15 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 @JsonSerializable(explicitToJson: true)
 class LonLatInput extends JsonSerializable with EquatableMixin {
   LonLatInput({
-    required this.type,
+    this.type,
     required this.coordinates,
   });
 
   factory LonLatInput.fromJson(Map<String, dynamic> json) =>
       _$LonLatInputFromJson(json);
 
-  late String type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   late List<double> coordinates;
 
@@ -3857,7 +3849,8 @@ class UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressTyp
       _$UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4193,8 +4186,6 @@ class UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressTyp
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -4209,7 +4200,7 @@ class UpdateRequestStatus$Mutation$RequestType$RequestCompanyType$FullAddressTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4412,7 +4403,8 @@ class ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressTy
       _$ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4748,8 +4740,6 @@ class ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressTy
 
   String? postCode;
 
-  String? addressLine;
-
   ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressType$LonLatType?
       location;
 
@@ -4764,7 +4754,7 @@ class ListenForRequest$Subscription$RequestType$RequestCompanyType$FullAddressTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4909,6 +4899,15 @@ class ListenForRequest$Subscription extends JsonSerializable
   Map<String, dynamic> toJson() => _$ListenForRequest$SubscriptionToJson(this);
 }
 
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum StateCapitalEnum {
   @JsonValue('PRIMARY')
   primary,
@@ -5049,13 +5048,6 @@ final GET_REQUESTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -5928,13 +5920,6 @@ final GET_REQUEST_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -6832,13 +6817,6 @@ final GET_REQUESTS_PAGINATED_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -7761,13 +7739,6 @@ final GET_REQUESTS_BY_TYPE_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -8722,13 +8693,6 @@ final GET_REQUESTS_BY_TYPE_AND_TARGET_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -9941,13 +9905,6 @@ final CREATE_REQUEST_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -10844,13 +10801,6 @@ final UPDATE_REQUEST_STATUS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -11690,13 +11640,6 @@ final LISTEN_FOR_REQUEST_SUBSCRIPTION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],

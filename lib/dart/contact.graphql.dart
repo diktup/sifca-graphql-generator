@@ -269,7 +269,8 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType$LonLatType
       _$GetCompanyContacts$Query$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -605,8 +606,6 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContacts$Query$CompanyContactType$FullAddressType$LonLatType?
       location;
 
@@ -620,7 +619,7 @@ class GetCompanyContacts$Query$CompanyContactType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -697,7 +696,8 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$Lo
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1033,8 +1033,6 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -1049,7 +1047,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1092,7 +1090,8 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
       _$GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1428,8 +1427,6 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -1444,7 +1441,7 @@ class GetCompanyContacts$Query$CompanyContactType$CompanyType$BankDetailsType$Ba
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2162,7 +2159,8 @@ class CompanyContact$Query$CompanyContactType$FullAddressType$LonLatType
       _$CompanyContact$Query$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2497,8 +2495,6 @@ class CompanyContact$Query$CompanyContactType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CompanyContact$Query$CompanyContactType$FullAddressType$LonLatType? location;
 
   CompanyContact$Query$CompanyContactType$FullAddressType$CountryType? country;
@@ -2510,7 +2506,7 @@ class CompanyContact$Query$CompanyContactType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2587,7 +2583,8 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$LonLat
       _$CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2923,8 +2920,6 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -2939,7 +2934,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2982,7 +2977,8 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
       _$CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3318,8 +3314,6 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   String? postCode;
 
-  String? addressLine;
-
   CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -3334,7 +3328,7 @@ class CompanyContact$Query$CompanyContactType$CompanyType$BankDetailsType$BankDe
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4057,7 +4051,8 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$LonLa
       _$GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4393,8 +4388,6 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType$LonLatType?
       location;
 
@@ -4409,7 +4402,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4487,7 +4480,8 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4823,8 +4817,6 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -4839,7 +4831,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$FullAddre
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4882,7 +4874,8 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
       _$GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5218,8 +5211,6 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -5234,7 +5225,7 @@ class GetCompanyContactsByCompany$Query$CompanyContactType$CompanyType$BankDetai
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5968,7 +5959,8 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6304,8 +6296,6 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$LonLatType?
       location;
 
@@ -6320,7 +6310,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -6398,7 +6388,8 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6734,8 +6725,6 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -6750,7 +6739,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -6793,7 +6782,8 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
       _$GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7129,8 +7119,6 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -7145,7 +7133,7 @@ class GetCompanyContactsByCompanyPaginated$Query$CompanyContactPaginateType$Comp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -7933,7 +7921,8 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8269,8 +8258,6 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$FullAddressType$LonLatType?
       location;
 
@@ -8285,7 +8272,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8363,7 +8350,8 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8699,8 +8687,6 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -8715,7 +8701,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8758,7 +8744,8 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
       _$GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9094,8 +9081,6 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   String? postCode;
 
-  String? addressLine;
-
   GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -9110,7 +9095,7 @@ class GetCompanyContactsByTargetPaginated$Query$CompanyContactPaginateType$Compa
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -9902,7 +9887,8 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTyp
       _$CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10238,8 +10224,6 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CreateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatType?
       location;
 
@@ -10254,7 +10238,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -10332,7 +10316,8 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10668,8 +10653,6 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   String? postCode;
 
-  String? addressLine;
-
   CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -10684,7 +10667,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -10727,7 +10710,8 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
       _$CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -11063,8 +11047,6 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   String? postCode;
 
-  String? addressLine;
-
   CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -11079,7 +11061,7 @@ class CreateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -11723,7 +11705,6 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
     this.city,
     this.country,
     this.state,
-    this.addressLine,
     this.location,
   });
 
@@ -11742,13 +11723,11 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
 
   String? state;
 
-  String? addressLine;
-
   LonLatInput? location;
 
   @override
   List<Object?> get props =>
-      [owner, address, postCode, city, country, state, addressLine, location];
+      [owner, address, postCode, city, country, state, location];
 
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
@@ -11799,14 +11778,15 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 @JsonSerializable(explicitToJson: true)
 class LonLatInput extends JsonSerializable with EquatableMixin {
   LonLatInput({
-    required this.type,
+    this.type,
     required this.coordinates,
   });
 
   factory LonLatInput.fromJson(Map<String, dynamic> json) =>
       _$LonLatInputFromJson(json);
 
-  late String type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   late List<double> coordinates;
 
@@ -12084,7 +12064,8 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTyp
       _$UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12420,8 +12401,6 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType$LonLatType?
       location;
 
@@ -12436,7 +12415,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12514,7 +12493,8 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12850,8 +12830,6 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -12866,7 +12844,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12909,7 +12887,8 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
       _$UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -13245,8 +13224,6 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -13261,7 +13238,7 @@ class UpdateCompanyContact$Mutation$CompanyContactType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13837,6 +13814,15 @@ enum SocialImageStyleEnum {
   sticker,
   @JsonValue('COLOR_HAND_DROWN')
   colorHandDrown,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -15462,13 +15448,6 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'addressLine'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'location'),
                 alias: null,
                 arguments: [],
@@ -16261,13 +16240,6 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -16946,13 +16918,6 @@ final GET_COMPANY_CONTACTS_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -19991,13 +19956,6 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'addressLine'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'location'),
                 alias: null,
                 arguments: [],
@@ -20790,13 +20748,6 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -21475,13 +21426,6 @@ final COMPANY_CONTACT_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -24527,13 +24471,6 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'addressLine'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'location'),
                 alias: null,
                 arguments: [],
@@ -25326,13 +25263,6 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -26011,13 +25941,6 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_QUERY_DOCUMENT =
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -29118,13 +29041,6 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -29917,13 +29833,6 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -30602,13 +30511,6 @@ final GET_COMPANY_CONTACTS_BY_COMPANY_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -33716,13 +33618,6 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -34515,13 +34410,6 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -35200,13 +35088,6 @@ final GET_COMPANY_CONTACTS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -38256,13 +38137,6 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'addressLine'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'location'),
                 alias: null,
                 arguments: [],
@@ -39055,13 +38929,6 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -39740,13 +39607,6 @@ final CREATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -42808,13 +42668,6 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                 selectionSet: null,
               ),
               FieldNode(
-                name: NameNode(value: 'addressLine'),
-                alias: null,
-                arguments: [],
-                directives: [],
-                selectionSet: null,
-              ),
-              FieldNode(
                 name: NameNode(value: 'location'),
                 alias: null,
                 arguments: [],
@@ -43607,13 +43460,6 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -44292,13 +44138,6 @@ final UPDATE_COMPANY_CONTACT_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],

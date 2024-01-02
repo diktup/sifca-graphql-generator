@@ -28,7 +28,6 @@ query getCompanies {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -139,7 +138,6 @@ query getCompanies {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -174,7 +172,6 @@ query getCompanies {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -367,7 +364,17 @@ query getCompanies {
     logistic
     tags
     externalId
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -402,7 +409,6 @@ query company($id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -513,7 +519,6 @@ query company($id: ID!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -548,7 +553,6 @@ query company($id: ID!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -741,7 +745,17 @@ query company($id: ID!) {
     logistic
     tags
     externalId
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -779,7 +793,6 @@ query getCompaniesPagination($pagination: PaginationInput) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -890,7 +903,6 @@ query getCompaniesPagination($pagination: PaginationInput) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -924,8 +936,8 @@ query getCompaniesPagination($pagination: PaginationInput) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1117,7 +1129,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -1156,7 +1178,6 @@ query getCustomers($phase: CustomerPhaseEnum!, $target: TargetACIInput!, $pagina
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1267,7 +1288,6 @@ query getCustomers($phase: CustomerPhaseEnum!, $target: TargetACIInput!, $pagina
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1301,8 +1321,8 @@ query getCustomers($phase: CustomerPhaseEnum!, $target: TargetACIInput!, $pagina
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1494,7 +1514,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -1533,7 +1563,6 @@ query getCompaniesByTarget($target: TargetACIInput!, $searchString: String, $pag
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1644,7 +1673,6 @@ query getCompaniesByTarget($target: TargetACIInput!, $searchString: String, $pag
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1678,8 +1706,8 @@ query getCompaniesByTarget($target: TargetACIInput!, $searchString: String, $pag
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1871,7 +1899,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -1910,7 +1948,6 @@ query searchCompany($pagination: PaginationInput, $searchString: String!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2021,7 +2058,6 @@ query searchCompany($pagination: PaginationInput, $searchString: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2055,8 +2091,8 @@ query searchCompany($pagination: PaginationInput, $searchString: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2248,7 +2284,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -2292,7 +2338,6 @@ query searchCustomersByTargetAndPhase(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2403,7 +2448,6 @@ query searchCustomersByTargetAndPhase(
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2437,8 +2481,8 @@ query searchCustomersByTargetAndPhase(
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2630,7 +2674,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -2669,7 +2723,6 @@ query searchSuppliersByTarget($target: TargetACIInput!, $kinds: [SupplierTypeEnu
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2780,7 +2833,6 @@ query searchSuppliersByTarget($target: TargetACIInput!, $kinds: [SupplierTypeEnu
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2814,8 +2866,8 @@ query searchSuppliersByTarget($target: TargetACIInput!, $kinds: [SupplierTypeEnu
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3007,7 +3059,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -3046,7 +3108,6 @@ query searchLogisticCompaniesByTarget($target: TargetACIInput!, $pagination: Pag
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3157,7 +3218,6 @@ query searchLogisticCompaniesByTarget($target: TargetACIInput!, $pagination: Pag
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3191,8 +3251,8 @@ query searchLogisticCompaniesByTarget($target: TargetACIInput!, $pagination: Pag
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3384,7 +3444,17 @@ adminName
       logistic
       tags
       externalId
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -3421,7 +3491,6 @@ mutation createCompany($input: CompanyInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -3532,7 +3601,6 @@ mutation createCompany($input: CompanyInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3567,7 +3635,6 @@ mutation createCompany($input: CompanyInput!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -3760,7 +3827,17 @@ mutation createCompany($input: CompanyInput!) {
     logistic
     tags
     externalId
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -3795,7 +3872,6 @@ mutation updateCompany($input: CompanyUpdateInput!, $id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -3906,7 +3982,6 @@ mutation updateCompany($input: CompanyUpdateInput!, $id: ID!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3941,7 +4016,6 @@ mutation updateCompany($input: CompanyUpdateInput!, $id: ID!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4134,7 +4208,17 @@ mutation updateCompany($input: CompanyUpdateInput!, $id: ID!) {
     logistic
     tags
     externalId
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -4169,7 +4253,6 @@ mutation bulkUpdateCompanyMedia($input: [UpdateMediaInput!]!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4280,7 +4363,6 @@ mutation bulkUpdateCompanyMedia($input: [UpdateMediaInput!]!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4315,7 +4397,6 @@ mutation bulkUpdateCompanyMedia($input: [UpdateMediaInput!]!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4508,7 +4589,17 @@ mutation bulkUpdateCompanyMedia($input: [UpdateMediaInput!]!) {
     logistic
     tags
     externalId
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -4550,7 +4641,6 @@ subscription listenForCompanyCreated {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4661,7 +4751,6 @@ subscription listenForCompanyCreated {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4696,7 +4785,6 @@ subscription listenForCompanyCreated {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4889,7 +4977,17 @@ subscription listenForCompanyCreated {
     logistic
     tags
     externalId
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

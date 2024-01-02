@@ -12,6 +12,7 @@ query getProjects {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -20,6 +21,7 @@ query getProjects {
         height
         x
         y
+        alt
       }
     }
     privacy
@@ -28,6 +30,7 @@ query getProjects {
     priority
     status
     color
+    externalId
     picture {
       baseUrl
       path
@@ -35,6 +38,7 @@ query getProjects {
       height
       x
       y
+      alt
     }
     members {
       member {
@@ -44,6 +48,12 @@ query getProjects {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -51,6 +61,7 @@ query getProjects {
           height
           x
           y
+          alt
         }
       }
       role
@@ -72,6 +83,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -80,6 +92,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -90,6 +103,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -98,6 +112,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -108,6 +123,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -116,6 +132,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -130,6 +147,12 @@ query getProjects {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -137,6 +160,7 @@ query getProjects {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -159,6 +183,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -167,6 +192,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -177,6 +203,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -185,6 +212,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -195,6 +223,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -203,6 +232,7 @@ query getProjects {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -217,6 +247,12 @@ query getProjects {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -224,10 +260,15 @@ query getProjects {
           height
           x
           y
+          alt
         }
       }
       createdAt
       updatedAt
+    }
+    boardCardsStats {
+      total
+      archived
     }
     createdAt
     updatedAt
@@ -247,6 +288,7 @@ query project($id: ID!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -255,6 +297,7 @@ query project($id: ID!) {
         height
         x
         y
+        alt
       }
     }
     privacy
@@ -263,6 +306,7 @@ query project($id: ID!) {
     priority
     status
     color
+    externalId
     picture {
       baseUrl
       path
@@ -270,6 +314,7 @@ query project($id: ID!) {
       height
       x
       y
+      alt
     }
     members {
       member {
@@ -279,6 +324,12 @@ query project($id: ID!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -286,6 +337,7 @@ query project($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       role
@@ -307,6 +359,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -315,6 +368,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -325,6 +379,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -333,6 +388,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -343,6 +399,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -351,6 +408,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -365,6 +423,12 @@ query project($id: ID!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -372,6 +436,7 @@ query project($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -394,6 +459,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -402,6 +468,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -412,6 +479,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -420,6 +488,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -430,6 +499,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -438,6 +508,7 @@ query project($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -452,6 +523,12 @@ query project($id: ID!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -459,10 +536,15 @@ query project($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
       updatedAt
+    }
+    boardCardsStats {
+      total
+      archived
     }
     createdAt
     updatedAt
@@ -482,6 +564,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -490,6 +573,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
         height
         x
         y
+        alt
       }
     }
     privacy
@@ -498,6 +582,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
     priority
     status
     color
+    externalId
     picture {
       baseUrl
       path
@@ -505,6 +590,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
       height
       x
       y
+      alt
     }
     members {
       member {
@@ -514,6 +600,12 @@ query getProjectsByTarget($target: TargetACIInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -521,6 +613,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       role
@@ -542,6 +635,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -550,6 +644,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -560,6 +655,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -568,6 +664,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -578,6 +675,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -586,6 +684,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -600,6 +699,12 @@ query getProjectsByTarget($target: TargetACIInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -607,6 +712,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -629,6 +735,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -637,6 +744,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -647,6 +755,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -655,6 +764,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -665,6 +775,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -673,6 +784,7 @@ query getProjectsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -687,6 +799,12 @@ query getProjectsByTarget($target: TargetACIInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -694,10 +812,15 @@ query getProjectsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
       updatedAt
+    }
+    boardCardsStats {
+      total
+      archived
     }
     createdAt
     updatedAt
@@ -725,6 +848,7 @@ query getProjectsByTargetWithFilter(
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -733,6 +857,7 @@ query getProjectsByTargetWithFilter(
           height
           x
           y
+          alt
         }
       }
       privacy
@@ -741,6 +866,7 @@ query getProjectsByTargetWithFilter(
       priority
       status
       color
+      externalId
       picture {
         baseUrl
         path
@@ -748,6 +874,7 @@ query getProjectsByTargetWithFilter(
         height
         x
         y
+        alt
       }
       members {
         member {
@@ -757,6 +884,12 @@ query getProjectsByTargetWithFilter(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -764,6 +897,7 @@ query getProjectsByTargetWithFilter(
             height
             x
             y
+            alt
           }
         }
         role
@@ -785,6 +919,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -793,6 +928,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -803,6 +939,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -811,6 +948,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -821,6 +959,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -829,6 +968,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -843,6 +983,12 @@ query getProjectsByTargetWithFilter(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -850,6 +996,7 @@ query getProjectsByTargetWithFilter(
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -872,6 +1019,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -880,6 +1028,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -890,6 +1039,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -898,6 +1048,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -908,6 +1059,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -916,6 +1068,7 @@ query getProjectsByTargetWithFilter(
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -930,6 +1083,12 @@ query getProjectsByTargetWithFilter(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -937,14 +1096,57 @@ query getProjectsByTargetWithFilter(
             height
             x
             y
+            alt
           }
         }
         createdAt
         updatedAt
       }
+      boardCardsStats {
+        total
+        archived
+      }
       createdAt
       updatedAt
     }
+  }
+}
+query getProjectsByExcel($target: TargetACIInput!, $filter: ProjectFilterInput, $searchString: String, $path: String) {
+  getProjectsByExcel(target: $target, filter: $filter, searchString: $searchString, path: $path) {
+    content
+  }
+}
+query sendProjectsBymail(
+  $target: TargetACIInput!
+  $filter: ProjectFilterInput
+  $searchString: String
+  $emails: [String!]
+  $subject: String!
+) {
+  sendProjectsBymail(target: $target, filter: $filter, searchString: $searchString, emails: $emails, subject: $subject) {
+    accepted
+    rejected
+    response
+    messageId
+    messageTime
+    messageSize
+    envelopeTime
+  }
+}
+query getProjectsTemplateByExcel($path: String) {
+  getProjectsTemplateByExcel(path: $path) {
+    content
+  }
+}
+query sendProjectsTemplateBymail($subject: String!, $emails: [String!]) {
+  sendProjectsTemplateBymail(subject: $subject, emails: $emails) {
+    accepted
+    rejected
+    response
+    messageId
+    messageTime
+    messageSize
+    envelopeTime
   }
 }
 
@@ -962,6 +1164,7 @@ mutation createProject($input: ProjectInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -970,6 +1173,7 @@ mutation createProject($input: ProjectInput!) {
         height
         x
         y
+        alt
       }
     }
     privacy
@@ -978,6 +1182,7 @@ mutation createProject($input: ProjectInput!) {
     priority
     status
     color
+    externalId
     picture {
       baseUrl
       path
@@ -985,6 +1190,7 @@ mutation createProject($input: ProjectInput!) {
       height
       x
       y
+      alt
     }
     members {
       member {
@@ -994,6 +1200,12 @@ mutation createProject($input: ProjectInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1001,6 +1213,7 @@ mutation createProject($input: ProjectInput!) {
           height
           x
           y
+          alt
         }
       }
       role
@@ -1022,6 +1235,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1030,6 +1244,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1040,6 +1255,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1048,6 +1264,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1058,6 +1275,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1066,6 +1284,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1080,6 +1299,12 @@ mutation createProject($input: ProjectInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1087,6 +1312,7 @@ mutation createProject($input: ProjectInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -1109,6 +1335,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1117,6 +1344,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1127,6 +1355,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1135,6 +1364,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1145,6 +1375,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1153,6 +1384,7 @@ mutation createProject($input: ProjectInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1167,6 +1399,12 @@ mutation createProject($input: ProjectInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1174,10 +1412,15 @@ mutation createProject($input: ProjectInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
       updatedAt
+    }
+    boardCardsStats {
+      total
+      archived
     }
     createdAt
     updatedAt
@@ -1197,6 +1440,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
         height
         x
         y
+        alt
       }
       pictures {
         baseUrl
@@ -1205,6 +1449,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
         height
         x
         y
+        alt
       }
     }
     privacy
@@ -1213,6 +1458,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
     priority
     status
     color
+    externalId
     picture {
       baseUrl
       path
@@ -1220,6 +1466,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
       height
       x
       y
+      alt
     }
     members {
       member {
@@ -1229,6 +1476,12 @@ mutation updateProject($input: ProjectUpdateInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1236,6 +1489,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       role
@@ -1257,6 +1511,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1265,6 +1520,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1275,6 +1531,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1283,6 +1540,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1293,6 +1551,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1301,6 +1560,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1315,6 +1575,12 @@ mutation updateProject($input: ProjectUpdateInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1322,6 +1588,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -1344,6 +1611,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1352,6 +1620,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1362,6 +1631,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1370,6 +1640,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1380,6 +1651,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1388,6 +1660,7 @@ mutation updateProject($input: ProjectUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1402,6 +1675,12 @@ mutation updateProject($input: ProjectUpdateInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1409,10 +1688,291 @@ mutation updateProject($input: ProjectUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
       updatedAt
+    }
+    boardCardsStats {
+      total
+      archived
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation bulkUpdateProjectMedia($input: [UpdateMediaInput!]!) {
+  bulkUpdateProjectMedia(input: $input) {
+    id
+    name
+    description
+    media {
+      videos
+      deg360 {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    privacy
+    tags
+    deadline
+    priority
+    status
+    color
+    externalId
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    members {
+      member {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      role
+    }
+    resources {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    attachments {
+      id
+      name
+      content {
+        type {
+          id
+          name
+          type
+          image {
+            background {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            black {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            white {
+              png {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            icon
+          }
+        }
+      }
+      size
+      owner {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      createdAt
+      updatedAt
+    }
+    boardCardsStats {
+      total
+      archived
     }
     createdAt
     updatedAt
@@ -1422,5 +1982,11 @@ mutation deleteProject($id: ID!) {
   deleteProject(id: $id) {
     success
     message
+  }
+}
+mutation importProjectsByExcel($target: TargetACIInput!, $base64: String, $path: String) {
+  importProjectsByExcel(target: $target, base64: $base64, path: $path) {
+    message
+    success
   }
 }

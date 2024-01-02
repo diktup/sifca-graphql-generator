@@ -21,10 +21,22 @@ query getTasks {
       priority
       completed
       description
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
+    createdAt
+    updatedAt
   }
 }
 query getTask($id: ID!) {
@@ -50,10 +62,22 @@ query getTask($id: ID!) {
       priority
       completed
       description
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
+    createdAt
+    updatedAt
   }
 }
 query getTasksBySection($taskSection: ID!) {
@@ -79,10 +103,22 @@ query getTasksBySection($taskSection: ID!) {
       priority
       completed
       description
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
+    createdAt
+    updatedAt
   }
 }
 
@@ -129,10 +165,22 @@ mutation createTask(
       priority
       completed
       description
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
+    createdAt
+    updatedAt
   }
 }
 mutation reorderTask($id: ID!, $rank: Int!) {
@@ -158,10 +206,22 @@ mutation reorderTask($id: ID!, $rank: Int!) {
       priority
       completed
       description
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
+    createdAt
+    updatedAt
   }
 }
 mutation updateTask(
@@ -209,10 +269,22 @@ mutation updateTask(
       priority
       completed
       description
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
+    createdAt
+    updatedAt
   }
 }
 mutation deleteTask($id: ID!) {

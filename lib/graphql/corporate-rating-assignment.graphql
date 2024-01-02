@@ -1,27 +1,59 @@
 query getAllCorporateRatingAssignments {
   getAllCorporateRatingAssignments {
     id
+    active
+    createdAt
+    updatedAt
     reviewDefinition {
       id
       reviewType
     }
-    active
-  
-    createdAt
-    updatedAt
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query corporateRatingAssignment($id: ID!) {
   corporateRatingAssignment(id: $id) {
     id
+    active
+    createdAt
+    updatedAt
     reviewDefinition {
       id
       reviewType
     }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query getCorporateRatingAssignmentByTarget($target: TargetACIInput!) {
+  getCorporateRatingAssignmentByTarget(target: $target) {
+    id
     active
-    
     createdAt
     updatedAt
+    reviewDefinition {
+      id
+      reviewType
+    }
   }
 }
 query getCorporateRatingAssignments($pagination: PaginationInput) {
@@ -30,55 +62,72 @@ query getCorporateRatingAssignments($pagination: PaginationInput) {
     isLast
     objects {
       id
+      active
+      createdAt
+      updatedAt
       reviewDefinition {
         id
         reviewType
       }
-      active
-      
-      createdAt
-      updatedAt
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
-  }
-}
-query getCorporateRatingAssignmentByTarget($target: TargetACIInput!) {
-  getCorporateRatingAssignmentByTarget(target: $target) {
-    id
-    reviewDefinition {
-      id
-      reviewType
-    }
-    active
- 
-    createdAt
-    updatedAt
   }
 }
 
 mutation createCorporateRatingAssignment($input: CorporateRatingAssignmentInput!) {
   createCorporateRatingAssignment(input: $input) {
     id
+    active
+    createdAt
+    updatedAt
     reviewDefinition {
       id
       reviewType
     }
-    active
-   
-    createdAt
-    updatedAt
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation updateCorporateRatingAssignmentStatus($id: ID!, $active: Boolean!) {
   updateCorporateRatingAssignmentStatus(id: $id, active: $active) {
     id
+    active
+    createdAt
+    updatedAt
     reviewDefinition {
       id
       reviewType
     }
-    active
-    
-    createdAt
-    updatedAt
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation deleteCorporateRatingAssignment($id: ID!) {

@@ -6,7 +6,17 @@ query getPromotions {
     startDate
     createdAt
     updatedAt
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     promotion {
       discount {
         amount
@@ -127,7 +137,6 @@ query getPromotions {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -161,7 +170,7 @@ query getPromotions {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -253,7 +262,6 @@ query getPromotions {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -364,7 +372,6 @@ query getPromotions {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -588,6 +595,17 @@ query getPromotions {
                 updatedAt
               }
             }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           seo {
             urlKey
@@ -596,6 +614,43 @@ query getPromotions {
             metaKeywords {
               name
               content
+            }
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+              descriptionList
+              specs {
+                key
+                value
+              }
             }
           }
           media {
@@ -656,11 +711,51 @@ query getPromotions {
             }
           }
           class
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           barcodes {
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -816,6 +911,37 @@ query getPromotions {
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -830,8 +956,49 @@ query getPromotions {
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -876,6 +1043,37 @@ query getPromotions {
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -1045,7 +1243,6 @@ query getPromotions {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -1171,7 +1368,6 @@ query getPromotions {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -1282,7 +1478,6 @@ query getPromotions {
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -1506,7 +1701,17 @@ query getPromotions {
                     updatedAt
                   }
                 }
-               
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -1529,9 +1734,60 @@ query getPromotions {
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
@@ -1575,6 +1831,38 @@ query getPromotions {
               x
               y
               alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
           }
         }
@@ -1590,7 +1878,17 @@ query promotion($id: ID!) {
     startDate
     createdAt
     updatedAt
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     promotion {
       discount {
         amount
@@ -1711,7 +2009,6 @@ query promotion($id: ID!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1745,7 +2042,7 @@ query promotion($id: ID!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -1837,7 +2134,6 @@ query promotion($id: ID!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -1948,7 +2244,6 @@ query promotion($id: ID!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -2172,7 +2467,17 @@ query promotion($id: ID!) {
                 updatedAt
               }
             }
-             
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           seo {
             urlKey
@@ -2181,6 +2486,43 @@ query promotion($id: ID!) {
             metaKeywords {
               name
               content
+            }
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+              descriptionList
+              specs {
+                key
+                value
+              }
             }
           }
           media {
@@ -2241,11 +2583,51 @@ query promotion($id: ID!) {
             }
           }
           class
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           barcodes {
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -2401,6 +2783,37 @@ query promotion($id: ID!) {
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -2415,8 +2828,49 @@ query promotion($id: ID!) {
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -2461,6 +2915,37 @@ query promotion($id: ID!) {
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -2630,7 +3115,6 @@ query promotion($id: ID!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -2756,7 +3240,6 @@ query promotion($id: ID!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -2867,7 +3350,6 @@ query promotion($id: ID!) {
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -3091,7 +3573,17 @@ query promotion($id: ID!) {
                     updatedAt
                   }
                 }
-            
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -3114,9 +3606,60 @@ query promotion($id: ID!) {
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
@@ -3160,6 +3703,38 @@ query promotion($id: ID!) {
               x
               y
               alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
           }
         }
@@ -3175,7 +3750,17 @@ query getPromotionsByTarget($target: TargetACIInput!) {
     startDate
     createdAt
     updatedAt
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     promotion {
       discount {
         amount
@@ -3296,7 +3881,6 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3330,7 +3914,7 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -3422,7 +4006,6 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -3533,7 +4116,6 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -3757,7 +4339,17 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                 updatedAt
               }
             }
-         
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           seo {
             urlKey
@@ -3766,6 +4358,43 @@ query getPromotionsByTarget($target: TargetACIInput!) {
             metaKeywords {
               name
               content
+            }
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+              descriptionList
+              specs {
+                key
+                value
+              }
             }
           }
           media {
@@ -3826,11 +4455,51 @@ query getPromotionsByTarget($target: TargetACIInput!) {
             }
           }
           class
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           barcodes {
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -3986,6 +4655,37 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -4000,8 +4700,49 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -4046,6 +4787,37 @@ query getPromotionsByTarget($target: TargetACIInput!) {
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -4215,7 +4987,6 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -4341,7 +5112,6 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -4452,7 +5222,6 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -4676,7 +5445,17 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                     updatedAt
                   }
                 }
-               
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -4699,9 +5478,60 @@ query getPromotionsByTarget($target: TargetACIInput!) {
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
@@ -4745,6 +5575,38 @@ query getPromotionsByTarget($target: TargetACIInput!) {
               x
               y
               alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
           }
         }
@@ -4768,7 +5630,17 @@ query getPromotionsByTargetPagination(
       startDate
       createdAt
       updatedAt
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       promotion {
         discount {
           amount
@@ -4889,7 +5761,6 @@ query getPromotionsByTargetPagination(
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -5015,7 +5886,6 @@ query getPromotionsByTargetPagination(
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -5126,7 +5996,6 @@ query getPromotionsByTargetPagination(
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -5350,7 +6219,17 @@ query getPromotionsByTargetPagination(
                   updatedAt
                 }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             seo {
               urlKey
@@ -5359,6 +6238,43 @@ query getPromotionsByTargetPagination(
               metaKeywords {
                 name
                 content
+              }
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+                descriptionList
+                specs {
+                  key
+                  value
+                }
               }
             }
             media {
@@ -5419,11 +6335,51 @@ query getPromotionsByTargetPagination(
               }
             }
             class
-           
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
             barcodes {
               id
               name
               price
+              prices {
+                price
+                currency {
+                  id
+                  name
+                  code
+                  symbol
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
               barcode
               condition
               status
@@ -5579,6 +6535,37 @@ query getPromotionsByTargetPagination(
                   id
                   label
                   externalId
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                   createdAt
                   updatedAt
                   attribute {
@@ -5593,8 +6580,49 @@ query getPromotionsByTargetPagination(
                     pixel {
                       pixelAttribute
                     }
+                    translation {
+                      language {
+                        id
+                        name
+                        code
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      content {
+                        label
+                      }
+                    }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
               }
               internalProduct {
@@ -5639,6 +6667,37 @@ query getPromotionsByTargetPagination(
                 catalogueCategory {
                   id
                   name
+                }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    name
+                  }
                 }
               }
               product {
@@ -5808,7 +6867,6 @@ query getPromotionsByTargetPagination(
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -5934,7 +6992,6 @@ query getPromotionsByTargetPagination(
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -6045,7 +7102,6 @@ query getPromotionsByTargetPagination(
                             city
                             address
                             postCode
-                            addressLine
                             location {
                               type
                               coordinates
@@ -6269,7 +7325,17 @@ query getPromotionsByTargetPagination(
                       updatedAt
                     }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
                 productAttributes {
                   id
@@ -6292,9 +7358,60 @@ query getPromotionsByTargetPagination(
                     pixel {
                       pixelAttribute
                     }
-                    
+                    translation {
+                      language {
+                        id
+                        name
+                        code
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      content {
+                        label
+                      }
+                    }
+                    target {
+                      pos {
+                        id
+                      }
+                      wholesaler {
+                        id
+                      }
+                      manufacturer {
+                        id
+                      }
+                    }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
               }
             }
@@ -6338,6 +7455,38 @@ query getPromotionsByTargetPagination(
                 x
                 y
                 alt
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                  description
+                }
               }
             }
           }
@@ -6357,7 +7506,17 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
       startDate
       createdAt
       updatedAt
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       promotion {
         discount {
           amount
@@ -6478,7 +7637,6 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -6604,7 +7762,6 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -6715,7 +7872,6 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -6939,7 +8095,17 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                   updatedAt
                 }
               }
-             
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             seo {
               urlKey
@@ -6948,6 +8114,43 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
               metaKeywords {
                 name
                 content
+              }
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+                descriptionList
+                specs {
+                  key
+                  value
+                }
               }
             }
             media {
@@ -7008,11 +8211,51 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
               }
             }
             class
-           
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
             barcodes {
               id
               name
               price
+              prices {
+                price
+                currency {
+                  id
+                  name
+                  code
+                  symbol
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
               barcode
               condition
               status
@@ -7168,6 +8411,37 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                   id
                   label
                   externalId
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                   createdAt
                   updatedAt
                   attribute {
@@ -7182,8 +8456,49 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                     pixel {
                       pixelAttribute
                     }
+                    translation {
+                      language {
+                        id
+                        name
+                        code
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      content {
+                        label
+                      }
+                    }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
               }
               internalProduct {
@@ -7228,6 +8543,37 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                 catalogueCategory {
                   id
                   name
+                }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    name
+                  }
                 }
               }
               product {
@@ -7397,7 +8743,6 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -7523,7 +8868,6 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -7634,7 +8978,6 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                             city
                             address
                             postCode
-                            addressLine
                             location {
                               type
                               coordinates
@@ -7858,7 +9201,17 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                       updatedAt
                     }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
                 productAttributes {
                   id
@@ -7881,9 +9234,60 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                     pixel {
                       pixelAttribute
                     }
-                    
+                    translation {
+                      language {
+                        id
+                        name
+                        code
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      content {
+                        label
+                      }
+                    }
+                    target {
+                      pos {
+                        id
+                      }
+                      wholesaler {
+                        id
+                      }
+                      manufacturer {
+                        id
+                      }
+                    }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
               }
             }
@@ -7928,6 +9332,38 @@ query getFuturePromotionsByTargetPagination($target: TargetACIInput!, $paginatio
                 y
                 alt
               }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                  description
+                }
+              }
             }
           }
         }
@@ -7946,7 +9382,17 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
       startDate
       createdAt
       updatedAt
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       promotion {
         discount {
           amount
@@ -8037,7 +9483,6 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -8071,7 +9516,7 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -8163,7 +9608,6 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -8274,7 +9718,6 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -8498,7 +9941,17 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                 updatedAt
               }
             }
-          
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           seo {
             urlKey
@@ -8507,6 +9960,43 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
             metaKeywords {
               name
               content
+            }
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+              descriptionList
+              specs {
+                key
+                value
+              }
             }
           }
           media {
@@ -8567,11 +10057,51 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
             }
           }
           class
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           barcodes {
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -8727,6 +10257,37 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -8741,8 +10302,49 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -8787,6 +10389,37 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -8956,7 +10589,6 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -9082,7 +10714,6 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -9193,7 +10824,6 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -9417,7 +11047,17 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                     updatedAt
                   }
                 }
-                 
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -9440,9 +11080,60 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
@@ -9486,6 +11177,38 @@ query getOngoingPromotionsByTargetPagination($target: TargetACIInput!, $filter: 
               x
               y
               alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
           }
         }
@@ -9535,7 +11258,17 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
       startDate
       createdAt
       updatedAt
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       promotion {
         discount {
           amount
@@ -9656,7 +11389,6 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -9782,7 +11514,6 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -9893,7 +11624,6 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -10117,7 +11847,17 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                   updatedAt
                 }
               }
-            
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             seo {
               urlKey
@@ -10126,6 +11866,43 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
               metaKeywords {
                 name
                 content
+              }
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+                descriptionList
+                specs {
+                  key
+                  value
+                }
               }
             }
             media {
@@ -10186,11 +11963,51 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
               }
             }
             class
-           
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
             barcodes {
               id
               name
               price
+              prices {
+                price
+                currency {
+                  id
+                  name
+                  code
+                  symbol
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+              }
               barcode
               condition
               status
@@ -10346,6 +12163,37 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                   id
                   label
                   externalId
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                   createdAt
                   updatedAt
                   attribute {
@@ -10360,8 +12208,49 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                     pixel {
                       pixelAttribute
                     }
+                    translation {
+                      language {
+                        id
+                        name
+                        code
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      content {
+                        label
+                      }
+                    }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
               }
               internalProduct {
@@ -10406,6 +12295,37 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                 catalogueCategory {
                   id
                   name
+                }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    name
+                  }
                 }
               }
               product {
@@ -10575,7 +12495,6 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -10701,7 +12620,6 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -10812,7 +12730,6 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                             city
                             address
                             postCode
-                            addressLine
                             location {
                               type
                               coordinates
@@ -11036,7 +12953,17 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                       updatedAt
                     }
                   }
-               
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
                 productAttributes {
                   id
@@ -11059,9 +12986,60 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                     pixel {
                       pixelAttribute
                     }
-                    
+                    translation {
+                      language {
+                        id
+                        name
+                        code
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      content {
+                        label
+                      }
+                    }
+                    target {
+                      pos {
+                        id
+                      }
+                      wholesaler {
+                        id
+                      }
+                      manufacturer {
+                        id
+                      }
+                    }
                   }
-                  
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
               }
             }
@@ -11106,6 +13084,38 @@ query getSimpleOngoingPromotionsByTargetPaginate($target: TargetACIInput!, $filt
                 y
                 alt
               }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                  description
+                }
+              }
             }
           }
         }
@@ -11122,7 +13132,17 @@ mutation createPromotion($input: PromotionInput!) {
     startDate
     createdAt
     updatedAt
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     promotion {
       discount {
         amount
@@ -11243,7 +13263,6 @@ mutation createPromotion($input: PromotionInput!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -11277,7 +13296,7 @@ mutation createPromotion($input: PromotionInput!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -11369,7 +13388,6 @@ mutation createPromotion($input: PromotionInput!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -11480,7 +13498,6 @@ mutation createPromotion($input: PromotionInput!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -11704,7 +13721,17 @@ mutation createPromotion($input: PromotionInput!) {
                 updatedAt
               }
             }
-           
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           seo {
             urlKey
@@ -11713,6 +13740,43 @@ mutation createPromotion($input: PromotionInput!) {
             metaKeywords {
               name
               content
+            }
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+              descriptionList
+              specs {
+                key
+                value
+              }
             }
           }
           media {
@@ -11773,11 +13837,51 @@ mutation createPromotion($input: PromotionInput!) {
             }
           }
           class
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           barcodes {
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -11933,6 +14037,37 @@ mutation createPromotion($input: PromotionInput!) {
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -11947,8 +14082,49 @@ mutation createPromotion($input: PromotionInput!) {
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -11993,6 +14169,37 @@ mutation createPromotion($input: PromotionInput!) {
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -12162,7 +14369,6 @@ mutation createPromotion($input: PromotionInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -12288,7 +14494,6 @@ mutation createPromotion($input: PromotionInput!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -12399,7 +14604,6 @@ mutation createPromotion($input: PromotionInput!) {
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -12623,7 +14827,17 @@ mutation createPromotion($input: PromotionInput!) {
                     updatedAt
                   }
                 }
-               
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -12646,9 +14860,60 @@ mutation createPromotion($input: PromotionInput!) {
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
@@ -12692,6 +14957,38 @@ mutation createPromotion($input: PromotionInput!) {
               x
               y
               alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
           }
         }
@@ -12707,7 +15004,17 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
     startDate
     createdAt
     updatedAt
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     promotion {
       discount {
         amount
@@ -12828,7 +15135,6 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -12862,7 +15168,7 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -12954,7 +15260,6 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -13065,7 +15370,6 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -13289,7 +15593,17 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                 updatedAt
               }
             }
-            
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           seo {
             urlKey
@@ -13298,6 +15612,43 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
             metaKeywords {
               name
               content
+            }
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+              descriptionList
+              specs {
+                key
+                value
+              }
             }
           }
           media {
@@ -13358,11 +15709,51 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
             }
           }
           class
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           barcodes {
             id
             name
             price
+            prices {
+              price
+              currency {
+                id
+                name
+                code
+                symbol
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+            }
             barcode
             condition
             status
@@ -13518,6 +15909,37 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                 id
                 label
                 externalId
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
                 createdAt
                 updatedAt
                 attribute {
@@ -13532,8 +15954,49 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                   pixel {
                     pixelAttribute
                   }
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
             internalProduct {
@@ -13578,6 +16041,37 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
               catalogueCategory {
                 id
                 name
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                }
               }
             }
             product {
@@ -13747,7 +16241,6 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -13873,7 +16366,6 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -13984,7 +16476,6 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                           city
                           address
                           postCode
-                          addressLine
                           location {
                             type
                             coordinates
@@ -14208,7 +16699,17 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                     updatedAt
                   }
                 }
-               
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
               productAttributes {
                 id
@@ -14231,9 +16732,60 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
                   pixel {
                     pixelAttribute
                   }
-                  
+                  translation {
+                    language {
+                      id
+                      name
+                      code
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    content {
+                      label
+                    }
+                  }
+                  target {
+                    pos {
+                      id
+                    }
+                    wholesaler {
+                      id
+                    }
+                    manufacturer {
+                      id
+                    }
+                  }
                 }
-                
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
             }
           }
@@ -14277,6 +16829,38 @@ mutation updatePromotion($input: PromotionUpdateInput!, $id: ID!) {
               x
               y
               alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
           }
         }

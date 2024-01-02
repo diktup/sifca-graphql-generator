@@ -10,6 +10,12 @@ query shoppingCart($id: ID!) {
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -17,15 +23,30 @@ query shoppingCart($id: ID!) {
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -59,6 +80,36 @@ query shoppingCart($id: ID!) {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -75,6 +126,7 @@ query shoppingCart($id: ID!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -83,6 +135,7 @@ query shoppingCart($id: ID!) {
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -98,6 +151,22 @@ query shoppingCart($id: ID!) {
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -105,6 +174,46 @@ query shoppingCart($id: ID!) {
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -117,6 +226,12 @@ query shoppingCart($id: ID!) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -124,6 +239,7 @@ query shoppingCart($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -133,6 +249,12 @@ query shoppingCart($id: ID!) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -140,6 +262,7 @@ query shoppingCart($id: ID!) {
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration
@@ -162,6 +285,12 @@ query findShoppingCartByUser($id: ID) {
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -169,15 +298,30 @@ query findShoppingCartByUser($id: ID) {
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -211,6 +355,36 @@ query findShoppingCartByUser($id: ID) {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -227,6 +401,7 @@ query findShoppingCartByUser($id: ID) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -235,6 +410,7 @@ query findShoppingCartByUser($id: ID) {
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -250,6 +426,22 @@ query findShoppingCartByUser($id: ID) {
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -257,6 +449,46 @@ query findShoppingCartByUser($id: ID) {
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -269,6 +501,12 @@ query findShoppingCartByUser($id: ID) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -276,6 +514,7 @@ query findShoppingCartByUser($id: ID) {
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -285,6 +524,12 @@ query findShoppingCartByUser($id: ID) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -292,6 +537,7 @@ query findShoppingCartByUser($id: ID) {
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration
@@ -310,6 +556,10 @@ query calculateShoppingCart($products: [CartProductInput!]!) {
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -356,6 +606,36 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       createdAt
       updatedAt
@@ -372,6 +652,7 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
           height
           x
           y
+          alt
         }
         pictures {
           baseUrl
@@ -380,6 +661,7 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
           height
           x
           y
+          alt
         }
       }
       priceList {
@@ -395,6 +677,22 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
         rank
         layer
       }
+      internalProduct {
+        id
+        seo {
+          urlKey
+          metaTitle
+          metaDesription
+          metaKeywords {
+            name
+            content
+          }
+        }
+        specs {
+          key
+          value
+        }
+      }
       productAttributesValues {
         attributesValues {
           id
@@ -402,6 +700,46 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
           attribute {
             id
             label
+            externalId
+            variety
+            createdAt
+            updatedAt
+            isRequired
+            isMultipleChoice
+            pixel {
+              pixelAttribute
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
         }
       }
@@ -414,6 +752,12 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -421,6 +765,7 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
             height
             x
             y
+            alt
           }
         }
         technician {
@@ -430,6 +775,12 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -437,11 +788,287 @@ query validateShoppingCartByCurrentUser($location: LonLatInput) {
             height
             x
             y
+            alt
           }
         }
         prevMaintenanceDuration
         maintenanceDuration
         expectedMeantime
+      }
+    }
+  }
+}
+query findShoppingCartByUserAndTarget($target: TargetACIInput!, $id: ID) {
+  findShoppingCartByUserAndTarget(target: $target, id: $id) {
+    id
+    createdAt
+    updatedAt
+    user {
+      id
+      email
+      gender
+      lastName
+      username
+      firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
+      picture {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+    price {
+      net {
+        beforeReduction
+        afterReduction
+      }
+      gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
+        beforeReduction
+        afterReduction
+      }
+    }
+    discount {
+      amount
+      discountType
+    }
+    taxValue {
+      beforeReduction
+      afterReduction
+    }
+    products {
+      quantity
+      price {
+        unitNet
+        unitGross
+        net
+        gross
+      }
+      taxValue {
+        unit
+        total
+      }
+      priceCredit {
+        periodCycle
+        periodValue
+        amount
+      }
+      barcode {
+        id
+        name
+        price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
       }
     }
   }
@@ -461,6 +1088,12 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -468,15 +1101,30 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
           height
           x
           y
+          alt
         }
       }
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       price {
         net {
           beforeReduction
           afterReduction
         }
         gross {
+          beforeReduction
+          afterReduction
+        }
+        toPay {
           beforeReduction
           afterReduction
         }
@@ -510,6 +1158,36 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -524,6 +1202,7 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
               height
               x
               y
+              alt
             }
             pictures {
               baseUrl
@@ -532,6 +1211,7 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
               height
               x
               y
+              alt
             }
           }
           discount {
@@ -561,6 +1241,8 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
                 id
                 name
               }
+              createdAt
+              updatedAt
             }
             rank
           }
@@ -578,6 +1260,32 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
           pixel {
             include
           }
+          supplier {
+            id
+            name
+            description
+            media {
+              videos
+              deg360 {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              pictures {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           maintenance {
             active
             owner {
@@ -587,6 +1295,12 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
               lastName
               username
               firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
               picture {
                 baseUrl
                 path
@@ -594,6 +1308,7 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
                 height
                 x
                 y
+                alt
               }
             }
             technician {
@@ -603,6 +1318,12 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
               lastName
               username
               firstName
+              phone {
+                number
+                isValid
+                countryCode
+                validationNumber
+              }
               picture {
                 baseUrl
                 path
@@ -610,6 +1331,7 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
                 height
                 x
                 y
+                alt
               }
             }
             prevMaintenanceDuration
@@ -621,6 +1343,37 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -635,8 +1388,49 @@ query findTargetShoppingCarts($target: TargetACIInput!, $pagination: PaginationI
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
@@ -657,6 +1451,12 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -664,15 +1464,30 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -706,6 +1521,36 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -722,6 +1567,7 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -730,6 +1576,7 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -745,6 +1592,22 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -752,6 +1615,46 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -764,6 +1667,12 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -771,6 +1680,7 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -780,6 +1690,12 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -787,6 +1703,7 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration
@@ -797,8 +1714,8 @@ mutation addToCart($product: CartProductInput!, $target: TargetACIInput) {
     }
   }
 }
-mutation removeFromCart($product: CartProductInput!) {
-  removeFromCart(product: $product) {
+mutation removeFromCart($product: CartProductInput!, $target: TargetACIInput) {
+  removeFromCart(product: $product, target: $target) {
     id
     createdAt
     updatedAt
@@ -809,6 +1726,12 @@ mutation removeFromCart($product: CartProductInput!) {
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -816,15 +1739,30 @@ mutation removeFromCart($product: CartProductInput!) {
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -858,6 +1796,36 @@ mutation removeFromCart($product: CartProductInput!) {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -874,6 +1842,7 @@ mutation removeFromCart($product: CartProductInput!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -882,6 +1851,7 @@ mutation removeFromCart($product: CartProductInput!) {
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -897,6 +1867,22 @@ mutation removeFromCart($product: CartProductInput!) {
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -904,6 +1890,46 @@ mutation removeFromCart($product: CartProductInput!) {
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -916,6 +1942,12 @@ mutation removeFromCart($product: CartProductInput!) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -923,6 +1955,7 @@ mutation removeFromCart($product: CartProductInput!) {
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -932,6 +1965,12 @@ mutation removeFromCart($product: CartProductInput!) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -939,6 +1978,7 @@ mutation removeFromCart($product: CartProductInput!) {
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration
@@ -949,8 +1989,8 @@ mutation removeFromCart($product: CartProductInput!) {
     }
   }
 }
-mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
-  addDiscoutToCart(id: $id, input: $input) {
+mutation addDiscountToCart($id: ID!, $input: DiscountDtoInput!) {
+  addDiscountToCart(id: $id, input: $input) {
     id
     createdAt
     updatedAt
@@ -961,6 +2001,12 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -968,15 +2014,30 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -1010,6 +2071,36 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -1026,6 +2117,7 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -1034,6 +2126,7 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -1049,6 +2142,22 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -1056,6 +2165,46 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -1068,6 +2217,12 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -1075,6 +2230,7 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -1084,6 +2240,12 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -1091,6 +2253,7 @@ mutation addDiscoutToCart($id: ID!, $input: DiscountDtoInput!) {
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration
@@ -1113,6 +2276,12 @@ mutation emptyCart {
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -1120,15 +2289,30 @@ mutation emptyCart {
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -1162,6 +2346,36 @@ mutation emptyCart {
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -1178,6 +2392,7 @@ mutation emptyCart {
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -1186,6 +2401,7 @@ mutation emptyCart {
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -1201,6 +2417,22 @@ mutation emptyCart {
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -1208,6 +2440,46 @@ mutation emptyCart {
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -1220,6 +2492,12 @@ mutation emptyCart {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -1227,6 +2505,7 @@ mutation emptyCart {
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -1236,6 +2515,12 @@ mutation emptyCart {
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -1243,6 +2528,7 @@ mutation emptyCart {
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration
@@ -1265,6 +2551,12 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
       lastName
       username
       firstName
+      phone {
+        number
+        isValid
+        countryCode
+        validationNumber
+      }
       picture {
         baseUrl
         path
@@ -1272,15 +2564,30 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
         height
         x
         y
+        alt
       }
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     price {
       net {
         beforeReduction
         afterReduction
       }
       gross {
+        beforeReduction
+        afterReduction
+      }
+      toPay {
         beforeReduction
         afterReduction
       }
@@ -1314,6 +2621,36 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         createdAt
         updatedAt
@@ -1330,6 +2667,7 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
             height
             x
             y
+            alt
           }
           pictures {
             baseUrl
@@ -1338,6 +2676,7 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
             height
             x
             y
+            alt
           }
         }
         priceList {
@@ -1353,6 +2692,22 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
           rank
           layer
         }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
         productAttributesValues {
           attributesValues {
             id
@@ -1360,6 +2715,46 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
             attribute {
               id
               label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
           }
         }
@@ -1372,6 +2767,12 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -1379,6 +2780,7 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
               height
               x
               y
+              alt
             }
           }
           technician {
@@ -1388,6 +2790,12 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
             lastName
             username
             firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
             picture {
               baseUrl
               path
@@ -1395,6 +2803,7 @@ mutation updateProductCredit($productToAdd: CartProductUpdateCreditInput!, $prod
               height
               x
               y
+              alt
             }
           }
           prevMaintenanceDuration

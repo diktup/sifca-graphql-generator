@@ -8255,6 +8255,7 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
     this.barcode,
     this.name,
     this.price,
+    this.prices,
     this.priceCredit,
     this.discount,
     this.condition,
@@ -8284,6 +8285,8 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
   String? name;
 
   String? price;
+
+  List<BarcodePricesInput>? prices;
 
   List<BarcodePeriodCreditInput>? priceCredit;
 
@@ -8321,6 +8324,7 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
         barcode,
         name,
         price,
+        prices,
         priceCredit,
         discount,
         condition,
@@ -8338,6 +8342,27 @@ class BarcodeUpdateInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$BarcodeUpdateInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class BarcodePricesInput extends JsonSerializable with EquatableMixin {
+  BarcodePricesInput({
+    this.price,
+    this.currency,
+  });
+
+  factory BarcodePricesInput.fromJson(Map<String, dynamic> json) =>
+      _$BarcodePricesInputFromJson(json);
+
+  String? price;
+
+  String? currency;
+
+  @override
+  List<Object?> get props => [price, currency];
+
+  @override
+  Map<String, dynamic> toJson() => _$BarcodePricesInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -11490,6 +11515,7 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
     required this.barcode,
     this.name,
     this.price,
+    this.prices,
     this.priceCredit,
     this.discount,
     this.condition,
@@ -11518,6 +11544,8 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
   String? name;
 
   String? price;
+
+  List<BarcodePricesInput>? prices;
 
   List<BarcodePeriodCreditInput>? priceCredit;
 
@@ -11553,6 +11581,7 @@ class BarcodeInput extends JsonSerializable with EquatableMixin {
         barcode,
         name,
         price,
+        prices,
         priceCredit,
         discount,
         condition,

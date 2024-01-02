@@ -22,6 +22,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -30,6 +31,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -40,6 +42,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -48,6 +51,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -58,6 +62,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -66,6 +71,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -80,6 +86,12 @@ query getJobApplications {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -87,6 +99,7 @@ query getJobApplications {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -109,6 +122,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -117,6 +131,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -127,6 +142,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -135,6 +151,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -145,6 +162,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -153,6 +171,7 @@ query getJobApplications {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -167,6 +186,12 @@ query getJobApplications {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -174,6 +199,7 @@ query getJobApplications {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -205,6 +231,53 @@ query getJobApplications {
       offer {
         description
         descriptionList
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
       }
       createdAt
       updatedAt
@@ -237,6 +310,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -245,6 +319,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -255,6 +330,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -263,6 +339,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -273,6 +350,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -281,6 +359,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -295,6 +374,12 @@ query jobApplication($id: ID!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -302,6 +387,7 @@ query jobApplication($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -324,6 +410,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -332,6 +419,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -342,6 +430,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -350,6 +439,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -360,6 +450,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -368,6 +459,7 @@ query jobApplication($id: ID!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -382,6 +474,12 @@ query jobApplication($id: ID!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -389,6 +487,7 @@ query jobApplication($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -420,6 +519,53 @@ query jobApplication($id: ID!) {
       offer {
         description
         descriptionList
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
       }
       createdAt
       updatedAt
@@ -452,6 +598,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -460,6 +607,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -470,6 +618,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -478,6 +627,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -488,6 +638,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -496,6 +647,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -510,6 +662,12 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -517,6 +675,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -539,6 +698,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -547,6 +707,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -557,6 +718,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -565,6 +727,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -575,6 +738,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -583,6 +747,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -597,6 +762,12 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -604,6 +775,7 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -635,6 +807,53 @@ query getJobApplicationsByTarget($target: TargetACIInput!) {
       offer {
         description
         descriptionList
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
       }
       createdAt
       updatedAt
@@ -670,6 +889,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -678,6 +898,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -688,6 +909,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -696,6 +918,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -706,6 +929,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -714,6 +938,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -728,6 +953,12 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -735,6 +966,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -757,6 +989,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -765,6 +998,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -775,6 +1009,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -783,6 +1018,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -793,6 +1029,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -801,6 +1038,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -815,6 +1053,12 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -822,6 +1066,7 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -853,6 +1098,53 @@ query getJobApplicationsByTargetPagination($target: TargetACIInput!, $pagination
         offer {
           description
           descriptionList
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            title
+            specs {
+              key
+              value
+            }
+            description {
+              description
+              descriptionList
+            }
+            responsibility {
+              description
+              descriptionList
+            }
+            offer {
+              description
+              descriptionList
+            }
+          }
         }
         createdAt
         updatedAt
@@ -889,6 +1181,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -897,6 +1190,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -907,6 +1201,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -915,6 +1210,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -925,6 +1221,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -933,6 +1230,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -947,6 +1245,12 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -954,6 +1258,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -976,6 +1281,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -984,6 +1290,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -994,6 +1301,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1002,6 +1310,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -1012,6 +1321,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1020,6 +1330,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1034,6 +1345,12 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -1041,6 +1358,7 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -1072,6 +1390,53 @@ query getJobApplicationsByJobDefinition($jobDefinition: ID!, $pagination: Pagina
         offer {
           description
           descriptionList
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            title
+            specs {
+              key
+              value
+            }
+            description {
+              description
+              descriptionList
+            }
+            responsibility {
+              description
+              descriptionList
+            }
+            offer {
+              description
+              descriptionList
+            }
+          }
         }
         createdAt
         updatedAt
@@ -1112,6 +1477,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1120,6 +1486,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -1130,6 +1497,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1138,6 +1506,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -1148,6 +1517,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1156,6 +1526,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1170,6 +1541,12 @@ query getJobApplicationsByTargetAndStatusPagination(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -1177,6 +1554,7 @@ query getJobApplicationsByTargetAndStatusPagination(
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -1199,6 +1577,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1207,6 +1586,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -1217,6 +1597,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1225,6 +1606,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -1235,6 +1617,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1243,6 +1626,7 @@ query getJobApplicationsByTargetAndStatusPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1257,6 +1641,12 @@ query getJobApplicationsByTargetAndStatusPagination(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -1264,6 +1654,7 @@ query getJobApplicationsByTargetAndStatusPagination(
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -1296,6 +1687,53 @@ query getJobApplicationsByTargetAndStatusPagination(
           description
           descriptionList
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            title
+            specs {
+              key
+              value
+            }
+            description {
+              description
+              descriptionList
+            }
+            responsibility {
+              description
+              descriptionList
+            }
+            offer {
+              description
+              descriptionList
+            }
+          }
+        }
         createdAt
         updatedAt
       }
@@ -1305,11 +1743,12 @@ query getJobApplicationsByTargetAndStatusPagination(
   }
 }
 query getJobApplicationsByTargetWithFilterPagination(
+  $searchString: String
   $target: TargetACIInput!
   $filter: JobApplicationFilterInput!
   $pagination: PaginationInput
 ) {
-  getJobApplicationsByTargetWithFilterPagination(target: $target, filter: $filter, pagination: $pagination) {
+  getJobApplicationsByTargetWithFilterPagination(searchString: $searchString, target: $target, filter: $filter, pagination: $pagination) {
     count
     isLast
     objects {
@@ -1335,6 +1774,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1343,6 +1783,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -1353,6 +1794,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1361,6 +1803,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -1371,6 +1814,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1379,6 +1823,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1393,6 +1838,12 @@ query getJobApplicationsByTargetWithFilterPagination(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -1400,6 +1851,7 @@ query getJobApplicationsByTargetWithFilterPagination(
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -1422,6 +1874,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1430,6 +1883,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               black {
@@ -1440,6 +1894,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1448,6 +1903,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               white {
@@ -1458,6 +1914,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
                 svg {
                   baseUrl
@@ -1466,6 +1923,7 @@ query getJobApplicationsByTargetWithFilterPagination(
                   height
                   x
                   y
+                  alt
                 }
               }
               icon
@@ -1480,6 +1938,12 @@ query getJobApplicationsByTargetWithFilterPagination(
           lastName
           username
           firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
           picture {
             baseUrl
             path
@@ -1487,6 +1951,7 @@ query getJobApplicationsByTargetWithFilterPagination(
             height
             x
             y
+            alt
           }
         }
         createdAt
@@ -1519,6 +1984,53 @@ query getJobApplicationsByTargetWithFilterPagination(
           description
           descriptionList
         }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            title
+            specs {
+              key
+              value
+            }
+            description {
+              description
+              descriptionList
+            }
+            responsibility {
+              description
+              descriptionList
+            }
+            offer {
+              description
+              descriptionList
+            }
+          }
+        }
         createdAt
         updatedAt
       }
@@ -1536,10 +2048,10 @@ query sendJobApplicationsByMail(
   $target: TargetACIInput!
   $filter: JobApplicationFilterInput
   $searchString: String
-  $email: String!
+  $emails: [String!]
   $subject: String!
 ) {
-  sendJobApplicationsByMail(target: $target, filter: $filter, searchString: $searchString, email: $email, subject: $subject) {
+  sendJobApplicationsByMail(target: $target, filter: $filter, searchString: $searchString, emails: $emails, subject: $subject) {
     accepted
     rejected
     response
@@ -1574,6 +2086,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1582,6 +2095,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1592,6 +2106,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1600,6 +2115,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1610,6 +2126,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1618,6 +2135,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1632,6 +2150,12 @@ mutation createJobApplication($input: JobApplicationInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1639,6 +2163,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -1661,6 +2186,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1669,6 +2195,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1679,6 +2206,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1687,6 +2215,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1697,6 +2226,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1705,6 +2235,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1719,6 +2250,12 @@ mutation createJobApplication($input: JobApplicationInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1726,6 +2263,7 @@ mutation createJobApplication($input: JobApplicationInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -1757,6 +2295,53 @@ mutation createJobApplication($input: JobApplicationInput!) {
       offer {
         description
         descriptionList
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
       }
       createdAt
       updatedAt
@@ -1789,6 +2374,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1797,6 +2383,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1807,6 +2394,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1815,6 +2403,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1825,6 +2414,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1833,6 +2423,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1847,6 +2438,12 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1854,6 +2451,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -1876,6 +2474,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1884,6 +2483,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             black {
@@ -1894,6 +2494,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1902,6 +2503,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             white {
@@ -1912,6 +2514,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
               svg {
                 baseUrl
@@ -1920,6 +2523,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
                 height
                 x
                 y
+                alt
               }
             }
             icon
@@ -1934,6 +2538,12 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
         lastName
         username
         firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
         picture {
           baseUrl
           path
@@ -1941,6 +2551,7 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
           height
           x
           y
+          alt
         }
       }
       createdAt
@@ -1972,6 +2583,53 @@ mutation updateJobApplication($id: ID!, $input: JobApplicationUpdateInput!) {
       offer {
         description
         descriptionList
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          title
+          specs {
+            key
+            value
+          }
+          description {
+            description
+            descriptionList
+          }
+          responsibility {
+            description
+            descriptionList
+          }
+          offer {
+            description
+            descriptionList
+          }
+        }
       }
       createdAt
       updatedAt

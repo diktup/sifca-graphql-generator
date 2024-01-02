@@ -12,6 +12,7 @@ query findBankById($id: ID!) {
         height
         x
         y
+        alt
       }
       png {
         default {
@@ -21,6 +22,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size16 {
           baseUrl
@@ -29,6 +31,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size24 {
           baseUrl
@@ -37,6 +40,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size32 {
           baseUrl
@@ -45,6 +49,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size48 {
           baseUrl
@@ -53,6 +58,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size64 {
           baseUrl
@@ -61,6 +67,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size128 {
           baseUrl
@@ -69,6 +76,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size256 {
           baseUrl
@@ -77,6 +85,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
         size512 {
           baseUrl
@@ -85,6 +94,7 @@ query findBankById($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       icon
@@ -107,6 +117,7 @@ query getBanks {
         height
         x
         y
+        alt
       }
       png {
         default {
@@ -116,6 +127,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size16 {
           baseUrl
@@ -124,6 +136,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size24 {
           baseUrl
@@ -132,6 +145,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size32 {
           baseUrl
@@ -140,6 +154,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size48 {
           baseUrl
@@ -148,6 +163,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size64 {
           baseUrl
@@ -156,6 +172,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size128 {
           baseUrl
@@ -164,6 +181,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size256 {
           baseUrl
@@ -172,6 +190,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
         size512 {
           baseUrl
@@ -180,6 +199,7 @@ query getBanks {
           height
           x
           y
+          alt
         }
       }
       icon
@@ -205,6 +225,7 @@ query findBanksPagination($pagination: PaginationInput) {
           height
           x
           y
+          alt
         }
         png {
           default {
@@ -214,6 +235,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size16 {
             baseUrl
@@ -222,6 +244,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size24 {
             baseUrl
@@ -230,6 +253,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size32 {
             baseUrl
@@ -238,6 +262,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size48 {
             baseUrl
@@ -246,6 +271,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size64 {
             baseUrl
@@ -254,6 +280,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size128 {
             baseUrl
@@ -262,6 +289,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size256 {
             baseUrl
@@ -270,6 +298,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           size512 {
             baseUrl
@@ -278,6 +307,7 @@ query findBanksPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
         icon
@@ -302,6 +332,7 @@ mutation createBank($input: BankInput!) {
         height
         x
         y
+        alt
       }
       png {
         default {
@@ -311,6 +342,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size16 {
           baseUrl
@@ -319,6 +351,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size24 {
           baseUrl
@@ -327,6 +360,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size32 {
           baseUrl
@@ -335,6 +369,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size48 {
           baseUrl
@@ -343,6 +378,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size64 {
           baseUrl
@@ -351,6 +387,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size128 {
           baseUrl
@@ -359,6 +396,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size256 {
           baseUrl
@@ -367,6 +405,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
         size512 {
           baseUrl
@@ -375,6 +414,7 @@ mutation createBank($input: BankInput!) {
           height
           x
           y
+          alt
         }
       }
       icon
@@ -397,6 +437,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
         height
         x
         y
+        alt
       }
       png {
         default {
@@ -406,6 +447,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size16 {
           baseUrl
@@ -414,6 +456,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size24 {
           baseUrl
@@ -422,6 +465,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size32 {
           baseUrl
@@ -430,6 +474,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size48 {
           baseUrl
@@ -438,6 +483,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size64 {
           baseUrl
@@ -446,6 +492,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size128 {
           baseUrl
@@ -454,6 +501,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size256 {
           baseUrl
@@ -462,6 +510,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
         size512 {
           baseUrl
@@ -470,6 +519,7 @@ mutation updateBank($id: ID!, $input: BankInput!) {
           height
           x
           y
+          alt
         }
       }
       icon

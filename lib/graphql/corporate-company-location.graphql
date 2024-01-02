@@ -54,7 +54,6 @@ query getLocations {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -165,7 +164,6 @@ query getLocations {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -392,7 +390,6 @@ query getLocations {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -550,7 +547,6 @@ query location($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -661,7 +657,6 @@ query location($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -888,7 +883,6 @@ query location($id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -1046,7 +1040,6 @@ query getLocationsByCompany($company: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1157,7 +1150,6 @@ query getLocationsByCompany($company: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1384,7 +1376,6 @@ query getLocationsByCompany($company: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -1545,7 +1536,6 @@ query getLocationsByCompanyPaginated($company: ID!, $filter: LocationFilterInput
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1656,7 +1646,6 @@ query getLocationsByCompanyPaginated($company: ID!, $filter: LocationFilterInput
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1883,7 +1872,6 @@ query getLocationsByCompanyPaginated($company: ID!, $filter: LocationFilterInput
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2043,7 +2031,6 @@ mutation createLocation($input: LocationInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2154,7 +2141,6 @@ mutation createLocation($input: LocationInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2381,7 +2367,6 @@ mutation createLocation($input: LocationInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -2539,7 +2524,6 @@ mutation updateLocation($id: ID!, $input: LocationInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2650,7 +2634,6 @@ mutation updateLocation($id: ID!, $input: LocationInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2877,7 +2860,6 @@ mutation updateLocation($id: ID!, $input: LocationInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates

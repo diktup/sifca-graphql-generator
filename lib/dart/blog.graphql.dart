@@ -213,7 +213,8 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType
       _$GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -546,8 +547,6 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType extends JsonSerializable
 
   String? postCode;
 
-  String? addressLine;
-
   GetBlogs$Query$BlogType$UserType$FullAddressType$LonLatType? location;
 
   GetBlogs$Query$BlogType$UserType$FullAddressType$CountryType? country;
@@ -558,7 +557,7 @@ class GetBlogs$Query$BlogType$UserType$FullAddressType extends JsonSerializable
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1881,7 +1880,8 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
       _$GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2217,8 +2217,6 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   String? postCode;
 
-  String? addressLine;
-
   GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -2233,7 +2231,7 @@ class GetPaginatedBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3644,7 +3642,8 @@ class Blog$Query$BlogType$UserType$FullAddressType$LonLatType
           Map<String, dynamic> json) =>
       _$Blog$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3972,8 +3971,6 @@ class Blog$Query$BlogType$UserType$FullAddressType extends JsonSerializable
 
   String? postCode;
 
-  String? addressLine;
-
   Blog$Query$BlogType$UserType$FullAddressType$LonLatType? location;
 
   Blog$Query$BlogType$UserType$FullAddressType$CountryType? country;
@@ -3984,7 +3981,7 @@ class Blog$Query$BlogType$UserType$FullAddressType extends JsonSerializable
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5289,7 +5286,8 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType
       _$FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5624,8 +5622,6 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   FindBlogsByTarget$Query$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -5639,7 +5635,7 @@ class FindBlogsByTarget$Query$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -7009,7 +7005,8 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType
       _$FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7345,8 +7342,6 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -7361,7 +7356,7 @@ class FindBlogsByTargetAndUrl$Query$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8727,7 +8722,8 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
       _$FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9063,8 +9059,6 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   String? postCode;
 
-  String? addressLine;
-
   FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -9079,7 +9073,7 @@ class FindBlogsByTargetPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -10485,7 +10479,8 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType
       _$FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10820,8 +10815,6 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -10835,7 +10828,7 @@ class FindBlogsByAuthor$Query$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12182,7 +12175,8 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
       _$FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12518,8 +12512,6 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   String? postCode;
 
-  String? addressLine;
-
   FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -12534,7 +12526,7 @@ class FindBlogsByAuthorPaginated$Query$PaginatedBlogsType$BlogType$UserType$Full
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13951,7 +13943,8 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$Lon
       _$SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -14287,8 +14280,6 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -14303,7 +14294,7 @@ class SearchBlogs$Query$PaginatedBlogsType$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -15689,7 +15680,8 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
       _$CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -16024,8 +16016,6 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CreateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType? location;
 
   CreateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType? country;
@@ -16037,7 +16027,7 @@ class CreateBlog$Mutation$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -17552,7 +17542,8 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
       _$PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -17887,8 +17878,6 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   PublishBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType? location;
 
   PublishBlog$Mutation$BlogType$UserType$FullAddressType$CountryType? country;
@@ -17900,7 +17889,7 @@ class PublishBlog$Mutation$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -19227,7 +19216,8 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
       _$UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -19562,8 +19552,6 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType? location;
 
   UpdateBlog$Mutation$BlogType$UserType$FullAddressType$CountryType? country;
@@ -19575,7 +19563,7 @@ class UpdateBlog$Mutation$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -20936,7 +20924,8 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType
       _$DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -21271,8 +21260,6 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   DeleteBlog$Mutation$BlogType$UserType$FullAddressType$LonLatType? location;
 
   DeleteBlog$Mutation$BlogType$UserType$FullAddressType$CountryType? country;
@@ -21284,7 +21271,7 @@ class DeleteBlog$Mutation$BlogType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -22611,6 +22598,15 @@ enum MaritalStatus {
   artemisUnknown,
 }
 
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum StateCapitalEnum {
   @JsonValue('PRIMARY')
   primary,
@@ -23387,13 +23383,6 @@ final GET_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -24016,13 +24005,6 @@ final GET_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -24639,13 +24621,6 @@ final GET_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -28663,13 +28638,6 @@ final GET_PAGINATED_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -29292,13 +29260,6 @@ final GET_PAGINATED_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -29915,13 +29876,6 @@ final GET_PAGINATED_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -33946,13 +33900,6 @@ final BLOG_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -34575,13 +34522,6 @@ final BLOG_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -35198,13 +35138,6 @@ final BLOG_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -39204,13 +39137,6 @@ final FIND_BLOGS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -39833,13 +39759,6 @@ final FIND_BLOGS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -40456,13 +40375,6 @@ final FIND_BLOGS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -44487,13 +44399,6 @@ final FIND_BLOGS_BY_TARGET_AND_URL_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -45116,13 +45021,6 @@ final FIND_BLOGS_BY_TARGET_AND_URL_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -45739,13 +45637,6 @@ final FIND_BLOGS_BY_TARGET_AND_URL_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -49827,13 +49718,6 @@ final FIND_BLOGS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -50456,13 +50340,6 @@ final FIND_BLOGS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -51079,13 +50956,6 @@ final FIND_BLOGS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -55110,13 +54980,6 @@ final FIND_BLOGS_BY_AUTHOR_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -55739,13 +55602,6 @@ final FIND_BLOGS_BY_AUTHOR_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -56362,13 +56218,6 @@ final FIND_BLOGS_BY_AUTHOR_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -60414,13 +60263,6 @@ final FIND_BLOGS_BY_AUTHOR_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -61043,13 +60885,6 @@ final FIND_BLOGS_BY_AUTHOR_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -61666,13 +61501,6 @@ final FIND_BLOGS_BY_AUTHOR_PAGINATED_QUERY_DOCUMENT =
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -65735,13 +65563,6 @@ final SEARCH_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -66364,13 +66185,6 @@ final SEARCH_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -66987,13 +66801,6 @@ final SEARCH_BLOGS_QUERY_DOCUMENT = DocumentNode(definitions: [
                       ),
                       FieldNode(
                         name: NameNode(value: 'postCode'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
-                        name: NameNode(value: 'addressLine'),
                         alias: null,
                         arguments: [],
                         directives: [],
@@ -71017,13 +70824,6 @@ final CREATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -71646,13 +71446,6 @@ final CREATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -72269,13 +72062,6 @@ final CREATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -76277,13 +76063,6 @@ final PUBLISH_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -76906,13 +76685,6 @@ final PUBLISH_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -77529,13 +77301,6 @@ final PUBLISH_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -81555,13 +81320,6 @@ final UPDATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -82184,13 +81942,6 @@ final UPDATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -82807,13 +82558,6 @@ final UPDATE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -86815,13 +86559,6 @@ final DELETE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -87444,13 +87181,6 @@ final DELETE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -88067,13 +87797,6 @@ final DELETE_BLOG_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],

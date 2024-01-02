@@ -15,6 +15,7 @@ query getOnsiteConverterByTarget($target: TargetACIInput!) {
           height
           x
           y
+          alt
         }
         perks {
           discount
@@ -28,12 +29,32 @@ query getOnsiteConverterByTarget($target: TargetACIInput!) {
           max
         }
         reputationLevel
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -56,6 +77,7 @@ mutation createOrUpdateOnsiteConverter($target: TargetACIInput!, $input: OnsiteC
           height
           x
           y
+          alt
         }
         perks {
           discount
@@ -69,12 +91,32 @@ mutation createOrUpdateOnsiteConverter($target: TargetACIInput!, $input: OnsiteC
           max
         }
         reputationLevel
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

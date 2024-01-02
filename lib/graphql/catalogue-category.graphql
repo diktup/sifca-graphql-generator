@@ -30,9 +30,52 @@ query getCatalogueCategories($target: TargetACIInput!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query catalogueCategory($id: ID!) {
@@ -67,9 +110,52 @@ query catalogueCategory($id: ID!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query getCatalogueCategoryPath($id: ID!) {
@@ -104,9 +190,52 @@ query getCatalogueCategoryPath($id: ID!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query getCatalogueCategoriesByTargetForPortal($target: TargetACIInput!) {
@@ -141,9 +270,52 @@ query getCatalogueCategoriesByTargetForPortal($target: TargetACIInput!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
@@ -178,9 +350,52 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
 
     children {
       id
@@ -213,9 +428,52 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
         height
         x
         y
+        alt
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          name
+          description
+        }
       }
 
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
 
       children {
         id
@@ -248,9 +506,52 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
           height
           x
           y
+          alt
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+            description
+          }
         }
 
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
 
         children {
           id
@@ -283,9 +584,52 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
             height
             x
             y
+            alt
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+              description
+            }
           }
 
-
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
 
           children {
             id
@@ -318,9 +662,52 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
               height
               x
               y
+              alt
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+                description
+              }
             }
 
-            
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
 
             children {
               id
@@ -353,9 +740,52 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
                 height
                 x
                 y
+                alt
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  name
+                  description
+                }
               }
 
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
@@ -363,10 +793,7 @@ query getCatalogueCategoriesByTargetWithChildren($target: TargetACIInput!) {
     }
   }
 }
-query getCatalogueCategoriesByTargetAndUrlKey(
-  $target: TargetACIInput!
-  $urlKey: String!
-) {
+query getCatalogueCategoriesByTargetAndUrlKey($target: TargetACIInput!, $urlKey: String!) {
   getCatalogueCategoriesByTargetAndUrlKey(target: $target, urlKey: $urlKey) {
     id
     name
@@ -398,19 +825,56 @@ query getCatalogueCategoriesByTargetAndUrlKey(
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
-query getCatalogueCategoriesByTargetPaginated(
-  $target: TargetACIInput!
-  $pagination: PaginationInput
-) {
-  getCatalogueCategoriesByTargetPaginated(
-    target: $target
-    pagination: $pagination
-  ) {
+query getCatalogueCategoriesByTargetPaginated($target: TargetACIInput!, $pagination: PaginationInput) {
+  getCatalogueCategoriesByTargetPaginated(target: $target, pagination: $pagination) {
     count
     isLast
     objects {
@@ -444,101 +908,57 @@ query getCatalogueCategoriesByTargetPaginated(
         height
         x
         y
+        alt
       }
-
-
-    }
-  }
-}
-query getCatalogueCategoriesByLayerAndParent(
-  $target: TargetACIInput!
-  $layer: Int!
-  $variety: ProductVarietyEnum
-  $parent: String
-) {
-  getCatalogueCategoriesByLayerAndParent(
-    target: $target
-    layer: $layer
-    variety: $variety
-    parent: $parent
-  ) {
-    id
-    name
-    rank
-    layer
-    createdAt
-    updatedAt
-    variety
-    externalId
-    hasChildren
-    description
-    portal
-    pickup
-    booking
-    delivery
-    seo {
-      urlKey
-      metaTitle
-      metaDesription
-      metaKeywords {
-        name
-        content
-      }
-    }
-    pictures {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-    }
-
-    parent {
-      id
-      name
-      rank
-      layer
-      createdAt
-      updatedAt
-      variety
-      externalId
-      hasChildren
-      description
-      portal
-      pickup
-      booking
-      delivery
-      seo {
-        urlKey
-        metaTitle
-        metaDesription
-        metaKeywords {
+      translation {
+        language {
+          id
           name
-          content
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          name
+          description
         }
       }
-      pictures {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
+
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
       }
     }
   }
 }
-query getCatalogueCategoriesByLayerAndParentForPortal(
-  $target: TargetACIInput!
-  $layer: Int!
-  $parent: String
-) {
-  getCatalogueCategoriesByLayerAndParentForPortal(
-    target: $target
-    layer: $layer
-    parent: $parent
-  ) {
+query getCatalogueCategoriesByLayerAndParent($target: TargetACIInput!, $layer: Int!, $variety: ProductVarietyEnum, $parent: String) {
+  getCatalogueCategoriesByLayerAndParent(target: $target, layer: $layer, variety: $variety, parent: $parent) {
     id
     name
     rank
@@ -569,19 +989,136 @@ query getCatalogueCategoriesByLayerAndParentForPortal(
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
-query searchCatalogueCategories(
-  $pagination: PaginationInput
-  $searchString: String
-) {
-  searchCatalogueCategories(
-    pagination: $pagination
-    searchString: $searchString
-  ) {
+query getCatalogueCategoriesByLayerAndParentForPortal($target: TargetACIInput!, $layer: Int!, $parent: String) {
+  getCatalogueCategoriesByLayerAndParentForPortal(target: $target, layer: $layer, parent: $parent) {
+    id
+    name
+    rank
+    layer
+    createdAt
+    updatedAt
+    variety
+    externalId
+    hasChildren
+    description
+    portal
+    pickup
+    booking
+    delivery
+    seo {
+      urlKey
+      metaTitle
+      metaDesription
+      metaKeywords {
+        name
+        content
+      }
+    }
+    pictures {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
+    }
+
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
+  }
+}
+query searchCatalogueCategories($pagination: PaginationInput, $searchString: String) {
+  searchCatalogueCategories(pagination: $pagination, searchString: $searchString) {
     count
     isLast
     objects {
@@ -615,9 +1152,52 @@ query searchCatalogueCategories(
         height
         x
         y
+        alt
+      }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          name
+          description
+        }
       }
 
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -654,9 +1234,52 @@ mutation createCatalogueCategory($input: CatalogueCategoryInput!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation updateCatalogueCategory($input: CatalogueCategoryUpdateInput!) {
@@ -691,9 +1314,52 @@ mutation updateCatalogueCategory($input: CatalogueCategoryUpdateInput!) {
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation deleteCatalogueCategory($id: ID!) {
@@ -702,16 +1368,8 @@ mutation deleteCatalogueCategory($id: ID!) {
     message
   }
 }
-mutation reorderCatalogueCategories(
-  $catalogCategoryId: String!
-  $target: TargetACIInput!
-  $newRank: Float!
-) {
-  reorderCatalogueCategories(
-    catalogCategoryId: $catalogCategoryId
-    target: $target
-    newRank: $newRank
-  ) {
+mutation reorderCatalogueCategories($catalogCategoryId: String!, $target: TargetACIInput!, $newRank: Float!) {
+  reorderCatalogueCategories(catalogCategoryId: $catalogCategoryId, target: $target, newRank: $newRank) {
     id
     name
     rank
@@ -742,8 +1400,51 @@ mutation reorderCatalogueCategories(
       height
       x
       y
+      alt
+    }
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        name
+        description
+      }
     }
 
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }

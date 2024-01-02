@@ -834,7 +834,6 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
     this.city,
     this.country,
     this.state,
-    this.addressLine,
     this.location,
   });
 
@@ -853,13 +852,11 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
 
   String? state;
 
-  String? addressLine;
-
   LonLatInput? location;
 
   @override
   List<Object?> get props =>
-      [owner, address, postCode, city, country, state, addressLine, location];
+      [owner, address, postCode, city, country, state, location];
 
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
@@ -910,14 +907,15 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 @JsonSerializable(explicitToJson: true)
 class LonLatInput extends JsonSerializable with EquatableMixin {
   LonLatInput({
-    required this.type,
+    this.type,
     required this.coordinates,
   });
 
   factory LonLatInput.fromJson(Map<String, dynamic> json) =>
       _$LonLatInputFromJson(json);
 
-  late String type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   late List<double> coordinates;
 
@@ -1261,6 +1259,15 @@ class DeleteBank$Mutation extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$DeleteBank$MutationToJson(this);
+}
+
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
 }
 
 @JsonSerializable(explicitToJson: true)

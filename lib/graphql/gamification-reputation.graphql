@@ -51,6 +51,34 @@ query getUserWalletWithReputations {
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -108,7 +136,6 @@ query getUserWalletWithReputations {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -209,7 +236,6 @@ query getUserWalletWithReputations {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -310,7 +336,6 @@ query getUserWalletWithReputations {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -917,7 +942,6 @@ query getUserWalletWithReputations {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1263,7 +1287,6 @@ query getUserWalletWithReputations {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1374,7 +1397,6 @@ query getUserWalletWithReputations {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2005,7 +2027,6 @@ query getUserWalletWithReputations {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2116,7 +2137,6 @@ query getUserWalletWithReputations {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -2393,7 +2413,6 @@ query getUserWalletWithReputations {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2519,7 +2538,6 @@ query getUserWalletWithReputations {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2630,7 +2648,6 @@ query getUserWalletWithReputations {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2915,7 +2932,6 @@ query getUserWalletWithReputations {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3041,7 +3057,6 @@ query getUserWalletWithReputations {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3152,7 +3167,6 @@ query getUserWalletWithReputations {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3599,7 +3613,17 @@ query getUserWalletWithReputations {
         updatedAt
       }
 
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       reputationLevels {
         id
         rank
@@ -3625,7 +3649,17 @@ query getUserWalletWithReputations {
           max
         }
         reputationLevel
-       
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -3658,7 +3692,17 @@ query getReputationsByTarget($target: TargetACIInput!) {
       max
     }
     reputationLevel
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -3690,7 +3734,17 @@ mutation updateTargetReputation($input: UpdateReputationInput!) {
       max
     }
     reputationLevel
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -3721,7 +3775,17 @@ mutation updateReputationLevelPoints($points: Float!, $id: String!) {
       max
     }
     reputationLevel
-   
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

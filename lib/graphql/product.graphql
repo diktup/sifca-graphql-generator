@@ -171,7 +171,6 @@ query getProducts {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -206,7 +205,6 @@ query getProducts {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -298,7 +296,6 @@ query getProducts {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -332,8 +329,8 @@ query getProducts {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -409,7 +406,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -443,7 +439,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -633,7 +629,17 @@ adminName
           updatedAt
         }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -656,9 +662,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -830,7 +887,6 @@ query product($id: String!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -865,7 +921,6 @@ query product($id: String!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -957,7 +1012,6 @@ query product($id: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -991,8 +1045,8 @@ query product($id: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1068,7 +1122,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1102,7 +1155,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -1292,7 +1345,17 @@ adminName
           updatedAt
         }
       }
-     
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -1315,9 +1378,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -1489,7 +1603,6 @@ query findOneByEAN($ean: String!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1524,7 +1637,6 @@ query findOneByEAN($ean: String!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1616,7 +1728,6 @@ query findOneByEAN($ean: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1650,8 +1761,8 @@ query findOneByEAN($ean: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1727,7 +1838,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1761,7 +1871,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -1951,7 +2061,17 @@ adminName
           updatedAt
         }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -1974,9 +2094,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -2151,7 +2322,6 @@ query searchProduct($pagination: PaginationInput, $catId: String, $searchString:
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2185,8 +2355,8 @@ query searchProduct($pagination: PaginationInput, $catId: String, $searchString:
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2277,7 +2447,6 @@ adminName
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -2388,7 +2557,6 @@ adminName
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -2612,7 +2780,17 @@ adminName
             updatedAt
           }
         }
-       
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
       productAttributes {
         id
@@ -2635,9 +2813,60 @@ adminName
           pixel {
             pixelAttribute
           }
-          
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
     }
   }
@@ -2813,7 +3042,6 @@ query getProductsByClass($pagination: PaginationInput, $class: [ProductClassEnum
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2847,8 +3075,8 @@ query getProductsByClass($pagination: PaginationInput, $class: [ProductClassEnum
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2939,7 +3167,6 @@ adminName
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -3050,7 +3277,6 @@ adminName
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -3274,7 +3500,17 @@ adminName
             updatedAt
           }
         }
-     
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
       productAttributes {
         id
@@ -3297,9 +3533,60 @@ adminName
           pixel {
             pixelAttribute
           }
-          
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
     }
   }
@@ -3475,7 +3762,6 @@ query getProductsPagination($pagination: PaginationInput) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3509,8 +3795,8 @@ query getProductsPagination($pagination: PaginationInput) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3601,7 +3887,6 @@ adminName
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -3712,7 +3997,6 @@ adminName
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -3936,7 +4220,17 @@ adminName
             updatedAt
           }
         }
-     
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
       productAttributes {
         id
@@ -3959,9 +4253,60 @@ adminName
           pixel {
             pixelAttribute
           }
-          
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
     }
   }
@@ -4137,7 +4482,6 @@ query getProductsByCategoryPagination($pagination: PaginationInput, $category_id
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4171,8 +4515,8 @@ query getProductsByCategoryPagination($pagination: PaginationInput, $category_id
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -4263,7 +4607,6 @@ adminName
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4374,7 +4717,6 @@ adminName
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -4598,7 +4940,17 @@ adminName
             updatedAt
           }
         }
-     
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
       productAttributes {
         id
@@ -4621,9 +4973,60 @@ adminName
           pixel {
             pixelAttribute
           }
-          
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
     }
   }
@@ -4797,7 +5200,6 @@ mutation createProduct($input: ProductInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4832,7 +5234,6 @@ mutation createProduct($input: ProductInput!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -4924,7 +5325,6 @@ mutation createProduct($input: ProductInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4958,8 +5358,8 @@ mutation createProduct($input: ProductInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -5035,7 +5435,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -5069,7 +5468,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -5259,7 +5658,17 @@ adminName
           updatedAt
         }
       }
-   
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -5282,9 +5691,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -5456,7 +5916,6 @@ mutation updateProduct($input: ProductUpdateInput!, $id: String!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -5491,7 +5950,6 @@ mutation updateProduct($input: ProductUpdateInput!, $id: String!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -5583,7 +6041,6 @@ mutation updateProduct($input: ProductUpdateInput!, $id: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -5617,8 +6074,8 @@ mutation updateProduct($input: ProductUpdateInput!, $id: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -5694,7 +6151,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -5728,7 +6184,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -5918,7 +6374,17 @@ adminName
           updatedAt
         }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -5941,9 +6407,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -6115,7 +6632,6 @@ mutation deleteProduct($id: String!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -6150,7 +6666,6 @@ mutation deleteProduct($id: String!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -6242,7 +6757,6 @@ mutation deleteProduct($id: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -6276,8 +6790,8 @@ mutation deleteProduct($id: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -6353,7 +6867,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -6387,7 +6900,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -6577,7 +7090,17 @@ adminName
           updatedAt
         }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -6600,9 +7123,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -6775,7 +7349,6 @@ subscription listenForProductCreated {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -6810,7 +7383,6 @@ subscription listenForProductCreated {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -6902,7 +7474,6 @@ subscription listenForProductCreated {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -6936,8 +7507,8 @@ subscription listenForProductCreated {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -7013,7 +7584,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -7047,7 +7617,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -7237,7 +7807,17 @@ adminName
           updatedAt
         }
       }
-   
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
     productAttributes {
       id
@@ -7260,9 +7840,60 @@ adminName
         pixel {
           pixelAttribute
         }
-        
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            label
+          }
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
       }
-      
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }

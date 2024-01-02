@@ -15,6 +15,7 @@ query getPOSCategoriesPagination($pagination: PaginationInput) {
         height
         x
         y
+        alt
       }
     }
   }
@@ -33,6 +34,7 @@ query getPOSCategories {
       height
       x
       y
+      alt
     }
   }
 }
@@ -50,6 +52,7 @@ query posCategory($id: String!) {
       height
       x
       y
+      alt
     }
   }
 }
@@ -70,6 +73,7 @@ query searchPosCategory($pagination: PaginationInput, $searchString: String!) {
         height
         x
         y
+        alt
       }
     }
   }
@@ -89,6 +93,7 @@ mutation createPOSCategory($input: POSCategoryInput!) {
       height
       x
       y
+      alt
     }
   }
 }
@@ -106,6 +111,7 @@ mutation updatePOSCategory($input: POSCategoryInput!, $id: String!) {
       height
       x
       y
+      alt
     }
   }
 }
@@ -123,8 +129,26 @@ mutation deletePOSCategory($id: String!) {
       height
       x
       y
+      alt
     }
   }
 }
 
- 
+subscription listenForPOSCategoryCreated {
+  listenForPOSCategoryCreated {
+    id
+    name
+    mapPicture
+    createdAt
+    updatedAt
+    picture {
+      baseUrl
+      path
+      width
+      height
+      x
+      y
+      alt
+    }
+  }
+}

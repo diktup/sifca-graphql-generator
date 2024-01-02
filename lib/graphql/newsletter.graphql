@@ -50,6 +50,34 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -107,7 +135,6 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -208,7 +235,6 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -309,7 +335,6 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -795,7 +820,17 @@ query getSubscribersToNewsletter($target: TargetACIInput!) {
       interests
     }
     email
- 
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -855,6 +890,34 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           y
           alt
         }
+        permission {
+          id
+          name
+          permissions {
+            permission {
+              id
+              name
+              createdAt
+              updatedAt
+            }
+            read
+            write
+            create
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
         languages {
           id
           name
@@ -912,7 +975,6 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -947,7 +1009,6 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1014,7 +1075,6 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1049,7 +1109,6 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1116,7 +1175,6 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1151,7 +1209,6 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1603,7 +1660,17 @@ query getSubscribersToNewsletterPaginated($pagination: PaginationInput, $searchS
         interests
       }
       email
-   
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -1678,6 +1745,34 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -1735,7 +1830,6 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1836,7 +1930,6 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1937,7 +2030,6 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2423,7 +2515,17 @@ mutation addUserToNewsLetter($email: String!, $target: TargetACIInput!) {
       interests
     }
     email
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

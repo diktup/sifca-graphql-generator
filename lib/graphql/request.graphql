@@ -16,7 +16,6 @@ query getRequests {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -128,7 +127,17 @@ query getRequests {
       content
     }
     type
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     status
     createdAt
     updatedAt
@@ -152,7 +161,6 @@ query getRequest($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -264,7 +272,17 @@ query getRequest($id: ID!) {
       content
     }
     type
-  
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     status
     createdAt
     updatedAt
@@ -291,7 +309,6 @@ query getRequestsPaginated($pagination: PaginationInput) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -326,7 +343,6 @@ query getRequestsPaginated($pagination: PaginationInput) {
           state {
             id
             name
-
             adminName
             capital
             population
@@ -404,17 +420,24 @@ query getRequestsPaginated($pagination: PaginationInput) {
         content
       }
       type
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       status
       createdAt
       updatedAt
     }
   }
 }
-query getRequestsByTypePaginated(
-  $pagination: PaginationInput
-  $type: RequestTypeEnum!
-) {
+query getRequestsByTypePaginated($pagination: PaginationInput, $type: RequestTypeEnum!) {
   getRequestsByTypePaginated(pagination: $pagination, type: $type) {
     count
     isLast
@@ -435,7 +458,6 @@ query getRequestsByTypePaginated(
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -470,7 +492,6 @@ query getRequestsByTypePaginated(
           state {
             id
             name
-
             adminName
             capital
             population
@@ -548,7 +569,17 @@ query getRequestsByTypePaginated(
         content
       }
       type
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       status
       createdAt
       updatedAt
@@ -561,12 +592,7 @@ query getRequestsByTypeAndTargetPaginated(
   $type: RequestTypeEnum
   $target: TargetACIInput!
 ) {
-  getRequestsByTypeAndTargetPaginated(
-    pagination: $pagination
-    searchString: $searchString
-    type: $type
-    target: $target
-  ) {
+  getRequestsByTypeAndTargetPaginated(pagination: $pagination, searchString: $searchString, type: $type, target: $target) {
     count
     isLast
     objects {
@@ -586,7 +612,6 @@ query getRequestsByTypeAndTargetPaginated(
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -621,7 +646,6 @@ query getRequestsByTypeAndTargetPaginated(
           state {
             id
             name
-
             adminName
             capital
             population
@@ -699,42 +723,30 @@ query getRequestsByTypeAndTargetPaginated(
         content
       }
       type
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       status
       createdAt
       updatedAt
     }
   }
 }
-query getRequestsByExcel(
-  $target: TargetACIInput!
-  $type: RequestTypeEnum
-  $searchString: String
-  $path: String
-) {
-  getRequestsByExcel(
-    target: $target
-    type: $type
-    searchString: $searchString
-    path: $path
-  ) {
+query getRequestsByExcel($target: TargetACIInput!, $type: RequestTypeEnum, $searchString: String, $path: String) {
+  getRequestsByExcel(target: $target, type: $type, searchString: $searchString, path: $path) {
     content
   }
 }
-query sendRequestsBymail(
-  $target: TargetACIInput!
-  $type: RequestTypeEnum
-  $searchString: String
-  $emails: [String!]
-  $subject: String!
-) {
-  sendRequestsBymail(
-    target: $target
-    type: $type
-    searchString: $searchString
-    emails: $emails
-    subject: $subject
-  ) {
+query sendRequestsBymail($target: TargetACIInput!, $type: RequestTypeEnum, $searchString: String, $emails: [String!], $subject: String!) {
+  sendRequestsBymail(target: $target, type: $type, searchString: $searchString, emails: $emails, subject: $subject) {
     accepted
     rejected
     response
@@ -763,7 +775,6 @@ mutation createRequest($input: RequestInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -875,7 +886,17 @@ mutation createRequest($input: RequestInput!) {
       content
     }
     type
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     status
     createdAt
     updatedAt
@@ -899,7 +920,6 @@ mutation updateRequestStatus($id: ID!, $status: RequestStatusEnum!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1011,7 +1031,17 @@ mutation updateRequestStatus($id: ID!, $status: RequestStatusEnum!) {
       content
     }
     type
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     status
     createdAt
     updatedAt
@@ -1036,7 +1066,6 @@ subscription listenForRequest {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1148,7 +1177,17 @@ subscription listenForRequest {
       content
     }
     type
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     status
     createdAt
     updatedAt

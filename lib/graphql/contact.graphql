@@ -256,7 +256,6 @@ query getCompanyContacts {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -384,7 +383,6 @@ query getCompanyContacts {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -495,7 +493,6 @@ query getCompanyContacts {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -529,8 +526,8 @@ query getCompanyContacts {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -980,7 +977,6 @@ query companyContact($id: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -1108,7 +1104,6 @@ query companyContact($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1219,7 +1214,6 @@ query companyContact($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1253,8 +1247,8 @@ query companyContact($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1704,7 +1698,6 @@ query getCompanyContactsByCompany($company: ID!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -1832,7 +1825,6 @@ query getCompanyContactsByCompany($company: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1943,7 +1935,6 @@ query getCompanyContactsByCompany($company: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1977,8 +1968,8 @@ query getCompanyContactsByCompany($company: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2431,7 +2422,6 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $searchString: String,
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2559,7 +2549,6 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $searchString: String,
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2594,7 +2583,6 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $searchString: String,
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -2671,7 +2659,6 @@ query getCompanyContactsByCompanyPaginated($company: ID!, $searchString: String,
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -3160,7 +3147,6 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3288,7 +3274,6 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3323,7 +3308,6 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -3400,7 +3384,6 @@ query getCompanyContactsByTargetPaginated($phase: CustomerPhaseEnum!, $target: T
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -3887,7 +3870,6 @@ mutation createCompanyContact($input: CompanyContactInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4015,7 +3997,6 @@ mutation createCompanyContact($input: CompanyContactInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -4126,7 +4107,6 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4160,8 +4140,8 @@ mutation createCompanyContact($input: CompanyContactInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -4611,7 +4591,6 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactUpdateInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -4739,7 +4718,6 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactUpdateInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -4850,7 +4828,6 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactUpdateInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4884,8 +4861,8 @@ mutation updateCompanyContact($id: ID!, $input: CompanyContactUpdateInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii

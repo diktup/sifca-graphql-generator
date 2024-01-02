@@ -82,7 +82,6 @@ query getTickets {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -193,7 +192,6 @@ query getTickets {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -227,8 +225,8 @@ query getTickets {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -790,7 +788,17 @@ adminName
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -879,7 +887,6 @@ query ticket($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -990,7 +997,6 @@ query ticket($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1024,8 +1030,8 @@ query ticket($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1587,7 +1593,17 @@ adminName
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -1676,7 +1692,6 @@ query getTicketsByTarget($target: TargetACIInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1787,7 +1802,6 @@ query getTicketsByTarget($target: TargetACIInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1821,8 +1835,8 @@ query getTicketsByTarget($target: TargetACIInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2384,7 +2398,17 @@ adminName
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -2481,7 +2505,6 @@ query getTicketsByTargetWithFilter(
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2516,7 +2539,6 @@ query getTicketsByTargetWithFilter(
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -2593,7 +2615,6 @@ query getTicketsByTargetWithFilter(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -3190,7 +3211,17 @@ query getTicketsByTargetWithFilter(
         createdAt
         updatedAt
       }
-       
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -3387,7 +3418,6 @@ mutation createTicket($input: TicketInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3498,7 +3528,6 @@ mutation createTicket($input: TicketInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3532,8 +3561,8 @@ mutation createTicket($input: TicketInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -4095,7 +4124,17 @@ adminName
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -4184,7 +4223,6 @@ mutation updateTicket($input: TicketUpdateInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -4295,7 +4333,6 @@ mutation updateTicket($input: TicketUpdateInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4329,8 +4366,8 @@ mutation updateTicket($input: TicketUpdateInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -4892,7 +4929,17 @@ adminName
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -4981,7 +5028,6 @@ mutation bulkUpdateTicketMedia($input: [UpdateMediaInput!]!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -5092,7 +5138,6 @@ mutation bulkUpdateTicketMedia($input: [UpdateMediaInput!]!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -5126,8 +5171,8 @@ mutation bulkUpdateTicketMedia($input: [UpdateMediaInput!]!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -5689,7 +5734,17 @@ adminName
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

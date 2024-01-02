@@ -796,6 +796,34 @@ query getMessageGroupMembers($id: ID!, $pagination: PaginationInput) {
         y
         alt
       }
+      permission {
+        id
+        name
+        permissions {
+          permission {
+            id
+            name
+            createdAt
+            updatedAt
+          }
+          read
+          write
+          create
+        }
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
       languages {
         id
         name
@@ -853,7 +881,6 @@ query getMessageGroupMembers($id: ID!, $pagination: PaginationInput) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -954,7 +981,6 @@ query getMessageGroupMembers($id: ID!, $pagination: PaginationInput) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1055,7 +1081,6 @@ query getMessageGroupMembers($id: ID!, $pagination: PaginationInput) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1783,125 +1808,6 @@ mutation createMessageGroup($input: MessageGroupInput!) {
 }
 mutation archiveMessageGroup($id: ID!) {
   archiveMessageGroup(id: $id) {
-    id
-    name
-    mute
-    creator {
-      id
-      email
-      gender
-      lastName
-      username
-      firstName
-      phone {
-        number
-        isValid
-        countryCode
-        validationNumber
-      }
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-        alt
-      }
-    }
-    profilePicture {
-      baseUrl
-      path
-      width
-      height
-      x
-      y
-      alt
-    }
-    wallpaper {
-      picture {
-        baseUrl
-        path
-        width
-        height
-        x
-        y
-        alt
-      }
-      gradientColors
-      assetImage
-    }
-    sound
-    isDirectMessage
-    members {
-      users {
-        id
-        email
-        gender
-        lastName
-        username
-        firstName
-        phone {
-          number
-          isValid
-          countryCode
-          validationNumber
-        }
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-          alt
-        }
-      }
-    }
-    status
-    lastMessage {
-      text
-      gif
-      sticker
-      media {
-        video {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-          alt
-        }
-        picture {
-          baseUrl
-          path
-          width
-          height
-          x
-          y
-          alt
-        }
-      }
-      location {
-        type
-        coordinates
-      }
-      custom {
-        id
-        type
-      }
-      unread
-      createdAt
-      updatedAt
-    }
-    unreadCount
-    createdAt
-    updatedAt
-  }
-}
-mutation unarchiveMessageGroup($id: ID!) {
-  unarchiveMessageGroup(id: $id) {
     id
     name
     mute

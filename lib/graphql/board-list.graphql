@@ -34,7 +34,17 @@ query getBoardLists {
           alt
         }
       }
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -78,7 +88,17 @@ query getBoardList($id: ID!) {
           alt
         }
       }
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -122,7 +142,17 @@ query getBoardListByBoard($boardId: ID!) {
           alt
         }
       }
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -434,7 +464,17 @@ query getCRMBoard($target: TargetACIInput!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -478,7 +518,17 @@ query getCRMBoard($target: TargetACIInput!) {
           icon
           color
           category
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           createdAt
           updatedAt
         }
@@ -510,6 +560,36 @@ query getCRMBoard($target: TargetACIInput!) {
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -665,6 +745,37 @@ query getCRMBoard($target: TargetACIInput!) {
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -679,8 +790,49 @@ query getCRMBoard($target: TargetACIInput!) {
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -725,6 +877,37 @@ query getCRMBoard($target: TargetACIInput!) {
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -894,7 +1077,6 @@ query getCRMBoard($target: TargetACIInput!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -1020,7 +1202,6 @@ query getCRMBoard($target: TargetACIInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -1131,7 +1312,6 @@ query getCRMBoard($target: TargetACIInput!) {
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -1355,7 +1535,17 @@ query getCRMBoard($target: TargetACIInput!) {
                   updatedAt
                 }
               }
-             
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -1378,9 +1568,60 @@ query getCRMBoard($target: TargetACIInput!) {
                 pixel {
                   pixelAttribute
                 }
-                
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
@@ -1688,7 +1929,6 @@ query getCRMBoard($target: TargetACIInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1722,8 +1962,8 @@ query getCRMBoard($target: TargetACIInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1799,7 +2039,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -1833,7 +2072,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -2441,7 +2680,17 @@ query getMaintenanceBoard($target: TargetACIInput!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -2485,7 +2734,17 @@ query getMaintenanceBoard($target: TargetACIInput!) {
           icon
           color
           category
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           createdAt
           updatedAt
         }
@@ -2517,6 +2776,36 @@ query getMaintenanceBoard($target: TargetACIInput!) {
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -2672,6 +2961,37 @@ query getMaintenanceBoard($target: TargetACIInput!) {
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -2686,8 +3006,49 @@ query getMaintenanceBoard($target: TargetACIInput!) {
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -2732,6 +3093,37 @@ query getMaintenanceBoard($target: TargetACIInput!) {
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -2901,7 +3293,6 @@ query getMaintenanceBoard($target: TargetACIInput!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -3027,7 +3418,6 @@ query getMaintenanceBoard($target: TargetACIInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -3138,7 +3528,6 @@ query getMaintenanceBoard($target: TargetACIInput!) {
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -3362,7 +3751,17 @@ query getMaintenanceBoard($target: TargetACIInput!) {
                   updatedAt
                 }
               }
-             
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -3385,9 +3784,60 @@ query getMaintenanceBoard($target: TargetACIInput!) {
                 pixel {
                   pixelAttribute
                 }
-                
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
@@ -3695,7 +4145,6 @@ query getMaintenanceBoard($target: TargetACIInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3729,8 +4178,8 @@ query getMaintenanceBoard($target: TargetACIInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3806,7 +4255,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3840,7 +4288,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -4181,7 +4629,17 @@ mutation createBoardList($name: String!, $rank: Int, $board: ID!) {
           alt
         }
       }
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -4218,7 +4676,17 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
       icon
       color
       category
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -4249,6 +4717,36 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -4404,6 +4902,37 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -4418,8 +4947,49 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -4464,6 +5034,37 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -4633,7 +5234,6 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4759,7 +5359,6 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -4793,7 +5392,7 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -4870,7 +5469,6 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -5094,7 +5692,17 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
               updatedAt
             }
           }
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -5117,9 +5725,60 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
             pixel {
               pixelAttribute
             }
-          
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -5432,7 +6091,17 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -5469,7 +6138,6 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -5580,7 +6248,6 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -5614,8 +6281,8 @@ mutation createMaintenanceBoardCard($input: MaintenanceBoardCardInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -5952,7 +6619,17 @@ mutation reorderBoardList($id: ID!, $rank: Int!) {
           alt
         }
       }
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -5996,7 +6673,17 @@ mutation updateBoardList($id: ID!, $name: String!, $rank: Int, $board: ID!) {
           alt
         }
       }
-    
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }

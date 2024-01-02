@@ -185,7 +185,8 @@ class GetBrands$Query$BrandType$ManufacturerType$FullAddressType$LonLatType
       _$GetBrands$Query$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -521,8 +522,6 @@ class GetBrands$Query$BrandType$ManufacturerType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrands$Query$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -536,7 +535,7 @@ class GetBrands$Query$BrandType$ManufacturerType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -613,7 +612,8 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$Lon
       _$GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -949,8 +949,6 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -965,7 +963,7 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1008,7 +1006,8 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$Ban
       _$GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1344,8 +1343,6 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$Ban
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -1360,7 +1357,7 @@ class GetBrands$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$Ban
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2022,7 +2019,8 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$LonLatT
       _$GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2358,8 +2356,6 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -2374,7 +2370,7 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2452,7 +2448,8 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddress
       _$GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2788,8 +2785,6 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddress
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -2804,7 +2799,7 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddress
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2847,7 +2842,8 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetails
       _$GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3183,8 +3179,6 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetails
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -3199,7 +3193,7 @@ class GetBrandsByTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetails
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3890,7 +3884,8 @@ class Brand$Query$BrandType$ManufacturerType$FullAddressType$LonLatType
       _$Brand$Query$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4225,8 +4220,6 @@ class Brand$Query$BrandType$ManufacturerType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   Brand$Query$BrandType$ManufacturerType$FullAddressType$LonLatType? location;
 
   Brand$Query$BrandType$ManufacturerType$FullAddressType$CountryType? country;
@@ -4238,7 +4231,7 @@ class Brand$Query$BrandType$ManufacturerType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4315,7 +4308,8 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatT
       _$Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4651,8 +4645,6 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -4667,7 +4659,7 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4710,7 +4702,8 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDet
       _$Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5046,8 +5039,6 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDet
 
   String? postCode;
 
-  String? addressLine;
-
   Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -5062,7 +5053,7 @@ class Brand$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDet
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5723,7 +5714,8 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Ful
       _$GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6059,8 +6051,6 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Ful
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -6075,7 +6065,7 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Ful
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -6153,7 +6143,8 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
       _$GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6489,8 +6480,6 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -6505,7 +6494,7 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -6548,7 +6537,8 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
       _$GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6881,8 +6871,6 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -6897,7 +6885,7 @@ class GetBrandsPagination$Query$BrandPaginateType$BrandType$ManufacturerType$Com
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -7617,7 +7605,8 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
       _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7953,8 +7942,6 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -7969,7 +7956,7 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8047,7 +8034,8 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
       _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8383,8 +8371,6 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -8399,7 +8385,7 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8442,7 +8428,8 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
       _$GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8775,8 +8762,6 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   String? postCode;
 
-  String? addressLine;
-
   GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -8791,7 +8776,7 @@ class GetBrandsByTargetPaginated$Query$BrandPaginateType$BrandType$ManufacturerT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -9496,7 +9481,8 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddress
       _$SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9832,8 +9818,6 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddress
 
   String? postCode;
 
-  String? addressLine;
-
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -9848,7 +9832,7 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$FullAddress
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -9926,7 +9910,8 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
       _$SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10262,8 +10247,6 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   String? postCode;
 
-  String? addressLine;
-
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -10278,7 +10261,7 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -10321,7 +10304,8 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
       _$SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10654,8 +10638,6 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   String? postCode;
 
-  String? addressLine;
-
   SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -10670,7 +10652,7 @@ class SearchBrand$Query$BrandPaginateType$BrandType$ManufacturerType$CompanyType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -11367,7 +11349,8 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddres
       _$FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -11703,8 +11686,6 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddres
 
   String? postCode;
 
-  String? addressLine;
-
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -11719,7 +11700,7 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$FullAddres
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -11797,7 +11778,8 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
       _$FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12133,8 +12115,6 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
 
   String? postCode;
 
-  String? addressLine;
-
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -12149,7 +12129,7 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12192,7 +12172,8 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
       _$FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12528,8 +12509,6 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
 
   String? postCode;
 
-  String? addressLine;
-
   FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -12544,7 +12523,7 @@ class FindBrandByExternalIdAndTarget$Query$BrandType$ManufacturerType$CompanyTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13221,7 +13200,8 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatTyp
       _$SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -13557,8 +13537,6 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -13573,7 +13551,7 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13651,7 +13629,8 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTy
       _$SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -13987,8 +13966,6 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTy
 
   String? postCode;
 
-  String? addressLine;
-
   SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -14003,7 +13980,7 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -14046,7 +14023,8 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTy
       _$SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -14382,8 +14360,6 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTy
 
   String? postCode;
 
-  String? addressLine;
-
   SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -14398,7 +14374,7 @@ class SyncOneBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -15133,7 +15109,8 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatType
       _$CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -15469,8 +15446,6 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -15485,7 +15460,7 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -15563,7 +15538,8 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
       _$CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -15899,8 +15875,6 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
 
   String? postCode;
 
-  String? addressLine;
-
   CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -15915,7 +15889,7 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -15958,7 +15932,8 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
       _$CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -16294,8 +16269,6 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
 
   String? postCode;
 
-  String? addressLine;
-
   CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -16310,7 +16283,7 @@ class CreateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -16973,7 +16946,8 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatType
       _$UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -17309,8 +17283,6 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -17325,7 +17297,7 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -17403,7 +17375,8 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
       _$UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -17739,8 +17712,6 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -17755,7 +17726,7 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$FullAddressTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -17798,7 +17769,8 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
       _$UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -18134,8 +18106,6 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -18150,7 +18120,7 @@ class UpdateBrand$Mutation$BrandType$ManufacturerType$CompanyType$BankDetailsTyp
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -18851,7 +18821,8 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressT
       _$ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -19187,8 +19158,6 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressT
 
   String? postCode;
 
-  String? addressLine;
-
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -19203,7 +19172,7 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$FullAddressT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -19281,7 +19250,8 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
       _$ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -19617,8 +19587,6 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
 
   String? postCode;
 
-  String? addressLine;
-
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -19633,7 +19601,7 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -19676,7 +19644,8 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
       _$ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -20012,8 +19981,6 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
 
   String? postCode;
 
-  String? addressLine;
-
   ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -20028,7 +19995,7 @@ class ListenForBrandCreated$Subscription$BrandType$ManufacturerType$CompanyType$
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -20523,6 +20490,15 @@ class ListenForBrandCreated$Subscription extends JsonSerializable
       _$ListenForBrandCreated$SubscriptionToJson(this);
 }
 
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum StateCapitalEnum {
   @JsonValue('PRIMARY')
   primary,
@@ -20983,13 +20959,6 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -21774,13 +21743,6 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -22459,13 +22421,6 @@ final GET_BRANDS_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -24348,13 +24303,6 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -25133,13 +25081,6 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -25818,13 +25759,6 @@ final GET_BRANDS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -27712,13 +27646,6 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -28497,13 +28424,6 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -29182,13 +29102,6 @@ final BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -31095,13 +31008,6 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -31880,13 +31786,6 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'addressLine'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
                             name: NameNode(value: 'location'),
                             alias: null,
                             arguments: [],
@@ -32565,13 +32464,6 @@ final GET_BRANDS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'postCode'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'addressLine'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -34515,13 +34407,6 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -35300,13 +35185,6 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'addressLine'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
                             name: NameNode(value: 'location'),
                             alias: null,
                             arguments: [],
@@ -35985,13 +35863,6 @@ final GET_BRANDS_BY_TARGET_PAGINATED_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'postCode'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'addressLine'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -37946,13 +37817,6 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -38731,13 +38595,6 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'addressLine'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
                             name: NameNode(value: 'location'),
                             alias: null,
                             arguments: [],
@@ -39416,13 +39273,6 @@ final SEARCH_BRAND_QUERY_DOCUMENT = DocumentNode(definitions: [
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'postCode'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'addressLine'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -41345,13 +41195,6 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -42130,13 +41973,6 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -42815,13 +42651,6 @@ final FIND_BRAND_BY_EXTERNAL_ID_AND_TARGET_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -44711,13 +44540,6 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -45496,13 +45318,6 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -46181,13 +45996,6 @@ final SYNC_ONE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -48074,13 +47882,6 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -48859,13 +48660,6 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -49544,13 +49338,6 @@ final CREATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -51455,13 +51242,6 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -52240,13 +52020,6 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -52925,13 +52698,6 @@ final UPDATE_BRAND_MUTATION_DOCUMENT = DocumentNode(definitions: [
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -54875,13 +54641,6 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -55660,13 +55419,6 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -56345,13 +56097,6 @@ final LISTEN_FOR_BRAND_CREATED_SUBSCRIPTION_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],

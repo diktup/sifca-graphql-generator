@@ -27,7 +27,17 @@ query getBoardCards {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -58,6 +68,36 @@ query getBoardCards {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -213,6 +253,37 @@ query getBoardCards {
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -227,8 +298,49 @@ query getBoardCards {
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -273,6 +385,37 @@ query getBoardCards {
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -442,7 +585,6 @@ query getBoardCards {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -568,7 +710,6 @@ query getBoardCards {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -602,7 +743,7 @@ query getBoardCards {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -679,7 +820,6 @@ query getBoardCards {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -903,7 +1043,17 @@ query getBoardCards {
               updatedAt
             }
           }
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -926,9 +1076,60 @@ query getBoardCards {
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -1241,7 +1442,17 @@ query getBoardCards {
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -1278,7 +1489,6 @@ query getBoardCards {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1389,7 +1599,6 @@ query getBoardCards {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1423,8 +1632,8 @@ query getBoardCards {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -1754,7 +1963,17 @@ query getBoardCardsByBoardList($boardList: ID!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -1785,6 +2004,36 @@ query getBoardCardsByBoardList($boardList: ID!) {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -1940,6 +2189,37 @@ query getBoardCardsByBoardList($boardList: ID!) {
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -1954,8 +2234,49 @@ query getBoardCardsByBoardList($boardList: ID!) {
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -2000,6 +2321,37 @@ query getBoardCardsByBoardList($boardList: ID!) {
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -2169,7 +2521,6 @@ query getBoardCardsByBoardList($boardList: ID!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -2295,7 +2646,6 @@ query getBoardCardsByBoardList($boardList: ID!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2329,7 +2679,7 @@ query getBoardCardsByBoardList($boardList: ID!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -2406,7 +2756,6 @@ query getBoardCardsByBoardList($boardList: ID!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -2630,7 +2979,17 @@ query getBoardCardsByBoardList($boardList: ID!) {
               updatedAt
             }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -2653,9 +3012,60 @@ query getBoardCardsByBoardList($boardList: ID!) {
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -2968,7 +3378,17 @@ query getBoardCardsByBoardList($boardList: ID!) {
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -3005,7 +3425,6 @@ query getBoardCardsByBoardList($boardList: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3116,7 +3535,6 @@ query getBoardCardsByBoardList($boardList: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3150,8 +3568,8 @@ query getBoardCardsByBoardList($boardList: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3481,7 +3899,17 @@ query getBoardCard($id: ID!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -3512,6 +3940,36 @@ query getBoardCard($id: ID!) {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -3667,6 +4125,37 @@ query getBoardCard($id: ID!) {
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -3681,8 +4170,49 @@ query getBoardCard($id: ID!) {
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -3727,6 +4257,37 @@ query getBoardCard($id: ID!) {
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -3896,7 +4457,6 @@ query getBoardCard($id: ID!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4022,7 +4582,6 @@ query getBoardCard($id: ID!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -4056,7 +4615,7 @@ query getBoardCard($id: ID!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -4133,7 +4692,6 @@ query getBoardCard($id: ID!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -4357,7 +4915,17 @@ query getBoardCard($id: ID!) {
               updatedAt
             }
           }
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -4380,9 +4948,60 @@ query getBoardCard($id: ID!) {
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -4695,7 +5314,17 @@ query getBoardCard($id: ID!) {
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -4732,7 +5361,6 @@ query getBoardCard($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -4843,7 +5471,6 @@ query getBoardCard($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -4877,8 +5504,8 @@ query getBoardCard($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -5216,7 +5843,17 @@ query getBoardCardsByBoardWithFilterPaginated(
         icon
         color
         category
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -5247,6 +5884,36 @@ query getBoardCardsByBoardWithFilterPaginated(
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         condition
         status
@@ -5402,6 +6069,37 @@ query getBoardCardsByBoardWithFilterPaginated(
             id
             label
             externalId
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
             createdAt
             updatedAt
             attribute {
@@ -5416,8 +6114,49 @@ query getBoardCardsByBoardWithFilterPaginated(
               pixel {
                 pixelAttribute
               }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
-            
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
         }
         internalProduct {
@@ -5462,6 +6201,37 @@ query getBoardCardsByBoardWithFilterPaginated(
           catalogueCategory {
             id
             name
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+            }
           }
         }
         product {
@@ -5631,7 +6401,6 @@ query getBoardCardsByBoardWithFilterPaginated(
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -5665,7 +6434,7 @@ query getBoardCardsByBoardWithFilterPaginated(
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -5757,7 +6526,6 @@ query getBoardCardsByBoardWithFilterPaginated(
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -5868,7 +6636,6 @@ query getBoardCardsByBoardWithFilterPaginated(
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -6092,7 +6859,17 @@ query getBoardCardsByBoardWithFilterPaginated(
                 updatedAt
               }
             }
-             
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           productAttributes {
             id
@@ -6115,9 +6892,60 @@ query getBoardCardsByBoardWithFilterPaginated(
               pixel {
                 pixelAttribute
               }
-            
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
-            
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
         }
       }
@@ -6430,7 +7258,17 @@ query getBoardCardsByBoardWithFilterPaginated(
               alt
             }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           createdAt
           updatedAt
         }
@@ -6467,7 +7305,6 @@ query getBoardCardsByBoardWithFilterPaginated(
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -6502,7 +7339,6 @@ query getBoardCardsByBoardWithFilterPaginated(
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -6579,7 +7415,6 @@ query getBoardCardsByBoardWithFilterPaginated(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -7000,6 +7835,1946 @@ query getBoardCardsStatsWithFilter($target: TargetACIInput!, $filter: BoardCardS
     }
   }
 }
+query getProjectsBoardCardsByTargetPaginated($filter: ProjectsBoardCardFilterInput!, $pagination: PaginationInput) {
+  getProjectsBoardCardsByTargetPaginated(filter: $filter, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      id
+      title
+      description
+      dueDate
+      archived
+      priority
+      tags
+      rank
+      pictures {
+        baseUrl
+        path
+        width
+        height
+        x
+        y
+        alt
+      }
+      tasks {
+        task
+        done
+      }
+      labels {
+        id
+        name
+        icon
+        color
+        category
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      assignedTo {
+        id
+        email
+        gender
+        lastName
+        username
+        firstName
+        phone {
+          number
+          isValid
+          countryCode
+          validationNumber
+        }
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      barcode {
+        id
+        name
+        price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
+        barcode
+        condition
+        status
+        createdAt
+        updatedAt
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        discount {
+          amount
+          discountType
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        taxes {
+          tax {
+            id
+            label
+            externalId
+            value {
+              sign
+              value
+              type
+            }
+            use
+            product
+            company {
+              id
+              name
+            }
+            createdAt
+            updatedAt
+          }
+          rank
+        }
+        priceCredit {
+          periodCycle
+          periodValue
+          amount
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        pixel {
+          include
+        }
+        supplier {
+          id
+          name
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            externalId
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            createdAt
+            updatedAt
+            attribute {
+              id
+              label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+          }
+        }
+        internalProduct {
+          id
+          sku
+          name
+          tags
+          price
+          status
+          condition
+          createdAt
+          updatedAt
+          externalId
+          description
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          descriptionList
+          discount {
+            amount
+            discountType
+          }
+          priceBeforeReduction
+          catalogueCategory {
+            id
+            name
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+            }
+          }
+        }
+        product {
+          id
+          ean
+          tax
+          name
+          tags
+          class
+          price
+          weight
+          createdAt
+          updatedAt
+          externalId
+          description
+          factoryPrice
+          specs {
+            key
+            value
+          }
+          media {
+            videos
+            deg360 {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            pictures {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          descriptionList
+          wholesalerPrice
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          category {
+            id
+            name
+            rank
+            layer
+            createdAt
+            updatedAt
+            hasChildren
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          taxes {
+            tax {
+              id
+              label
+              externalId
+              value {
+                sign
+                value
+                type
+              }
+              use
+              product
+              company {
+                id
+                name
+              }
+              createdAt
+              updatedAt
+            }
+            rank
+          }
+
+          brand {
+            id
+            name
+            website
+            createdAt
+            updatedAt
+            externalId
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            manufacturer {
+              id
+              email
+              name
+              description
+              website
+              contactEmails
+              currencies {
+                currency {
+                  id
+                  name
+                  code
+                  symbol
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                default
+              }
+              createdAt
+              updatedAt
+              picture {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              address {
+                city
+                address
+                postCode
+                location {
+                  type
+                  coordinates
+                }
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                state {
+                  id
+                  name
+                  adminName
+                  capital
+                  population
+                  ascii
+                  lat
+                  lng
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                owner {
+                  name
+                  phone {
+                    number
+                    countryCode
+                  }
+                }
+              }
+              company {
+                id
+                name
+                description
+                media {
+                  videos
+                  deg360 {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  pictures {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                address {
+                  city
+                  address
+                  postCode
+                  location {
+                    type
+                    coordinates
+                  }
+                  country {
+                    id
+                    name
+                    code
+                    dialCode
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  state {
+                    id
+                    name
+                    adminName
+                    capital
+                    population
+                    ascii
+                    lat
+                    lng
+                    country {
+                      id
+                      name
+                      code
+                      dialCode
+                      iconFlag
+                      createdAt
+                      updatedAt
+                      flagSquare {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      flagWide {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                    }
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  owner {
+                    name
+                    phone {
+                      number
+                      countryCode
+                    }
+                  }
+                }
+                legal {
+                  vat
+                  register
+                  licence
+                }
+                banks {
+                  id
+                  holder {
+                    name
+                    type
+                    address {
+                      city
+                      address
+                      postCode
+                      location {
+                        type
+                        coordinates
+                      }
+                      country {
+                        id
+                        name
+                        code
+                        dialCode
+                        iconFlag
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      state {
+                        id
+                        name
+                        adminName
+                        capital
+                        population
+                        ascii
+                        lat
+                        lng
+                        country {
+                          id
+                          name
+                          code
+                          dialCode
+                          iconFlag
+                          createdAt
+                          updatedAt
+                          flagSquare {
+                            baseUrl
+                            path
+                            width
+                            height
+                            x
+                            y
+                            alt
+                          }
+                          flagWide {
+                            baseUrl
+                            path
+                            width
+                            height
+                            x
+                            y
+                            alt
+                          }
+                        }
+                        createdAt
+                        updatedAt
+                        flagSquare {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        flagWide {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      owner {
+                        name
+                        phone {
+                          number
+                          countryCode
+                        }
+                      }
+                    }
+                  }
+                  account
+                  iban
+                  bank {
+                    id
+                    name
+                    code
+                    bic
+                    logo {
+                      svg {
+                        baseUrl
+                        path
+                        width
+                        height
+                        x
+                        y
+                        alt
+                      }
+                      png {
+                        default {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size16 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size24 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size32 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size48 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size64 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size128 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size256 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                        size512 {
+                          baseUrl
+                          path
+                          width
+                          height
+                          x
+                          y
+                          alt
+                        }
+                      }
+                      icon
+                    }
+                    createdAt
+                    updatedAt
+                  }
+                  externalId
+                  createdAt
+                  updatedAt
+                }
+                contact {
+                  website
+                  email
+                  phone {
+                    number
+                    isValid
+                    countryCode
+                    validationNumber
+                  }
+                }
+                logistic
+                tags
+                externalId
+                createdAt
+                updatedAt
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+          }
+          productAttributes {
+            id
+            createdAt
+            updatedAt
+            reference
+            isRequired
+            possibleValues
+            isMultipleChoice
+
+            attribute {
+              id
+              label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
+          }
+        }
+      }
+      project {
+        id
+        name
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        privacy
+        tags
+        deadline
+        priority
+        status
+        color
+        externalId
+        picture {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        members {
+          member {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          role
+        }
+        resources {
+          id
+          name
+          content {
+            type {
+              id
+              name
+              type
+              image {
+                background {
+                  png {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                black {
+                  png {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                white {
+                  png {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                icon
+              }
+            }
+          }
+          size
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        attachments {
+          id
+          name
+          content {
+            type {
+              id
+              name
+              type
+              image {
+                background {
+                  png {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                black {
+                  png {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                white {
+                  png {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  svg {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                icon
+              }
+            }
+          }
+          size
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        boardCardsStats {
+          total
+          archived
+        }
+        createdAt
+        updatedAt
+      }
+      boardList {
+        id
+        name
+        rank
+        theme
+        identifier
+        board {
+          id
+          icon
+          title
+          description
+          category
+          members {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
+          createdAt
+          updatedAt
+        }
+        createdAt
+        updatedAt
+      }
+      budget
+      customer {
+        id
+        name
+        description
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        address {
+          city
+          address
+          postCode
+          location {
+            type
+            coordinates
+          }
+          country {
+            id
+            name
+            code
+            dialCode
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          state {
+            id
+            name
+            adminName
+            capital
+            population
+            ascii
+            lat
+            lng
+            country {
+              id
+              name
+              code
+              dialCode
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          owner {
+            name
+            phone {
+              number
+              countryCode
+            }
+          }
+        }
+        legal {
+          vat
+          register
+          licence
+        }
+        banks {
+          id
+          holder {
+            name
+            type
+            address {
+              city
+              address
+              postCode
+              location {
+                type
+                coordinates
+              }
+              country {
+                id
+                name
+                code
+                dialCode
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              state {
+                id
+                name
+                adminName
+                capital
+                population
+                ascii
+                lat
+                lng
+                country {
+                  id
+                  name
+                  code
+                  dialCode
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              owner {
+                name
+                phone {
+                  number
+                  countryCode
+                }
+              }
+            }
+          }
+          account
+          iban
+          bank {
+            id
+            name
+            code
+            bic
+            logo {
+              svg {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              png {
+                default {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size16 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size24 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size32 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size48 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size64 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size128 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size256 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                size512 {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              icon
+            }
+            createdAt
+            updatedAt
+          }
+          externalId
+          createdAt
+          updatedAt
+        }
+        contact {
+          website
+          email
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+        }
+        logistic
+        tags
+        externalId
+        createdAt
+        updatedAt
+      }
+      attachments {
+        id
+        name
+        content {
+          type {
+            id
+            name
+            type
+            image {
+              background {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              black {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              white {
+                png {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                svg {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              icon
+            }
+          }
+        }
+        size
+        owner {
+          id
+          email
+          gender
+          lastName
+          username
+          firstName
+          phone {
+            number
+            isValid
+            countryCode
+            validationNumber
+          }
+          picture {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        createdAt
+        updatedAt
+      }
+      procedure {
+        title
+        task
+        time
+      }
+      tasksStats {
+        total
+        done
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
 
 mutation createBoardCard(
   $title: String!
@@ -7066,7 +9841,17 @@ mutation createBoardCard(
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -7097,6 +9882,36 @@ mutation createBoardCard(
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -7252,6 +10067,37 @@ mutation createBoardCard(
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -7266,8 +10112,49 @@ mutation createBoardCard(
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -7312,6 +10199,37 @@ mutation createBoardCard(
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -7481,7 +10399,6 @@ mutation createBoardCard(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -7607,7 +10524,6 @@ mutation createBoardCard(
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -7641,7 +10557,7 @@ mutation createBoardCard(
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -7718,7 +10634,6 @@ mutation createBoardCard(
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -7942,7 +10857,17 @@ mutation createBoardCard(
               updatedAt
             }
           }
-        
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -7965,9 +10890,60 @@ mutation createBoardCard(
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -8280,7 +11256,17 @@ mutation createBoardCard(
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -8317,7 +11303,6 @@ mutation createBoardCard(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -8428,7 +11413,6 @@ mutation createBoardCard(
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -8462,8 +11446,8 @@ mutation createBoardCard(
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -8793,7 +11777,17 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -8824,6 +11818,36 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -8979,6 +12003,37 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -8993,8 +12048,49 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -9039,6 +12135,37 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -9208,7 +12335,6 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -9334,7 +12460,6 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -9368,7 +12493,7 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -9445,7 +12570,6 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -9669,7 +12793,17 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
               updatedAt
             }
           }
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -9692,9 +12826,60 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -10007,7 +13192,17 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -10044,7 +13239,6 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -10155,7 +13349,6 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -10189,8 +13382,8 @@ mutation reorderBoardCards($id: ID!, $rank: Int!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -10558,7 +13751,17 @@ mutation updateBoardCard(
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -10589,6 +13792,36 @@ mutation updateBoardCard(
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -10744,6 +13977,37 @@ mutation updateBoardCard(
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -10758,8 +14022,49 @@ mutation updateBoardCard(
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -10804,6 +14109,37 @@ mutation updateBoardCard(
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -10973,7 +14309,6 @@ mutation updateBoardCard(
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -11099,7 +14434,6 @@ mutation updateBoardCard(
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -11133,7 +14467,7 @@ mutation updateBoardCard(
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -11210,7 +14544,6 @@ mutation updateBoardCard(
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -11434,7 +14767,17 @@ mutation updateBoardCard(
               updatedAt
             }
           }
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -11457,9 +14800,60 @@ mutation updateBoardCard(
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -11772,7 +15166,17 @@ mutation updateBoardCard(
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -11809,7 +15213,6 @@ mutation updateBoardCard(
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -11920,7 +15323,6 @@ mutation updateBoardCard(
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -11954,8 +15356,8 @@ mutation updateBoardCard(
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -12285,7 +15687,17 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
@@ -12316,6 +15728,36 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
       id
       name
       price
+      prices {
+        price
+        currency {
+          id
+          name
+          code
+          symbol
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+      }
       barcode
       condition
       status
@@ -12471,6 +15913,37 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
           id
           label
           externalId
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              label
+            }
+          }
           createdAt
           updatedAt
           attribute {
@@ -12485,8 +15958,49 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             pixel {
               pixelAttribute
             }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
       internalProduct {
@@ -12531,6 +16045,37 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
         catalogueCategory {
           id
           name
+        }
+        translation {
+          language {
+            id
+            name
+            code
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          content {
+            name
+          }
         }
       }
       product {
@@ -12700,7 +16245,6 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -12826,7 +16370,6 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -12860,7 +16403,7 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -12937,7 +16480,6 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -13161,7 +16703,17 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
               updatedAt
             }
           }
-        
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
         productAttributes {
           id
@@ -13184,9 +16736,60 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             pixel {
               pixelAttribute
             }
-            
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
-          
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
         }
       }
     }
@@ -13499,7 +17102,17 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             alt
           }
         }
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -13536,7 +17149,6 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -13647,7 +17259,6 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -13681,8 +17292,8 @@ mutation updateBoardCardList($id: ID!, $boardList: ID!, $rank: Int!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii

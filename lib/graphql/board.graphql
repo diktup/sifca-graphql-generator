@@ -302,7 +302,17 @@ query getBoards {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -615,7 +625,17 @@ query getBoard($id: ID!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -928,7 +948,17 @@ query getBoardsByTarget($target: TargetACIInput!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -1250,7 +1280,17 @@ query getBoardsByTargetPaginated(
         createdAt
         updatedAt
       }
-     
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       boardCardsStats {
         total
         archived
@@ -1564,7 +1604,17 @@ query getBoardsByMemberAndTarget($target: TargetACIInput!, $member: ID!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -1885,7 +1935,17 @@ query getBoardsByMemberAndTargetPaginated(
         createdAt
         updatedAt
       }
-     
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       boardCardsStats {
         total
         archived
@@ -2199,7 +2259,17 @@ query getBoardWithListsAndCards($id: ID!) {
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -2243,7 +2313,17 @@ query getBoardWithListsAndCards($id: ID!) {
           icon
           color
           category
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           createdAt
           updatedAt
         }
@@ -2275,6 +2355,36 @@ query getBoardWithListsAndCards($id: ID!) {
           id
           name
           price
+          prices {
+            price
+            currency {
+              id
+              name
+              code
+              symbol
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+          }
           barcode
           condition
           status
@@ -2430,6 +2540,37 @@ query getBoardWithListsAndCards($id: ID!) {
               id
               label
               externalId
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
               createdAt
               updatedAt
               attribute {
@@ -2444,8 +2585,49 @@ query getBoardWithListsAndCards($id: ID!) {
                 pixel {
                   pixelAttribute
                 }
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
           internalProduct {
@@ -2490,6 +2672,37 @@ query getBoardWithListsAndCards($id: ID!) {
             catalogueCategory {
               id
               name
+            }
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                name
+              }
             }
           }
           product {
@@ -2659,7 +2872,6 @@ query getBoardWithListsAndCards($id: ID!) {
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -2785,7 +2997,6 @@ query getBoardWithListsAndCards($id: ID!) {
                     city
                     address
                     postCode
-                    addressLine
                     location {
                       type
                       coordinates
@@ -2896,7 +3107,6 @@ query getBoardWithListsAndCards($id: ID!) {
                         city
                         address
                         postCode
-                        addressLine
                         location {
                           type
                           coordinates
@@ -3120,7 +3330,17 @@ query getBoardWithListsAndCards($id: ID!) {
                   updatedAt
                 }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
             productAttributes {
               id
@@ -3143,9 +3363,60 @@ query getBoardWithListsAndCards($id: ID!) {
                 pixel {
                   pixelAttribute
                 }
-               
+                translation {
+                  language {
+                    id
+                    name
+                    code
+                    iconFlag
+                    createdAt
+                    updatedAt
+                    flagSquare {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                    flagWide {
+                      baseUrl
+                      path
+                      width
+                      height
+                      x
+                      y
+                      alt
+                    }
+                  }
+                  content {
+                    label
+                  }
+                }
+                target {
+                  pos {
+                    id
+                  }
+                  wholesaler {
+                    id
+                  }
+                  manufacturer {
+                    id
+                  }
+                }
               }
-              
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
           }
         }
@@ -3453,7 +3724,6 @@ query getBoardWithListsAndCards($id: ID!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3487,8 +3757,8 @@ query getBoardWithListsAndCards($id: ID!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3564,7 +3834,6 @@ adminName
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3598,7 +3867,7 @@ adminName
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -3934,7 +4203,17 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
         icon
         color
         category
-        
+        target {
+          pos {
+            id
+          }
+          wholesaler {
+            id
+          }
+          manufacturer {
+            id
+          }
+        }
         createdAt
         updatedAt
       }
@@ -3965,6 +4244,36 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
         id
         name
         price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
         barcode
         condition
         status
@@ -4120,6 +4429,37 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
             id
             label
             externalId
+            translation {
+              language {
+                id
+                name
+                code
+                iconFlag
+                createdAt
+                updatedAt
+                flagSquare {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+                flagWide {
+                  baseUrl
+                  path
+                  width
+                  height
+                  x
+                  y
+                  alt
+                }
+              }
+              content {
+                label
+              }
+            }
             createdAt
             updatedAt
             attribute {
@@ -4134,8 +4474,49 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
               pixel {
                 pixelAttribute
               }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
             }
-           
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
         }
         internalProduct {
@@ -4180,6 +4561,37 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
           catalogueCategory {
             id
             name
+          }
+          translation {
+            language {
+              id
+              name
+              code
+              iconFlag
+              createdAt
+              updatedAt
+              flagSquare {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+              flagWide {
+                baseUrl
+                path
+                width
+                height
+                x
+                y
+                alt
+              }
+            }
+            content {
+              name
+            }
           }
         }
         product {
@@ -4349,7 +4761,6 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -4383,7 +4794,7 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
                 }
                 state {
                   id
-                  
+                  name
                   adminName
                   capital
                   population
@@ -4475,7 +4886,6 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
                   city
                   address
                   postCode
-                  addressLine
                   location {
                     type
                     coordinates
@@ -4586,7 +4996,6 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
                       city
                       address
                       postCode
-                      addressLine
                       location {
                         type
                         coordinates
@@ -4810,7 +5219,17 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
                 updatedAt
               }
             }
-             
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
           productAttributes {
             id
@@ -4833,9 +5252,60 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
               pixel {
                 pixelAttribute
               }
-              
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
+              target {
+                pos {
+                  id
+                }
+                wholesaler {
+                  id
+                }
+                manufacturer {
+                  id
+                }
+              }
             }
-           
+            target {
+              pos {
+                id
+              }
+              wholesaler {
+                id
+              }
+              manufacturer {
+                id
+              }
+            }
           }
         }
       }
@@ -5148,7 +5618,17 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
               alt
             }
           }
-         
+          target {
+            pos {
+              id
+            }
+            wholesaler {
+              id
+            }
+            manufacturer {
+              id
+            }
+          }
           createdAt
           updatedAt
         }
@@ -5185,7 +5665,6 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -5220,7 +5699,6 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -5297,7 +5775,6 @@ query getArchivedBoardCardsPaginated($boardId: ID!, $pagination: PaginationInput
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -5955,7 +6432,17 @@ mutation createBoard(
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived
@@ -6268,7 +6755,17 @@ mutation updateBoard($id: ID!, $title: String, $description: String, $icon: Stri
       createdAt
       updatedAt
     }
-    
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     boardCardsStats {
       total
       archived

@@ -217,7 +217,8 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType
       _$GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -552,8 +553,6 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetCoupons$Query$CouponType$UserType$FullAddressType$LonLatType? location;
 
   GetCoupons$Query$CouponType$UserType$FullAddressType$CountryType? country;
@@ -565,7 +564,7 @@ class GetCoupons$Query$CouponType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1766,7 +1765,8 @@ class Coupon$Query$CouponType$UserType$FullAddressType$LonLatType
       _$Coupon$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2099,8 +2099,6 @@ class Coupon$Query$CouponType$UserType$FullAddressType extends JsonSerializable
 
   String? postCode;
 
-  String? addressLine;
-
   Coupon$Query$CouponType$UserType$FullAddressType$LonLatType? location;
 
   Coupon$Query$CouponType$UserType$FullAddressType$CountryType? country;
@@ -2111,7 +2109,7 @@ class Coupon$Query$CouponType$UserType$FullAddressType extends JsonSerializable
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -3769,7 +3767,8 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType
       _$FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -4105,8 +4104,6 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   FindCouponsByTarget$Query$CouponType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -4121,7 +4118,7 @@ class FindCouponsByTarget$Query$CouponType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5608,7 +5605,8 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLat
       _$FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5944,8 +5942,6 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -5960,7 +5956,7 @@ class FindCouponByTargetAndCode$Query$CouponType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -8218,6 +8214,15 @@ enum MaritalStatus {
   artemisUnknown,
 }
 
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum StateCapitalEnum {
   @JsonValue('PRIMARY')
   primary,
@@ -9012,13 +9017,6 @@ final GET_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -9641,13 +9639,6 @@ final GET_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -10264,13 +10255,6 @@ final GET_COUPONS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -14103,13 +14087,6 @@ final COUPON_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -14732,13 +14709,6 @@ final COUPON_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -15355,13 +15325,6 @@ final COUPON_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -19830,13 +19793,6 @@ final FIND_COUPONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -20459,13 +20415,6 @@ final FIND_COUPONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -21082,13 +21031,6 @@ final FIND_COUPONS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -25317,13 +25259,6 @@ final FIND_COUPON_BY_TARGET_AND_CODE_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -25946,13 +25881,6 @@ final FIND_COUPON_BY_TARGET_AND_CODE_QUERY_DOCUMENT =
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -26569,13 +26497,6 @@ final FIND_COUPON_BY_TARGET_AND_CODE_QUERY_DOCUMENT =
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],

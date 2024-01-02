@@ -386,7 +386,8 @@ class GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType
       _$GetMessageGroupsPagination$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -973,7 +974,8 @@ class GetMessageGroup$Query$MessageGroupType$LastMessageType$LonLatType
       _$GetMessageGroup$Query$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1508,7 +1510,8 @@ class GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$LonLatType
       _$GetMessageGroupByMember$Query$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2054,7 +2057,8 @@ class SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMes
       _$SearchMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2629,7 +2633,8 @@ class SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType
       _$SearchInternalMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3236,7 +3241,8 @@ class SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$
       _$SearchSupportMessageGroup$Query$MessageGroupPaginateType$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3658,7 +3664,8 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$Lon
       _$GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3994,8 +4001,6 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType$LonLatType?
       location;
 
@@ -4010,7 +4015,7 @@ class GetMessageGroupMembers$Query$UserPaginateType$UserType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5366,7 +5371,8 @@ class GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$LonLatType
       _$GetDirectMessageGroup$Query$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5903,7 +5909,8 @@ class CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
       _$CreateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -6559,7 +6566,8 @@ class ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
       _$ArchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7099,7 +7107,8 @@ class UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
       _$UnarchiveMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7636,7 +7645,8 @@ class MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
       _$MuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8172,7 +8182,8 @@ class UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
       _$UnmuteMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8715,7 +8726,8 @@ class AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatT
       _$AddMemeberToMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9266,7 +9278,8 @@ class RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$Lon
       _$RemoveMemberFromMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9809,7 +9822,8 @@ class UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatType
       _$UpdateMessageGroup$Mutation$MessageGroupType$LastMessageType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10040,6 +10054,15 @@ enum MessageGroupStatusEnum {
   active,
   @JsonValue('ARCHIVED')
   archived,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -15967,13 +15990,6 @@ final GET_MESSAGE_GROUP_MEMBERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -16596,13 +16612,6 @@ final GET_MESSAGE_GROUP_MEMBERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -17219,13 +17228,6 @@ final GET_MESSAGE_GROUP_MEMBERS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],

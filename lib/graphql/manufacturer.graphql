@@ -51,7 +51,6 @@ query manufacturer($id: String!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -177,7 +176,6 @@ query manufacturer($id: String!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -288,7 +286,6 @@ query manufacturer($id: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -322,8 +319,8 @@ query manufacturer($id: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -569,7 +566,6 @@ query getManufacturersPagination($pagination: PaginationInput) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -695,7 +691,6 @@ query getManufacturersPagination($pagination: PaginationInput) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -730,7 +725,6 @@ query getManufacturersPagination($pagination: PaginationInput) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -807,7 +801,6 @@ query getManufacturersPagination($pagination: PaginationInput) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1089,7 +1082,6 @@ query searchManufacturer($pagination: PaginationInput, $searchString: String!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1215,7 +1207,6 @@ query searchManufacturer($pagination: PaginationInput, $searchString: String!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1250,7 +1241,6 @@ query searchManufacturer($pagination: PaginationInput, $searchString: String!) {
           state {
             id
             name
-           
             adminName
             capital
             population
@@ -1327,7 +1317,6 @@ query searchManufacturer($pagination: PaginationInput, $searchString: String!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1607,7 +1596,6 @@ mutation createManufacturer($input: ManufacturerCreateInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -1733,7 +1721,6 @@ mutation createManufacturer($input: ManufacturerCreateInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1844,7 +1831,6 @@ mutation createManufacturer($input: ManufacturerCreateInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1878,8 +1864,8 @@ mutation createManufacturer($input: ManufacturerCreateInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2122,7 +2108,6 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -2248,7 +2233,6 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2359,7 +2343,6 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2393,8 +2376,8 @@ mutation updateManufacturer($input: ManufacturerUpdateInput!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -2637,7 +2620,6 @@ mutation deleteManufacturer($id: String!) {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -2763,7 +2745,6 @@ mutation deleteManufacturer($id: String!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2874,7 +2855,6 @@ mutation deleteManufacturer($id: String!) {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2908,8 +2888,8 @@ mutation deleteManufacturer($id: String!) {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii
@@ -3153,7 +3133,6 @@ subscription listenForManufacturerCreated {
       city
       address
       postCode
-      addressLine
       location {
         type
         coordinates
@@ -3279,7 +3258,6 @@ subscription listenForManufacturerCreated {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3390,7 +3368,6 @@ subscription listenForManufacturerCreated {
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -3424,8 +3401,8 @@ subscription listenForManufacturerCreated {
             }
             state {
               id
-name
-adminName
+              name
+              adminName
               capital
               population
               ascii

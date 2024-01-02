@@ -11,6 +11,7 @@ query getNotes {
       height
       x
       y
+      alt
     }
     labels {
       id
@@ -18,11 +19,31 @@ query getNotes {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -40,6 +61,7 @@ query getNote($id: ID!) {
       height
       x
       y
+      alt
     }
     labels {
       id
@@ -47,11 +69,31 @@ query getNote($id: ID!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -69,6 +111,7 @@ query getNotesByTarget($target: TargetACIInput!) {
       height
       x
       y
+      alt
     }
     labels {
       id
@@ -76,11 +119,31 @@ query getNotesByTarget($target: TargetACIInput!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -98,6 +161,7 @@ query findNotesByLabelAndTarget($target: TargetACIInput!, $label: ID!) {
       height
       x
       y
+      alt
     }
     labels {
       id
@@ -105,11 +169,31 @@ query findNotesByLabelAndTarget($target: TargetACIInput!, $label: ID!) {
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -144,6 +228,7 @@ mutation createNote(
       height
       x
       y
+      alt
     }
     labels {
       id
@@ -151,11 +236,31 @@ mutation createNote(
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }
@@ -191,6 +296,7 @@ mutation updateNote(
       height
       x
       y
+      alt
     }
     labels {
       id
@@ -198,11 +304,31 @@ mutation updateNote(
       icon
       color
       category
-
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
       createdAt
       updatedAt
     }
-
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
     createdAt
     updatedAt
   }

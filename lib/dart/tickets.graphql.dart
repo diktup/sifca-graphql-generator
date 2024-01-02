@@ -217,7 +217,8 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType
       _$GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -552,8 +553,6 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetTickets$Query$TicketType$CompanyType$FullAddressType$LonLatType? location;
 
   GetTickets$Query$TicketType$CompanyType$FullAddressType$CountryType? country;
@@ -565,7 +564,7 @@ class GetTickets$Query$TicketType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -605,7 +604,8 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
       _$GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -941,8 +941,6 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   String? postCode;
 
-  String? addressLine;
-
   GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -957,7 +955,7 @@ class GetTickets$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2450,7 +2448,8 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType
       _$Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2785,8 +2784,6 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   Ticket$Query$TicketType$CompanyType$FullAddressType$LonLatType? location;
 
   Ticket$Query$TicketType$CompanyType$FullAddressType$CountryType? country;
@@ -2798,7 +2795,7 @@ class Ticket$Query$TicketType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2838,7 +2835,8 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
       _$Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -3174,8 +3172,6 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   String? postCode;
 
-  String? addressLine;
-
   Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -3190,7 +3186,7 @@ class Ticket$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -4675,7 +4671,8 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType
       _$GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5011,8 +5008,6 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -5027,7 +5022,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -5070,7 +5065,8 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
       _$GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -5406,8 +5402,6 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   String? postCode;
 
-  String? addressLine;
-
   GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -5422,7 +5416,7 @@ class GetTicketsByTarget$Query$TicketType$CompanyType$BankDetailsType$BankDetail
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -6983,7 +6977,8 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7319,8 +7314,6 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   String? postCode;
 
-  String? addressLine;
-
   GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -7335,7 +7328,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -7378,7 +7371,8 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
       _$GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7714,8 +7708,6 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   String? postCode;
 
-  String? addressLine;
-
   GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -7730,7 +7722,7 @@ class GetTicketsByTargetWithFilter$Query$TicketsPaginateType$TicketType$CompanyT
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -9632,7 +9624,8 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
       _$CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9968,8 +9961,6 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   CreateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -9983,7 +9974,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -10026,7 +10017,8 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
       _$CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10362,8 +10354,6 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   String? postCode;
 
-  String? addressLine;
-
   CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -10378,7 +10368,7 @@ class CreateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12024,7 +12014,8 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType
       _$UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12360,8 +12351,6 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -12375,7 +12364,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12418,7 +12407,8 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
       _$UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -12754,8 +12744,6 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -12770,7 +12758,7 @@ class UpdateTicket$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHo
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -14365,7 +14353,8 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonL
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -14701,8 +14690,6 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
 
   String? postCode;
 
-  String? addressLine;
-
   BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -14717,7 +14704,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$FullAddressType
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -14760,7 +14747,8 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
       _$BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -15096,8 +15084,6 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   String? postCode;
 
-  String? addressLine;
-
   BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -15112,7 +15098,7 @@ class BulkUpdateTicketMedia$Mutation$TicketType$CompanyType$BankDetailsType$Bank
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -16550,6 +16536,15 @@ enum Gender {
   artemisUnknown,
 }
 
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum StateCapitalEnum {
   @JsonValue('PRIMARY')
   primary,
@@ -17141,13 +17136,6 @@ final GET_TICKETS_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -17832,13 +17820,6 @@ final GET_TICKETS_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -22088,13 +22069,6 @@ final TICKET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -22773,13 +22747,6 @@ final TICKET_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -27032,13 +26999,6 @@ final GET_TICKETS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -27717,13 +27677,6 @@ final GET_TICKETS_BY_TARGET_QUERY_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -32053,13 +32006,6 @@ final GET_TICKETS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -32738,13 +32684,6 @@ final GET_TICKETS_BY_TARGET_WITH_FILTER_QUERY_DOCUMENT =
                               ),
                               FieldNode(
                                 name: NameNode(value: 'postCode'),
-                                alias: null,
-                                arguments: [],
-                                directives: [],
-                                selectionSet: null,
-                              ),
-                              FieldNode(
-                                name: NameNode(value: 'addressLine'),
                                 alias: null,
                                 arguments: [],
                                 directives: [],
@@ -37851,13 +37790,6 @@ final CREATE_TICKET_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -38536,13 +38468,6 @@ final CREATE_TICKET_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -42796,13 +42721,6 @@ final UPDATE_TICKET_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -43481,13 +43399,6 @@ final UPDATE_TICKET_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],
@@ -47746,13 +47657,6 @@ final BULK_UPDATE_TICKET_MEDIA_MUTATION_DOCUMENT = DocumentNode(definitions: [
                     selectionSet: null,
                   ),
                   FieldNode(
-                    name: NameNode(value: 'addressLine'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
                     name: NameNode(value: 'location'),
                     alias: null,
                     arguments: [],
@@ -48431,13 +48335,6 @@ final BULK_UPDATE_TICKET_MEDIA_MUTATION_DOCUMENT = DocumentNode(definitions: [
                           ),
                           FieldNode(
                             name: NameNode(value: 'postCode'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
-                            name: NameNode(value: 'addressLine'),
                             alias: null,
                             arguments: [],
                             directives: [],

@@ -316,6 +316,10 @@ class OrderSettingsInput extends JsonSerializable with EquatableMixin {
     this.facebookDelivery,
     this.nonDeliveryDays,
     this.nonPickupDays,
+    this.deliveryCountries,
+    this.deliveryStates,
+    this.extraFees,
+    this.emails,
   });
 
   factory OrderSettingsInput.fromJson(Map<String, dynamic> json) =>
@@ -349,6 +353,14 @@ class OrderSettingsInput extends JsonSerializable with EquatableMixin {
 
   List<MonthDaysInput>? nonPickupDays;
 
+  List<String>? deliveryCountries;
+
+  List<String>? deliveryStates;
+
+  List<OrderSettingsExtraFeesInput>? extraFees;
+
+  List<OrderSettingsEmailsInput>? emails;
+
   @override
   List<Object?> get props => [
         target,
@@ -364,7 +376,11 @@ class OrderSettingsInput extends JsonSerializable with EquatableMixin {
         portalDelivery,
         facebookDelivery,
         nonDeliveryDays,
-        nonPickupDays
+        nonPickupDays,
+        deliveryCountries,
+        deliveryStates,
+        extraFees,
+        emails
       ];
 
   @override
@@ -411,6 +427,49 @@ class MonthDaysInput extends JsonSerializable with EquatableMixin {
 
   @override
   Map<String, dynamic> toJson() => _$MonthDaysInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class OrderSettingsExtraFeesInput extends JsonSerializable with EquatableMixin {
+  OrderSettingsExtraFeesInput({
+    this.key,
+    this.value,
+  });
+
+  factory OrderSettingsExtraFeesInput.fromJson(Map<String, dynamic> json) =>
+      _$OrderSettingsExtraFeesInputFromJson(json);
+
+  String? key;
+
+  String? value;
+
+  @override
+  List<Object?> get props => [key, value];
+
+  @override
+  Map<String, dynamic> toJson() => _$OrderSettingsExtraFeesInputToJson(this);
+}
+
+@JsonSerializable(explicitToJson: true)
+class OrderSettingsEmailsInput extends JsonSerializable with EquatableMixin {
+  OrderSettingsEmailsInput({
+    this.definition,
+    this.enabled,
+  });
+
+  factory OrderSettingsEmailsInput.fromJson(Map<String, dynamic> json) =>
+      _$OrderSettingsEmailsInputFromJson(json);
+
+  @JsonKey(unknownEnumValue: OrderEmailActionEnum.artemisUnknown)
+  OrderEmailActionEnum? definition;
+
+  bool? enabled;
+
+  @override
+  List<Object?> get props => [definition, enabled];
+
+  @override
+  Map<String, dynamic> toJson() => _$OrderSettingsEmailsInputToJson(this);
 }
 
 @JsonSerializable(explicitToJson: true)
@@ -561,6 +620,10 @@ class OrderSettingsUpdateInput extends JsonSerializable with EquatableMixin {
     this.facebookDelivery,
     this.nonDeliveryDays,
     this.nonPickupDays,
+    this.deliveryCountries,
+    this.deliveryStates,
+    this.extraFees,
+    this.emails,
   });
 
   factory OrderSettingsUpdateInput.fromJson(Map<String, dynamic> json) =>
@@ -592,6 +655,14 @@ class OrderSettingsUpdateInput extends JsonSerializable with EquatableMixin {
 
   List<MonthDaysInput>? nonPickupDays;
 
+  List<String>? deliveryCountries;
+
+  List<String>? deliveryStates;
+
+  List<OrderSettingsExtraFeesInput>? extraFees;
+
+  List<OrderSettingsEmailsInput>? emails;
+
   @override
   List<Object?> get props => [
         pickupTime,
@@ -606,11 +677,30 @@ class OrderSettingsUpdateInput extends JsonSerializable with EquatableMixin {
         portalDelivery,
         facebookDelivery,
         nonDeliveryDays,
-        nonPickupDays
+        nonPickupDays,
+        deliveryCountries,
+        deliveryStates,
+        extraFees,
+        emails
       ];
 
   @override
   Map<String, dynamic> toJson() => _$OrderSettingsUpdateInputToJson(this);
+}
+
+enum OrderEmailActionEnum {
+  @JsonValue('ORDER_CREATED')
+  orderCreated,
+  @JsonValue('PRODUCT_CONFIRMED')
+  productConfirmed,
+  @JsonValue('PRODUCT_DELIVERED')
+  productDelivered,
+  @JsonValue('PRODUCT_CANCELED')
+  productCanceled,
+  @JsonValue('PRODUCT_PICKUP_READY')
+  productPickupReady,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
 }
 
 @JsonSerializable(explicitToJson: true)

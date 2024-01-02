@@ -16,7 +16,8 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
       _$FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -349,8 +350,6 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   String? postCode;
 
-  String? addressLine;
-
   FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -365,7 +364,7 @@ class FindBankDetailsById$Query$BankDetailsType$BankDetailsHolderType$FullAddres
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -641,7 +640,8 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
       _$FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -977,8 +977,6 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   String? postCode;
 
-  String? addressLine;
-
   FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -993,7 +991,7 @@ class FindBanksDetailsPagination$Query$BankDetailsPaginatedType$BankDetailsType$
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -1326,7 +1324,8 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
       _$CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -1659,8 +1658,6 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   String? postCode;
 
-  String? addressLine;
-
   CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -1675,7 +1672,7 @@ class CreateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2005,7 +2002,6 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
     this.city,
     this.country,
     this.state,
-    this.addressLine,
     this.location,
   });
 
@@ -2024,13 +2020,11 @@ class FullAddressInput extends JsonSerializable with EquatableMixin {
 
   String? state;
 
-  String? addressLine;
-
   LonLatInput? location;
 
   @override
   List<Object?> get props =>
-      [owner, address, postCode, city, country, state, addressLine, location];
+      [owner, address, postCode, city, country, state, location];
 
   @override
   Map<String, dynamic> toJson() => _$FullAddressInputToJson(this);
@@ -2081,14 +2075,15 @@ class FullAddressOwnerPhoneInput extends JsonSerializable with EquatableMixin {
 @JsonSerializable(explicitToJson: true)
 class LonLatInput extends JsonSerializable with EquatableMixin {
   LonLatInput({
-    required this.type,
+    this.type,
     required this.coordinates,
   });
 
   factory LonLatInput.fromJson(Map<String, dynamic> json) =>
       _$LonLatInputFromJson(json);
 
-  late String type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   late List<double> coordinates;
 
@@ -2109,7 +2104,8 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
       _$UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -2442,8 +2438,6 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   String? postCode;
 
-  String? addressLine;
-
   UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -2458,7 +2452,7 @@ class UpdateBankDetails$Mutation$BankDetailsType$BankDetailsHolderType$FullAddre
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -2770,6 +2764,15 @@ enum BankDetailsHolderTypeEnum {
   artemisUnknown,
 }
 
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
 enum StateCapitalEnum {
   @JsonValue('PRIMARY')
   primary,
@@ -2878,13 +2881,6 @@ final FIND_BANK_DETAILS_BY_ID_QUERY_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -4311,13 +4307,6 @@ final FIND_BANKS_DETAILS_PAGINATION_QUERY_DOCUMENT = DocumentNode(definitions: [
                         selectionSet: null,
                       ),
                       FieldNode(
-                        name: NameNode(value: 'addressLine'),
-                        alias: null,
-                        arguments: [],
-                        directives: [],
-                        selectionSet: null,
-                      ),
-                      FieldNode(
                         name: NameNode(value: 'location'),
                         alias: null,
                         arguments: [],
@@ -5718,13 +5707,6 @@ final CREATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],
@@ -7140,13 +7122,6 @@ final UPDATE_BANK_DETAILS_MUTATION_DOCUMENT = DocumentNode(definitions: [
                   ),
                   FieldNode(
                     name: NameNode(value: 'postCode'),
-                    alias: null,
-                    arguments: [],
-                    directives: [],
-                    selectionSet: null,
-                  ),
-                  FieldNode(
-                    name: NameNode(value: 'addressLine'),
                     alias: null,
                     arguments: [],
                     directives: [],

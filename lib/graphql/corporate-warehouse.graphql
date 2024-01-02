@@ -79,7 +79,6 @@ query getWarehouses {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -190,7 +189,6 @@ query getWarehouses {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -417,7 +415,6 @@ query getWarehouses {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -606,7 +603,6 @@ query warehouse($id: ID!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -717,7 +713,6 @@ query warehouse($id: ID!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -944,7 +939,6 @@ query warehouse($id: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1133,7 +1127,6 @@ query getWarehousesByCompany($company: ID!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -1244,7 +1237,6 @@ query getWarehousesByCompany($company: ID!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -1471,7 +1463,6 @@ query getWarehousesByCompany($company: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -1663,7 +1654,6 @@ query getWarehousesByCompanyPaginated($company: ID!, $searchString: String, $pag
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -1774,7 +1764,6 @@ query getWarehousesByCompanyPaginated($company: ID!, $searchString: String, $pag
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -2001,7 +1990,6 @@ query getWarehousesByCompanyPaginated($company: ID!, $searchString: String, $pag
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2191,7 +2179,6 @@ query findWarehousesByLocation($location: ID!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -2302,7 +2289,6 @@ query findWarehousesByLocation($location: ID!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -2529,7 +2515,6 @@ query findWarehousesByLocation($location: ID!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -2721,7 +2706,6 @@ query findWarehousesByLocationPaginated($location: ID!, $pagination: PaginationI
             city
             address
             postCode
-            addressLine
             location {
               type
               coordinates
@@ -2832,7 +2816,6 @@ query findWarehousesByLocationPaginated($location: ID!, $pagination: PaginationI
                 city
                 address
                 postCode
-                addressLine
                 location {
                   type
                   coordinates
@@ -3059,7 +3042,6 @@ query findWarehousesByLocationPaginated($location: ID!, $pagination: PaginationI
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3250,7 +3232,6 @@ mutation createWarehouse($input: WarehouseInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3361,7 +3342,6 @@ mutation createWarehouse($input: WarehouseInput!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -3588,7 +3568,6 @@ mutation createWarehouse($input: WarehouseInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -3777,7 +3756,6 @@ mutation updateWarehouse($id: ID!, $input: WarehouseUpdateInput!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -3888,7 +3866,6 @@ mutation updateWarehouse($id: ID!, $input: WarehouseUpdateInput!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4115,7 +4092,6 @@ mutation updateWarehouse($id: ID!, $input: WarehouseUpdateInput!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates
@@ -4304,7 +4280,6 @@ mutation bulkUpdateWarehouseMedia($input: [UpdateMediaInput!]!) {
           city
           address
           postCode
-          addressLine
           location {
             type
             coordinates
@@ -4415,7 +4390,6 @@ mutation bulkUpdateWarehouseMedia($input: [UpdateMediaInput!]!) {
               city
               address
               postCode
-              addressLine
               location {
                 type
                 coordinates
@@ -4642,7 +4616,6 @@ mutation bulkUpdateWarehouseMedia($input: [UpdateMediaInput!]!) {
         city
         address
         postCode
-        addressLine
         location {
           type
           coordinates

@@ -14,7 +14,48 @@ query getAttributesPagination($pagination: PaginationInput) {
       pixel {
         pixelAttribute
       }
-
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -34,7 +75,48 @@ query getAttributesTargetPaginated($target: TargetACIInput!, $pagination: Pagina
       pixel {
         pixelAttribute
       }
-
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -51,7 +133,48 @@ query getAttributes {
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query getAttributesByTarget($target: TargetACIInput!) {
@@ -67,7 +190,48 @@ query getAttributesByTarget($target: TargetACIInput!) {
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query attribute($id: String!) {
@@ -83,7 +247,48 @@ query attribute($id: String!) {
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 query searchAttribute($pagination: PaginationInput, $searchString: String!) {
@@ -102,7 +307,48 @@ query searchAttribute($pagination: PaginationInput, $searchString: String!) {
       pixel {
         pixelAttribute
       }
-
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -127,7 +373,48 @@ query searchAttributeByTarget(
       pixel {
         pixelAttribute
       }
-
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          label
+        }
+      }
+      target {
+        pos {
+          id
+        }
+        wholesaler {
+          id
+        }
+        manufacturer {
+          id
+        }
+      }
     }
   }
 }
@@ -145,7 +432,48 @@ query findAttributeByExternalIdAndTarget($externalId: String!, $target: TargetAC
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 
@@ -162,7 +490,48 @@ mutation syncOneAttribute($input: AttributeCreateInput!) {
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 
@@ -179,7 +548,48 @@ mutation createAttribute($input: AttributeCreateInput!) {
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation updateAttribute($input: AttributeUpdateInput!) {
@@ -195,7 +605,48 @@ mutation updateAttribute($input: AttributeUpdateInput!) {
     pixel {
       pixelAttribute
     }
-
+    translation {
+      language {
+        id
+        name
+        code
+        iconFlag
+        createdAt
+        updatedAt
+        flagSquare {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+        flagWide {
+          baseUrl
+          path
+          width
+          height
+          x
+          y
+          alt
+        }
+      }
+      content {
+        label
+      }
+    }
+    target {
+      pos {
+        id
+      }
+      wholesaler {
+        id
+      }
+      manufacturer {
+        id
+      }
+    }
   }
 }
 mutation deleteAttribute($id: String!) {

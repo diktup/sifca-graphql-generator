@@ -16,6 +16,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         alt2x {
           baseUrl
@@ -24,6 +25,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         alt_128 {
           baseUrl
@@ -32,6 +34,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         alt_256 {
           baseUrl
@@ -40,6 +43,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         alt_512 {
           baseUrl
@@ -48,6 +52,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -56,6 +61,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         card_flat2x {
           baseUrl
@@ -64,6 +70,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         card_flat_128 {
           baseUrl
@@ -72,6 +79,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         card_flat_256 {
           baseUrl
@@ -80,6 +88,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         card_flat_512 {
           baseUrl
@@ -88,6 +97,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -96,6 +106,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         dark2x {
           baseUrl
@@ -104,6 +115,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         dark_128 {
           baseUrl
@@ -112,6 +124,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         dark_256 {
           baseUrl
@@ -120,6 +133,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         dark_512 {
           baseUrl
@@ -128,6 +142,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -136,6 +151,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         flat2x {
           baseUrl
@@ -144,6 +160,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         flat_128 {
           baseUrl
@@ -152,6 +169,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         flat_256 {
           baseUrl
@@ -160,6 +178,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         flat_512 {
           baseUrl
@@ -168,6 +187,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -176,6 +196,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         light2x {
           baseUrl
@@ -184,6 +205,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         light_128 {
           baseUrl
@@ -192,6 +214,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         light_256 {
           baseUrl
@@ -200,6 +223,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         light_512 {
           baseUrl
@@ -208,6 +232,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -216,6 +241,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         default2x {
           baseUrl
@@ -224,6 +250,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         default_128 {
           baseUrl
@@ -232,6 +259,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         default_256 {
           baseUrl
@@ -240,6 +268,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         default_512 {
           baseUrl
@@ -248,6 +277,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
       }
       svg {
@@ -258,6 +288,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -266,6 +297,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -274,6 +306,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -282,6 +315,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -290,6 +324,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -298,6 +333,7 @@ query findPaymentById($id: ID!) {
           height
           x
           y
+          alt
         }
       }
     }
@@ -321,6 +357,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         alt2x {
           baseUrl
@@ -329,6 +366,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         alt_128 {
           baseUrl
@@ -337,6 +375,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         alt_256 {
           baseUrl
@@ -345,6 +384,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         alt_512 {
           baseUrl
@@ -353,6 +393,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -361,6 +402,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         card_flat2x {
           baseUrl
@@ -369,6 +411,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         card_flat_128 {
           baseUrl
@@ -377,6 +420,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         card_flat_256 {
           baseUrl
@@ -385,6 +429,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         card_flat_512 {
           baseUrl
@@ -393,6 +438,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -401,6 +447,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         dark2x {
           baseUrl
@@ -409,6 +456,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         dark_128 {
           baseUrl
@@ -417,6 +465,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         dark_256 {
           baseUrl
@@ -425,6 +474,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         dark_512 {
           baseUrl
@@ -433,6 +483,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -441,6 +492,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         flat2x {
           baseUrl
@@ -449,6 +501,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         flat_128 {
           baseUrl
@@ -457,6 +510,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         flat_256 {
           baseUrl
@@ -465,6 +519,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         flat_512 {
           baseUrl
@@ -473,6 +528,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -481,6 +537,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         light2x {
           baseUrl
@@ -489,6 +546,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         light_128 {
           baseUrl
@@ -497,6 +555,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         light_256 {
           baseUrl
@@ -505,6 +564,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         light_512 {
           baseUrl
@@ -513,6 +573,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -521,6 +582,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         default2x {
           baseUrl
@@ -529,6 +591,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         default_128 {
           baseUrl
@@ -537,6 +600,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         default_256 {
           baseUrl
@@ -545,6 +609,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         default_512 {
           baseUrl
@@ -553,6 +618,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
       }
       svg {
@@ -563,6 +629,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -571,6 +638,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -579,6 +647,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -587,6 +656,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -595,6 +665,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -603,6 +674,7 @@ query findPayments {
           height
           x
           y
+          alt
         }
       }
     }
@@ -629,6 +701,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           alt2x {
             baseUrl
@@ -637,6 +710,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           alt_128 {
             baseUrl
@@ -645,6 +719,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           alt_256 {
             baseUrl
@@ -653,6 +728,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           alt_512 {
             baseUrl
@@ -661,6 +737,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           card_flat {
             baseUrl
@@ -669,6 +746,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           card_flat2x {
             baseUrl
@@ -677,6 +755,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           card_flat_128 {
             baseUrl
@@ -685,6 +764,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           card_flat_256 {
             baseUrl
@@ -693,6 +773,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           card_flat_512 {
             baseUrl
@@ -701,6 +782,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           dark {
             baseUrl
@@ -709,6 +791,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           dark2x {
             baseUrl
@@ -717,6 +800,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           dark_128 {
             baseUrl
@@ -725,6 +809,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           dark_256 {
             baseUrl
@@ -733,6 +818,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           dark_512 {
             baseUrl
@@ -741,6 +827,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flat {
             baseUrl
@@ -749,6 +836,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flat2x {
             baseUrl
@@ -757,6 +845,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flat_128 {
             baseUrl
@@ -765,6 +854,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flat_256 {
             baseUrl
@@ -773,6 +863,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flat_512 {
             baseUrl
@@ -781,6 +872,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           light {
             baseUrl
@@ -789,6 +881,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           light2x {
             baseUrl
@@ -797,6 +890,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           light_128 {
             baseUrl
@@ -805,6 +899,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           light_256 {
             baseUrl
@@ -813,6 +908,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           light_512 {
             baseUrl
@@ -821,6 +917,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           default {
             baseUrl
@@ -829,6 +926,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           default2x {
             baseUrl
@@ -837,6 +935,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           default_128 {
             baseUrl
@@ -845,6 +944,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           default_256 {
             baseUrl
@@ -853,6 +953,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           default_512 {
             baseUrl
@@ -861,6 +962,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
         svg {
@@ -871,6 +973,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           card_flat {
             baseUrl
@@ -879,6 +982,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           dark {
             baseUrl
@@ -887,6 +991,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           flat {
             baseUrl
@@ -895,6 +1000,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           light {
             baseUrl
@@ -903,6 +1009,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
           default {
             baseUrl
@@ -911,6 +1018,7 @@ query findPaymentsPagination($pagination: PaginationInput) {
             height
             x
             y
+            alt
           }
         }
       }
@@ -936,6 +1044,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt2x {
           baseUrl
@@ -944,6 +1053,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt_128 {
           baseUrl
@@ -952,6 +1062,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt_256 {
           baseUrl
@@ -960,6 +1071,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt_512 {
           baseUrl
@@ -968,6 +1080,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -976,6 +1089,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat2x {
           baseUrl
@@ -984,6 +1098,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat_128 {
           baseUrl
@@ -992,6 +1107,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat_256 {
           baseUrl
@@ -1000,6 +1116,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat_512 {
           baseUrl
@@ -1008,6 +1125,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -1016,6 +1134,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark2x {
           baseUrl
@@ -1024,6 +1143,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark_128 {
           baseUrl
@@ -1032,6 +1152,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark_256 {
           baseUrl
@@ -1040,6 +1161,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark_512 {
           baseUrl
@@ -1048,6 +1170,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -1056,6 +1179,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat2x {
           baseUrl
@@ -1064,6 +1188,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat_128 {
           baseUrl
@@ -1072,6 +1197,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat_256 {
           baseUrl
@@ -1080,6 +1206,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat_512 {
           baseUrl
@@ -1088,6 +1215,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -1096,6 +1224,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light2x {
           baseUrl
@@ -1104,6 +1233,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light_128 {
           baseUrl
@@ -1112,6 +1242,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light_256 {
           baseUrl
@@ -1120,6 +1251,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light_512 {
           baseUrl
@@ -1128,6 +1260,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -1136,6 +1269,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default2x {
           baseUrl
@@ -1144,6 +1278,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default_128 {
           baseUrl
@@ -1152,6 +1287,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default_256 {
           baseUrl
@@ -1160,6 +1296,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default_512 {
           baseUrl
@@ -1168,6 +1305,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
       }
       svg {
@@ -1178,6 +1316,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -1186,6 +1325,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -1194,6 +1334,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -1202,6 +1343,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -1210,6 +1352,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -1218,6 +1361,7 @@ mutation createPayment($input: PaymentInput!) {
           height
           x
           y
+          alt
         }
       }
     }
@@ -1241,6 +1385,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt2x {
           baseUrl
@@ -1249,6 +1394,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt_128 {
           baseUrl
@@ -1257,6 +1403,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt_256 {
           baseUrl
@@ -1265,6 +1412,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         alt_512 {
           baseUrl
@@ -1273,6 +1421,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -1281,6 +1430,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat2x {
           baseUrl
@@ -1289,6 +1439,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat_128 {
           baseUrl
@@ -1297,6 +1448,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat_256 {
           baseUrl
@@ -1305,6 +1457,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat_512 {
           baseUrl
@@ -1313,6 +1466,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -1321,6 +1475,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark2x {
           baseUrl
@@ -1329,6 +1484,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark_128 {
           baseUrl
@@ -1337,6 +1493,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark_256 {
           baseUrl
@@ -1345,6 +1502,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark_512 {
           baseUrl
@@ -1353,6 +1511,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -1361,6 +1520,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat2x {
           baseUrl
@@ -1369,6 +1529,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat_128 {
           baseUrl
@@ -1377,6 +1538,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat_256 {
           baseUrl
@@ -1385,6 +1547,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat_512 {
           baseUrl
@@ -1393,6 +1556,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -1401,6 +1565,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light2x {
           baseUrl
@@ -1409,6 +1574,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light_128 {
           baseUrl
@@ -1417,6 +1583,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light_256 {
           baseUrl
@@ -1425,6 +1592,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light_512 {
           baseUrl
@@ -1433,6 +1601,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -1441,6 +1610,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default2x {
           baseUrl
@@ -1449,6 +1619,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default_128 {
           baseUrl
@@ -1457,6 +1628,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default_256 {
           baseUrl
@@ -1465,6 +1637,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default_512 {
           baseUrl
@@ -1473,6 +1646,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
       }
       svg {
@@ -1483,6 +1657,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         card_flat {
           baseUrl
@@ -1491,6 +1666,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         dark {
           baseUrl
@@ -1499,6 +1675,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         flat {
           baseUrl
@@ -1507,6 +1684,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         light {
           baseUrl
@@ -1515,6 +1693,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
         default {
           baseUrl
@@ -1523,6 +1702,7 @@ mutation updatePayment($id: ID!, $input: PaymentInput!) {
           height
           x
           y
+          alt
         }
       }
     }

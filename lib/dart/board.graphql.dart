@@ -7002,7 +7002,8 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
       _$GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7338,8 +7339,6 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   String? postCode;
 
-  String? addressLine;
-
   GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -7354,7 +7353,7 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -7432,7 +7431,8 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
       _$GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -7768,8 +7768,6 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   String? postCode;
 
-  String? addressLine;
-
   GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -7784,7 +7782,7 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -7827,7 +7825,8 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
       _$GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -8163,8 +8162,6 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   String? postCode;
 
-  String? addressLine;
-
   GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -8179,7 +8176,7 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -9632,7 +9629,8 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
       _$GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -9968,8 +9966,6 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   String? postCode;
 
-  String? addressLine;
-
   GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -9984,7 +9980,7 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -10027,7 +10023,8 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
       _$GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -10360,8 +10357,6 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   String? postCode;
 
-  String? addressLine;
-
   GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsType$BoardCardForListType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -10376,7 +10371,7 @@ class GetBoardWithListsAndCards$Query$BoardWithListsAndCardsType$ListWithCardsTy
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -12824,7 +12819,8 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
       _$GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -13157,8 +13153,6 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
 
   String? postCode;
 
-  String? addressLine;
-
   GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$FullAddressType$LonLatType?
       location;
 
@@ -13173,7 +13167,7 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13251,7 +13245,8 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
       _$GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -13587,8 +13582,6 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
 
   String? postCode;
 
-  String? addressLine;
-
   GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -13603,7 +13596,7 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -13646,7 +13639,8 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
       _$GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -13982,8 +13976,6 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
 
   String? postCode;
 
-  String? addressLine;
-
   GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$BarcodeType$ProductType$BrandType$ManufacturerType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -13998,7 +13990,7 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$B
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -15626,7 +15618,8 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$C
       _$GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -15962,8 +15955,6 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$C
 
   String? postCode;
 
-  String? addressLine;
-
   GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$FullAddressType$LonLatType?
       location;
 
@@ -15978,7 +15969,7 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$C
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -16021,7 +16012,8 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$C
       _$GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatTypeFromJson(
           json);
 
-  String? type;
+  @JsonKey(unknownEnumValue: ZoneTypesEnum.artemisUnknown)
+  ZoneTypesEnum? type;
 
   List<double>? coordinates;
 
@@ -16357,8 +16349,6 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$C
 
   String? postCode;
 
-  String? addressLine;
-
   GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$CompanyType$BankDetailsType$BankDetailsHolderType$FullAddressType$LonLatType?
       location;
 
@@ -16373,7 +16363,7 @@ class GetArchivedBoardCardsPaginated$Query$BoardCardPaginateType$BoardCardType$C
 
   @override
   List<Object?> get props =>
-      [city, address, postCode, addressLine, location, country, state, owner];
+      [city, address, postCode, location, country, state, owner];
 
   @override
   Map<String, dynamic> toJson() =>
@@ -18947,6 +18937,15 @@ enum ProductClassEnum {
   newArrivals,
   @JsonValue('BEST_SELLERS')
   bestSellers,
+  @JsonValue('ARTEMIS_UNKNOWN')
+  artemisUnknown,
+}
+
+enum ZoneTypesEnum {
+  @JsonValue('POINT')
+  point,
+  @JsonValue('POLYGON')
+  polygon,
   @JsonValue('ARTEMIS_UNKNOWN')
   artemisUnknown,
 }
@@ -35611,13 +35610,6 @@ final GET_BOARD_WITH_LISTS_AND_CARDS_QUERY_DOCUMENT =
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'addressLine'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      ),
-                                      FieldNode(
                                         name: NameNode(value: 'location'),
                                         alias: null,
                                         arguments: [],
@@ -36440,14 +36432,6 @@ final GET_BOARD_WITH_LISTS_AND_CARDS_QUERY_DOCUMENT =
                                             selectionSet: null,
                                           ),
                                           FieldNode(
-                                            name:
-                                                NameNode(value: 'addressLine'),
-                                            alias: null,
-                                            arguments: [],
-                                            directives: [],
-                                            selectionSet: null,
-                                          ),
-                                          FieldNode(
                                             name: NameNode(value: 'location'),
                                             alias: null,
                                             arguments: [],
@@ -37250,16 +37234,6 @@ final GET_BOARD_WITH_LISTS_AND_CARDS_QUERY_DOCUMENT =
                                                                 name: NameNode(
                                                                     value:
                                                                         'postCode'),
-                                                                alias: null,
-                                                                arguments: [],
-                                                                directives: [],
-                                                                selectionSet:
-                                                                    null,
-                                                              ),
-                                                              FieldNode(
-                                                                name: NameNode(
-                                                                    value:
-                                                                        'addressLine'),
                                                                 alias: null,
                                                                 arguments: [],
                                                                 directives: [],
@@ -40898,13 +40872,6 @@ final GET_BOARD_WITH_LISTS_AND_CARDS_QUERY_DOCUMENT =
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'addressLine'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
                             name: NameNode(value: 'location'),
                             alias: null,
                             arguments: [],
@@ -41583,13 +41550,6 @@ final GET_BOARD_WITH_LISTS_AND_CARDS_QUERY_DOCUMENT =
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'postCode'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'addressLine'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],
@@ -46518,13 +46478,6 @@ final GET_ARCHIVED_BOARD_CARDS_PAGINATED_QUERY_DOCUMENT = DocumentNode(
                                         selectionSet: null,
                                       ),
                                       FieldNode(
-                                        name: NameNode(value: 'addressLine'),
-                                        alias: null,
-                                        arguments: [],
-                                        directives: [],
-                                        selectionSet: null,
-                                      ),
-                                      FieldNode(
                                         name: NameNode(value: 'location'),
                                         alias: null,
                                         arguments: [],
@@ -47340,14 +47293,6 @@ final GET_ARCHIVED_BOARD_CARDS_PAGINATED_QUERY_DOCUMENT = DocumentNode(
                                             selectionSet: null,
                                           ),
                                           FieldNode(
-                                            name:
-                                                NameNode(value: 'addressLine'),
-                                            alias: null,
-                                            arguments: [],
-                                            directives: [],
-                                            selectionSet: null,
-                                          ),
-                                          FieldNode(
                                             name: NameNode(value: 'location'),
                                             alias: null,
                                             arguments: [],
@@ -48150,16 +48095,6 @@ final GET_ARCHIVED_BOARD_CARDS_PAGINATED_QUERY_DOCUMENT = DocumentNode(
                                                                 name: NameNode(
                                                                     value:
                                                                         'postCode'),
-                                                                alias: null,
-                                                                arguments: [],
-                                                                directives: [],
-                                                                selectionSet:
-                                                                    null,
-                                                              ),
-                                                              FieldNode(
-                                                                name: NameNode(
-                                                                    value:
-                                                                        'addressLine'),
                                                                 alias: null,
                                                                 arguments: [],
                                                                 directives: [],
@@ -52055,13 +51990,6 @@ final GET_ARCHIVED_BOARD_CARDS_PAGINATED_QUERY_DOCUMENT = DocumentNode(
                             selectionSet: null,
                           ),
                           FieldNode(
-                            name: NameNode(value: 'addressLine'),
-                            alias: null,
-                            arguments: [],
-                            directives: [],
-                            selectionSet: null,
-                          ),
-                          FieldNode(
                             name: NameNode(value: 'location'),
                             alias: null,
                             arguments: [],
@@ -52740,13 +52668,6 @@ final GET_ARCHIVED_BOARD_CARDS_PAGINATED_QUERY_DOCUMENT = DocumentNode(
                                   ),
                                   FieldNode(
                                     name: NameNode(value: 'postCode'),
-                                    alias: null,
-                                    arguments: [],
-                                    directives: [],
-                                    selectionSet: null,
-                                  ),
-                                  FieldNode(
-                                    name: NameNode(value: 'addressLine'),
                                     alias: null,
                                     arguments: [],
                                     directives: [],

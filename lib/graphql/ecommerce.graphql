@@ -8,26 +8,28 @@ query getEcommerceAnalyticsStats($input: AnalyticsDashboardInput!) {
       value
       percentage
     }
-    customers {
+    partiallyPaidInvoices {
       value
       percentage
     }
-    balance {
+    unpaidInvoices {
       value
       percentage
     }
   }
 }
-query getEcommerceRevenueChartStats($input: AnalyticsDashboardInput!) {
+query getEcommerceRevenueChartStats($input: CRMDashboardInput!) {
   getEcommerceRevenueChartStats(input: $input) {
     orders
-    earnings
-    refunds
+    paid
+    unpaid
+    partiallyPaid
     conversions
     chart {
       orders
-      earnings
-      refunds
+      paid
+      unpaid
+      partiallyPaid
     }
   }
 }
@@ -72,7 +74,7 @@ query getEcommerceSalesByLocation($input: AnalyticsDashboardInput!) {
     }
   }
 }
-query getEcommerceTopCatalogueCategories($input: AnalyticsDashboardInput!) {
+query getEcommerceTopCatalogueCategories($input: EcommerceVarietyDashboardInput!) {
   getEcommerceTopCatalogueCategories(input: $input) {
     category {
       id
@@ -107,7 +109,244 @@ query getEcommerceTopCatalogueCategories($input: AnalyticsDashboardInput!) {
         y
         alt
       }
+      translation {
+        language {
+          id
+          name
+          code
+          iconFlag
+          createdAt
+          updatedAt
+          flagSquare {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          flagWide {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        content {
+          name
+          description
+        }
+      }
     }
     value
+  }
+}
+query getEcommerceBestSellerProductsWithFilterPaginated($input: AnalyticsDashboardInput!, $pagination: PaginationInput) {
+  getEcommerceBestSellerProductsWithFilterPaginated(input: $input, pagination: $pagination) {
+    count
+    isLast
+    objects {
+      barcode {
+        id
+        name
+        price
+        prices {
+          price
+          currency {
+            id
+            name
+            code
+            symbol
+            iconFlag
+            createdAt
+            updatedAt
+            flagSquare {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+            flagWide {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+        }
+        barcode
+        createdAt
+        updatedAt
+        discount {
+          amount
+          discountType
+        }
+        media {
+          videos
+          deg360 {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+          pictures {
+            baseUrl
+            path
+            width
+            height
+            x
+            y
+            alt
+          }
+        }
+        priceList {
+          price {
+            id
+            label
+          }
+          value
+        }
+        catalogueCategory {
+          id
+          name
+          rank
+          layer
+        }
+        internalProduct {
+          id
+          seo {
+            urlKey
+            metaTitle
+            metaDesription
+            metaKeywords {
+              name
+              content
+            }
+          }
+          specs {
+            key
+            value
+          }
+        }
+        productAttributesValues {
+          attributesValues {
+            id
+            label
+            attribute {
+              id
+              label
+              externalId
+              variety
+              createdAt
+              updatedAt
+              isRequired
+              isMultipleChoice
+              pixel {
+                pixelAttribute
+              }
+              translation {
+                language {
+                  id
+                  name
+                  code
+                  iconFlag
+                  createdAt
+                  updatedAt
+                  flagSquare {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                  flagWide {
+                    baseUrl
+                    path
+                    width
+                    height
+                    x
+                    y
+                    alt
+                  }
+                }
+                content {
+                  label
+                }
+              }
+            }
+          }
+        }
+        maintenance {
+          active
+          owner {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          technician {
+            id
+            email
+            gender
+            lastName
+            username
+            firstName
+            phone {
+              number
+              isValid
+              countryCode
+              validationNumber
+            }
+            picture {
+              baseUrl
+              path
+              width
+              height
+              x
+              y
+              alt
+            }
+          }
+          prevMaintenanceDuration
+          maintenanceDuration
+          expectedMeantime
+        }
+      }
+      orders
+      stock
+      amount
+    }
   }
 }
